@@ -1,0 +1,1507 @@
+---
+unique-page-id: 18874523
+description: '"[!DNL Marketo Measure] 动态架构 —  [!DNL Marketo Measure]  — 产品文档”'
+title: '"[!DNL Marketo Measure] Dynamics架构”'
+exl-id: f8da47b1-d844-4bd2-8125-8689cbb5cc30
+source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
+workflow-type: tm+mt
+source-wordcount: '1408'
+ht-degree: 17%
+
+---
+
+# [!DNL Marketo Measure] Dynamics架构 {#marketo-measure-dynamics-schema}
+
+>[!NOTE]
+>
+>您可能会看到指定“[!DNL Marketo Measure]“ ”，但仍会在您的CRM中看到“Bizible”。 我们正在努力更新该版本，并且该品牌重命名将很快地反映在您的CRM中。
+
+在下面，您将找到所需的Dynamics架构以开始使用 [!DNL Marketo Measure]. 所有实体和字段都列出，以及所需的读和/或写访问权限。
+
+## 买方接触点 {#buyer-touchpoints}
+
+买方接触点是 [!DNL Marketo Measure] 自定义实体，以封装联系人和潜在客户的营销交互。
+
+## 买方接触点关系 {#buyer-touchpoint-relationships}
+
+此图表是Dynamics Stock实体与买方接触点之间关系的高级可视化图表。
+
+## 买方接触点 {#buyer-touchpoint}
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th><p>架构名称</p></th> 
+   <th><p>标准/自定义</p></th> 
+   <th><p>读取</p></th> 
+   <th><p>写入</p></th> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Ad_Campaign_Id</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Ad_Campaign_Name</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Ad_Content</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Ad_Destination_URL</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Ad_Group_Id</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Ad_Group_Name</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Ad_Id</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Bizible_TouchpointId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Browser</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_CampaignId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_ContactId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Count_First_Touch</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Count_Lead_Conversion_Touch</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Count_U_Shaved</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Form_URL</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Form_URL_Raw</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Geo_City</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Geo_Country</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Geo_Region</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Keyword_Id</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Keyword_MatchType</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Keyword_Text</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Landing_Page</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Landing_Page_Raw</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_LeadId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Marketing_Channel</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Marketing_Channel_Path</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Medium</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Name</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Placement_Id</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Placement_Name</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Platform</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Referrer_Page</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Referrer_Page_Raw</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Search_Phrase</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Segment</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Site_Id</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Site_Name</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Touchpoint_Date</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Touchpoint_Position</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Touchpoint_Source</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Touchpoint_Type</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_UniqueId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_account</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+ </tbody> 
+</table>
+
+## 买方归因接触点 {#buyer-attribution-touchpoint}
+
+买方归因接触点是 [!DNL Marketo Measure] 自定义实体来封装营销对Opportunity的影响。
+
+## 买方归因接触点关系 {#buyer-attribution-touchpoint-relationships}
+
+此图表是Dynamics Stock实体与买方归因接触点之间关系的高级可视化图表。
+
+## 买方归因接触点 {#buyer-attribution-touchpoints}
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th><p>架构名称</p></th> 
+   <th><p>标准/自定义</p></th> 
+   <th><p>读取</p></th> 
+   <th><p>写入</p></th> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_AccountId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Ad_Campaign_Id</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Ad_Campaign_Name</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Ad_Content</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Ad_Destination_URL</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Ad_Group_Id</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Ad_Group_Name</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Ad_Id</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Attribution_Custom_Model</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Attribution_Custom_Model_2</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Attribution_First_Touch</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Attribution_Lead_Conversion_Touch</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Attribution_U_Shaved</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Attribution_W_Shaved</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Bizible_Attribution_TouchpointId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Browser</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_CampaignId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_ContactId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Count_Custom_Model</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Count_Custom_Model_2</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Count_First_Touch</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Count_Lead_Creation_Touch</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Count_U_Shaved</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Count_W_Shaved</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Form_URL</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Form_URL_Raw</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Geo_City</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Geo_Country</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Geo_Region</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Keyword_Id</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Keyword_MatchType</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Keyword_Text</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Landing_Page</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Landing_Page_Raw</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Marketing_Channel</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Marketing_Channel_Path</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Medium</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Name</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_OpportunityId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Placement_Id</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Placement_Name</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Platform</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Referrer_Page</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Referrer_Page_Raw</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Revenue_Custom_Model</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Revenue_Custom_Model_2</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_revenue_custom_model_2_Base</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_revenue_custom_model_Base</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Revenue_First_Touch</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_revenue_first_touch_Base</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Revenue_Lead_Conversion_Touch</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_revenue_lead_conversion_Base</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Revenue_U_Shaved</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_revenue_u_shaved_base</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Revenue_W_Shaved</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_revenue_w_shaved_base</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Search_Phrase</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Segment</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Site_Id</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Site_Name</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Touchpoint_Date</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Touchpoint_Position</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Touchpoint_Source</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Touchpoint_Type</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_UniqueId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+ </tbody> 
+</table>
+
+## [!DNL Marketo Measure] AB测试 {#marketo-measure-ab-tests}
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th><p>架构名称</p></th> 
+   <th><p>标准/自定义</p></th> 
+   <th><p>读取</p></th> 
+   <th><p>写入</p></th> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Bizible_ABTestId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_BizibleId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_ContactId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_DateReported</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Experience</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_ExperienceId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_LeadId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Name</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_OpportunityId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_UserId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Variation</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_VariationId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+ </tbody> 
+</table>
+
+## [!DNL Marketo Measure] 事件 {#marketo-measure-events}
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th><p>架构名称</p></th> 
+   <th><p>标准/自定义</p></th> 
+   <th><p>读取</p></th> 
+   <th><p>写入</p></th> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Bizible_EventId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_BizibleId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_ContactId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_DateReported</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_EventName</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_EventValue</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_LeadId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Name</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_OpportunityId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+ </tbody> 
+</table>
+
+## [!DNL Marketo Measure] 历史记录 {#marketo-measure-history}
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th><p>架构名称</p></th> 
+   <th><p>标准/自定义</p></th> 
+   <th><p>读取</p></th> 
+   <th><p>写入</p></th> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Bizible_HistoryId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Entity_Type</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_EntityId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_EntityLogicalName</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Name</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+ </tbody> 
+</table>
+
+## Dynamics标准实体 {#dynamics-standard-entities}
+
+此列表提供了Dynamics Standard Entities( [!DNL Marketo Measure] 与交互，以及我们添加到这些实体的自定义字段。
+
+**商机**
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th><p>架构名称</p></th> 
+   <th><p>标准/自定义</p></th> 
+   <th><p>读取</p></th> 
+   <th><p>写入</p></th> 
+  </tr> 
+  <tr> 
+   <td><p>莉蒂</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>emailaddress1</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>statecode</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>statuscode</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>createdon</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>已修改</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>接触</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>合格机会id</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>网站url</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>companyname</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_account</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_BizibleId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+ </tbody> 
+</table>
+
+**联系人**
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th><p>架构名称</p></th> 
+   <th><p>标准/自定义</p></th> 
+   <th><p>读取</p></th> 
+   <th><p>写入</p></th> 
+  </tr> 
+  <tr> 
+   <td><p>接触</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>emailaddress1</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>account</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>createdon</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>已修改</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_BizibleId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+ </tbody> 
+</table>
+
+**帐户**
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th><p>架构名称</p></th> 
+   <th><p>标准/自定义</p></th> 
+   <th><p>读取</p></th> 
+   <th><p>写入</p></th> 
+  </tr> 
+  <tr> 
+   <td><p>account</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>网站url</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>createdon</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>已修改</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Engagement_Score</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+ </tbody> 
+</table>
+
+**机会**
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th><p>架构名称</p></th> 
+   <th><p>标准/自定义</p></th> 
+   <th><p>读取</p></th> 
+   <th><p>写入</p></th> 
+  </tr> 
+  <tr> 
+   <td><p>机会id</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>account</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>createdon</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>已修改</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>statecode</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>statecodename</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>salestage</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>salesstagecode</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>估计结束日期</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>实际值</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Bizible_Opportunity_Amount</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_bizible_opportunity_amount_Base</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+ </tbody> 
+</table>
+
+**Campaign**
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th><p>架构名称</p></th> 
+   <th><p>标准/自定义</p></th> 
+   <th><p>读取</p></th> 
+   <th><p>写入</p></th> 
+  </tr> 
+  <tr> 
+   <td><p>营销活动id</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>typecode</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>typecodename</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>createdon</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>已修改</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Bizible_Attribution_SyncType</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Marketing_Lists_Sync</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_UniqueId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Touchpoint_End_Date</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Touchpoint_Start_Date</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+ </tbody> 
+</table>
+
+**营销活动响应**
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th><p>架构名称</p></th> 
+   <th><p>标准/自定义</p></th> 
+   <th><p>读取</p></th> 
+   <th><p>写入</p></th> 
+  </tr> 
+  <tr> 
+   <td><p>activityid</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>activitypecode</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>activitypecodename</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>createdon</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>已修改</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>响应代码</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>responsecodename</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>客户</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>regangobjectid</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Bizible_Touchpoint_Date</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Touchpoint_Status_Date</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Touchpoint_Status_Contact</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Touchpoint_Status_Leade</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Touchpoint_Status_Opportunity</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+ </tbody> 
+</table>
+
+**列表**
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th><p>架构名称</p></th> 
+   <th><p>标准/自定义</p></th> 
+   <th><p>读取</p></th> 
+   <th><p>写入</p></th> 
+  </tr> 
+  <tr> 
+   <td><p>listid</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>createdfromcode</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>成员类型</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>createdon</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>已修改</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Bizible_Touchpoint_Date</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+ </tbody> 
+</table>
+
+**ListMember**
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th><p>架构名称</p></th> 
+   <th><p>标准/自定义</p></th> 
+   <th><p>读取</p></th> 
+   <th><p>写入</p></th> 
+  </tr> 
+  <tr> 
+   <td><p>listid</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>entityid</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>listmemberid</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>createdon</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>已修改</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+**电话呼叫**
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th><p>架构名称</p></th> 
+   <th><p>标准/自定义</p></th> 
+   <th><p>读取</p></th> 
+   <th><p>写入</p></th> 
+  </tr> 
+  <tr> 
+   <td><p>activityid</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>activitypecode</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>activitypecodename</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>createdon</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>已修改</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>客户</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>regangobjectid</p></td> 
+   <td><p>标准</p></td> 
+   <td><p>x</p></td> 
+   <td> </td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_Bizible_Touchpoint_Date</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>bizible2_BizibleId</p></td> 
+   <td><p>自定义</p></td> 
+   <td><p>x</p></td> 
+   <td><p>x</p></td> 
+  </tr> 
+ </tbody> 
+</table>
+
+[] =仅V1旧版客户
