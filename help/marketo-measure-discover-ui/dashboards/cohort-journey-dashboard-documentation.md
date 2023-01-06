@@ -3,7 +3,7 @@ unique-page-id: 42762648
 description: 同类群组历程功能板文档 —  [!DNL Marketo Measure]  — 产品文档
 title: 同类群组历程功能板文档
 exl-id: b139f720-86ae-4f6d-9dfc-cc67b4186f88
-source-git-commit: 68d860308fa1939a1c456314ade3d34f896df831
+source-git-commit: 28f1400e8e13c091e8ea2a3bef115a0db810c2e0
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%
@@ -37,7 +37,7 @@ ht-degree: 0%
 >
 >在所有Discover功能板中，只能报告一个人员对象（潜在客户或联系人）。 在中设置 [!UICONTROL Settings] > [!UICONTROL Reporting] > [!UICONTROL Attribution Settings] > [!UICONTROL Default Dashboard Object].
 
-此功能板支持以下过滤器：
+功能板支持以下过滤器：
 
 * 同类群组阶段：选择开始的同类群组阶段。 以下所有阶段的记录都是从同类群组阶段的记录中演变而来的。
 * 同类群组日期范围：选择所选同类群组阶段的时间范围。 它与同类群组阶段一起定义了起始数据集。
@@ -53,8 +53,6 @@ ht-degree: 0%
 >[!NOTE]
 >
 >区段过滤器仅适用于LC暂存和之后。 如果同类群组阶段为未知或已知，并且其中一个区段过滤器具有值，则功能板不会返回任何结果。
-
-![](assets/cohort-journey-dashboard-documentation-3.png)
 
 阶段包括未知、已知、LC、开放潜在客户/联系阶段（设置> CRM >阶段映射）中的选定漏斗阶段、OC、开放机会阶段（设置> CRM >阶段映射）中的选定漏斗阶段以及交易（已结成的商机）。
 
