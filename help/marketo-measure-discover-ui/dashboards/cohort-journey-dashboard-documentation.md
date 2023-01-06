@@ -3,18 +3,32 @@ unique-page-id: 42762648
 description: 同类群组历程功能板文档 —  [!DNL Marketo Measure]  — 产品文档
 title: 同类群组历程功能板文档
 exl-id: b139f720-86ae-4f6d-9dfc-cc67b4186f88
-source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d
+source-git-commit: 68d860308fa1939a1c456314ade3d34f896df831
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
 
 # 同类群组历程功能板文档 {#cohort-journey-dashboard-documentation}
 
-同类群组历程功能板允许营销人员查看选定时间范围内从起始同类群组阶段开始的进度，并衡量转化率。
+同类群组影响和漏斗功能板使营销人员能够查看从选定时间范围内的起始同类群组阶段开始的进度，并衡量转化率。
 
-此功能板有两个图块：
+主要区别在于我们如何从同类群组阶段计算每个实体。
+
+* 同类群组漏斗：每个阶段的结果直接从前一个阶段得到。
+
+   * 只有在设置的同类群组开始时间后，在漏斗中沿每个阶段经过的记录才会被计数。
+
+![](assets/cohort-journey-dashboard-documentation-1.png)
+
+* 同类群组影响：每个阶段的结果都来源于同类群组阶段，而不是前一个阶段。
+
+   * 每个阶段中的所有记录在设定的同类群组开始时间之后发生的时间即被计算一次。 此功能板自然会比漏斗功能板具有更多记录，因为我们正在查看实体在同类群组阶段受到的影响情况，而不仅仅是通过漏斗的移动情况。
+
+![](assets/cohort-journey-dashboard-documentation-2.png)
+
+每个功能板都有两个图块：
 
 * 同类群组收入：同类群组历程拼贴的“交易”阶段中所有商机的总商机量。
 * 同类群组历程:在选定的时间范围内，从起始同类群组阶段到每个历程阶段的进度。
@@ -40,7 +54,7 @@ ht-degree: 0%
 >
 >区段过滤器仅适用于LC暂存和之后。 如果同类群组阶段为未知或已知，并且其中一个区段过滤器具有值，则功能板不会返回任何结果。
 
-![](assets/one-2.png)
+![](assets/cohort-journey-dashboard-documentation-3.png)
 
 阶段包括未知、已知、LC、开放潜在客户/联系阶段（设置> CRM >阶段映射）中的选定漏斗阶段、OC、开放机会阶段（设置> CRM >阶段映射）中的选定漏斗阶段以及交易（已结成的商机）。
 
