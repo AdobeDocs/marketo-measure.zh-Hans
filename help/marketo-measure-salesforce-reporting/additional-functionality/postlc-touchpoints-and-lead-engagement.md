@@ -1,11 +1,11 @@
 ---
 unique-page-id: 18874562
-description: LC后接触点和潜在客户参与 — Marketo测量 — 产品文档
+description: LC后接触点和潜在客户参与 — Marketo Measure — 产品文档
 title: LC后接触点和潜在客户参与
 exl-id: 3ee5c571-195e-46c7-b150-fedcbc3614cb
 source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ PostLC触点是动态的。 由于潜在客户或联系人继续提交PostLC表�
 
 **潜在客户**
 
-1. 登录到 [!DNL Marketo Measure] 帐户 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}，转到 [!UICONTROL Settings].
+1. 登录到 [!DNL Marketo Measure] 帐户 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} 然后转到 [!UICONTROL Settings].
 
 1. 在CRM下，选择 **[!UICONTROL Leads]**.
 
@@ -46,7 +46,7 @@ PostLC触点是动态的。 由于潜在客户或联系人继续提交PostLC表�
 
 **联系人**
 
-1. 登录到 [!DNL Marketo Measure] 帐户 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}，转到 [!UICONTROL Settings].
+1. 登录到 [!DNL Marketo Measure] 帐户 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} 然后转到 [!UICONTROL Settings].
 
 1. 在CRM下，选择 **[!UICONTROL Contacts]**.
 

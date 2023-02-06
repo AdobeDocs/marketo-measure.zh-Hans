@@ -1,6 +1,6 @@
 ---
 unique-page-id: 18874672
-description: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] 交互 — Marketo测量 — 产品文档
+description: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] 交互 — Marketo Measure — 产品文档
 title: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] 交互
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9

@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 输入Snowflake帐户ID {#enter-snowflake-account-id}
 
-打开 **设置** 部分，然后导航到 **data warehouse** 页面。 在 **直接共享** ，输入 [Snowflake帐户id](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html){target="_blank"} ，然后单击 **连接**.
+打开 **设置** ，然后导航到 **data warehouse** 页面。 在 **直接共享** ，输入 [Snowflake帐户id](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html){target="_blank"} ，然后单击 **连接**.
 
 ![](assets/data-warehouse-access-direct-share-1.png)
 

@@ -1,6 +1,6 @@
 ---
 unique-page-id: 18874566
-description: 营销归因 — Marketo测量 — 产品文档
+description: 营销归因 — Marketo Measure — 产品文档
 title: 营销归因
 exl-id: 6d838612-d158-4db0-bb9e-b615066fd97b
 source-git-commit: 0aa263053aa8dd804b03a67ab446dc0cda3850c5
@@ -12,9 +12,9 @@ ht-degree: 4%
 
 # 营销归因 {#marketing-attribution}
 
-## 欢迎使用Marketo措施 {#welcome-to-marketo-measure}
+## 欢迎来Marketo Measure {#welcome-to-marketo-measure}
 
-Marketo Measure 使营销人员能够洞悉哪些营销活动在为公司增加收入方面最有效。Marketo Measure是一种营销归因解决方案，可自动跟踪和报告渠道的绩效，从而深入了解哪些渠道最能吸引客户参与，并允许您相应地优化营销支出。
+Marketo Measure 使营销人员能够洞悉哪些营销活动在为公司增加收入方面最有效。Marketo Measure是一款营销归因解决方案，可自动跟踪和报告渠道的绩效，从而让您能够洞察哪些渠道最能吸引客户，并相应地优化营销支出。
 
 ## 营销归因 {#marketing-attribution-1}
 
@@ -24,7 +24,7 @@ Marketo Measure 使营销人员能够洞悉哪些营销活动在为公司增加�
 
 ![](assets/1.png)
 
-这些里程碑式的工作是Marketo Measure的 **归因模型**. Marketo测量提供了六个归因模型。 每个模型都侧重于客户历程中的不同阶段，并提供一个将收入点数归因到营销接触点的通用结构。 您使用的模型取决于您在历程中最感兴趣的阶段是测量以及要报告多少数据。 Marketo测量提供的归因模型包括：
+这些里程碑式的接触是Marketo Measure **归因模型**. Marketo Measure提供了六个归因模型。 每个模型都侧重于客户历程中的不同阶段，并提供一个将收入点数归因到营销接触点的通用结构。 您使用的模型取决于您在历程中最感兴趣的阶段是测量以及要报告多少数据。 Marketo Measure提供的归因模型包括：
 
 * 首次接触
 * 商机创建

@@ -26,7 +26,7 @@ ht-degree: 1%
 
 作为客户，您将像往常一样构建电子邮件模板。 在需要为要跟踪的操作在登陆页面中添加内容后，您将需要确定营销自动化平台接受的令牌、变量标记或宏，以便动态显示每个人的值。
 
-Marketo测量接受以下值：电子邮件地址、Salesforce潜在客户ID或Salesforce联系人ID。
+Marketo Measure接受以下值：电子邮件地址、Salesforce潜在客户ID或Salesforce联系人ID。
 
 ## 标记示例 {#tag-examples}
 

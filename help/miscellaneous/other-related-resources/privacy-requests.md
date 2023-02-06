@@ -4,7 +4,7 @@ title: 隐私请求
 exl-id: 883e475f-9868-412a-b505-230556f38484
 source-git-commit: 09ffdbb0b1baeed870a3145268997e63a3707c97
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -15,14 +15,14 @@ ht-degree: 0%
 
 您可以提交单个请求，以从中访问和删除消费者数据 [!DNL Marketo Measure] 有两种方式：
 
-* 通过 [[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html){target=&quot;_blank&quot;}。
-* 通过 **[!DNL Privacy Service]API**. 请参阅此文档 [此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target=&quot;_blank&quot;}和API引用 [此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target=&quot;_blank&quot;}。
+* 通过 [[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html){target="_blank"}.
+* 通过 **[!DNL Privacy Service]API**. 请参阅此文档 [此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target="_blank"} and the API reference [here](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}.
 
-的 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target=&quot;_blank&quot;}支持两种类型的请求：数据访问和数据删除。
+的 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target="_blank"} 支持两种类型的请求：数据访问和数据删除。
 
 让我们看看如何创建访问和删除请求。
 
-## 发送Marketo测量请求所需的设置 {#required-setup-to-send-requests-for-marketo-measure}
+## 发送Marketo Measure请求所需的设置 {#required-setup-to-send-requests-for-marketo-measure}
 
 请求访问和删除 [!DNL Marketo Measure]，您必须：
 

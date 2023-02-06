@@ -5,7 +5,7 @@ title: '"[!DNL Marketo Measure] 参数”'
 exl-id: d66b9864-0d7e-455a-ae20-cca555f4d8c8
 source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,10 @@ URL的示例 [!DNL Marketo Measure] 参数：
 
 >[!NOTE]
 >
->有关匹配类型的更多信息，请 [这是一篇相关的AdWords文章](https://support.google.com/adwords/answer/2497836?hl=en){target=&quot;_blank&quot;}。
+>有关匹配类型的更多信息，请 [这是一篇相关的AdWords文章](https://support.google.com/adwords/answer/2497836?hl=en){target="_blank"}.
 
 * `_bn={network}`
-   * 表示广告网络类型 —  [显示或搜索](https://support.google.com/adwords/answer/1752334?hl=en){target=&quot;_blank&quot;}。
+   * 表示广告网络类型 —  [显示或搜索](https://support.google.com/adwords/answer/1752334?hl=en){target="_blank"}.
    * 这类似于UTM Source参数。
 
 * `_bg={adgroupID}`

@@ -5,7 +5,7 @@ title: 了解 [!DNL Marketo Measure] AdWords标记
 exl-id: c6658766-d3a8-46ed-b2d2-826eb61ce269
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 **如果 [!DNL Marketo Measure] 查找跟踪模板：**
 
 * [!DNL Marketo Measure] 会将其参数添加到跟踪模板。
-* 如果在跟踪模板（如Kenshoo或Marin）中找到第三方重定向， [!DNL Marketo Measure] 将不采取任何操作。 相反，您必须 [添加 [!DNL Marketo Measure] 参数添加到帐户中的第三方工具](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target=&quot;_blank&quot;}。
+* 如果在跟踪模板（如Kenshoo或Marin）中找到第三方重定向， [!DNL Marketo Measure] 将不采取任何操作。 相反，您必须 [添加 [!DNL Marketo Measure] 参数添加到帐户中的第三方工具](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}.
 
 但是，如果未找到跟踪模板， [!DNL Marketo Measure] 将：
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 ## 跟踪模板 {#tracking-templates}
 
-如 [!DNL Google AdWords]，跟踪模板是用于访问登陆页面的URL。 收集的跟踪信息用于了解您的广告流量。 [单击此处](https://support.google.com/adwords/answer/7197008?hl=en){target=&quot;_blank&quot;} ，以了解Google的更多信息。
+如 [!DNL Google AdWords]，跟踪模板是用于访问登陆页面的URL。 收集的跟踪信息用于了解您的广告流量。 [单击此处](https://support.google.com/adwords/answer/7197008?hl=en){target="_blank"} 有关更多信息，请参阅Google。
 
 [!DNL Marketo Measure] 建议使用帐户级别、促销活动级别或广告组级别跟踪模板，因为它允许对所有广告添加和减除参数，而不会有广告历史记录中断或删除的风险。
 
@@ -108,6 +108,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->进行更改后，即可完成。 随时联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}（如果在设置过程中遇到任何问题）。
+>进行更改后，即可完成。 随时联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 在设置过程中是否有任何问题。
 
-[单击此处](https://support.google.com/adwords/answer/6076199?hl=en#tracking){target=&quot;_blank&quot;} ，以了解Google有关创建帐户级别跟踪模板的说明。
+[单击此处](https://support.google.com/adwords/answer/6076199?hl=en#tracking){target="_blank"} 有关创建帐户级别跟踪模板的说明，请参阅Google 。

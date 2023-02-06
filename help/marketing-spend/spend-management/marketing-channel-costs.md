@@ -5,14 +5,14 @@ title: 营销渠道成本
 exl-id: 36ccaff3-db55-47bd-a24e-4aa1894f13e0
 source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
 
 # 营销渠道成本 {#marketing-channel-costs}
 
-使用 [!DNL Marketo Measure] 是能够将营销工作直接与收入影响相关联，并且粒度可根据需要而定。 在接触点级别，可以看到投资回报。 要利用此优势，渠道成本只需上传到 [!DNL Marketo Measure] 应用程序。 ROI报表是在 **营销ROI仪表板** in [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}。
+使用 [!DNL Marketo Measure] 是能够将营销工作直接与收入影响相关联，并且粒度可根据需要而定。 在接触点级别，可以看到投资回报。 要利用此优势，渠道成本只需上传到 [!DNL Marketo Measure] 应用程序。 ROI报表是在 **营销ROI仪表板** in [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}.
 
 [单击此处直接导航到相关说明。](/help/marketing-spend/spend-management/marketing-channel-costs.md#uploading-marketing-costs)
 

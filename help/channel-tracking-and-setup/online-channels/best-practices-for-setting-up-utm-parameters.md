@@ -5,7 +5,7 @@ title: 设置UTM参数的最佳实践
 exl-id: 56019f41-b6ba-48c1-9bef-2a5f56d2d5f4
 source-git-commit: 02f686645e942089df92800d8d14c76215ae558f
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 UTM参数是对营销数据进行细分的绝佳方法。 [!DNL Marketo Measure] 使用并捕获所有UTM参数，以填充Salesforce和 [!DNL Marketo Measure] 应用程序。 利用此信息，您将能够详细了解潜在客户、商机和已结/已赢交易的来源。
 
-您可以利用 [Google URL生成器](https://support.google.com/analytics/answer/1033867?hl=en){target=&quot;_blank&quot;}来设置UTM参数，并将其添加到营销工作中的链接中。 使用 [Google电子表格](https://docs.google.com/spreadsheets/d/1QCIr1WUJQHE68cA4VTks2XE7nxuryaUymCEy_23-Oew/edit#gid=0){target=&quot;_blank&quot;}，如果您希望更轻松地跟踪所有UTM链接。
+您可以利用 [Google URL生成器](https://support.google.com/analytics/answer/1033867?hl=en){target="_blank"} to set up your UTM parameters and add them to your links within your marketing efforts. Use this [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1QCIr1WUJQHE68cA4VTks2XE7nxuryaUymCEy_23-Oew/edit#gid=0){target="_blank"} 如果您希望更轻松地跟踪所有UTM链接，请执行以下操作。
 
 ## 每个参数的高级值 {#high-level-values-for-each-parameter}
 
@@ -68,4 +68,4 @@ fakewebsite.com/
 
 请注意，术语/渠道不重复，并且此例中不使用utm_term。
 
-如有任何问题，请联系您的客户成功经理或 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}。
+如有任何问题，请联系您的客户成功经理或 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

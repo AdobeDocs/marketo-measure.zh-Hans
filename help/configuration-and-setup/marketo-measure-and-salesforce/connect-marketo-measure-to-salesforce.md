@@ -1,6 +1,6 @@
 ---
 unique-page-id: 18874580
-description: 将Marketo测量与Salesforce连接 —  [!DNL Marketo Measure]  — 产品文档
+description: 将Marketo Measure连接到Salesforce - [!DNL Marketo Measure]  — 产品文档
 title: 将Marketo Measure连接到Salesforce
 exl-id: 9be8d3fa-1045-4e41-bc2e-5b9d4d3513ae
 source-git-commit: 993a326c377b3b6ff48c4e0114b59297f9ca2ca6

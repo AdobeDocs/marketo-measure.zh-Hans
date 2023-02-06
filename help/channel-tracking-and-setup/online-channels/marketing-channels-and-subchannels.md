@@ -6,7 +6,7 @@ exl-id: fbe2a994-cf6d-439c-af96-a562216434cc
 source-git-commit: 02f686645e942089df92800d8d14c76215ae558f
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 * 双击
 * 卡普特拉
 * 滴漏营销活动
-* linkedIn Ads
+* LinkedIn 广告
 
 **内容（白皮书、页面URL、博客文章）**
 

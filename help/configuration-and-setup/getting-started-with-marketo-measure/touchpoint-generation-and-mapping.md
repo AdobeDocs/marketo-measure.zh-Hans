@@ -43,7 +43,7 @@ ht-degree: 0%
 >
 >* [将在线接触点映射到 [!DNL Marketo Measure] 渠道/子渠道](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md)
 >* [在SFDC内同步CRM促销活动](/help/channel-tracking-and-setup/offline-channels/syncing-offline-campaigns.md)
->* [从内同步CRM营销活动 [!DNL Marketo Measure]](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)
+>* [从内同步CRM促销活动 [!DNL Marketo Measure]](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)
 >* [将CRM促销活动映射到 [!DNL Marketo Measure] 渠道/子渠道](/help/channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
 >* [从销售活动创建接触点](/help/advanced-marketo-measure-features/activities-attribution/salesforce-activities-attribution.md)
 >* [活动常见问题解答和将活动接触点映射到渠道/子渠道](/help/advanced-marketo-measure-features/activities-attribution/activities-attribution-faq.md)

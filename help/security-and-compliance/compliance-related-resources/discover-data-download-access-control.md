@@ -1,5 +1,5 @@
 ---
-description: '"[!UICONTROL Discover Data Download] 访问控制 — Marketo测量 — 产品文档”'
+description: '"[!UICONTROL Discover Data Download] 访问控制 — Marketo Measure — 产品文档”'
 title: '"[!UICONTROL Discover Data Download] 访问控制”'
 exl-id: fa9f2245-4bb0-4b58-849c-1941c108e1c1
 source-git-commit: 3d2d250933d16e3e8ab14f4863a76559b4349dbf

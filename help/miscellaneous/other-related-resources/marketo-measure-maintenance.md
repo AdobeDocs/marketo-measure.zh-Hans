@@ -5,7 +5,7 @@ title: '"[!DNL Marketo Measure] 维护”'
 exl-id: 4e1d53bb-0af8-4774-9f69-6a95516b3d11
 source-git-commit: 09ffdbb0b1baeed870a3145268997e63a3707c97
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ ht-degree: 0%
 
 **更新要跟踪的域列表（1x/月）**
 
-Marketo测量会跟踪Javascript处于活动状态的所有页面和子域，但仅适用于我们了解的域。 如果您最近首次公开一个新域、在国际范围内展开或更改了您的主域，请联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}以确保我们相应地更新您的帐户。
+Marketo Measure会跟踪Javascript处于活动状态的所有页面和子域，但仅适用于我们了解的域。 如果您最近首次公开一个新域、在国际范围内展开或更改了您的主域，请联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 以确保我们相应地更新您的帐户。
 
 **查看自定义渠道映射的准确性（1x/月）**
 
-在入门过程中，您可以为在线和离线营销工作设置自定义渠道映射。 随着您的营销策略和Marketo Measure的使用方式的不断发展，您将希望关注该映射逻辑，以确保对您的所有接触点进行适当分类。
+在入门过程中，您可以为在线和离线营销工作设置自定义渠道映射。 随着您的营销策略和Marketo Measure用法的不断发展，您将希望关注该映射逻辑，以确保对您的所有接触点进行适当分类。
 
 记住， [!DNL Marketo Measure] 在编辑映射逻辑时会重新处理数据，因此您将无法每7天更改一次这些规则。
 

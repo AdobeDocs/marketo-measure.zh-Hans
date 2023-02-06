@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874586
-description: Marketo测量字段 — Marketo测量 — 产品文档词汇表
-title: Marketo测量字段词汇表
+description: Marketo Measure字段术语表 — Marketo Measure — 产品文档
+title: Marketo Measure字段术语表
 exl-id: 8e23b102-6d4f-4919-b361-04d1b184e710
 source-git-commit: 334dcd3dcbddacc4920d182d94908babd3cb8c89
 workflow-type: tm+mt
@@ -10,11 +10,11 @@ ht-degree: 0%
 
 ---
 
-# Marketo测量字段词汇表 {#glossary-of-marketo-measure-fields}
+# Marketo Measure字段术语表 {#glossary-of-marketo-measure-fields}
 
-本文提供了从Marketo测量基础包添加到Salesforce的所有Marketo测量字段的术语表。 您还将找到有关可在其中找到字段的对象的信息，以及如何使用信息填充每个字段。
+本文提供了从Marketo Measure基础包添加到Salesforce的所有Marketo Measure字段的术语表。 您还将找到有关可在其中找到字段的对象的信息，以及如何使用信息填充每个字段。
 
-对于每个Marketo测量字段与哪个对象相关的映射，请 [单击此处](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md).
+对于每个Marketo Measure字段与哪个对象相关的映射，请 [单击此处](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md).
 
 [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · H · I · J · [K](#k) · [L](#l) · [M](#m) · N · [O](#o) · [P](#p) ·问· [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · W · X · Y · Z
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 `3)` 如果接触点来自Salesforce营销活动，则此处将显示Salesforce营销活动的名称。
 
-`4)` 这将使用为在您的Marketo测量帐户中构建的活动中生成的接触点定义的促销活动名称进行填充。
+`4)` 这将使用为您的Marketo Measure帐户中构建的活动生成的接触点定义的营销活动名称进行填充。
 
 如果上面没有任何内容，则此字段将为空。
 
@@ -126,9 +126,9 @@ ht-degree: 0%
 
 ## B {#b}
 
-**Marketo衡量机会金额** | Salesforce机会
+**Marketo Measure机会金额** | Salesforce机会
 
-如果您使用自定义Amount字段来报告Opportunity收入，则Marketo Measure无法读取这些自定义Amount字段。 Marketo Measure Opportunity Amount是一个隐藏字段，用于创建使Marketo Measure能够读取Opportunity上的自定义Amount字段的工作流。
+如果您使用自定义Amount字段来报告Opportunity收入，Marketo Measure将无法读取这些自定义Amount字段。 Marketo Measure Opportunity Amount是一个隐藏字段，用于创建使Marketo Measure能够读取Opportunity上的自定义Amount字段的工作流。
 
 **浏览器** |购买者接触点、购买者归因接触点
 
@@ -196,29 +196,29 @@ ht-degree: 0%
 
 ## D {#d}
 
-报告日期 | Marketo测量ABTest、Marketo测量事件
+报告日期 | Marketo Measure ABTest，Marketo Measure Event
 
-Marketo测量事件 — 用户在您的网站上执行特定操作并激活事件的日期
+Marketo Measure事件 — 用户在您的网站上执行特定操作并激活事件的日期
 
-Marketo测量ABTest — 用户在您的网站上参与A/B测试的日期
+Marketo Measure ABTest — 用户在您的网站上参与A/B测试的日期
 
 [单击此处返回到页面顶部](#top)
 
 ## E {#e}
 
-**事件名称** | Marketo测量事件
+**事件名称** | Marketo Measure事件
 
 此字段显示触发事件的操作的名称（即“页面查看”）。
 
-**事件值** | Marketo测量事件
+**事件值** | Marketo Measure事件
 
 事件的描述（即主页）
 
-**实验名称** | Marketo测量ABTest
+**实验名称** | Marketo Measure ABTest
 
 此字段显示实验的名称（即“试用”按钮）
 
-**实验ID** |Marketo测量AB测试
+**实验ID** |Marketo Measure AB测试
 
 每个实验的唯一识别代码
 
@@ -288,7 +288,7 @@ Marketo测量ABTest — 用户在您的网站上参与A/B测试的日期
 
 此字段显示在Web会话期间访问的第一个网页的整个URL（包括UTM参数）。
 
-**商机** |购买者接触点，Marketo测量人员
+**商机** |购买者接触点，Marketo Measure人员
 
 此字段显示接触点所属的潜在客户的名称。
 
@@ -298,7 +298,7 @@ Marketo测量ABTest — 用户在您的网站上参与A/B测试的日期
 
 **营销渠道** |购买者接触点、购买者归因接触点
 
-此字段显示接触点所属的营销活动或营销渠道的一般群组（即付费搜索、直接、社交等）。 触点根据在Marketo测量应用程序中设置渠道的方式进行分组。 有关营销渠道或如何设置渠道的更多信息，请参阅 [单击此处](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md).
+此字段显示接触点所属的营销活动或营销渠道的一般群组（即付费搜索、直接、社交等）。 接触点根据您的渠道在Marketo Measure应用程序中的设置方式进行分组。 有关营销渠道或如何设置渠道的更多信息，请参阅 [单击此处](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md).
 
 **营销渠道 — 路径** |购买者接触点、购买者归因接触点
 
@@ -316,7 +316,7 @@ Marketo测量ABTest — 用户在您的网站上参与A/B测试的日期
 
 `4)` 这将使用生成接触点的相关活动中的活动类型值进行填充。
 
-如果没有以上任何值，Marketo测量会自动设置中值。
+如果没有上述任何值，Marketo Measure会自动设置中值。
 
 [单击此处返回到页面顶部](#top)
 
@@ -392,7 +392,7 @@ S
 
 **区段** |购买者归因接触点
 
-此字段将显示接触点所属的区段。 这将取决于您在Marketo测量应用程序中配置分段规则的方式。
+此字段将显示接触点所属的区段。 这将取决于您在Marketo Measure应用程序中配置分段规则的方式。
 
 [单击此处返回到页面顶部](#top)
 
@@ -462,7 +462,7 @@ U
 
 与每个接触点关联的唯一ID
 
-**用户ID** | Marketo测量ABTest
+**用户ID** | Marketo Measure ABTest
 
 Optimizely针对每种用途的唯一标识代码
 
@@ -470,11 +470,11 @@ Optimizely针对每种用途的唯一标识代码
 
 ## V {#v}
 
-**变量** | Marketo测量ABTest
+**变量** | Marketo Measure ABTest
 
 A/B测试变体的名称
 
-**变量ID** | Marketo测量ABTest
+**变量ID** | Marketo Measure ABTest
 
 每个A/B测试变体的唯一标识代码。
 

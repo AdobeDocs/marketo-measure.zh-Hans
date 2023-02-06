@@ -4,7 +4,7 @@ title: '"[!DNL Marketo Measure] 报表模板 — Power BI”'
 exl-id: c296b8f9-4033-4723-9a71-63a458640d27
 source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
 workflow-type: tm+mt
-source-wordcount: '2569'
+source-wordcount: '2557'
 ht-degree: 0%
 
 ---
@@ -13,19 +13,19 @@ ht-degree: 0%
 
 ## 快速入门 {#getting-started}
 
-您可以访问Power BI报表模板 [此处](https://github.com/adobe/Marketo-Measure-BI-Templates){target=&quot;_blank&quot;}。
+您可以访问Power BI报表模板 [此处](https://github.com/adobe/Marketo-Measure-BI-Templates){target="_blank"}.
 
 打开Adobe [!DNL Marketo Measure] 报表模板Power BI文件。
 
 ![](assets/marketo-measure-report-template-power-bi-1.png)
 
-您可以在 [!DNL Marketo Measure] UI [!DNL Data Warehouse] 信息页面。 详细说明了如何找到此页面 [此处](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target=&quot;_blank&quot;}。
+您可以在 [!DNL Marketo Measure] UI [!DNL Data Warehouse] 信息页面。 详细说明了如何找到此页面 [此处](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}.
 
 QueryFilterStartDate和QueryFilterEndDate参数用于限制导入的数据量。 这些参数必须采用SQL格式，因为在发送到的查询中，这些参数将用于 [!DNL Snowflake]. 例如，如果要将数据限制为过去两年，则QueryFilterStartDate将为dateadd(year，-2,current_date())。 这些参数会与日期时间数据类型进行比较，因此建议对QueryFilterEndDate使用dateadd(day，1,current_date())将所有数据返回到当前时间。
 
 ## 数据连接 {#data-connection}
 
-打开文件时输入的参数用于构建从data warehouse导入表的本机查询。 您仍需要设置与 [!DNL Snowflake] 实例。 为此，您需要相同的服务器和仓库名称以及用户名和密码。 有关在何处查找用户名并重置密码（如果需要）的详细信息，请参见 [此处](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target=&quot;_blank&quot;}。
+打开文件时输入的参数用于构建从data warehouse导入表的本机查询。 您仍需要设置与 [!DNL Snowflake] 实例。 为此，您需要相同的服务器和仓库名称以及用户名和密码。 有关在何处查找用户名并重置密码（如果需要）的详细信息，请参见 [此处](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}.
 
 ## 数据导入 {#data-import}
 
@@ -105,7 +105,7 @@ QueryFilterStartDate和QueryFilterEndDate参数用于限制导入的数据量。
 
 ### 区分大小写的ID转换 {#case-sensitive-id-conversion}
 
-[!DNL Marketo Measure] 数据有几个表，其中主键(ID)值区分大小写，即接触点和营销活动。 驱动Power BI建模层的数据引擎不区分大小写，从而产生“重复”ID值。 为了保持这些键值区分大小写，我们实施了转换步骤，将不可见字符附加到小写字符，在数据引擎层中评估时保留ID的唯一性。 有关该问题的更多详细信息以及我们使用的方法的详细步骤 [此处] (https://blog.crossjoin.co.uk/2019 /10/06/power-bi-and-case-sensitivity/){target=&quot;_blank&quot;}。 这些区分大小写的ID值将标记为“连接ID”，并用作关系层中的连接键。 我们已从报表层隐藏了连接ID，从而保持原始ID值可见，以便在报表中使用，因为不可见的字符可能会干扰剪切/粘贴函数和过滤。
+[!DNL Marketo Measure] 数据有几个表，其中主键(ID)值区分大小写，即接触点和营销活动。 驱动Power BI建模层的数据引擎不区分大小写，从而产生“重复”ID值。 为了保持这些键值区分大小写，我们实施了转换步骤，将不可见字符附加到小写字符，在数据引擎层中评估时保留ID的唯一性。 有关该问题的更多详细信息以及我们使用的方法的详细步骤 [此处] (https://blog.crossjoin.co.uk/2019/10/06/power-bi-and-case-sensitivity/){target="_blank"}. 这些区分大小写的ID值将标记为“连接ID”，并用作关系层中的连接键。 我们已从报表层隐藏了连接ID，从而保持原始ID值可见，以便在报表中使用，因为不可见的字符可能会干扰剪切/粘贴函数和过滤。
 
 ![](assets/marketo-measure-report-template-power-bi-8.png)
 
@@ -125,7 +125,7 @@ QueryFilterStartDate和QueryFilterEndDate参数用于限制导入的数据量。
 
 对于其全尺寸版本，请单击下图。
 
-[![](assets/marketo-measure-report-template-power-bi-12.png)](/help/bi-report-templates/assets/power-bi-data-model.png){target=&quot;_blank&quot;}
+[![](assets/marketo-measure-report-template-power-bi-12.png)](/help/bi-report-templates/assets/power-bi-data-model.png){target="_blank"}
 
 ### 关系和数据流 {#relationships-and-data-flow}
 
@@ -178,7 +178,7 @@ QueryFilterStartDate和QueryFilterEndDate参数用于限制导入的数据量。
 
 ![](assets/marketo-measure-report-template-power-bi-16.png)
 
-查看直接来自的列的定义 [!DNL Snowflake]，请参阅 [data warehouse文档](/help/marketo-measure-data-warehouse/data-warehouse-schema.md){target=&quot;_blank&quot;}
+查看直接来自的列的定义 [!DNL Snowflake]，请参阅 [data warehouse文档](/help/marketo-measure-data-warehouse/data-warehouse-schema.md){target="_blank"}
 
 ## 模板与Discover之间的差异 {#discrepancies-between-templates-and-discover}
 

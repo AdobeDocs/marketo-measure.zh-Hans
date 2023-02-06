@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874791
 description: 授予 [!DNL Salesforce] 访问 [!DNL Marketo Measure] 支持 —  [!DNL Marketo Measure]  — 产品文档
-title: 授予 [!DNL Salesforce] 访问Marketo测量支持
+title: 授予 [!DNL Salesforce] 访问Marketo Measure支持
 exl-id: 97383cca-3c3b-42d3-83bc-5886d8005ac3
 source-git-commit: 09ffdbb0b1baeed870a3145268997e63a3707c97
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 2%
 
 ---
 
-# 授予 [!DNL Salesforce] 访问Marketo测量支持 {#granting-salesforce-access-to-marketo-measure-support}
+# 授予 [!DNL Salesforce] 访问Marketo Measure支持 {#granting-salesforce-access-to-marketo-measure-support}
 
 在某些情况下， [!DNL Marketo Measure] 支持人员可能会请求访问 [!DNL Salesforce] 帮助在实施过程中进行诊断疑难解答或Salesforce配置的环境。
 

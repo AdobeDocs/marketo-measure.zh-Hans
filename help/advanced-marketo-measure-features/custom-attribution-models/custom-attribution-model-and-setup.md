@@ -5,7 +5,7 @@ title: 自定义归因模型和设置
 exl-id: 7b156db2-9ac6-4d32-ac67-06c0aa15d651
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
    要开始构建自定义归因模型，您需要选择哪些阶段对您的营销团队而言非常重要。 除 [!DNL Marketo Measure] 里程碑阶段（FT、LC、OC、已关闭）您可以在自定义模型中添加最多六个其他潜在客户/联系人状态或商机阶段。 例如，MQL阶段通常包含在自定义模型中。 营销团队通常希望了解哪些工作或渠道正在推动过渡到MQL阶段。
 
-   登录到 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}。 转到 [!UICONTROL My Account] > [!UICONTROL Settings] >，然后在CRM部分下，选择 **[!UICONTROL Stage Mapping]**.
+   登录到 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}. 转到 [!UICONTROL My Account] > [!UICONTROL Settings] >，然后在CRM部分下，选择 **[!UICONTROL Stage Mapping]**.
 
    在此，您需要通过选择 **[!UICONTROL Include in Model]** 框中。
 

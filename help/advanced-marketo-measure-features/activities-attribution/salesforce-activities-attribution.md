@@ -5,14 +5,14 @@ title: Salesforce活动归因
 exl-id: 1dc6f15b-2a45-4ed3-9fa3-5267366d1f45
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
 
 # Salesforce活动归因 {#salesforce-activities-attribution}
 
-的 [!DNL Marketo Measure] Salesforce活动集成会将特定的任务和事件记录纳入您的归因模型中。 开始跟踪未收到到期信用的销售电子邮件或销售电话等内容。 要配置活动规则，您需要转到 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}。 从那里，转到 **[!UICONTROL Settings]** ，然后单击 **[!UICONTROL Activities]** 选项卡。
+的 [!DNL Marketo Measure] Salesforce活动集成会将特定的任务和事件记录纳入您的归因模型中。 开始跟踪未收到到期信用的销售电子邮件或销售电话等内容。 要配置活动规则，您需要转到 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}. 从那里，转到 **[!UICONTROL Settings]** ，然后单击 **[!UICONTROL Activities]** 选项卡。
 
 你要让你的销售团队非常开心！ 让我们带您完成快速教程。
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ![](assets/5.png)
 
-您可能希望将这些新触点放入其适当的 [营销渠道](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome?tab=Channels.Online%20Channels){target=&quot;_blank&quot;}。 为此，您可以使用刚刚创建的新营销活动映射来定义渠道。 或许您将为BDR渠道创建一个新行，营销活动以“出站”开头。
+您可能希望将这些新触点放入其适当的 [营销渠道](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome?tab=Channels.Online%20Channels){target="_blank"}. 为此，您可以使用刚刚创建的新营销活动映射来定义渠道。 或许您将为BDR渠道创建一个新行，营销活动以“出站”开头。
 
 >[!TIP]
 >
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 ![](assets/6.png)
 
-最后，您可以选择为新渠道输入成本。 我们的 [营销支出上传](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome?tab=Reporting.Marketing%20Spend){target=&quot;_blank&quot;}允许您在渠道级别、子渠道级别或营销活动级别输入支出。 使用您的新 [!DNL Marketo Measure] 促销活动，您可以按月添加这些相关成本，然后查看每个促销活动的ROI!
+最后，您可以选择为新渠道输入成本。 我们的 [营销支出上传](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome?tab=Reporting.Marketing%20Spend){target="_blank"} 允许您在渠道级别、子渠道级别或营销活动级别输入支出。 使用您的新 [!DNL Marketo Measure] 促销活动，您可以按月添加这些相关成本，然后查看每个促销活动的ROI!
 
 ![](assets/7.png)
 

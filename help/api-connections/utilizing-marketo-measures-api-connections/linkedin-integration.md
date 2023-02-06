@@ -18,7 +18,7 @@ ht-degree: 0%
 
 赞助内容：赞助内容集成允许 [!DNL Marketo Measure] 标记 [!DNL LinkedIn] 广告，最终允许 [!DNL Marketo Measure] 跟踪用户完成其整个接触点历程，并将活动映射回特定 [!DNL LinkedIn] Campaign和Creative。 这为客户提供了有关其ROI的洞察 [!DNL LinkedIn] 活动。
 
-首席代Forms:通过与LinkedIn的首席Forms相集成，Marketo Measure可以深入了解通过LinkedIn平台提交的表单。 这些表单填充与CRM或 [!DNL Marketo Engage] 实例，以便他们符合归因条件。 通过深入分析有助于生成表单的促销活动、创意和表单，团队现在可以进一步优化其LinkedIn营销和广告支出。
+首席代Forms:通过与LinkedIn的首席代Forms的集成，Marketo Measure深入了解了通过LinkedIn平台提交的表单。 这些表单填充与CRM或 [!DNL Marketo Engage] 实例，以便他们符合归因条件。 通过深入分析有助于生成表单的促销活动、创意和表单，团队现在可以进一步优化其LinkedIn营销和广告支出。
 
 ## 可用性 {#availability}
 

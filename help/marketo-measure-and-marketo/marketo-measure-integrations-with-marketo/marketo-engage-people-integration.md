@@ -100,7 +100,7 @@ When [!DNL Marketo Measure] 成功将Marketo人员映射至网络会话，我们
  </tbody> 
 </table>
 
-*存在一个已知的行为问题，即Marketo公司实体中的字段不会影响人员的updatedAt值，因此如果更新了网站或公司等相关字段， [!DNL Marketo Measure] 将不知道这些值是否已修改，因为updatedAt日期/时间值未更新。 这会影响ABM功能，在ABM功能中，我们没有新的数据来解决Account的牵头问题。 目前没有解决方法，但有计划在将来解决这一问题。
+*存在一个已知的行为问题，即Marketo公司实体中的字段不会影响人员的updatedAt值，因此如果更新了网站或公司等相关字段， [!DNL Marketo Measure] 将不知道这些值是否已修改，因为updatedAt日期/时间值未更新。 这会影响ABM功能，在ABM功能中，我们没有新的数据来解决Account的牵头问题。 目前没有解决方法，但有计划在将来解决这个问题。
 
 ## 常见问题解答 {#faq}
 

@@ -5,7 +5,7 @@ title: 促销活动同步日期
 exl-id: 66ce9948-9297-47ef-8b16-0ac45c5664fc
 source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 如果你是新来的 [!DNL Marketo Measure] 客户，您可能有兴趣通过SFDC促销活动获取您跟踪的一些营销数据。 但是，如果要为在线SFDC促销活动启用接触点，则可能会遇到重复计数归因的问题，因为 [!DNL Marketo Measure] 自动为您的在线营销工作创建接触点。 为避免重复计数数据，您可以使用促销活动接触点结束日期来设置由 [!DNL Marketo Measure] 在SFDC营销活动上。 例如，如果您想要为您在SFDC中跟踪的社交促销活动添加追溯转化，但您了解已将 [!DNL Marketo Measure] JavaScript（正在创建在线接触点），然后您可以编辑Social SFDC促销活动以包含等于7月1日的接触点结束日期，并为该促销活动启用购买者接触点。
 
-接触点结束日期可能还有许多其他用例。 如果你需要帮助找出具体情况，请毫不犹豫地联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}。
+接触点结束日期可能还有许多其他用例。 如果你需要帮助找出具体情况，请毫不犹豫地联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 >[!MORELIKETHIS]
 >

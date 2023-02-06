@@ -5,7 +5,7 @@ title: 定义 [!DNL Marketo Measure] Web会话
 exl-id: ddf4f19d-2024-413a-b0ae-4efd468c24de
 source-git-commit: ae5b77744d523606ce6cfcf48d7e8d5049d5ccb7
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -65,4 +65,4 @@ _但是_&#x200B;如果海莉的第一次网络会话源自Web Direct，那么她
 
 ## Google Analytics会话 {#google-analytics-sessions}
 
-在如何 [!DNL Marketo Measure] 和Google Analytics定义会话。 有关Google Analytics如何定义会话的更多信息，请访问： [https://support.google.com/analytics/answer/2731565?hl=en](http://support.google.com/analytics/answer/2731565?hl=en){target=&quot;_blank&quot;}
+在如何 [!DNL Marketo Measure] 和Google Analytics定义会话。 有关Google Analytics如何定义会话的更多信息，请访问： [https://support.google.com/analytics/answer/2731565?hl=en](http://support.google.com/analytics/answer/2731565?hl=en){target="_blank"}

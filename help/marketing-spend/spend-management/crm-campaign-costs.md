@@ -5,7 +5,7 @@ title: CRM促销活动成本
 exl-id: d967cabe-b9f1-4ea1-a81b-e4484c703ecf
 source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 **我填写了开始日期、结束日期和成本，但为什么我的成本仍未显示在 [!DNL Marketo Measure]?**
 
-请检查您是否已将“启用买方接触点”值设置为“包括所有促销活动成员”或至少设置为“包括‘已响应’促销活动成员”，或者您是否已创建包含此促销活动的自定义促销活动同步规则。 如果您确认了此信息，但仍未看到营销活动，请联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}，以便我们可以检查您的营销活动是否正确导入。
+请检查您是否已将“启用买方接触点”值设置为“包括所有促销活动成员”或至少设置为“包括‘已响应’促销活动成员”，或者您是否已创建包含此促销活动的自定义促销活动同步规则。 如果您确认了此信息，但仍未看到营销活动，请联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 以便我们检查您的营销活动是否正确导入。
 
 **我需要改变我的营销活动的分布，以便我在某些月份能更重地加重它。 我该怎么做？**
 
@@ -98,4 +98,4 @@ ht-degree: 0%
 
 **您建议我们如何从我们在CRM中设置的数字促销活动中收取成本？**
 
-因为我们 [!DNL Marketo Measure] javascript已在跟踪您网站上的web活动，我们建议不要同步任何跟踪网站表单或其他网站活动中促销活动成员的促销活动，因为它将重复计数接触次数。 因此，如果我们尚未与该平台(例如Twitter、Adroll)集成，您可能希望继续使用营销支出中的CSV上传选项来跟踪这些在线/数字成本。
+因为我们 [!DNL Marketo Measure] javascript已在跟踪您网站上的web活动，我们建议不要同步任何跟踪来自web表单或其他网站活动的促销活动成员的促销活动，因为它将重复计数接触次数。 因此，如果我们尚未与该平台(例如Twitter、Adroll)集成，您可能希望继续使用营销支出中的CSV上传选项来跟踪这些在线/数字成本。

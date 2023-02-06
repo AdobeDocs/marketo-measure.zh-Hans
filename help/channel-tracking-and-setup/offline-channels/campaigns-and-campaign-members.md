@@ -5,7 +5,7 @@ title: 营销活动和营销活动成员
 exl-id: e4e2b154-39ac-4295-a541-7fa6112672e3
 source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1155'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 如果需要更新大量促销活动成员记录，则可以使用 [!UICONTROL Bulk Update Touchpoint Date] 按钮进行批量编辑。
 
-如果此界面未涵盖的独特用例，则还可以使用 [数据加载器](https://dataloader.io/){target=&quot;_blank&quot;}以导出记录、进行更改并将记录上载回。
+如果此界面未涵盖的独特用例，则还可以使用 [数据加载器](https://dataloader.io/){target="_blank"} 要导出记录，请进行更改，然后将记录重新上载。
 
 首先，搜索记录并筛选您要为其设置买方接触点日期的记录。
 
@@ -117,7 +117,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->请记住，此触发器不会跟踪过去删除的任何营销活动成员，因此它只会继续工作。 如果您需要删除大量过去的营销活动成员触点，请联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}。
+>请记住，此触发器不会跟踪过去删除的任何营销活动成员，因此它只会继续工作。 如果您需要删除大量过去的营销活动成员触点，请联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 >[!MORELIKETHIS]
 >

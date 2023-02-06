@@ -4,7 +4,7 @@ title: 的最佳实践 [!DNL Marketo Measure] CRM包
 exl-id: 97ce0ff3-8aa5-4789-9ee0-25d68c001def
 source-git-commit: 00268f49ff6e5dfc105fa7ea21837375eae49647
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->当您禁用将数据导出到Salesforce的Marketo测量时，它不会删除任何现有数据。 要删除它，请按照 [此Salesforce帮助文章](https://help.salesforce.com/s/articleView?id=sf.c360_a_delete_data_stream_records.htm&amp;type=5){target=&quot;_blank&quot;}。
+>当您禁用Marketo Measure将数据导出到Salesforce时，它不会删除任何现有数据。 要删除它，请按照 [此Salesforce帮助文章](https://help.salesforce.com/s/articleView?id=sf.c360_a_delete_data_stream_records.htm&amp;type=5){target="_blank"}.
 
 >[!MORELIKETHIS]
 >

@@ -1,6 +1,6 @@
 ---
 unique-page-id: 35586069
-description: 确保Marketo Measure Js - Marketo Measure — 产品文档中的同意GDPR
+description: 确保在Marketo Measure Js - Marketo Measure — 产品文档中同意GDPR
 title: 确保在Marketo Measure Js中同意GDPR
 exl-id: 9afc5e4d-cf97-4c49-b9ee-ee1cc99c1f90
 source-git-commit: c7d3bbce1f0c6a99409822c06c43961c93cd9458

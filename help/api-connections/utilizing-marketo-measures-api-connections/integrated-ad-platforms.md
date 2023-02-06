@@ -5,7 +5,7 @@ title: 集成广告平台
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1696'
 ht-degree: 0%
 
 ---
@@ -37,13 +37,13 @@ ht-degree: 0%
 [!DNL Marketo Measure] 在 [!DNL AdWords] 帐户：
 
 * *选项A*:找到跟踪模板。 [!DNL Marketo Measure] 将其参数添加到模板。
-* *选项B*:找到第三方重定向。 如果在跟踪模板中找到第三方重定向， [!DNL Marketo Measure] 无法执行任何操作。 您需要手动添加 [!DNL Marketo Measure] 标记。 第三方重定向的一个示例是诸如Kenshoo或Marin之类的竞价管理工具。 详细了解如何 [竞价管理工具影响 [!DNL Marketo Measure]](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target=&quot;_blank&quot;}。
+* *选项B*:找到第三方重定向。 如果在跟踪模板中找到第三方重定向， [!DNL Marketo Measure] 无法执行任何操作。 您需要手动添加 [!DNL Marketo Measure] 标记。 第三方重定向的一个示例是诸如Kenshoo或Marin之类的竞价管理工具。 详细了解如何 [竞价管理工具影响 [!DNL Marketo Measure]](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}.
 
 * *选项C*:未找到跟踪模板。 [!DNL Marketo Measure] 将扫描您的所有广告目标URL，以 [!DNL Marketo Measure] 参数。 根据扫描，如果：
    * 找到参数：设置完成！
    * 未找到参数： [!DNL Marketo Measure] 会将其参数附加到广告目标URL的末尾。 [!DNL Marketo Measure] 在创建新广告后的两小时内附加新广告。 请记住，参数将不会添加到模板中。
 
-进一步了解我们的 [[!DNL AdWords] 自动标记功能](/help/api-connections/utilizing-marketo-measures-api-connections/understanding-marketo-measure-adwords-tagging.md){target=&quot;_blank&quot;}。
+进一步了解我们的 [[!DNL AdWords] 自动标记功能](/help/api-connections/utilizing-marketo-measures-api-connections/understanding-marketo-measure-adwords-tagging.md){target="_blank"}.
 
 ## 如何启用 [!DNL Marketo Measure] Adwords自动标记 {#how-to-enable-marketo-measure-auto-tagging-for-adwords}
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 在您设置了跟踪模板后，请按照以下说明启用 [!DNL Marketo Measure] 自动标记。 注意： [!DNL Marketo Measure] 还将自动标记您帐户中任何暂停的广告。
 
-1. 登录到 [!DNL Marketo Measure] 帐户 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}。
+1. 登录到 [!DNL Marketo Measure] 帐户 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}.
 
 1. 转到 [!UICONTROL My Account] > [!UICONTROL Settings] > [!UICONTROL Integrations] > [!UICONTROL Connections].
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ## 如何在AdWords中设置跟踪模板 [!DNL Marketo Measure] 参数 {#how-to-set-up-a-tracking-template-in-adwords-with-marketo-measure-parameters}
 
-请记住，您应在 [!UICONTROL Account], [!UICONTROL Campaign] 或AdWords中的广告组级别。 如果您向关键词、网站链接或广告级别添加跟踪模板，则您的广告将需要经过审核和批准过程，并且您有可能重新启动广告的性能历史记录。 详细了解 [创建跟踪模板](https://support.google.com/adwords/answer/6076199?hl=en#tracking){target=&quot;_blank&quot;}。
+请记住，您应在 [!UICONTROL Account], [!UICONTROL Campaign] 或AdWords中的广告组级别。 如果您向关键词、网站链接或广告级别添加跟踪模板，则您的广告将需要经过审核和批准过程，并且您有可能重新启动广告的性能历史记录。 详细了解 [创建跟踪模板](https://support.google.com/adwords/answer/6076199?hl=en#tracking){target="_blank"}.
 
 1. 登录到 [!DNL Google AdWords] 帐户。
 1. 转到 [!UICONTROL Campaigns] 从左侧导航栏中查看
@@ -96,21 +96,21 @@ ht-degree: 0%
 
 **[!DNL Google URL]Builder**
 
-Google URL生成器是用于使用UTM标记构建格式正确的URL的标准工具。 只需输入每个参数的URL和所需值，然后单击“[!UICONTROL Generate URL]&quot; 如果要标记的URL只有几个，则使用此工具非常理想。 访问该工具 [此处](https://support.google.com/analytics/answer/1033867?hl=en){target=&quot;_blank&quot;}。
+Google URL生成器是用于使用UTM标记构建格式正确的URL的标准工具。 只需输入每个参数的URL和所需值，然后单击“[!UICONTROL Generate URL]&quot; 如果要标记的URL只有几个，则使用此工具非常理想。 访问该工具 [此处](https://support.google.com/analytics/answer/1033867?hl=en){target="_blank"}.
 
 **Google由EpikOne生成电子表格**
 
-此电子表格具有一个公式，该公式将自动生成标记的目标URL。 如果需要标记大量链接，此工具非常有用。 访问电子表格 [此处](https://spreadsheets.google.com/ccc?key=p7c_HKcmspSUfEYSO0gskKw&amp;hl=en){target=&quot;_blank&quot;}。
+此电子表格具有一个公式，该公式将自动生成标记的目标URL。 如果需要标记大量链接，此工具非常有用。 访问电子表格 [此处](https://spreadsheets.google.com/ccc?key=p7c_HKcmspSUfEYSO0gskKw&amp;hl=en){target="_blank"}.
 
 **Rafflecopter链接标记工具**
 
 由Rafflecopter创建的电子表格是 [!DNL EpikOne's] 电子表格。 它还包含一个公式，该公式将自动生成标记的目标链接以供您使用。
 
-每个工具都提供了有关如何使用和修改以满足您需求的详细说明。 工具可用 [此处](https://docs.google.com/spreadsheets/d/1QCIr1WUJQHE68cA4VTks2XE7nxuryaUymCEy_23-Oew/edit#gid=0){target=&quot;_blank&quot;}。
+每个工具都提供了有关如何使用和修改以满足您需求的详细说明。 工具可用 [此处](https://docs.google.com/spreadsheets/d/1QCIr1WUJQHE68cA4VTks2XE7nxuryaUymCEy_23-Oew/edit#gid=0){target="_blank"}.
 
 **令人惊叹的UTM生成器**
 
-此工具是Chrome扩展，允许您快速生成UTM标记。 找到它 [此处](https://chrome.google.com/webstore/detail/effin-amazing-utm-builder/eoaapiimcaimddnfhfnifgkinmpcbccp?hl=en){target=&quot;_blank&quot;}。
+此工具是Chrome扩展，允许您快速生成UTM标记。 找到它 [此处](https://chrome.google.com/webstore/detail/effin-amazing-utm-builder/eoaapiimcaimddnfhfnifgkinmpcbccp?hl=en){target="_blank"}.
 
 ## Bing Ads {#bing-ads}
 
@@ -136,17 +136,17 @@ Bing Ads的自动标记还会添加以下自定义参数：
 
 应通过 [!DNL Marketo Measure] 这样， [!DNL Marketo Measure] 可以自动附加参数。 使用Bing Ads不会丢失过去的广告效果历史记录。
 
-访问 [[!DNL Bing Ads]](https://advertise.bingads.microsoft.com/en-us/blog/post/august-2016/upgraded-urls-now-available-in-bing-ads-an-easier-way-to-manage-your-tracking-urls){target=&quot;_blank&quot;}网站，以了解有关在其平台上添加标记的更多信息。
+访问 [[!DNL Bing Ads]](https://advertise.bingads.microsoft.com/en-us/blog/post/august-2016/upgraded-urls-now-available-in-bing-ads-an-easier-way-to-manage-your-tracking-urls){target="_blank"} 网站以了解有关在其平台上添加标记的更多信息。
 
 ## Facebook Ads {#facebook-ads}
 
-的 [!DNL Marketo Measure] 集成 [!DNL Facebook] 允许它自动下载广告信息并使用其参数标记URL。 [!DNL Marketo Measure] 将通过我们的自动标记来提取营销活动和广告集信息。 广告集将填充我们的广告组名称字段。 有关在 [!DNL Facebook] 平台，访问 [!DNL Facebook] [业务](https://www.facebook.com/business/help/1016122818401732/?ref=u2u){target=&quot;_blank&quot;}页。
+的 [!DNL Marketo Measure] 集成 [!DNL Facebook] 允许它自动下载广告信息并使用其参数标记URL。 [!DNL Marketo Measure] 将通过我们的自动标记来提取营销活动和广告集信息。 广告集将填充我们的广告组名称字段。 有关在 [!DNL Facebook] 平台，访问 [!DNL Facebook] [业务](https://www.facebook.com/business/help/1016122818401732/?ref=u2u){target="_blank"} 页面。
 
 在启用自动标记之前 [!DNL Facebook Ads]，则务必要将以前的性能历史记录导出为CSV。 此时，当 [!DNL Marketo Measure] 标记 [!DNL Facebook Ads] 带有_bf参数， [!DNL Facebook] 将广告读作全新广告，并擦除性能历史记录。 因此，如果之前的性能记录对您和您的组织具有一定价值，则务必导出该记录。
 
 请注意，您可以将 [!DNL Facebook] 帐户 [!DNL Marketo Measure] 应用程序，并且不会丢失任何数据 — 只有在启用自动标记后，性能历史记录才会被擦除。
 
-[请参阅本文](https://www.facebook.com/business/help/393890194130036)从Facebook中{target=&quot;_blank&quot;}以获取有关导出的详细信息 [!DNL Facebook] 广告报表。
+[请参阅本文](https://www.facebook.com/business/help/393890194130036){target="_blank"} 从Facebook ，以了解有关导出的更多信息 [!DNL Facebook] 广告报表。
 
 ## linkedIn赞助内容 {#linkedin-sponsored-content}
 

@@ -5,7 +5,7 @@ title: 添加 [!DNL Marketo Measure] 到Marketo登陆页面
 exl-id: 3771d4d2-8723-452a-b23d-cea3b11ab9ee
 source-git-commit: 82cc8269bfdb26b6acf039d0ce0e06564f5e2612
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -41,4 +41,4 @@ ht-degree: 0%
 
 * 您可能正在使用多个登陆页面模板，请务必将代码添加到其上具有表单的所有模板。
 
-* 有时，在编辑登陆页面的模板时，您需要重新批准登陆页面所使用的页面。 本文说明 [如何批准批量](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target=&quot;_blank&quot;}。
+* 有时，在编辑登陆页面的模板时，您需要重新批准登陆页面所使用的页面。 本文说明 [如何批准批量](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target="_blank"}.

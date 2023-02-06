@@ -5,7 +5,7 @@ title: 接触点字段
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '1960'
+source-wordcount: '1942'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 提取
 
-提取运算符会从其他位置提取字段的值，例如：促销活动字段、潜在客户字段或更高级的用例中， [从登陆页面提取自定义参数](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target=&quot;_blank&quot;}。 然后，它将其放置到接触点字段(请参阅 [映射到示例](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target=&quot;_blank&quot;} #2)。
+提取运算符会从其他位置提取字段的值，例如：促销活动字段、潜在客户字段或更高级的用例中， [从登陆页面提取自定义参数](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}. It then places it onto a Touchpoint Field (See [Maps To Example](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"} #2)。
 
 **示例#1**
 
@@ -220,7 +220,7 @@ Segment__c和Grade__c的Opportunity对象上有不同的字段，用户希望将
 
 **如何验证我的提取表达式是否有效并提取正确的值？**
 
-有一个在线工具([https://regex101.com/](https://regex101.com/){target=&quot;_blank&quot;})，以运行并测试表达式。 如果表达式有效，则显示为绿色；如果表达式无效，则显示为红色。 此外，右上方的说明框也很有帮助，它会告诉您提取的内容。
+有一个在线工具([https://regex101.com/](https://regex101.com/){target="_blank"})来运行和测试表达式。 如果表达式有效，则显示为绿色；如果表达式无效，则显示为红色。 此外，右上方的说明框也很有帮助，它会告诉您提取的内容。
 
 ![](assets/twelve.png)
 

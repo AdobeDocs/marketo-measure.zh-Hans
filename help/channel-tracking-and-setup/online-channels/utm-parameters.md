@@ -5,7 +5,7 @@ title: UTM参数
 exl-id: 2b20f3c4-1f39-4ac5-bad1-cb1d630d60e9
 source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '946'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 标记URL是一种捕获有关数字营销工作数据的简单而有效的方法。 这是向收集和记录数据的URL的末尾添加参数的过程。 最常用的参数是Urchin跟踪模块(UTM)，该模块受Google支持。 有五个主要的UTM参数可用：媒介、来源、营销活动、内容和术语。 下一节将更详细地讨论这些内容。
 
-UTM参数可手动添加到URL中，或通过自动标记来附加到某些平台（例如AdWords）中。 自动标记可自动将参数附加到URL的过程。 此外， [URL生成器](https://ga-dev-tools.appspot.com/campaign-url-builder/){target=&quot;_blank&quot;}以手动加快标记URL的速度。 使用URL生成器，您只需指定每个参数所使用的值即可，生成器会为您设置URL格式。
+UTM参数可手动添加到URL中，或通过自动标记来附加到某些平台（例如AdWords）中。 自动标记可自动将参数附加到URL的过程。 此外， [URL生成器](https://ga-dev-tools.appspot.com/campaign-url-builder/){target="_blank"} 以加快手动标记URL的速度。 使用URL生成器，您只需指定每个参数所使用的值即可，生成器会为您设置URL格式。
 
 ## 什么是UTM参数？ {#what-are-utm-parameters}
 

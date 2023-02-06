@@ -5,18 +5,18 @@ title: A/B测试设置和报告
 exl-id: 9a3f0731-5909-4fbf-a35a-9608ff561061
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
 
 # A/B测试设置和报告 {#a-b-testing-set-up-and-reporting}
 
-的 [!DNL Marketo Measure] A/B测试集成允许您跟踪 [优化](https://optimizely.com/){target=&quot;_blank&quot;}和VWO站点实验。 本文指南提供了有关如何添加 [!DNL Marketo Measure] A/B测试部分， [!UICONTROL Contact]、案例和 [!UICONTROL Opportunity] 页面布局。 我们还将介绍有关运行的一般报告实践和建议 [!DNL Marketo Measure] A/B报表类型。
+的 [!DNL Marketo Measure] A/B测试集成允许您跟踪 [优化](https://optimizely.com/){target="_blank"} 和VWO现场实验。 本文指南提供了有关如何添加 [!DNL Marketo Measure] A/B测试部分， [!UICONTROL Contact]、案例和 [!UICONTROL Opportunity] 页面布局。 我们还将介绍有关运行的一般报告实践和建议 [!DNL Marketo Measure] A/B报表类型。
 
 ## 设置 {#set-up}
 
-添加 [!DNL Marketo Measure] A/B测试部分，介绍潜在客户、联系人、案例和机会。 [!DNL Marketo Measure] A/B测试集成允许您跟踪 [优化](https://optimizely.com/){target=&quot;_blank&quot;}和 [VWO](https://vwo.com/){target=&quot;_blank&quot;}站点实验。
+添加 [!DNL Marketo Measure] A/B测试部分，介绍潜在客户、联系人、案例和机会。 [!DNL Marketo Measure] A/B测试集成允许您跟踪 [优化](https://optimizely.com/){target="_blank"} and [VWO](https://vwo.com/){target="_blank"} 网站实验。
 
 1. 验证您使用的是包 [!DNL Marketo Measure] v3.9或更高版本。 您可以通过以下路径执行此操作： [!UICONTROL Salesforce] >[!UICONTROL Set Up] > [!UICONTROL Installed packages].
 1. 编辑潜在客户页面布局并添加 **[!DNL Marketo Measure]A/B测试** 与页面相关的列表。
@@ -31,7 +31,7 @@ ht-degree: 0%
 
    ![](assets/3.png)
 
-1. 联系您的 [!DNL Marketo Measure] rep或rep [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}以启用该功能。
+1. 联系您的 [!DNL Marketo Measure] rep或rep [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 以启用该功能。
 
 ## 报表 {#reporting}
 

@@ -5,7 +5,7 @@ title: 建议 [!DNL Salesforce] 的权限 [!DNL Marketo Measure] 连接的用户
 exl-id: b74aa28b-4a7b-42d1-8df0-d1ae0ff1f338
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
@@ -44,4 +44,4 @@ ht-degree: 0%
 
 字段级别安全性和字段可访问性是相关的，但有一些关键区别。 字段级别安全性为给定配置文件定义字段可见性，而字段辅助功能则根据字段级别安全性和页面布局配置确定字段是否可编辑。 使用 [!DNL Marketo Measure] 包的权限集，您将收到必需的字段对象安全设置。 在某些情况下，为了具有正确的字段可访问性，连接的用户将需要具有 [!DNL Marketo Measure] 字段。 [!DNL Marketo Measure] 布局上的字段允许 [!DNL Marketo Measure] 映射到的数据 [!DNL Salesforce]. 这取决于您的特定 [!DNL Salesforce] 环境。
 
-每个组织的 [!DNL Salesforce] 具有个人需求，但我们会向您提供平衡需求的要求 [!DNL Marketo Measure] 使用安全协议进行访问需求。 毫不犹豫地联系 [[!DNL Marketo Support]](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}。
+每个组织的 [!DNL Salesforce] 具有个人需求，但我们会向您提供平衡需求的要求 [!DNL Marketo Measure] 使用安全协议进行访问需求。 毫不犹豫地联系 [[!DNL Marketo Support]](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

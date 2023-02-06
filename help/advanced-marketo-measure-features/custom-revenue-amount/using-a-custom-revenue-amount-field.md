@@ -5,7 +5,7 @@ title: 使用自定义收入金额字段
 exl-id: 517ea4f9-aa83-48d0-8ce7-003f4a907430
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -53,4 +53,4 @@ ht-degree: 0%
 
    这可以通过在SFDC内通过Data Loader运行您的机会来实现。 有关在中使用数据加载器的详细信息 [本文](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md).
 
-如果在过程中遇到任何问题，请立即联系您的客户成功经理或 [[!DNL Marketo] 支持](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}。
+如果在过程中遇到任何问题，请立即联系您的客户成功经理或 [[!DNL Marketo] 支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

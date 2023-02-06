@@ -4,7 +4,7 @@ title: '"[!DNL Marketo Measure] 报表模板 — 表格”'
 exl-id: 18963be9-5c6e-4454-8244-b50460e2bed5
 source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
 workflow-type: tm+mt
-source-wordcount: '2305'
+source-wordcount: '2297'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## 快速入门 {#getting-started}
 
-您可以访问 [!DNL Tableau] 报告模板 [此处](https://github.com/adobe/Marketo-Measure-BI-Templates){target=&quot;_blank&quot;}。
+您可以访问 [!DNL Tableau] 报告模板 [此处](https://github.com/adobe/Marketo-Measure-BI-Templates){target="_blank"}.
 
 打开 [!DNL Adobe Marketo] 测量报表模板表格工作簿文件。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 数据连接 {#data-connection}
 
-您需要设置与Snowflake实例的数据连接。 为此，您需要服务器名称以及用户名和密码。 有关在何处查找此信息并在需要时重置密码的详细信息已记录 [此处](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target=&quot;_blank&quot;}。
+您需要设置与Snowflake实例的数据连接。 为此，您需要服务器名称以及用户名和密码。 有关在何处查找此信息并在需要时重置密码的详细信息已记录 [此处](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}.
 
 ![](assets/marketo-measure-report-template-tableau-2.png)
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 
 对于其全尺寸版本，请单击下图。
 
-[![](assets/marketo-measure-report-template-tableau-11.png)](/help/bi-report-templates/assets/tableau-data-model.png){target=&quot;_blank&quot;}
+[![](assets/marketo-measure-report-template-tableau-11.png)](/help/bi-report-templates/assets/tableau-data-model.png){target="_blank"}
 
 ### 关系和数据流 {#relationships-and-data-flow}
 
@@ -152,7 +152,7 @@ ht-degree: 0%
 
 ![](assets/marketo-measure-report-template-tableau-15.png)
 
-查看直接来自的列的定义 [!DNL Snowflake]，请参阅 [data warehouse文档](/help/marketo-measure-data-warehouse/data-warehouse-schema.md){target=&quot;_blank&quot;}。
+查看直接来自的列的定义 [!DNL Snowflake]，请参阅 [data warehouse文档](/help/marketo-measure-data-warehouse/data-warehouse-schema.md){target="_blank"}.
 
 ## 模板与Discover之间的差异 {#discrepancies-between-templates-and-discover}
 

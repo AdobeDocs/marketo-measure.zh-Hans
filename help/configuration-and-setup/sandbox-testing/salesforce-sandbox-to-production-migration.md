@@ -5,7 +5,7 @@ title: 从Salesforce沙盒迁移到生产
 exl-id: b2b71c4a-f192-43ce-a27e-cbd0ec3cf008
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 * 安装两个 [!DNL Marketo Measure] 包到生产中，其中“[!UICONTROL All Users]&quot;设置
 
-   * [基本包](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target=&quot;_blank&quot;}
-   * [功能板扩展包](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t610000001jI6){target=&quot;_blank&quot;}
+   * [基本包](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"}
+   * [功能板扩展包](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t610000001jI6){target="_blank"}
 
 * 有关 [!DNL Marketo Measure] 关系 [!DNL Salesforce]，请查看 [本文](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
 * 一点 [!DNL Salesforce] 配置是必要的。 具体操作项目在 [下面的步骤4](#salesforce-configuration)
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 [权限集](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
 
-[共享报告](https://help.salesforce.com/articleView?id=analytics_share_folder.htm&amp;type=0){target=&quot;_blank&quot;}
+[共享报告](https://help.salesforce.com/articleView?id=analytics_share_folder.htm&amp;type=0){target="_blank"}
 
 [隐藏不必要的报表类型](/help/configuration-and-setup/marketo-measure-and-salesforce/hiding-unnecessary-report-types.md)
 

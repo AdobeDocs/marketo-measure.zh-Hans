@@ -5,14 +5,14 @@ title: 设置Boomerang阶段
 exl-id: 00dd2826-27a3-462e-a70e-4cec90d07f92
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
 
 # 设置Boomerang阶段 {#setting-up-boomerang-stages}
 
-启用 [!UICONTROL Boomerang] 您帐户的阶段，您必须是帐户管理员。 或者，可以通过联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}。 启用该功能后，请按照以下说明进行设置。
+启用 [!UICONTROL Boomerang] 您帐户的阶段，您必须是帐户管理员。 或者，可以通过联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}. 启用该功能后，请按照以下说明进行设置。
 
 ## 波美朗阶段设置 {#boomerang-stage-setup}
 

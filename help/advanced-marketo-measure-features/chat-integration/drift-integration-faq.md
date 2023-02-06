@@ -5,14 +5,14 @@ title: Drift集成常见问题解答
 exl-id: ae5706b1-1f6c-4201-8585-0d7c587746e1
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
 # Drift集成常见问题解答 {#drift-integration-faq}
 
-作为 [!DNL Marketo Measure] 与Drift的整合，我们列出了一些最常见的问题。 如果存在下面未列出的任何问题，请联系您的客户成功经理或 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target=&quot;_blank&quot;}。
+作为 [!DNL Marketo Measure] 与Drift的整合，我们列出了一些最常见的问题。 如果存在下面未列出的任何问题，请联系您的客户成功经理或 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 **如何启用集成？**
 

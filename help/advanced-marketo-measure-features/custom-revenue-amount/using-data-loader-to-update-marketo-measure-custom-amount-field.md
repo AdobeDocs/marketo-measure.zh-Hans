@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874771
 description: 使用数据加载器更新 [!DNL Marketo Measure] 自定义金额字段 —  [!DNL Marketo Measure]  — 产品文档
-title: 使用数据加载器更新Marketo测量自定义金额字段
+title: 使用数据加载器更新Marketo Measure自定义金额字段
 exl-id: 55e91ac4-a835-48e0-a6ce-1d85b32aeac0
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt

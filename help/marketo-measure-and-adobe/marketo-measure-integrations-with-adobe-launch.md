@@ -4,7 +4,7 @@ title: '''[!DNL Marketo Measure] 与Launch的集成Adobe'
 exl-id: 316ee8a8-b2d3-42e9-9ee5-c9b1d91c2769
 source-git-commit: 19f670505358b04fb26620574b71c2af8d0d9847
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -21,12 +21,12 @@ AdobeLaunch扩展专为现有 [!DNL Marketo Measure] 已在其网站上利用Ado
 >
 >请访问以下链接，了解有关Launch及其扩展的更多Adobe:
 >
->* [[!DNL Marketo Measure] 扩展](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email/bizible.html?lang=en#catalog){target=&quot;_blank&quot;}
->* [Adobe启动概述](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/index.html?lang=en#prerequisites){target=&quot;_blank&quot;}
->* [AdobeLaunch扩展概述](https://experienceleague.adobe.com/docs/launch/using/extension-dev/overview.html?lang=en#extension-configuration){target=&quot;_blank&quot;}
+>* [[!DNL Marketo Measure] 扩展](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email/bizible.html?lang=en#catalog){target="_blank"}
+>* [Adobe启动概述](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/index.html?lang=en#prerequisites){target="_blank"}
+>* [AdobeLaunch扩展概述](https://experienceleague.adobe.com/docs/launch/using/extension-dev/overview.html?lang=en#extension-configuration){target="_blank"}
 
 
-1. 按照步骤创建属性 [在本文中](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=en#go-to-the-data-collection-interface){target=&quot;_blank&quot;}。
+1. 按照步骤创建属性 [在本文中](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=en#go-to-the-data-collection-interface){target="_blank"}.
 
 1. 单击之前创建的资产。
 

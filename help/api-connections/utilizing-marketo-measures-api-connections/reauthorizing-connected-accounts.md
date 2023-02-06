@@ -5,7 +5,7 @@ title: 重新授权连接的帐户
 exl-id: 7abd1d67-5bed-45bb-844f-0ffd23c3d7f8
 source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 重新授权断开的帐户 {#re-authorizing-disconnected-accounts}
 
-1. 转到 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;}并登录。
+1. 转到 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} 并登录。
 1. 选择 **[!UICONTROL Settings]** 下 [!UICONTROL My Account] 选项卡。
 1. 找到左侧的集成部分，然后单击 **[!UICONTROL Connections]**.
 1. 选择需要重新连接的帐户旁边的红键符号。

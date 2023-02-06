@@ -5,7 +5,7 @@ title: 添加 [!DNL Marketo Measure] 脚本
 exl-id: f8773037-04d7-4308-ba04-440e9b990d92
 source-git-commit: 82cc8269bfdb26b6acf039d0ce0e06564f5e2612
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->确保您 [在 [!DNL Adobe Admin Console]](/help/marketo-measure-and-adobe/domain-management.md)除部署外，还要部署{target=&quot;_blank&quot;} [!DNL Marketo Measure] JavaScript。
+>确保您 [在 [!DNL Adobe Admin Console]](/help/marketo-measure-and-adobe/domain-management.md){target="_blank"} 除了部署 [!DNL Marketo Measure] JavaScript。
 
 入门时 [!DNL Marketo Measure]，您可以通过两种方式添加 [!DNL Marketo Measure] JavaScript到您的网站：
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->了解如何确保您的脚本为 [符合GDPR](/help/security-and-compliance/compliance-related-resources/ensuring-consent-for-gdpr-in-marketo-measure-js.md){target=&quot;_blank&quot;}。
+>了解如何确保您的脚本为 [符合GDPR](/help/security-and-compliance/compliance-related-resources/ensuring-consent-for-gdpr-in-marketo-measure-js.md){target="_blank"}.
 
 ## Tag Management系统 {#tag-management-systems}
 
@@ -47,17 +47,17 @@ ht-degree: 0%
 
 [!DNL Marketo Measure] 建议任何页面查看都应触发标记。 此外，最好将 [!DNL Marketo Measure] 触发顺序中的最高优先级，并确保前面没有同步脚本 [!DNL Marketo Measure] 来确保最高的数据质量。
 
-更多信息可以 [此处](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-via-google-tag-manager.md){target=&quot;_blank&quot;}。
+更多信息可以 [此处](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-via-google-tag-manager.md){target="_blank"}.
 
 ## 其他注意事项 {#additional-considerations}
 
-[!DNL Marketo Measure] JavaScript基于域，因此只要JavaScript位于页面上且根域与用于创建Marketo测量帐户的域相同，它就能够自动处理任何子域。
+[!DNL Marketo Measure] JavaScript基于域，因此只要JavaScript位于页面上且根域与用于创建Marketo Measure帐户的域相同，它就能够自动处理任何子域。
 
 但是，如果您使用的是任何单独的域或国际域，请务必让 [!DNL Marketo Measure] 顾问知道。 需要在 [!DNL Marketo Measure] 结束 [!DNL Marketo Measure] 知道将其他域的数据关联到您的帐户。 因此，请将任何单独的/国际的域发送到您的 [!DNL Marketo Measure] 顾问。
 
 如果您使用任何第三方页面，请与 [!DNL Marketo Measure] 顾问。 通常，您会希望了解是否可以添加 [!DNL Marketo Measure] JavaScript来跟踪这些页面（如果适用）。 如果无法实现，将与您的 [!DNL Marketo Measure] 顾问。
 
-您是否有任何不应被跟踪的表单 [!DNL Marketo Measure] 因为它们不一定适合归因（例如，取消订阅表单、客户登录等）？ 如果是，则需要添加排除代码 [在本文中](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md){target=&quot;_blank&quot;}
+您是否有任何不应被跟踪的表单 [!DNL Marketo Measure] 因为它们不一定适合归因（例如，取消订阅表单、客户登录等）？ 如果是，则需要添加排除代码 [在本文中](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md){target="_blank"} 每个表单
 
 您有任何非安全页面吗？ 如果是，则在安全/非安全页面之间导航将中断跟踪会话时，您将需要保护它们。
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 **多表单提交**
 
 * 问题：如果您在提交单个表单时有多个链接的表单，则即使未提交完整表单，第一个表单也可能会生成一个接触点。
-* 解决方案：您需要强制其中一个表单向 [!DNL Marketo Measure] 基于缓存的数据并讨论放弃实践。 通常， [报告用户代码](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/ajax-form-handling.md){target=&quot;_blank&quot;}可解析此问题。
+* 解决方案：您需要强制其中一个表单向 [!DNL Marketo Measure] 基于缓存的数据并讨论放弃实践。 通常， [报告用户代码](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/ajax-form-handling.md){target="_blank"} 能解决这个问题。
 
 **帐户登录（而非创建）**
 
@@ -106,7 +106,7 @@ ht-degree: 0%
 **Forms组织 `<div>` 格式**
 
 * 问题： [!DNL Marketo Measure] JS很难识别 `<div>` 格式，以便需要自定义代码。
-* 解决方案：这些 [报告用户模板](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/ajax-form-handling.md)您的Web开发团队可以使用{target=&quot;_blank&quot;}来添加所需的代码。
+* 解决方案：这些 [报告用户模板](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/ajax-form-handling.md){target="_blank"} 可供您的web开发团队使用来添加所需的代码。
 
 **聊天**
 

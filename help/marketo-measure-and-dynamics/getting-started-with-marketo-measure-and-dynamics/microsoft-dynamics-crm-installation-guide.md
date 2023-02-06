@@ -1,6 +1,6 @@
 ---
 unique-page-id: 18874763
-description: '"[!DNL Microsoft Dynamics] CRM安装指南 — Marketo测量 — 产品文档”'
+description: '"[!DNL Microsoft Dynamics] CRM安装指南 — Marketo Measure — 产品文档”'
 title: '"[!DNL Microsoft Dynamics] CRM安装指南”'
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 source-git-commit: 9de82556ca543aa8e6c53242eacae5c87019886c
@@ -220,4 +220,4 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >当您禁用将数据导出到Dynamics的Marketo测量时，它不会删除任何现有数据。 如需有关删除现有数据的帮助，请联系Dynamics支持。
+   >当您禁用Marketo Measure将数据导出到Dynamics时，它不会删除任何现有数据。 如需有关删除现有数据的帮助，请联系Dynamics支持。

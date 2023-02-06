@@ -5,7 +5,7 @@ title: 为创建营销活动列表视图 [!DNL Salesforce] 促销活动
 exl-id: 8c673ea3-ac24-4b3d-b67d-76888179c07a
 source-git-commit: 02f686645e942089df92800d8d14c76215ae558f
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 1. 将视图命名为“要与同步的营销活动” [!DNL Marketo Measure].&quot;
 1. 我们希望此列表仅显示要与同步的营销活动 [!DNL Marketo Measure] 因此，我们需要几个过滤器：
 
-   * **类型** [等于] “我们映射到离线渠道的所有营销活动类型”。 请参阅实施计划或 [!DNL Marketo Measure] ([experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target=&quot;_blank&quot;} ->我的帐户 — >设置 — >脱机渠道)。 您可以通过放大镜图标选择所需的类型（那些已映射到离线营销渠道的类型）。
+   * **类型** [等于] “我们映射到离线渠道的所有营销活动类型”。 请参阅实施计划或 [!DNL Marketo Measure] ([experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} ->我的帐户 — >设置 — >脱机渠道)。 您可以通过放大镜图标选择所需的类型（那些已映射到离线营销渠道的类型）。
 
       * 每个过滤器最多选择3种类型。 过滤器字段中可以包含字符数限制。 从每个过滤器3种类型开始，并根据需要添加额外的“类型”过滤器行。
    * **创建日期** [大于或等于] 您的 [!DNL Marketo Measure] 开始日期。 您可以在 [!DNL Marketo Measure] 应用程序。 只需在短划线的日期范围中选择“自创建日期起”，即可显示开始日期。
@@ -39,4 +39,4 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->[对列表视图内联编辑的常见问题进行故障诊断](http://help.salesforce.com/articleView?id=000003911&amp;language=en_US&amp;type=1){target=&quot;_blank&quot;}
+>[对列表视图内联编辑的常见问题进行故障诊断](http://help.salesforce.com/articleView?id=000003911&amp;language=en_US&amp;type=1){target="_blank"}
