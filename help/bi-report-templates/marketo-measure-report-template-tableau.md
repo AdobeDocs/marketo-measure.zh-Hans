@@ -2,9 +2,9 @@
 description: '"[!DNL Marketo Measure] 报表模板 — 表格 —  [!DNL Marketo Measure]  — 产品文档”'
 title: '"[!DNL Marketo Measure] 报表模板 — 表格”'
 exl-id: 18963be9-5c6e-4454-8244-b50460e2bed5
-source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
+source-git-commit: 1b0d043e9015f2f8e2f6a3a2a49849bb792c7f21
 workflow-type: tm+mt
-source-wordcount: '2297'
+source-wordcount: '2296'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 您可以访问 [!DNL Tableau] 报告模板 [此处](https://github.com/adobe/Marketo-Measure-BI-Templates){target="_blank"}.
 
-打开 [!DNL Adobe Marketo] 测量报表模板表格工作簿文件。
+打开 [!DNL Adobe Marketo Measure] 报表模板表格工作簿文件。
 
 您需要将现有连接数据更新为您的特定Snowflake连接信息。 单击 [!UICONTROL Edit Connection] 按钮，并按照 [[!UICONTROL Data Connection]](#data-connection) 部分。
 
