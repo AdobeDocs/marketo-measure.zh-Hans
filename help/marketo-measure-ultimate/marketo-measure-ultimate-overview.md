@@ -1,12 +1,10 @@
 ---
 description: '[!DNL Marketo Measure] 最终概述 —  [!DNL Marketo Measure]  — 产品文档'
 title: '''[!DNL Marketo Measure] Ultimate Overview`'
-hide: true
-hidefromtoc: true
 exl-id: fada9479-0671-4698-8043-c67d7977577b
-source-git-commit: 604db0227cc48e09743db317cc72488755586a48
+source-git-commit: 59d42e5065ec0db7143208743fd053f5e6c1af7b
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -28,29 +26,29 @@ ht-degree: 0%
 
 * 与RTCDP（B2B或B2P版本）集成，为RTCDP客户提供集成的B2B归因解决方案，如RTCDP和 [!DNL Marketo Measure] 这两种方法都可以使用集中式Adobe Experience Platform(AEP)数据。
 
-**Marketo Measure第1-3层**
+**[!DNL Marketo Measure]第1-3层**
 
 ![](assets/marketo-measure-ultimate-overview-1.png)
 
-**Marketo Measure Ultimate**
+**[!DNL Marketo Measure Ultimate]**
 
 ![](assets/marketo-measure-ultimate-overview-2.png)
 
 ## 的新增功能 [!DNL Marketo Measure Ultimate] {#whats-new-in-marketo-measure-ultimate}
 
-**标题 — 通过AEP导入B2B数据**
+**通过AEP导入B2B数据**
 
 营销人员应通过AEP获取其B2B数据（例如，帐户、机会、联系人、潜在客户、营销活动、营销活动会员、活动）。 直接CRM和Marketo Engage连接不再适用于Ultimate。 营销人员将继续通过直接连接和跟踪Web活动来获取广告平台数据 [!DNL Marketo Measure] javascript。
 
 ![](assets/marketo-measure-ultimate-overview-3.png)
 
-**标题 — 默认货币设置**
+**默认货币设置**
 
-简介???
+[!DNL Marketo Measure Ultimate] 将默认货币设置为USD，直到用户更改它。 设置新的默认货币将更新数据，而无需重新处理。 只要所选货币是目标ISO代码，就无需提交兑换率。
 
 ![](assets/marketo-measure-ultimate-overview-4.png)
 
-**标题 — Marketo Measure最终沙盒**
+**[!DNL Marketo Measure Ultimate]沙盒**
 
 [!DNL Marketo Measure Ultimate] 必须先将实例映射到AEP沙盒，然后才能创建 [!DNL Marketo Measure] 目标数据流。
 
@@ -64,7 +62,7 @@ ht-degree: 0%
 
 ![](assets/marketo-measure-ultimate-overview-5.png)
 
-**标题 — 阶段映射**
+**阶段映射**
 
 全部 [!DNL Marketo Measure Ultimate] 规则特定于数据集。 必须为所有数据集和所有选定阶段创建阶段映射规则。
 
