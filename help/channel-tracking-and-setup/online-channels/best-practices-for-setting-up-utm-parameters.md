@@ -3,9 +3,9 @@ unique-page-id: 18874732
 description: 设置UTM参数的最佳实践 —  [!DNL Marketo Measure]  — 产品文档
 title: 设置UTM参数的最佳实践
 exl-id: 56019f41-b6ba-48c1-9bef-2a5f56d2d5f4
-source-git-commit: 02f686645e942089df92800d8d14c76215ae558f
+source-git-commit: 51397a02872035fef41d308c1f855bcaecc29c4e
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ UTM参数是对营销数据进行细分的绝佳方法。 [!DNL Marketo Measure]
 
 **utm_medium**:此字段映射到“中”字段。 使用utm_medium表示高级别通道。
 
-例如： [!UICONTROL Social], CPC，电子邮件， Web，免费
+例如， [!UICONTROL Social], CPC，电子邮件， Web，免费
 
 请勿使用此字段调用子渠道。
 
 **utm_source**:此字段映射到接触点源字段。 使用utm_source定义潜在客户源自的子渠道。
 
-例如：Facebook、Twitter、Linkedin、Drip_email、Email_blast、新闻通讯。
+例如，Facebook、Twitter、Linkedin、Drip_email、Email_blast、新闻稿。
 
 保持简单。 请勿使用此参数表示广告类型，如重定向、赞助商等。 请勿添加utm_source = homepage、webdirect、website。 [!DNL Marketo Measure] 会自动为您填写此信息。
 
@@ -36,17 +36,17 @@ UTM参数是对营销数据进行细分的绝佳方法。 [!DNL Marketo Measure]
 
 我们建议使用下划线而不是空格，并避免使用标点符号。 这样可以降低浏览器在读取参数时对错误进行编码的可能性。
 
-例如：AU_Idea_for_an_App_50k
+例如，AU_Idea_for_an_App_50k
 
 **utm_content**:这会映射到广告内容。 在utm_content参数中使用广告标题。 如果它是图像广告，请使用广告标题并包含广告维度。
 
-例如： [广告标题] 200x400px
+例如， [广告标题] 200x400px
 
 **utm_term**:这会映射到关键词文本。 使用此参数表示与广告触发相关的关键词。
 
 如果没有与广告相关的关键词，请将此参数留空。
 
-例如：iPhone应用程序构思
+例如，iPhone应用程序构思
 
 **简明扼要。 请勿重复工作、术语和渠道。**
 
@@ -54,7 +54,7 @@ UTM参数是对营销数据进行细分的绝佳方法。 [!DNL Marketo Measure]
 
 中> [!UICONTROL Source] > [!UICONTROL Campaign] > [!UICONTROL Content/Term]
 
-例如：如果 [!UICONTROL display] 广告放置在Facebook上，我们建议执行以下操作：
+例如，如果 [!UICONTROL display] 广告放置在Facebook上，我们建议执行以下操作：
 
 fakewebsite.com/
 
@@ -68,4 +68,4 @@ fakewebsite.com/
 
 请注意，术语/渠道不重复，并且此例中不使用utm_term。
 
-如有任何问题，请联系您的客户成功经理或 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+如有任何问题，请联系Adobe客户团队（您的客户经理）或 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

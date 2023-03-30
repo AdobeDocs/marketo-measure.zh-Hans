@@ -2,9 +2,9 @@
 description: '"[!DNL Marketo Measure] 与Adobe Analytics集成 —  [!DNL Marketo Measure]  — 产品文档”'
 title: "[!DNL Marketo Measure] 集成 [!DNL Adobe Analytics]"
 exl-id: 3a125a15-eb74-454a-afb3-75746a1dfac6
-source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
+source-git-commit: 51397a02872035fef41d308c1f855bcaecc29c4e
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ B2B客户属性集成使 [!DNL Marketo Measure] 和Adobe Analytics [!DNL Adobe A
 
 1. 单击 **[!UICONTROL Set Up New Customer Attributes Connection]** 按钮，并按照配置客户属性集成的说明进行操作。 UI将提示您输入在核心服务控制台中创建客户属性来源时获取的别名ID和FTP连接信息，以及选择要同步到的帐户属性集 [!DNL Adobe Analytics] 帐户。
 
-   您还需要输入Adobe IMS组织ID。 此ID显示在Adobe Experience CloudAdmin Console的右下角。 有关查找此ID的更多帮助，请咨询您的客户成功经理。
+   您还需要输入Adobe IMS组织ID。 此ID显示在Adobe Experience CloudAdmin Console的右下角。 如需有关查找此ID的更多帮助，请咨询Adobe客户团队（您的客户经理）。
 
 1. 完成在 [!DNL Marketo Measure] 帐户，您需要返回Experience Cloud控制台才能 [验证架构](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/validate-schema.html). 您无需担心FTP文件上传， [!DNL Marketo Measure] 已经为您自动完成了该部件。 您只需转到步骤1中创建的客户属性来源的“查看/编辑”架构屏幕，并告诉Adobe每个属性的数据类型 [!DNL Marketo Measure] 已代表您上传。 如果需要，您还可以为上传的属性创建新的显示友好型名称。
 

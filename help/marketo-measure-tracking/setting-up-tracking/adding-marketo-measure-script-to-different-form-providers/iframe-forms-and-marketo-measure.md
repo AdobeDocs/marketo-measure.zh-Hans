@@ -3,9 +3,9 @@ unique-page-id: 18874741
 description: IFrame Forms和 [!DNL Marketo Measure] - [!DNL Marketo Measure]  — 产品文档
 title: IFrame Forms和 [!DNL Marketo Measure]
 exl-id: fe8d7403-27be-4702-a1b6-d574e1243c0a
-source-git-commit: ae5b77744d523606ce6cfcf48d7e8d5049d5ccb7
+source-git-commit: 51397a02872035fef41d308c1f855bcaecc29c4e
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -22,4 +22,4 @@ ht-degree: 0%
 
 ![](assets/1-1.png)
 
-如果您对将我们的JavaScript添加到IFrame表单有任何疑问，请联系您的客户成功经理，或 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+如果您对将我们的JavaScript添加到IFrame表单有任何疑问，请联系Adobe客户团队（您的客户经理）或 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.

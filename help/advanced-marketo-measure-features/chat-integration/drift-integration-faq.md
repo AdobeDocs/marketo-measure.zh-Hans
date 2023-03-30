@@ -3,16 +3,16 @@ unique-page-id: 27656441
 description: Drift集成常见问题解答 —  [!DNL Marketo Measure]  — 产品文档
 title: Drift集成常见问题解答
 exl-id: ae5706b1-1f6c-4201-8585-0d7c587746e1
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: 51397a02872035fef41d308c1f855bcaecc29c4e
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
 
 # Drift集成常见问题解答 {#drift-integration-faq}
 
-作为 [!DNL Marketo Measure] 与Drift的整合，我们列出了一些最常见的问题。 如果存在下面未列出的任何问题，请联系您的客户成功经理或 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+作为 [!DNL Marketo Measure] 与Drift的整合，我们列出了一些最常见的问题。 如果存在下面未列出的任何问题，请联系Adobe客户团队（您的客户经理）或 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 **如何启用集成？**
 

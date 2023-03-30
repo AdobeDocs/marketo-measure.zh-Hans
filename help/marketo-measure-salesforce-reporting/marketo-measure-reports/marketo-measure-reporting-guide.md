@@ -2,9 +2,9 @@
 description: '"[!DNL Marketo Measure] 报表指南 —  [!DNL Marketo Measure]  — 产品文档”'
 title: '"[!DNL Marketo Measure] 报表指南”'
 exl-id: 9b991f9e-c187-4b43-b0a8-8ed3e9a6056b
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: 51397a02872035fef41d308c1f855bcaecc29c4e
 workflow-type: tm+mt
-source-wordcount: '6392'
+source-wordcount: '6395'
 ht-degree: 0%
 
 ---
@@ -557,7 +557,7 @@ _仅当注册表单托管在您的网站(这些网站 [!DNL Marketo Measure] 能
 
 >[!NOTE]
 >
->自定义归因模型是并非所有客户都可用的一项附加功能。 请联系您的客户成功经理，以详细了解如何将此功能添加到您的帐户。
+>自定义归因模型是并非所有客户都可用的一项附加功能。 请联系Adobe客户团队（您的客户经理），以详细了解如何将此功能添加到您的帐户。
 
 通常，营销人员需要知道“我的机会来自哪里？”。 与“潜在客户”级别报表类似，该问题过去通过单个一维值（例如，主要促销活动来源）来回答。 但是，我们知道，与单个联系人中的单个接触点相比，在开发Opportunity方面投入的资源要多得多。 通常，来自不同渠道和多个利益相关方的多个接触点会影响Opportunity的创建。 使用 [!DNL Marketo Measure]，我们可以显示帐户中的所有接触点，以便最好地了解Opportunity的来源。 但是，除此之外，我们可以继续显示在Opportunity创建之后发生的任何接触点，直至Opportunity关闭为止。 这样，我们不仅可以采用多接触方法来了解Opportunity的来源，而且还可以了解Opportunity在完成并最终代表已结束的赢得收入方面有哪些影响。 这可以深入了解不同的问题，例如“营销对影响交易的影响是什么？”、“什么营销驱动了已结交易赢得收入？” 最终，“我的哪些营销工作的投资回报率最高？”
 
