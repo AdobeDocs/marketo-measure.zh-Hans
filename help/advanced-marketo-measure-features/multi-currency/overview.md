@@ -3,22 +3,24 @@ unique-page-id: 27656735
 description: 概述 —  [!DNL Marketo Measure]  — 产品文档
 title: 概述
 exl-id: 2076521c-b579-457c-ab1c-263b1da4dd89
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: bf047695c4ea82c4fbf1e9079b7443a5c9821e42
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 概述 {#overview}
 
-今天， [!DNL Marketo Measure] 应用程序仅支持单一货币（假定为美元），而我们知道并了解到世界各地的客户需要报告他们自己的公司货币和用户货币。 此功能为用户在查看报告的支出或销售收入时在不同货币之间切换提供了基础。
+今天， [!DNL Marketo Measure] 应用程序仅支持单一货币（假定为美元），而我们知道并了解到世界各地的客户需要报告他们自己的公司货币和用户货币。 此功能允许用户在查看 [!DNL Marketo Measure].
 
 ## 可用性 {#availability}
 
 第2层及更高层。
 
 ## 要求 {#requirements}
+
+[!DNL Marketo Measure] 将自动从客户的CRM中提取货币设置。 中的手动配置 [!DNL Marketo Measure] 不再需要与CRM匹配。 货币设置可在“常规”页面的“CRM”下找到。
 
 在 [!DNL Salesforce]，则客户必须启用“激活多种货币”。 （可选）客户还可以选择“是，我要启用高级货币管理”。
 
