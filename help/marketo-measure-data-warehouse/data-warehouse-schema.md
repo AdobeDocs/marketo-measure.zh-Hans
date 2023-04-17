@@ -3,10 +3,10 @@ unique-page-id: 35586140
 description: data warehouse架构 — Marketo Measure — 产品文档
 title: data warehouse架构
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
-source-git-commit: 6e2d438da273511c3465d02eef6813f64e7aec5d
+source-git-commit: d1f1a3d1d0dd3111b984fbe9d0a8e8d3ed9289d2
 workflow-type: tm+mt
-source-wordcount: '22615'
-ht-degree: 4%
+source-wordcount: '22622'
+ht-degree: 5%
 
 ---
 
@@ -16,7 +16,9 @@ data warehouse允许您根据需要跟踪任意所需数量的归因数据，根
 
 >[!IMPORTANT]
 >
->值为_DELETED_DATE的行将保留15天，然后从Snowflake中删除。 Snowflake时区以UTC为单位。
+>* 值为_DELETED_DATE的行将保留7天，然后从Snowflake中删除。
+>* Snowflake中使用的时区遵循协调统一时间(UTC)。
+
 
 >[!NOTE]
 >
@@ -8030,7 +8032,7 @@ _单击某个图像的全尺寸版本_
         <p>varch</p>
       </td>
       <td>指示事件的类型。</td>
-      <td>展示</td>
+      <td>印象</td>
     </tr>
     <tr>
       <td>
