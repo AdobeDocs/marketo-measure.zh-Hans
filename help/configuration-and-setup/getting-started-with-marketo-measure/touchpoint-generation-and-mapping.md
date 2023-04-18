@@ -3,9 +3,9 @@ unique-page-id: 18874554
 description: 接触点生成和映射 —  [!DNL Marketo Measure]  — 产品文档
 title: 接触点生成和映射
 exl-id: bb4988f5-4fbc-43b7-9544-da541b8e1d32
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: 950dbfacf48cbb81acad9c40033c25a765287bee
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ ht-degree: 0%
 接触点生成方法
 
 接触点生成过程回答了“如何 [!DNL Marketo Measure] 会知道这发生了吗？” 根据您的功能集以及潜在客户可以进行的交互类型，最多有三种方式 [!DNL Marketo Measure] 可以选取交互并创建一个接触点来表示它。
+
+>[!IMPORTANT]
+>
+>[!DNL Marketo Measure] 每个会话只生成一个接触点。 如果填写了多个表单，则只会捕获第一个表单填写。
 
 | **交互类型** | **示例** | **接触点生成方法** |
 |---|---|---|
