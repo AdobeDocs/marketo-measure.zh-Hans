@@ -2,7 +2,7 @@
 cloud: Experience Cloud
 product: Bizible
 audience: end-user
-user-guide-title: "[!DNL Marketo Measure] 指南"
+user-guide-title: “[!DNL Marketo Measure] 指南”
 user-guide-description: '"[!DNL Marketo Measure] 使营销人员能够洞悉哪些营销工作在为公司增加收入方面最有效。”'
 source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
 workflow-type: tm+mt
@@ -189,7 +189,7 @@ ht-degree: 1%
       + [[!DNL Marketo Measure] 101报表概述](marketo-measure-salesforce-reporting/marketo-measure-reports/marketo-measure-101-reports-overview.md)
       + [按营销渠道划分的机会](marketo-measure-salesforce-reporting/marketo-measure-reports/opportunities-by-marketing-channel.md)
       + [按营销渠道列出的已结失机会](marketo-measure-salesforce-reporting/marketo-measure-reports/closed-lost-opportunities-by-marketing-channel.md)
-      + [[!UICONTROL Leads with Buyer Touchpoints] 报表](marketo-measure-salesforce-reporting/marketo-measure-reports/leads-with-buyer-touchpoints-report.md)
+      + [[!UICONTROL Leads with Buyer Touchpoints] 报告](marketo-measure-salesforce-reporting/marketo-measure-reports/leads-with-buyer-touchpoints-report.md)
       + [报告具有或不具有购买者归因接触点的商机](marketo-measure-salesforce-reporting/marketo-measure-reports/reporting-on-opportunities-with-or-without-buyer-attribution-touchpoints.md)
       + [在我的报表中复制记录](marketo-measure-salesforce-reporting/marketo-measure-reports/duplicate-records-in-my-report.md)
    + 其他功能 {#additional-functionality}
