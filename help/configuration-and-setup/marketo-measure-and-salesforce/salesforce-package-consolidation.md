@@ -1,7 +1,7 @@
 ---
 description: '"[!DNL Salesforce] 资源包整合 —  [!DNL Marketo Measure]  — 产品文档”'
 title: '"[!DNL Salesforce] 资源包整合”'
-source-git-commit: 279d9a18dca59de9ad99113624f4c9b2bcea0d01
+source-git-commit: e0a471a8e74cdba23a01bea02054c82ede82de9b
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
       * V2_EXT查询：
          * bizible2_ext__Ad_Content_FT__c包含Eveloging
 
-![](assets/salesforce-package-consolidation-1.png)
+![](assets/package-consolidation-1.png)
 
 * 统一资源包中的相应查询：
    * bizible2__Touchpoint_Position__c包含FT AND
