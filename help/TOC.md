@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: “[!DNL Marketo Measure] 指南”
 user-guide-description: '"[!DNL Marketo Measure] 使营销人员能够洞悉哪些营销工作在为公司增加收入方面最有效。”'
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+source-git-commit: 279d9a18dca59de9ad99113624f4c9b2bcea0d01
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '763'
 ht-degree: 1%
 
 ---
@@ -51,6 +51,7 @@ ht-degree: 1%
       + [[!DNL Marketo Measure] CRM无包集成](configuration-and-setup/getting-started-with-marketo-measure/marketo-measure-crm-packageless-integration.md)
    + [!DNL Marketo Measure] 和Salesforce {#marketo-measure-and-salesforce}
       + [[!DNL Marketo Measure] 安装和设置Salesforce包](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-package-installation-and-set-up.md)
+      + [[!DNL Salesforce] 资源包整合](configuration-and-setup/marketo-measure-and-salesforce/salesforce-package-consolidation.md)
       + [连接 [!DNL Marketo Measure] 到Salesforce](configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)
       + [的最佳实践 [!DNL Marketo Measure] CRM包](configuration-and-setup/marketo-measure-and-salesforce/best-practices-for-marketo-measure-crm-package.md)
       + [[!DNL Marketo Measure] Salesforce对象](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-objects.md)
