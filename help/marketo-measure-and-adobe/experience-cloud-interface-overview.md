@@ -1,15 +1,15 @@
 ---
-description: Adobe Experience Cloud界面 —  [!DNL Marketo Measure]  — 产品文档
-title: Adobe Experience Cloud界面
+description: Adobe Experience Cloud界面概述 —  [!DNL Marketo Measure]  — 产品文档
+title: Adobe Experience Cloud界面概述
 exl-id: 15bd7590-8eb0-46e5-9883-3be11ff58c9e
-source-git-commit: a14b977fc4c3d2f3eccd2c03bc8d96c2a71e6bc6
+source-git-commit: dc6c66daebd10b95333d8c27c2326a95555c555b
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
 
-# Adobe Experience Cloud界面 {#unified-shell-overview}
+# Adobe Experience Cloud界面概述 {#experience-cloud-interface-overview}
 
 Adobe Experience Cloud界面与Adobe Experience Cloud应用程序和服务的外观保持一致。 但是，这不仅仅是一个新设计。 它是一个单页应用程序，可在单个实例中提供用户体验。
 
