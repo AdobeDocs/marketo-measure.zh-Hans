@@ -2,16 +2,16 @@
 description: 域管理 —  [!DNL Marketo Measure]  — 产品文档
 title: 域管理
 exl-id: 4db287a0-0267-463c-a359-266b41f15c59
-source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
+source-git-commit: 148cc203f1fd2a3b90771f2223bbacacdcfad7b0
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
 
 # 域管理 {#domain-management}
 
-对于运行的启用IMS的租户 [!DNL Marketo Measure] 在统一外壳中， [!DNL Marketo Measure] 提供了一个界面，允许用户管理自己的域列表。 [!DNL Marketo Measure] 用户必须首先验证他们希望跟踪的任何域 [Adobe Admin Console](https://adminconsole.adobe.com/). 在Admin Console中验证域后，用户可以管理 [!DNL Marketo Measure] 使用这些域来跟踪网站流量。
+对于运行的启用IMS的租户 [!DNL Marketo Measure] 在Experience Cloud界面中， [!DNL Marketo Measure] 提供了一个界面，允许用户管理自己的域列表。 [!DNL Marketo Measure] 用户必须首先验证他们希望跟踪的任何域 [Adobe Admin Console](https://adminconsole.adobe.com/). 在Admin Console中验证域后，用户可以管理 [!DNL Marketo Measure] 使用这些域来跟踪网站流量。
 
 ## 在Admin Console中添加域 {#adding-domains-in-admin-console}
 
