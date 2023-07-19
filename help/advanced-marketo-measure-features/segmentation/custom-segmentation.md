@@ -3,9 +3,9 @@ unique-page-id: 18874604
 description: 自定义分段 —  [!DNL Marketo Measure]  — 产品文档
 title: 自定义分段
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
-source-git-commit: 01be819ccee1b3079b15a748480e9dacf6adb488
+source-git-commit: 7d037783805567370daa412629d58a5dee175722
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->自定义分段允许您按类别（过滤器名称）和规则（过滤器值）过滤接触点。 第1层获得一个区段，第2层及更高层获得十个。
+>自定义分段允许您按类别（过滤器名称）和规则（过滤器值）过滤接触点。 第1层客户获得一个区段，第2层及更高层获得十个。
 
 **自定义分段功能何时有用？**
 
