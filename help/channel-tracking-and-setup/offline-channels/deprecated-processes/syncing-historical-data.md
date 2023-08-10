@@ -4,9 +4,9 @@ description: 同步历史数据 —  [!DNL Marketo Measure]  — 产品文档
 title: 同步历史数据
 exl-id: 5a3c1a71-463a-4d75-98b9-fc225839512a
 feature: Channels
-source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
+source-git-commit: e01738222e8845112892c0258cb084a4f0ebb257
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1503'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 同步历史数据 {#syncing-historical-data}
 
 [!DNL Marketo Measure] 是一种解决方案，可提供最细粒度、可操作的数据。 但是，我们理解您可能拥有想要归因的现有数据。 可以为历史数据生成接触点，但在执行此流程之前务必要考虑几个因素。
+
+>[!NOTE]
+>
+>本文介绍了一个过时的流程。 我们鼓励用户使用 [新的、改进的应用程序内流程](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}.
 
 ## 要考虑的因素 {#factors-to-consider}
 

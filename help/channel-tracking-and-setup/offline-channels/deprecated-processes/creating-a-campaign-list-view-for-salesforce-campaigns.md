@@ -4,9 +4,9 @@ description: 创建营销活动列表视图 [!DNL Salesforce Campaigns] - [!DNL 
 title: 创建营销活动列表视图 [!DNL Salesforce] 营销活动
 exl-id: 8c673ea3-ac24-4b3d-b67d-76888179c07a
 feature: Channels
-source-git-commit: 31ffb58f5318b71d478056f9b914eb1d42c7719a
+source-git-commit: e01738222e8845112892c0258cb084a4f0ebb257
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 创建营销活动列表视图 [!DNL Salesforce] 营销活动 {#creating-a-campaign-list-view-for-salesforce-campaigns}
 
 了解如何为那些要与买方接触点同步的营销活动创建列表视图。
+
+>[!NOTE]
+>
+>本文介绍了一个过时的流程。 我们鼓励用户使用 [新的、改进的应用程序内进程](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}.
 
 通过可创建的Campaign列表视图，您可以有一个“转至”位置，用于查看和管理“类型”和“启用买方接触点”字段，以确保 [!DNL Salesforce] 已正确设置通知离线营销渠道的营销活动。
 

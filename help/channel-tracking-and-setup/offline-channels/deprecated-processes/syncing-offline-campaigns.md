@@ -4,9 +4,9 @@ description: 同步离线营销活动 —  [!DNL Marketo Measure]  — 产品文
 title: 同步离线营销活动
 exl-id: a6f9e217-ff6e-474d-9f14-c6f6238c9e84
 feature: Channels
-source-git-commit: 31ffb58f5318b71d478056f9b914eb1d42c7719a
+source-git-commit: e01738222e8845112892c0258cb084a4f0ebb257
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 同步离线营销活动 {#syncing-offline-campaigns}
 
 可能很难准确地跟踪离线营销活动，并且很难了解它们与您的数字营销工作的对比情况。 [!DNL Marketo Measure] 允许您在中跟踪接触点并将其归因于离线营销活动 [!DNL Salesforce]，即使在 [!DNL Salesforce] 直到事件后几周才会创建营销活动。
+
+>[!NOTE]
+>
+>本文介绍了一个过时的流程。 我们鼓励用户使用 [新的、改进的应用程序内流程](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}.
 
 ## 同步之前 {#before-you-sync}
 

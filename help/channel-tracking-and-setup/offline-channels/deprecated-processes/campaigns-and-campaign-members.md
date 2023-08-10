@@ -4,9 +4,9 @@ description: 营销活动和营销活动成员 —  [!DNL Marketo Measure]  — 
 title: 营销活动和营销活动成员
 exl-id: e4e2b154-39ac-4295-a541-7fa6112672e3
 feature: Channels
-source-git-commit: 31ffb58f5318b71d478056f9b914eb1d42c7719a
+source-git-commit: e01738222e8845112892c0258cb084a4f0ebb257
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 营销活动和营销活动成员 {#campaigns-and-campaign-members}
 
 [!DNL Salesforce] 营销活动旨在跟踪与营销方案或活动关联的潜在客户和联系人列表。 例如，这通常是网络研讨会、注册或两次访问。 营销人员可以选择是否应在接触点历程中计入营销活动。
+
+>[!NOTE]
+>
+>本文介绍了一个过时的流程。 我们鼓励用户使用 [新的、改进的应用程序内流程](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}.
 
 ## 启用接触点 {#enabling-touchpoints}
 
