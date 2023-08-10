@@ -4,10 +4,10 @@ description: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] Interact - Mark
 title: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] Interact
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: afb7805e375f26cc1b2473802582b1999e92cd8b
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 14%
+source-wordcount: '1716'
+ht-degree: 13%
 
 ---
 
@@ -721,6 +721,20 @@ ht-degree: 14%
   </tr> 
  </tbody> 
 </table>
+
+>[!NOTE]
+>
+>为了确保Marketo Measure能够准确捕获Salesforce帐户中的删除事件，需要以下对象的可复制权限。 可复制权限是以下对象的标准权限：
+>
+>* 帐户
+>* 营销活动
+>* 营销活动成员
+>* 联系人
+>* Event
+>* 商机
+>* 机会
+>* 任务
+
 
 ## [!DNL Marketo Measure] 中的自定义对象 [!DNL Salesforce] {#marketo-measure-custom-objects-in-salesforce}
 
