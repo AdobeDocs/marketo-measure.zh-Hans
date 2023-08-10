@@ -3,7 +3,7 @@ description: 离线渠道的最佳实践 —  [!DNL Marketo Measure]  — 产品
 title: 离线渠道的最佳实践
 exl-id: 71c50614-8d5b-469f-bc02-3cc489464a4e
 feature: Channels
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
 workflow-type: tm+mt
 source-wordcount: '1050'
 ht-degree: 0%
@@ -72,9 +72,9 @@ ht-degree: 0%
 >
 >* [脱机渠道设置](/help/channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
 >* [自定义Campaign同步 — 应用程序同步](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)
->* [同步离线营销活动 — CRM同步](/help/channel-tracking-and-setup/offline-channels/syncing-offline-campaigns.md)
->* [脱机Campaign和Campaign成员 — CRM同步](/help/channel-tracking-and-setup/offline-channels/campaigns-and-campaign-members.md)
->* [Campaign同步日期 — CRM同步](/help/channel-tracking-and-setup/offline-channels/campaign-sync-dates.md)
+>* [同步离线营销活动 — CRM同步](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md)
+>* [脱机Campaign和Campaign成员 — CRM同步](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/campaigns-and-campaign-members.md)
+>* [Campaign同步日期 — CRM同步](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/campaign-sync-dates.md)
 >* [多个营销活动记录类型的配置](/help/channel-tracking-and-setup/offline-channels/configurations-for-multiple-campaign-record-types.md)
->* [创建营销活动列表视图](/help/channel-tracking-and-setup/offline-channels/creating-a-campaign-list-view-for-salesforce-campaigns.md)
->* [同步历史数据](/help/channel-tracking-and-setup/offline-channels/syncing-historical-data.md)
+>* [创建营销活动列表视图](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/creating-a-campaign-list-view-for-salesforce-campaigns.md)
+>* [同步历史数据](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-historical-data.md)

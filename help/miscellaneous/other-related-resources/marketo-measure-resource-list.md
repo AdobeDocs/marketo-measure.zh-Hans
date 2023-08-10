@@ -4,7 +4,7 @@ description: '"[!DNL Marketo Measure] 资源列表 —  [!DNL Marketo Measure]  
 title: '"[!DNL Marketo Measure] 资源列表”'
 exl-id: e2542ec2-dd83-405c-bd49-fa6384e6c8de
 feature: Fundamentals
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 1%
@@ -29,7 +29,7 @@ ht-degree: 1%
 * [脱机渠道设置](/help/channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
 * [什么是UTM参数？](/help/channel-tracking-and-setup/online-channels/utm-parameters.md)
 * [UTM最佳实践](/help/channel-tracking-and-setup/online-channels/best-practices-for-setting-up-utm-parameters.md)
-* [将SFDC营销活动与买方接触点同步](/help/channel-tracking-and-setup/offline-channels/campaigns-and-campaign-members.md)
+* [将SFDC营销活动与买方接触点同步](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/campaigns-and-campaign-members.md)
 * [上传营销支出](/help/marketing-spend/spend-management/marketing-channel-costs.md#uploading-marketing-costs)
 * [重新连接广告帐户](/help/api-connections/utilizing-marketo-measures-api-connections/reauthorizing-connected-accounts.md)
 * [正在添加 [!DNL Marketo Measure] Javascript](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md)

@@ -4,7 +4,7 @@ description: 同步历史数据 —  [!DNL Marketo Measure]  — 产品文档
 title: 同步历史数据
 exl-id: 5a3c1a71-463a-4d75-98b9-fc225839512a
 feature: Channels
-source-git-commit: 31ffb58f5318b71d478056f9b914eb1d42c7719a
+source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 0%
@@ -91,7 +91,7 @@ b.将成员添加到营销活动或标记为已响应的日期用作接触点日
 
 因此，您可以为该营销列表中的所有人批量设置将用于接触点日期的日期。 要获得更准确的历史日期，请为同一营销活动创建多个营销列表，每个列表都具有自己的接触点日期。 如果营销活动具有较短的时间范围，则可能值得每天创建营销列表。 如果营销活动具有较长的时间范围，则每周创建营销列表可能比较合理。
 
-有关同步营销列表的详细信息，请参阅此处： [[!DNL Dynamics] 营销活动和营销列表](/help/marketo-measure-and-dynamics/dynamics-reporting/dynamics-campaigns-and-marketing-lists.md)
+有关同步营销列表的详细信息，请参阅此处： [[!DNL Dynamics] 营销活动和营销列表](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/dynamics-campaigns-and-marketing-lists.md)
 
 >[!NOTE]
 >

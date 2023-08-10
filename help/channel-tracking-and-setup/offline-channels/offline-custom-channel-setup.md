@@ -4,7 +4,7 @@ description: 脱机自定义渠道设置 —  [!DNL Marketo Measure]  — 产品
 title: 脱机自定义渠道设置
 exl-id: c5697714-1a79-40bd-8b7c-e10768f4ef67
 feature: Channels
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 0%
@@ -59,7 +59,7 @@ SFDC促销活动类型将显示在离线渠道的选项卡中，列在下 [!DNL 
 
 请花些时间了解 [!DNL Salesforce] 确定要包含的现有记录类型的数量和性质，以及是否需要根据上述信息创建其他营销活动。 填写完所有必要信息后，即可上传。
 
-了解有关 [脱机同步 [!DNL Salesforce] 促销活动与 [!DNL Marketo Measure]](/help/channel-tracking-and-setup/offline-channels/syncing-offline-campaigns.md).
+了解有关 [脱机同步 [!DNL Salesforce] 促销活动与 [!DNL Marketo Measure]](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md).
 
 ## 为在线营销工作处理SFDC营销活动 {#handling-sfdc-campaigns-for-online-marketing-efforts}
 
