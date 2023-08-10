@@ -3,7 +3,8 @@ unique-page-id: 18874734
 description: 合并潜在客户的最佳实践 —  [!DNL Marketo Measure]  — 产品文档
 title: 合并潜在客户的最佳实践
 exl-id: d9293ed7-a794-4e52-a269-20a7fb36ce50
-source-git-commit: 51397a02872035fef41d308c1f855bcaecc29c4e
+feature: Tracking
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
@@ -12,16 +13,16 @@ ht-degree: 0%
 
 # 合并潜在客户的最佳实践 {#best-practices-for-merging-leads}
 
-当要合并潜在客户时 [!DNL Salesforce]，则最好始终保持谨慎，以确保不会丢失任何数据。
+当涉及将潜在客户合并到中时 [!DNL Salesforce]时，最好始终谨慎以确保不会丢失任何数据。
 
-以下是供参考的 [如何合并潜在客户](https://help.salesforce.com/HTViewHelpDoc?id=leads_merge.htm&amp;language=en_US) 从 [!DNL Salesforce] 支持。
+供您参考，这里提供了以下细目 [如何合并潜在客户](https://help.salesforce.com/HTViewHelpDoc?id=leads_merge.htm&amp;language=en_US) 从 [!DNL Salesforce] 支持。
 
-其中 [!DNL Marketo Measure] 是时候选择要在合并记录中填充的字段了。 选择主控记录后，验证 [!DNL Marketo Measure] 选择字段以结转到新记录。
+位置 [!DNL Marketo Measure] 进入时间是选择将填充在合并记录上的字段。 选择主控记录后，验证 [!DNL Marketo Measure] 选择要结转到新记录的字段。
 
-如果有多个记录 [!DNL Marketo Measure] 数据，请确保主控记录具有最先创建的潜在客户的选定字段。 其他 [!DNL Marketo Measure] 数据将显示在分析部分中。 此外，请确保跟踪的潜在客户的电子邮件地址是保留的电子邮件地址，因为它将允许我们继续使用任何新的归因数据更新该潜在客户。
+如果有多个记录 [!DNL Marketo Measure] 数据，确保主控记录具有为最初创建的Lead选择的字段。 其他 [!DNL Marketo Measure] 数据将显示在分析部分中。 此外，请确保跟踪的Lead的电子邮件地址是保留的电子邮件地址，因为它允许我们继续使用任何新的归因数据更新该Lead。
 
-从此处，您应该可以自由地合并Lead和 [!DNL Marketo Measure] 数据将被传递到新记录。
+从那里，您应该可以自由地合并潜在客户和 [!DNL Marketo Measure] 数据将被传送到新记录中。
 
-如果您有任何问题，请随时联系Adobe客户团队（您的客户经理）或 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+如有任何疑问，请随时联系Adobe客户团队（您的客户经理）或 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 ![](assets/1.jpg)

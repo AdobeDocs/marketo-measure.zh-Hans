@@ -1,74 +1,75 @@
 ---
 unique-page-id: 18874600
-description: 正在同步离线营销活动 —  [!DNL Marketo Measure]  — 产品文档
-title: 正在同步离线营销活动
+description: 同步离线营销活动 —  [!DNL Marketo Measure]  — 产品文档
+title: 同步离线营销活动
 exl-id: a6f9e217-ff6e-474d-9f14-c6f6238c9e84
-source-git-commit: 02f686645e942089df92800d8d14c76215ae558f
+feature: Channels
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 0%
 
 ---
 
-# 正在同步离线营销活动 {#syncing-offline-campaigns}
+# 同步离线营销活动 {#syncing-offline-campaigns}
 
-很难准确跟踪离线促销活动并了解它们与您的数字营销工作相比。 [!DNL Marketo Measure] 允许您跟踪触点并将其归因于 [!DNL Salesforce]，即使在 [!DNL Salesforce] 活动要到活动后几周后才能创建营销活动。
+可能很难准确地跟踪离线营销活动，并且很难了解它们与您的数字营销工作的对比情况。 [!DNL Marketo Measure] 允许您在中跟踪接触点并将其归因于离线营销活动 [!DNL Salesforce]，即使在 [!DNL Salesforce] 直到事件后几周才会创建营销活动。
 
 ## 同步之前 {#before-you-sync}
 
 以下是有关高效同步过程的一些提示：
 
-* 离线营销活动是指不在线发生的营销互动。 这些渠道包括活动、网络研讨会和贸易展等营销渠道。 仅包括离线营销活动。
-* 如果要在安装之前包含跟踪在线活动的营销活动，请 [!DNL Marketo Measure]，请确保将接触点结束日期设置为在您的网站上部署JavaScript的日期。
-* 将 [!DNL Marketo Measure] 应用程序会在“离线渠道”页面上打开，以便轻松识别不同的促销活动类型，以及接触点将被分段到的营销渠道。
+* 离线营销活动是指不在线发生的营销互动。 其中包括营销渠道，如活动、网络研讨会和商展。 仅包括离线营销活动。
+* 如果您希望包含在安装之前跟踪在线活动的营销活动 [!DNL Marketo Measure]，请确保将接触点结束日期设置为在您的网站上部署JavaScript的日期。
+* 保留 [!DNL Marketo Measure] 在离线渠道页面上打开应用程序，以便轻松识别不同的促销活动类型，以及接触点将存储到的营销渠道。
 
-* 在点击“[!UICONTROL Save]&quot;按钮！
+* 在点击&#39;&#39;之前仔细检查所有内容[!UICONTROL Save]”按钮！
 
 ## 批量更新接触点日期 {#bulk-update-touchpoint-date}
 
-在 [!DNL Salesforce]，营销活动成员对象上的创建日期字段会注意营销活动成员添加到营销活动的日期。 为了顺利进行同步过程，请确保“采购员接触点日期”字段与Salesforce促销活动成员对象上的日期相同。 使用“[!UICONTROL Bulk Update Touchpoint Date button]，” _之前_ 选择 [!UICONTROL picklist] 选项启用采购员接触点字段。
+在 [!DNL Salesforce]，促销活动成员对象上的创建日期字段会记下将促销活动成员添加到促销活动的日期。 为了使同步流程顺利进行，请确保“采购员接触点日期字段”中的日期与“Salesforce促销活动成员对象”中的日期相同。 此步骤使用&#39;&#39;执行[!UICONTROL Bulk Update Touchpoint Date button]，” _早于_ 您选择 [!UICONTROL picklist] 选项。
 
-为什么这很重要？ 想象一下，你的公司在1月份的一个会议上赞助了一个展位。 在会议上，100人对您的产品表示了兴趣，并提供了联系信息以接收电子邮件更新。 三周后，您终于在 [!DNL Salesforce] 跟踪会议结果。
+为什么这很重要？ 想象一下，你的公司在1月份的一次会议上赞助了一个展位。 会上，100个人对您的产品表现出兴趣，并提供了他们的联系信息以接收电子邮件更新。 三周后，您终于在中创建了一个营销活动 [!DNL Salesforce] 追踪会议结果。
 
-您的上传日期将比会议日期晚三周。 要解决此差异，请 [!UICONTROL Bulk Update Touchpoint Date] 按钮来设置相应的日期。 下图显示了按钮。
+您的上传日期将晚于会议日期三周。 为了弥补这一差异， [!UICONTROL Bulk Update Touchpoint Date] 按钮可用于设置适当的日期。 下图显示了按钮。
 
 ![](assets/1-3.png)
 
-在这种情况下，会将上传日期回填三周。 此步骤应在设置“[!UICONTROL Enable Buyer Touchpoints]“ ”字段。
+在这种情况下，它将回填上传日期3周。 应在设置&#39;&#39;之前执行此步骤[!UICONTROL Enable Buyer Touchpoints]”字段。
 
-总之，如果您使用 [!UICONTROL Bulk Update Touchpoint Date] 按钮，并将接触点日期更改为事件日期， [!DNL Marketo Measure] 将为事件的实际日期（而非上传日期）生成接触点。
+总之，如果您使用 [!UICONTROL Bulk Update Touchpoint Date] 按钮并将接触点日期更改为事件的日期， [!DNL Marketo Measure] 将生成事件实际日期（而非上传日期）的接触点。
 
-您还可以更新现有营销活动中所有营销活动成员的日期。 执行此操作时，请确保接触点的日期是成员交互的日期。 只需单击批量更新采购员接触点日期，根据需要筛选促销活动成员列表，并在“[!UICONTROL Select Date]“ ”选项，添加与事件发生日期相同的日期。
+您还可以更新现有营销活动上所有营销活动成员的日期。 执行此操作时，请确保接触点的日期是成员交互的日期。 只需单击“批量更新购买者接触点日期”，根据情况筛选营销活动成员列表，然后在“[!UICONTROL Select Date]”选项位于营销活动成员列表上方，添加与事件发生日期相同的日期。
 
 >[!CAUTION]
 >
->确保更新接触点日期 _之前_ 为所有营销活动成员启用接触点。
+>确保更新接触点日期 _早于_ 您可以为所有营销活动成员启用接触点。
 
 ![](assets/2-3.png)
 
-## 如何创建促销活动和同步购买者接触点 {#how-to-create-a-campaign-and-sync-buyer-touchpoints}
+## 如何创建营销活动并同步购买者接触点 {#how-to-create-a-campaign-and-sync-buyer-touchpoints}
 
-在中创建营销活动 [!DNL Salesforce]，导航到 [!UICONTROL Campaigns] 选项卡，选择&#39;[!UICONTROL New]“ ”，如下图所示。 根据您的 [!DNL Salesforce] 设置后，您可能需要通过单击加号(+)图标，将营销活动添加到顶部栏。
+在中创建营销活动 [!DNL Salesforce]，导航到 [!UICONTROL Campaigns] 选项卡并选择&#39;[!UICONTROL New]&#39;如下图所示。 根据您的 [!DNL Salesforce] 设置，您可能需要通过单击加号(+)图标将Campaigns添加到顶部栏。
 
 ![](assets/3-3.png)
 
-创建此营销活动时，请单击[!UICONTROL Enable Buyer Touchpoints]“ ”字段，然后从选取列表中选择以下选项之一：
+创建此营销策划时，单击“[!UICONTROL Enable Buyer Touchpoints]”字段，并从选取列表中选择以下选项之一：
 
 ![](assets/4-3.png)
 
 * **包括所有营销活动成员**
-   * 此选项将启用 [!DNL Marketo Measure] 将接触点归因到每个营销活动成员。
+   * 此选项启用 [!DNL Marketo Measure] 将接触点归因于每个营销活动成员。
 
 * **包括“已响应”营销活动成员。**
-   * 此选项将接触点应用于具有“已响应”状态的营销活动成员。
+   * 此选项会将接触点应用于具有“已响应”状态的营销活动成员。
 
 * **排除所有营销活动成员。**
-   * 此选项不将接触点归因于营销活动中的任何成员，并充当营销活动被有意排除在外的标记 [!DNL Marketo Measure]. 如果您在意外时将营销活动与买方接触点同步，则可以将状态更改为“排除所有营销活动成员”，接触点将被删除。
+   * 此选项不会将接触点归因于营销活动中的任何成员，并充当刻意从中排除营销活动的标志 [!DNL Marketo Measure]. 如果您曾经在意外情况下将促销活动与购买者接触点同步，则可以将状态更改为“排除所有促销活动成员”，并且接触点将被删除。
 
-选择其中一个选项后， [!DNL Marketo Measure] 将为每个营销活动成员分配一个接触点（如果适用）。 添加到营销活动的潜在客户或联系人 _必须_ 具有与其记录关联的电子邮件地址，以便 [!DNL Marketo Measure] 创建接触点。 没有电子邮件地址， [!DNL Marketo Measure] 不会为营销活动成员分配接触点。
+一旦选择了其中一项， [!DNL Marketo Measure] 会为每个营销活动成员分配一个接触点（如果适用）。 添加到营销活动的潜在客户或联系人 _必须_ 具有与记录关联的电子邮件地址，以便 [!DNL Marketo Measure] 以创建接触点。 如果没有电子邮件地址， [!DNL Marketo Measure] 不会向营销活动成员分配接触点。
 
 >[!MORELIKETHIS]
 >
 >[[!DNL Marketo Measure] 大学：映射离线渠道](https://universityonline.marketo.com/courses/bizible-fundamentals-channel-management/#/page/5c630eca34d9f0367662b77f)
 >
->[[!DNL Marketo Measure] 大学：促销活动对象字段](https://universityonline.marketo.com/courses/bizible-fundamentals-channel-management/#/page/5c63007334d9f0367662b758)
+>[[!DNL Marketo Measure] University： Campaign对象字段](https://universityonline.marketo.com/courses/bizible-fundamentals-channel-management/#/page/5c63007334d9f0367662b758)

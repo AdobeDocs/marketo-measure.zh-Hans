@@ -1,20 +1,21 @@
 ---
 unique-page-id: 18874686
 description: 多个营销活动记录类型的配置 —  [!DNL Marketo Measure]  — 产品文档
-title: 多营销活动记录类型的配置
+title: 多个营销活动记录类型的配置
 exl-id: 10499556-a591-4630-9149-ae676e6494af
-source-git-commit: 65e7f8bc198ceba2f873ded23c94601080ad0546
+feature: Channels
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%
 
 ---
 
-# 多营销活动记录类型的配置 {#configurations-for-multiple-campaign-record-types}
+# 多个营销活动记录类型的配置 {#configurations-for-multiple-campaign-record-types}
 
-**“启用采购员接触点”字段中缺少选取器值**
+**“启用买方接触点”字段中缺少选取列表值**
 
-如果您的SFDC组织使用多个促销活动记录类型，则必须为每个记录类型添加“启用买方接触点”的选取列表值。 要添加选项，请执行以下步骤。
+如果您的SFDC组织使用多种促销活动记录类型，则必须为每个记录类型添加“启用采购员接触点”的选择列表值。 要添加选项，请执行以下步骤。
 
 1. 转到 **[!UICONTROL Setup]** > **[!UICONTROL Customize]** > **[!UICONTROL Campaigns]** > **[!UICONTROL Record Types]**.
 
@@ -24,7 +25,7 @@ ht-degree: 0%
 
    ![](assets/2.jpg)
 
-1. 这里，您将看到该记录类型的可用选取器。 选择 **[!UICONTROL Edit]** “启用买方接触点”字段旁边的。
+1. 此时您会看到该记录类型的可用选择列表。 选择 **[!UICONTROL Edit]** ，位于“启用买方接触点”字段旁。
 
    ![](assets/3.jpg)
 
@@ -32,4 +33,4 @@ ht-degree: 0%
 
    ![](assets/4.jpg)
 
-1. 将默认值设置为“None”，然后单击 **[!UICONTROL Save]**. 对任何其他促销活动记录类型重复执行上述步骤。
+1. 将默认值设置为“无”并单击 **[!UICONTROL Save]**. 对任何其他Campaign记录类型重复此操作。

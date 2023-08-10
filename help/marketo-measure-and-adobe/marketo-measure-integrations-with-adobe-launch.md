@@ -1,34 +1,34 @@
 ---
-description: '[!DNL Marketo Measure] 与Launch集成 — Adobe [!DNL Marketo Measure]  — 产品文档'
-title: '''[!DNL Marketo Measure] 与Launch的集成Adobe'
+description: ’[!DNL Marketo Measure] 与AdobeLaunch的集成 —  [!DNL Marketo Measure]  — 产品文档'
+title: ’[!DNL Marketo Measure] 与AdobeLaunch的集成
 exl-id: 316ee8a8-b2d3-42e9-9ee5-c9b1d91c2769
-source-git-commit: 19f670505358b04fb26620574b71c2af8d0d9847
+feature: Integration
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
 
 ---
 
-# [!DNL Marketo Measure] 与Launch集成Adobe {#marketo-measure-integrations-with-adobe-launch}
+# [!DNL Marketo Measure] 与AdobeLaunch的集成 {#marketo-measure-integrations-with-adobe-launch}
 
-AdobeLaunch扩展专为现有 [!DNL Marketo Measure] 已在其网站上利用AdobeLaunch的用户。 该扩展用作标签管理解决方案，您可以使用该解决方案根据某些事件和条件在您的页面上配置和动态加载脚本。
+Adobe Launch扩展专为现有的 [!DNL Marketo Measure] 已在其网站上使用AdobeLaunch的用户。 扩展用作标签管理解决方案，可用于根据特定事件和条件在页面上配置和动态加载脚本。
 
-在Launch中安装和配置后， [!DNL Marketo Measure] 扩展将在存在AdobeLaunch脚本的页面上加载bizible.js脚本。 这允许营销人员通过AdobeLaunch配置添加bizible.js，而不是显式修改网页以添加bizible.js脚本标记。
+在AdobeLaunch中安装和配置后， [!DNL Marketo Measure] 扩展将在存在AdobeLaunch脚本的页面上加载bizible.js脚本。 这允许营销人员通过AdobeLaunch配置添加bizible.js，而不是显式修改网页以添加bizible.js脚本标记。
 
 ## 配置AdobeLaunch扩展 {#configure-the-adobe-launch-extension}
 
 >[!PREREQUISITES]
 >
->请访问以下链接，了解有关Launch及其扩展的更多Adobe:
+>查看以下链接，了解有关AdobeLaunch及其扩展的更多信息：
 >
->* [[!DNL Marketo Measure] 扩展](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email/bizible.html?lang=en#catalog){target="_blank"}
->* [Adobe启动概述](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/index.html?lang=en#prerequisites){target="_blank"}
+>* [[!DNL Marketo Measure] 扩展名](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email/bizible.html?lang=en#catalog){target="_blank"}
+>* [Adobe启动项概述](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/index.html?lang=en#prerequisites){target="_blank"}
 >* [AdobeLaunch扩展概述](https://experienceleague.adobe.com/docs/launch/using/extension-dev/overview.html?lang=en#extension-configuration){target="_blank"}
 
+1. 按照以下步骤创建资产 [本文内容](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=en#go-to-the-data-collection-interface){target="_blank"}.
 
-1. 按照步骤创建属性 [在本文中](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=en#go-to-the-data-collection-interface){target="_blank"}.
-
-1. 单击之前创建的资产。
+1. 单击刚刚创建的资产。
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-1.png)
 
@@ -36,11 +36,11 @@ AdobeLaunch扩展专为现有 [!DNL Marketo Measure] 已在其网站上利用Ado
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-2.png)
 
-1. 单击 **[!UICONTROL Catalog]** 选项卡，搜索“[!UICONTROL Bizible].&quot;
+1. 单击 **[!UICONTROL Catalog]** 选项卡并搜索&#39;&#39;[!UICONTROL Bizible]“
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-3.png)
 
-1. 在 [!UICONTROL Bizible Analytics] 拼贴，单击 **[!UICONTROL Install]**.
+1. 在 [!UICONTROL Bizible Analytics] 图块，单击 **[!UICONTROL Install]**.
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-4.png)
 
@@ -60,11 +60,11 @@ AdobeLaunch扩展专为现有 [!DNL Marketo Measure] 已在其网站上利用Ado
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-7.png)
 
-1. 单击 **[!UICONTROL Add]** 按钮 [!UICONTROL Events].
+1. 单击 **[!UICONTROL Add]** 按钮位于 [!UICONTROL Events].
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-8.png)
 
-1. 在扩展下拉菜单中，选择 **[!UICONTROL Core]**. 然后，在事件类型下拉菜单中，选择 **[!UICONTROL Library Loaded (Page Top)]**. 如果不为事件指定名称，则会应用默认名称。 单击 **[!UICONTROL Keep Changes]** 完成时。
+1. 在扩展下拉列表中，选择 **[!UICONTROL Core]**. 然后在事件类型下拉列表中，选择 **[!UICONTROL Library Loaded (Page Top)]**. 如果不为事件命名，则将应用默认名称。 单击 **[!UICONTROL Keep Changes]** 完成时。
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-9.png)
 
@@ -72,7 +72,7 @@ AdobeLaunch扩展专为现有 [!DNL Marketo Measure] 已在其网站上利用Ado
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-10.png)
 
-1. 在扩展下拉菜单中，选择 **[!UICONTROL Bizible Analytics]**. 然后，在操作类型下拉菜单中，选择 **[!UICONTROL Initialize]**. 如果您没有为操作指定名称，则会应用默认名称。 单击 **[!UICONTROL Keep Changes]** 完成时。
+1. 在扩展下拉列表中，选择 **[!UICONTROL Bizible Analytics]**. 然后在操作类型下拉列表中，选择 **[!UICONTROL Initialize]**. 如果不为操作命名，则将应用默认名称。 单击 **[!UICONTROL Keep Changes]** 完成时。
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-11.png)
 

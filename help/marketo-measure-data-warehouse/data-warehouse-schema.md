@@ -3,7 +3,8 @@ unique-page-id: 35586140
 description: data warehouse架构 — Marketo Measure — 产品文档
 title: data warehouse架构
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
-source-git-commit: e7993619e2dcfdfcab1a02d95d404e76fe1366c1
+feature: Data Warehouse
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '22610'
 ht-degree: 5%
@@ -12,25 +13,24 @@ ht-degree: 5%
 
 # data warehouse架构 {#data-warehouse-schema}
 
-data warehouse允许您根据需要跟踪任意所需数量的归因数据，根据需要报告归因数据，并将其插入其他数据集。
+data warehouse允许您跟踪所需数量的数据，随时随地报告归因数据，并将其插入其他数据集。
 
 >[!IMPORTANT]
 >
->* 值为_DELETED_DATE的行将保留7天，然后从Snowflake中删除。
->* Snowflake中使用的时区遵循协调统一时间(UTC)。
-
+>* 具有_DELETED_DATE值的行将保留7天，然后从Snowflake中删除。
+>* snowflake中使用的时区遵循协调世界时(UTC)。
 
 >[!NOTE]
 >
->[单击此处](#sample-queries) 查看本文底部的示例查询。
+>[单击此处](#sample-queries) 以了解本文底部的示例查询。
 
 ## 实体关系图 {#entity-relationship-diagrams}
 
-的 _data warehouse数据模型_ ERD显示data warehouse中数据的流动和链接方式。 此图表不包括data warehouse中可用的所有表，因为其中一些表表示映射表、已存在的其他表的视图，或者我们建议不再使用的已弃用表。 请参阅下面data warehouse中对表和列的详细描述。 其中许多表包含非规范字段，但是，推荐使用此图表的数据模型，而是使用维表中的数据。
+此 _data warehouse数据模型_ ERD显示data warehouse中的数据如何流动以及如何链接在一起。 此图不包括data warehouse中所有可用的表，因为其中某些表表示映射表、其他表的视图或我们不建议再使用的已弃用表。 请参阅以下data warehouse中对表格和列的详细说明。 其中许多表包含反正规化的字段，但是，此图表是推荐的数据模型，它利用来自维表的数据。
 
-其他 _广告维度数据模型_ ERD提供了如何将广告特定维度的表最好地链接回主数据模型中的表的视图。 尽管广告维度在其他表中也不规范，但这表示了连接这些维度的推荐模型。
+其他 _广告维度数据模型_ ERD提供了一个视图，其中显示了如何以最佳方式将特定维度的广告表链接回主数据模型中的表。 虽然广告维度在其他表中也进行了反规范化，但这表示连接这些维度的推荐模型。
 
-_单击某个图像的全尺寸版本_
+_单击图像的全尺寸版本_
 
 <table style="table-layout:auto"> 
  <colgroup> 
@@ -57,7 +57,7 @@ _单击某个图像的全尺寸版本_
 
 ## 视图 {#views}
 
-### BIZ_ACCOUNTS {#biz-accounts}
+### 商业帐户 {#biz-accounts}
 
 从源系统导入的帐户。
 
@@ -71,12 +71,12 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>ID</td>
-      <td>varch</td>
-      <td>来自源系统的帐户ID。</td>
+      <td>varchar</td>
+      <td>源系统中的帐户ID。</td>
       <td>0013100001kpAZxAAM</td>
     </tr>
     <tr>
-      <td>CREATED_DATE</td>
+      <td>创建日期</td>
       <td>timestamp_ntz</td>
       <td>源系统中帐户的创建日期。</td>
       <td>2016-08-28 00:32:55.000</td>
@@ -89,32 +89,32 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>名称</td>
-      <td>varch</td>
+      <td>varchar</td>
       <td>源系统中的帐户名称。</td>
       <td>[!DNL Marketo Measure]</td>
     </tr>
     <tr>
-      <td>WEB_SITE</td>
-      <td>varch</td>
-      <td>在源系统中记录的帐户网站，用于“潜在客户到帐户”映射。</td>
+      <td>WEB站点</td>
+      <td>varchar</td>
+      <td>源系统中记录的帐户网站，用于潜在客户到帐户的映射。</td>
       <td>www.adobe.com</td>
     </tr>
     <tr>
-      <td>参与度_评级</td>
-      <td>varch</td>
-      <td>从 [!DNL Marketo Measure] 机器学习模型。 如果禁用ABM，则此值将为空。</td>
+      <td>ENGAGEMENT_RATING</td>
+      <td>varchar</td>
+      <td>从生成的字母等级(A、B、C、D、N/A) [!DNL Marketo Measure] 机器学习模型。 如果ABM被禁用，该值将为null。</td>
       <td>B</td>
     </tr>
     <tr>
       <td>ENGAGEMENT_SCORE</td>
       <td>数字(38,19)</td>
-      <td>由 [!DNL Marketo Measure] 机器学习以生成预测参与度分数(Engagement_Rating)。 如果禁用ABM，则此值将为空。</td>
+      <td>计算数字得分依据 [!DNL Marketo Measure] 机器学习，用于生成预测参与度分数(Engagement_Rating)。 如果ABM被禁用，该值将为null。</td>
       <td>0.1417350147058800000</td>
     </tr>
     <tr>
       <td>域</td>
-      <td>varch</td>
-      <td>网站的解析后下版本，仅存储域。</td>
+      <td>varchar</td>
+      <td>网站的已解析版本，仅存储域。</td>
       <td>adobe</td>
     </tr>
     <tr>
@@ -125,34 +125,34 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
-      <td>varch</td>
-      <td>自定义属性 [!DNL Marketo Measure] 已从源系统导入，格式为JSON。</td>
-      <td>{"Account_Type__c":"Security", "Foo":"Bar"}</td>
+      <td>varchar</td>
+      <td>具有以下特征的自定义属性 [!DNL Marketo Measure] 已使用JSON格式从源系统导入。</td>
+      <td>{"Account_Type__c"： "Security"， "Foo"："Bar"}</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_ACCOUNT_TO_EMAILS {#biz-account-to-emails}
+### BIZ_ACCOUNT_TO_EMAIL {#biz-account-to-emails}
 
-在已知的潜在客户/联系人电子邮件地址和帐户之间映射表。 如果禁用ABM，此表将为空。
+已知潜在客户/联系人电子邮件地址与帐户之间的映射表。 如果禁用ABM，此表将为空。
 
 <table>
   <tbody>
@@ -164,7 +164,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>ID</td>
-      <td>varch</td>
+      <td>varchar</td>
       <td>记录的唯一ID。</td>
       <td>0013800001MMPPiAAP_person@adobe.com|2022-01-05 17:22:13.000</td>
     </tr>
@@ -173,7 +173,7 @@ _单击某个图像的全尺寸版本_
         <p>ACCOUNT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>源系统帐户ID。</p>
@@ -187,10 +187,10 @@ _单击某个图像的全尺寸版本_
         <p>电子邮件</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>已通过“联系人”关系或“潜在客户到帐户”映射映射到帐户的电子邮件地址。</p>
+        <p>已通过“联系人”关系或“潜在客户至帐户”映射映射至帐户的电子邮件地址。</p>
       </td>
       <td>
         <p>person@adobe.com</p>
@@ -212,7 +212,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CREATED_DATE</p>
+        <p>创建日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -232,7 +232,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>记录是否被视为删除。</p>
+        <p>是否将该记录视为已删除。</p>
       </td>
       <td>
         <p>false</p>
@@ -241,25 +241,25 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_ACTIVITIES {#biz-activities}
+### 商业活动 {#biz-activities}
 
 从源系统或连接的广告帐户导入的活动。
 
@@ -276,7 +276,7 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>源系统中的活动ID。</p>
@@ -287,10 +287,10 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_ID</p>
+        <p>商机ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>与活动关联的潜在客户的ID。</td>
       <td>
@@ -302,7 +302,7 @@ _单击某个图像的全尺寸版本_
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>与活动关联的联系人的ID。</p>
@@ -316,7 +316,7 @@ _单击某个图像的全尺寸版本_
         <p>ACTIVITY_TYPE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>源系统中活动类型的ID。</p>
@@ -327,40 +327,40 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>ACTIVITY_TYPE_NAME</td>
-      <td>varch</td>
+      <td>varchar</td>
       <td>源系统中的活动名称。</td>
       <td>
-        <p>更改进度状态</p>
+        <p>进程中的更改状态</p>
       </td>
     </tr>
     <tr>
       <td>START_DATE</td>
       <td>timestamp_ntz</td>
-      <td>活动的开始日期（从源系统开始）。</td>
+      <td>源系统中活动的开始日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>END_DATE</td>
       <td>timestapm_ntz</td>
-      <td>源系统中活动的结束日期。</td>
+      <td>源系统中的活动结束日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>CAMPAIGN_ID</td>
-      <td>varch</td>
-      <td>源系统中活动所属促销活动的ID。</td>
+      <td>varchar</td>
+      <td>源系统中活动所属的营销活动的ID。</td>
       <td>
         <p>li.508038570.147643566</p>
       </td>
     </tr>
     <tr>
       <td>SOURCE_SYSTEM</td>
-      <td>varch</td>
+      <td>varchar</td>
       <td>标识源系统类型。</td>
       <td>Marketo</td>
     </tr>
     <tr>
-      <td>CREATED_DATE</td>
+      <td>创建日期</td>
       <td>timestamp_ntz</td>
       <td>在源系统中创建行的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
@@ -374,37 +374,37 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>IS_DELETD</td>
       <td>布尔值</td>
-      <td>是否在源系统中考虑删除记录。</td>
+      <td>是否将该记录视为已从源系统中删除。</td>
       <td>false</td>
     </tr>
     <tr>
       <td>AD_FORM_ID</td>
-      <td>varch</td>
-      <td>活动所属的广告表单的ID，来自源系统。</td>
+      <td>varchar</td>
+      <td>源系统中活动所属的广告的ID。</td>
       <td>li.507063119.3757704</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_ADS {#biz-ads}
+### 商业_广告 {#biz-ads}
 
 从任何连接的广告帐户导入的广告。
 
@@ -429,7 +429,7 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告的唯一ID。</p>
@@ -443,10 +443,10 @@ _单击某个图像的全尺寸版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>来自源系统的广告ID。</p>
+        <p>源系统中的广告ID。</p>
       </td>
       <td>
         <p>6053457066804</p>
@@ -457,7 +457,7 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中导入广告的广告帐户的ID。</p>
@@ -471,7 +471,7 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中导入广告的广告帐户的名称。</p>
@@ -485,10 +485,10 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告广告商的ID，特别是Doubleclick的广告商。</p>
+        <p>广告商（尤其是Doubleclick）的ID。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -499,13 +499,13 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告的广告商名称，专门用于Doubleclick。</p>
+        <p>广告商的名称，专门用于Doubleclick。</p>
       </td>
       <td>
-        <p>营销分析</p>
+        <p>Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -513,7 +513,7 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告的广告组ID。</p>
@@ -527,10 +527,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告的广告组名称。</p>
+        <p>广告的广告组的名称。</p>
       </td>
       <td>
         <p>广告B的广告集</p>
@@ -541,10 +541,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告的促销活动ID。</p>
+        <p>广告的营销活动ID。</p>
       </td>
       <td>
         <p>fb.106851586409075.6052044288804</p>
@@ -555,13 +555,13 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告的促销活动名称。</p>
       </td>
       <td>
-        <p>商机拓展促销活动</p>
+        <p>商机开发营销活动</p>
       </td>
     </tr>
     <tr>
@@ -572,7 +572,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>广告在源系统中是否仍处于活动状态。</p>
+        <p>广告在源系统中是否仍然处于活动状态。</p>
       </td>
       <td>
         <p>false</p>
@@ -608,7 +608,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>FIRST_IMPORT</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -625,10 +625,10 @@ _单击某个图像的全尺寸版本_
         <p>名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>来自源系统的广告名称。</p>
+        <p>源系统中的广告的名称。</p>
       </td>
       <td>
         <p>广告2</p>
@@ -651,25 +651,25 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>分组密钥</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>诊断字段，用于内部处理。</td>
+      <td>用于内部处理的诊断字段。</td>
       <td>
         <p>fb.106851586409075.6052044288804.6052044290004</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>实体类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此表的主对象或实体。 在本例中，为“Ad”。</p>
+        <p>此表的主对象或实体。 在本例中，“广告”。</p>
       </td>
       <td>
         <p>广告</p>
@@ -680,7 +680,7 @@ _单击某个图像的全尺寸版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告的广告提供商的名称。</p>
@@ -694,7 +694,7 @@ _单击某个图像的全尺寸版本_
         <p>URL_CURRENT</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>登陆页面的URL。</p>
@@ -707,7 +707,7 @@ _单击某个图像的全尺寸版本_
         <p>URL_OLD</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>URL_CURRENT的上一个值。</p>
@@ -717,23 +717,23 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>URL_REQUESTED</p>
+        <p>URL已请求</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>URL将使用的修饰内容 [!DNL Marketo Measure] 参数。</p>
+        <p>URL将修饰的内容 [!DNL Marketo Measure] 参数。</p>
         <p>（诊断字段，用于内部处理。）</p>
       </td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>URL_ALTENACTS</p>
+        <p>URL_ALTENATIVES</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从源系统导入。</p>
@@ -758,19 +758,19 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -801,7 +801,7 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告商的唯一ID。</p>
@@ -815,9 +815,9 @@ _单击某个图像的全尺寸版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>来自源系统的广告商ID。</td>
+      <td>源系统中的广告商ID。</td>
       <td>9143143</td>
     </tr>
     <tr>
@@ -825,7 +825,7 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中导入广告的广告帐户的ID。</p>
@@ -839,7 +839,7 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中导入广告的广告帐户的名称。</p>
@@ -853,10 +853,10 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告商的ID，特别是Doubleclick的ID。</p>
+        <p>广告商的ID，专门用于Doubleclick。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -867,13 +867,13 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告商的名称，专门用于Doubleclick。</p>
       </td>
       <td>
-        <p>[!DNL Marketo Measure] 营销分析</p>
+        <p>[!DNL Marketo Measure] Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -881,10 +881,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为null，因为在任何广告层次结构中，广告商上方没有广告组。</p>
+        <p>预期为空，因为任何广告层次结构中的广告商上方没有广告组。</p>
       </td>
       <td>
         <p>null</p>
@@ -895,10 +895,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为null，因为在任何广告层次结构中，广告商上方没有广告组。</p>
+        <p>预期为空，因为任何广告层次结构中的广告商上方没有广告组。</p>
       </td>
       <td>
         <p>null</p>
@@ -909,10 +909,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为在任何广告层次结构中，广告商上方没有广告促销活动。</p>
+        <p>预期为空，因为任何广告层次结构中的广告商上方没有广告营销活动。</p>
       </td>
       <td>
         <p>null</p>
@@ -923,10 +923,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为在任何广告层次结构中，广告广告商上方没有促销活动。</p>
+        <p>预期为空，因为任何广告层次结构中的广告广告商上方没有营销活动。</p>
       </td>
       <td>
         <p>null</p>
@@ -940,7 +940,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>广告商在源系统中是否仍处于活动状态。</p>
+        <p>广告商是否仍在源系统中处于活动状态。</p>
       </td>
       <td>
         <p>true</p>
@@ -954,7 +954,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>广告商是否已在源系统中删除。</p>
+        <p>是否已在源系统中删除广告商。</p>
       </td>
       <td>
         <p>false</p>
@@ -976,7 +976,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>FIRST_IMPORT</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -993,13 +993,13 @@ _单击某个图像的全尺寸版本_
         <p>名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>来自源系统的广告商的名称。</p>
+        <p>源系统中的广告商的名称。</p>
       </td>
       <td>
-        <p>[!DNL Marketo Measure] 营销分析</p>
+        <p>[!DNL Marketo Measure] Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -1019,20 +1019,20 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>分组密钥</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>诊断字段，用于内部处理。</td>
+      <td>用于内部处理的诊断字段。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>实体类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>此表的主对象或实体。 在本例中，为“广告商”。</p>
@@ -1046,13 +1046,13 @@ _单击某个图像的全尺寸版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告商的广告提供商。</p>
       </td>
       <td>
-        <p>杜布莱克利克</p>
+        <p>多布莱克</p>
       </td>
     </tr>
     <tr>
@@ -1072,19 +1072,19 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -1115,7 +1115,7 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告帐户的唯一标识符。</p>
@@ -1129,7 +1129,7 @@ _单击某个图像的全尺寸版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>源系统中的广告帐户ID。</td>
       <td>
@@ -1141,9 +1141,9 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>应为null，因为这是广告层次结构中广告帐户的记录。</td>
+      <td>预期为空，因为这是广告层次结构中广告帐户的记录。</td>
       <td>null</td>
     </tr>
     <tr>
@@ -1151,9 +1151,9 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>应为null，因为这是广告层次结构中广告帐户的记录。</td>
+      <td>预期为空，因为这是广告层次结构中广告帐户的记录。</td>
       <td>null</td>
     </tr>
     <tr>
@@ -1161,10 +1161,10 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为在任何广告层次结构中，广告帐户上方没有广告商。</p>
+        <p>预期为空，因为任何广告层次结构中的广告帐户上方没有广告商。</p>
       </td>
       <td>null</td>
     </tr>
@@ -1173,10 +1173,10 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为在任何广告层次结构中，广告帐户上方没有广告商。</p>
+        <p>预期为空，因为任何广告层次结构中的广告帐户上方没有广告商。</p>
       </td>
       <td>null</td>
     </tr>
@@ -1185,10 +1185,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为null，因为在任何广告层次结构中，广告帐户上方没有广告组。</p>
+        <p>预期为空，因为任何广告层次结构中的广告帐户上方没有广告组。</p>
       </td>
       <td>null</td>
     </tr>
@@ -1197,10 +1197,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为null，因为在任何广告层次结构中，广告帐户上方没有广告组。</p>
+        <p>预期为空，因为任何广告层次结构中的广告帐户上方没有广告组。</p>
       </td>
       <td>null</td>
     </tr>
@@ -1209,10 +1209,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为在任何广告层次结构中，广告帐户上方没有广告促销活动。</p>
+        <p>预期为空，因为任何广告层次结构中的广告帐户上方没有广告营销活动。</p>
       </td>
       <td>null</td>
     </tr>
@@ -1221,10 +1221,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为在任何广告层次结构中，广告帐户上方没有广告促销活动。</p>
+        <p>预期为空，因为任何广告层次结构中的广告帐户上方没有广告营销活动。</p>
       </td>
       <td>null</td>
     </tr>
@@ -1236,7 +1236,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>广告帐户在源系统中是否仍处于活动状态。</p>
+        <p>广告帐户在源系统中是否仍然处于活动状态。</p>
       </td>
       <td>
         <p>true</p>
@@ -1272,7 +1272,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>FIRST_IMPORT</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -1289,9 +1289,9 @@ _单击某个图像的全尺寸版本_
         <p>名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>来自源系统的广告帐户名称。</td>
+      <td>源系统中的广告帐户的名称。</td>
       <td>
         <p>[!DNL Marketo Measure] 广告帐户</p>
       </td>
@@ -1313,23 +1313,23 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>分组密钥</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>诊断字段，用于内部处理。</td>
+      <td>用于内部处理的诊断字段。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>实体类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此表的主对象或实体。 在本例中为“帐户”。</p>
+        <p>此表的主对象或实体。 在本例中，为“Account”。</p>
       </td>
       <td>
         <p>帐户</p>
@@ -1340,7 +1340,7 @@ _单击某个图像的全尺寸版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告帐户的广告提供商的名称。</p>
@@ -1354,7 +1354,7 @@ _单击某个图像的全尺寸版本_
         <p>ACCOUNT_CURRENCY_UNIT</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>源系统中用于广告帐户的货币代码。</p>
@@ -1368,7 +1368,7 @@ _单击某个图像的全尺寸版本_
         <p>COMPANY_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>用于内部处理。</td>
       <td>1933789</td>
@@ -1378,9 +1378,9 @@ _单击某个图像的全尺寸版本_
         <p>源</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>从URL从utm_source解析。</td>
+      <td>从utm_source的URL中解析。</td>
       <td>
         <p>社交</p>
       </td>
@@ -1390,9 +1390,9 @@ _单击某个图像的全尺寸版本_
         <p>中</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>从URL从utm_medium解析。</td>
+      <td>从utm_medium中的URL解析。</td>
       <td>
         <p>lisu07261601</p>
       </td>
@@ -1405,7 +1405,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,19)</p>
       </td>
       <td>
-        <p>过去30天内导入的支出额，仅适用于AdWords。</p>
+        <p>过去30天导入的支出金额，仅适用于AdWords。</p>
       </td>
       <td>
         <p>17260.000000000000000000</p>
@@ -1433,7 +1433,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>过去30天内的点击次数，仅适用于AdWords。</p>
+        <p>过去30天的点击次数，仅适用于AdWords。</p>
       </td>
       <td>
         <p>3400</p>
@@ -1447,7 +1447,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>过去30天内报告的转化次数，仅适用于AdWords。</p>
+        <p>过去30天报告的转化次数，仅适用于AdWords。</p>
       </td>
       <td>
         <p>180</p>
@@ -1458,7 +1458,7 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>用于内部诊断。</td>
       <td>
@@ -1470,7 +1470,7 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE_OLD</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>用于内部诊断。</td>
       <td></td>
@@ -1480,7 +1480,7 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>用于内部诊断。</td>
       <td></td>
@@ -1490,10 +1490,10 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE_APPLIED</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在广告帐户级别为AdWords或为标记登陆页面而添加的Bing广告跟踪模板。</p>
+        <p>在AdWords的广告帐户级别添加的跟踪模板或Bing的跟踪模板可用于标记登陆页面。</p>
       </td>
       <td>
         <p>http://cdn.adobe.com/redir?lp={lpurl}&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}</p>
@@ -1516,27 +1516,27 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_AD_CAMPAIGNS {#biz-ad-campaigns}
+### BIZ_AD_CAMPAIGN {#biz-ad-campaigns}
 
-从连接的广告帐户、源系统、utm和自行报告的营销活动导入。
+从连接的广告帐户、源系统、UTM和自报告导入的营销活动。
 
 <table>
   <tbody>
@@ -1559,7 +1559,7 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>营销活动的唯一ID。</p>
@@ -1573,9 +1573,9 @@ _单击某个图像的全尺寸版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>源系统中的促销活动ID。</td>
+      <td>源系统中的营销活动ID。</td>
       <td>
         <p>285114995</p>
       </td>
@@ -1585,7 +1585,7 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中导入营销活动的广告帐户的ID。</p>
@@ -1599,7 +1599,7 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中导入营销活动的广告帐户的名称。</p>
@@ -1613,10 +1613,10 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>营销活动广告商的ID，特别是Doubleclick的广告商ID。</p>
+        <p>营销活动（尤其是Doubleclick）的广告商ID。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -1627,13 +1627,13 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>营销活动的广告商名称，专门针对Doubleclick。</p>
+        <p>营销活动的广告商名称，专门用于Doubleclick。</p>
       </td>
       <td>
-        <p>营销分析</p>
+        <p>Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -1641,10 +1641,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为在任何广告层次结构中，促销活动上方没有广告组。</p>
+        <p>预期为空，因为任何广告层次结构中的促销活动之上没有广告组。</p>
       </td>
       <td>
         <p>null</p>
@@ -1655,10 +1655,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为在任何广告层次结构中，促销活动上方没有广告组。</p>
+        <p>预期为空，因为任何广告层次结构中的促销活动之上没有广告组。</p>
       </td>
       <td>null</td>
     </tr>
@@ -1667,7 +1667,7 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>促销活动的唯一ID，请改用ID字段。</p>
@@ -1679,10 +1679,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>营销活动的名称，请改用“名称”字段。</p>
+        <p>营销活动的名称，请改用名称字段。</p>
       </td>
       <td></td>
     </tr>
@@ -1694,7 +1694,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>营销活动在源系统中是否仍处于活动状态。</p>
+        <p>活动在源系统中是否仍然处于活动状态。</p>
       </td>
       <td>
         <p>true</p>
@@ -1708,7 +1708,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>营销活动是否已在源系统中删除。</p>
+        <p>是否已在源系统中删除Campaign。</p>
       </td>
       <td>
         <p>false</p>
@@ -1730,7 +1730,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>FIRST_IMPORT</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -1747,13 +1747,13 @@ _单击某个图像的全尺寸版本_
         <p>名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>营销活动的名称。</p>
       </td>
       <td>
-        <p>合作伙伴重定位</p>
+        <p>合作伙伴重新定位</p>
       </td>
     </tr>
     <tr>
@@ -1764,7 +1764,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否需要更新营销活动，以便 [!DNL Marketo Measure] 标记。</p>
+        <p>是否需要更新营销活动 [!DNL Marketo Measure] 标记。</p>
         <p>（诊断字段，由内部处理使用。）</p>
       </td>
       <td>
@@ -1773,26 +1773,26 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>分组密钥</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>诊断字段，用于内部处理。</td>
+      <td>用于内部处理的诊断字段。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>实体类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此表的主对象或实体。 在本例中为“营销活动”。</p>
+        <p>此表的主对象或实体。 在本例中，为“Campaign”。</p>
       </td>
       <td>
-        <p>Campaign</p>
+        <p>营销活动</p>
       </td>
     </tr>
     <tr>
@@ -1800,7 +1800,7 @@ _单击某个图像的全尺寸版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>营销活动的广告提供商的名称。</p>
@@ -1817,7 +1817,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,19)</p>
       </td>
       <td>
-        <p>营销活动广告平台中设置的每日预算。</p>
+        <p>在广告平台中为营销活动设置的每日预算。</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -1828,7 +1828,7 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>用于内部诊断。</td>
       <td></td>
@@ -1838,7 +1838,7 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE_OLD</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>用于内部诊断。</td>
       <td></td>
@@ -1848,7 +1848,7 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>用于内部诊断。</td>
       <td></td>
@@ -1858,10 +1858,10 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE_APPLIED</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在促销活动级别为AdWords添加跟踪模板，或在Bing添加跟踪模板以标记登陆页面。</p>
+        <p>在AdWords或Bing的“营销活动”级别添加了跟踪模板，用于标记登陆页面。</p>
       </td>
       <td>
         <p>http://cdn.adobe.com/redir?lp={lpurl}&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}</p>
@@ -1884,27 +1884,27 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_AD_FORMS。 {#biz-ad-forms}
+### BIZ_AD_FORMS {#biz-ad-forms}
 
-广告Forms从任何连接的广告帐户导入。
+从任何连接的广告帐户导入广告Forms。
 
 <table>
   <tr>
@@ -1927,7 +1927,7 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告表单的唯一ID。</p>
@@ -1941,10 +1941,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告表单从中导入的广告帐户的ID。</p>
+        <p>从中导入广告表单的广告帐户的ID。</p>
       </td>
       <td>
         <p>li.507063119</p>
@@ -1955,7 +1955,7 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中导入广告表单的广告帐户的名称。</p>
@@ -1972,7 +1972,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>从源系统中删除了状态。 如果状态为“草稿”、“已存档”或“已取消”，则设置为“已删除”。</p>
+        <p>已从源系统中删除状态。 如果状态为“草稿”、“已存档”或“已取消”，则设置为已删除。</p>
       </td>
       <td>
         <p>false</p>
@@ -1994,7 +1994,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>FIRST_IMPORT</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -2011,21 +2011,21 @@ _单击某个图像的全尺寸版本_
         <p>名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告表单的名称。</p>
       </td>
       <td>
-        <p>NSPA Ebook LGF（2020年5月）</p>
+        <p>NSPA电子书LGF （2020年5月）</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>实体类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>此表的主对象或实体。 在本例中，为“AdForm”。</p>
@@ -2039,7 +2039,7 @@ _单击某个图像的全尺寸版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告表单的广告提供商的名称。</p>
@@ -2053,13 +2053,13 @@ _单击某个图像的全尺寸版本_
         <p>描述</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告表单的描述。</p>
       </td>
       <td>
-        <p>了解智能自动化如何提高抵押贷款再融资贷款申请的流程效率。</p>
+        <p>了解智能自动化如何提高抵押贷款再融资贷款申请的处理效率。</p>
       </td>
     </tr>
     <tr>
@@ -2067,11 +2067,11 @@ _单击某个图像的全尺寸版本_
         <p>标题</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>广告表单的标题。</td>
       <td>
-        <p>再融资申请流程自动化</p>
+        <p>现在是自动化再融资申请流程的时候了</p>
       </td>
     </tr>
     <tr>
@@ -2079,7 +2079,7 @@ _单击某个图像的全尺寸版本_
         <p>LANDING_URL</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>广告表单的登陆URL。</td>
       <td>
@@ -2091,11 +2091,11 @@ _单击某个图像的全尺寸版本_
         <p>问题</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>广告表单的问题列表。</td>
       <td>
-        <p>名字：姓氏：电子邮件地址：国家/地区：职位：公司名称</p>
+        <p>名字：姓氏：电子邮件地址：国家/地区：职务：公司名称</p>
       </td>
     </tr>
     <tr>
@@ -2103,7 +2103,7 @@ _单击某个图像的全尺寸版本_
         <p>状态</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告表单的状态。</p>
@@ -2115,31 +2115,31 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>SOURCE_ID</td>
-      <td>varch</td>
-      <td>记录源的来源的ID。</td>
+      <td>varchar</td>
+      <td>记录来源的ID。</td>
       <td>aw.3284209</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_AD_GROUPS {#biz-ad-groups}
+### BIZ_AD_GROUP {#biz-ad-groups}
 
 从任何连接的广告帐户导入的广告组。
 
@@ -2164,7 +2164,7 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告组的唯一ID。</p>
@@ -2178,7 +2178,7 @@ _单击某个图像的全尺寸版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>源系统中的广告组ID。</td>
       <td>
@@ -2190,10 +2190,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告组从中导入的广告帐户的ID。</p>
+        <p>从中导入广告组的广告帐户的ID。</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -2204,10 +2204,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告组从中导入的广告帐户的名称。</p>
+        <p>从中导入广告组的广告帐户的名称。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -2218,10 +2218,10 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为null，因为Doubleclick广告层次结构中没有广告组。</p>
+        <p>预期为空，因为Doubleclick广告层次结构中没有广告组。</p>
       </td>
       <td>
         <p>null</p>
@@ -2232,10 +2232,10 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为null，因为Doubleclick广告层次结构中没有广告组。</p>
+        <p>预期为空，因为Doubleclick广告层次结构中没有广告组。</p>
       </td>
       <td>
         <p>null</p>
@@ -2246,10 +2246,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为null，因为这是层级中广告组的记录。</p>
+        <p>预期为空，因为这是层次结构中广告组的记录。</p>
       </td>
       <td>
         <p>null</p>
@@ -2260,10 +2260,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为null，因为这是层级中广告组的记录。</p>
+        <p>预期为空，因为这是层次结构中广告组的记录。</p>
       </td>
       <td>
         <p>null</p>
@@ -2274,10 +2274,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告组的促销活动ID。</p>
+        <p>广告组的营销活动ID。</p>
       </td>
       <td>
         <p>aw.6601259029.317737955</p>
@@ -2288,7 +2288,7 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告组的促销活动名称。</p>
@@ -2305,7 +2305,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>广告帐户在源系统中是否仍处于活动状态。</p>
+        <p>广告帐户在源系统中是否仍然处于活动状态。</p>
       </td>
       <td>
         <p>true</p>
@@ -2341,7 +2341,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>FIRST_IMPORT</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -2358,7 +2358,7 @@ _单击某个图像的全尺寸版本_
         <p>名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告组的名称。</p>
@@ -2384,20 +2384,20 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>分组密钥</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>诊断字段，用于内部处理。</td>
+      <td>用于内部处理的诊断字段。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>实体类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>此表的主对象或实体。 在本例中，为“AdGroup”。</p>
@@ -2411,7 +2411,7 @@ _单击某个图像的全尺寸版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告组的广告提供商的名称。</p>
@@ -2425,13 +2425,13 @@ _单击某个图像的全尺寸版本_
         <p>AD_NETWORK_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告组正在运行的媒体。</p>
+        <p>运行广告组的介质。</p>
       </td>
       <td>
-        <p>搜索、显示、YouTube_搜索、YouTube_Watch</p>
+        <p>Search， Display， YouTube_Search， YouTube_Watch</p>
       </td>
     </tr>
     <tr>
@@ -2439,7 +2439,7 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>用于内部诊断。</td>
       <td></td>
@@ -2449,7 +2449,7 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE_OLD</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>用于内部诊断。</td>
       <td></td>
@@ -2459,7 +2459,7 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>用于内部诊断。</td>
       <td></td>
@@ -2469,10 +2469,10 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE_APPLIED</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在广告帐户级别为AdWords或为标记登陆页面而添加的Bing广告跟踪模板。</p>
+        <p>在AdWords的广告帐户级别添加的跟踪模板或Bing的跟踪模板可用于标记登陆页面。</p>
       </td>
       <td>
         <p>http://cdn.adobe.com/redir?lp={lpurl}&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}</p>
@@ -2495,19 +2495,19 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -2515,7 +2515,7 @@ _单击某个图像的全尺寸版本_
 
 ### BIZ_AD_PROVIDERS
 
-<p>来自任何连接的广告帐户的广告提供程序，包括自我报告的条目（如果适用）。</p>
+<p>来自任何连接的广告帐户的广告提供商，包括自行报告的条目（如果适用）。</p>
 
 <table>
   <tbody>
@@ -2538,13 +2538,13 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告提供商的唯一ID。</p>
       </td>
       <td>
-        <p>兵</p>
+        <p>Bing</p>
       </td>
     </tr>
     <tr>
@@ -2552,13 +2552,13 @@ _单击某个图像的全尺寸版本_
         <p>名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>广告提供商的名称。</p>
       </td>
       <td>
-        <p>兵</p>
+        <p>Bing</p>
       </td>
     </tr>
     <tr>
@@ -2578,19 +2578,19 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -2598,7 +2598,7 @@ _单击某个图像的全尺寸版本_
 
 ### BIZ_ATTRIBUTION_TOUCHPOINTS {#biz-attribution-touchpoints}
 
-<p>买方归因接触点，与Opportunity关联的所有接触点。</p>
+<p>买方归因接触点，即与Opportunity关联的所有接触点。</p>
 <table>
   <tbody>
     <tr>
@@ -2620,10 +2620,10 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>购买者归因接触点(BAT)的唯一ID。</p>
+        <p>买方归因接触点(BAT)的唯一ID。</p>
       </td>
       <td>
         <p>BAT2_0060Z00000lFHtOQAW_</p>
@@ -2646,13 +2646,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>OPPORTUNITY_ID</p>
+        <p>机会ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>BAT归因于的Opportunity的ID。</p>
+        <p>BAT所属的Opportunity的ID。</p>
       </td>
       <td>
         <p>0060Z00000lFHtOQAW</p>
@@ -2663,7 +2663,7 @@ _单击某个图像的全尺寸版本_
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>与BAT关联的联系人的ID。</p>
@@ -2674,8 +2674,8 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>电子邮件</td>
-      <td>varch</td>
-      <td>与BAT关联的电子邮件地址。</td>
+      <td>varchar</td>
+      <td>与最佳可得技术关联的电子邮件地址。</td>
       <td>person@adobe.com</td>
     </tr>
     <tr>
@@ -2683,10 +2683,10 @@ _单击某个图像的全尺寸版本_
         <p>ACCOUNT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>BAT所属帐户的ID。</p>
+        <p>BAT归属于的帐户的ID。</p>
       </td>
       <td>
         <p>0013100001otbIAAAY</p>
@@ -2697,7 +2697,7 @@ _单击某个图像的全尺寸版本_
         <p>USER_TOUCHPOINT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>生成BAT的用户接触点的ID。</p>
@@ -2708,7 +2708,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>TOUCHPOINT_DATE</p>
+        <p>接触点日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -2722,8 +2722,8 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>VISITOR_ID</td>
-      <td>varch</td>
-      <td>与BAT关联的访客ID。</td>
+      <td>varchar</td>
+      <td>与BAT关联的访客的ID。</td>
       <td>v_277d79d01678498fea067c9b631bf6df</td>
     </tr>
     <tr>
@@ -2731,10 +2731,10 @@ _单击某个图像的全尺寸版本_
         <p>MARKETING_TOUCH_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>活动类型、Web访问、Web窗体、Web聊天、电话呼叫、[CRM]营销活动或[CRM]活动。 在CRM中称为“接触点类型”。</p>
+        <p>活动的类型，Web访问、Web窗体、Web聊天、电话、[CRM]营销活动或[CRM]活动。 在CRM中称为“接触点类型”。</p>
       </td>
       <td>
         <p>Web窗体</p>
@@ -2745,10 +2745,10 @@ _单击某个图像的全尺寸版本_
         <p>渠道</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接触点属于的渠道(在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“营销渠道 — 路径”。</p>
+        <p>根据中的自定义渠道定义，接触点所属的渠道 [!DNL Marketo Measure] 应用程序。 在CRM中称为“营销渠道 — 路径”。</p>
       </td>
       <td>
         <p>Social.LinkedIn</p>
@@ -2759,10 +2759,10 @@ _单击某个图像的全尺寸版本_
         <p>CATEGORY1</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接触点属于第一类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>第一个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
       <td>
         <p>ABC</p>
@@ -2773,10 +2773,10 @@ _单击某个图像的全尺寸版本_
         <p>CATEGORY2</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接触点属于第2个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>根据以下内容中的区段定义，确定接触点属于第二个类别的区段值 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
       <td>
         <p>是</p>
@@ -2787,13 +2787,13 @@ _单击某个图像的全尺寸版本_
         <p>CATEGORY3</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接触点属于第三个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>接触点所属的第三类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
       <td>
-        <p>中小型企业</p>
+        <p>SMB</p>
       </td>
     </tr>
     <tr>
@@ -2801,9 +2801,9 @@ _单击某个图像的全尺寸版本_
         <p>CATEGORY4</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第4个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>根据以下内容中的区段定义，确定接触点所属的第四个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td>
         <p>新业务</p>
       </td>
@@ -2813,9 +2813,9 @@ _单击某个图像的全尺寸版本_
         <p>CATEGORY5</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第5个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>根据以下内容中的区段定义，确定接触点所属的第五个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2823,9 +2823,9 @@ _单击某个图像的全尺寸版本_
         <p>CATEGORY6</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第六个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>根据以下内容中的区段定义，确定接触点所属的第六个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2833,9 +2833,9 @@ _单击某个图像的全尺寸版本_
         <p>CATEGORY7</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第七个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>根据以下内容中的区段定义，确定接触点所属的第七个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2843,9 +2843,9 @@ _单击某个图像的全尺寸版本_
         <p>CATEGORY8</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第8个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>根据以下内容中的区段定义，确定接触点所属的第八个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2853,9 +2853,9 @@ _单击某个图像的全尺寸版本_
         <p>CATEGORY9</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第9个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>第9个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2863,9 +2863,9 @@ _单击某个图像的全尺寸版本_
         <p>CATEGORY10</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第10个类别的区段值(在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>第10个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2873,9 +2873,9 @@ _单击某个图像的全尺寸版本_
         <p>CATEGORY11</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第11个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>第11个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2883,9 +2883,9 @@ _单击某个图像的全尺寸版本_
         <p>CATEGORY12</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第12个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>第12个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2893,9 +2893,9 @@ _单击某个图像的全尺寸版本_
         <p>CATEGORY13</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第13个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>根据以下内容中的区段定义，确定接触点所属的第十三个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2903,9 +2903,9 @@ _单击某个图像的全尺寸版本_
         <p>CATEGORY14</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第14个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>第14个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2913,17 +2913,17 @@ _单击某个图像的全尺寸版本_
         <p>CATEGORY15</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第15个类别的区段值(在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>第15个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>BROWSER_NAME</p>
+        <p>浏览器名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从javascript和IP地址中，检测到用户在会话期间所在的浏览器。</p>
@@ -2934,13 +2934,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>BROWSER_VERSION</p>
+        <p>浏览器版本</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从javascript和IP地址中，检测到用户在会话期间所在的浏览器版本。</p>
+        <p>从javascript和IP地址中，查看在会话期间用户所在的检测到的浏览器版本。</p>
       </td>
       <td>
         <p>58</p>
@@ -2948,10 +2948,10 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_NAME</p>
+        <p>平台名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从javascript和IP地址中，检测到用户在会话期间所在的平台。</p>
@@ -2962,13 +2962,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_VERSION</p>
+        <p>平台版本</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从javascript和IP地址中，检测到用户在会话期间所在平台的版本。</p>
+        <p>从javascript和IP地址中，查看在会话期间用户所在平台的检测到版本。</p>
       </td>
       <td>
         <p>10_12</p>
@@ -2979,13 +2979,13 @@ _单击某个图像的全尺寸版本_
         <p>LANDING_PAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>会话的第一个登陆页面，产生接触点。 在CRM中称为“登陆页面”。</p>
+        <p>导致接触点的会话的第一个登陆页面。 在CRM中称为“登陆页面”。</p>
       </td>
       <td>
-        <p>http://www.adobe.com/blog/uncover-每次销售真相成本</p>
+        <p>http://www.adobe.com/blog/uncover- truth-behind-cost-per-lead</p>
       </td>
     </tr>
     <tr>
@@ -2993,13 +2993,13 @@ _单击某个图像的全尺寸版本_
         <p>LANDING_PAGE_RAW</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>会话的第一个登陆页面，用于生成接触点。 原始登陆页面将包含URL中的所有查询参数。 在CRM中称为“登陆页面 — 原始”。</p>
+        <p>生成接触点的会话的第一个登陆页面。 原始登陆页面将包含URL中的所有查询参数。 在CRM中称为“Landing Page - Raw”。</p>
       </td>
       <td>
-        <p>http://www.adobe.com/blog/uncover-truth -bitten-cost-per-lead?utm_content=27322869&amp;utm_ medium=social&amp;utm_source=linkedin</p>
+        <p>http://www.adobe.com/blog/uncover-truth -behind-cost-per-lead？utm_content=27322869&amp;utm_ medium=social&amp;utm_source=linkedin</p>
       </td>
     </tr>
     <tr>
@@ -3007,10 +3007,10 @@ _单击某个图像的全尺寸版本_
         <p>REFERRER_PAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>通常在用户进入网站之前立即显示外部登陆页面。 在CRM中称为“反向链接页面”。</p>
+        <p>通常是在用户访问网站之前的外部登陆页面。 在CRM中称为“反向链接页面”。</p>
       </td>
       <td>
         <p>https://www.linkedin.com/</p>
@@ -3021,10 +3021,10 @@ _单击某个图像的全尺寸版本_
         <p>REFERRER_PAGE_RAW</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>通常在用户进入网站之前立即显示外部登陆页面。 原始反向链接页面可能在URL中包含查询参数。 在CRM中称为“反向链接页面 — 原始”。</p>
+        <p>通常是在用户访问网站之前的外部登陆页面。 原始反向链接页面可能包含URL中的查询参数。 在CRM中称为“Referrer Page - Raw”。</p>
       </td>
       <td>
         <p>https://www.linkedin.com/</p>
@@ -3035,10 +3035,10 @@ _单击某个图像的全尺寸版本_
         <p>FORM_PAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>会话中记录的第一个表单，该表单会生成接触点。 后续表单提交不会显示在Attribution_Touchpoints表中，而是显示在Form_Submits表中。 在CRM中称为“表单URL”。</p>
+        <p>会话中记录的第一张表单产生了接触点。 后续表单提交不会显示在Attribution_Touchpoints表中，而是显示在Form_Submit表中。 在CRM中称为“表单URL”。</p>
       </td>
       <td>
         <p>http://info.adobe.com/intro-guide-b2b-marketing-attribution</p>
@@ -3049,10 +3049,10 @@ _单击某个图像的全尺寸版本_
         <p>FORM_PAGE_RAW</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>会话中记录的第一个表单，该表单会生成接触点。 后续表单提交不会显示在Attribution_Touchpoints表中，而是显示在Form_Submits表中。 原始表单页面可能在URL中包含查询参数。 在CRM中称为“表单URL — 原始”。</p>
+        <p>会话中记录的第一张表单产生了接触点。 后续表单提交不会显示在Attribution_Touchpoints表中，而是显示在Form_Submit表中。 原始表单页面URL中可能包含查询参数。 在CRM中称为“表单URL — 原始”。</p>
       </td>
       <td>
         <p>http://info.adobe.com/intro-guide-b2b-marketing-attribution</p>
@@ -3066,7 +3066,7 @@ _单击某个图像的全尺寸版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>表单提交的日期。</p>
+        <p>提交表单的日期。</p>
       </td>
       <td>
         <p>2017-06-20 01:06:41.000</p>
@@ -3077,10 +3077,10 @@ _单击某个图像的全尺寸版本_
         <p>城市</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从javascript和IP地址中，检测到用户在会话期间所在的城市。</p>
+        <p>根据javascript和IP地址，检测用户在会话期间所处的城市。</p>
       </td>
       <td>
         <p>旧金山</p>
@@ -3091,10 +3091,10 @@ _单击某个图像的全尺寸版本_
         <p>区域</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从javascript和IP地址中，用户在会话期间所在的检测区域。</p>
+        <p>从javascript和IP地址中，查看在会话期间用户所处的检测区域。</p>
       </td>
       <td>
         <p>加利福尼亚</p>
@@ -3105,10 +3105,10 @@ _单击某个图像的全尺寸版本_
         <p>国家/地区</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从javascript和IP地址中，显示用户在会话期间所在的国家/地区。</p>
+        <p>通过javascript和IP地址，可了解在会话期间检测到的用户所在的国家/地区。</p>
       </td>
       <td>
         <p>美国</p>
@@ -3119,10 +3119,10 @@ _单击某个图像的全尺寸版本_
         <p>中</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用于定义导致接触点的介质。 可以从URL中从utm_medium解析。 或者，如果 [!DNL Marketo Measure] 能够解析广告，它可能是“cpc”或“display”之类的值。</p>
+        <p>用于定义产生接触点的媒介。 这可以从utm_medium的URL中解析。 或者，如果 [!DNL Marketo Measure] 能够解析广告，它可能是“cpc”或“display”之类的值。</p>
       </td>
       <td>
         <p>社交</p>
@@ -3133,10 +3133,10 @@ _单击某个图像的全尺寸版本_
         <p>WEB_SOURCE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用于定义导致接触点的源。 这可以从utm_source的URL中解析，如果是从CRM同步，或者如果是，则通常设置为“CRM Campaign” [!DNL Marketo Measure] 能够解析广告，它可能是“Google AdWords”或“Facebook”之类的值。 在CRM中称为“接触点源”。</p>
+        <p>用于定义导致接触点的源。 可以从utm_source中的URL中解析该活动；如果活动是从CRM同步的，则一般设置为“CRM Campaign”；或者 [!DNL Marketo Measure] 能够解析广告，它可能是“Google AdWords”或“Facebook”之类的值。 在CRM中称为“接触点源”。</p>
       </td>
       <td>
         <p>linkedin</p>
@@ -3147,10 +3147,10 @@ _单击某个图像的全尺寸版本_
         <p>SEARCH_PHRASE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用户在浏览器中输入以搜索并最终在网站上显示的值。 根据关键词购买情况，这可能与从付费搜索平台购买的关键词匹配，也可能不匹配。</p>
+        <p>用户在浏览器中输入要搜索并最终显示在网站上的值。 根据关键词购买情况，这可能与从付费搜索平台购买的关键词匹配，也可能不匹配。</p>
       </td>
       <td>
         <p>google [!DNL Marketo Measure]</p>
@@ -3161,10 +3161,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_PROVIDER</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告平台 [!DNL Marketo Measure] 能够从（通常是我们的集成合作伙伴之一）中进行解析。</p>
+        <p>广告平台 [!DNL Marketo Measure] 能够从（通常是我们的集成合作伙伴之一）中解析。</p>
       </td>
       <td>
         <p>Google</p>
@@ -3175,7 +3175,7 @@ _单击某个图像的全尺寸版本_
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中解析广告的广告帐户的ID。</p>
@@ -3189,7 +3189,7 @@ _单击某个图像的全尺寸版本_
         <p>ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中解析广告的广告帐户的名称。</p>
@@ -3203,10 +3203,10 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告帐户的广告商ID。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的广告商ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -3217,13 +3217,13 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从中解析广告的广告帐户的广告商名称。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的广告商名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
-        <p>[!DNL Marketo Measure] 营销分析</p>
+        <p>[!DNL Marketo Measure] Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -3231,10 +3231,10 @@ _单击某个图像的全尺寸版本_
         <p>SITE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户中的网站ID。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中网站的ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>1695651</p>
@@ -3242,13 +3242,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>站点名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析广告的广告帐户中的网站名称。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的网站名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>Quora.com</p>
@@ -3259,10 +3259,10 @@ _单击某个图像的全尺寸版本_
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告帐户中的版面ID。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的版面ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>120839827</p>
@@ -3273,13 +3273,13 @@ _单击某个图像的全尺寸版本_
         <p>PLACEMENT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户中的版面名称。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的投放位置的名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
-        <p>障碍</p>
+        <p>路障</p>
       </td>
     </tr>
     <tr>
@@ -3287,10 +3287,10 @@ _单击某个图像的全尺寸版本_
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户中的营销活动ID。</p>
+        <p>从中解析广告的广告帐户中的营销活动ID。</p>
       </td>
       <td>
         <p>aw.6601259029.317738075</p>
@@ -3298,13 +3298,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>营销活动名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户的营销活动名称。</p>
+        <p>从中解析广告的广告帐户中的营销活动名称。</p>
       </td>
       <td>
         <p>营销归因</p>
@@ -3315,10 +3315,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析广告的广告帐户中的广告组ID。 这仅适用于Google Adwords。</p>
+        <p>从中解析广告的广告帐户中的广告组ID。 这仅适用于Google Adwords。</p>
       </td>
       <td>
         <p>aw.6601259029.317738075.23105327435</p>
@@ -3329,10 +3329,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告帐户中广告从中解析的广告组的名称。 这仅适用于Google AdWords。</p>
+        <p>从中解析广告的广告帐户中的广告组的名称。 这仅适用于Google AdWords。</p>
       </td>
       <td>
         <p>营销归因 — 常规</p>
@@ -3343,10 +3343,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从其中解析广告的广告帐户的广告ID。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
+        <p>从中解析广告的广告帐户中的广告ID。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
       <td>
         <p>dc.6114.8882972.25272734.492579576</p>
@@ -3357,10 +3357,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户的广告名称。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
+        <p>从中解析广告的广告帐户中的广告名称。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
       <td>
         <p>预算网络研讨会 — 侧栏</p>
@@ -3371,10 +3371,10 @@ _单击某个图像的全尺寸版本_
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告帐户中的创作ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的广告帐户中的创意ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>aw.6601259029.317738075.23105327435.182716179597</p>
@@ -3385,10 +3385,10 @@ _单击某个图像的全尺寸版本_
         <p>CREATIVE_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告帐户中的创作元素名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的广告帐户中的创意内容的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>B2B营销归因</p>
@@ -3399,10 +3399,10 @@ _单击某个图像的全尺寸版本_
         <p>CREATIVE_DESCRIPTION_1</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>搜索广告中创作元素的第一行，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>搜索广告中创意的第一行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>下载CMO指南</p>
@@ -3413,13 +3413,13 @@ _单击某个图像的全尺寸版本_
         <p>CREATIVE_DESCRIPTION_2</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>来自搜索广告的创作元素的第二行，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>搜索广告中的创意内容第二行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
-        <p>了解归因如何通过将营销活动与收入联系起来来衡量ROI</p>
+        <p>了解归因如何通过将营销活动与收入关联来衡量投资回报率</p>
       </td>
     </tr>
     <tr>
@@ -3427,10 +3427,10 @@ _单击某个图像的全尺寸版本_
         <p>CREATIVE_DESTINATION_URL</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从搜索广告点进的登陆页面，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从搜索广告点进的登陆页面，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution</p>
@@ -3441,10 +3441,10 @@ _单击某个图像的全尺寸版本_
         <p>CREATIVE_DISPLAY_URL</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>搜索广告中显示的易记URL名称，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>在搜索广告上显示的友好URL名称，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>http://info.adobe.com/CMOs-Guide</p>
@@ -3455,10 +3455,10 @@ _单击某个图像的全尺寸版本_
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从付费搜索购买中购买的关键词ID，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从付费搜索购买购买的关键字ID，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>aw.6601259029.317738075.23105327435.4838421670</p>
@@ -3469,13 +3469,13 @@ _单击某个图像的全尺寸版本_
         <p>KEYWORD_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告解析来源的广告帐户中提取的从付费搜索购买购买的关键词名称。 这适用于Google AdWords和Bing Ads（搜索）</p>
+        <p>从付费搜索购买购买关键词（从广告解析来源广告的广告帐户提取）的名称。 这适用于Google AdWords和Bing Ads（搜索）</p>
       </td>
       <td>
-        <p>“营销归因”</p>
+        <p>"营销归因"</p>
       </td>
     </tr>
     <tr>
@@ -3483,10 +3483,10 @@ _单击某个图像的全尺寸版本_
         <p>KEYWORD_MATCH_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在搜索短语和购买的关键词之间找到的匹配类型。</p>
+        <p>在搜索短语和购买的关键字之间找到的匹配类型。</p>
       </td>
       <td>
         <p>精确</p>
@@ -3500,7 +3500,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否将此接触点视为机会历程的首次接触。</p>
+        <p>是否将此接触点视为机会历程的第一次触点。</p>
       </td>
       <td>
         <p>false</p>
@@ -3514,7 +3514,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否将此接触点视为商机历程的商机创建接触点。</p>
+        <p>是否将此接触点视为机会历程的潜在客户创建触点。</p>
       </td>
       <td>
         <p>false</p>
@@ -3528,7 +3528,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否将此接触点视为机会历程的机会创建接触点。</p>
+        <p>是否将此接触点视为机会历程的机会创建触点。</p>
       </td>
       <td>
         <p>false</p>
@@ -3542,7 +3542,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否将此接触点视为机会历程的闭合接触。</p>
+        <p>是否将此接触点视为机会历程的闭路触点。</p>
       </td>
       <td>
         <p>false</p>
@@ -3550,10 +3550,10 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>STAGES_TOCED</p>
+        <p>STAGES_TOCATED</p>
       </td>
-      <td>varch</td>
-      <td>此字段已弃用。 使用Stage_Transitions表获取阶段信息。</td>
+      <td>varchar</td>
+      <td>此字段已被弃用。 使用Stage_Transitions表获取舞台信息。</td>
       <td>null</td>
     </tr>
     <tr>
@@ -3564,7 +3564,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>此接触点在会话期间是否填写了表单。</p>
+        <p>会话期间此接触点是否填写了表单。</p>
       </td>
       <td>
         <p>true</p>
@@ -3578,7 +3578,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否将此接触点视为机会历程的第一印象接触</p>
+        <p>是否将此接触点视为机会历程的第一次印象接触</p>
       </td>
       <td>
         <p>false</p>
@@ -3592,7 +3592,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为它是首次接触（请参阅Is_First_Touch）。</p>
+        <p>由于这是首次接触，因此分配给此接触点的计算百分比（请参阅Is_First_Touch）。</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -3606,7 +3606,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为它是潜在客户创建接触（请参阅Is_Lead_Creation_Touch）。</p>
+        <p>分配给此接触点的计算百分比，因为它是商机创建触点（请参阅Is_Lead_Creation_Touch）。</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -3620,7 +3620,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为它是u形接触的一部分（请参阅Is_First_Touch和Is_Lead_Creation_Touch）。</p>
+        <p>分配给此接触点的计算百分比，因为该接触点属于U型触点（请参阅Is_First_Touch和Is_Lead_Creation_Touch）。</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -3634,7 +3634,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为它是w形接触的一部分（请参阅Is_First_Touch、Is_Lead_Creation_Touch和Is_Opp_Creation_Touch）。</p>
+        <p>分配给此接触点的计算百分比，因为该接触点属于W型触点（请参阅Is_First_Touch、Is_Lead_Creation_Touch和Is_Opp_Creation_Touch）。</p>
       </td>
       <td>
         <p>0.0153374234214425</p>
@@ -3648,7 +3648,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为它是完整路径模型的一部分（请参阅Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch、Is_Closed_Touch）。</p>
+        <p>由于此接触点是完整路径模型的一部分，因此分配给此接触点的计算百分比（请参阅Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch和Is_Closed_Touch）。</p>
       </td>
       <td>
         <p>0.0143061513081193</p>
@@ -3656,10 +3656,10 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CUSTOM_MODEL_PERCENTAGE</p>
+        <p>CUSTOM_MODEL_CENTAGE</p>
       </td>
       <td>数字(22,19)</td>
-      <td>分配给此接触点的计算百分比，因为它是自定义模型的一部分（请参阅Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch、Is_Closed_Touch）。</td>
+      <td>由于此接触点是自定义模型的一部分，因此分配给此接触点的计算百分比（请参阅Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch和Is_Closed_Touch）。</td>
       <td>0.0143061513081193</td>
     </tr>
     <tr>
@@ -3777,19 +3777,19 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -3797,7 +3797,7 @@ _单击某个图像的全尺寸版本_
 
 ### BIZ_CAMPAIGN_MEMBERS {#biz-campaign-members}
 
-从源系统导入的营销活动成员。 如果禁用了“促销活动同步”，则此表将为空。
+从源系统导入的营销活动成员。 如果禁用了Campaign同步，则此表将为空。
 
 <table>
   <tbody>
@@ -3820,10 +3820,10 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>源系统中的促销活动成员ID。</p>
+        <p>源系统中的营销活动成员ID。</p>
       </td>
       <td>
         <p>00v0Z00001VVzdLQAT</p>
@@ -3837,7 +3837,7 @@ _单击某个图像的全尺寸版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>源系统中促销活动成员的上次修改日期。</p>
+        <p>源系统中营销活动成员的上次修改日期。</p>
       </td>
       <td>
         <p>2018-08-31 20:49:54.000</p>
@@ -3845,13 +3845,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CREATED_DATE</p>
+        <p>创建日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>源系统中促销活动成员的创建日期。</p>
+        <p>源系统中营销活动成员的创建日期。</p>
       </td>
       <td>
         <p>2018-08-31 20:49:54.000</p>
@@ -3865,7 +3865,7 @@ _单击某个图像的全尺寸版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>客户设置的日期和时间，以覆盖促销活动日期，并将此值改为接触点日期。</p>
+        <p>客户设置为覆盖促销活动日期并将此值用作接触点日期的日期和时间。</p>
       </td>
       <td>
         <p>2018-08-30 18:00:00.000</p>
@@ -3873,13 +3873,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_ID</p>
+        <p>商机ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>营销活动成员所关联的潜在客户的ID。</p>
+        <p>营销活动成员关联到的潜在客户的ID。</p>
       </td>
       <td>
         <p>00Q0Z000013dw4GUAQ</p>
@@ -3887,13 +3887,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_EMAIL</p>
+        <p>潜在客户电子邮件</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>营销活动会员的潜在客户的电子邮件已绑定到。</p>
+        <p>营销活动成员关联到的潜在客户的电子邮件。</p>
       </td>
       <td>
         <p>persona@adobe.com</p>
@@ -3904,10 +3904,10 @@ _单击某个图像的全尺寸版本_
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>营销活动成员的联系人ID已绑定到。</p>
+        <p>营销活动成员绑定的联系人的ID。</p>
       </td>
       <td>
         <p>00331000032hMxRAAU</p>
@@ -3918,10 +3918,10 @@ _单击某个图像的全尺寸版本_
         <p>CONTACT_EMAIL</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>与营销活动成员联系的联系人的电子邮件已绑定。</p>
+        <p>营销活动成员关联到的联系人的电子邮件。</p>
       </td>
       <td>
         <p>persona@adobe.com</p>
@@ -3932,10 +3932,10 @@ _单击某个图像的全尺寸版本_
         <p>状态</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>促销活动成员的状态，通常设置为已发送或已响应或其他自定义值。 此状态与Campaign_Sync_Type绑定，以确定要为哪些促销活动成员创建接触点。</p>
+        <p>营销活动成员的状态，通常设置为“已发送”、“已响应”或其他自定义值。 此状态与Campaign_Sync_Type绑定，以确定要为其创建接触点的促销活动成员。</p>
       </td>
       <td>
         <p>已发送</p>
@@ -3949,7 +3949,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>从“状态”选取器中告知营销活动成员是否标记为“已响应”。</p>
+        <p>告知营销活动成员是否从状态选取器标记为“已响应”。</p>
       </td>
       <td>
         <p>true</p>
@@ -3971,10 +3971,10 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>营销活动名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>营销活动成员所属的相关营销活动的名称。</p>
@@ -3988,10 +3988,10 @@ _单击某个图像的全尺寸版本_
         <p>CAMPAIGN_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>营销活动成员所属的相关营销活动ID。</p>
+        <p>活动成员所属的相关活动的ID。</p>
       </td>
       <td>
         <p>7010Z000001TcKlQAK</p>
@@ -3999,27 +3999,27 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_TYPE</p>
+        <p>营销活动类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在相关营销活动上选择营销活动成员所属的类型。 类型用于映射营销渠道。</p>
+        <p>在该营销策划成员所属的相关营销策划上选择的类型。 类型用于映射营销渠道。</p>
       </td>
       <td>
-        <p>脱机</p>
+        <p>离线</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_SYNC_TYPE</p>
+        <p>campaign_SYNC_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>确定要为哪些促销活动成员创建接触点。 可能的值包括：Include_All、Include_Responded、Exclude_All。</p>
+        <p>确定要为其创建接触点的营销活动成员。 可能的值为：Include_All、Include_Responded、Exclude_All。</p>
       </td>
       <td>
         <p>Include_All</p>
@@ -4027,13 +4027,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_SYNC_STATUS</p>
+        <p>潜在客户同步状态</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>审核字段，说明是否为潜在客户生成了买方接触点。 如果未创建接触点，则会提供该接触点不符合条件的原因。</p>
+        <p>“审核”字段，指明是否为Lead生成了Buyer Touchpoint。 如果未创建接触点，则会给出它不符合条件的原因。</p>
       </td>
       <td>
         <p>无接触点：模型外的日期</p>
@@ -4044,10 +4044,10 @@ _单击某个图像的全尺寸版本_
         <p>CONTACT_SYNC_STATUS</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>审核字段，说明是否为联系人生成了买方接触点。 如果未创建接触点，则会提供该接触点不符合条件的原因。</p>
+        <p>“审核”字段，指明是否为联系人生成了买方接触点。 如果未创建接触点，则会给出它不符合条件的原因。</p>
       </td>
       <td>
         <p>已创建接触点</p>
@@ -4058,10 +4058,10 @@ _单击某个图像的全尺寸版本_
         <p>OPP_SYNC_STATUS</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>审核字段，指定是否为Opportunity生成了Buyer Attribution接触点。 如果未创建接触点，则会提供该接触点不符合条件的原因。</p>
+        <p>“审核”字段，指明是否为Opportunity生成了“买方归因”接触点。 如果未创建接触点，则会给出它不符合条件的原因。</p>
       </td>
       <td>
         <p>已创建接触点</p>
@@ -4075,7 +4075,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否在源系统中考虑删除该记录。</p>
+        <p>是否将该记录视为已从源系统中删除。</p>
       </td>
       <td>
         <p>false</p>
@@ -4083,34 +4083,34 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
-      <td>varch</td>
-      <td>自定义属性 [!DNL Marketo Measure] 已从源系统导入，格式为JSON。</td>
-      <td>{"Campaign_Type__c":"Depirents","Foo":"Bar"}</td>
+      <td>varchar</td>
+      <td>具有以下特征的自定义属性 [!DNL Marketo Measure] 已使用JSON格式从源系统导入。</td>
+      <td>{"Campaign_Type__c"："Dinners"，"Foo"："Bar"}</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_CHANNELS {#biz-channels}
+### 商业渠道 {#biz-channels}
 
-营销渠道，在 [!DNL Marketo Measure] 应用程序。
+营销渠道，如中创建的 [!DNL Marketo Measure] 应用程序。
 
 <table>
   <tbody>
@@ -4133,7 +4133,7 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>渠道的唯一ID。</p>
@@ -4147,7 +4147,7 @@ _单击某个图像的全尺寸版本_
         <p>名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>渠道的名称。</p>
@@ -4173,25 +4173,25 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中创建记录的日期。</td>
+      <td>Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_CONTACTS {#biz-contacts}
+### 商务联系人(_C) {#biz-contacts}
 
 从源系统导入的联系人。
 
@@ -4216,7 +4216,7 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>源系统中的联系人ID。</p>
@@ -4241,13 +4241,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CREATED_DATE</p>
+        <p>创建日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>从源系统创建联系人记录的日期。</p>
+        <p>从源系统创建Contact记录的日期。</p>
       </td>
       <td>
         <p>2018-09-05 05:17:51.000</p>
@@ -4258,7 +4258,7 @@ _单击某个图像的全尺寸版本_
         <p>电子邮件</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>来自源系统的联系人的电子邮件地址。</p>
@@ -4272,10 +4272,10 @@ _单击某个图像的全尺寸版本_
         <p>ACCOUNTID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>与联系人相关的帐户ID。</p>
+        <p>与联系人相关的帐户的ID。</p>
       </td>
       <td>
         <p>0013100001b44aGAAQ</p>
@@ -4283,13 +4283,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_SOURCE</p>
+        <p>潜在客户来源</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>创建潜在客户的来源。</p>
+        <p>创建Lead的来源。</p>
       </td>
       <td>
         <p>广告</p>
@@ -4300,10 +4300,10 @@ _单击某个图像的全尺寸版本_
         <p>BIZIBLE_STAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>联系人的当前阶段，被识别为可在 [!DNL Marketo Measure] 应用程序。</p>
+        <p>联系人的当前阶段，识别为自定义阶段，可在 [!DNL Marketo Measure] 应用程序。</p>
       </td>
       <td>
         <p>已计划演示</p>
@@ -4314,10 +4314,10 @@ _单击某个图像的全尺寸版本_
         <p>BIZIBLE_STAGE_PREVIOUS</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>联系人的所有先前阶段均被识别为可在 [!DNL Marketo Measure] 应用程序。</p>
+        <p>联系人之前的所有阶段，均识别为自定义阶段，可在中创建 [!DNL Marketo Measure] 应用程序。</p>
       </td>
       <td>
         <p>打开 — 联系人</p>
@@ -4331,7 +4331,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,19)</p>
       </td>
       <td>
-        <p>此功能已弃用。 请不要使用此列。</p>
+        <p>此功能已被弃用。 请不要使用此列。</p>
       </td>
       <td>
         <p>不适用</p>
@@ -4342,10 +4342,10 @@ _单击某个图像的全尺寸版本_
         <p>BIZIBLE_COOKIE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>的 [!DNL Marketo Measure] Cookie ID，用于从集成合作伙伴填充以将离线事件映射到Web会话。 要求：启用调用跟踪：True</p>
+        <p>此 [!DNL Marketo Measure] 用于从集成合作伙伴填充以将离线事件映射到Web会话的Cookie ID。 要求：启用呼叫跟踪：True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -4366,26 +4366,26 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>IS_DUPLICATE</td>
       <td>布尔值</td>
-      <td>如果同时设置了CRM和Marketo集成，则用于删除重复记录。 如果存在重复项，则Marketo联系人将标记为true。</td>
+      <td>如果设置了CRM和Marketo集成，则用于消除重复记录。 如果存在重复项，则Marketo联系人将被标记为true。</td>
       <td>false</td>
     </tr>
     <tr>
       <td>SOURCE_SYSTEM</td>
-      <td>varch</td>
+      <td>varchar</td>
       <td>指示记录是来自CRM还是Marketo集成。</td>
       <td>Crm</td>
     </tr>
     <tr>
       <td>OTHER_SYSTEM_ID</td>
-      <td>varch</td>
-      <td>将Marketo集成中的人员与CRM集成中的联系人进行映射。 如果CRM和Marketo集成都存在，则值为相应的ID。</td>
+      <td>varchar</td>
+      <td>将Marketo集成中的人员与CRM集成中的联系人进行映射。 如果CRM和Marketo集成都存在，则该值为相应的ID。</td>
       <td>1234 / 00Q0Z00001OohgTUAR</td>
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
-      <td>varch</td>
-      <td>自定义属性 [!DNL Marketo Measure] 已从源系统导入，格式为JSON。</td>
-      <td>{"Contact_Type__c":"CMO", "Foo":"Bar"}</td>
+      <td>varchar</td>
+      <td>具有以下特征的自定义属性 [!DNL Marketo Measure] 已使用JSON格式从源系统导入。</td>
+      <td>{"Contact_Type__c"："CMO"， "Foo"："Bar"}</td>
     </tr>
     <tr>
       <td>
@@ -4404,25 +4404,25 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_CONVERSION_RATES {#biz-conversion-rates}
+### 业务转化率 {#biz-conversion-rates}
 
 从源系统导入的货币兑换率。
 
@@ -4448,26 +4448,26 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>SOURCE_ISO_CODE</td>
-      <td>varch</td>
+      <td>varchar</td>
       <td>源系统中的货币ISO代码。</td>
       <td>美元</td>
     </tr>
     <tr>
       <td>START_DATE</td>
       <td>timestamp_ntz</td>
-      <td>转化率的开始日期。</td>
+      <td>转换率的开始日期。</td>
       <td>2018-11-01 00:00:00.000</td>
     </tr>
     <tr>
       <td>END_DATE</td>
       <td>timestamp_ntz</td>
-      <td>转化率的下一个开始日期。 （转化率的结束日期为end_date减1天。）</td>
+      <td>转换率的下一个开始日期。 （折换率的终止日期是end_date减去1天。）</td>
       <td>2018-09-01 00:00:00.000</td>
     </tr>
     <tr>
       <td>CONVERSION_RATE</td>
       <td>数字(38,0)</td>
-      <td>用于将货币换算为公司货币的汇率。</td>
+      <td>用于将货币转换为公司货币的汇率。</td>
       <td>0.76728300</td>
     </tr>
     <tr>
@@ -4477,7 +4477,7 @@ _单击某个图像的全尺寸版本_
       <td>true</td>
     </tr>
     <tr>
-      <td>CREATED_DATE</td>
+      <td>创建日期</td>
       <td>timestamp_ntz</td>
       <td>在源系统中创建记录的日期。</td>
       <td>2019-03-30 00:54:50.000</td>
@@ -4491,33 +4491,33 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>IS_DELETED</td>
       <td>布尔值</td>
-      <td>是否在源系统中考虑删除记录。</td>
+      <td>是否将该记录视为已从源系统中删除。</td>
       <td>false</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_COSTS {#biz-costs}
+### 商业成本 {#biz-costs}
 
-从连接的广告帐户导入的成本数据或自行报告的营销支出。
+从连接的广告帐户或自我报告的营销支出导入的成本数据。
 
 <table>
   <tbody>
@@ -4529,9 +4529,9 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>ID</td>
-      <td>varch</td>
+      <td>varchar</td>
       <td>成本记录的唯一ID。</td>
-      <td>aw.6601259029.285114995.21703163075。[AdWords Display]_2018-09-06</td>
+      <td>啊。6601259029.285114995.21703163075.[AdWords显示]_2018-09-06</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
@@ -4542,79 +4542,79 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>COST_DATE</td>
       <td>timestamp_ntz</td>
-      <td>成本产生（或归属）之日期。</td>
+      <td>成本产生（或归属）日期。</td>
       <td>2018-09-06 00:00:00.000</td>
     </tr>
     <tr>
       <td>源</td>
-      <td>varch</td>
-      <td>报告成本的来源。</td>
-      <td>[AdWords Display]</td>
+      <td>varchar</td>
+      <td>报告的成本的来源。</td>
+      <td>[AdWords显示]</td>
     </tr>
     <tr>
       <td>COST_IN_MICRO</td>
       <td>数字(38,0)</td>
-      <td>成本以百万计。 用户需要将值除以1000000。</td>
+      <td>成本以百万计。 用户需要将该值除以1000000。</td>
       <td>1410000</td>
     </tr>
     <tr>
-      <td>点击</td>
+      <td>点击次数</td>
       <td>数字(38,0)</td>
-      <td>针对该群组报告的当天点击次数。</td>
+      <td>当天报告的组点击次数。</td>
       <td>4</td>
     </tr>
     <tr>
       <td>展示次数</td>
       <td>数字(38,0)</td>
-      <td>该组在当天报告的展示次数。</td>
+      <td>当天为组报告的展示次数。</td>
       <td>4187</td>
     </tr>
     <tr>
-      <td>ESTIMATED_TOTAL_POSSIBLE_IMPRESS</td>
+      <td>ESTIMATED_TOTAL_POSSIBLE_IMPRESSIONS</td>
       <td>数字(38,0)</td>
-      <td>当天DCM对组估计的总展示次数。</td>
+      <td>由DCM估计的当天组总展示次数。</td>
       <td>5024</td>
     </tr>
     <tr>
       <td>AD_PROVIDER</td>
-      <td>varch</td>
-      <td>已提取成本的提供商。</td>
+      <td>varchar</td>
+      <td>为其提取成本的提供程序。</td>
       <td>Google</td>
     </tr>
     <tr>
       <td>CHANNEL_UNIQUE_ID</td>
-      <td>varch</td>
-      <td>营销渠道的ID，创建者 [!DNL Marketo Measure].</td>
+      <td>varchar</td>
+      <td>营销渠道ID，创建者： [!DNL Marketo Measure].</td>
       <td>Display.Google</td>
     </tr>
     <tr>
-      <td>CHANNEL_NAME</td>
-      <td>varch</td>
+      <td>渠道名称</td>
+      <td>varchar</td>
       <td>营销渠道的名称，由客户在 [!DNL Marketo Measure] 应用程序。</td>
       <td>Display.Google</td>
     </tr>
     <tr>
       <td>CHANNEL_IS_AGGREGATABLE_COST</td>
       <td>布尔值</td>
-      <td>指示该行是否包含可由渠道汇总的成本。 （即，要获取渠道成本，请求此列等于true的行总和。）</td>
+      <td>指示行是否包含可按渠道汇总的成本。 （例如，要获取渠道成本，需对此列等于true的行求和。）</td>
       <td>false</td>
     </tr>
     <tr>
       <td>ADVERTISER_UNIQUE_ID</td>
-      <td>varch</td>
-      <td>从广告连接中提取的广告商的ID，特别是用于Doubleclick连接。</td>
+      <td>varchar</td>
+      <td>从广告连接提取的广告商ID，特别是用于Doubleclick连接的。</td>
       <td>300181641</td>
     </tr>
     <tr>
       <td>ADVERTISER_NAME</td>
-      <td>varch</td>
-      <td>从广告连接中提取的广告商的名称，特别是用于Doubleclick连接。</td>
-      <td>[!DNL Marketo Measure] 营销分析</td>
+      <td>varchar</td>
+      <td>从Ad连接提取的广告商名称，专门用于Doubleclick连接。</td>
+      <td>[!DNL Marketo Measure] Marketing Analytics</td>
     </tr>
     <tr>
       <td>ADVERTISER_IS_AGGREGATABLE_COST</td>
       <td>布尔值</td>
-      <td>指示该行是否包含可由广告商汇总的成本。 （即，要获取广告商成本，请求此列等于true的行总和。）</td>
+      <td>指示行是否包含可由广告商汇总的成本。 （例如，要获取广告商成本，需对此列等于true的行求和。）</td>
       <td>false</td>
     </tr>
     <tr>
@@ -4622,10 +4622,10 @@ _单击某个图像的全尺寸版本_
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告连接提取的广告帐户ID。</p>
+        <p>从广告连接提取的广告帐户的ID。</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -4636,10 +4636,10 @@ _单击某个图像的全尺寸版本_
         <p>ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告连接提取的广告帐户名称。</p>
+        <p>从广告连接提取的广告帐户的名称。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -4653,7 +4653,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示该行是否包含可由“帐户”汇总的成本。 （即，要获取帐户成本，请求此列等于true的总行数。）</p>
+        <p>指示行是否包含可按帐户汇总的成本。 （例如，要获取帐户成本，请对列等于true的行求和。）</p>
       </td>
       <td>
         <p>false</p>
@@ -4664,10 +4664,10 @@ _单击某个图像的全尺寸版本_
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告连接中提取的营销活动ID。</p>
+        <p>从广告连接拉取的活动的ID。</p>
       </td>
       <td>
         <p>aw.6601259029.285114995</p>
@@ -4675,16 +4675,16 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>营销活动名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告连接中提取的营销活动的名称。</p>
+        <p>从广告连接中拉取的营销活动的名称。</p>
       </td>
       <td>
-        <p>合作伙伴重定位</p>
+        <p>合作伙伴重新定位</p>
       </td>
     </tr>
     <tr>
@@ -4695,7 +4695,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示该行是否包含可由Campaign汇总的成本。 （即，要获取促销活动成本，请求此列等于true的行总和。）</p>
+        <p>指示该行是否包含可由Campaign汇总的成本。 （例如，要获取促销活动成本，需对此列等于true的行求和。）</p>
       </td>
       <td>
         <p>true</p>
@@ -4706,10 +4706,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告连接提取的广告组ID。</p>
+        <p>从广告连接拉取的广告组的ID。</p>
       </td>
       <td>
         <p>aw.6601259029.285114995.21703163075</p>
@@ -4720,10 +4720,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告连接中提取的广告组的名称。</p>
+        <p>从广告连接提取的广告组的名称。</p>
       </td>
       <td>
         <p>归因管理软件 |短语</p>
@@ -4737,7 +4737,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示该行是否包含可由广告组汇总的成本。 （即，要获取广告组成本，请求此列等于true的行总和。）</p>
+        <p>指示行是否包含可以按广告组进行汇总的成本。 （例如，要获取广告组成本，请计算此列等于true的行的总和。）</p>
       </td>
       <td>
         <p>false</p>
@@ -4748,10 +4748,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告连接中提取的广告的ID。</p>
+        <p>从广告连接中拉取的广告的ID。</p>
       </td>
       <td>
         <p>dc.6114.9131003.24149929.467969200</p>
@@ -4762,13 +4762,13 @@ _单击某个图像的全尺寸版本_
         <p>AD_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告连接中提取的广告的名称。</p>
+        <p>从广告连接中拉取的广告的名称。</p>
       </td>
       <td>
-        <p>广告名称：Ad3-320x50.gif;320 x 50</p>
+        <p>广告名称：Ad3-320x50.gif；320 x 50</p>
       </td>
     </tr>
     <tr>
@@ -4779,7 +4779,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示该行是否包含可由广告求和的成本。 （即，要获取广告成本，请求此列等于true的行总和。）</p>
+        <p>指示行是否包含可以按Ad进行汇总的成本。 （例如，要获取广告成本，需对此列等于true的行求和。）</p>
       </td>
       <td>
         <p>false</p>
@@ -4790,10 +4790,10 @@ _单击某个图像的全尺寸版本_
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告连接中提取的创作元素ID。</p>
+        <p>从广告连接提取的创意ID。</p>
       </td>
       <td>
         <p>aw.6601259029.285114995.51749608028.266050115160</p>
@@ -4804,13 +4804,13 @@ _单击某个图像的全尺寸版本_
         <p>CREATIVE_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告连接中提取的创作元素的名称。</p>
+        <p>从广告连接提取的创意的名称。</p>
       </td>
       <td>
-        <p>2019年Gartner幻方图</p>
+        <p>Gartner 2019魔力象限</p>
       </td>
     </tr>
     <tr>
@@ -4821,7 +4821,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示该行是否包含可由创意团队汇总的成本。 （即，要获取创作成本，请求此列等于true的行总和。）</p>
+        <p>指示行是否包含可由Creative汇总的Cost。 （例如，要获取创意成本，需对此列等于true的行求和。）</p>
       </td>
       <td>
         <p>false</p>
@@ -4832,10 +4832,10 @@ _单击某个图像的全尺寸版本_
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告连接提取的关键词ID。</p>
+        <p>从广告连接中提取的关键字ID。</p>
       </td>
       <td>
         <p>aw.6601259029.669328935.39419128772.99608705795</p>
@@ -4846,10 +4846,10 @@ _单击某个图像的全尺寸版本_
         <p>KEYWORD_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告连接提取的关键词的名称。</p>
+        <p>从广告连接中提取的关键字的名称。</p>
       </td>
       <td>
         <p>sfdc营销归因</p>
@@ -4863,7 +4863,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示行是否包含可以按关键字求和的成本。 （即，要获取“关键词成本”，请求此列等于true的总行数。）</p>
+        <p>指示行是否包含可按关键字加总的成本。 （即，要获取关键字成本，需对此列等于true的行求和。）</p>
       </td>
       <td>
         <p>false</p>
@@ -4874,10 +4874,10 @@ _单击某个图像的全尺寸版本_
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告连接中提取的版面ID。</p>
+        <p>从广告连接中提取的投放位置的ID。</p>
       </td>
       <td>
         <p>120839827</p>
@@ -4888,13 +4888,13 @@ _单击某个图像的全尺寸版本_
         <p>PLACEMENT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告连接中提取的版面名称。</p>
+        <p>从广告连接提取的投放位置的名称。</p>
       </td>
       <td>
-        <p>障碍</p>
+        <p>路障</p>
       </td>
     </tr>
     <tr>
@@ -4905,7 +4905,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示行是否包含“成本”，该成本可由“版面”汇总。 （即，要获取版面成本，请求此列等于true的行总和。）</p>
+        <p>指示该行是否包含成本，该成本可以由“放置”来汇总。 （即，要获取置入成本，请计算此列等于true的行的总和。）</p>
       </td>
       <td>
         <p>false</p>
@@ -4916,10 +4916,10 @@ _单击某个图像的全尺寸版本_
         <p>SITE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告连接中提取的网站ID。</p>
+        <p>从Ad连接拉取的站点的ID。</p>
       </td>
       <td>
         <p>1695651</p>
@@ -4927,13 +4927,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>站点名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告连接中提取的网站名称。</p>
+        <p>从Ad连接中拉取的站点的名称。</p>
       </td>
       <td>
         <p>Quora.com</p>
@@ -4947,7 +4947,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示该行是否包含可由Site汇总的成本。 （即，要获取网站成本，请求此列等于true的行总和。）</p>
+        <p>指示行是否包含成本，该成本可以汇总为站点。 （例如，要获取网站成本，需对此列等于true的行求和。）</p>
       </td>
       <td>
         <p>false</p>
@@ -4961,7 +4961,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否在源系统中考虑删除该记录。</p>
+        <p>是否将该记录视为已从源系统中删除。</p>
       </td>
       <td>
         <p>false</p>
@@ -4969,14 +4969,14 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>ISO_CURRENCY_CODE</td>
-      <td>varch</td>
-      <td>货币的ISO代码，从源系统导入。</td>
+      <td>varchar</td>
+      <td>从源系统导入的货币的ISO代码。</td>
       <td>美元</td>
     </tr>
     <tr>
       <td>SOURCE_ID</td>
-      <td>varch</td>
-      <td>记录源的来源的ID。</td>
+      <td>varchar</td>
+      <td>记录来源的ID。</td>
       <td>aw.3284209</td>
     </tr>
     <tr>
@@ -5054,27 +5054,27 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_CREATIVES {#biz-creatives}
+### BIZ_CREATIVE {#biz-creatives}
 
-从任何连接的广告帐户导入的创作内容。
+从任何连接的广告帐户导入的创意。
 
 <table>
   <tbody>
@@ -5097,10 +5097,10 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>创作元素的唯一ID。</p>
+        <p>创意的唯一ID。</p>
       </td>
       <td>
         <p>ba.3284209.132855866.4556709270.10426699711</p>
@@ -5111,7 +5111,7 @@ _单击某个图像的全尺寸版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>源系统中的创作ID。</td>
       <td>
@@ -5123,10 +5123,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从中导入了创作元素的广告帐户的ID。</p>
+        <p>从中导入创意的广告帐户的ID。</p>
       </td>
       <td>fb.106851586409075</td>
     </tr>
@@ -5135,10 +5135,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从中导入创作元素的广告帐户的名称。</p>
+        <p>从中导入Creative的广告帐户的名称。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -5149,10 +5149,10 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>创意广告商的ID，特别是Doubleclick的广告商。</p>
+        <p>创意广告商（尤其是Doubleclick）的ID。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -5163,13 +5163,13 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>创意广告商的名称，专门针对Doubleclick。</p>
+        <p>创意广告商（尤其是Doubleclick）的名称。</p>
       </td>
       <td>
-        <p>[!DNL Marketo Measure] 营销分析</p>
+        <p>[!DNL Marketo Measure] Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -5177,10 +5177,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>创作广告组的ID。</p>
+        <p>创意的广告组ID。</p>
       </td>
       <td>fb.106851586409075.6052044288804.6052044290004</td>
     </tr>
@@ -5189,10 +5189,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>创作广告组的名称。</p>
+        <p>创意内容的广告组的名称。</p>
       </td>
       <td>广告B的广告集</td>
     </tr>
@@ -5201,10 +5201,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>创意的营销活动ID。</p>
+        <p>创意活动的营销活动ID。</p>
       </td>
       <td>
         <p>ba.3284209.132855866</p>
@@ -5215,10 +5215,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>创意促销活动的名称。</p>
+        <p>创意活动的名称。</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -5232,7 +5232,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>创作元素在源系统中是否仍处于活动状态。</p>
+        <p>Creative在源系统中是否仍然处于活动状态。</p>
       </td>
       <td>
         <p>true</p>
@@ -5246,7 +5246,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否在源系统中删除了创作元素。</p>
+        <p>源系统中是否删除了Creative。</p>
       </td>
       <td>
         <p>false</p>
@@ -5268,7 +5268,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>FIRST_IMPORT</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -5285,10 +5285,10 @@ _单击某个图像的全尺寸版本_
         <p>名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>来自源系统的创作元素名称。</p>
+        <p>源系统中创意内容的名称。</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -5302,7 +5302,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否需要更新创作元素，以便 [!DNL Marketo Measure] 标记。</p>
+        <p>是否需要更新创意内容 [!DNL Marketo Measure] 标记。</p>
         <p>（诊断字段，由内部处理使用。）</p>
       </td>
       <td>
@@ -5311,26 +5311,26 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>分组密钥</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>诊断字段，用于内部处理。</td>
+      <td>用于内部处理的诊断字段。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>实体类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>此表的主对象或实体。 在本例中，为“Creative”。</p>
       </td>
       <td>
-        <p>创意</p>
+        <p>Creative</p>
       </td>
     </tr>
     <tr>
@@ -5338,10 +5338,10 @@ _单击某个图像的全尺寸版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>创作元素的广告提供商的名称。</p>
+        <p>创意广告提供商的名称。</p>
       </td>
       <td>
         <p>BingAds</p>
@@ -5352,7 +5352,7 @@ _单击某个图像的全尺寸版本_
         <p>URL_CURRENT</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>URL的当前版本，包括所有标记。</p>
@@ -5367,10 +5367,10 @@ _单击某个图像的全尺寸版本_
         <p>URL_DISPLAY</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>创意页面上显示的缩短且易记的URL。</p>
+        <p>Creative上显示的简短友好URL。</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -5381,7 +5381,7 @@ _单击某个图像的全尺寸版本_
         <p>URL_OLD</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>URL_CURRENT的上一个值。</p>
@@ -5391,36 +5391,36 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>URL_REQUESTED</p>
+        <p>URL已请求</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>URL将使用的修饰内容 [!DNL Marketo Measure] 参数。</p>
+        <p>URL将修饰的内容 [!DNL Marketo Measure] 参数。</p>
         <p>（诊断字段，用于内部处理。）</p>
       </td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>URL_SHROMETED</p>
+        <p>URL_SHORTED</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>创意页面上显示的缩短且易记的URL。 (仅用于LinkedIn广告。)</td>
+      <td>Creative上显示的简短友好URL。 (仅用于LinkedIn Ads。)</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>AD_TYPE</p>
+        <p>广告类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>创作的类型，可以是“文本”或“显示”</p>
+        <p>创意的类型，可以是文本或显示</p>
       </td>
       <td>
         <p>文本</p>
@@ -5434,7 +5434,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>创作元素是否使用升级的URL。</p>
+        <p>创意内容是否在使用升级的URL。</p>
       </td>
       <td>
         <p>false</p>
@@ -5445,10 +5445,10 @@ _单击某个图像的全尺寸版本_
         <p>标题</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>创意元素的标题</p>
+        <p>创意的顶层（标题）</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -5459,13 +5459,13 @@ _单击某个图像的全尺寸版本_
         <p>DESCRIPTION_LINE_1</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>创作元素第一行中的副本</p>
+        <p>创意内容第一行的副本</p>
       </td>
       <td>
-        <p>与收入驱动型B2B营销人员建立联系并学习。 加入社区。</p>
+        <p>向收入驱动的B2B营销人员联系和学习。 加入社区。</p>
       </td>
     </tr>
     <tr>
@@ -5473,13 +5473,13 @@ _单击某个图像的全尺寸版本_
         <p>DESCRIPTION_LINE_2</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>创作元素第二行中的副本</p>
+        <p>创意内容第二行的副本</p>
       </td>
       <td>
-        <p>您使用过Analytics吗？ 今天请留下评论！</p>
+        <p>您使用过Analytics吗？ 立即发表评论！</p>
       </td>
     </tr>
     <tr>
@@ -5487,7 +5487,7 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>诊断字段，用于内部处理。</td>
       <td></td>
@@ -5497,7 +5497,7 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE_OLD</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>诊断字段，用于内部处理。</td>
       <td></td>
@@ -5507,7 +5507,7 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>诊断字段，用于内部处理。</td>
       <td></td>
@@ -5517,7 +5517,7 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE_APPLIED</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>诊断字段，用于内部处理。</p>
@@ -5531,10 +5531,10 @@ _单击某个图像的全尺寸版本_
         <p>SHARE_URN</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>共享ID。 (仅用于LinkedIn广告。)</p>
+        <p>共享Id。 (仅用于LinkedIn Ads。)</p>
       </td>
       <td>
         <p>urn:li:共享：6376987561897848832</p>
@@ -5555,19 +5555,19 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -5575,7 +5575,7 @@ _单击某个图像的全尺寸版本_
 
 ### BIZ_CRM_EVENTS {#biz-crm-events}
 
-从源系统导入的事件。 如果禁用了“活动同步”，则此表将为空。
+从源系统导入的事件。 如果禁用了活动同步，此表将为空。
 
 <table>
   <tbody>
@@ -5598,7 +5598,7 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>源系统中的事件ID。</p>
@@ -5609,7 +5609,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CREATED_DATE</p>
+        <p>创建日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -5629,7 +5629,7 @@ _单击某个图像的全尺寸版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>上次从源系统修改事件的日期。</p>
+        <p>上次修改源系统中的事件的日期。</p>
       </td>
       <td>
         <p>2018-09-03 08:39:51.000</p>
@@ -5637,13 +5637,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_ID</p>
+        <p>商机ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>与事件关联的潜在客户的ID。</p>
+        <p>与事件关联的商机的ID。</p>
       </td>
       <td>
         <p>00Q0Z000013eVrxUAE</p>
@@ -5651,10 +5651,10 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_EMAIL</p>
+        <p>潜在客户电子邮件</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>与事件关联的潜在客户的电子邮件。</p>
@@ -5668,7 +5668,7 @@ _单击某个图像的全尺寸版本_
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>与事件关联的联系人的ID。</p>
@@ -5682,7 +5682,7 @@ _单击某个图像的全尺寸版本_
         <p>CONTACT_EMAIL</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>与事件关联的联系人的电子邮件。</p>
@@ -5696,10 +5696,10 @@ _单击某个图像的全尺寸版本_
         <p>BIZIBLE_COOKIE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>的 [!DNL Marketo Measure] Cookie ID，用于从集成合作伙伴填充以将离线事件映射到Web会话。 要求：启用调用跟踪：True</p>
+        <p>此 [!DNL Marketo Measure] 用于从集成合作伙伴填充以将离线事件映射到Web会话的Cookie ID。 要求：启用呼叫跟踪：True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -5707,13 +5707,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>ACTIVITY_TYPE</p>
+        <p>活动类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>活动类型源系统中的名称。</p>
+        <p>源系统中的活动类型名称。</p>
       </td>
       <td>
         <p>电子邮件</p>
@@ -5721,7 +5721,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>EVENT_START_DATE</p>
+        <p>EVENT_ST_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -5754,33 +5754,33 @@ _单击某个图像的全尺寸版本_
       <td>
         <p>布尔值</p>
       </td>
-      <td>是否在源系统中考虑删除记录。</td>
+      <td>是否将该记录视为已从源系统中删除。</td>
       <td>
-        <p>假</p>
+        <p>False</p>
       </td>
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
-      <td>varch</td>
-      <td>自定义属性 [!DNL Marketo Measure] 已从源系统导入，格式为JSON。</td>
-      <td>{"Contact_Type__c":"CMO","Foo":"Bar"}</td>
+      <td>varchar</td>
+      <td>具有以下特征的自定义属性 [!DNL Marketo Measure] 已使用JSON格式从源系统导入。</td>
+      <td>{"Contact_Type__c"："CMO"，"Foo"："Bar"}</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -5788,7 +5788,7 @@ _单击某个图像的全尺寸版本_
 
 ### BIZ_CRM_TASKS {#biz-crm-tasks}
 
-从源系统导入的任务。 如果启用了活动同步或调用跟踪，则将填充此表。
+从源系统导入的任务。 如果启用了“活动同步或调用跟踪”，则会填充此表。
 
 <table>
   <tbody>
@@ -5811,7 +5811,7 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>源系统中的任务ID。</p>
@@ -5822,7 +5822,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CREATED_DATE</p>
+        <p>创建日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -5850,10 +5850,10 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_ID</p>
+        <p>商机ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>与任务关联的潜在客户的ID。</p>
@@ -5864,13 +5864,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_EMAIL</p>
+        <p>潜在客户电子邮件</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>与任务关联的潜在客户的电子邮件。</p>
+        <p>与Task关联的Lead的电子邮件。</p>
       </td>
       <td>
         <p>person@adobe.com</p>
@@ -5881,7 +5881,7 @@ _单击某个图像的全尺寸版本_
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>与任务关联的联系人的ID。</p>
@@ -5895,7 +5895,7 @@ _单击某个图像的全尺寸版本_
         <p>CONTACT_EMAIL</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>与任务关联的联系人的电子邮件。</p>
@@ -5909,10 +5909,10 @@ _单击某个图像的全尺寸版本_
         <p>BIZIBLE_COOKIE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>的 [!DNL Marketo Measure] Cookie ID，用于从集成合作伙伴填充以将离线事件映射到Web会话。 要求：启用调用跟踪：True</p>
+        <p>此 [!DNL Marketo Measure] 用于从集成合作伙伴填充以将离线事件映射到Web会话的Cookie ID。 要求：启用呼叫跟踪：True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -5920,13 +5920,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>ACTIVITY_TYPE</p>
+        <p>活动类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>活动类型源系统中的名称。</p>
+        <p>源系统中的活动类型名称。</p>
       </td>
       <td>
         <p>调用</p>
@@ -5934,7 +5934,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>ACTIVITY_DATE</p>
+        <p>活动日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -5953,39 +5953,39 @@ _单击某个图像的全尺寸版本_
       <td>
         <p>布尔值</p>
       </td>
-      <td>是否在源系统中考虑删除记录。</td>
+      <td>是否将该记录视为已从源系统中删除。</td>
       <td>
         <p>false</p>
       </td>
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
-      <td>varch</td>
-      <td>自定义属性 [!DNL Marketo Measure] 已从源系统导入，格式为JSON。</td>
-      <td>{"Contact_Type__c":"CMO", "Foo":"Bar"}</td>
+      <td>varchar</td>
+      <td>具有以下特征的自定义属性 [!DNL Marketo Measure] 已使用JSON格式从源系统导入。</td>
+      <td>{"Contact_Type__c"："CMO"， "Foo"："Bar"}</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_CURRENCIES {#biz-currencies}
+### 商业货币(_C) {#biz-currencies}
 
 所有ISO货币的表。
 
@@ -6007,7 +6007,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>ISO_CODE</td>
-      <td>varch</td>
+      <td>varchar</td>
       <td>货币的ISO代码。</td>
       <td>美元</td>
     </tr>
@@ -6022,13 +6022,13 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>IS_ENABLED</td>
       <td>布尔值</td>
-      <td>指定是否在源系统中启用货币。</td>
+      <td>指定在源系统中是否启用货币。</td>
       <td>false</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>上次在中修改记录的日期 [!DNL Marketo Measure].</td>
+      <td>上次修改记录的日期 [!DNL Marketo Measure].</td>
       <td>2018-08-27 18:30:25.000</td>
     </tr>
     <tr>
@@ -6038,7 +6038,7 @@ _单击某个图像的全尺寸版本_
       <td>2018-08-27 18:30:25.000</td>
     </tr>
     <tr>
-      <td>CREATED_DATE</td>
+      <td>创建日期</td>
       <td>timestamp_ntz</td>
       <td>记录创建日期 [!DNL Marketo Measure]</td>
       <td>2018-08-27 18:30:25.000</td>
@@ -6058,31 +6058,31 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>指数</td>
       <td>数字(38,0)</td>
-      <td>定义的最小货币单位和整个货币单位之间的小数位数。</td>
+      <td>定义的最小货币单位与整个货币单位之间的小数位数。</td>
       <td>2</td>
     </tr>
     <tr>
       <td>名称</td>
-      <td>varch</td>
+      <td>varchar</td>
       <td>货币的名称。</td>
-      <td>阿根廷比索</td>
+      <td>比索（阿根廷）</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -6090,7 +6090,7 @@ _单击某个图像的全尺寸版本_
 
 ### BIZ_CUSTOMER_AB_TESTS {#biz-customer-ab-tests}
 
-记录的AB测试。 如果未启用AB测试，则此表将为空。
+已记录AB测试。 如果未启用AB测试，此表将为空。
 
 <table>
   <tbody>
@@ -6111,10 +6111,10 @@ _单击某个图像的全尺寸版本_
         <p>VISITOR_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>相关访客ID的第一个Cookie ID。</p>
+        <p>相关访客id的第一个Cookie ID。</p>
       </td>
       <td>v_36ec805b4db344d6e92c972c86aee34a</td>
     </tr>
@@ -6123,7 +6123,7 @@ _单击某个图像的全尺寸版本_
         <p>COOKIE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>记录事件时记录的Cookie ID。</p>
@@ -6149,48 +6149,48 @@ _单击某个图像的全尺寸版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>IP_ADDRESS</td>
+      <td>IP地址</td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>记录实验时记录的IP地址。</p>
+        <p>记录试验时记录的IP地址。</p>
       </td>
       <td>192.0.2.1</td>
     </tr>
     <tr>
       <td>
-        <p>EXPERIENCE_ID</p>
+        <p>EXPERIMENT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从AB测试平台提取的实验ID。</p>
+        <p>从AB测试平台提取的试验ID。</p>
       </td>
       <td>123</td>
     </tr>
     <tr>
       <td>
-        <p>EXPERIENCE_NAME</p>
+        <p>试验名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从AB测试平台提取的实验名称。</p>
+        <p>从AB测试平台提取的试验名称。</p>
       </td>
-      <td>实验A</td>
+      <td>试验A</td>
     </tr>
     <tr>
       <td>
         <p>VARIATION_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从AB测试平台提取的实验的变体id。</p>
+        <p>从AB测试平台提取的试验的变量ID。</p>
       </td>
       <td>456</td>
     </tr>
@@ -6199,10 +6199,10 @@ _单击某个图像的全尺寸版本_
         <p>VARIATION_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从AB测试平台提取的实验的变体名称。</p>
+        <p>从AB测试平台拉取的试验的变量名称。</p>
       </td>
       <td>蓝色测试</td>
     </tr>
@@ -6211,10 +6211,10 @@ _单击某个图像的全尺寸版本_
         <p>ABTEST_USER_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从AB测试平台中提取的为实验提供服务的用户ID。</p>
+        <p>从AB测试平台提取试验服务的用户的ID。</p>
       </td>
       <td>584d64et</td>
     </tr>
@@ -6226,26 +6226,26 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>记录是否被删除，用于诊断和审计。</p>
+        <p>是否删除记录，用于诊断和审核。</p>
       </td>
       <td>false</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -6253,7 +6253,7 @@ _单击某个图像的全尺寸版本_
 
 ### BIZ_CUSTOMER_EVENTS {#biz-customer-events}
 
-已使用Javascript中的自定义事件记录的Web事件。 如果 [!DNL Marketo Measure] 未启用事件。
+已使用Javascript中的自定义事件记录的Web事件。 如果符合以下条件，此表将为空 [!DNL Marketo Measure] 未启用事件。
 
 <table>
   <tbody>
@@ -6274,10 +6274,10 @@ _单击某个图像的全尺寸版本_
         <p>VISITOR_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>相关访客ID的第一个Cookie ID。</p>
+        <p>相关访客id的第一个Cookie ID。</p>
       </td>
       <td>v_36ec805b4db344d6e92c972c86aee34a</td>
     </tr>
@@ -6286,10 +6286,10 @@ _单击某个图像的全尺寸版本_
         <p>COOKIE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从自定义Javascript触发事件时记录的Cookie ID。</p>
+        <p>从自定义javascript触发事件时记录的Cookie ID。</p>
       </td>
       <td>36ec805b4db344d6e92c972c86aee34a</td>
     </tr>
@@ -6301,25 +6301,25 @@ _单击某个图像的全尺寸版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>从自定义Javascript触发事件的日期。</p>
+        <p>从自定义javascript触发事件的日期。</p>
       </td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录的上次修改日期。</td>
+      <td>上次修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>
-        <p>IP_ADDRESS</p>
+        <p>IP地址</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从自定义Javascript触发事件时记录的IP地址。</p>
+        <p>从自定义javascript触发事件时记录的IP地址。</p>
       </td>
       <td>192.0.2.1</td>
     </tr>
@@ -6328,10 +6328,10 @@ _单击某个图像的全尺寸版本_
         <p>键</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从自定义Javascript触发的事件的给定名称。</p>
+        <p>为从自定义javascript触发的事件指定的名称。</p>
       </td>
       <td>视频查看</td>
     </tr>
@@ -6340,12 +6340,12 @@ _单击某个图像的全尺寸版本_
         <p>值</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>给从自定义Javascript触发的事件的值。</p>
+        <p>为通过自定义javascript触发的事件指定的值。</p>
       </td>
-      <td>查看次数75%</td>
+      <td>已查看75%</td>
     </tr>
     <tr>
       <td>
@@ -6355,26 +6355,26 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>记录是否被删除，用于诊断和审计。</p>
+        <p>是否删除记录，用于诊断和审核。</p>
       </td>
       <td>false</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -6403,7 +6403,7 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>记录的唯一ID。</p>
@@ -6415,7 +6415,7 @@ _单击某个图像的全尺寸版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -6425,7 +6425,7 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>从中导入登陆页面的广告帐户的ID。</td>
       <td></td>
@@ -6435,9 +6435,9 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>从中导入登陆页面的广告帐户名称</td>
+      <td>从中导入登陆页面的广告帐户的名称</td>
       <td></td>
     </tr>
     <tr>
@@ -6445,10 +6445,10 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>登陆页面的广告商ID，特别是Doubleclick的广告商ID。</p>
+        <p>登陆页面（尤其是Doubleclick）的广告商ID。</p>
       </td>
       <td>300181641</td>
     </tr>
@@ -6457,13 +6457,13 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>登陆页面的广告商名称，特别是Doubleclick的广告商名称。</p>
+        <p>登陆页面的广告商名称，专门用于Doubleclick。</p>
       </td>
       <td>
-        <p>营销分析</p>
+        <p>Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -6471,9 +6471,9 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>登陆页面的广告组ID。</td>
+      <td>登陆页面的广告组的ID。</td>
       <td></td>
     </tr>
     <tr>
@@ -6481,10 +6481,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>登陆页面的广告组名称。</p>
+        <p>登陆页面的广告组的名称。</p>
       </td>
       <td></td>
     </tr>
@@ -6493,10 +6493,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>登陆页面的营销活动ID。</p>
+        <p>登陆页面营销活动的ID。</p>
       </td>
       <td></td>
     </tr>
@@ -6505,10 +6505,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>登陆页面的营销活动名称。</p>
+        <p>登陆页面的Campaign的名称。</p>
       </td>
       <td></td>
     </tr>
@@ -6546,7 +6546,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>FIRST_IMPORT</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -6559,7 +6559,7 @@ _单击某个图像的全尺寸版本_
         <p>名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -6576,20 +6576,20 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>分组密钥</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>实体类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -6599,7 +6599,7 @@ _单击某个图像的全尺寸版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -6609,7 +6609,7 @@ _单击某个图像的全尺寸版本_
         <p>AD_DISPLAY_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -6619,7 +6619,7 @@ _单击某个图像的全尺寸版本_
         <p>CREATIVE_DISPLAY_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -6629,7 +6629,7 @@ _单击某个图像的全尺寸版本_
         <p>URL_CURRENT</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -6639,7 +6639,7 @@ _单击某个图像的全尺寸版本_
         <p>URL_OLD</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -6647,19 +6647,19 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -6687,7 +6687,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>ID</td>
-      <td>varch</td>
+      <td>varchar</td>
       <td>记录的唯一ID。</td>
       <td>
         <p>0013800001MMPPiAAP_person@adobe.com|2022-01-05 17:22:13.000</p>
@@ -6698,10 +6698,10 @@ _单击某个图像的全尺寸版本_
         <p>电子邮件</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>会话中与给定访客ID绑定的已知电子邮件地址</p>
+        <p>与会话中的给定访客ID关联的已知电子邮件地址</p>
       </td>
       <td>
         <p>person@adobe.com</p>
@@ -6712,7 +6712,7 @@ _单击某个图像的全尺寸版本_
         <p>VISITOR_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>相关访客ID的第一个Cookie</p>
@@ -6737,7 +6737,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CREATED_DATE</p>
+        <p>创建日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -6757,7 +6757,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>记录是否被视为已删除，用于诊断和审计。</p>
+        <p>是否将该记录视为已删除，用于诊断和审核。</p>
       </td>
       <td>
         <p>false</p>
@@ -6772,19 +6772,19 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -6792,7 +6792,7 @@ _单击某个图像的全尺寸版本_
 
 ### BIZ_FACTS {#biz-facts}
 
-将展示次数、页面查看次数、访问次数、表单提交次数、用户接触点、接触点(BT)、归因接触点(BAT)和成本数据合并在一起。 内部用于支持 [!DNL Marketo Measure] 报表。
+将展示次数、页面查看次数、访问次数、表单提交次数、用户接触点、接触点(BT)、归因接触点(BAT)和成本数据结合使用。 在内部使用以支持 [!DNL Marketo Measure] 报表。
 
 <table>
   <tbody>
@@ -6805,79 +6805,79 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>COST_KEY</td>
       <td>数字(38,0)</td>
-      <td>用于连接到“成本”表。</td>
+      <td>用于联接到成本表。</td>
       <td>2672629811884560039</td>
     </tr>
     <tr>
       <td>ATP_KEY</td>
       <td>数字(38,0)</td>
-      <td>用于连接到归因接触点表。</td>
+      <td>用于联接归因接触点表。</td>
       <td>2672629811884560039</td>
     </tr>
     <tr>
       <td>TP_KEY</td>
       <td>数字(38,0)</td>
-      <td>用于连接到接触点或用户接触点表。</td>
+      <td>用于联接到接触点或用户接触点表。</td>
       <td>5028390208679093800</td>
     </tr>
     <tr>
       <td>PAGE_VIEW_KEY</td>
       <td>数字(38,0)</td>
-      <td>用于连接到“页面查看次数”表。</td>
+      <td>用于联接“页面查看次数”表。</td>
       <td>-8044063242541720607</td>
     </tr>
     <tr>
       <td>SESSION_KEY</td>
       <td>数字(38,0)</td>
-      <td>用于连接到“会话”表。</td>
+      <td>用于联接“会话”表。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>VISITOR_ID</td>
-      <td>varch</td>
-      <td>相关访客ID的第一个Cookie ID。</td>
+      <td>varchar</td>
+      <td>相关访客id的第一个Cookie ID。</td>
       <td>v_530d8334c455460df0d48f48270a4b23</td>
     </tr>
     <tr>
       <td>COOKIE_ID</td>
-      <td>varch</td>
+      <td>varchar</td>
       <td>记录事件时记录的Cookie ID。</td>
       <td>530d8334c455460df0d48f48270a4b23</td>
     </tr>
     <tr>
       <td>FORM_SUBMIT_KEY</td>
       <td>数字(38,0)</td>
-      <td>用于连接到“表单提交”表。</td>
+      <td>用于联接到表单提交表。</td>
       <td>-8659572802702769670</td>
     </tr>
     <tr>
       <td>IMPRESSION_KEY</td>
       <td>数字(38,0)</td>
-      <td>用于加入展示次数表。</td>
+      <td>用于联接“展示次数”表。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CURRENT_PAGE_KEY</td>
       <td>数字(38,0)</td>
-      <td>用于连接到Url表。</td>
+      <td>用于连接至Url表。</td>
       <td>4079876040770132443</td>
     </tr>
     <tr>
       <td>REFERRER_PAGE_KEY</td>
       <td>数字(38,0)</td>
-      <td>用于连接到Url表。</td>
+      <td>用于连接至Url表。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>FORM_PAGE_KEY</td>
       <td>数字(38,0)</td>
-      <td>用于连接到Url表。</td>
+      <td>用于连接至Url表。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>AD_PROVIDER_KEY</td>
       <td>数字(38,0)</td>
-      <td>用于连接到广告提供程序表。</td>
+      <td>用于加入广告提供商表。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
@@ -6888,7 +6888,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>用于连接到渠道表。</p>
+        <p>用于联接到渠道表。</p>
       </td>
       <td>
         <p>-1921844114032355934</p>
@@ -6902,7 +6902,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>用于连接到“广告促销活动”表。</p>
+        <p>用于加入广告营销活动表。</p>
       </td>
       <td>
         <p>252687814634577606</p>
@@ -6916,7 +6916,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>用于连接到“关键词”表。</p>
+        <p>用于联接到关键字表。</p>
       </td>
       <td>
         <p>8817975702393619368</p>
@@ -6930,7 +6930,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>用于连接到“广告”表。</p>
+        <p>用于联接到广告表。</p>
       </td>
       <td>
         <p>8817975702393619368</p>
@@ -6944,7 +6944,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>用于连接到“广告组”表。</p>
+        <p>用于联接到广告组表。</p>
       </td>
       <td>
         <p>8817975702393619368</p>
@@ -6958,7 +6958,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>用于连接到“创意”表。</p>
+        <p>用于联接“创意”表。</p>
       </td>
       <td>
         <p>-2333871387956621113</p>
@@ -6972,7 +6972,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>用于连接到站点表。</p>
+        <p>用于联接到站点表。</p>
       </td>
       <td>
         <p>8817975702393619368</p>
@@ -6986,7 +6986,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>用于加入“广告商”表。</p>
+        <p>用于连接到广告商表。</p>
       </td>
       <td>
         <p>8817975702393619368</p>
@@ -7000,7 +7000,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>用于连接到广告帐户表。</p>
+        <p>用于加入Ad Accounts表。</p>
       </td>
       <td>
         <p>1825012532740770032</p>
@@ -7014,7 +7014,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>用于连接到“版面”表。</p>
+        <p>用于联接到投放位置表。</p>
       </td>
       <td>
         <p>8817975702393619368</p>
@@ -7022,110 +7022,110 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>CATEGORY_01_KEY</td>
-      <td>number(38,0)</td>
-      <td>用于连接到区段表。</td>
+      <td>nubmer(38,0)</td>
+      <td>用于联接到区段表。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_02_KEY</td>
-      <td>number(38,0)</td>
-      <td>用于连接到区段表。</td>
+      <td>nubmer(38,0)</td>
+      <td>用于联接到区段表。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_03_KEY</td>
-      <td>number(38,0)</td>
-      <td>用于连接到区段表。</td>
+      <td>nubmer(38,0)</td>
+      <td>用于联接到区段表。</td>
       <td>-2333871387956621113</td>
     </tr>
     <tr>
       <td>CATEGORY_04_KEY</td>
-      <td>number(38,0)</td>
-      <td>用于连接到区段表。</td>
+      <td>nubmer(38,0)</td>
+      <td>用于联接到区段表。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_05_KEY</td>
-      <td>number(38,0)</td>
-      <td>用于连接到区段表。</td>
+      <td>nubmer(38,0)</td>
+      <td>用于联接到区段表。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_06_KEY</td>
-      <td>number(38,0)</td>
-      <td>用于连接到区段表。</td>
+      <td>nubmer(38,0)</td>
+      <td>用于联接到区段表。</td>
       <td>-2333871387956621113</td>
     </tr>
     <tr>
       <td>CATEGORY_07_KEY</td>
-      <td>number(38,0)</td>
-      <td>用于连接到区段表。</td>
+      <td>nubmer(38,0)</td>
+      <td>用于联接到区段表。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_08_KEY</td>
-      <td>number(38,0)</td>
-      <td>用于连接到区段表。</td>
+      <td>nubmer(38,0)</td>
+      <td>用于联接到区段表。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_09_KEY</td>
-      <td>number(38,0)</td>
-      <td>用于连接到区段表。</td>
+      <td>nubmer(38,0)</td>
+      <td>用于联接到区段表。</td>
       <td>2333871387956621113</td>
     </tr>
     <tr>
       <td>CATEGORY_10_KEY</td>
-      <td>number(38,0)</td>
-      <td>用于连接到区段表。</td>
+      <td>nubmer(38,0)</td>
+      <td>用于联接到区段表。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_11_KEY</td>
-      <td>number(38,0)</td>
-      <td>用于连接到区段表。</td>
+      <td>nubmer(38,0)</td>
+      <td>用于联接到区段表。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_12_KEY</td>
-      <td>number(38,0)</td>
-      <td>用于连接到区段表。</td>
+      <td>nubmer(38,0)</td>
+      <td>用于联接到区段表。</td>
       <td>-2333871387956621113</td>
     </tr>
     <tr>
       <td>CATEGORY_13_KEY</td>
-      <td>number(38,0)</td>
-      <td>用于连接到区段表。</td>
+      <td>nubmer(38,0)</td>
+      <td>用于联接到区段表。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_14_KEY</td>
-      <td>number(38,0)</td>
-      <td>用于连接到区段表。</td>
+      <td>nubmer(38,0)</td>
+      <td>用于联接到区段表。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>CATEGORY_15_KEY</td>
-      <td>number(38,0)</td>
-      <td>用于连接到区段表。</td>
+      <td>nubmer(38,0)</td>
+      <td>用于联接到区段表。</td>
       <td>8817975702393619368</td>
     </tr>
     <tr>
       <td>类型</td>
       <td>数字(38,0)</td>
-      <td>表示行的数值类型。 1 =采购员归因接触点2 =成本3 =采购员接触点4 =用户接触点5 =页面查看6 =会话7 =表单提交8 =展示</td>
+      <td>指示行的事实类型。 1 =买方归因接触点2 =成本3 =买方接触点4 =用户接触点5 =页面查看6 =会话7 =表单提交8 =展示</td>
       <td>3</td>
     </tr>
     <tr>
       <td>日期</td>
       <td>date</td>
-      <td>事件发生的日期。</td>
+      <td>事件发生日期。</td>
       <td>2018-08-28</td>
     </tr>
     <tr>
       <td>时间戳</td>
       <td>timestamp_ntz</td>
-      <td>事件发生的日期和时间。</td>
+      <td>事件发生日期和时间。</td>
       <td>2018-08-28 19:39:15.000</td>
     </tr>
     <tr>
@@ -7150,7 +7150,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>成本以百万计。 用户需要将值除以1000000。</p>
+        <p>成本以百万计。 用户需要将该值除以1000000。</p>
       </td>
       <td>
         <p>27370000</p>
@@ -7164,7 +7164,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>该组在当天报告的展示次数。</p>
+        <p>当天为组报告的展示次数。</p>
       </td>
       <td>
         <p>340</p>
@@ -7172,13 +7172,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>点击</p>
+        <p>点击次数</p>
       </td>
       <td>
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>针对该群组报告的当天点击次数。</p>
+        <p>当天报告的组点击次数。</p>
       </td>
       <td>4</td>
     </tr>
@@ -7190,7 +7190,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为它是首次接触。</p>
+        <p>由于这是首次接触，因此分配给此接触点的计算百分比。</p>
       </td>
       <td>0.0000000000000000000</td>
     </tr>
@@ -7202,7 +7202,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为它是商机创建接触点。</p>
+        <p>分配给此接触点的已计算百分比，因为它是商机创建触点。</p>
       </td>
       <td>100.0000000000000000000</td>
     </tr>
@@ -7214,7 +7214,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为它是U形接触的一部分。</p>
+        <p>由于此接触点是U形接触的一部分而分配给它的计算百分比。</p>
       </td>
       <td>
         <p>100.0000000000000000000</p>
@@ -7228,7 +7228,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为它是W形接触的一部分。</p>
+        <p>由于此接触点是W形接触的一部分而分配给它的计算百分比。</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -7242,7 +7242,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为它是完整路径模型的一部分。</p>
+        <p>由于此接触点是完整路径模型的一部分而分配给此接触点的计算百分比。</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -7250,13 +7250,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CUSTOM_MODEL_PERCENTAGE</p>
+        <p>CUSTOM_MODEL_CENTAGE</p>
       </td>
       <td>
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为它是自定义模型的一部分。</p>
+        <p>由于此接触点是自定义模型的一部分而分配给此接触点的计算百分比。</p>
       </td>
       <td>
         <p>0.0000000000000000000</p>
@@ -7264,13 +7264,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>金额</p>
+        <p>数量</p>
       </td>
       <td>
         <p>数字(38,8)</p>
       </td>
       <td>
-        <p>来自源系统的机会量。</p>
+        <p>源系统中的机会数量。</p>
       </td>
       <td>
         <p>42000.00000000</p>
@@ -7284,7 +7284,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示Opportunity是否已移至分类为已赢的阶段。</p>
+        <p>指示Opportunity是否已移动到分类为已赢的阶段。</p>
       </td>
       <td>
         <p>false</p>
@@ -7298,7 +7298,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示Opportunity是否已移至分类为已关闭的阶段。</p>
+        <p>指示Opportunity是否已移动到分类为已关闭的阶段。</p>
       </td>
       <td>
         <p>false</p>
@@ -7306,13 +7306,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>OPPORTUNITY_ID</p>
+        <p>机会ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>来自源系统的机会ID。</p>
+        <p>源系统中的机会ID。</p>
       </td>
       <td>
         <p>0060Z00000nFEfEQAW</p>
@@ -7340,7 +7340,7 @@ _单击某个图像的全尺寸版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>从源系统关闭Opportunity的日期。</p>
+        <p>源系统中Opportunity的关闭日期。</p>
       </td>
       <td>
         <p>2018-12-31 07:00:00.000</p>
@@ -7348,13 +7348,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CONTACT_CREATED_DATE</p>
+        <p>CONTACT_CREATE_DATE</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>从源系统创建联系人记录的日期。</p>
+        <p>从源系统创建Contact记录的日期。</p>
       </td>
       <td>2017-04-28 00:21:52.000</td>
     </tr>
@@ -7363,10 +7363,10 @@ _单击某个图像的全尺寸版本_
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>来自源系统的联系人ID。</p>
+        <p>源系统中的联系人ID。</p>
       </td>
       <td>
         <p>0030Z00003ORVJmQAP</p>
@@ -7374,19 +7374,19 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>电子邮件</td>
-      <td>varch</td>
+      <td>varchar</td>
       <td>记录的电子邮件地址。</td>
       <td>personb@adobe.com</td>
     </tr>
     <tr>
       <td>
-        <p>LEAD_CREATED_DATE</p>
+        <p>潜在客户创建日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>从源系统创建潜在客户记录的日期。</p>
+        <p>从源系统创建Lead记录的日期。</p>
       </td>
       <td>
         <p>2017-04-28 00:21:52.000</p>
@@ -7394,13 +7394,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_ID</p>
+        <p>商机ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>来自源系统的潜在客户ID。</p>
+        <p>源系统中的潜在客户ID。</p>
       </td>
       <td>
         <p>00Q3100001GMPIsEAP</p>
@@ -7414,7 +7414,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示该行是否包含可由广告求和的成本。 （即，要获取广告成本，请求此列等于true的行总和。）</p>
+        <p>指示行是否包含可以按Ad进行汇总的成本。 （例如，要获取广告成本，需对此列等于true的行求和。）</p>
       </td>
       <td>false</td>
     </tr>
@@ -7426,7 +7426,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示该行是否包含可由广告商汇总的成本。 （即，要获取广告商成本，请求此列等于true的行总和。）</p>
+        <p>指示行是否包含可由广告商汇总的成本。 （例如，要获取广告商成本，需对此列等于true的行求和。）</p>
       </td>
       <td>true</td>
     </tr>
@@ -7438,7 +7438,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示该行是否包含可由“帐户”汇总的成本。 （即，要获取帐户成本，请求此列等于true的总行数。）</p>
+        <p>指示行是否包含可按帐户汇总的成本。 （例如，要获取帐户成本，请对列等于true的行求和。）</p>
       </td>
       <td>
         <p>false</p>
@@ -7452,7 +7452,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示该行是否包含可由广告组汇总的成本。 （即，要获取广告组成本，请求此列等于true的行总和。）</p>
+        <p>指示行是否包含可以按广告组进行汇总的成本。 （例如，要获取广告组成本，请计算此列等于true的行的总和。）</p>
       </td>
       <td>
         <p>false</p>
@@ -7466,7 +7466,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示该行是否包含可由Campaign汇总的成本。 （即，要获取促销活动成本，请求此列等于true的行总和。）</p>
+        <p>指示该行是否包含可由Campaign汇总的成本。 （例如，要获取促销活动成本，需对此列等于true的行求和。）</p>
       </td>
       <td>
         <p>true</p>
@@ -7480,7 +7480,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示该行是否包含可由渠道汇总的成本。 （即，要获取渠道成本，请求此列等于true的行总和。）</p>
+        <p>指示行是否包含可按渠道汇总的成本。 （例如，要获取渠道成本，需对此列等于true的行求和。）</p>
       </td>
       <td>false</td>
     </tr>
@@ -7492,7 +7492,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示该行是否包含可由创意团队汇总的成本。 （即，要获取创作成本，请求此列等于true的行总和。）</p>
+        <p>指示行是否包含可由Creative汇总的Cost。 （例如，要获取创意成本，需对此列等于true的行求和。）</p>
       </td>
       <td>
         <p>false</p>
@@ -7506,7 +7506,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示行是否包含可以按关键字求和的成本。 （即，要获取“关键词成本”，请求此列等于true的总行数。）</p>
+        <p>指示行是否包含可按关键字加总的成本。 （即，要获取关键字成本，需对此列等于true的行求和。）</p>
       </td>
       <td>
         <p>false</p>
@@ -7520,7 +7520,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示行是否包含“成本”，该成本可由“版面”汇总。 （即，要获取版面成本，请求此列等于true的行总和。）</p>
+        <p>指示该行是否包含成本，该成本可以由“放置”来汇总。 （即，要获取置入成本，请计算此列等于true的行的总和。）</p>
       </td>
       <td>
         <p>false</p>
@@ -7534,7 +7534,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示该行是否包含可由Site汇总的成本。 （即，要获取网站成本，请求此列等于true的行总和。）</p>
+        <p>指示行是否包含成本，该成本可以汇总为站点。 （例如，要获取网站成本，需对此列等于true的行求和。）</p>
       </td>
       <td>
         <p>false</p>
@@ -7548,7 +7548,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>记录是否被删除，用作审核跟踪。</p>
+        <p>是否删除了记录，用作审核跟踪。</p>
       </td>
       <td>
         <p>false</p>
@@ -7563,25 +7563,25 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_FORM_SUBMITS {#biz-forms-submits}
+### BIZ_FORM_SUBMIT {#biz-forms-submits}
 
 捕获的表单提交。
 
@@ -7606,7 +7606,7 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>表单提交的唯一ID。</p>
@@ -7620,10 +7620,10 @@ _单击某个图像的全尺寸版本_
         <p>COOKIE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>记录表单提交时记录的Cookie ID。</p>
+        <p>在记录表单提交时记录的Cookie ID。</p>
       </td>
       <td>
         <p>9bc63c34482f4de8c2e3b9d8d9f0df56</p>
@@ -7634,10 +7634,10 @@ _单击某个图像的全尺寸版本_
         <p>VISITOR_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>相关访客ID的第一个Cookie ID。 如果记录标记为is_duplicated = true，则此字段将为null。</p>
+        <p>相关访客id的第一个Cookie ID。 如果记录标记为is_duplicated = true ，则此字段将为null。</p>
       </td>
       <td>
         <p>v_9bc63c34482f4de8c2e3b9d8d9f0df56</p>
@@ -7648,10 +7648,10 @@ _单击某个图像的全尺寸版本_
         <p>SESSION_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>记录表单提交时记录的会话ID。 如果记录标记为is_duplicated = true，则此字段将为null。</p>
+        <p>记录表单提交时记录的会话ID。 如果记录标记为is_duplicated = true ，则此字段将为null。</p>
       </td>
       <td>
         <p>2018-08-06:01-35-24-1231230.9bc63c34482f</p>
@@ -7690,10 +7690,10 @@ _单击某个图像的全尺寸版本_
         <p>CURRENT_PAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>提交表单的URL，不带查询参数。</p>
+        <p>提交表单的URL，不含查询参数。</p>
       </td>
       <td>
         <p>https://info.adobe.com/webinar-marketo-measure-impact</p>
@@ -7704,21 +7704,21 @@ _单击某个图像的全尺寸版本_
         <p>CURRENT_PAGE_RAW</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>提交表单的URL，包括任何查询参数。</p>
       </td>
       <td>
-        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YBZDdXh4Q0CnWXHWZHW0Rzdv1RbxxlXJNzIwNkhW</p>
+        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z 0RrbXlDVmxJNzIwNkhW</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>IP_ADDRESS</p>
+        <p>IP地址</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>提交表单时记录的IP地址。</p>
@@ -7732,11 +7732,11 @@ _单击某个图像的全尺寸版本_
         <p>类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>指示事件的类型。</td>
       <td>
-        <p>表单提交</p>
+        <p>FormSubmit</p>
       </td>
     </tr>
     <tr>
@@ -7744,13 +7744,13 @@ _单击某个图像的全尺寸版本_
         <p>USER_AGENT_STRING</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在表单提交时记录的设备和浏览器。</p>
+        <p>提交表单时记录的设备和浏览器。</p>
       </td>
       <td>
-        <p>Mozilla/5.0(Macintosh;英特尔Mac OS X 10_13_6)AppleWebKit/605.1.15（KHTML，如Gecko）版本/11.1.2 Safari/605.1.15</p>
+        <p>Mozilla/5.0(Macintosh；英特尔Mac OS X 10_13_6) AppleWebKit/605.1.15（KHTML，如Gecko）版本/11.1.2 Safari/605.1.15</p>
       </td>
     </tr>
     <tr>
@@ -7758,7 +7758,7 @@ _单击某个图像的全尺寸版本_
         <p>CLIENT_SEQUENCE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>指示页面查看在会话中发生的顺序。</td>
       <td>
@@ -7770,9 +7770,9 @@ _单击某个图像的全尺寸版本_
         <p>CLIENT_RANDOM</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>用于内部审核和处理。</td>
+      <td>用于内部审计和处理。</td>
       <td>
         <p>20042b6b7af44512b43f6244d86faf4c</p>
       </td>
@@ -7784,7 +7784,7 @@ _单击某个图像的全尺寸版本_
       <td>
         <p>布尔值</p>
       </td>
-      <td>指示记录是否被视为重复项。</td>
+      <td>指示是否将该记录视为重复项。</td>
       <td>
         <p>false</p>
       </td>
@@ -7806,10 +7806,10 @@ _单击某个图像的全尺寸版本_
         <p>电子邮件</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>表单上提供的电子邮件地址（从Javascript中捕获）。</p>
+        <p>表单上提供的电子邮件地址，从Javascript中捕获。</p>
       </td>
       <td>
         <p>personc@adobe.com</p>
@@ -7817,10 +7817,10 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>FORM_TYPE</p>
+        <p>表单类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>指示提交的表单类型。</td>
       <td>
@@ -7832,10 +7832,10 @@ _单击某个图像的全尺寸版本_
         <p>FORM_SOURCE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>指示在其中识别表单的方法，如onSubmit或AjaxIntercept</p>
+        <p>指示识别表单的方法，如onSubmit或AjaxIntercept</p>
       </td>
       <td>
         <p>onSubmit</p>
@@ -7846,7 +7846,7 @@ _单击某个图像的全尺寸版本_
         <p>FORM_IDENTIFIER</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>表单的ID值。</td>
       <td>
@@ -7876,27 +7876,27 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_IMPRESSIONS {#biz-impressions}
+### 商业展示(_I) {#biz-impressions}
 
-已触发并记录的展示次数。 此表需要DoubleClick连接并将“启用显示到达”设置为True。
+展示次数已触发并录制。 此表要求使用DoubleClick连接并将“启用查看方式”设置为True。
 
 <table>
   <tbody>
@@ -7919,13 +7919,13 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>展示次数的唯一ID。</p>
+        <p>展示的唯一ID。</p>
       </td>
       <td>
-        <p>6acd7b43290490fe5c53eed31281d09a|2020-05-18:22:20:59|000|0|2869369052</p>
+        <p>6acd7b43290490fe5c53eed31281d09a|2020-05-18:22:20:59|0000|0|2869369052</p>
       </td>
     </tr>
     <tr>
@@ -7933,7 +7933,7 @@ _单击某个图像的全尺寸版本_
         <p>COOKIE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>展示时记录的Cookie ID。</p>
@@ -7945,10 +7945,10 @@ _单击某个图像的全尺寸版本_
         <p>VISITOR_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>相关访客ID的第一个Cookie ID。</p>
+        <p>相关访客id的第一个Cookie ID。</p>
       </td>
       <td>v_08c1063cb0a64349ad0d2d862f5cc700</td>
     </tr>
@@ -7957,7 +7957,7 @@ _单击某个图像的全尺寸版本_
         <p>SESSION_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>记录展示时记录的会话ID。</p>
@@ -7972,7 +7972,7 @@ _单击某个图像的全尺寸版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>展示日期。</p>
+        <p>提供展示的日期。</p>
       </td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
@@ -7993,10 +7993,10 @@ _单击某个图像的全尺寸版本_
         <p>CURRENT_PAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>提供展示次数的URL，没有查询参数。</p>
+        <p>提供展示的URL，不含查询参数。</p>
       </td>
       <td>https://info.adobe.com/webinar-marketo-measure-impact</td>
     </tr>
@@ -8005,19 +8005,19 @@ _单击某个图像的全尺寸版本_
         <p>CURRENT_PAGE_RAW</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>提供展示次数的URL，包括任何查询参数。</p>
+        <p>提供展示的URL，包括任何查询参数。</p>
       </td>
-      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOiI3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YBZDdXh4Q0CnWXHWZHW0Rzdv1RbxxlXJNzIwNkhW</td>
+      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z 0RrbXlDVmxJNzIwNkhW</td>
     </tr>
     <tr>
       <td>
-        <p>IP_ADDRESS</p>
+        <p>IP地址</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>展示时记录的IP地址。</p>
@@ -8029,7 +8029,7 @@ _单击某个图像的全尺寸版本_
         <p>类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>指示事件的类型。</td>
       <td>印象</td>
@@ -8039,13 +8039,13 @@ _单击某个图像的全尺寸版本_
         <p>USER_AGENT_STRING</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在表单提交时记录的设备和浏览器。</p>
+        <p>提交表单时记录的设备和浏览器。</p>
       </td>
       <td>
-        <p>Mozilla/5.0(Macintosh;英特尔Mac OS X 10_13_6)AppleWebKit/605.1.15（KHTML，如Gecko）版本/11.1.2 Safari/605.1.15</p>
+        <p>Mozilla/5.0(Macintosh；英特尔Mac OS X 10_13_6) AppleWebKit/605.1.15（KHTML，如Gecko）版本/11.1.2 Safari/605.1.15</p>
       </td>
     </tr>
     <tr>
@@ -8053,7 +8053,7 @@ _单击某个图像的全尺寸版本_
         <p>CLIENT_SEQUENCE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>指示页面查看在会话中发生的顺序。</td>
       <td>
@@ -8065,9 +8065,9 @@ _单击某个图像的全尺寸版本_
         <p>CLIENT_RANDOM</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>用于内部审核和处理。</td>
+      <td>用于内部审计和处理。</td>
       <td>
         <p>20042b6b7af44512b43f6244d86faf4c</p>
       </td>
@@ -8079,7 +8079,7 @@ _单击某个图像的全尺寸版本_
       <td>
         <p>布尔值</p>
       </td>
-      <td>指示记录是否被视为重复项。</td>
+      <td>指示是否将该记录视为重复项。</td>
       <td>
         <p>false</p>
       </td>
@@ -8101,10 +8101,10 @@ _单击某个图像的全尺寸版本_
         <p>REFERRER_PAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>通常在用户进入网站之前立即显示外部登陆页面。 在CRM中称为“反向链接页面”。</p>
+        <p>通常是在用户访问网站之前的外部登陆页面。 在CRM中称为“反向链接页面”。</p>
       </td>
       <td>https://www.linkedin.com/</td>
     </tr>
@@ -8113,10 +8113,10 @@ _单击某个图像的全尺寸版本_
         <p>REFERRER_PAGE-RAW</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>通常在用户进入网站之前立即显示外部登陆页面。 原始反向链接页面可能在URL中包含查询参数。 在CRM中称为“反向链接页面 — 原始”。</p>
+        <p>通常是在用户访问网站之前的外部登陆页面。 原始反向链接页面可能包含URL中的查询参数。 在CRM中称为“Referrer Page - Raw”。</p>
       </td>
       <td>https://www.linkedin.com/</td>
     </tr>
@@ -8125,10 +8125,10 @@ _单击某个图像的全尺寸版本_
         <p>城市</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从IP地址解析的城市。</p>
+        <p>IP地址中已解析的城市。</p>
       </td>
       <td>
         <p>西雅图</p>
@@ -8139,10 +8139,10 @@ _单击某个图像的全尺寸版本_
         <p>区域</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从IP地址解析的区域。</p>
+        <p>IP地址中已解析的区域。</p>
       </td>
       <td>
         <p>华盛顿</p>
@@ -8153,10 +8153,10 @@ _单击某个图像的全尺寸版本_
         <p>国家/地区</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从IP地址解析的国家/地区。</p>
+        <p>IP地址中已解析的国家/地区。</p>
       </td>
       <td>
         <p>美国</p>
@@ -8164,16 +8164,16 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>ISP_NAME</p>
+        <p>ISP名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>具有高级地域IP跟踪的客户使用的互联网服务提供商的名称。</p>
+        <p>Internet服务提供商的名称，由具有高级地域IP跟踪的客户使用。</p>
       </td>
       <td>
-        <p>AT&amp;T U-verse</p>
+        <p>AT&amp;T反向</p>
       </td>
     </tr>
     <tr>
@@ -8181,10 +8181,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_PROVIDER</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告平台 [!DNL Marketo Measure] 能够从（通常是我们的集成合作伙伴之一）中进行解析。</p>
+        <p>广告平台 [!DNL Marketo Measure] 能够从（通常是我们的集成合作伙伴之一）中解析。</p>
       </td>
       <td>Google</td>
     </tr>
@@ -8193,7 +8193,7 @@ _单击某个图像的全尺寸版本_
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中解析广告的广告帐户的ID。</p>
@@ -8205,7 +8205,7 @@ _单击某个图像的全尺寸版本_
         <p>ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中解析广告的广告帐户的名称。</p>
@@ -8217,10 +8217,10 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告帐户的广告商ID。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的广告商ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -8231,13 +8231,13 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从中解析广告的广告帐户的广告商名称。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的广告商名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
-        <p>市场衡量营销分析</p>
+        <p>市场衡量市场营销分析</p>
       </td>
     </tr>
     <tr>
@@ -8245,10 +8245,10 @@ _单击某个图像的全尺寸版本_
         <p>SITE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户中的网站ID。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中网站的ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>1695651</p>
@@ -8256,13 +8256,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>站点名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析广告的广告帐户中的网站名称。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的网站名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>Quora.com</p>
@@ -8273,10 +8273,10 @@ _单击某个图像的全尺寸版本_
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告帐户中的版面ID。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的版面ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>120839827</p>
@@ -8287,13 +8287,13 @@ _单击某个图像的全尺寸版本_
         <p>PLACEMENT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户中的版面名称。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的投放位置的名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
-        <p>障碍</p>
+        <p>路障</p>
       </td>
     </tr>
     <tr>
@@ -8301,22 +8301,22 @@ _单击某个图像的全尺寸版本_
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户中的营销活动ID。</p>
+        <p>从中解析广告的广告帐户中的营销活动ID。</p>
       </td>
       <td>aw.6601259029.317738075</td>
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>营销活动名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户的营销活动名称。</p>
+        <p>从中解析广告的广告帐户中的营销活动名称。</p>
       </td>
       <td>营销归因</td>
     </tr>
@@ -8325,10 +8325,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>预期为空，因为Doubleclick层级中没有展示次数的广告组</p>
+        <p>预期为空，因为Doubleclick层次结构中没有展示次数广告组</p>
       </td>
       <td>
         <p>null</p>
@@ -8339,10 +8339,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>预期为空，因为Doubleclick层级中没有展示次数的广告组</p>
+        <p>预期为空，因为Doubleclick层次结构中没有展示次数广告组</p>
       </td>
       <td>
         <p>null</p>
@@ -8353,10 +8353,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从其中解析广告的广告帐户的广告ID。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
+        <p>从中解析广告的广告帐户中的广告ID。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
       <td>
         <p>68035923</p>
@@ -8367,10 +8367,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户的广告名称。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
+        <p>从中解析广告的广告帐户中的广告名称。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
       <td>
         <p>centurylink_banner_98121</p>
@@ -8381,10 +8381,10 @@ _单击某个图像的全尺寸版本_
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为Doubleclick层级中没有“展示次数”的“创作”。</p>
+        <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
       </td>
       <td>
         <p>null</p>
@@ -8395,10 +8395,10 @@ _单击某个图像的全尺寸版本_
         <p>CREATIVE_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为Doubleclick层级中没有“展示次数”的“创作”。</p>
+        <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
       </td>
       <td>null</td>
     </tr>
@@ -8407,10 +8407,10 @@ _单击某个图像的全尺寸版本_
         <p>CREATIVE_DESCRIPTION_1</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为Doubleclick层级中没有“展示次数”的“创作”。</p>
+        <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
       </td>
       <td>null</td>
     </tr>
@@ -8419,10 +8419,10 @@ _单击某个图像的全尺寸版本_
         <p>CREATIVE_DESCRIPTION_2</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为Doubleclick层级中没有“展示次数”的“创作”。</p>
+        <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
       </td>
       <td>null</td>
     </tr>
@@ -8431,10 +8431,10 @@ _单击某个图像的全尺寸版本_
         <p>CREATIVE_DESTINATION_URL</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为Doubleclick层级中没有“展示次数”的“创作”。</p>
+        <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
       </td>
       <td>null</td>
     </tr>
@@ -8443,10 +8443,10 @@ _单击某个图像的全尺寸版本_
         <p>CREATIVE_DISPLAY_URL</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为Doubleclick层级中没有“展示次数”的“创作”。</p>
+        <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
       </td>
       <td>null</td>
     </tr>
@@ -8455,10 +8455,10 @@ _单击某个图像的全尺寸版本_
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为null，因为Doubleclick层级中没有“展示次数”的“关键词”。</p>
+        <p>由于展示次数的Doubleclick层次结构中没有Keyword，因此预期为空。</p>
       </td>
       <td>null</td>
     </tr>
@@ -8467,10 +8467,10 @@ _单击某个图像的全尺寸版本_
         <p>KEYWORD_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为null，因为Doubleclick层级中没有“展示次数”的“关键词”。</p>
+        <p>由于展示次数的Doubleclick层次结构中没有Keyword，因此预期为空。</p>
       </td>
       <td>null</td>
     </tr>
@@ -8479,19 +8479,19 @@ _单击某个图像的全尺寸版本_
         <p>KEYWORD_MATCH_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为null，因为Doubleclick层级中没有“展示次数”的“关键词”。</p>
+        <p>由于展示次数的Doubleclick层次结构中没有Keyword，因此预期为空。</p>
       </td>
       <td>null</td>
     </tr>
     <tr>
       <td>
-        <p>BROWSER_NAME</p>
+        <p>浏览器名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从javascript和IP地址中，检测到用户在会话期间所在的浏览器。</p>
@@ -8502,13 +8502,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>BROWSER_VERSION</p>
+        <p>浏览器版本</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从javascript和IP地址中，检测到用户在会话期间所在的浏览器版本。</p>
+        <p>从javascript和IP地址中，查看在会话期间用户所在的检测到的浏览器版本。</p>
       </td>
       <td>
         <p>58</p>
@@ -8516,10 +8516,10 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_NAME</p>
+        <p>平台名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从javascript和IP地址中，检测到用户在会话期间所在的平台。</p>
@@ -8530,13 +8530,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_VERSION</p>
+        <p>平台版本</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从javascript和IP地址中，检测到用户在会话期间所在平台的版本。</p>
+        <p>从javascript和IP地址中，查看在会话期间用户所在平台的检测到版本。</p>
       </td>
       <td>
         <p>10_12</p>
@@ -8627,19 +8627,19 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -8647,7 +8647,7 @@ _单击某个图像的全尺寸版本_
 
 ### BIZ_KEYWORDS {#biz-keywords}
 
-从任何连接的广告帐户导入的关键词。
+从任何连接的广告帐户导入的关键字。
 
 <table>
   <tbody>
@@ -8670,10 +8670,10 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>关键词的唯一ID。</p>
+        <p>关键字的唯一ID。</p>
       </td>
       <td>
         <p>ba.3284209.132630532.3646889365.39464932147</p>
@@ -8684,9 +8684,9 @@ _单击某个图像的全尺寸版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>来自源系统的关键词Id。</td>
+      <td>源系统中的关键字ID。</td>
       <td>
         <p>39464932147</p>
       </td>
@@ -8696,10 +8696,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从中导入关键词的广告帐户的ID。</p>
+        <p>从中导入关键字的广告帐户的ID。</p>
       </td>
       <td>fb.106851586409075</td>
     </tr>
@@ -8708,10 +8708,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从中导入关键词的广告帐户名称。</p>
+        <p>从中导入关键字的广告帐户的名称。</p>
       </td>
       <td>[!DNL Marketo Measure]</td>
     </tr>
@@ -8720,10 +8720,10 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为null，因为Doubleclick层级中没有“展示次数”的“关键词”。</p>
+        <p>由于展示次数的Doubleclick层次结构中没有Keyword，因此预期为空。</p>
       </td>
       <td>
         <p>null</p>
@@ -8734,10 +8734,10 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为null，因为Doubleclick层级中没有“展示次数”的“关键词”。</p>
+        <p>由于展示次数的Doubleclick层次结构中没有Keyword，因此预期为空。</p>
       </td>
       <td>
         <p>null</p>
@@ -8748,10 +8748,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>关键词的广告组ID。</p>
+        <p>关键字的广告组ID。</p>
       </td>
       <td>
         <p>ba.3284209.132630532.3646889365</p>
@@ -8762,10 +8762,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>关键词的广告组名称。</p>
+        <p>关键字的广告组的名称。</p>
       </td>
       <td>
         <p>收入归因 — B2B</p>
@@ -8776,10 +8776,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>关键词的促销活动ID。</p>
+        <p>关键字的促销活动ID。</p>
       </td>
       <td>
         <p>ba.3284209.132630532</p>
@@ -8790,10 +8790,10 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>关键词促销活动的名称。</p>
+        <p>关键字的促销活动名称。</p>
       </td>
       <td>
         <p>收入归因</p>
@@ -8807,7 +8807,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>关键词在源系统中是否仍处于活动状态。</p>
+        <p>Keyword在源系统中是否仍然处于活动状态。</p>
       </td>
       <td>
         <p>true</p>
@@ -8821,7 +8821,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>关键字是否已在源系统中删除。</p>
+        <p>源系统中是否删除了Keyword。</p>
       </td>
       <td>
         <p>false</p>
@@ -8841,7 +8841,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>FIRST_IMPORT</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -8858,10 +8858,10 @@ _单击某个图像的全尺寸版本_
         <p>名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>来自源系统的关键词名称。</p>
+        <p>源系统中的关键字的名称。</p>
       </td>
       <td>
         <p>[收入归因b2b]</p>
@@ -8875,7 +8875,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否需要更新关键词 [!DNL Marketo Measure] 标记。</p>
+        <p>是否需要更新关键字 [!DNL Marketo Measure] 标记。</p>
         <p>（诊断字段，用于内部处理。）</p>
       </td>
       <td>
@@ -8884,25 +8884,25 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>分组密钥</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>诊断字段，用于内部处理。</td>
+      <td>用于内部处理的诊断字段。</td>
       <td>
         <p>ba.3284209.132630532.3646889365</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>实体类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此表的主对象或实体。 在本例中为“关键词”。</p>
+        <p>此表的主对象或实体。 在本例中，为“Keyword”。</p>
       </td>
       <td>
         <p>关键词</p>
@@ -8913,10 +8913,10 @@ _单击某个图像的全尺寸版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>关键词的广告提供商名称。</p>
+        <p>关键字的广告提供商的名称。</p>
       </td>
       <td>
         <p>BingAds</p>
@@ -8927,7 +8927,7 @@ _单击某个图像的全尺寸版本_
         <p>URL_CURRENT</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>登陆页面的URL。</p>
@@ -8940,7 +8940,7 @@ _单击某个图像的全尺寸版本_
         <p>URL_OLD</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>URL_CURRENT的上一个值。</p>
@@ -8949,10 +8949,10 @@ _单击某个图像的全尺寸版本_
       <td></td>
     </tr>
     <tr>
-      <td>URL_REQUESTED</td>
-      <td>varch</td>
+      <td>URL已请求</td>
+      <td>varchar</td>
       <td>
-        <p>登陆页面的URL，其中包含 [!DNL Marketo Measure] 参数。</p>
+        <p>登陆页面的URL [!DNL Marketo Measure] 参数。</p>
         <p>（诊断字段，用于内部处理。）</p>
       </td>
       <td></td>
@@ -8964,7 +8964,7 @@ _单击某个图像的全尺寸版本_
       <td>
         <p>布尔值</p>
       </td>
-      <td>诊断字段，用于内部处理。</td>
+      <td>用于内部处理的诊断字段。</td>
       <td>
         <p>false</p>
       </td>
@@ -8974,7 +8974,7 @@ _单击某个图像的全尺寸版本_
         <p>WORD</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>用户输入的搜索阶段。</td>
       <td>
@@ -8986,7 +8986,7 @@ _单击某个图像的全尺寸版本_
         <p>MATCH_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>在搜索短语和关键词之间找到的匹配类型。</p>
@@ -9000,7 +9000,7 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>用于内部诊断。</td>
       <td>http://cdn.adobe.com/redir?lp={lpurl}&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}</td>
@@ -9010,7 +9010,7 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE_OLD</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>用于内部诊断。</td>
       <td></td>
@@ -9020,7 +9020,7 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>用于内部诊断。</td>
       <td></td>
@@ -9030,9 +9030,9 @@ _单击某个图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE_APPLIED</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>URL跟踪模板 [!DNL Marketo Measure] 添加到关键词。</td>
+      <td>URL跟踪模板 [!DNL Marketo Measure] 已添加到关键字。</td>
       <td>
         <p>http://cdn.adobe.com/redir?lp={lpurl}&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}</p>
       </td>
@@ -9052,19 +9052,19 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -9093,7 +9093,7 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>登陆页面的唯一ID。</p>
@@ -9105,7 +9105,7 @@ _单击某个图像的全尺寸版本_
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -9115,7 +9115,7 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>从中导入登陆页面的广告帐户的ID。</td>
       <td></td>
@@ -9125,9 +9125,9 @@ _单击某个图像的全尺寸版本_
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>从中导入登陆页面的广告帐户名称。</td>
+      <td>从中导入登陆页面的广告帐户的名称。</td>
       <td></td>
     </tr>
     <tr>
@@ -9135,10 +9135,10 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>登陆页面的广告商ID，特别是Doubleclick的广告商ID。</p>
+        <p>登陆页面（尤其是Doubleclick）的广告商ID。</p>
       </td>
       <td>300181641</td>
     </tr>
@@ -9147,21 +9147,21 @@ _单击某个图像的全尺寸版本_
         <p>ADVERTISER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>登陆页面的广告商名称，特别是Doubleclick的广告商名称。</p>
+        <p>登陆页面的广告商名称，专门用于Doubleclick。</p>
       </td>
-      <td>营销分析</td>
+      <td>Marketing Analytics</td>
     </tr>
     <tr>
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>登陆页面的广告组ID。</td>
+      <td>登陆页面的广告组的ID。</td>
       <td></td>
     </tr>
     <tr>
@@ -9169,9 +9169,9 @@ _单击某个图像的全尺寸版本_
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>登陆页面的广告组名称。</td>
+      <td>登陆页面的广告组的名称。</td>
       <td></td>
     </tr>
     <tr>
@@ -9179,9 +9179,9 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>登陆页面的营销活动ID。</td>
+      <td>登陆页面营销活动的ID。</td>
       <td></td>
     </tr>
     <tr>
@@ -9189,9 +9189,9 @@ _单击某个图像的全尺寸版本_
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>登陆页面的营销活动名称。</td>
+      <td>登陆页面的Campaign的名称。</td>
       <td></td>
     </tr>
     <tr>
@@ -9228,7 +9228,7 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>FIRST_IMPORT</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -9241,7 +9241,7 @@ _单击某个图像的全尺寸版本_
         <p>名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -9258,20 +9258,20 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>分组密钥</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>实体类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -9281,7 +9281,7 @@ _单击某个图像的全尺寸版本_
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -9291,7 +9291,7 @@ _单击某个图像的全尺寸版本_
         <p>URL_CURRENT</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -9301,17 +9301,17 @@ _单击某个图像的全尺寸版本_
         <p>URL_OLD</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>URL_REQUESTED</p>
+        <p>URL已请求</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td></td>
@@ -9319,25 +9319,25 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_LEADS {#biz-leads}
+### 商业线索(_L) {#biz-leads}
 
 从源系统导入的潜在客户。
 
@@ -9362,10 +9362,10 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>来自源系统的潜在客户ID。</p>
+        <p>源系统中的潜在客户ID。</p>
       </td>
       <td>
         <p>00Q0Z00001MZcj8UAD</p>
@@ -9387,13 +9387,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CREATED_DATE</p>
+        <p>创建日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>从源系统创建潜在客户记录的日期。</p>
+        <p>从源系统创建Lead记录的日期。</p>
       </td>
       <td>2018-08-27 21:52:10.000</td>
     </tr>
@@ -9402,22 +9402,22 @@ _单击某个图像的全尺寸版本_
         <p>电子邮件</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>来自源系统的潜在客户电子邮件地址。</p>
+        <p>源系统中潜在客户的电子邮件地址。</p>
       </td>
       <td>persona@adobe.com</td>
     </tr>
     <tr>
       <td>
-        <p>WEB_SITE</p>
+        <p>WEB站点</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从源系统为潜在客户输入的网站，用于Lead2Account映射。</p>
+        <p>从源系统为Lead输入的网站，用于Lead2Account映射。</p>
       </td>
       <td>
         <p>adobe.com</p>
@@ -9428,10 +9428,10 @@ _单击某个图像的全尺寸版本_
         <p>公司</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从源系统为潜在客户输入的公司名称，用于Lead2Account映射。</p>
+        <p>从源系统为Lead输入的公司名称用于Lead2Account映射。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -9439,13 +9439,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_SOURCE</p>
+        <p>潜在客户来源</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>创建潜在客户的来源。</p>
+        <p>创建Lead的来源。</p>
       </td>
       <td>
         <p>广告</p>
@@ -9459,7 +9459,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>潜在客户是否已转换为联系人。</p>
+        <p>Lead是否已转换为Contact。</p>
       </td>
       <td>
         <p>true</p>
@@ -9467,13 +9467,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CONVERTED_OPPORTUNITY_ID</p>
+        <p>转化后的机会ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>Lead转换后相关Opportunity的ID。</p>
+        <p>Lead转化后相关Opportunity的ID。</p>
       </td>
       <td>
         <p>0013100001b44aGAAQ</p>
@@ -9487,7 +9487,7 @@ _单击某个图像的全尺寸版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>将潜在客户转换为联系人的日期。</p>
+        <p>Lead转换为Contact的日期。</p>
       </td>
       <td>
         <p>2018-08-27 07:00:00.000</p>
@@ -9498,10 +9498,10 @@ _单击某个图像的全尺寸版本_
         <p>CONVERTED_CONTACT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>潜在客户转换后相关联系人的ID。</p>
+        <p>商机转化后相关联系人的ID。</p>
       </td>
       <td>
         <p>0030Z00003Oyp25QAB</p>
@@ -9512,10 +9512,10 @@ _单击某个图像的全尺寸版本_
         <p>ACCOUNTID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>映射的帐户的ID。 要求：启用ABM</p>
+        <p>映射帐户的ID。 要求：启用ABM</p>
       </td>
       <td>
         <p>0010Z0000236F9GQAU</p>
@@ -9526,10 +9526,10 @@ _单击某个图像的全尺寸版本_
         <p>BIZIBLE_STAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>潜在客户的当前阶段，被识别为可在 [!DNL Marketo Measure] 应用程序。</p>
+        <p>Lead的当前阶段，识别为自定义阶段，可在 [!DNL Marketo Measure] 应用程序。</p>
       </td>
       <td>
         <p>已计划演示</p>
@@ -9540,10 +9540,10 @@ _单击某个图像的全尺寸版本_
         <p>BIZIBLE_STAGE_PREVIOUS</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>潜在客户的所有先前阶段均被识别为自定义阶段，可在 [!DNL Marketo Measure] 应用程序。</p>
+        <p>Lead的所有先前阶段，识别为自定义阶段，可在 [!DNL Marketo Measure] 应用程序。</p>
       </td>
       <td>
         <p>MQL</p>
@@ -9557,7 +9557,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,19)</p>
       </td>
       <td>
-        <p>此功能已弃用。 请不要使用此列。</p>
+        <p>此功能已被弃用。 请不要使用此列。</p>
       </td>
       <td>
         <p>不适用</p>
@@ -9568,7 +9568,7 @@ _单击某个图像的全尺寸版本_
         <p>LEAD_SCORE_MODEL</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>（已弃用）</p>
@@ -9582,7 +9582,7 @@ _单击某个图像的全尺寸版本_
         <p>LEAD_SCORE_RESULTS</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>（已弃用）</p>
@@ -9596,10 +9596,10 @@ _单击某个图像的全尺寸版本_
         <p>BIZIBLE_COOKIE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>的 [!DNL Marketo Measure] Cookie ID，用于从集成合作伙伴填充以将离线事件映射到Web会话。 要求：启用调用跟踪：True</p>
+        <p>此 [!DNL Marketo Measure] 用于从集成合作伙伴填充以将离线事件映射到Web会话的Cookie ID。 要求：启用呼叫跟踪：True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -9633,52 +9633,52 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
-      <td>varch</td>
-      <td>自定义属性 [!DNL Marketo Measure] 已从源系统导入，格式为JSON。</td>
-      <td>{"Lead_Type__c":"Sales Created", "Foo":"Bar"}</td>
+      <td>varchar</td>
+      <td>具有以下特征的自定义属性 [!DNL Marketo Measure] 已使用JSON格式从源系统导入。</td>
+      <td>{"Lead_Type__c"："Sales Created"， "Foo"："Bar"}</td>
     </tr>
     <tr>
       <td>IS_DUPLICATE</td>
       <td>布尔值</td>
-      <td>如果同时设置了CRM和Marketo集成，则用于删除重复记录。 如果存在重复项，则Marketo Lead将标记为true。</td>
+      <td>如果设置了CRM和Marketo集成，则用于消除重复记录。 如果存在重复项，则Marketo商机将标记为true。</td>
       <td>true</td>
     </tr>
     <tr>
       <td>SOURCE_SYSTEM</td>
-      <td>varch</td>
+      <td>varchar</td>
       <td>指示记录是来自CRM还是Marketo集成。</td>
       <td>Crm</td>
     </tr>
     <tr>
       <td>OTHER_SYSTEM_ID</td>
-      <td>varch</td>
-      <td>将Marketo集成中的人员与CRM集成中的潜在客户进行映射。 如果CRM和Marketo集成都存在，则值为相应的ID。</td>
+      <td>varchar</td>
+      <td>将Marketo集成中的人员与CRM集成中的潜在客户进行映射。 如果CRM和Marketo集成都存在，则该值为相应的ID。</td>
       <td>1234</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_LEAD_STAGE_TRANSITIONS {#biz-lead-stage-transitions}
+### 商业_导引_舞台_过渡 {#biz-lead-stage-transitions}
 
-潜在客户或联系人的过渡阶段。
+潜在客户或联系人的暂存过渡。
 
 <table>
   <tbody>
@@ -9701,7 +9701,7 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>过渡的唯一ID。</p>
@@ -9715,10 +9715,10 @@ _单击某个图像的全尺寸版本_
         <p>电子邮件</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>提供的相关潜在客户/联系人的电子邮件地址。</p>
+        <p>为相关潜在客户/联系人提供的电子邮件地址。</p>
       </td>
       <td>
         <p>persone@adobe.com</p>
@@ -9726,13 +9726,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>LEAD_ID</p>
+        <p>商机ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>与过渡关联的潜在客户的ID。</p>
+        <p>与过渡关联的商机ID。</p>
       </td>
       <td>
         <p>00Q3100001Fx6AlEAJ</p>
@@ -9743,7 +9743,7 @@ _单击某个图像的全尺寸版本_
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>与过渡关联的联系人的ID。</p>
@@ -9754,10 +9754,10 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>TOUCHPOINT_ID</p>
+        <p>接触点ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>与过渡关联的买方接触点的ID。</p>
@@ -9785,10 +9785,10 @@ _单击某个图像的全尺寸版本_
         <p>STAGE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>过渡阶段的ID值。</p>
+        <p>过渡阶段的标识值。</p>
       </td>
       <td>
         <p>_bizible_FT</p>
@@ -9799,13 +9799,13 @@ _单击某个图像的全尺寸版本_
         <p>阶段</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>过渡的阶段名称。</p>
+        <p>过渡阶段的名称。</p>
       </td>
       <td>
-        <p>FT</p>
+        <p>英尺</p>
       </td>
     </tr>
     <tr>
@@ -9816,7 +9816,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>舞台的数值排名(在 [!DNL Marketo Measure] 阶段映射设置。</p>
+        <p>级的数值排名，如 [!DNL Marketo Measure] 阶段映射设置。</p>
       </td>
       <td>
         <p>5</p>
@@ -9830,7 +9830,7 @@ _单击某个图像的全尺寸版本_
         <p>varchar(1)</p>
       </td>
       <td>
-        <p>用于索引和订购回飞镖阶段的内部处理。</p>
+        <p>用于索引和排序自转阶段的内部处理。</p>
       </td>
       <td>
         <p>1</p>
@@ -9843,7 +9843,7 @@ _单击某个图像的全尺寸版本_
       <td>
         <p>varchar(1)</p>
       </td>
-      <td>用于索引和订购回飞镖阶段的内部处理。</td>
+      <td>用于索引和排序自转阶段的内部处理。</td>
       <td>
         <p>1</p>
       </td>
@@ -9856,7 +9856,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示接触点是否被视为待处理且尚未关闭。 此设置仅适用于具有完整路径归因模型的客户。</p>
+        <p>指示接触点是否被视为待处理且尚未关闭。 这仅适用于具有完整路径归因模型的客户。</p>
       </td>
       <td>
         <p>false</p>
@@ -9864,13 +9864,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>IS_NON_TRANSITION</p>
+        <p>IS_NON_TRANSITIONAL</p>
       </td>
       <td>
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示该行是否已绑定到里程碑阶段过渡。 例如，如果有3个阶段/条目(FT、LC、MQL)和4个接触点，则1个没有上述阶段的接触点将被视为“非过渡”，因此该值将等于true。</p>
+        <p>指示该行是否绑定到里程碑阶段转换。 例如，如果有3个阶段/条目(FT、LC、MQL)和4个接触点，则上面没有阶段的1个接触点会视为“非过渡”，因此值将等于true。</p>
       </td>
       <td>
         <p>false</p>
@@ -9884,7 +9884,7 @@ _单击某个图像的全尺寸版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>根据阶段排名，上一阶段的过渡日期。</p>
+        <p>上一个阶段的过渡日期（根据阶段排名）。</p>
       </td>
       <td>
         <p>2017-11-28 21:26:44.000</p>
@@ -9898,7 +9898,7 @@ _单击某个图像的全尺寸版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>根据阶段排名，下一阶段的过渡日期。</p>
+        <p>根据阶段排名，确定下一阶段的过渡日期。</p>
       </td>
       <td>
         <p>2017-12-11 22:39:17.000</p>
@@ -9926,7 +9926,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否考虑删除过渡记录。</p>
+        <p>是否将过渡记录视为已删除。</p>
       </td>
       <td>
         <p>false</p>
@@ -9935,25 +9935,25 @@ _单击某个图像的全尺寸版本_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_OPPORTUNITIES {#biz-opportunities}
+### 商业机会 {#biz-opportunities}
 
 从源系统导入的机会。
 
@@ -9978,10 +9978,10 @@ _单击某个图像的全尺寸版本_
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>来自源系统的机会ID。</p>
+        <p>源系统中的机会ID。</p>
       </td>
       <td>
         <p>0060Z00000o89I4QAI</p>
@@ -9995,19 +9995,19 @@ _单击某个图像的全尺寸版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Opportunity的上次修改日期（从源系统）。</p>
+        <p>源系统中Opportunity的最后修改日期。</p>
       </td>
       <td>2017-11-28 21:26:44.000</td>
     </tr>
     <tr>
       <td>
-        <p>CREATED_DATE</p>
+        <p>创建日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>从源系统创建Opportunity的日期。</p>
+        <p>源系统中Opportunity创建日期。</p>
       </td>
       <td>2017-11-28 21:26:44.000</td>
     </tr>
@@ -10016,7 +10016,7 @@ _单击某个图像的全尺寸版本_
         <p>ACCOUNT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>相关帐户的ID。</p>
@@ -10030,13 +10030,13 @@ _单击某个图像的全尺寸版本_
         <p>名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>来自源系统的Opportunity Name。</p>
+        <p>源系统中的Opportunity Name。</p>
       </td>
       <td>
-        <p>Mareketo Measure更新</p>
+        <p>Marketo度量续订</p>
       </td>
     </tr>
     <tr>
@@ -10047,7 +10047,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示Opportunity是否已移至被视为已胜出的阶段。</p>
+        <p>指示Opportunity是否已移动到被视为已赢得的阶段。</p>
       </td>
       <td>
         <p>false</p>
@@ -10061,7 +10061,7 @@ _单击某个图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示Opportunity是否已移至视为已关闭的阶段。</p>
+        <p>指示Opportunity是否已移动到被视为已关闭的阶段。</p>
       </td>
       <td>
         <p>false</p>
@@ -10075,7 +10075,7 @@ _单击某个图像的全尺寸版本_
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>Opportunity的预期或实际结束日期（从源系统）。</p>
+        <p>来源系统中Opportunity的预期或实际结束日期。</p>
       </td>
       <td>
         <p>2019-08-28 07:00:00.000</p>
@@ -10097,13 +10097,13 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>金额</p>
+        <p>数量</p>
       </td>
       <td>
         <p>数字(38,8)</p>
       </td>
       <td>
-        <p>从源系统中预期或结束的交易金额。</p>
+        <p>从Opportunity中预期或结束的来自源系统的交易金额。</p>
       </td>
       <td>
         <p>8988.00000000</p>
@@ -10114,11 +10114,11 @@ _单击某个图像的全尺寸版本_
         <p>CONVERTED_FROM_LEAD_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>已转换为此Opportunity的相关Lead的Id。</p>
-        <p>请注意，此字段未设置，在Snowflake中为所有客户返回空值。</p>
+        <p>已转换为此Opportunity的相关商机的ID。</p>
+        <p>请注意，未设置此字段，并且为所有客户的Snowflake返回null。</p>
       </td>
       <td>
         <p>null</p>
@@ -10129,11 +10129,11 @@ _单击某个图像的全尺寸版本_
         <p>CONVERTED_FROM_LEAD_EMAIL</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>已转换为此Opportunity的相关Lead的电子邮件。</p>
-        <p>请注意，此字段未设置，在Snowflake中为所有客户返回空值。</p>
+        <p>请注意，未设置此字段，并且为所有客户的Snowflake返回null。</p>
       </td>
       <td>
         <p>null</p>
@@ -10144,10 +10144,10 @@ _单击某个图像的全尺寸版本_
         <p>PRIMARY_CONTACT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>如果使用“主要联系人”角色，则相关联系人的ID将列为主要联系人角色。</p>
+        <p>如果使用“主要联系人角色”，则相关联系人的ID将列为主要联系人角色。</p>
       </td>
       <td>
         <p>00331000038uGfhAAE</p>
@@ -10158,10 +10158,10 @@ _单击某个图像的全尺寸版本_
         <p>PRIMARY_CONTACT_EMAIL</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>如果使用“主要联系人”角色，则相关联系人的电子邮件将列为主要联系人角色。</p>
+        <p>如果使用“主要联系人角色”，则相关联系人的电子邮件将列为“主要联系人角色”。</p>
       </td>
       <td>
         <p>personb@adobe.com</p>
@@ -10175,7 +10175,7 @@ _单击某个图像的全尺寸版本_
         <p>数字(38,19)</p>
       </td>
       <td>
-        <p>此功能已弃用。 请不要使用此列。</p>
+        <p>此功能已被弃用。 请不要使用此列。</p>
       </td>
       <td>
         <p>不适用</p>
@@ -10186,10 +10186,10 @@ _单击某个图像的全尺寸版本_
         <p>BIZIBLE_STAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>Opportunity的当前阶段(定义于 [!DNL Marketo Measure] 应用程序。</p>
+        <p>Opportunity的当前阶段，如 [!DNL Marketo Measure] 应用程序。</p>
       </td>
       <td>
         <p>DM演示</p>
@@ -10200,13 +10200,13 @@ _单击某个图像的全尺寸版本_
         <p>BIZIBLE_STAGE_PREVIOUS</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>Opportunity之前经历的所有阶段的字符串，定义如 [!DNL Marketo Measure] 应用程序。</p>
+        <p>Opportunity以前经历的所有阶段的字符串，如 [!DNL Marketo Measure] 应用程序。</p>
       </td>
       <td>
-        <p>合格的发现，演示计划</p>
+        <p>经鉴定的发现，已计划演示</p>
       </td>
     </tr>
     <tr>
@@ -10237,8 +10237,8 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>CURRENCY_ISO_CODE</td>
-      <td>varch</td>
-      <td>货币的ISO代码，从源系统导入。</td>
+      <td>varchar</td>
+      <td>从源系统导入的货币的ISO代码。</td>
       <td>美元</td>
     </tr>
     <tr>
@@ -10249,26 +10249,26 @@ _单击某个图像的全尺寸版本_
     </tr>
     <tr>
       <td>CUSTOM_PROPERTIES</td>
-      <td>varch</td>
-      <td>自定义属性 [!DNL Marketo Measure] 已从源系统导入，格式为JSON。</td>
-      <td>{"Opportunity_Location__c":"Seattle", "Foo":"Bar"}</td>
+      <td>varchar</td>
+      <td>具有以下特征的自定义属性 [!DNL Marketo Measure] 已使用JSON格式从源系统导入。</td>
+      <td>{"Opportunity_Location__c"："Seattle"， "Foo"："Bar"}</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -10276,7 +10276,7 @@ _单击某个图像的全尺寸版本_
 
 ### BIZ_OPP_STAGE_TRANSITIONS {#biz-opp-stage-transitions}
 
-Opportunity的过渡阶段。
+为机会暂存过渡。
 
 <table>
   <tbody>
@@ -10299,13 +10299,13 @@ Opportunity的过渡阶段。
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>过渡的唯一ID。</p>
       </td>
       <td>
-        <p>ST_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_Demo Scheduled-1_BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec556e757</p>
+        <p>ST_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_Demo Scheduled-1_BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec56e757</p>
       </td>
     </tr>
     <tr>
@@ -10313,10 +10313,10 @@ Opportunity的过渡阶段。
         <p>ACCOUNT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>与Opportunity关联的帐户的ID。</p>
+        <p>与机会关联的帐户的ID。</p>
       </td>
       <td>
         <p>0013100001b44nTAAQ</p>
@@ -10324,13 +10324,13 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>OPPORTUNITY_ID</p>
+        <p>机会ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>与过渡关联的Opportunity的ID。</p>
+        <p>与过渡关联的机会的ID。</p>
       </td>
       <td>
         <p>0060Z00000nEgjlQAC</p>
@@ -10341,7 +10341,7 @@ Opportunity的过渡阶段。
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>与过渡关联的联系人的ID。</p>
@@ -10355,10 +10355,10 @@ Opportunity的过渡阶段。
         <p>电子邮件</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>提供的相关联系人的电子邮件地址。</p>
+        <p>为相关联系人提供的电子邮件地址。</p>
       </td>
       <td>
         <p>persone@adobe.com</p>
@@ -10366,13 +10366,13 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>TOUCHPOINT_ID</p>
+        <p>接触点ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>与过渡关联的买方归因接触点的ID。</p>
+        <p>与过渡关联的买方归因接触点ID。</p>
       </td>
       <td>
         <p>BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec556e7757</p>
@@ -10397,10 +10397,10 @@ Opportunity的过渡阶段。
         <p>阶段</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>过渡的阶段名称。</p>
+        <p>过渡阶段的名称。</p>
       </td>
       <td>
         <p>已计划演示</p>
@@ -10411,10 +10411,10 @@ Opportunity的过渡阶段。
         <p>STAGE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>过渡阶段的ID值。</p>
+        <p>过渡阶段的标识值。</p>
       </td>
       <td>
         <p>_bizible_FT</p>
@@ -10428,7 +10428,7 @@ Opportunity的过渡阶段。
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>舞台的数值排名(在 [!DNL Marketo Measure] 阶段映射设置。</p>
+        <p>级的数值排名，如 [!DNL Marketo Measure] 阶段映射设置。</p>
       </td>
       <td>
         <p>4</p>
@@ -10442,7 +10442,7 @@ Opportunity的过渡阶段。
         <p>varchar(1)</p>
       </td>
       <td>
-        <p>用于索引和订购回飞镖阶段的内部处理。</p>
+        <p>用于索引和排序自转阶段的内部处理。</p>
       </td>
       <td>1</td>
     </tr>
@@ -10454,7 +10454,7 @@ Opportunity的过渡阶段。
         <p>varchar(1)</p>
       </td>
       <td>
-        <p>用于索引和订购回飞镖阶段的内部处理。</p>
+        <p>用于索引和排序自转阶段的内部处理。</p>
       </td>
       <td>1</td>
     </tr>
@@ -10466,7 +10466,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示接触点是否被视为待处理且尚未关闭。 此设置仅适用于具有完整路径归因模型的客户。</p>
+        <p>指示接触点是否被视为待处理且尚未关闭。 这仅适用于具有完整路径归因模型的客户。</p>
       </td>
       <td>
         <p>false</p>
@@ -10474,13 +10474,13 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>IS_NON_TRANSITION</p>
+        <p>IS_NON_TRANSITIONAL</p>
       </td>
       <td>
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示该行是否已绑定到里程碑阶段过渡。 例如，如果有3个阶段/条目(FT、LC、MQL)和4个接触点，则1个没有上述阶段的接触点将被视为“非过渡”，因此该值将等于true。</p>
+        <p>指示该行是否绑定到里程碑阶段转换。 例如，如果有3个阶段/条目(FT、LC、MQL)和4个接触点，则上面没有阶段的1个接触点会视为“非过渡”，因此值将等于true。</p>
       </td>
       <td>
         <p>false</p>
@@ -10494,7 +10494,7 @@ Opportunity的过渡阶段。
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>根据阶段排名，上一阶段的过渡日期。</p>
+        <p>上一个阶段的过渡日期（根据阶段排名）。</p>
       </td>
       <td>
         <p>2015-07-16 17:41:49.000</p>
@@ -10508,7 +10508,7 @@ Opportunity的过渡阶段。
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>根据阶段排名，下一阶段的过渡日期。</p>
+        <p>根据阶段排名，确定下一阶段的过渡日期。</p>
       </td>
       <td>
         <p>2018-08-27 19:40:52.000</p>
@@ -10536,7 +10536,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否考虑删除过渡记录。</p>
+        <p>是否将过渡记录视为已删除。</p>
       </td>
       <td>
         <p>false</p>
@@ -10545,19 +10545,19 @@ Opportunity的过渡阶段。
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -10565,7 +10565,7 @@ Opportunity的过渡阶段。
 
 ### BIZ_PAGE_VIEWS {#biz-page-views}
 
-从Web访问中收集的页面查看次数。 多个页面查看可以构成单个会话。
+通过Web访问收集的页面查看次数。 多个页面视图可以构成单个会话。
 
 <table>
   <tbody>
@@ -10588,7 +10588,7 @@ Opportunity的过渡阶段。
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>页面查看的唯一ID。</p>
@@ -10602,10 +10602,10 @@ Opportunity的过渡阶段。
         <p>COOKIE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>记录页面查看时记录的Cookie ID。</p>
+        <p>在记录页面查看时记录的Cookie ID。</p>
       </td>
       <td>
         <p>277d79d01678498fea067c9b631bf6df</p>
@@ -10616,10 +10616,10 @@ Opportunity的过渡阶段。
         <p>VISITOR_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>相关访客ID的第一个Cookie。</p>
+        <p>相关访客id的第一个Cookie。</p>
       </td>
       <td>
         <p>v_277d79d01678498fea067c9b631bf6df</p>
@@ -10630,10 +10630,10 @@ Opportunity的过渡阶段。
         <p>SESSION_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>会话ID与页面查看相关联。</p>
+        <p>与页面查看关联的会话ID。</p>
       </td>
       <td>
         <p>2018-08-19:16-49-58-24340.277d79d0167849</p>
@@ -10647,7 +10647,7 @@ Opportunity的过渡阶段。
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>页面查看的发生日期。</p>
+        <p>页面查看发生的日期。</p>
       </td>
       <td>
         <p>2018-08-19 16:49:58.000</p>
@@ -10672,10 +10672,10 @@ Opportunity的过渡阶段。
         <p>CURRENT_PAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>页面查看的URL，不包含查询参数。</p>
+        <p>页面查看的URL，不含查询参数。</p>
       </td>
       <td>
         <p>https://info.adobe.com/demo</p>
@@ -10686,7 +10686,7 @@ Opportunity的过渡阶段。
         <p>CURRENT_PAGE_RAW</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>页面查看的URL，包括任何查询参数。</p>
@@ -10697,10 +10697,10 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>IP_ADDRESS</p>
+        <p>IP地址</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>提交表单时记录的IP地址。</p>
@@ -10714,11 +10714,11 @@ Opportunity的过渡阶段。
         <p>类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>指示事件的类型。</td>
       <td>
-        <p>PageView</p>
+        <p>页面查看</p>
       </td>
     </tr>
     <tr>
@@ -10726,13 +10726,13 @@ Opportunity的过渡阶段。
         <p>USER_AGENT_STRING</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在表单提交时记录的设备和浏览器。</p>
+        <p>提交表单时记录的设备和浏览器。</p>
       </td>
       <td>
-        <p>Mozilla/5.0(X11;Linux x86_64;rv:52.0)Gecko/20100101 Firefox/52.0</p>
+        <p>Mozilla/5.0 (X11；Linux x86_64；rv：52.0) Gecko/20100101 Firefox/52.0</p>
       </td>
     </tr>
     <tr>
@@ -10754,9 +10754,9 @@ Opportunity的过渡阶段。
         <p>CLIENT_RANDOM</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>用于内部审核和处理。</td>
+      <td>用于内部审计和处理。</td>
       <td>
         <p>103532</p>
       </td>
@@ -10768,7 +10768,7 @@ Opportunity的过渡阶段。
       <td>
         <p>布尔值</p>
       </td>
-      <td>指示记录是否被视为重复项。</td>
+      <td>指示是否将该记录视为重复项。</td>
       <td>false</td>
     </tr>
     <tr>
@@ -10786,10 +10786,10 @@ Opportunity的过渡阶段。
         <p>REFERRER_PAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>页面查看源自的URL，不包含查询参数。</p>
+        <p>页面查看源自的URL，不带查询参数。</p>
       </td>
       <td>
         <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution</p>
@@ -10800,7 +10800,7 @@ Opportunity的过渡阶段。
         <p>REFERRER_PAGE_RAW</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>页面查看源自的URL，包括任何查询参数。</p>
@@ -10814,13 +10814,13 @@ Opportunity的过渡阶段。
         <p>PAGE_TITLE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>页面标题。</p>
       </td>
       <td>
-        <p>CMO的B2B营销归因下载指南</p>
+        <p>下载B2B营销归因的CMO指南</p>
       </td>
     </tr>
     <tr>
@@ -10828,10 +10828,10 @@ Opportunity的过渡阶段。
         <p>电子邮件</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>表单上提供的电子邮件地址（从Javascript中捕获）。</p>
+        <p>在表单上提供的电子邮件地址，从Javascript中捕获。</p>
       </td>
       <td>personc@adobe.com</td>
     </tr>
@@ -10864,33 +10864,33 @@ Opportunity的过渡阶段。
     <tr>
       <td>HAS_USER_CONSENT</td>
       <td>布尔值</td>
-      <td>指示用户是否同意跟踪。 False表示由于不需要用户同意而收集了页面查看。 True表示已收集页面查看，且用户同意进行跟踪。</td>
+      <td>指示用户是否已同意跟踪。 False表示已收集页面查看次数，因为不需要用户同意。 True表示已收集页面查看并且用户同意被跟踪。</td>
       <td>true</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_PLACEMENTS {#biz-placements}
+### BIZ_PLACEMENT {#biz-placements}
 
-用于存储从任何连接的广告帐户下载的所有版面的表，该表是Doubleclick集成中的一个对象。
+此表存储从任何连接的广告帐户下载的所有版面，即Doubleclick集成中的对象。
 
 <table>
   <tbody>
@@ -10911,10 +10911,10 @@ Opportunity的过渡阶段。
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>版面的唯一ID。</p>
+        <p>投放位置的唯一ID。</p>
       </td>
       <td>
         <p>ba.3284209.132855866.4556709270.10426699711</p>
@@ -10925,7 +10925,7 @@ Opportunity的过渡阶段。
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>源系统中的版面ID。</td>
       <td>10426699711</td>
@@ -10935,19 +10935,19 @@ Opportunity的过渡阶段。
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中导入版面的广告帐户的ID。</p>
       </td>
-      <td>fb。 106851586409075</td>
+      <td>转发 106851586409075</td>
     </tr>
     <tr>
       <td>
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中导入版面的广告帐户的名称。</p>
@@ -10959,10 +10959,10 @@ Opportunity的过渡阶段。
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>版面的广告商ID，特别是Doubleclick的广告商ID。</p>
+        <p>专门用于Doubleclick的投放位置广告商的ID。</p>
       </td>
       <td>300184624</td>
     </tr>
@@ -10971,10 +10971,10 @@ Opportunity的过渡阶段。
         <p>ADVERTISER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>版面的广告商名称，专门针对Doubleclick。</p>
+        <p>专门用于Doubleclick的投放位置的广告商名称。</p>
       </td>
       <td>[!DNL Marketo Measure] Analytics</td>
     </tr>
@@ -10983,10 +10983,10 @@ Opportunity的过渡阶段。
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为在任何广告层次结构中，版面上方没有广告组。</p>
+        <p>预期为空，因为任何广告层次结构中的投放位置上方没有广告组。</p>
       </td>
       <td>null</td>
     </tr>
@@ -10995,10 +10995,10 @@ Opportunity的过渡阶段。
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为在任何广告层次结构中，版面上方没有广告组。</p>
+        <p>预期为空，因为任何广告层次结构中的投放位置上方没有广告组。</p>
       </td>
       <td>null</td>
     </tr>
@@ -11007,10 +11007,10 @@ Opportunity的过渡阶段。
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>版面的营销活动ID。</p>
+        <p>投放位置营销活动的ID。</p>
       </td>
       <td>ba.3284209.132855866</td>
     </tr>
@@ -11019,10 +11019,10 @@ Opportunity的过渡阶段。
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>版面的营销活动名称。</p>
+        <p>投放位置的营销活动名称。</p>
       </td>
       <td>管道营销</td>
     </tr>
@@ -11034,7 +11034,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>放置是否在源系统中仍处于活动状态。</p>
+        <p>在源系统中，放置是否仍然处于活动状态。</p>
       </td>
       <td>true</td>
     </tr>
@@ -11046,7 +11046,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否在源系统中删除了版面。</p>
+        <p>是否在源系统中删除了投放位置。</p>
       </td>
       <td>false</td>
     </tr>
@@ -11064,7 +11064,7 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>FIRST_IMPORT</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -11079,10 +11079,10 @@ Opportunity的过渡阶段。
         <p>名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>源系统中版面的名称。</p>
+        <p>源系统中的版面的名称。</p>
       </td>
       <td>市场</td>
     </tr>
@@ -11094,27 +11094,27 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否需要更新版面 [!DNL Marketo Measure] 标记。</p>
+        <p>是否需要更新投放位置 [!DNL Marketo Measure] 标记。</p>
         <p>（诊断字段，由内部处理使用。）</p>
       </td>
       <td>false</td>
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>分组密钥</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>诊断字段，用于内部处理。</td>
+      <td>用于内部处理的诊断字段。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>实体类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>此表的主对象或实体。 在本例中，为“版面”。</p>
@@ -11126,10 +11126,10 @@ Opportunity的过渡阶段。
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>版面的广告提供商的名称。</p>
+        <p>投放的广告提供商的名称。</p>
       </td>
       <td>BingAds</td>
     </tr>
@@ -11148,27 +11148,27 @@ Opportunity的过渡阶段。
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Snowflake的创建日期</td>
+      <td>Snowflake的记录创建日期</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
-      <td>Snowflake的修改日期</td>
+      <td>Snowflake的记录修改日期</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>Snowflake删除记录的日期（如果已删除）</td>
+      <td>如果记录已删除，则为记录的Snowflake删除日期</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_SEGMENTS {#biz-segments}
+### 商业区段 {#biz-segments}
 
-区段值，如 [!DNL Marketo Measure] 应用程序。
+区段值定义见 [!DNL Marketo Measure] 应用程序。
 
 <table>
   <tbody>
@@ -11191,7 +11191,7 @@ Opportunity的过渡阶段。
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>区段的唯一ID。</p>
@@ -11205,7 +11205,7 @@ Opportunity的过渡阶段。
         <p>名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>区段的名称。</p>
@@ -11231,19 +11231,19 @@ Opportunity的过渡阶段。
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -11274,7 +11274,7 @@ Opportunity的过渡阶段。
         <p>类别</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>指示区段名称映射到的类别。</p>
@@ -11299,10 +11299,10 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>SEGMENT_NAME</p>
+        <p>区段名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>映射到类别的区段名称。</p>
@@ -11314,39 +11314,39 @@ Opportunity的过渡阶段。
     <tr>
       <td>IS_ACTIVE</td>
       <td>布尔值</td>
-      <td>指示类别是否正在使用。</td>
+      <td>指示类别是否正在使用中。</td>
       <td>true</td>
     </tr>
     <tr>
       <td>IS_DELETED</td>
       <td>布尔值</td>
-      <td>指示记录是否已删除。</td>
+      <td>指示是否删除记录。</td>
       <td>false</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_SESSIONS {#biz-sessions}
+### 商业会话(_S) {#biz-sessions}
 
-从页面查看中处理的会话。 多个页面查看可以构成一个会话，并且单个访客ID可以关联到多个会话。
+从页面查看处理的会话。 多个页面查看可构成一个会话，单个访客ID可与多个会话关联。
 
 <table>
   <tbody>
@@ -11369,7 +11369,7 @@ Opportunity的过渡阶段。
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>会话的唯一ID。</p>
@@ -11383,10 +11383,10 @@ Opportunity的过渡阶段。
         <p>VISITOR_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>相关访客ID的第一个Cookie。</p>
+        <p>相关访客id的第一个Cookie。</p>
       </td>
       <td>v_277d79d01678498fea067c9b631bf6df</td>
     </tr>
@@ -11395,10 +11395,10 @@ Opportunity的过渡阶段。
         <p>COOKIE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>记录的会话Cookie ID。</p>
+        <p>会话的已记录Cookie ID。</p>
       </td>
       <td>277d79d01678498fea067c9b631bf6df</td>
     </tr>
@@ -11410,7 +11410,7 @@ Opportunity的过渡阶段。
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>会议日期。</p>
+        <p>会话日期。</p>
       </td>
       <td>
         <p>2016-08-01 14:24:21.000</p>
@@ -11441,13 +11441,13 @@ Opportunity的过渡阶段。
         <p>渠道</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>分配给会话的渠道(由 [!DNL Marketo Measure] 应用程序。</p>
+        <p>归属于会话的渠道，如中设置的渠道定义所定义。 [!DNL Marketo Measure] 应用程序。</p>
       </td>
       <td>
-        <p>付费Search.AdWords</p>
+        <p>付费搜索.AdWords</p>
       </td>
     </tr>
     <tr>
@@ -11455,7 +11455,7 @@ Opportunity的过渡阶段。
         <p>PAGE_TITLE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>网页的名称。</p>
@@ -11469,10 +11469,10 @@ Opportunity的过渡阶段。
         <p>LANDING_PAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>会话的首次页面查看的URL，不带查询参数。</p>
+        <p>会话第一个页面查看的URL，不含查询参数。</p>
       </td>
       <td>
         <p>http://www.adobe.com/salesforce-google-analytics</p>
@@ -11483,10 +11483,10 @@ Opportunity的过渡阶段。
         <p>LANDING_PAGE_RAW</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>会话的首次页面查看的URL，包括任何查询参数。</p>
+        <p>会话的第一次页面查看的URL，包括任何查询参数。</p>
       </td>
       <td>
         <p>http://www.adobe.com/salesforce-google-analytics?_bt=83558988035&amp;_bk=google%20analytics%20salesforce&amp;_bm= p&amp;gclid=CMvd5YTLo84CFUI9gQodd-kLEQ</p>
@@ -11497,10 +11497,10 @@ Opportunity的过渡阶段。
         <p>REFERRER_PAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>会话源自的URL，不包含查询参数。</p>
+        <p>会话源自的URL，不带查询参数。</p>
       </td>
       <td>
         <p>https://www.google.com/</p>
@@ -11511,7 +11511,7 @@ Opportunity的过渡阶段。
         <p>REFERRER_PAGE_RAW</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>会话源自的URL，包括任何查询参数。</p>
@@ -11525,7 +11525,7 @@ Opportunity的过渡阶段。
         <p>REFERRER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>反向链接页面的名称。</p>
@@ -11539,10 +11539,10 @@ Opportunity的过渡阶段。
         <p>SEARCH_PHRASE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用户在浏览器中输入以搜索并最终在网站上显示的值。</p>
+        <p>用户在浏览器中输入要搜索并且最终出现在网站上的值。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] google salesforce</p>
@@ -11553,10 +11553,10 @@ Opportunity的过渡阶段。
         <p>WEB_SOURCE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用于定义导致会话的源。 此参数可从URL中从utm_source解析，或在 [!DNL Marketo Measure] 能够解析广告。</p>
+        <p>用于定义导致会话的源。 在以下情况下，可以从utm_source的URL中解析该内容，或将其设置为广告提供商 [!DNL Marketo Measure] 能够解析广告。</p>
       </td>
       <td>
         <p>Google AdWords</p>
@@ -11570,7 +11570,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>会话是否包含表单填写，</p>
+        <p>会话是否包含表单填充，</p>
       </td>
       <td>
         <p>true</p>
@@ -11598,7 +11598,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>会议是否有电子邮件地址。</p>
+        <p>会话是否具有电子邮件地址。</p>
       </td>
       <td>
         <p>false</p>
@@ -11623,13 +11623,13 @@ Opportunity的过渡阶段。
         <p>设备</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>会话期间用户的浏览器和操作系统。</p>
       </td>
       <td>
-        <p>Chrome(65.0)、Windows(6.1)</p>
+        <p>Chrome (65.0)、Windows (6.1)</p>
       </td>
     </tr>
     <tr>
@@ -11637,10 +11637,10 @@ Opportunity的过渡阶段。
         <p>AD_PROVIDER</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告平台 [!DNL Marketo Measure] 解决方案，通常是我们的集成合作伙伴之一。</p>
+        <p>广告平台 [!DNL Marketo Measure] 从解决，通常是我们的集成合作伙伴之一。</p>
       </td>
       <td>
         <p>Google</p>
@@ -11651,10 +11651,10 @@ Opportunity的过渡阶段。
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告帐户的ID。</p>
+        <p>从中解析广告的广告帐户的ID。</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -11665,10 +11665,10 @@ Opportunity的过渡阶段。
         <p>ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告帐户的名称。</p>
+        <p>从中解析广告的广告帐户的名称。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -11679,10 +11679,10 @@ Opportunity的过渡阶段。
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告商的ID，特别是从Doubleclick连接中解析的。</p>
+        <p>从中解析广告的广告商的ID，尤其是从Doubleclick连接解析广告的广告商。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -11693,13 +11693,13 @@ Opportunity的过渡阶段。
         <p>ADVERTISER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告商名称，特别是从Doubleclick连接中解析的广告商名称。</p>
+        <p>从中解析广告的广告商的名称，尤其是从Doubleclick连接解析的广告商。</p>
       </td>
       <td>
-        <p>营销分析</p>
+        <p>Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -11707,10 +11707,10 @@ Opportunity的过渡阶段。
         <p>SITE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的网站的ID。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的网站的ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>1695651</p>
@@ -11718,13 +11718,13 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>站点名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的网站名称。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的站点的名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>Quora.com</p>
@@ -11735,10 +11735,10 @@ Opportunity的过渡阶段。
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的Palcement的ID。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的平台的ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>120839827</p>
@@ -11749,13 +11749,13 @@ Opportunity的过渡阶段。
         <p>PLACEMENT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的版面名称。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的投放位置的名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
-        <p>障碍</p>
+        <p>路障</p>
       </td>
     </tr>
     <tr>
@@ -11763,10 +11763,10 @@ Opportunity的过渡阶段。
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的营销活动ID。</p>
+        <p>从中解析广告的营销活动的ID。</p>
       </td>
       <td>
         <p>aw.6601259029.321586235</p>
@@ -11774,16 +11774,16 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>营销活动名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的营销活动的名称。</p>
+        <p>从中解析广告的营销活动的名称。</p>
       </td>
       <td>
-        <p>规划预算网络研讨会</p>
+        <p>计划预算网络研讨会</p>
       </td>
     </tr>
     <tr>
@@ -11791,10 +11791,10 @@ Opportunity的过渡阶段。
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告组的ID。 这仅适用于Google Adwords。</p>
+        <p>从中解析广告的广告组的ID。 这仅适用于Google Adwords。</p>
       </td>
       <td>
         <p>aw.6601259029.321586235.23182235435</p>
@@ -11805,10 +11805,10 @@ Opportunity的过渡阶段。
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告组的名称。 这仅适用于Google Adwords。</p>
+        <p>从中解析广告的广告组的名称。 这仅适用于Google Adwords。</p>
       </td>
       <td>
         <p>Salesforce -Google Analytics</p>
@@ -11819,7 +11819,7 @@ Opportunity的过渡阶段。
         <p>AD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中解析的广告的ID。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
@@ -11831,7 +11831,7 @@ Opportunity的过渡阶段。
         <p>AD_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中解析的广告的名称。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
@@ -11843,10 +11843,10 @@ Opportunity的过渡阶段。
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的创作元素ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的创意的ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>aw.6601259029.321586235.23182235435.83558988035</p>
@@ -11857,10 +11857,10 @@ Opportunity的过渡阶段。
         <p>CREATIVE_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的创作的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的创意内容的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>集成GA和Salesforce</p>
@@ -11871,13 +11871,13 @@ Opportunity的过渡阶段。
         <p>CREATIVE_DESCRIPTION_1</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>搜索广告中创作元素的第一行，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>搜索广告中创意的第一行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
-        <p>将Salesforce和Analytics集成到</p>
+        <p>将Salesforce与Analytics集成到</p>
       </td>
     </tr>
     <tr>
@@ -11885,13 +11885,13 @@ Opportunity的过渡阶段。
         <p>CREATIVE_DESCRIPTION_2</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>来自搜索广告的创作元素的第二行，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>搜索广告中的创意内容第二行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
-        <p>优化收入。 了解如何操作。</p>
+        <p>针对收入进行优化。 了解如何操作。</p>
       </td>
     </tr>
     <tr>
@@ -11899,10 +11899,10 @@ Opportunity的过渡阶段。
         <p>CREATIVE_DESTINATION_URL</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从搜索广告点进的登陆页面，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从搜索广告点进的登陆页面，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>http://www.adobe.com/salesforce-google-analytics</p>
@@ -11913,10 +11913,10 @@ Opportunity的过渡阶段。
         <p>CREATIVE_DISPLAY_URL</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>搜索广告中显示的易记URL名称，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>在搜索广告上显示的友好URL名称，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>adobe.com/Salesforce-for-GA</p>
@@ -11927,10 +11927,10 @@ Opportunity的过渡阶段。
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的关键词ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的关键字的ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>aw.6601259029.321586235.23182235435.35934468937</p>
@@ -11941,10 +11941,10 @@ Opportunity的过渡阶段。
         <p>KEYWORD_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的关键词名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的关键字的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>google analytics salesforce</p>
@@ -11955,10 +11955,10 @@ Opportunity的过渡阶段。
         <p>KEYWORD_MATCH_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在搜索短语和购买的关键词之间找到的匹配类型。</p>
+        <p>在搜索短语和购买的关键字之间找到的匹配类型。</p>
       </td>
       <td>
         <p>短语</p>
@@ -11966,13 +11966,13 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>营销活动</p>
+        <p>CAMPAIGN</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从URL从utm_campaign解析。</p>
+        <p>从utm_campaign的URL中解析。</p>
       </td>
       <td>
         <p>SU - ABC帐户 — 付费媒体技能</p>
@@ -11983,10 +11983,10 @@ Opportunity的过渡阶段。
         <p>源</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从URL从utm_source解析。</p>
+        <p>从utm_source的URL中解析。</p>
       </td>
       <td>
         <p>linkedin</p>
@@ -11997,10 +11997,10 @@ Opportunity的过渡阶段。
         <p>中</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从URL从utm_medium解析。</p>
+        <p>从utm_medium中的URL解析。</p>
       </td>
       <td>
         <p>社交</p>
@@ -12011,10 +12011,10 @@ Opportunity的过渡阶段。
         <p>术语</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从URL中从utm_term解析。</p>
+        <p>从utm_term的URL中解析。</p>
       </td>
       <td>
         <p>lisu07261601</p>
@@ -12025,13 +12025,13 @@ Opportunity的过渡阶段。
         <p>内容</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从URL从utm_content解析。</p>
+        <p>从utm_content的URL中解析。</p>
       </td>
       <td>
-        <p>2016年AdWords基准报告</p>
+        <p>2016年AdWords性能指标评测报告</p>
       </td>
     </tr>
     <tr>
@@ -12039,10 +12039,10 @@ Opportunity的过渡阶段。
         <p>城市</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从IP地址解析的城市。</p>
+        <p>IP地址中已解析的城市。</p>
       </td>
       <td>温哥华</td>
     </tr>
@@ -12051,10 +12051,10 @@ Opportunity的过渡阶段。
         <p>区域</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从IP地址解析的区域。</p>
+        <p>IP地址中已解析的区域。</p>
       </td>
       <td>不列颠哥伦比亚</td>
     </tr>
@@ -12063,33 +12063,33 @@ Opportunity的过渡阶段。
         <p>国家/地区</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从IP地址解析的国家/地区。</p>
+        <p>IP地址中已解析的国家/地区。</p>
       </td>
       <td>加拿大</td>
     </tr>
     <tr>
       <td>
-        <p>ISP_NAME</p>
+        <p>ISP名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用户的Internet服务提供商</p>
+        <p>用户的互联网服务提供商</p>
       </td>
       <td>
-        <p>AT&amp;T U-verse</p>
+        <p>AT&amp;T反向</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>IP_ADDRESS</p>
+        <p>IP地址</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>会话时记录的IP地址。</p>
@@ -12106,7 +12106,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>确定此会话是否与另一个会话合并，以及是否应该删除。</p>
+        <p>确定此会话是否与其他会话合并，应将其删除。</p>
       </td>
       <td>
         <p>false</p>
@@ -12195,27 +12195,27 @@ Opportunity的过渡阶段。
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_SITES {#biz-sites}
+### 商业站点(_S) {#biz-sites}
 
-从任何连接的广告帐户导入的网站。
+从任何连接的广告帐户导入的站点。
 
 <table>
   <tbody>
@@ -12238,7 +12238,7 @@ Opportunity的过渡阶段。
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>网站的唯一ID。</p>
@@ -12250,9 +12250,9 @@ Opportunity的过渡阶段。
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>源系统中的网站ID。</td>
+      <td>源系统中的站点ID。</td>
       <td>39464932147</td>
     </tr>
     <tr>
@@ -12260,7 +12260,7 @@ Opportunity的过渡阶段。
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中导入网站的广告帐户的ID。</p>
@@ -12272,7 +12272,7 @@ Opportunity的过渡阶段。
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中导入网站的广告帐户的名称。</p>
@@ -12284,10 +12284,10 @@ Opportunity的过渡阶段。
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>网站广告商的ID，专门用于Doubleclick。</p>
+        <p>网站广告商（尤其是Doubleclick）的ID。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -12298,13 +12298,13 @@ Opportunity的过渡阶段。
         <p>ADVERTISER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>网站的广告商名称，专门用于Doubleclick。</p>
+        <p>网站广告商（尤其是Doubleclick）的名称。</p>
       </td>
       <td>
-        <p>营销分析</p>
+        <p>Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -12312,10 +12312,10 @@ Opportunity的过渡阶段。
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为任何广告层次结构中，“网站”上方没有广告组。</p>
+        <p>预期为空，因为任何广告层次结构中的网站上方没有广告组。</p>
       </td>
       <td>null</td>
     </tr>
@@ -12324,10 +12324,10 @@ Opportunity的过渡阶段。
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>应为空，因为任何广告层次结构中，“网站”上方没有广告组。</p>
+        <p>预期为空，因为任何广告层次结构中的网站上方没有广告组。</p>
       </td>
       <td>null</td>
     </tr>
@@ -12336,10 +12336,10 @@ Opportunity的过渡阶段。
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>网站的营销活动ID。</p>
+        <p>网站促销活动的ID。</p>
       </td>
       <td>
         <p>ba.3284209.132630532</p>
@@ -12350,12 +12350,12 @@ Opportunity的过渡阶段。
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>网站的营销活动名称。</p>
+        <p>网站的Campaign的名称。</p>
       </td>
-      <td>收入归因</td>
+      <td>查看归因</td>
     </tr>
     <tr>
       <td>
@@ -12377,7 +12377,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否在源系统中删除了网站。</p>
+        <p>站点是否已在源系统中删除。</p>
       </td>
       <td>false</td>
     </tr>
@@ -12395,7 +12395,7 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>FIRST_IMPORT</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -12410,10 +12410,10 @@ Opportunity的过渡阶段。
         <p>名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>来自源系统的站点名称。</p>
+        <p>源系统中的站点名称。</p>
       </td>
       <td>收入</td>
     </tr>
@@ -12425,30 +12425,30 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否需要更新网站，以便 [!DNL Marketo Measure] 标记。</p>
+        <p>是否需要更新网站 [!DNL Marketo Measure] 标记。</p>
         <p>（诊断字段，用于内部处理。）</p>
       </td>
       <td>false</td>
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>分组密钥</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>诊断字段，用于内部处理。</td>
+      <td>用于内部处理的诊断字段。</td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>实体类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此表的主对象或实体。 在本例中为“Site”。</p>
+        <p>此表的主对象或实体。 在本例中，为“站点”。</p>
       </td>
       <td>网站</td>
     </tr>
@@ -12457,10 +12457,10 @@ Opportunity的过渡阶段。
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>网站的广告提供商的名称。</p>
+        <p>站点的广告提供商的名称。</p>
       </td>
       <td>AdWords</td>
     </tr>
@@ -12481,19 +12481,19 @@ Opportunity的过渡阶段。
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -12501,7 +12501,7 @@ Opportunity的过渡阶段。
 
 ### BIZ_SITE_LINKS {#biz-site-links}
 
-任何连接的广告帐户中的网站链接。
+来自任何连接的广告帐户的站点链接。
 
 <table>
   <tbody>
@@ -12524,10 +12524,10 @@ Opportunity的过渡阶段。
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>网站链接的唯一ID</p>
+        <p>站点链接的唯一ID</p>
       </td>
       <td>
         <p>aw.6601259029.285077795.1654234342</p>
@@ -12538,7 +12538,7 @@ Opportunity的过渡阶段。
         <p>DISPLAY_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td>
@@ -12550,10 +12550,10 @@ Opportunity的过渡阶段。
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>网站链接的连接广告帐户的ID</p>
+        <p>网站链接的已连接广告帐户的ID</p>
       </td>
       <td>
         <p>aw.6601259029</p>
@@ -12564,10 +12564,10 @@ Opportunity的过渡阶段。
         <p>AD_ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>网站链接的连接广告帐户的名称</p>
+        <p>站点链接的已连接广告帐户的名称</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -12578,7 +12578,7 @@ Opportunity的过渡阶段。
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>网站链接的广告商ID，专门用于Doubleclick。</p>
@@ -12592,13 +12592,13 @@ Opportunity的过渡阶段。
         <p>ADVERTISER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>网站链接的广告商名称，专门用于Doubleclick。</p>
+        <p>站点链接的广告商名称，专门用于Doubleclick。</p>
       </td>
       <td>
-        <p>营销分析</p>
+        <p>Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -12606,10 +12606,10 @@ Opportunity的过渡阶段。
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>网站链接的广告组的ID</p>
+        <p>站点链接的广告组ID</p>
       </td>
       <td>aw.6601259029.208548635.16750166675</td>
     </tr>
@@ -12618,10 +12618,10 @@ Opportunity的过渡阶段。
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>网站链接的广告组名称</p>
+        <p>站点链接的广告组的名称</p>
       </td>
       <td>品牌 — 核心</td>
     </tr>
@@ -12630,10 +12630,10 @@ Opportunity的过渡阶段。
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>网站链接的营销活动ID</p>
+        <p>站点链接的活动的ID</p>
       </td>
       <td>
         <p>aw.6601259029.285077795</p>
@@ -12644,10 +12644,10 @@ Opportunity的过渡阶段。
         <p>AD_CAMPAIGN_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>网站链接的营销活动名称</p>
+        <p>站点链接的营销活动的名称</p>
       </td>
       <td>
         <p>品牌</p>
@@ -12661,7 +12661,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>网站链接在广告帐户中是否仍处于活动状态</p>
+        <p>网站链接在广告帐户中是否仍然有效</p>
       </td>
       <td>
         <p>TRUE</p>
@@ -12697,13 +12697,13 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>FIRST_IMPORTED</p>
+        <p>FIRST_IMPORT</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>网站链接首次下载的日期 [!DNL Marketo Measure]</p>
+        <p>首次下载站点链接的日期 [!DNL Marketo Measure]</p>
       </td>
       <td>
         <p>2018-08-02 06:36:50.000</p>
@@ -12714,10 +12714,10 @@ Opportunity的过渡阶段。
         <p>名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>网站链接的名称</p>
+        <p>站点链接的名称</p>
       </td>
       <td>链接A</td>
     </tr>
@@ -12729,7 +12729,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否需要更新网站链接以获取营销活动以测量标记</p>
+        <p>是否需要更新网站链接才能获取Marketo Measure标记</p>
       </td>
       <td>
         <p>FALSE</p>
@@ -12737,10 +12737,10 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>GROUPING_KEY</p>
+        <p>分组密钥</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td></td>
       <td>
@@ -12749,16 +12749,16 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>ENTITY_TYPE</p>
+        <p>实体类型</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>此表的主对象或实体。 在本例中，为“SiteLink”</p>
+        <p>此表的主对象或实体。 在本例中，“SiteLink”</p>
       </td>
       <td>
-        <p>SiteLink</p>
+        <p>站点链接</p>
       </td>
     </tr>
     <tr>
@@ -12766,10 +12766,10 @@ Opportunity的过渡阶段。
         <p>PROVIDER_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>网站链接的广告提供商的名称</p>
+        <p>站点链接的广告提供商的名称</p>
       </td>
       <td>
         <p>AdWords</p>
@@ -12780,7 +12780,7 @@ Opportunity的过渡阶段。
         <p>URL_CURRENT</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>登陆页面的URL。</p>
@@ -12796,7 +12796,7 @@ Opportunity的过渡阶段。
         <p>URL_OLD</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>URL_CURRENT的上一个值。</p>
@@ -12806,13 +12806,13 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>URL_REQUESTED</p>
+        <p>URL已请求</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>URL将使用的修饰内容 [!DNL Marketo Measure] 参数。</p>
+        <p>URL将修饰的内容 [!DNL Marketo Measure] 参数。</p>
         <p>（诊断字段，用于内部处理。）</p>
       </td>
       <td></td>
@@ -12820,19 +12820,19 @@ Opportunity的过渡阶段。
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Snowflake的创建日期</td>
+      <td>Snowflake的记录创建日期</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
-      <td>Snowflake的修改日期</td>
+      <td>Snowflake的记录修改日期</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>Snowflake删除记录的日期（如果已删除）</td>
+      <td>如果记录已删除，则为记录的Snowflake删除日期</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -12863,10 +12863,10 @@ Opportunity的过渡阶段。
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>舞台的唯一ID。</p>
+        <p>阶段的唯一ID。</p>
       </td>
       <td>
         <p>01J3100000QE753EAD</p>
@@ -12888,16 +12888,16 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>STAGE_NAME</p>
+        <p>暂存名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>舞台的名称。</p>
       </td>
       <td>
-        <p>语言</p>
+        <p>口头</p>
       </td>
     </tr>
     <tr>
@@ -12907,7 +12907,7 @@ Opportunity的过渡阶段。
       <td>
         <p>布尔值</p>
       </td>
-      <td>指示暂存是否被视为不活动。</td>
+      <td>指示是否将暂存视为非活动。</td>
       <td>
         <p>false</p>
       </td>
@@ -12920,7 +12920,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示是否选择舞台以在自定义模型中跟踪。</p>
+        <p>指示是否选择在自定义模型中跟踪舞台。</p>
       </td>
       <td>
         <p>false</p>
@@ -12934,7 +12934,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示是否选择舞台作为回飞器舞台进行跟踪。</p>
+        <p>指示是否选择将舞台作为回车舞舞台进行跟踪。</p>
       </td>
       <td>
         <p>false</p>
@@ -12947,20 +12947,20 @@ Opportunity的过渡阶段。
       <td>
         <p>布尔值</p>
       </td>
-      <td>指示是否选择舞台以跟踪过渡。</td>
+      <td>指示是否选择舞台来跟踪过渡。</td>
       <td>
         <p>false</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>STAGE_STATUS</p>
+        <p>暂存状态</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>舞台的状态，如 [!DNL Marketo Measure] 应用程序阶段映射。</p>
+        <p>阶段的状态，如 [!DNL Marketo Measure] 应用程序阶段映射。</p>
       </td>
       <td>
         <p>打开</p>
@@ -12974,7 +12974,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>指示是否从外部源系统导入暂存。</p>
+        <p>指示舞台是否从外部源系统导入。</p>
       </td>
       <td>
         <p>true</p>
@@ -12987,7 +12987,7 @@ Opportunity的过渡阶段。
       <td>
         <p>布尔值</p>
       </td>
-      <td>指示是否将舞台设置为默认。</td>
+      <td>指示舞台是否设置为默认值。</td>
       <td>
         <p>false</p>
       </td>
@@ -13000,7 +13000,7 @@ Opportunity的过渡阶段。
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>舞台的数值排名，用于按过渡顺序对舞台进行排序。</p>
+        <p>阶段的数字等级，用于按过渡顺序对阶段进行排序。</p>
       </td>
       <td>
         <p>53</p>
@@ -13014,7 +13014,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否删除了舞台。</p>
+        <p>是否已删除暂存。</p>
       </td>
       <td>
         <p>false</p>
@@ -13023,27 +13023,27 @@ Opportunity的过渡阶段。
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_TOUCHPOINTS {#biz-touchpoints}
+### 商业接触点(_T) {#biz-touchpoints}
 
-买方接触点，与潜在客户或联系人关联的所有接触点。 如果“潜在接触点”或“联系接触点”处于禁用状态，则此表将为空。
+买方接触点，与潜在客户或联系人关联的所有接触点。 如果禁用了Lead接触点或Contact接触点，此表将为空。
 
 <table>
   <tbody>
@@ -13058,10 +13058,10 @@ Opportunity的过渡阶段。
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>购买者接触点(BT)的唯一ID。</p>
+        <p>买方接触点(BT)的唯一ID。</p>
       </td>
       <td>
         <p>TP2_Person_00Q0Z000013e2PYUAY_2018-08-27:20-04-40-5655690.1ee8567c175a</p>
@@ -13086,7 +13086,7 @@ Opportunity的过渡阶段。
         <p>电子邮件</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>与BT关联的电子邮件地址。</td>
       <td>
@@ -13098,7 +13098,7 @@ Opportunity的过渡阶段。
         <p>CONTACT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>与BT关联的联系人的ID。</p>
@@ -13110,10 +13110,10 @@ Opportunity的过渡阶段。
         <p>ACCOUNT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>与BT关联的帐户ID。</p>
+        <p>与BT关联的帐户的ID。</p>
       </td>
       <td>
         <p>0013100001lSLScAAO</p>
@@ -13121,13 +13121,13 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>LEAD_ID</p>
+        <p>商机ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>与BT关联的潜在客户的ID。</p>
+        <p>与BT关联的商机的ID。</p>
       </td>
       <td>
         <p>00Q0Z000013e2PYUAY</p>
@@ -13138,7 +13138,7 @@ Opportunity的过渡阶段。
         <p>UNIQUE_ID_PERSON</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>与潜在客户或联系人相关的父人员记录。</p>
@@ -13152,7 +13152,7 @@ Opportunity的过渡阶段。
         <p>USER_TOUCHPOINT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>生成BT的用户接触点的ID。</p>
@@ -13163,13 +13163,13 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>VISITOR_ID</td>
-      <td>varch</td>
+      <td>varchar</td>
       <td>与BT关联的访客的ID。</td>
       <td>v_277d79d01678498fea067c9b631bf6df</td>
     </tr>
     <tr>
       <td>
-        <p>TOUCHPOINT_DATE</p>
+        <p>接触点日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -13186,10 +13186,10 @@ Opportunity的过渡阶段。
         <p>MARKETING_TOUCH_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>活动类型、Web访问、Web窗体、Web聊天、电话呼叫、[CRM]营销活动或[CRM]活动。 在CRM中称为“接触点类型”。</p>
+        <p>活动的类型，Web访问、Web窗体、Web聊天、电话、[CRM]营销活动或[CRM]活动。 在CRM中称为“接触点类型”。</p>
       </td>
       <td>
         <p>Web窗体</p>
@@ -13200,10 +13200,10 @@ Opportunity的过渡阶段。
         <p>渠道</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接触点属于的渠道(在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“营销渠道 — 路径”。</p>
+        <p>根据中的自定义渠道定义，接触点所属的渠道 [!DNL Marketo Measure] 应用程序。 在CRM中称为“营销渠道 — 路径”。</p>
       </td>
       <td>Social.LinkedIn</td>
     </tr>
@@ -13212,10 +13212,10 @@ Opportunity的过渡阶段。
         <p>CATEGORY1</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接触点属于第一类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>第一个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
       <td>ABC</td>
     </tr>
@@ -13224,10 +13224,10 @@ Opportunity的过渡阶段。
         <p>CATEGORY2</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接触点属于第2个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>根据以下内容中的区段定义，确定接触点属于第二个类别的区段值 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
       <td>
         <p>是</p>
@@ -13238,10 +13238,10 @@ Opportunity的过渡阶段。
         <p>CATEGORY3</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接触点属于第三个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>接触点所属的第三类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
       <td>
         <p>其他</p>
@@ -13252,10 +13252,10 @@ Opportunity的过渡阶段。
         <p>CATEGORY4</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接触点属于第4个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>根据以下内容中的区段定义，确定接触点所属的第四个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
       <td>
         <p>合作伙伴</p>
@@ -13266,10 +13266,10 @@ Opportunity的过渡阶段。
         <p>CATEGORY5</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接触点属于第5个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>根据以下内容中的区段定义，确定接触点所属的第五个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
       <td></td>
     </tr>
@@ -13278,10 +13278,10 @@ Opportunity的过渡阶段。
         <p>CATEGORY6</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接触点属于第六个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>根据以下内容中的区段定义，确定接触点所属的第六个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
       <td></td>
     </tr>
@@ -13290,9 +13290,9 @@ Opportunity的过渡阶段。
         <p>CATEGORY7</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第七个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>根据以下内容中的区段定义，确定接触点所属的第七个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -13300,9 +13300,9 @@ Opportunity的过渡阶段。
         <p>CATEGORY8</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第8个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>根据以下内容中的区段定义，确定接触点所属的第八个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -13310,9 +13310,9 @@ Opportunity的过渡阶段。
         <p>CATEGORY9</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第9个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>第9个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -13320,9 +13320,9 @@ Opportunity的过渡阶段。
         <p>CATEGORY10</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第10个类别的区段值(在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>第10个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -13330,9 +13330,9 @@ Opportunity的过渡阶段。
         <p>CATEGORY11</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第11个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>第11个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -13340,9 +13340,9 @@ Opportunity的过渡阶段。
         <p>CATEGORY12</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第12个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>第12个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -13350,9 +13350,9 @@ Opportunity的过渡阶段。
         <p>CATEGORY13</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>接触点属于第13个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>根据以下内容中的区段定义，确定接触点所属的第十三个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -13360,10 +13360,10 @@ Opportunity的过渡阶段。
         <p>CATEGORY14</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接触点属于第14个类别的区段值，在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>第14个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
       <td></td>
     </tr>
@@ -13372,19 +13372,19 @@ Opportunity的过渡阶段。
         <p>CATEGORY15</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接触点属于第15个类别的区段值(在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>第15个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
       <td></td>
     </tr>
     <tr>
       <td>
-        <p>BROWSER_NAME</p>
+        <p>浏览器名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从javascript和IP地址中，检测到用户在会话期间所在的浏览器。</p>
@@ -13393,13 +13393,13 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>BROWSER_VERSION</p>
+        <p>浏览器版本</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从javascript和IP地址中，检测到用户在会话期间所在的浏览器版本。</p>
+        <p>从javascript和IP地址中，查看在会话期间用户所在的检测到的浏览器版本。</p>
       </td>
       <td>
         <p>68</p>
@@ -13407,10 +13407,10 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_NAME</p>
+        <p>平台名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从javascript和IP地址中，检测到用户在会话期间所在的平台。</p>
@@ -13421,13 +13421,13 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_VERSION</p>
+        <p>平台版本</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从javascript和IP地址中，检测到用户在会话期间所在平台的版本。</p>
+        <p>从javascript和IP地址中，查看在会话期间用户所在平台的检测到版本。</p>
       </td>
       <td>10_12</td>
     </tr>
@@ -13436,10 +13436,10 @@ Opportunity的过渡阶段。
         <p>LANDING_PAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>会话的第一个登陆页面，产生接触点。 在CRM中称为“登陆页面”。</p>
+        <p>导致接触点的会话的第一个登陆页面。 在CRM中称为“登陆页面”。</p>
       </td>
       <td>
         <p>https://info.adobe.com/definitive-guide-to-pipeline-marketing</p>
@@ -13450,10 +13450,10 @@ Opportunity的过渡阶段。
         <p>LANDING_PAGE_RAW</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>会话的第一个登陆页面，用于生成接触点。 原始登陆页面将包含URL中的所有查询参数。 在CRM中称为“登陆页面 — 原始”。</p>
+        <p>生成接触点的会话的第一个登陆页面。 原始登陆页面将包含URL中的所有查询参数。 在CRM中称为“Landing Page - Raw”。</p>
       </td>
       <td>
         <p>https://info.adpbe.com/definitive-guide-to-pipeline-marketing?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU_COM_Demand_ Skills&amp;utm_content=DGPM&amp;utm_term=lisu03151846&amp;_bl=66452504</p>
@@ -13464,10 +13464,10 @@ Opportunity的过渡阶段。
         <p>REFERRER_PAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>通常在用户进入网站之前立即显示外部登陆页面。 在CRM中称为“反向链接页面”。</p>
+        <p>通常是在用户访问网站之前的外部登陆页面。 在CRM中称为“反向链接页面”。</p>
       </td>
       <td>https://www.linkedin.com/</td>
     </tr>
@@ -13476,10 +13476,10 @@ Opportunity的过渡阶段。
         <p>REFERRER_PAGE_RAW</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>通常在用户进入网站之前立即显示外部登陆页面。 原始反向链接页面可能在URL中包含查询参数。 在CRM中称为“反向链接页面 — 原始”。</p>
+        <p>通常是在用户访问网站之前的外部登陆页面。 原始反向链接页面可能包含URL中的查询参数。 在CRM中称为“Referrer Page - Raw”。</p>
       </td>
       <td>
         <p>https://www.linkedin.com/feed</p>
@@ -13490,10 +13490,10 @@ Opportunity的过渡阶段。
         <p>FORM_PAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>会话中记录的第一个表单，该表单会生成接触点。 后续表单提交不会显示在接触点表中，而是显示在Form_Submits表中。 在CRM中称为“表单URL”。</p>
+        <p>会话中记录的第一张表单产生了接触点。 后续表单提交不会显示在接触点表中，而是显示在Form_Submit表中。 在CRM中称为“表单URL”。</p>
       </td>
       <td>
         <p>https://info.adobe.com/demo</p>
@@ -13501,8 +13501,8 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>FORM_PAGE_RAW</td>
-      <td>varch</td>
-      <td>会话中记录的第一个表单，该表单会生成接触点。 后续表单提交不会显示在接触点表中，而是显示在Form_Submits表中。 原始表单页面可能在URL中包含查询参数。 在CRM中称为“表单URL — 原始”。</td>
+      <td>varchar</td>
+      <td>会话中记录的第一张表单产生了接触点。 后续表单提交不会显示在接触点表中，而是显示在Form_Submit表中。 原始表单页面URL中可能包含查询参数。 在CRM中称为“表单URL — 原始”。</td>
       <td>https://info.adobe.com/demo?hsCtaTracking=98adcc2f-afe2-40c4-9d79-40dcc41663ee%7C3cfaa909-39cb-4f5d-93eb-be05de6b0180</td>
     </tr>
     <tr>
@@ -13513,7 +13513,7 @@ Opportunity的过渡阶段。
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>表单提交的日期。</p>
+        <p>提交表单的日期。</p>
       </td>
       <td>
         <p>2017-06-20 01:06:41.000</p>
@@ -13524,10 +13524,10 @@ Opportunity的过渡阶段。
         <p>城市</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从javascript和IP地址中，检测到用户在会话期间所在的城市。</p>
+        <p>根据javascript和IP地址，检测用户在会话期间所处的城市。</p>
       </td>
       <td>
         <p>纽约</p>
@@ -13538,10 +13538,10 @@ Opportunity的过渡阶段。
         <p>区域</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从javascript和IP地址中，用户在会话期间所在的检测区域。</p>
+        <p>从javascript和IP地址中，查看在会话期间用户所处的检测区域。</p>
       </td>
       <td>
         <p>纽约</p>
@@ -13552,10 +13552,10 @@ Opportunity的过渡阶段。
         <p>国家/地区</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从javascript和IP地址中，显示用户在会话期间所在的国家/地区。</p>
+        <p>通过javascript和IP地址，可了解在会话期间检测到的用户所在的国家/地区。</p>
       </td>
       <td>
         <p>美国</p>
@@ -13566,10 +13566,10 @@ Opportunity的过渡阶段。
         <p>中</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用于定义导致接触点的介质。 可以从URL中从utm_medium解析。 或者，如果 [!DNL Marketo Measure] 能够解析广告，它可能是“cpc”或“display”之类的值。</p>
+        <p>用于定义产生接触点的媒介。 这可以从utm_medium的URL中解析。 或者，如果 [!DNL Marketo Measure] 能够解析广告，它可能是“cpc”或“display”之类的值。</p>
       </td>
       <td>
         <p>社交</p>
@@ -13580,10 +13580,10 @@ Opportunity的过渡阶段。
         <p>WEB_SOURCE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用于定义导致接触点的源。 这可以从utm_source的URL中解析，如果是从CRM同步，或者如果是，则通常设置为“CRM Campaign” [!DNL Marketo Measure] 能够解析广告，它可能是“Google AdWords”或“Facebook”之类的值。 在CRM中称为“接触点源”。</p>
+        <p>用于定义导致接触点的源。 可以从utm_source中的URL中解析该活动；如果活动是从CRM同步的，则一般设置为“CRM Campaign”；或者 [!DNL Marketo Measure] 能够解析广告，它可能是“Google AdWords”或“Facebook”之类的值。 在CRM中称为“接触点源”。</p>
       </td>
       <td>
         <p>LinkedIn</p>
@@ -13594,13 +13594,13 @@ Opportunity的过渡阶段。
         <p>SEARCH_PHRASE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用户在浏览器中输入以搜索并最终在网站上显示的值。 根据关键词购买情况，这可能与从付费搜索平台购买的关键词匹配，也可能不匹配。</p>
+        <p>用户在浏览器中输入要搜索并最终显示在网站上的值。 根据关键词购买情况，这可能与从付费搜索平台购买的关键词匹配，也可能不匹配。</p>
       </td>
       <td>
-        <p>marketo测量归因</p>
+        <p>营销量度归因</p>
       </td>
     </tr>
     <tr>
@@ -13608,10 +13608,10 @@ Opportunity的过渡阶段。
         <p>AD_PROVIDER</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告平台 [!DNL Marketo Measure] 能够从（通常是我们的集成合作伙伴之一）中进行解析。</p>
+        <p>广告平台 [!DNL Marketo Measure] 能够从（通常是我们的集成合作伙伴之一）中解析。</p>
       </td>
       <td>
         <p>LinkedIn</p>
@@ -13622,7 +13622,7 @@ Opportunity的过渡阶段。
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中解析广告的广告帐户的ID。</p>
@@ -13636,13 +13636,13 @@ Opportunity的过渡阶段。
         <p>ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中解析广告的广告帐户的名称。</p>
       </td>
       <td>
-        <p>南卡罗来纳2016_14605342_3/7-3/31/16</p>
+        <p>MM SC 2016_14605342_3/7-3/31/16</p>
       </td>
     </tr>
     <tr>
@@ -13650,10 +13650,10 @@ Opportunity的过渡阶段。
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告帐户的广告商ID。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的广告商ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -13664,10 +13664,10 @@ Opportunity的过渡阶段。
         <p>ADVERTISER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从中解析广告的广告帐户的广告商名称。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的广告商名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>Marketo Marketing Analytics</p>
@@ -13678,10 +13678,10 @@ Opportunity的过渡阶段。
         <p>SITE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户中的网站ID。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中网站的ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>1695651</p>
@@ -13689,13 +13689,13 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>站点名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析广告的广告帐户中的网站名称。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的网站名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>Quora.com</p>
@@ -13706,10 +13706,10 @@ Opportunity的过渡阶段。
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告帐户中的版面ID。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的版面ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>120839827</p>
@@ -13720,13 +13720,13 @@ Opportunity的过渡阶段。
         <p>PLACEMENT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户中的版面名称。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的投放位置的名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
-        <p>障碍</p>
+        <p>路障</p>
       </td>
     </tr>
     <tr>
@@ -13734,10 +13734,10 @@ Opportunity的过渡阶段。
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户中的营销活动ID。</p>
+        <p>从中解析广告的广告帐户中的营销活动ID。</p>
       </td>
       <td>
         <p>li.502664737.138949954</p>
@@ -13745,13 +13745,13 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>营销活动名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户的营销活动名称。</p>
+        <p>从中解析广告的广告帐户中的营销活动名称。</p>
       </td>
       <td>
         <p>SU - COM帐户 — 需求技能</p>
@@ -13762,10 +13762,10 @@ Opportunity的过渡阶段。
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析广告的广告帐户中的广告组ID。 这仅适用于Google Adwords。</p>
+        <p>从中解析广告的广告帐户中的广告组ID。 这仅适用于Google Adwords。</p>
       </td>
       <td>aw.6601259029.317738075.23105327435</td>
     </tr>
@@ -13774,10 +13774,10 @@ Opportunity的过渡阶段。
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告帐户中广告从中解析的广告组的名称。 这仅适用于Google AdWords。</p>
+        <p>从中解析广告的广告帐户中的广告组的名称。 这仅适用于Google AdWords。</p>
       </td>
       <td>营销归因 — 常规</td>
     </tr>
@@ -13786,10 +13786,10 @@ Opportunity的过渡阶段。
         <p>AD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从其中解析广告的广告帐户的广告ID。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
+        <p>从中解析广告的广告帐户中的广告ID。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
       <td>dc.6114.8882972.25272734.492579576</td>
     </tr>
@@ -13798,10 +13798,10 @@ Opportunity的过渡阶段。
         <p>AD_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户的广告名称。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
+        <p>从中解析广告的广告帐户中的广告名称。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
       <td>预算网络研讨会 — 侧栏</td>
     </tr>
@@ -13810,10 +13810,10 @@ Opportunity的过渡阶段。
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告帐户中的创作ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的广告帐户中的创意ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>li.502664737.138949954.66452504</p>
@@ -13824,10 +13824,10 @@ Opportunity的过渡阶段。
         <p>CREATIVE_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告帐户中的创作元素名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的广告帐户中的创意内容的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>lisu03151846</p>
@@ -13838,13 +13838,13 @@ Opportunity的过渡阶段。
         <p>CREATIVE_DESCRIPTION_1</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>搜索广告中创作元素的第一行，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>搜索广告中创意的第一行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
-        <p>Lead Gen已完成</p>
+        <p>潜在客户生成已完成</p>
       </td>
     </tr>
     <tr>
@@ -13852,10 +13852,10 @@ Opportunity的过渡阶段。
         <p>CREATIVE_DESCRIPTION_2</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>来自搜索广告的创作元素的第二行，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>搜索广告中的创意内容第二行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>下载管道营销的最终指南：https://lnkd.in/e9xYj5M</p>
@@ -13866,10 +13866,10 @@ Opportunity的过渡阶段。
         <p>CREATIVE_DESTINATION_URL</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从搜索广告点进的登陆页面，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从搜索广告点进的登陆页面，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>https://image-store.slidesharecdn.com/d29165c0-1e0b-4ffc-a494-d2c77e7cd4a6-large.jpeg</p>
@@ -13880,10 +13880,10 @@ Opportunity的过渡阶段。
         <p>CREATIVE_DISPLAY_URL</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>搜索广告中显示的易记URL名称，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>在搜索广告上显示的友好URL名称，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>marektomeasure.com/guide</p>
@@ -13894,10 +13894,10 @@ Opportunity的过渡阶段。
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从付费搜索购买中购买的关键词ID，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从付费搜索购买购买的关键字ID，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>__GAId__lisu03151846</p>
@@ -13908,10 +13908,10 @@ Opportunity的过渡阶段。
         <p>KEYWORD_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告解析来源的广告帐户中提取的从付费搜索购买购买的关键词名称。 这适用于Google AdWords和Bing Ads（搜索）</p>
+        <p>从付费搜索购买购买关键词（从广告解析来源广告的广告帐户提取）的名称。 这适用于Google AdWords和Bing Ads（搜索）</p>
       </td>
       <td>
         <p>lisu03151846</p>
@@ -13922,10 +13922,10 @@ Opportunity的过渡阶段。
         <p>KEYWORD_MATCH_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在搜索短语和购买的关键词之间找到的匹配类型。</p>
+        <p>在搜索短语和购买的关键字之间找到的匹配类型。</p>
       </td>
       <td>
         <p>广泛</p>
@@ -13939,7 +13939,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否将此接触点视为机会历程的首次接触。</p>
+        <p>是否将此接触点视为机会历程的第一次触点。</p>
       </td>
       <td>
         <p>true</p>
@@ -13953,7 +13953,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否将此接触点视为商机历程的商机创建接触点。</p>
+        <p>是否将此接触点视为机会历程的潜在客户创建触点。</p>
       </td>
       <td>
         <p>true</p>
@@ -13967,7 +13967,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否将此接触点视为机会历程的机会创建接触点。</p>
+        <p>是否将此接触点视为机会历程的机会创建触点。</p>
       </td>
       <td>
         <p>false</p>
@@ -13981,16 +13981,16 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否将此接触点视为机会历程的闭合接触。</p>
+        <p>是否将此接触点视为机会历程的闭路触点。</p>
       </td>
       <td>
         <p>false</p>
       </td>
     </tr>
     <tr>
-      <td>STAGES_TOCED</td>
-      <td>varch</td>
-      <td>此字段已弃用。 使用Stage_Transitions表获取阶段信息。</td>
+      <td>STAGES_TOCATED</td>
+      <td>varchar</td>
+      <td>此字段已被弃用。 使用Stage_Transitions表获取舞台信息。</td>
       <td>null</td>
     </tr>
     <tr>
@@ -14001,7 +14001,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>此接触点在会话期间是否填写了表单。</p>
+        <p>会话期间此接触点是否填写了表单。</p>
       </td>
       <td>
         <p>true</p>
@@ -14015,7 +14015,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否将此接触点视为机会历程的第一印象接触</p>
+        <p>是否将此接触点视为机会历程的第一次印象接触</p>
       </td>
       <td>
         <p>false</p>
@@ -14029,7 +14029,7 @@ Opportunity的过渡阶段。
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为它是首次接触（请参阅Is_First_Touch）。</p>
+        <p>由于这是首次接触，因此分配给此接触点的计算百分比（请参阅Is_First_Touch）。</p>
       </td>
       <td>
         <p>100</p>
@@ -14043,7 +14043,7 @@ Opportunity的过渡阶段。
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为它是潜在客户创建接触（请参阅Is_Lead_Creation_Touch）。</p>
+        <p>分配给此接触点的计算百分比，因为它是商机创建触点（请参阅Is_Lead_Creation_Touch）。</p>
       </td>
       <td>
         <p>100</p>
@@ -14057,7 +14057,7 @@ Opportunity的过渡阶段。
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为它是u形接触的一部分（请参阅Is_First_Touch和Is_Lead_Creation_Touch）。</p>
+        <p>分配给此接触点的计算百分比，因为该接触点属于U型触点（请参阅Is_First_Touch和Is_Lead_Creation_Touch）。</p>
       </td>
       <td>
         <p>100</p>
@@ -14071,7 +14071,7 @@ Opportunity的过渡阶段。
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为它是w形接触的一部分（请参阅Is_First_Touch、Is_Lead_Creation_Touch和Is_Opp_Creation_Touch）。 预期为0，因为这是BT。</p>
+        <p>分配给此接触点的计算百分比，因为该接触点属于W型触点（请参阅Is_First_Touch、Is_Lead_Creation_Touch和Is_Opp_Creation_Touch）。 预期为0，因为这是BT。</p>
       </td>
       <td>
         <p>0</p>
@@ -14085,16 +14085,16 @@ Opportunity的过渡阶段。
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为它是完整路径模型的一部分（请参阅Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch、Is_Closed_Touch）。 预期为0，因为这是BT。</p>
+        <p>由于此接触点是完整路径模型的一部分，因此分配给此接触点的计算百分比（请参阅Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch和Is_Closed_Touch）。 预期为0，因为这是BT。</p>
       </td>
       <td>
         <p>0</p>
       </td>
     </tr>
     <tr>
-      <td>CUSTOM_MODEL_PERCENTAGE</td>
+      <td>CUSTOM_MODEL_CENTAGE</td>
       <td>数字(22,19)</td>
-      <td>分配给此接触点的计算百分比，因为它是自定义模型的一部分（请参阅Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch、Is_Closed_Touch）。 预期为0，因为这是BT。</p>
+      <td>由于此接触点是自定义模型的一部分，因此分配给此接触点的计算百分比（请参阅Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch和Is_Closed_Touch）。 预期为0，因为这是BT。</p>
       </td>
       <td>0</td>
     </tr>
@@ -14221,19 +14221,19 @@ Opportunity的过渡阶段。
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -14241,7 +14241,7 @@ Opportunity的过渡阶段。
 
 ### BIZ_URL {#biz-urls}
 
-来自登陆页面、反向链接页面和页面查看的URL汇总。
+聚合来自登陆页面、反向链接页面和页面查看次数的URL。
 
 <table>
   <tbody>
@@ -14264,10 +14264,10 @@ Opportunity的过渡阶段。
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>完整的URL。</p>
+        <p>完整的URL，。</p>
       </td>
       <td>
         <p>https://www.adobe.com/blog/strategic-marketing-plangoals</p>
@@ -14278,10 +14278,10 @@ Opportunity的过渡阶段。
         <p>方案</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>网页通过网络的安全通信。</p>
+        <p>网页在网络上的安全通信。</p>
       </td>
       <td>
         <p>https</p>
@@ -14292,10 +14292,10 @@ Opportunity的过渡阶段。
         <p>主机</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>URL的域（包含任何子域）。</p>
+        <p>URL的域，包含任何子域。</p>
       </td>
       <td>
         <p>www.adobe.com</p>
@@ -14306,10 +14306,10 @@ Opportunity的过渡阶段。
         <p>端口</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>Internet主机的端口，在URL中为可选端口。</p>
+        <p>来自Internet主机的端口（URL中的可选）。</p>
       </td>
       <td>
         <p>584</p>
@@ -14320,10 +14320,10 @@ Opportunity的过渡阶段。
         <p>路径</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>指向主机上特定位置的URL部分。</p>
+        <p>URL中指向主机上特定位置的部分。</p>
       </td>
       <td>
         <p>/blog/strategic-marketing-plangoals</p>
@@ -14346,27 +14346,27 @@ Opportunity的过渡阶段。
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
 </table>
 
-### BIZ_USER_TOUCHPOINTS {#biz-user-touchpoints}
+### 商业用户接触点 {#biz-user-touchpoints}
 
-从与电子邮件关联的任何事件创建的所有接触点。
+从任何与电子邮件关联的事件创建的所有接触点。
 
 <table>
   <tbody>
@@ -14389,7 +14389,7 @@ Opportunity的过渡阶段。
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>用户接触点的唯一ID。</p>
@@ -14417,7 +14417,7 @@ Opportunity的过渡阶段。
         <p>电子邮件</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>与用户接触点关联的电子邮件地址。</p>
@@ -14431,7 +14431,7 @@ Opportunity的过渡阶段。
         <p>SESSION_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>创建用户接触点的会话的ID。</p>
@@ -14445,7 +14445,7 @@ Opportunity的过渡阶段。
         <p>CAMPAIGN_MEMBER_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>创建用户接触点的营销活动成员的ID。</p>
@@ -14456,7 +14456,7 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>CRM_ACTIVITY_ID</td>
-      <td>varch</td>
+      <td>varchar</td>
       <td>创建用户接触点的活动的ID。</td>
       <td>1678625515</td>
     </tr>
@@ -14465,7 +14465,7 @@ Opportunity的过渡阶段。
         <p>CRM_EVENT_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>创建用户接触点的事件的ID。</p>
@@ -14479,10 +14479,10 @@ Opportunity的过渡阶段。
         <p>CRM_TASK_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>为创建用户接触点的任务设置TID。</p>
+        <p>为创建用户接触点的任务指定。</p>
       </td>
       <td>
         <p>00T0Z00004Qbd1jUAB</p>
@@ -14493,7 +14493,7 @@ Opportunity的过渡阶段。
         <p>IMPRESSION_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>创建用户接触点的展示的ID。</p>
@@ -14503,18 +14503,18 @@ Opportunity的过渡阶段。
     <tr>
       <td>IS_FIRST_KNOWN_TOUCH</td>
       <td>布尔值</td>
-      <td>是否将此接触点视为机会历程的首次接触。</td>
+      <td>是否将此接触点视为机会历程的第一次触点。</td>
       <td>false</td>
     </tr>
     <tr>
       <td>VISITOR_ID</td>
-      <td>varch</td>
-      <td>相关访客ID的第一个Cookie ID。</td>
+      <td>varchar</td>
+      <td>相关访客id的第一个Cookie ID。</td>
       <td>v_36ec805b4db344d6e92c972c86aee34a</td>
     </tr>
     <tr>
       <td>
-        <p>TOUCHPOINT_DATE</p>
+        <p>接触点日期</p>
       </td>
       <td>
         <p>timestamp_ntz</p>
@@ -14531,10 +14531,10 @@ Opportunity的过渡阶段。
         <p>MARKETING_TOUCH_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>活动类型、Web访问、Web窗体、Web聊天、电话呼叫、[CRM]营销活动或[CRM]活动。 在CRM中称为“接触点类型”。</p>
+        <p>活动的类型，Web访问、Web窗体、Web聊天、电话、[CRM]营销活动或[CRM]活动。 在CRM中称为“接触点类型”。</p>
       </td>
       <td>
         <p>Web窗体</p>
@@ -14545,10 +14545,10 @@ Opportunity的过渡阶段。
         <p>渠道</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>接触点属于的渠道(在 [!DNL Marketo Measure] 应用程序。 在CRM中称为“营销渠道 — 路径”。</p>
+        <p>根据中的自定义渠道定义，接触点所属的渠道 [!DNL Marketo Measure] 应用程序。 在CRM中称为“营销渠道 — 路径”。</p>
       </td>
       <td>
         <p>Social.LinkedIn</p>
@@ -14556,10 +14556,10 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>BROWSER_NAME</p>
+        <p>浏览器名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从javascript和IP地址中，检测到用户在会话期间所在的浏览器。</p>
@@ -14570,13 +14570,13 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>BROWSER_VERSION</p>
+        <p>浏览器版本</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从javascript和IP地址中，检测到用户在会话期间所在的浏览器版本。</p>
+        <p>从javascript和IP地址中，查看在会话期间用户所在的检测到的浏览器版本。</p>
       </td>
       <td>
         <p>33</p>
@@ -14584,10 +14584,10 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_NAME</p>
+        <p>平台名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从javascript和IP地址中，检测到用户在会话期间所在的平台。</p>
@@ -14598,13 +14598,13 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>PLATFORM_VERSION</p>
+        <p>平台版本</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从javascript和IP地址中，检测到用户在会话期间所在平台的版本。</p>
+        <p>从javascript和IP地址中，查看在会话期间用户所在平台的检测到版本。</p>
       </td>
       <td>
         <p>10_12</p>
@@ -14615,10 +14615,10 @@ Opportunity的过渡阶段。
         <p>LANDING_PAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>会话的第一个登陆页面，产生接触点。 在CRM中称为“登陆页面”。</p>
+        <p>导致接触点的会话的第一个登陆页面。 在CRM中称为“登陆页面”。</p>
       </td>
       <td>
         <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing</p>
@@ -14629,13 +14629,13 @@ Opportunity的过渡阶段。
         <p>LANDING_PAGE_RAW</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>会话的第一个登陆页面，用于生成接触点。 原始登陆页面将包含URL中的所有查询参数。 在CRM中称为“登陆页面 — 原始”。</p>
+        <p>生成接触点的会话的第一个登陆页面。 原始登陆页面将包含URL中的所有查询参数。 在CRM中称为“Landing Page - Raw”。</p>
       </td>
       <td>
-        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ marketo+%maesure%27s+Pipeline+Marketing+Blog%29</p>
+        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ marketo+%maeasure%27s+Pipeline+Marketing+Blog%29</p>
       </td>
     </tr>
     <tr>
@@ -14643,10 +14643,10 @@ Opportunity的过渡阶段。
         <p>REFERRER_PAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>通常在用户进入网站之前立即显示外部登陆页面。 在CRM中称为“反向链接页面”。</p>
+        <p>通常是在用户访问网站之前的外部登陆页面。 在CRM中称为“反向链接页面”。</p>
       </td>
       <td>
         <p>https://www.google.com/</p>
@@ -14657,10 +14657,10 @@ Opportunity的过渡阶段。
         <p>REFERRER_PAGE_RAW</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>通常在用户进入网站之前立即显示外部登陆页面。 原始反向链接页面可能在URL中包含查询参数。 在CRM中称为“反向链接页面 — 原始”。</p>
+        <p>通常是在用户访问网站之前的外部登陆页面。 原始反向链接页面可能包含URL中的查询参数。 在CRM中称为“Referrer Page - Raw”。</p>
       </td>
       <td>
         <p>https://www.google.com/</p>
@@ -14671,10 +14671,10 @@ Opportunity的过渡阶段。
         <p>FORM_PAGE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>会话中记录的第一个表单，该表单会生成接触点。 后续表单提交不会显示在Attribution_Touchpoints表中，而是显示在Form_Submits表中。 在CRM中称为“表单URL”。</p>
+        <p>会话中记录的第一张表单产生了接触点。 后续表单提交不会显示在Attribution_Touchpoints表中，而是显示在Form_Submit表中。 在CRM中称为“表单URL”。</p>
       </td>
       <td>
         <p>http://info.adobe.com/adwords-for-lead-generation</p>
@@ -14685,10 +14685,10 @@ Opportunity的过渡阶段。
         <p>FORM_PAGE_RAW</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>会话中记录的第一个表单，该表单会生成接触点。 后续表单提交不会显示在Attribution_Touchpoints表中，而是显示在Form_Submits表中。 原始表单页面可能在URL中包含查询参数。 在CRM中称为“表单URL — 原始”。</p>
+        <p>会话中记录的第一张表单产生了接触点。 后续表单提交不会显示在Attribution_Touchpoints表中，而是显示在Form_Submit表中。 原始表单页面URL中可能包含查询参数。 在CRM中称为“表单URL — 原始”。</p>
       </td>
       <td>
         <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&amp;utm_medium=paid&amp;utm_content=sfskill&amp;utm _campaign=Content%20-%20AdWords%20Guide</p>
@@ -14702,7 +14702,7 @@ Opportunity的过渡阶段。
         <p>timestamp_ntz</p>
       </td>
       <td>
-        <p>表单提交的日期。</p>
+        <p>提交表单的日期。</p>
       </td>
       <td>
         <p>2015-06-03 17:49:10.000</p>
@@ -14713,10 +14713,10 @@ Opportunity的过渡阶段。
         <p>城市</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从javascript和IP地址中，检测到用户在会话期间所在的城市。</p>
+        <p>根据javascript和IP地址，检测用户在会话期间所处的城市。</p>
       </td>
       <td>
         <p>奥克兰</p>
@@ -14727,10 +14727,10 @@ Opportunity的过渡阶段。
         <p>区域</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从javascript和IP地址中，用户在会话期间所在的检测区域。</p>
+        <p>从javascript和IP地址中，查看在会话期间用户所处的检测区域。</p>
       </td>
       <td>
         <p>加利福尼亚</p>
@@ -14741,10 +14741,10 @@ Opportunity的过渡阶段。
         <p>国家/地区</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从javascript和IP地址中，显示用户在会话期间所在的国家/地区。</p>
+        <p>通过javascript和IP地址，可了解在会话期间检测到的用户所在的国家/地区。</p>
       </td>
       <td>
         <p>美国</p>
@@ -14755,10 +14755,10 @@ Opportunity的过渡阶段。
         <p>中</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用于定义导致接触点的介质。 可以从URL中从utm_medium解析。 或者，如果 [!DNL Marketo Measure] 能够解析广告，它可能是“cpc”或“display”之类的值。</p>
+        <p>用于定义产生接触点的媒介。 这可以从utm_medium的URL中解析。 或者，如果 [!DNL Marketo Measure] 能够解析广告，它可能是“cpc”或“display”之类的值。</p>
       </td>
       <td>
         <p>已付</p>
@@ -14769,10 +14769,10 @@ Opportunity的过渡阶段。
         <p>WEB_SOURCE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用于定义导致接触点的源。 这可以从utm_source的URL中解析，如果是从CRM同步，或者如果是，则通常设置为“CRM Campaign” [!DNL Marketo Measure] 能够解析广告，它可能是“Google AdWords”或“Facebook”之类的值。 在CRM中称为“接触点源”。</p>
+        <p>用于定义导致接触点的源。 可以从utm_source中的URL中解析该活动；如果活动是从CRM同步的，则一般设置为“CRM Campaign”；或者 [!DNL Marketo Measure] 能够解析广告，它可能是“Google AdWords”或“Facebook”之类的值。 在CRM中称为“接触点源”。</p>
       </td>
       <td>
         <p>linkedin</p>
@@ -14783,10 +14783,10 @@ Opportunity的过渡阶段。
         <p>SEARCH_PHRASE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>用户在浏览器中输入以搜索并最终在网站上显示的值。 根据关键词购买情况，这可能与从付费搜索平台购买的关键词匹配，也可能不匹配。</p>
+        <p>用户在浏览器中输入要搜索并最终显示在网站上的值。 根据关键词购买情况，这可能与从付费搜索平台购买的关键词匹配，也可能不匹配。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure]</p>
@@ -14797,10 +14797,10 @@ Opportunity的过渡阶段。
         <p>AD_PROVIDER</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告平台 [!DNL Marketo Measure] 能够从（通常是我们的集成合作伙伴之一）中进行解析。</p>
+        <p>广告平台 [!DNL Marketo Measure] 能够从（通常是我们的集成合作伙伴之一）中解析。</p>
       </td>
       <td>
         <p>Google</p>
@@ -14811,7 +14811,7 @@ Opportunity的过渡阶段。
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中解析广告的广告帐户的ID。</p>
@@ -14825,7 +14825,7 @@ Opportunity的过渡阶段。
         <p>ACCOUNT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
         <p>从中解析广告的广告帐户的名称。</p>
@@ -14839,10 +14839,10 @@ Opportunity的过渡阶段。
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告帐户的广告商ID。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的广告商ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -14853,13 +14853,13 @@ Opportunity的过渡阶段。
         <p>ADVERTISER_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从中解析广告的广告帐户的广告商名称。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的广告商名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
-        <p>营销分析</p>
+        <p>Marketing Analytics</p>
       </td>
     </tr>
     <tr>
@@ -14867,10 +14867,10 @@ Opportunity的过渡阶段。
         <p>SITE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户中的网站ID。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中网站的ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>1695651</p>
@@ -14878,13 +14878,13 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>SITE_NAME</p>
+        <p>站点名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析广告的广告帐户中的网站名称。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的网站名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>Quora.com</p>
@@ -14895,10 +14895,10 @@ Opportunity的过渡阶段。
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告帐户中的版面ID。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的版面ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
         <p>120839827</p>
@@ -14909,13 +14909,13 @@ Opportunity的过渡阶段。
         <p>PLACEMENT_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户中的版面名称。 这仅适用于Doubleclick营销活动管理器。</p>
+        <p>从中解析广告的广告帐户中的投放位置的名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
       <td>
-        <p>障碍</p>
+        <p>路障</p>
       </td>
     </tr>
     <tr>
@@ -14923,10 +14923,10 @@ Opportunity的过渡阶段。
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户中的营销活动ID。</p>
+        <p>从中解析广告的广告帐户中的营销活动ID。</p>
       </td>
       <td>
         <p>aw.6601259029.208548635</p>
@@ -14934,13 +14934,13 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>
-        <p>CAMPAIGN_NAME</p>
+        <p>营销活动名称</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户的营销活动名称。</p>
+        <p>从中解析广告的广告帐户中的营销活动名称。</p>
       </td>
       <td>
         <p>品牌</p>
@@ -14951,10 +14951,10 @@ Opportunity的过渡阶段。
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析广告的广告帐户中的广告组ID。 这仅适用于Google Adwords。</p>
+        <p>从中解析广告的广告帐户中的广告组ID。 这仅适用于Google Adwords。</p>
       </td>
       <td>
         <p>aw.6601259029.208548635.16750166675</p>
@@ -14965,10 +14965,10 @@ Opportunity的过渡阶段。
         <p>AD_GROUP_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告帐户中广告从中解析的广告组的名称。 这仅适用于Google AdWords。</p>
+        <p>从中解析广告的广告帐户中的广告组的名称。 这仅适用于Google AdWords。</p>
       </td>
       <td>
         <p>品牌 — 核心</p>
@@ -14979,10 +14979,10 @@ Opportunity的过渡阶段。
         <p>AD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从其中解析广告的广告帐户的广告ID。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
+        <p>从中解析广告的广告帐户中的广告ID。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
       <td>dc.6114.8882972.25272734.492579576</td>
     </tr>
@@ -14991,10 +14991,10 @@ Opportunity的过渡阶段。
         <p>AD_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从其中解析了广告的广告帐户的广告名称。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
+        <p>从中解析广告的广告帐户中的广告名称。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
       <td>预算网络研讨会 — 侧栏</td>
     </tr>
@@ -15003,10 +15003,10 @@ Opportunity的过渡阶段。
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告帐户中的创作ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的广告帐户中的创意ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>aw.6601259029.208548635.16750166675.195329631298</p>
@@ -15017,10 +15017,10 @@ Opportunity的过渡阶段。
         <p>CREATIVE_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>广告从中解析的广告帐户中的创作元素名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的广告帐户中的创意内容的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] 官方网站</p>
@@ -15031,10 +15031,10 @@ Opportunity的过渡阶段。
         <p>CREATIVE_DESCRIPTION_1</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>搜索广告中创作元素的第一行，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>搜索广告中创意的第一行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>收入规划和归因</p>
@@ -15045,13 +15045,13 @@ Opportunity的过渡阶段。
         <p>CREATIVE_DESCRIPTION_2</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>来自搜索广告的创作元素的第二行，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>搜索广告中的创意内容第二行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
-        <p>了解250多家公司为何选择 [!DNL Marketo Measure] ，用于营销归因。 演示！</p>
+        <p>了解为什么250多家公司选择 [!DNL Marketo Measure] 用于营销归因。 获取演示！</p>
       </td>
     </tr>
     <tr>
@@ -15059,10 +15059,10 @@ Opportunity的过渡阶段。
         <p>CREATIVE_DESTINATION_URL</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从搜索广告点进的登陆页面，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从搜索广告点进的登陆页面，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>http://info.adobe.com/demo</p>
@@ -15073,10 +15073,10 @@ Opportunity的过渡阶段。
         <p>CREATIVE_DISPLAY_URL</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>搜索广告中显示的易记URL名称，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>在搜索广告上显示的友好URL名称，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>adobe.com/demo</p>
@@ -15087,10 +15087,10 @@ Opportunity的过渡阶段。
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从付费搜索购买中购买的关键词ID，从广告解析的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从付费搜索购买购买的关键字ID，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>aw.6601259029.208548635.16750166675.46267805426</p>
@@ -15101,10 +15101,10 @@ Opportunity的过渡阶段。
         <p>KEYWORD_NAME</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>从广告解析来源的广告帐户中提取的从付费搜索购买购买的关键词名称。 这适用于Google AdWords和Bing Ads（搜索）</p>
+        <p>从付费搜索购买购买关键词（从广告解析来源广告的广告帐户提取）的名称。 这适用于Google AdWords和Bing Ads（搜索）</p>
       </td>
       <td>
         <p>[marketo]</p>
@@ -15115,10 +15115,10 @@ Opportunity的过渡阶段。
         <p>KEYWORD_MATCH_TYPE</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>
-        <p>在搜索短语和购买的关键词之间找到的匹配类型。</p>
+        <p>在搜索短语和购买的关键字之间找到的匹配类型。</p>
       </td>
       <td>
         <p>精确</p>
@@ -15132,7 +15132,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>此接触点在会话期间是否填写了表单。</p>
+        <p>会话期间此接触点是否填写了表单。</p>
       </td>
       <td>
         <p>true</p>
@@ -15146,7 +15146,7 @@ Opportunity的过渡阶段。
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否将此接触点视为机会历程的第一印象接触。</p>
+        <p>是否将此接触点视为机会历程的第一次印象触点。</p>
       </td>
       <td>
         <p>false</p>
@@ -15247,19 +15247,19 @@ Opportunity的过渡阶段。
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -15267,7 +15267,7 @@ Opportunity的过渡阶段。
 
 ### BIZ_WEB_HOST_MAPPINGS {#biz-web-host-mappings}
 
-映射表以映射 [!DNL Marketo Measure] 用于AdobeECID和Munckin Id的会话Id。
+将表映射到映射 [!DNL Marketo Measure] 用于AdobeECID和Munckin Id的会话Id。
 
 <table>
   <tbody>
@@ -15290,11 +15290,11 @@ Opportunity的过渡阶段。
         <p>ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>映射记录的唯一ID。</td>
       <td>
-        <p>0d643578c0c74753eff91abe668ed328|2020-06-17:19:03:36|002|0|568668</p>
+        <p>0d643578c0c74753eff91abe668ed328|2020-06-17:19:03:36|0002|0|568668</p>
       </td>
     </tr>
     <tr>
@@ -15302,9 +15302,9 @@ Opportunity的过渡阶段。
         <p>COOKIE_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>的 [!DNL Marketo Measure] 记录的cookie id。</td>
+      <td>此 [!DNL Marketo Measure] 记录的Cookie ID。</td>
       <td>0d643578c0c74753eff91abe668ed328</td>
     </tr>
     <tr>
@@ -15312,9 +15312,9 @@ Opportunity的过渡阶段。
         <p>VISITOR_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>相关访客ID的第一个Cookie ID。</td>
+      <td>相关访客id的第一个Cookie ID。</td>
       <td>v_0d643578c0c74753eff91abe668ed328</td>
     </tr>
     <tr>
@@ -15322,9 +15322,9 @@ Opportunity的过渡阶段。
         <p>SESSION_ID</p>
       </td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>的 [!DNL Marketo Measure] 会话ID。</td>
+      <td>此 [!DNL Marketo Measure] 会话ID。</td>
       <td>2018-08-06:01-35-24-1231230.9bc63c34482f</td>
     </tr>
     <tr>
@@ -15352,9 +15352,9 @@ Opportunity的过渡阶段。
     <tr>
       <td>CURRENT_PAGE</td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
-      <td>页面查看的URL，不包含查询参数。</td>
+      <td>页面查看的URL，不含查询参数。</td>
       <td>
         <p>https://learn.atest.com/simplify-retention-starter-kit.html</p>
       </td>
@@ -15362,7 +15362,7 @@ Opportunity的过渡阶段。
     <tr>
       <td>CURRENT_PAGE_RAW</td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>页面查看的URL，包括任何查询参数。</td>
       <td>
@@ -15370,9 +15370,9 @@ Opportunity的过渡阶段。
       </td>
     </tr>
     <tr>
-      <td>IP_ADDRESS</td>
+      <td>IP地址</td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>记录的IP地址。</td>
       <td>
@@ -15382,39 +15382,39 @@ Opportunity的过渡阶段。
     <tr>
       <td>类型</td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>指示事件的类型。</td>
       <td>
-        <p>HostMapping</p>
+        <p>主机映射</p>
       </td>
     </tr>
     <tr>
       <td>USER_AGENT_STRING</td>
       <td>
-        <p>varch</p>
+        <p>varchar</p>
       </td>
       <td>在页面查看时记录的设备和浏览器。</td>
       <td>
-        <p>Mozilla/5.0(Windows NT 10.0;Win64;x64)AppleWebKit/537.36（KHTML，如Gecko）Chrome/79.0.3945.130 Safari/537.36</p>
+        <p>Mozilla/5.0 (Windows NT 10.0；Win64；x64) AppleWebKit/537.36 （KHTML，如Gecko） Chrome/79.0.3945.130 Safari/537.36</p>
       </td>
     </tr>
     <tr>
       <td>CLIENT_SEQUENCE</td>
-      <td>varch</td>
+      <td>varchar</td>
       <td>指示页面查看在会话中发生的顺序。</td>
       <td>2</td>
     </tr>
     <tr>
       <td>CLIENT_RANDOM</td>
-      <td>varch</td>
-      <td>用于内部审核和处理。</td>
+      <td>varchar</td>
+      <td>用于内部审计和处理。</td>
       <td>566868</td>
     </tr>
     <tr>
       <td>IS_DUPLICATED</td>
       <td>布尔值</td>
-      <td>指示记录是否被视为重复项。</td>
+      <td>指示是否将该记录视为重复项。</td>
       <td>false</td>
     </tr>
     <tr>
@@ -15425,38 +15425,38 @@ Opportunity的过渡阶段。
     </tr>
     <tr>
       <td>MAPPING_TYPE</td>
-      <td>varch</td>
-      <td>映射到 [!DNL Marketo Measure] cookie ID。</td>
-      <td>Adobe_OrgId_Ecid</td>
+      <td>varchar</td>
+      <td>映射到的ID类型 [!DNL Marketo Measure] Cookie Id。</td>
+      <td>Adobe_组织ID_Ecid</td>
     </tr>
     <tr>
       <td>MAPPING_ORD_ID</td>
-      <td>varch</td>
-      <td>Adobe IMS组织Id。</td>
+      <td>varchar</td>
+      <td>Adobe IMS组织ID。</td>
       <td>8CC867C25245ADC30A490D4C</td>
     </tr>
     <tr>
       <td>MAPPING_COOKIE_ID</td>
-      <td>varch</td>
-      <td>Adobe给定组织ID的ECID。</td>
+      <td>varchar</td>
+      <td>给定组织ID的ECIDAdobe。</td>
       <td>09860926390077352923264316157493772857</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中创建的日期。</td>
+      <td>以Snowflake创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_MODIFIED_DATE</td>
+      <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
       <td>上次在Snowflake中修改记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>_DELETED_DATE</td>
+      <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>记录在Snowflake中标记为已删除的日期。</td>
+      <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -15464,7 +15464,7 @@ Opportunity的过渡阶段。
 
 ## 示例查询 {#sample-queries}
 
-**上个月，每个渠道/子渠道中有多少个买方接触点(BT)?**
+**上个月每个渠道/子渠道有多少购买者接触点(BT)？**
 
 ```
 --Note: This query can quickly be modified to show Buyer Attribution Touchpoint (BAT) counts by switching the biz_touchpoints table to the biz_attribution_touchpoints table.
@@ -15486,7 +15486,7 @@ select trim(split(ch.name,'.')[0])  as channel
 group by 1,2
 ```
 
-**对于完整路径归因模型，每个渠道在过去一个月中关闭了多少归因收入？**
+**对于完整路径归因模型，每个渠道在过去一个月关闭的归因收入有多少？**
 
 ```
 --Note: This query does not perform any currency conversion.  If your data contains multiple currencies, you will need to add in logic to perform the conversion to the desired currency using the biz_conversion_rates table.
@@ -15513,7 +15513,7 @@ select trim(split(ch.name,'.')[0])  as channel
 group by 1
 ```
 
-**一个人的整个旅程是什么？  （显示单个电子邮件地址的所有接触点。）**
+**一个人的整个旅程是怎样的？  （显示单个电子邮件地址的所有接触点。）**
 
 ```
 select ut.touchpoint_date
@@ -15554,11 +15554,11 @@ group by 1,2
 order by 1
 ```
 
-**显示单个销售机会的所有买方归因接触点(BAT)及其归因收入。**
+**显示单个商机的所有买方归因接触点(BAT)及其归因收入。**
 
 >[!NOTE]
 >
->此查询返回w形状模型的归因收入。 通过更新归因收入计算中的字段来更改模型。
+>此查询返回w形状模型的归因收入。 通过更新已归因收入计算中的字段更改模型。
 
 ```
 select bat.id

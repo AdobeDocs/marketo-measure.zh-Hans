@@ -3,7 +3,8 @@ unique-page-id: 42762762
 description: 设置Marketo连接 —  [!DNL Marketo Measure]  — 产品文档
 title: 设置Marketo连接
 exl-id: 11660539-1cc5-4768-8f22-d6f7cd0b94f3
-source-git-commit: ff3ebd557ffe745e1297d053be1390093dc4033c
+feature: Integration
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 1%
@@ -16,13 +17,13 @@ ht-degree: 1%
 
 >[!PREREQUISITES]
 >
->[创建仅限API用户角色](https://experienceleague.adobe.com/docs/marketo/using/product-docs/administration/users-and-roles/create-an-api-only-user.html) 对于 [!DNL Marketo Measure]/Marketo Engage连接。
+>[创建仅API用户角色](https://experienceleague.adobe.com/docs/marketo/using/product-docs/administration/users-and-roles/create-an-api-only-user.html) 对于 [!DNL Marketo Measure]/Marketo Engage连接。
 
-1. 在 [!DNL Marketo Measure]，请单击 **[!UICONTROL My Account]** 下拉框并选择 **[!UICONTROL Settings]**.
+1. 在 [!DNL Marketo Measure]，单击 **[!UICONTROL My Account]** 下拉并选择 **[!UICONTROL Settings]**.
 
    ![](assets/set-up-marketo-connection-1.png)
 
-1. 在 [!UICONTROL Integrations]，单击 **[!UICONTROL Connections]**.
+1. 下 [!UICONTROL Integrations]，单击 **[!UICONTROL Connections]**.
 
    ![](assets/set-up-marketo-connection-2.png)
 
@@ -30,30 +31,30 @@ ht-degree: 1%
 
    ![](assets/set-up-marketo-connection-3.png)
 
-1. 单击 **[!UICONTROL Connect]** 按钮来访问Marketo。
+1. 单击 **[!UICONTROL Connect]** Marketo按钮。
 
    ![](assets/set-up-marketo-connection-4.png)
 
-1. 在新选项卡中，登录到您的Marketo Engage帐户。 转到 **管理员** > **Web服务**. 向下滚动到REST API。 突出显示并保存Endpoint和Identity服务URL。 你需要他们。
+1. 在新选项卡中，登录到您的Marketo Engage帐户。 转到 **管理员** > **Web服务**. 向下滚动到REST API。 突出显示并保存端点和Identity服务URL。 一会儿你就需要他们了。
 
    ![](assets/set-up-marketo-connection-5.png)
 
-1. 仍在Marketo Engage中，选择 **LaunchPoint** 在左边的树上。 找到要连接到Marketo Measure的自定义服务，然后单击 **查看详细信息**.
+1. 仍在Marketo Engage中，选择 **启动点** 在左边的树上。 找到要连接到Marketo Measure的自定义服务，然后单击 **查看详细信息**.
 
    ![](assets/set-up-marketo-connection-6.png)
 
-1. 突出显示并保存客户端ID和客户端密钥。 单击&#x200B;**关闭**。
+1. 突出显示并保存客户端ID和客户端密码。 单击&#x200B;**关闭**。
 
    ![](assets/set-up-marketo-connection-7.png)
 
-1. 返回 [!DNL Marketo Measure]，则使用您刚才收集的数据填充这些字段。
+1. 返回 [!DNL Marketo Measure]，使用您刚刚收集的数据填充字段。
 
    ![](assets/set-up-marketo-connection-8.png)
 
-1. 输入值后，单击 **[!UICONTROL Authenticate]**. 您的Marketo Engage帐户随后将连接到 [!DNL Marketo Measure].
+1. 输入值后，单击 **[!UICONTROL Authenticate]**. 然后，您的Marketo Engage帐户将连接到 [!DNL Marketo Measure].
 
    ![](assets/set-up-marketo-connection-9.png)
 
    >[!NOTE]
    >
-   >[!DNL Marketo Measure] 将代表您调用Marketo API，而不会使用任何Marketo API限制，因此无需担心使用其他集成时的上限和信用分配问题。
+   >[!DNL Marketo Measure] 将代表您调用Marketo API，而不使用任何Marketo API限制，因此无需担心与其他集成的大小和信用分配。

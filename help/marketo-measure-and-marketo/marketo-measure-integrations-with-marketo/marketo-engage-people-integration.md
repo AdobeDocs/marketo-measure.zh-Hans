@@ -3,7 +3,8 @@ unique-page-id: 37356395
 description: '"[!DNL Marketo Engage] 人员集成 —  [!DNL Marketo Measure]  — 产品文档”'
 title: '"[!DNL Marketo Engage] 人员集成”'
 exl-id: 51930e84-4ff8-4e35-9d44-ea017c24b051
-source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
+feature: Integration
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
@@ -12,34 +13,34 @@ ht-degree: 0%
 
 # [!DNL Marketo Engage] 人员集成 {#marketo-engage-people-integration}
 
-Marketo人员集成允许 [!DNL Marketo Measure] 开始从Marketo下载人员，并开始将其跟踪的会话绑定到个人，并将接触点映射到其参与。 历史上， [!DNL Marketo Measure] 只能将接触点映射到CRM中的人员，因此，这有助于营销人员更快地衡量其营销工作，而不是等待阶段或触发器将其同步到CRM。
+Marketo人员集成允许 [!DNL Marketo Measure] 开始从Marketo下载人员，并开始将他们的跟踪会话与个人绑定，并将接触点映射到其参与。 历史上， [!DNL Marketo Measure] 只能将接触点映射到CRM中的人员，因此这有助于营销人员更快地衡量其营销工作，而不是等待阶段或触发器将其同步到CRM。
 
 ## 要求 {#requirements}
 
 * 生产Marketo实例
 * 生产 [!DNL Salesforce] 或 [!DNL Microsoft Dynamics] 实例
-* 任何已付 [!DNL Marketo Measure] 订阅
-* 已启用SOLR(请联系 [Marketo支持](https://nation.marketo.com/t5/Support/ct-p/Support) 启用此选项)
+* 任何付费 [!DNL Marketo Measure] 订阅
+* 已启用SOLR(请联系 [Marketo支持](https://nation.marketo.com/t5/Support/ct-p/Support) 以启用此功能)
 
 ## 工作原理 {#how-it-works}
 
-作为当前客户， [!DNL Marketo Measure] 已从您的CRM下载人员。 标准流程是 [!DNL Marketo Measure] 下载人员并将电子邮件地址映射到我们通过bizible.js跟踪的网络会话。
+作为当前客户， [!DNL Marketo Measure] 已在从您的CRM下载人员。 标准流程是 [!DNL Marketo Measure] 下载人员并将电子邮件地址映射到我们通过bizible.js跟踪的Web会话。
 
-随着下载Marketo人， [!DNL Marketo Measure] 现在能够将Web会话映射到更大的个人池，这些个人池中尚未与CRM同步。 我们通常会看到这种情况，因为内部流程会等到用户达到特定状态后才将他们推送到CRM。
+随着下载Marketo人员的简介， [!DNL Marketo Measure] 现在能够将Web会话映射到更大的个人池，即尚未与CRM同步的池。 我们之所以经常看到这种情况，是因为内部流程需要等到用户达到特定状态之后才将其推送到CRM。
 
-When [!DNL Marketo Measure] 成功将Marketo人员映射至网络会话，我们的处理将为其生成任何相关接触点，最终可在 [!DNL Marketo Measure Discover]. 如果Marketo的人被推送到CRM， [!DNL Marketo Measure] 将处理重复方案，并为CRM人员重新创建接触点，并将初始设置标记为“重复”。
+时间 [!DNL Marketo Measure] 成功将Marketo人员映射到Web会话，我们的处理将为其生成任何相关的接触点，这些接触点最终可报告于 [!DNL Marketo Measure Discover]. 如果该Marketo用户被推送到CRM， [!DNL Marketo Measure] 将处理重复场景，我们将为CRM人员重新创建接触点，并将初始集标记为“重复”。
 
-为了检测这些重复项，请确保 [!DNL Marketo-Salesforce] 或 [!DNL Marketo-Dynamics] sync正在Marketo人员的潜在客户ID和联系人ID中填充。 如果ID正确同步，您应该能够在“人员”记录中看到CRM ID，如下所示：
+为了让我们检测到这些重复项，请确保 [!DNL Marketo-Salesforce] 或 [!DNL Marketo-Dynamics] 同步操作将填充Marketo人员上的潜在客户和联系人ID。 如果ID正确同步，您应该能够在人员记录中看到CRM ID，如下所示：
 
 ![](assets/5a.png)
 
 ![](assets/5b.png)
 
-客户可以选择在中报告完整的Marketo人员和CRM人员 [!DNL Marketo Measure] 发现。 如果您只对报告CRM人员感兴趣，我们建议创建一个区段以过滤他们。
+客户可以选择报告中的全套Marketo人员和CRM人员 [!DNL Marketo Measure] 发现。 如果您只想报告CRM用户，我们建议您创建一个区段来筛选他们。
 
 ## [!DNL Marketo Measure Discover] {#marketo-measure-discover}
 
-在报告 [!DNL Marketo Measure Discover]，您将看到Marketo和CRM潜在客户总数。 要仅报告Marketo人员或CRM潜在客户，您需要为源创建区段类别，然后使用“源系统”字段为Marketo和CRM创建区段规则以定义规则。 创建区段后，您将看到可在 [!DNL Marketo Measure Discover] 功能板。
+报告中的潜在客户（人员）时 [!DNL Marketo Measure Discover]，您将看到您的Marketo和CRM潜在客户的总数。 要仅报告Marketo人员或CRM潜在客户，您需要为源创建区段类别，然后使用“源系统”字段为Marketo和CRM创建区段规则以定义规则。 创建区段后，您将看到可用于在 [!DNL Marketo Measure Discover] 功能板。
 
 ![](assets/bizible-discover-1.png)
 
@@ -63,18 +64,18 @@ When [!DNL Marketo Measure] 成功将Marketo人员映射至网络会话，我们
   </tr> 
   <tr> 
    <td><p>MODIFIED_DATE</p></td> 
-   <td><p>updatedAt<strong>*</strong></p></td> 
+   <td><p>更新时间<strong>*</strong></p></td> 
   </tr> 
   <tr> 
-   <td><p>CREATED_DATE</p></td> 
-   <td><p>createdAt</p></td> 
+   <td><p>创建日期</p></td> 
+   <td><p>createdat</p></td> 
   </tr> 
   <tr> 
    <td><p>电子邮件</p></td> 
    <td><p>电子邮件</p></td> 
   </tr> 
   <tr> 
-   <td><p>WEB_SITE</p></td> 
+   <td><p>WEB站点</p></td> 
    <td><p>网站</p></td> 
   </tr> 
   <tr> 
@@ -87,7 +88,7 @@ When [!DNL Marketo Measure] 成功将Marketo人员映射至网络会话，我们
   </tr> 
   <tr> 
    <td><p>ACCOUNT_ID</p></td> 
-   <td><p>帐户Id(L2A)</p></td> 
+   <td><p>帐户Id (L2A)</p></td> 
   </tr> 
   <tr> 
    <td><p>BIZIBLE_STAGE</p></td> 
@@ -100,28 +101,28 @@ When [!DNL Marketo Measure] 成功将Marketo人员映射至网络会话，我们
  </tbody> 
 </table>
 
-*存在一个已知的行为问题，即Marketo公司实体中的字段不会影响人员的updatedAt值，因此如果更新了网站或公司等相关字段， [!DNL Marketo Measure] 将不知道这些值是否已修改，因为updatedAt日期/时间值未更新。 这会影响ABM功能，在ABM功能中，我们没有新的数据来解决Account的牵头问题。 目前没有解决方法，但有计划在将来解决这个问题。
+*存在一个已知行为问题，即Marketo公司实体中的字段不会影响人员的updatedAt值，因此如果更新了Website或Company等相关字段， [!DNL Marketo Measure] 将无法知晓这些值是否已修改，因为updatedAt日期/时间值未更新。 这会影响ABM功能，在这种情况下，我们将没有新数据来解析潜在客户。 目前没有解决方法，但计划将来解决此问题。
 
 ## 常见问题解答 {#faq}
 
-**为什么我的CRM和 [!DNL Marketo Measure Discover]?**
+**为什么我的CRM和之间的潜在客户计数不同 [!DNL Marketo Measure Discover]？**
 
-由于此集成允许我们为我们直接从Marketo导入的潜在客户创建接触点，因此可能会有一些未同步到CRM的潜在客户，因此Discover中的计数可能会高于CRM，因为触点仅被推送到CRM潜在客户。
+由于此集成允许我们为我们直接从Marketo导入的潜在客户创建接触点，因此可能存在未同步到CRM的潜在客户，因此Discover中的计数可能会高于CRM，因为仅针对CRM潜在客户推送接触点。
 
-**这如何替换我的数据？**
+**这如何代替我的数据？**
 
-此集成实际上可合并您当前 [!DNL Marketo Measure] 实例，因此未替换任何内容。 我们期待您当前的CRM潜在客户是，当我们下载价值2年的Marketo潜在客户时，我们只需更新该潜在客户记录，以显示与Marketo潜在客户的匹配情况。 所有在后端发生的情况和接触点预期会保持不变。 我们还希望看到更多接触点，因为符合条件的Marketo Lead。 如果我们能够找到与这些Marketo人相匹配的Web会话，我们将开始看到接触点被计入 [!DNL Marketo Measure].
+此集成实际上会合并您当前数据集中的 [!DNL Marketo Measure] 实例中，因此不会替换任何内容。 我们希望从您当前的CRM潜在客户那里获得的是，当我们下载长达2年的Marketo潜在客户时，我们只需更新该潜在客户记录即可表明还有一个匹配项与Marketo潜在客户匹配。 所有这些都在后端发生，预计接触点将保持不变。 我们还希望因为符合条件的Marketo潜在客户而看到更多接触点。 如果能够找到与这些Marketo用户匹配的Web会话，我们将看到接触点被计入其中 [!DNL Marketo Measure].
 
-**我是否只能从Marketo下载我的人员并切断CRM连接？**
+**我是否只能从Marketo下载人员并切断CRM连接？**
 
-此时，不。 我们将来会有这个选项，但我们需要构建此Marketo集成的其他阶段，以便我们能够将从Marketo到 [!DNL Marketo Measure].
+目前还没有。 我们以后将可以选择此选项，但我们需要构建此Marketo集成的其他阶段，以便我们可以将Marketo中的计划、机会和交易关联到 [!DNL Marketo Measure].
 
-**你是否导入我所有的Marketo人？**
+**是否导入我所有的Marketo人员？**
 
-目前，我们最早将导入人员的是1/1/2018，以便我们至少拥有2年的数据，这与我们从CRM下载中强制实施的行为相同。 建立Marketo连接后，我们将实施改进行为，以下载连续2年的窗口。
+目前，我们最早导入人员的日期为2018年1月1日，因此我们至少拥有2年的数据，这与我们从CRM下载中强制执行的行为相同。 建立Marketo连接后，我们将改进下载滚动的2年期窗口的行为。
 
-我们也不会过滤任何人员类型，因此，在两年期限内的所有人员都将被导入，并符合接触点资格。
+我们也不会过滤任何人员类型，因此两年内的所有人员都将获得导入，并符合接触点条件。
 
-**什么是SOLR？为什么需要启用它才能使用此功能？**
+**什么是SOLR？为何需要启用它才能使用此功能？**
 
-为Marketo实例启用SOLR是一个很琐碎的步骤，它会在Marketo中打开硬件空间，以便您的订阅可以利用 [!DNL Marketo Measure] 集成。 如果未启用SOLR，我们将无法访问某些调用，否则这些调用将允许我们从您的Marketo实例下载相应的人员。
+为您的Marketo实例启用SOLR是一个很简单的步骤，需要在Marketo中打开硬件空间，以便您的订阅可以利用 [!DNL Marketo Measure] 集成。 如果未启用SOLR，我们将无法访问某些调用，这些调用原本会允许我们从Marketo实例下载相应的人员。

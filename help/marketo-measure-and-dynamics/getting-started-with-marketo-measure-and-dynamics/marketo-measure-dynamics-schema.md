@@ -1,26 +1,27 @@
 ---
 unique-page-id: 18874523
 description: '"[!DNL Marketo Measure] 动态架构 —  [!DNL Marketo Measure]  — 产品文档”'
-title: '"[!DNL Marketo Measure] Dynamics架构”'
+title: '"[!DNL Marketo Measure] 动态架构”'
 exl-id: f8da47b1-d844-4bd2-8125-8689cbb5cc30
-source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
+feature: Microsoft Dynamics
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '1408'
 ht-degree: 17%
 
 ---
 
-# [!DNL Marketo Measure] Dynamics架构 {#marketo-measure-dynamics-schema}
+# [!DNL Marketo Measure] 动态架构 {#marketo-measure-dynamics-schema}
 
 >[!NOTE]
 >
->您可能会看到指定“[!DNL Marketo Measure]“ ”，但仍会在您的CRM中看到“Bizible”。 我们正在努力更新该版本，并且该品牌重命名将很快地反映在您的CRM中。
+>您可能会看到说明“[!DNL Marketo Measure]”，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
-在下面，您将找到所需的Dynamics架构以开始使用 [!DNL Marketo Measure]. 所有实体和字段都列出，以及所需的读和/或写访问权限。
+在下方，您将找到开始使用所需的Dynamics架构 [!DNL Marketo Measure]. 列出所有实体和字段以及所需的读取和/或写入权限。
 
 ## 买方接触点 {#buyer-touchpoints}
 
-买方接触点是 [!DNL Marketo Measure] 自定义实体，以封装联系人和潜在客户的营销交互。
+买方接触点是 [!DNL Marketo Measure] 自定义实体，用于封装Contacts和Lead的营销交互。
 
 ## 买方接触点关系 {#buyer-touchpoint-relationships}
 
@@ -115,7 +116,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Count_U_Shaved</p></td> 
+   <td><p>bizible2_Count_U_Shaped</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -205,7 +206,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Name</p></td> 
+   <td><p>bizible2名称</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -295,7 +296,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_account</p></td> 
+   <td><p>bizible2帐户</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -305,7 +306,7 @@ ht-degree: 17%
 
 ## 买方归因接触点 {#buyer-attribution-touchpoint}
 
-买方归因接触点是 [!DNL Marketo Measure] 自定义实体来封装营销对Opportunity的影响。
+买方归因接触点属于 [!DNL Marketo Measure] 自定义实体，用于封装营销对机会的影响。
 
 ## 买方归因接触点关系 {#buyer-attribution-touchpoint-relationships}
 
@@ -394,13 +395,13 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Attribution_U_Shaved</p></td> 
+   <td><p>bizible2_Attribution_U_Shaped</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Attribution_W_Shaved</p></td> 
+   <td><p>bizible2_Attribution_W_Shaped</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -454,13 +455,13 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Count_U_Shaved</p></td> 
+   <td><p>bizible2_Count_U_Shaped</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Count_W_Shaved</p></td> 
+   <td><p>bizible2_Count_W_Shaped</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -544,7 +545,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Name</p></td> 
+   <td><p>bizible2名称</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -634,25 +635,25 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Revenue_U_Shaved</p></td> 
+   <td><p>bizible2_Revenue_U_Shaped</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_revenue_u_shaved_base</p></td> 
+   <td><p>bizible2_revenue_u_formed_Base</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Revenue_W_Shaved</p></td> 
+   <td><p>bizible2_Revenue_W_Shaped</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_revenue_w_shaved_base</p></td> 
+   <td><p>bizible2_revenue_w_formed_Base</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -749,13 +750,13 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Experience</p></td> 
+   <td><p>bizible2_Experiment</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_ExperienceId</p></td> 
+   <td><p>bizible2_ExperimentId</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -767,7 +768,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Name</p></td> 
+   <td><p>bizible2名称</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -785,7 +786,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Variation</p></td> 
+   <td><p>bizible2_变体</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -852,7 +853,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Name</p></td> 
+   <td><p>bizible2名称</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -901,7 +902,7 @@ ht-degree: 17%
    <td><p>x</p></td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_Name</p></td> 
+   <td><p>bizible2名称</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -911,7 +912,7 @@ ht-degree: 17%
 
 ## Dynamics标准实体 {#dynamics-standard-entities}
 
-此列表提供了Dynamics Standard Entities( [!DNL Marketo Measure] 与交互，以及我们添加到这些实体的自定义字段。
+此列表提供具有以下功能的Dynamics Standard实体： [!DNL Marketo Measure] 与交互，以及我们添加到这些实体的自定义字段交互。
 
 **商机**
 
@@ -924,7 +925,7 @@ ht-degree: 17%
    <th><p>写入</p></th> 
   </tr> 
   <tr> 
-   <td><p>莉蒂</p></td> 
+   <td><p>leadid</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -942,37 +943,37 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>statuscode</p></td> 
+   <td><p>状态代码</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>创建</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>已修改</p></td> 
+   <td><p>修改</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>接触</p></td> 
+   <td><p>contactive</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>合格机会id</p></td> 
+   <td><p>qualifyingopportunityid</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>网站url</p></td> 
+   <td><p>websiteurl</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -984,7 +985,7 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>bizible2_account</p></td> 
+   <td><p>bizible2帐户</p></td> 
    <td><p>自定义</p></td> 
    <td><p>x</p></td> 
    <td><p>x</p></td> 
@@ -1009,7 +1010,7 @@ ht-degree: 17%
    <th><p>写入</p></th> 
   </tr> 
   <tr> 
-   <td><p>接触</p></td> 
+   <td><p>contactive</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1021,19 +1022,19 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>account</p></td> 
+   <td><p>accountid</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>创建</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>已修改</p></td> 
+   <td><p>修改</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1058,25 +1059,25 @@ ht-degree: 17%
    <th><p>写入</p></th> 
   </tr> 
   <tr> 
-   <td><p>account</p></td> 
+   <td><p>accountid</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>网站url</p></td> 
+   <td><p>websiteurl</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>创建</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>已修改</p></td> 
+   <td><p>修改</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1101,25 +1102,25 @@ ht-degree: 17%
    <th><p>写入</p></th> 
   </tr> 
   <tr> 
-   <td><p>机会id</p></td> 
+   <td><p>opportunityid</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>account</p></td> 
+   <td><p>accountid</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>创建</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>已修改</p></td> 
+   <td><p>修改</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1137,7 +1138,7 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>salestage</p></td> 
+   <td><p>salesstage</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1149,7 +1150,7 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>估计结束日期</p></td> 
+   <td><p>estimatedclosedate</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1175,7 +1176,7 @@ ht-degree: 17%
  </tbody> 
 </table>
 
-**Campaign**
+**营销活动**
 
 <table> 
  <tbody> 
@@ -1186,7 +1187,7 @@ ht-degree: 17%
    <th><p>写入</p></th> 
   </tr> 
   <tr> 
-   <td><p>营销活动id</p></td> 
+   <td><p>campaignid</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1204,13 +1205,13 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>创建</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>已修改</p></td> 
+   <td><p>修改</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1265,25 +1266,25 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>activitypecode</p></td> 
+   <td><p>activitytypecode</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>activitypecodename</p></td> 
+   <td><p>activitytypecodename</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>创建</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>已修改</p></td> 
+   <td><p>修改</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1295,7 +1296,7 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>responsecodename</p></td> 
+   <td><p>响应代码名称</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1307,7 +1308,7 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>regangobjectid</p></td> 
+   <td><p>regardingobjectid</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1368,19 +1369,19 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>成员类型</p></td> 
+   <td><p>membertype</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>创建</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>已修改</p></td> 
+   <td><p>修改</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1423,13 +1424,13 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>创建</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>已修改</p></td> 
+   <td><p>修改</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1437,7 +1438,7 @@ ht-degree: 17%
  </tbody> 
 </table>
 
-**电话呼叫**
+**电话**
 
 <table> 
  <tbody> 
@@ -1454,25 +1455,25 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>activitypecode</p></td> 
+   <td><p>activitytypecode</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>activitypecodename</p></td> 
+   <td><p>activitytypecodename</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>createdon</p></td> 
+   <td><p>创建</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>已修改</p></td> 
+   <td><p>修改</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1484,7 +1485,7 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>regangobjectid</p></td> 
+   <td><p>regardingobjectid</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1504,4 +1505,4 @@ ht-degree: 17%
  </tbody> 
 </table>
 
-[] =仅V1旧版客户
+[] =仅限V1旧版客户

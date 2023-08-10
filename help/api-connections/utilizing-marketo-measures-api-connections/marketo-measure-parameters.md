@@ -1,9 +1,10 @@
 ---
 unique-page-id: 18874608
-description: ”[!DNL Marketo Measure] 参数 —  [!DNL Marketo Measure]  — 产品文档”
-title: ”[!DNL Marketo Measure] 参数”
+description: '"[!DNL Marketo Measure] 参数 —  [!DNL Marketo Measure]  — 产品文档”'
+title: '"[!DNL Marketo Measure] 参数”'
 exl-id: d66b9864-0d7e-455a-ae20-cca555f4d8c8
-source-git-commit: 7ee55e3493558880408e76a4572667348ffedd8e
+feature: APIs, Integration, UTM Parameters
+source-git-commit: 3bad77a72c0dea6caf0daadbb594f10f791af715
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -14,13 +15,13 @@ ht-degree: 0%
 
 ## [!DNL Marketo Measure] 参数说明 {#marketo-measure-parameters-explained}
 
-要进一步了解UTM的使用， [!DNL Marketo Measure] 将自定义参数附加到中的广告 [!DNL Google] adwords、Bing Ads和 [!DNL Facebook] 广告。 [!DNL Marketo Measure] 与这些平台集成以自动化大部分设置过程。 如果您选择使用自动标记， [!DNL Marketo Measure] 会自动将其参数附加到广告的URL。 [!DNL Marketo Measure] 还会自动从平台下载营销成本，并将其加载到 [!DNL Marketo Measure] 应用程序。
+要进一步了解UTM的使用， [!DNL Marketo Measure] 将自定义参数附加到中的广告 [!DNL Google] adwords、Bing Ads和 [!DNL Facebook] 广告。 [!DNL Marketo Measure] 与这些平台集成以自动化大部分设置过程。 如果您选择使用自动标记， [!DNL Marketo Measure] 会自动将其参数附加到广告的URL。 [!DNL Marketo Measure] 系统还会自动从平台下载营销成本，并将其加载到 [!DNL Marketo Measure] 应用程序。
 
 不带参数的URL示例：
 
 `http://adobe.com/landing-page?myParam=foo`
 
-具有的URL示例 [!DNL Marketo Measure] 参数：
+URL示例 [!DNL Marketo Measure] 参数：
 
 `http://adobe.com/landing-page?myParam=foo&_bt={creative}&_bk={keyword}&_bm={matchtype}&_bn={network}&_bg={adgroupid}`
 
@@ -28,7 +29,7 @@ ht-degree: 0%
 
 * `_bk={keyword}`
    * 表示人员在搜索引擎中使用的关键词。
-   * 它类似于UTM项参数。
+   * 它类似于UTM术语参数。
 
 * `_bt={creative}`
    * 表示创作ID或名称。
@@ -36,7 +37,7 @@ ht-degree: 0%
 
 * `_bm={matchtype}`
    * 表示关键字的匹配程度。
-   * 关键词匹配类型有助于控制哪些搜索会触发您的广告。 例如，您可以使用广泛匹配将您的广告显示给广泛的受众，或者使用完全匹配对特定客户组进行细分。
+   * 关键词匹配类型有助于控制哪些搜索会触发您的广告。 例如，您可以使用广泛匹配将您的广告显示给广泛的受众，或者使用完全匹配来关注特定的客户组。
    * 三种匹配类型是：广泛、模糊和精确。
 
 >[!TIP]
@@ -45,7 +46,7 @@ ht-degree: 0%
 
 * `_bn={network}`
    * 表示广告网络类型 —  [显示或搜索](https://support.google.com/adwords/answer/1752334?hl=en){target="_blank"}.
-   * 这类似于UTM源参数。
+   * 这与UTM源参数类似。
 
 * `_bg={adgroupID}`
    * 表示广告所属的广告组的ID

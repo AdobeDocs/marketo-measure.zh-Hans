@@ -1,9 +1,10 @@
 ---
 unique-page-id: 42762729
-description: '"[!DNL Marketo Engage] 程序集成 —  [!DNL Marketo Measure]  — 产品文档”'
+description: '"[!DNL Marketo Engage] 项目集成 —  [!DNL Marketo Measure]  — 产品文档”'
 title: '"[!DNL Marketo Engage] 程序集成”'
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
-source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
+feature: Integration
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Marketo Engage] 程序集成 {#marketo-engage-programs-integration}
 
-通过 [!DNL Marketo Measure] 集成 [!DNL Marketo Engage] 计划之后，我们的客户可以开始从Marketo计划成员资格中为归因跟踪创建接触点。 此功能允许营销人员开始跟踪电子邮件或参与计划（否则，将不会看到）中的项目成员资格 [!DNL Marketo Measure] javascript和应在归因历程中进行测量。
+通过 [!DNL Marketo Measure] 与集成 [!DNL Marketo Engage] 通过项目，我们的客户可以开始从Marketo项目成员资格中为归因跟踪创建接触点。 此功能允许营销人员从电子邮件或参与项目中开始跟踪在其他情况下不被看到的项目成员资格。 [!DNL Marketo Measure] javascript和应在归因历程中测量。
 
 ## 可用性 {#availability}
 
@@ -22,35 +23,35 @@ ht-degree: 0%
 
 * 生产Marketo实例
 * Production Salesforce或Microsoft Dynamics实例
-* 任何已付 [!DNL Marketo Measure] 订阅
-* Marketo已启用人员同步([!DNL Marketo Measure] 设置)
-* Marketo程序启用([!DNL Marketo Measure] 设置)
+* 任何付费 [!DNL Marketo Measure] 订阅
+* Marketo人员同步已启用([!DNL Marketo Measure] 设置)
+* 已启用Marketo程序([!DNL Marketo Measure] 设置)
 
 ## 设置 {#setup}
 
 **规则**
 
-1. 要开始在Marketo程序中设置规则，请导航至 **[!UICONTROL My Account]** > **[!UICONTROL Settings]** > **[!UICONTROL Programs]**. 单击 **+** 图标以开始创建您的第一个规则。
+1. 要开始设置Marketo程序中的规则，请导航至 **[!UICONTROL My Account]** > **[!UICONTROL Settings]** > **[!UICONTROL Programs]**. 单击 **+** 图标开始创建您的第一条规则。
 
    ![](assets/one.png)
 
    ![](assets/two.png)
 
-1. 如果有助于跟踪规则，您可以选择为规则设置名称。 您将首先从项目群和项目群成员资格字段列表中选择字段以定义规则。 通过选择要检查的运算符和预期值，继续构建规则。
+1. 如果有助于跟踪规则，您可以选择为规则设置名称。 首先，从计划和计划成员资格字段列表中选择要定义规则的字段。 通过选择要检查的运算符和预期值继续构建规则。
 
    ![](assets/three.png)
 
-1. 在同一框内添加其他语句以在规则中设置“和”标准，或单击框外的+图标以设置“或”语句。
+1. 在同一框内添加其他语句以在规则中设置“and”标准，或者单击框外的+图标以设置“or”语句。
 
    ![](assets/four.png)
 
-1. 选择应使用哪个日期或日期/时间字段来映射到接触点日期。 要查看Marketo中可用的值列表，请输入花括号 `{` 我们将显示可用字段。
+1. 选择应该使用哪个日期或日期/时间字段来映射到接触点日期。 要查看Marketo中可用的值列表，请输入大括号 `{` 将显示可用的字段。
 
    ![](assets/five.png)
 
    >[!NOTE]
    >
-   >如果您的规则想要捕获活动日期或项目成员达到特定状态的日期，您将需要使用 [!DNL Marketo Engage] 活动集成，并为“按进度更改状态”活动类型设置规则。
+   >如果您的规则需要捕获活动日期，或项目群成员达到特定状态的日期，您需要使用 [!DNL Marketo Engage] 活动集成，并为“更改进展中的状态”活动类型设置规则。
 
    ![](assets/six.png)
 
@@ -58,33 +59,33 @@ ht-degree: 0%
 
 ## 测试 {#test}
 
-创建某些规则后，您可能需要对其进行测试以验证语句是否与“程序”匹配。
+创建一些规则后，您可能需要对其进行测试，以验证您的语句是否与程序匹配。
 
 1. 要运行测试，请单击 **[!UICONTROL TEST]** 按钮，如下所示。
 
    ![](assets/seven.png)
 
-1. 此时将显示一个模式窗口，您可以在该窗口中输入来自Marketo的项目ID。
+1. 此时将显示一个模式窗口，您可以在其中从Marketo输入项目ID。
 
    ![](assets/eight.png)
 
-   在输入ID并单击 [!UICONTROL Test] 按钮，我们的规则引擎将检查每个规则并确定程序是否符合任何规则。 在以下示例中，您可以看到名为 [!DNL Marketo Measure] Ebook有5个项目群成员，并且因所显示的规则而符合条件。
+   输入ID并单击 [!UICONTROL Test] 按钮，我们的规则引擎将检查每个规则，并确定程序是否符合任何规则。 在下面的示例中，您可以看到名为的程序1002 [!DNL Marketo Measure] E-book具有5个计划成员，并且由于显示的规则而符合条件。
 
-   规则以5000个成员的样本大小运行。 如果您的程序包含的成员超过5000个，则我们可能不会检查所有成员的兼容性。 此工具仅用于检查规则是否正确构建。
+   规则在样本大小为5000个成员时运行。 如果您的项目包含5000个以上的成员，我们可能不会检查所有成员的兼容性。 此工具仅用作检查规则是否正确构建的一种方法。
 
    ![](assets/nine.png)
 
-   您可以单击成员计数，以查看符合该程序条件的Marketo人员ID列表。
+   您可以单击成员计数以查看符合计划条件的Marketo人员ID列表。
 
    ![](assets/ten.png)
 
 ## 渠道映射 {#channel-mapping}
 
-从Marketo计划渠道列表中，您需要将值映射到 [!DNL Marketo Measure] 您在“设置”中创建的自定义营销渠道。 这些项目生成的任何接触点都将继承您在此处选择的渠道名称和子渠道名称。
+从Marketo项目渠道列表中，您将值映射到 [!DNL Marketo Measure] 已在“设置”中创建的自定义营销渠道。 这些程序生成的任何接触点都将继承您在此处选择的渠道和子渠道名称。
 
-1. 首先，导航到 **[!UICONTROL My Account]** > **[!UICONTROL Settings]** > **[!UICONTROL Offline Channels]**.
+1. 首先导航到 **[!UICONTROL My Account]** > **[!UICONTROL Settings]** > **[!UICONTROL Offline Channels]**.
 
-1. 在顶部，您将可以选择映射到CRM促销活动类型，然后在下方，您将看到Marketo计划渠道的选项。
+1. 在上方，您可以选择映射到您的CRM Campaign类型，然后在下方，您会看到Marketo项目渠道的选项。
 
 1. 首先选择应映射到值的渠道，然后（可选）选择子渠道。 完成后，单击 **[!UICONTROL Save]** 在底部。
 
@@ -92,7 +93,7 @@ ht-degree: 0%
 
 ## 计划成本 {#program-costs}
 
-通过Marketo计划的数据导入，成本会自动从期间成本中下载，而Marketo中报告的成本则会在分配的整个月份进行分配。 例如，如果在2021年1月报告了$1000 ，则$1000将在31天内进行拆分。 成本可在 [!DNL Marketo Measure Discover].
+通过Marketo程序的数据导入，成本将自动从期间成本中下载，Marketo中报告的成本将在整个分配的月份中分发。 例如，如果为2021年1月报告$1000，则将$1000拆分为31天。 成本可在以下位置找到： [!DNL Marketo Measure Discover].
 
 ## 工作原理 {#how-it-works}
 
@@ -125,55 +126,55 @@ ht-degree: 0%
 
 | biz_campaign_members | Marketo |
 |---|---|
-| ID | &quot;MarketoProgramMembership&quot;_ProgramId_Lead Id |
-| MODIFIED_DATE | updatedAt |
-| CREATED_DATE | membershDate |
-| LEAD_ID | Id（列表成员资格） |
-| LEAD_EMAIL | 电子邮件（列表成员资格） |
-| 状态 | progressionStatus |
-| HAS_RESPONDED | 已实现状态 |
-| CAMPAIGN_NAME | programName |
+| ID | “MarketoProgramMembership”_ProgramId_Lead Id |
+| MODIFIED_DATE | 更新时间 |
+| 创建日期 | membershipDate |
+| 商机ID | Id（列表成员资格） |
+| 潜在客户电子邮件 | 电子邮件（列表成员资格） |
+| 状态 | progressionstatus |
+| HAS_RESPONDED | 到达状态 |
+| 营销活动名称 | 项目名称 |
 | CAMPAIGN_ID | programId |
-| CAMPAIGN_TYPE | 频道 |
+| 营销活动类型 | 渠道 |
 
 ## Cookie映射 {#cookie-mapping}
 
-由于 [!DNL Marketo Measure] 与Marketo集成， [!DNL Marketo Measure] Cookie ID现在也已映射并与 [!DNL Marketo Munchkin Id]. 这有助于缩小将匿名首次接触归因于Web会话的空白，而不是将FT和LC接触归因于Marketo活动。 想象一下这种情景：
+由于 [!DNL Marketo Measure] 与Marketo集成， [!DNL Marketo Measure] Cookie ID现在也已映射并与 [!DNL Marketo Munchkin Id]. 这有助于弥合将匿名首次接触归因于Web会话的差距，而不是将FT和LC接触都归因于Marketo活动。 设想一下这种情形：
 
-在 [!DNL Facebook] 广告，登陆wayneenterprises.com，在那里他得到Cookie [!DNL Marketo Measure] ID 123和 [!DNL Marketo Munchkin Id] 456。 不进行表单填写。
+标记对的点击次数 [!DNL Facebook] 然后登陆到wayneenterprises.com，在那里他被 [!DNL Marketo Measure] Id 123和 [!DNL Marketo Munchkin Id] 456。 没有表单填写。
 
-韦恩企业营销团队向特定目标线索发送电子邮件，其中一个是 `mark@email.com`.
+Wayne Enterprises营销团队会向特定的目标潜在客户发送电子邮件爆炸邮件，其中一个潜在客户是 `mark@email.com`.
 
-`mark@email.com` 接收电子邮件并点进，并登陆wayneenterprises.com。 这将变为 `mark@email.com's` 第二次访问 `wayneenterprise.com` 使用相同的Cookie ID，但没有表单填充，因此 [!DNL Marketo Measure]，则仍然是匿名访客。
+`mark@email.com` 接收电子邮件并通过单击并登录到wayneenterprises.com。 它变为 `mark@email.com's` 第二次访问 `wayneenterprise.com` 相同的Cookie ID，但表单没有填写，因此 [!DNL Marketo Measure]，则他们仍为匿名访客。
 
-Wayne Enterprises营销团队创建Marketo活动规则，为“点击电子邮件”活动类型生成接触点。
+Wayne Enterprises营销团队创建一个Marketo活动规则，以生成“点击电子邮件”活动类型的接触点。
 
-今天的实施将为 `mark@email.com` 中，从Marketo活动的“单击电子邮件”活动类型。
+今天的实施将创建一个FT和LC接触点，用于 `mark@email.com` 从“Click Email”活动类型访问Marketo活动。
 
-通过这项Cookie映射增强功能，英国《金融时报》将回访并计入 [!DNL Facebook] 而LC会被记入电子邮件。
+通过这个Cookie映射增强功能，FT将回头计入 [!DNL Facebook] 广告和LC将记入电子邮件的贷方。
 
 >[!NOTE]
 >
->使用Cookie映射行为，您可能会发现来自Web访问的某些LC接触点。 可能在Marketo中显示一个潜在客户，但没有任何关联的活动，然后 [!DNL Marketo Measure] 下载了该潜在客户，将其与关联的cookie匹配，然后跟踪到最近的web会话，即使没有创建该潜在客户的表单活动也是如此。
+>通过Cookie映射行为，您可能会找到一些来自Web访问的LC接触点。 Marketo中显示的商机可能没有任何相关活动，那么 [!DNL Marketo Measure] 下载该商机，将其与关联的Cookie相匹配，然后将其跟踪到最近的Web会话，即使不存在创建该商机的表单活动也是如此。
 
 ## 常见问题解答 {#faq}
 
-**如何将接触点日期设置为晋升日期或项目成员发生状态更改的日期？**
+**如何将接触点日期设置为进展日期，或项目群成员发生状态更改的日期？**
 
-如果您的规则想要捕获活动日期或项目成员达到特定状态的日期，您将需要使用 [!DNL Marketo Engage] 活动集成，并为“按进度更改状态”活动类型设置规则。 否则， [!DNL Marketo Engage] “项目集成”仅提供“会员资格日期”，即使存在多种状态，也是将Marketo人员纳入项目的第一个日期。
+如果您的规则需要捕获活动日期，或项目群成员达到特定状态的日期，您需要使用 [!DNL Marketo Engage] 活动集成，并为“更改进展中的状态”活动类型设置规则。 否则， [!DNL Marketo Engage] 项目集成仅提供成员资格日期，这是将Marketo人员引入项目的第一个日期，即使存在多个状态也是如此。
 
-**我是否可以获取接触点日期的日期选项的选取列表？**
+**我能否获取接触点日期的日期选项选择列表？**
 
 要触发自动完成，请首先输入花括号 `{` 在文本字段中，将显示可用字段。
 
-**如果我创建Marketo计划规则并且还具有CRM Campaign规则，它们是否会计数两次？**
+**如果我创建Marketo项目规则，并且还具有CRM Campaign规则，那么这些规则是否会计算两次？**
 
-这取决于您的规则定义，但可能是。 您将需要评估规则集，以便您没有涵盖项目和营销策划的规则，因为我们不会删除重复项或检测是否存在类似的成员资格。 一种可能的解决方案是，如果您希望Marketo成为唯一的真相来源，请将您的促销活动规则复制到项目中，然后删除促销活动规则。 另一个选项是在规则中添加“CreatedOn”或“CreatedDate”标准，以便特定日期之前的规则将使用Campaign规则，而特定日期之后的规则将使用项目规则。 有很多解决方法，但需要一些规划和协调。
+这取决于您的规则定义，但可能会。 您将需要评估规则集，以便没有涵盖项目和营销策划的规则，因为我们不会删除重复项或检测类似的成员资格。 一个可能的解决方案是，如果您希望Marketo成为您的单一真实来源，则将您的Campaign规则复制到程序，然后删除Campaign规则。 另一个选项是在规则中添加“CreatedOn”或“CreatedDate”标准，以便特定日期之前的规则将使用Campaign规则，而特定日期之后的规则将使用项目规则。 有很多解决方法，但需要一些规划和协调。
 
-**Marketo的项目成员资格自定义字段是否可用于定义？**
+**Marketo的计划成员资格自定义字段是否可供定义？**
 
-由于技术限制，目前无法支持计划成员资格自定义字段。 这些字段通过其他Marketo API可用后，将会向我们显示并可供您使用。
+由于技术限制，我们目前无法支持计划会员资格自定义字段。 这些字段一旦可通过其他Marketo API使用，我们将看到它们并供您使用。
 
-**如何知道是使用项目还是活动？**
+**如何知道使用项目群还是活动？**
 
-的 [!DNL Marketo Engage] 程序集成是一种根据人员是否是程序的程序成员来生成触点的简单方法。 如果您有兴趣根据人员更改为特定项目状态的时间来定义规则，则 [!DNL Marketo Engage] 活动集成将是您需要的设置，特别是“按进度更改状态”活动类型。
+此 [!DNL Marketo Engage] 项目集成是一种根据人员是否为项目群成员来生成接触点的简单方法。 如果您有兴趣根据人员更改为特定项目群状态的时间来定义规则， [!DNL Marketo Engage] 活动集成将是您想要的设置，尤其是“更改进展中的状态”活动类型。

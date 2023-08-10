@@ -1,37 +1,38 @@
 ---
 unique-page-id: 18874634
-description: 在我的报表中复制记录 —  [!DNL Marketo Measure]  — 产品文档
-title: 在我的报表中复制记录
+description: 我的报告中的重复记录 —  [!DNL Marketo Measure]  — 产品文档
+title: 我的报告中的重复记录
 exl-id: 4ee42371-5b67-4c69-9b49-3249f33614d0
-source-git-commit: f13e55f009f33140ff36523212ed8b9ed5449a4d
+feature: Reporting
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
 
 ---
 
-# 在我的报表中复制记录 {#duplicate-records-in-my-report}
+# 我的报告中的重复记录 {#duplicate-records-in-my-report}
 
 >[!NOTE]
 >
->您可能会看到指定“[!DNL Marketo Measure]“ ”，但仍请参阅“[!DNL Bizible]”。 我们正在努力更新该版本，并且该品牌重命名将很快地反映在您的CRM中。
+>您可能会看到说明“[!DNL Marketo Measure]”已添加到我们的文档中，但仍会看到“[!DNL Bizible]”（在您的CRM中）。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
-当你深入到 [!DNL Marketo Measure] 报表 [!DNL Salesforce]，则可以开始在报表中查找“重复”记录。 您在审阅时可能会体验到这种感觉 [!DNL Marketo Measure] 现成报表。
+当您潜入 [!DNL Marketo Measure] 报告位置 [!DNL Salesforce]，您可能会开始在报表中找到“重复”记录。 当您回顾时，您可能会遇到这种感觉 [!DNL Marketo Measure] 现成的报告。
 
-在与买方接触点对象或买方归因接触点对象进行报告时，请务必了解，您不再报告潜在客户、联系人或商机的计数，而是将报告与这些标准对象（潜在客户、联系人、商机）关联的买方接触点或买方归因接触点的数量。
+在使用“采购员接触点”对象或“采购员归因接触点”对象进行报告时，请务必了解一点，您不再报告销售线索、联系人或业务机会的数量，而是报告与这些标准对象（销售线索、联系人、业务机会）关联的采购员接触点或采购员归因接触点的数量。
 
-让我们以下报表为例：
+让我们以以下报表为例：
 
-这是 **与买方接触点的联系人** 报表。 同样，这意味着我们正在查看与单个联系人关联的接触点计数。
+这是 **与采购员接触点进行联系** 报告。 同样，这意味着我们查看的是与单个联系人关联的接触点计数。
 
 ![](assets/1.gif)
 
-如您所见，在报表中似乎有三个詹姆斯·威廉斯的联系人，因此您可能会想：“重复项！”
+如您所见，报告中似乎有三个詹姆斯·威廉姆斯的联系人，因此您可能会想，“重复！”
 
-但是，此报表显示与James相关的接触点数量。 在报表中，您可以看到James具有单个FT（首次联系）、单个LC、表单（潜在客户创建联系）和PostLC接触点（在LC接触点后发生的表单提交）。
+但是，此报表显示了与James相关的接触点数量。 在报表中，您可以看到James具有单个FT（首次接触）、单个LC、Form（潜在客户创建接触）和PostLC接触点（在LC接触点之后发生的表单提交）。
 
-如果您想要了解“联系人计数”，则可以使用“计数 — 首次联系”、“计数 — 潜在客户创建联系”或“计数 — U型”字段了解有多少个联系人进行了营销交互。
+如果要了解“联系人计数”，则可以使用“计数 — 首次联系”、“计数潜在客户创建联系”或“计数 — U型”字段了解有多少联系人进行了营销互动。
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] 大学：股票SFDC报表](https://universityonline.marketo.com/courses/bizible-fundamentals-bizible-102/#/page/5c5cb68dfb384d0c9fb96cc4)
+>[[!DNL Marketo Measure] 大学：Stock SFDC报表](https://universityonline.marketo.com/courses/bizible-fundamentals-bizible-102/#/page/5c5cb68dfb384d0c9fb96cc4)

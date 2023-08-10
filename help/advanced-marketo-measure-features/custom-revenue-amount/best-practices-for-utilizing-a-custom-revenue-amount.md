@@ -1,56 +1,56 @@
 ---
-description: 利用自定义收入金额的最佳实践 —  [!DNL Marketo Measure]  — 产品文档
-title: 利用自定义收入金额的最佳实践
+description: 利用自定义收入额的最佳实践 —  [!DNL Marketo Measure]  — 产品文档
+title: 利用自定义收入额的最佳实践
 exl-id: 553bd75a-512a-4733-a24b-8112eb420afc
-source-git-commit: b59c79236d3e324e8c8b07c5a6d68bd8176fc8a9
+feature: Custom Revenue Amount
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
 
 ---
 
-# 利用自定义收入金额的最佳实践 {#best-practices-for-utilizing-a-custom-revenue-amount}
+# 利用自定义收入额的最佳实践 {#best-practices-for-utilizing-a-custom-revenue-amount}
 
 ## 概述 {#overview}
 
-的核心功能 [!DNL Marketo Measure] 是能够在整个购买者历程中将收入信用分配给营销接触点。 准确的收入归因关键在于 [!DNL Marketo Measure] 参考Opportunity上正确的收入额，而Opportunity又通过各种归因模型在营销接触点中分配。
+的核心功能 [!DNL Marketo Measure] 就是能够将收入点数分配给买方历程中的营销接触点。 准确收入归因的关键是 [!DNL Marketo Measure] 引用Opportunity的正确收入金额，该收入金额又通过各种归因模型分发到各个营销接触点。
 
-除非在实施期间另有指定，否则您的 [!DNL Marketo Measure] 实例将设置为引用收入归因的标准机会金额（SFDC默认值）。 但是，对于许多人 [!DNL Marketo Measure] 帐户中，此字段不反映Opportunity的准确收入额。 在这些情况下， [!DNL Marketo Measure] 提供了为 [!DNL Marketo Measure] 在归因接触点(BAT)中引用和分发。
+除非在实施期间另有指定，否则 [!DNL Marketo Measure] 实例将设置为引用收入归因的标准机会金额（SFDC默认值）。 然而，对于许多人来说 [!DNL Marketo Measure] accounts时，此字段不反映机会的准确收入金额。 在这些情况下， [!DNL Marketo Measure] 提供设置自定义收入金额的功能 [!DNL Marketo Measure] 在归因接触点(BAT)之间引用和分发。
 
 ## 最佳实践 {#best-practice}
 
-在设置自定义收入额时，请牢记以下最佳实践，以确保您的 [!DNL Marketo Measure] 归因数据准确一致！
+在设置自定义收入金额时，请牢记以下最佳实践，以确保 [!DNL Marketo Measure] 归因数据是准确且一致的！
 
-请牢记以下事项：
+切记事项：
 
-* 选择准确且用于所有Opportunity的收入字段
-   * 建议使用ARR或总合同值
-* 请勿使用公式字段
-* 如果您使用自定义收入金额进行货币换算，则 [!UICONTROL Marketo Measure Multiple Currencies] 首选方法是功能。
-   * 的 [!DNL Marketo Measure] 多币种功能引用了 [!DNL Salesforce] 以最好地确保货币换算之间保持一致。 这允许您继续利用标准“金额”（SFDC默认值），或与 [!DNL Salesforce] 转化率。
-* 如果您更新所需的“金额”字段 [!DNL Marketo Measure] 要引用，请使用Data Loader更新以往的Opportunity ，以确保收入数据一致，并通过工作流填充相应的字段
+* 选择适用于所有业务机会的准确且已使用的收入字段
+   * 建议的ARR或合同总值
+* 不使用公式字段
+* 如果您使用自定义收入金额进行货币转换，则 [!UICONTROL Marketo Measure Multiple Currencies] 功能是首选方法。
+   * 此 [!DNL Marketo Measure] 多货币功能引用中建立的兑换率。 [!DNL Salesforce] 以最好地确保货币转换之间的一致性。 这允许您继续使用标准“金额”（SFDC默认值），或任何其他与 [!DNL Salesforce] 转化率。
+* 如果您更新了所需的金额字段 [!DNL Marketo Measure] 要参考，请使用数据加载器更新过去的业务机会，以确保您的收入数据一致，并通过工作流填充正确的字段
 
-## 维护最佳实践 {#best-practice-for-maintenance}
+## 维护的最佳实践 {#best-practice-for-maintenance}
 
-每年审核收入额设置将确保归因数据准确无误，并与贵组织的其他收入报表保持一致。
+每年审查收入额设置可确保您的归因数据准确且与组织其余收入报表保持一致。
 
-如果您使用自定义收入额，请按如下方式检查收入设置。
+如果您使用自定义收入金额，请按照以下方式检查收入设置。
 
-* 在 [!DNL Marketo Measure] 帐户，转到&#39;[!UICONTROL Opportunities]“部分”
-* 识别 [!UICONTROL Custom Opportunity Amount] 字段，给 [!UICONTROL custom revenue amount API] 字段
+* 在您的 [!DNL Marketo Measure] 帐户，转到&#39;[!UICONTROL Opportunities]CRM下的&#39;部分
+* 识别 [!UICONTROL Custom Opportunity Amount] 字段，此处为您的 [!UICONTROL custom revenue amount API] 字段应列出
 * 确认这仍然是正确的字段
-* 另请 [!DNL Salesforce] 管理员确认 [!DNL Salesforce] 仍在运行
+* 另外，请 [!DNL Salesforce] 管理员确认中的自定义收入额工作流 [!DNL Salesforce] 仍在运行
 
-除每年审核外，某些组织更改可能表示需要审核收入额设置……
+除了年度审查外，某些组织变化可能表明需要审查收入额设置……
 
-* 营销团队的营业额
-* 对“自定义收入”字段的更改
-* 组织对收入报告方式的更改
+* 您的营销团队中的人员调整
+* 对自定义收入字段的更改
+* 组织对收入报告方式所做的更改
 
 >[!MORELIKETHIS]
 >
 >* [使用自定义收入金额字段](/help/advanced-marketo-measure-features/custom-revenue-amount/using-a-custom-revenue-amount-field.md)
 >* [使用数据加载器更新自定义金额字段](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md)
->* [多货币概述](/help/advanced-marketo-measure-features/multi-currency/overview.md)
+>* [多货币概览](/help/advanced-marketo-measure-features/multi-currency/overview.md)
 >* [多货币设置](/help/advanced-marketo-measure-features/multi-currency/settings.md)
-

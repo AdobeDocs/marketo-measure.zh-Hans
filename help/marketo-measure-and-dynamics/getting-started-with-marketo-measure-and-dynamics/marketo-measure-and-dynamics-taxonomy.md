@@ -1,8 +1,9 @@
 ---
-description: '"[!DNL Marketo Measure] 和动态分类 —  [!DNL Marketo Measure]  — 产品文档”'
+description: '"[!DNL Marketo Measure] 和Dynamics分类 —  [!DNL Marketo Measure]  — 产品文档”'
 title: '"[!DNL Marketo Measure] 和动态分类”'
 exl-id: 5d211710-3937-4d86-a570-8115e62b934f
-source-git-commit: 54337a0a65b79d80ebeae6531f5e92f4f48721a7
+feature: Microsoft Dynamics
+source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
 workflow-type: tm+mt
 source-wordcount: '27'
 ht-degree: 0%
@@ -11,6 +12,6 @@ ht-degree: 0%
 
 # [!DNL Marketo Measure] 和动态分类 {#marketo-measure-and-dynamics-taxonomy}
 
-下面是一个流程图，它表示 [!DNL Marketo Measure] 自定义对象与Dynamics标准对象相关。<p>
+以下是一个流程图，它代表 [!DNL Marketo Measure] 自定义对象与Dynamics Standard对象相关。<p>
 
 ![](assets/bizible-and-dynamics-taxonomy-1.png)
