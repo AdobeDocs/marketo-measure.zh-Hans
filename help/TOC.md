@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: “[!DNL Marketo Measure] 指南”
 user-guide-description: '"[!DNL Marketo Measure] 可让营销人员深入了解哪些营销活动在为公司增加收入方面最有效。”'
-source-git-commit: faa04b417c5f0512d294bf2483aef3061b10d621
+source-git-commit: e4852d6240a64b4a1a5c979a7528485623c68eb0
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '773'
 ht-degree: 1%
 
 ---
@@ -200,10 +200,10 @@ ht-degree: 1%
       + [Salesforce记录存储大小](marketo-measure-salesforce-reporting/additional-functionality/salesforce-record-storage-sizes.md)
       + [合并潜在客户的最佳实践](marketo-measure-salesforce-reporting/additional-functionality/best-practices-for-merging-leads.md)
       + [启用该权限以编辑已转换的潜在客户](marketo-measure-salesforce-reporting/additional-functionality/enabling-the-permission-to-edit-converted-leads.md)
-+ [!DNL Marketo Measure] data warehouse {#marketo-measure-data-warehouse}
-   + [data warehouse访问权限 — Reader帐户](marketo-measure-data-warehouse/data-warehouse-access-reader-account.md)
-   + [data warehouse访问 — 直接共享](marketo-measure-data-warehouse/data-warehouse-access-direct-share.md)
-   + [data warehouse架构](marketo-measure-data-warehouse/data-warehouse-schema.md)
++ [!DNL Marketo Measure] Data Warehouse {#marketo-measure-data-warehouse}
+   + [Data Warehouse访问权限 — Reader帐户](marketo-measure-data-warehouse/data-warehouse-access-reader-account.md)
+   + [Data Warehouse访问 — 直接共享](marketo-measure-data-warehouse/data-warehouse-access-direct-share.md)
+   + [Data Warehouse架构](marketo-measure-data-warehouse/data-warehouse-schema.md)
 + BI报表模板 {#bi-report-templates}
    + [[!DNL Marketo Measure] 报表模板 — Power BI](bi-report-templates/marketo-measure-report-template-power-bi.md)
    + [[!DNL Marketo Measure] 报表模板 — 表格](bi-report-templates/marketo-measure-report-template-tableau.md)
@@ -225,5 +225,6 @@ ht-degree: 1%
       + [隐私请求](miscellaneous/other-related-resources/privacy-requests.md)
       + [移除 [!DNL Marketo Measure] 从Google Analytics中的登陆页面URL跟踪参数](miscellaneous/other-related-resources/remove-marketo-measure-tracking-parameters-from-the-landing-page-url-in-google-analytics.md)
       + [转换到 [!DNL Marketo Measure] 从完整圆形](miscellaneous/other-related-resources/transitioning-to-marketo-measure-from-full-circle.md)
+   + [测试](miscellaneous/test.md)
 + 发行说明 {#release-notes}
    + [最新发行说明](release-notes/current.md)
