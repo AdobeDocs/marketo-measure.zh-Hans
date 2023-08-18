@@ -4,10 +4,10 @@ title: 已归因的收入仪表板
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: fa7b28fd101e6d5013fe59649de379e36f23c6e0
+source-git-commit: f526b904fd3c04691ed784c259cb19fb24a5bd54
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 3%
+source-wordcount: '180'
+ht-degree: 5%
 
 ---
 
@@ -30,8 +30,8 @@ ht-degree: 3%
    <th>过滤器</th>
   </tr>
   <tr>
-    <td>“总收入”拼贴</td>
-    <td>来自CRM的总收入，包括归因收入。</td>
+    <td>已归因的收入拼贴</td>
+    <td>来自具有已记录接触点的“已结束的赢家”机会的总应占收入。</td>
     <td rowspan="6"><li>机会 ID</li>
 <li>机会名称</li>
 <li>机会创建日期</li>
@@ -39,32 +39,32 @@ ht-degree: 3%
 <li>为已关闭(Y/N)</li>
 <li>获胜(Y/N)</li>
 <li>当前阶段</li>
-<li>收入</li></td>
+<li>归因模型</li>
+<li>已归因收入</li>
+<li>已实现收入</li></td>
     <td rowspan="6">关闭日期</td>
-    <td rowspan="6">日期</td>
-  </tr>
-  <tr>
-    <td>“总交易”拼贴</td>
-    <td>CRM中标记为“已结束的获胜”的交易总数。</td>
-  </tr>
-  <tr>
-    <td>已归因的收入拼贴</td>
-    <td>来自具有已记录接触点的“已结束的赢家”机会的总应占收入。</td>
+    <td rowspan="6"><li>日期</li>
+<li>归因模型</li>
+<li>渠道</li>
+<li>子渠道</li>
+<li>营销活动</li>
+<li>区段</li></td>
   </tr>
   <tr>
     <td>归因交易拼贴</td>
     <td>归因商机的“已结束的赢家”交易总数。</td>
   </tr>
   <tr>
-    <td>收入和归因收入图表</td>
-    <td>此并排时间序列条形图通过将总收入与已归因收入并置，提供了归因覆盖率的全面视图。
-    <br/>PICC</td>
+    <td>一段时间内的按渠道划分的归因收入</td>
+    <td>栈叠条形图显示每个季度/月的总归因收入，按关联的渠道分段。
+    <br/><img src="assets/attributed-revenue-dashboard-1.png" width="600"></td>
   </tr>
   <tr>
-    <td>归因覆盖率图表</td>
-    <td>此饼图提供了已归因收入与未归因收入之间的清晰可视化比较。 饼图涵盖了总收入。
-    <br/>
-    PICC</td>
+    <td>已归因的收入表</td>
+    <td>按渠道、子渠道和促销活动分段的总归因收入，以表格和树格式显示。
+    <br/><img src="assets/attributed-revenue-dashboard-2.png" width="600">
+    <br/><img src="assets/attributed-revenue-dashboard-3.png" width="600"></td>
+  </tr>
   </tr>
 </tbody>
 </table>
