@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: “[!DNL Marketo Measure] 指南”
 user-guide-description: '"[!DNL Marketo Measure] 可让营销人员深入了解哪些营销活动在为公司增加收入方面最有效。”'
-source-git-commit: e4852d6240a64b4a1a5c979a7528485623c68eb0
+source-git-commit: f8a37a996afefe78900e57e1eb166cdd50b5347f
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '788'
 ht-degree: 1%
 
 ---
@@ -150,9 +150,15 @@ ht-degree: 1%
       + [常见问题解答（多货币）](advanced-marketo-measure-features/multi-currency/faq-multi-currency.md)
 + [!DNL Marketo Measure] 发现UI {#marketo-measure-discover-ui}
    + 仪表板 {#dashboards}
-      + [同类群组历程功能板文档](marketo-measure-discover-ui/dashboards/cohort-journey-dashboard-documentation.md)
-      + [Passport仪表板文档](marketo-measure-discover-ui/dashboards/passport-dashboard-documentation.md)
-      + [快照功能板文档](marketo-measure-discover-ui/dashboards/snapshot-dashboard-documentation.md)
+      + [了解功能板基础知识](marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md)
+      + [收入概览仪表板](marketo-measure-discover-ui/dashboards/revenue-overview-dashboard.md)
+      + [已归因的收入仪表板](marketo-measure-discover-ui/dashboards/attributed-revenue-dashboard.md)
+      + [ROI仪表板](marketo-measure-discover-ui/dashboards/roi-dashboard.md)
+      + [Passport信息板](marketo-measure-discover-ui/dashboards/passport-dashboard.md)
+   + 旧式功能板 {#legacy-dashboards}
+      + [同类群组历程功能板文档](marketo-measure-discover-ui/legacy-dashboards/cohort-journey-dashboard-documentation.md)
+      + [Passport仪表板文档](marketo-measure-discover-ui/legacy-dashboards/passport-dashboard-documentation.md)
+      + [快照功能板文档](marketo-measure-discover-ui/legacy-dashboards/snapshot-dashboard-documentation.md)
    + 使用 [!DNL Marketo Measure]的报表平台 {#using-marketo-measures-reporting-platform}
       + [常见用例](marketo-measure-discover-ui/using-marketo-measures-reporting-platform/common-use-cases.md)
       + [定义与百科全书](marketo-measure-discover-ui/using-marketo-measures-reporting-platform/definitions-and-encyclopedia.md)
