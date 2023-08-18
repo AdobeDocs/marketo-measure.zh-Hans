@@ -4,7 +4,7 @@ title: 收入概览仪表板
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: 5a5133fbbd4668d33ea9a0f68f38ddac7cabf38c
+source-git-commit: fa7b28fd101e6d5013fe59649de379e36f23c6e0
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 3%
@@ -20,8 +20,8 @@ ht-degree: 3%
 * 我们的营销活动占我们收入的百分比是多少？
 * 我们的营销活动影响了多少百分比的“非赢交易”？
 
-<table>
-<tbody> 
+<table style="table-layout:auto"> 
+<tbody>
   <tr> 
    <th>组件</th> 
    <th>描述</th>
@@ -58,13 +58,13 @@ ht-degree: 3%
   <tr>
     <td>收入和归因收入图表</td>
     <td>此并排时间序列条形图通过将总收入与已归因收入并置，提供了归因覆盖率的全面视图。
-    <br/><img src="assets/revenue-overview-dashboard-1.png"></td>
+    <br/><img src="assets/revenue-overview-dashboard-1.png" width="600"></td>
   </tr>
   <tr>
     <td>归因覆盖率图表</td>
     <td>此饼图提供了已归因收入与未归因收入之间的清晰可视化比较。 饼图涵盖了总收入。
     <br/>
-    <img src="assets/revenue-overview-dashboard-2.png"></td>
+    <img src="assets/revenue-overview-dashboard-2.png" width="600"></td>
   </tr>
 </tbody>
 </table>
