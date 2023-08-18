@@ -4,7 +4,7 @@ title: 收入概览仪表板
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: a90a3c7a8ed7ec83bc50060da8b7ca1e69bd37bd
+source-git-commit: 5a5133fbbd4668d33ea9a0f68f38ddac7cabf38c
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 3%
@@ -46,30 +46,25 @@ ht-degree: 3%
   <tr>
     <td>“总交易”拼贴</td>
     <td>CRM中标记为“已结束的获胜”的交易总数。</td>
-    <td> </td>
   </tr>
   <tr>
     <td>已归因的收入拼贴</td>
     <td>来自具有已记录接触点的“已结束的赢家”机会的总应占收入。</td>
-    <td> </td>
   </tr>
   <tr>
     <td>归因交易拼贴</td>
     <td>归因商机的“已结束的赢家”交易总数。</td>
-    <td> </td>
   </tr>
   <tr>
     <td>收入和归因收入图表</td>
     <td>此并排时间序列条形图通过将总收入与已归因收入并置，提供了归因覆盖率的全面视图。
     <br/><img src="assets/revenue-overview-dashboard-1.png"></td>
-    <td> </td>
   </tr>
   <tr>
     <td>归因覆盖率图表</td>
     <td>此饼图提供了已归因收入与未归因收入之间的清晰可视化比较。 饼图涵盖了总收入。
     <br/>
     <img src="assets/revenue-overview-dashboard-2.png"></td>
-    <td> </td>
   </tr>
 </tbody>
 </table>
