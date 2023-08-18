@@ -1,10 +1,8 @@
 ---
 description: ROI仪表板 —  [!DNL Marketo Measure]  — 产品
 title: ROI仪表板
-hide: true
-hidefromtoc: true
 feature: Reporting
-source-git-commit: f526b904fd3c04691ed784c259cb19fb24a5bd54
+source-git-commit: dc4dd001d319f13ebd1c4ce418acf2faa27cfe81
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 5%
@@ -26,8 +24,8 @@ ROI仪表板为营销人员提供了跨渠道、子渠道和营销活动的投�
  <tr> 
    <th>组件</th> 
    <th>描述</th>
+   <th>日期类型</th>
    <th>穿透钻取字段</th>
-   <th>数据类型</th>
    <th>过滤器</th>
   </tr>
   <tr>
