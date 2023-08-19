@@ -2,9 +2,9 @@
 description: 护照信息板 —  [!DNL Marketo Measure]  — 产品
 title: Passport信息板
 feature: Reporting
-source-git-commit: 436e30c2a4138d780232d6ba9e64456d6277ac9b
+source-git-commit: 73f7d14f94b236b5e078a4c8ff7a1e81d13779ee
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '290'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,15 @@ Passport仪表板为营销人员提供了在指定时间段内各个阶段进行
 <li>开始日期和结束日期均包含。</li>
 <br/><img src="assets/passport-dashboard-1.png" width="600"></td>
     <td rowspan="2">过渡日期</td>
-    <td></td>
+    <td><li>机会ID</li>
+<li>机会名称</li>
+<li>创建日期</li>
+<li>关闭日期</li>
+<li>为已关闭(Y/N)</li>
+<li>获胜(Y/N)</li>
+<li>当前阶段</li>
+<li>过渡日期</li>
+<li>过渡截止日期</li></td>
     <td rowspan="2"><li>日期</li>
 <li>渠道</li>
 <li>子渠道</li>
