@@ -4,70 +4,79 @@ title: 已归因的收入仪表板
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: c6d9471ece2d249b68bcbfa259c328a6ab5e6192
+source-git-commit: e3900c57b68d4806f75639de35948838e9d120de
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 3%
+source-wordcount: '391'
+ht-degree: 0%
 
 ---
 
 # 已归因的收入仪表板 {#attributed-revenue-dashboard}
 
-已归因的收入仪表板从重点的角度提供与您的营销活动直接相关的收入。 深入了解您的营销策略如何有助于达成交易。
+已归因的收入仪表板从重点的角度提供与您的营销活动直接相关的收入。 探索您的营销策略如何有助于达成交易。
 
-讨论区回答的问题：
+>[!NOTE]
+>
+>该仪表板当前处于Beta版。 在此过渡阶段，当前功能板和新功能板都将可供访问。 一旦我们完全过渡并确保实现最佳功能，当前的仪表板将被弃用。
 
-在归因收入方面，哪些渠道、子渠道或营销活动排名最高？
-我们的归因收入总额和归因的已结束交易数是多少？
+**讨论区回答的问题：**
 
-<table style="table-layout:auto"> 
-<tbody>
-  <tr> 
-   <th>组件</th> 
-   <th>描述</th>
-   <th>穿透钻取字段</th>
-   <th>日期类型</th>
-   <th>过滤器</th>
-  </tr>
-  <tr>
-    <td>已归因的收入拼贴</td>
-    <td>来自具有已记录接触点的“已结束的赢家”机会的总应占收入。</td>
-    <td rowspan="6"><li>机会 ID</li>
-<li>机会名称</li>
-<li>机会创建日期</li>
-<li>商机结束日期</li>
-<li>为已关闭(Y/N)</li>
-<li>获胜(Y/N)</li>
-<li>当前阶段</li>
-<li>归因模型</li>
-<li>已归因收入</li>
-<li>已实现收入</li></td>
-    <td rowspan="6">关闭日期</td>
-    <td rowspan="6"><li>日期</li>
-<li>归因模型</li>
-<li>渠道</li>
-<li>子渠道</li>
-<li>营销活动</li>
-<li>区段</li></td>
-  </tr>
-  <tr>
-    <td>归因交易拼贴</td>
-    <td>归因商机的“已结束的赢家”交易总数。</td>
-  </tr>
-  <tr>
-    <td>一段时间内的按渠道划分的归因收入</td>
-    <td>栈叠条形图显示每个季度/月的总归因收入，按关联的渠道分段。
-    <br/><img src="assets/attributed-revenue-dashboard-1.png" width="600"></td>
-  </tr>
-  <tr>
-    <td>已归因的收入表</td>
-    <td>按渠道、子渠道和促销活动分段的总归因收入，以表格和树格式显示。
-    <br/><img src="assets/attributed-revenue-dashboard-2.png" width="600">
-    <br/><img src="assets/attributed-revenue-dashboard-3.png" width="600"></td>
-  </tr>
-  </tr>
-</tbody>
-</table>
+* 在归因收入方面，哪些渠道、子渠道或营销活动排名最高？
+* 我们的归因收入总额和归因的已结束交易数是多少？
+
+## 功能板组件 {#dashboard-components}
+
+### KPI拼贴 {#kpi-tiles}
+
+* **已归因收入**：根据所选归因模型，来自具有在过滤日期期间内关闭的接触点的商机的总收入贡献
+* **已归因的交易**：具有接触点的“成功的已结束”机会数。
+
+### 按渠道随时间变化的归因收入图表 {#attributed-revenue-by-channel-over-time-chart}
+
+栈叠条形图显示按渠道划分的每月/季度/年总归因收入。
+
+* 利用向下钻取和向上钻取功能按月、季度或年对数据进行分类。
+* 将鼠标悬停在条形图区段或条形图之间的空格上可显示详细信息。
+
+**图表回答的问题：**
+
+* 哪些渠道每季度产生的收入贡献最大？
+* 上个月按渠道划分的归因收入明细是什么？
+
+![](assets/attributed-revenue-dashboard-1.png)
+
+### 已归因的收入表 {#attributed-revenue-table}
+
+按渠道、子渠道和促销活动分段的总归因收入，以表格和树格式显示。 单击右上角的按钮可在视图之间切换。
+
+**讨论区回答的问题：**
+
+* 归因收入分配在渠道内不同子渠道之间如何变化？
+* 特定子渠道下的哪些营销活动产生的收入贡献最大？
+
+**表格视图**
+
+* 表格视图提供归因收入分布的清晰和有条理的洞察。 用户可以通过将数据分类为渠道、子渠道和营销活动，快速识别性能模式并确定高效的营销策略。
+* 单击每个渠道旁边的“+”图标以显示按子渠道和促销活动划分的明细。
+
+![](assets/attributed-revenue-dashboard-2.png)
+
+**树视图**
+
+* 树视图支持更具交互性和更细粒度的数据探索，允许营销人员识别其营销工作中的趋势、异常或杰出表现。
+* 单击分支可更深入地了解后续层次结构层。
+
+![](assets/attributed-revenue-dashboard-3.png)
+
+## 筛选器窗格 {#filter-pane}
+
+此仪表板配备了以下设置和过滤器：
+
+* 日期（基于关闭日期）
+* 归因模型
+* 渠道、子渠道
+* 营销活动
+* 区段
 
 >[!MORELIKETHIS]
 >
