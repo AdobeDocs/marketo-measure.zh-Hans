@@ -4,9 +4,9 @@ title: 新增发现功能板指南
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: 511509caaa89d7e71a68f19b4c90b43f44713ae3
+source-git-commit: b75d9c7dae8886646d2df9613634c260d2d7b281
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1069'
 ht-degree: 0%
 
 ---
@@ -503,6 +503,4 @@ ht-degree: 0%
 
 ## 反馈 {#feedback}
 
-我们一直努力为您提供更好的体验，我们非常感谢您就本次最新更新提供反馈。 您的想法将直接影响未来的优化，确保我们的平台始终与您的需求保持一致。
-
-提供有关如何分享其反馈的说明（例如，应用程序内反馈表单、电子邮件等）
+我们一直努力为您提供更好的体验，我们非常感谢您就本次最新更新提供反馈。 您的想法将直接影响未来的优化，确保我们的平台始终与您的需求保持一致。 请留意Marketo Measure中的反馈表。
