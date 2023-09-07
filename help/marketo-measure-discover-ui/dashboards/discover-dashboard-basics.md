@@ -4,9 +4,9 @@ title: 了解功能板基础知识
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: c77f880a2e88fa60ae685b61d9ae335308e78e10
+source-git-commit: db435a669ca9a24a0661191bef9e14a8f8c78eb6
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -30,23 +30,23 @@ ht-degree: 0%
    <th>描述</th>
   </tr> 
   <tr> 
-   <td>筛选器切换按钮</td>
+   <td><b>筛选器切换按钮</b></td>
    <td>打开或关闭筛选器窗格。
    <p><img src="assets/discover-dashboard-basics-1.png"></td>
   </tr>
   <tr> 
-   <td>重置按钮</td>
-   <td>将筛选器返回到默认设置。
+   <td><b>搜索栏</b></td>
+   <td>使用筛选器窗格顶部的搜索来搜索特定筛选器。 每个过滤器都有自己的搜索栏。
    <p><img src="assets/discover-dashboard-basics-2.png"></td>
   </tr>
    <tr> 
-   <td>应用按钮</td>
-   <td>单击以确认并在功能板上实施您的筛选器更改。
+   <td><b>清除筛选器按钮</b></td>
+   <td>要清除筛选器，请单击每个筛选器右上角的橡皮擦图标。
    <p><img src="assets/discover-dashboard-basics-3.png"></td>
   </tr>
   <tr> 
-   <td>“区段”按钮</td>
-   <td>在具有区段过滤器的功能板上，单击过滤器窗格底部的区段按钮以转换为区段。
+   <td><b>应用按钮</b></td>
+   <td>单击以确认并在功能板上实施您的筛选器更改。
    <p><img src="assets/discover-dashboard-basics-3a.png"></td>
   </tr>
  </tbody> 
