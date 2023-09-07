@@ -4,9 +4,9 @@ title: 了解功能板基础知识
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: c6d9471ece2d249b68bcbfa259c328a6ab5e6192
+source-git-commit: c77f880a2e88fa60ae685b61d9ae335308e78e10
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 了解功能板基础知识 {#discover-dashboard-basics}
 
 本文将引导您了解重新设计的界面的基本功能，确保您可以轻松地访问和解读数据。 深入了解过滤器窗格的动态，并揭示增强的报告功能的复杂性，例如钻取功能、交叉过滤和工具提示。
+
+>[!NOTE]
+>
+>该仪表板当前处于Beta版。 在此过渡阶段，当前功能板和新功能板都将可供访问。 一旦我们完全过渡并确保实现最佳功能，当前的仪表板将被弃用。
 
 ## 筛选器窗格 {#filter-pane}
 
@@ -23,26 +27,36 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <th>名称</th> 
-   <th>图标</th>
    <th>描述</th>
   </tr> 
   <tr> 
-   <td>汉堡按钮</td> 
-   <td><img src="assets/discover-dashboard-basics-1.png"></td>
-   <td>打开或关闭筛选器窗格。</td>
+   <td>筛选器切换按钮</td>
+   <td>打开或关闭筛选器窗格。
+   <p><img src="assets/discover-dashboard-basics-1.png"></td>
   </tr>
   <tr> 
-   <td>重置</td> 
-   <td><img src="assets/discover-dashboard-basics-2.png"></td>
-   <td>将筛选器返回到默认设置。</td>
+   <td>重置按钮</td>
+   <td>将筛选器返回到默认设置。
+   <p><img src="assets/discover-dashboard-basics-2.png"></td>
   </tr>
    <tr> 
-   <td>可视化上的筛选器</td> 
-   <td><img src="assets/discover-dashboard-basics-3.png"></td>
-   <td>将光标悬停在可视化的右上角上，然后单击按钮以查看其活动的过滤器。</td>
+   <td>应用按钮</td>
+   <td>单击以确认并在功能板上实施您的筛选器更改。
+   <p><img src="assets/discover-dashboard-basics-3.png"></td>
+  </tr>
+  <tr> 
+   <td>“区段”按钮</td>
+   <td>在具有区段过滤器的功能板上，单击过滤器窗格底部的区段按钮以转换为区段。
+   <p><img src="assets/discover-dashboard-basics-3a.png"></td>
   </tr>
  </tbody> 
 </table>
+
+## 可视化上的筛选器 {#filters-on-visual}
+
+将鼠标悬停在可视化的右上角上，可查看已应用过滤器的只读列表。
+
+![](assets/discover-dashboard-basics-3b.png)
 
 ## 报告功能 {#report-capabilities}
 
@@ -70,21 +84,24 @@ ht-degree: 0%
 
 ### 穿透钻取 {#drill-through}
 
-* 要浏览可视化图表后的数据，请右键单击该可视化元素并选择“穿透钻取”选项。
+要浏览可视化图表后的数据，请右键单击该可视化元素并选择“穿透钻取”选项。
 
-![](assets/discover-dashboard-basics-9.png)
+![](assets/discover-dashboard-basics-9.gif)
 
-* 要导出基础数据，请将鼠标悬停在穿透钻取页面的右上角，单击“更多选项”按钮，然后选择“导出数据”。
+### 导出数据 {#export-data}
 
-![](assets/discover-dashboard-basics-10.png)
+要从视觉对象导出基础数据，请将鼠标悬停在其右上角上。 单击“更多选项”按钮，选择“导出数据”，选择首选格式，然后单击“导出”。
+![](assets/discover-dashboard-basics-10.gif)
 
-* 要放大特定视觉对象或图块，请将鼠标悬停在右上角并选择“聚焦”按钮。
+### 焦点模式 {#focus-mode}
 
-![](assets/discover-dashboard-basics-11.png)
+要放大特定视觉对象或图块，请将鼠标悬停在右上角并选择“聚焦”按钮。
+
+![](assets/discover-dashboard-basics-11.gif)
 
 ### 交叉筛选 {#cross-filtering}
 
-默认情况下，选择一个可视化图表中的值或轴标签会交叉过滤报表页面上的其他可视化图表，确保它们仅显示过滤的相关数据。
+在一个可视化图表中选择值或轴标签将交叉筛选报表页面上的其他可视化图表，确保它们仅显示过滤的相关数据。
 
 ![](assets/discover-dashboard-basics-12.gif)
 
