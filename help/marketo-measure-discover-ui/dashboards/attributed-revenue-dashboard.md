@@ -4,9 +4,9 @@ title: 已归因的收入仪表板
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: e3900c57b68d4806f75639de35948838e9d120de
+source-git-commit: dabb6ed45ec87a97b333e11d5fc71be425edaf66
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ### KPI拼贴 {#kpi-tiles}
 
-* **已归因收入**：根据所选归因模型，来自具有在过滤日期期间内关闭的接触点的商机的总收入贡献
+* **已归因收入**：根据所选归因模型，具有接触点的机会中的总收入贡献。
 * **已归因的交易**：具有接触点的“成功的已结束”机会数。
 
 ### 按渠道随时间变化的归因收入图表 {#attributed-revenue-by-channel-over-time-chart}

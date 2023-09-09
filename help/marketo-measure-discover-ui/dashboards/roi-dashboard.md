@@ -4,7 +4,7 @@ title: ROI仪表板
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: b3d4ea085d851908d52fb62fe58d860ae5c09099
+source-git-commit: dabb6ed45ec87a97b333e11d5fc71be425edaf66
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ROI仪表板为营销人员提供了跨渠道、子渠道和营销活动的投�
 ### KPI拼贴 {#kpi-tiles}
 
 * **成本**：来自连接数据源和手动上传成本的总成本。
-* **已归因收入**：根据所选归因模型，来自具有在过滤日期期间内关闭的接触点的商机的总收入贡献
+* **已归因收入**：根据所选归因模型，来自接触点在过滤的日期期间内关闭的商机的总收入贡献。
 * **已实现归因收入**：根据所选归因模型，在过滤的日期期间内具有接触点的商机中的总收入贡献，而不考虑它们何时关闭。
 * **新潜在客户总数**：生成的新Lead总数，包括接触和未接触的Lead。
 * **每个新商机的成本**：每个新Lead的平均成本，从总成本除以新Lead的总数得出。
