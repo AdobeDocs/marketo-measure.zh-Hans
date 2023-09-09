@@ -4,7 +4,7 @@ title: 收入概览仪表板
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: e3900c57b68d4806f75639de35948838e9d120de
+source-git-commit: ed0252111fd75870b11ce1b0cdc7eec56c8c5e35
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -28,10 +28,10 @@ ht-degree: 0%
 
 ### KPI拼贴 {#kpi-tiles}
 
-* 总收入：“成功的已关闭”业务机会的总收入，包括没有接触点的业务机会。
-* 交易总数：“成功的已结束”商机的数量，包括没有接触点的商机。
-* 已归因的收入：来自具有接触点的“已结束的获胜”商机的总收入。
-* 已归因的交易：具有接触点的“已结束的胜利”机会数。
+* **总收入**：来自“成功的已结束”业务机会的总收入，包括没有接触点的业务机会。
+* **交易总数**：“成功的已结束”机会数，包括没有接触点的机会。
+* **已归因收入**：来自具有接触点的“成功的已关闭”商机的总收入。
+* **已归因的交易**：具有接触点的“成功的已结束”机会数。
 
 ### 收入和归因收入图表 {#revenue-and-attributed-revenue-chart}
 

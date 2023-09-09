@@ -4,9 +4,9 @@ title: Passport信息板
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: b3d4ea085d851908d52fb62fe58d860ae5c09099
+source-git-commit: ed0252111fd75870b11ce1b0cdc7eec56c8c5e35
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Passport仪表板为营销人员提供了在指定时间段内各个阶段进行
 
 ![](assets/passport-dashboard-1.png)
 
-### 按阶段名称列出的阶段中的联系人 {#contacts-in-stage-by-stage-name}
+### 按阶段名称列出的阶段中的潜在客户或联系人 {#leads-or-contacts-in-stage-by-stage-name}
 
 * 每个阶段显示具有在给定时间范围内通过它们的接触点的Lead或Contact的数量。
    * 显示“潜在客户”还是“联系人”取决于在“设置”>“归因设置”>“默认仪表板对象”中设置的首选项。
