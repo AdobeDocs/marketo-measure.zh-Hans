@@ -1,10 +1,8 @@
 ---
 description: 收入概览仪表板 —  [!DNL Marketo Measure]  — 产品
 title: 收入概览仪表板
-hide: true
-hidefromtoc: true
 feature: Reporting
-source-git-commit: ed0252111fd75870b11ce1b0cdc7eec56c8c5e35
+source-git-commit: b984779d8d4795bf43b7494d5cba06ab84ae097d
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%

@@ -1,10 +1,8 @@
 ---
 description: 护照信息板 —  [!DNL Marketo Measure]  — 产品
 title: Passport信息板
-hide: true
-hidefromtoc: true
 feature: Reporting
-source-git-commit: ed0252111fd75870b11ce1b0cdc7eec56c8c5e35
+source-git-commit: b984779d8d4795bf43b7494d5cba06ab84ae097d
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%
@@ -54,7 +52,7 @@ Passport仪表板为营销人员提供了在指定时间段内各个阶段进行
 * 日期（基于过渡日期）
 * 归因模型
 * 渠道、子渠道
-* 营销活动
+* Campaign
 * 区段
 
 >[!MORELIKETHIS]
