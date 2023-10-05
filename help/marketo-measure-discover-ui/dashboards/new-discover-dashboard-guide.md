@@ -2,9 +2,10 @@
 description: 新增发现功能板指南 —  [!DNL Marketo Measure]  — 产品
 title: 新增发现功能板指南
 feature: Reporting
-source-git-commit: b984779d8d4795bf43b7494d5cba06ab84ae097d
+exl-id: 088ccd63-dcf8-49c0-abbb-02f10ed8ae6e
+source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1076'
 ht-degree: 0%
 
 ---
@@ -502,3 +503,9 @@ ht-degree: 0%
 ## 反馈 {#feedback}
 
 我们一直努力为您提供更好的体验，我们非常感谢您就本次最新更新提供反馈。 您的想法将直接影响未来的优化，确保我们的平台始终与您的需求保持一致。 请留意Marketo Measure中的反馈表。
+
+>[!MORELIKETHIS]
+>
+>* [了解功能板基础知识](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [功能板数据可见性策略](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
+
