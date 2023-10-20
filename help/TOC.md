@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: “[!DNL Marketo Measure] 指南”
 user-guide-description: '"[!DNL Marketo Measure] 可让营销人员深入了解哪些营销活动在为公司增加收入方面最有效。”'
-source-git-commit: d65b850e3210ff35b0dedb8e20f4ec91fdfed965
+source-git-commit: 69304dddf3569cd92c95a50e9a2e346acdad0f43
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '793'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,6 @@ ht-degree: 2%
       + [[!DNL Marketo Measure] Cookie](marketo-measure-tracking/setting-up-tracking/marketo-measure-cookies.md)
       + [的定义 [!DNL Marketo Measure] Web会话](marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions.md)
       + [测试最佳实践](marketo-measure-tracking/setting-up-tracking/best-practices-for-testing.md)
-      + [延迟的Cookie同步](marketo-measure-tracking/setting-up-tracking/delayed-cookie-sync.md)
 + 配置和设置 {#configuration-and-setup}
    + 快速入门 [!DNL Marketo Measure] {#getting-started-with-marketo-measure}
       + [接触点生成和映射](configuration-and-setup/getting-started-with-marketo-measure/touchpoint-generation-and-mapping.md)
