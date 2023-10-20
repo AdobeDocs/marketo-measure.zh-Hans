@@ -4,9 +4,9 @@ description: linkedIn集成 —  [!DNL Marketo Measure]  — 产品文档
 title: linkedIn集成
 exl-id: 705209ef-1ece-496c-ac2f-6a31055bd993
 feature: APIs, Integration
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 560ca558ae9ef4d2ef4da57eb9bfa672ed00e0fc
 workflow-type: tm+mt
-source-wordcount: '2594'
+source-wordcount: '2644'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Forms负责人：通过与LinkedIn的Forms负责人Marketo Measure集成，可�
 
 ## 可用性 {#availability}
 
-可供所有客户使用。
+可供所有用户使用。
 
 ## 要求 {#requirements}
 
@@ -127,6 +127,12 @@ Forms负责人：通过与LinkedIn的Forms负责人Marketo Measure集成，可�
 
 ## 工作原理：Forms负责人 {#how-it-works-lead-gen-forms}
 
+**[!DNL LinkedIn's]独特的自动标记要求**
+
+[!DNL Marketo Measure] 可以帮助跟踪 [!DNL LinkedIn] 通过自动标记登陆页面提升促销活动效果。
+
+[!DNL Marketo Measure] 将搜索具有唯一LinkedIn共享的创意人员并添加 `?_bl={creativeId}` 参数结束处。
+
 **进程**
 
 到 [!DNL LinkedIn's] 广告表单API和广告表单响应API，我们可以从CRM或Marketo收集广告帐户的表单提交数据并将电子邮件地址与潜在客户关联。
@@ -162,95 +168,99 @@ linkedIn表单可能包含多个电子邮件地址。 下载表单响应时，�
  </colgroup> 
  <tbody> 
   <tr> 
-   <th>接触点字段</th> 
+   <th style="width:30%">接触点字段</th> 
    <th>示例值</th> 
   </tr> 
   <tr> 
-   <td><p>广告ID </p></td> 
-   <td><p>84186224 </p></td> 
+   <td>广告ID</td>
+   <td>84186224</td>
   </tr> 
   <tr> 
-   <td><p>广告内容 </p></td> 
-   <td><p>copy-1-image-2-man 95%的#B2B营销人员认为需求创建策略是成功的。 了解详情： [!DNL https]：//lnkd.in/jgdi50vKrgv</p></td> 
+   <td>广告内容</td>
+   <td>copy-1-image-2-man 95%的#B2B营销人员认为需求创建策略是成功的。 了解详情： [!DNL https]：//lnkd.in/jgdi50vKrgv</td>
   </tr> 
   <tr> 
-   <td><p>广告组ID </p></td> 
-   <td><p>（空白） </p></td> 
+   <td>广告组ID</td>
+   <td>（空白）</td>
   </tr> 
   <tr> 
-   <td><p>广告组名称 </p></td> 
-   <td><p>（空白） </p></td> 
+   <td>广告组名称</td>
+   <td>（空白）</td>
   </tr> 
   <tr> 
-   <td><p>广告营销活动ID </p></td> 
-   <td><p>138949954 </p></td> 
+   <td>广告营销活动ID</td>
+   <td>138949954</td>
   </tr> 
   <tr> 
-   <td><p>广告营销活动名称 </p></td> 
-   <td><p>SU - COM帐户 — 需求技能 </p></td> 
+   <td>广告营销活动名称</td>
+   <td>SU - COM帐户 — 需求技能</td>
   </tr> 
   <tr> 
-   <td><p>广告目标URL </p></td> 
-   <td><p>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217 </p></td> 
+   <td>广告目标URL <b>*</b></td>
+   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217</td> 
   </tr> 
   <tr> 
-   <td><p>表单URL </p></td> 
-   <td><p>info.bizible.com/demo </p></td> 
+   <td>表单URL</td> 
+   <td>info.bizible.com/demo</td> 
   </tr> 
   <tr> 
-   <td><p>表单URL — 原始 </p></td> 
-   <td><p>info.bizible.com/demo </p></td> 
+   <td>表单URL — 原始</td> 
+   <td>info.bizible.com/demo</td> 
   </tr> 
   <tr> 
-   <td><p>关键字ID </p></td> 
-   <td><p>（空白） </p></td> 
+   <td>关键字ID</td> 
+   <td>（空白）</td> 
   </tr> 
   <tr> 
-   <td><p>关键字匹配类型 </p></td> 
-   <td><p>（空白） </p></td> 
+   <td>关键字匹配类型</td> 
+   <td>（空白）</td> 
   </tr> 
   <tr> 
-   <td><p>登陆页面 </p></td> 
-   <td><p>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders </p></td> 
+   <td>登陆页面</td> 
+   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders</td> 
   </tr> 
   <tr> 
-   <td><p>登陆页面 — 原始 </p></td> 
-   <td><p>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217 </p></td> 
+   <td>登陆页面 — 原始</td> 
+   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217</td> 
   </tr> 
   <tr> 
-   <td><p>营销渠道 </p></td> 
-   <td><p>付费社交 </p></td> 
+   <td>营销渠道</td> 
+   <td>付费社交</td> 
   </tr> 
   <tr> 
-   <td><p>营销渠道 — 路径 </p></td> 
-   <td><p>付费Social.LinkedIn </p></td> 
+   <td>营销渠道 — 路径</td> 
+   <td>付费Social.LinkedIn</td> 
   </tr> 
   <tr> 
-   <td><p>中 </p></td> 
-   <td><p>“cpc”或“潜在客户表单”</p></td> 
+   <td>中</td> 
+   <td>“cpc”或“潜在客户表单”</td> 
   </tr> 
   <tr> 
-   <td><p>反向链接页面 </p></td> 
-   <td><p>www.linkedin.com/ </p></td> 
+   <td>反向链接页面</td> 
+   <td>www.linkedin.com/</td> 
   </tr> 
   <tr> 
-   <td><p>反向链接页面 — 原始 </p></td> 
-   <td><p>www.linkedin.com/ </p></td> 
+   <td>反向链接页面 — 原始</td> 
+   <td>www.linkedin.com/</td> 
   </tr> 
   <tr> 
-   <td><p>搜索短语 </p></td> 
-   <td><p>（空白） </p></td> 
+   <td>搜索短语</td> 
+   <td>（空白）</td> 
   </tr> 
   <tr> 
-   <td><p>接触点类型 </p></td> 
-   <td><p>Web窗体 </p></td> 
+   <td>接触点类型</td> 
+   <td>Web窗体</td>
   </tr> 
   <tr> 
-   <td><p>接触点源 </p></td> 
-   <td><p>LinkedIn </p></td> 
+   <td>接触点源</td>
+   <td>LinkedIn</td>
   </tr> 
  </tbody> 
 </table>
+
+**&#42;** _仅为赞助内容填充“广告目标URL”字段。 它不会为Forms潜在客户填充。_
+
+<br>
 
 ## 成本 {#costs}
 

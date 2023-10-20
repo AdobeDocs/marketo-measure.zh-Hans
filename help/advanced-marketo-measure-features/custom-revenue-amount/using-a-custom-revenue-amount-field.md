@@ -4,9 +4,9 @@ description: 使用自定义收入金额字段 —  [!DNL Marketo Measure]  — 
 title: 使用自定义收入金额字段
 exl-id: 517ea4f9-aa83-48d0-8ce7-003f4a907430
 feature: Custom Revenue Amount
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 560ca558ae9ef4d2ef4da57eb9bfa672ed00e0fc
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -26,29 +26,81 @@ ht-degree: 0%
 
 从这里，我们将开始创建工作流。
 
+## 在Salesforce Lightning中创建工作流 {#create-the-workflow-in-salesforce-lightning}
+
+以下步骤适用于Salesforce Lightning用户。 如果您仍使用Salesforce Classic，这些步骤 [如下所示](#create-the-workflow-in-salesforce-classic).
+
+1. 在“设置”中，在“快速查找”框中键入“流”，然后选择 **[!UICONTROL Flows]** 以启动流量生成器。 从右侧面板中，单击 **[!UICONTROL New Flow]** 按钮。
+
+   ![](assets/using-a-custom-revenue-amount-field-1.png)
+
+1. 选择 **[!UICONTROL Record-Triggered Flow]** 并单击 **[!UICONTROL Create]** 在右下角。
+
+   ![](assets/using-a-custom-revenue-amount-field-2.png)
+
+1. 在“配置开始”窗口中，选择Opportunity对象。 从 [!UICONTROL Configure Trigger] 部分，选择 **[!UICONTROL A record is created or updated]**.
+
+   ![](assets/using-a-custom-revenue-amount-field-3.png)
+
+1. 在“设置录入条件”部分中，在 [!UICONTROL Condition Requirements]，选择 **[!UICONTROL Custom Condition Logic Is Met]**.
+   * 从搜索字段中，选择您的自定义金额字段。
+   * 将运算符设置为 **为空**，其值为 **[!UICONTROL False]**.
+   * 将评估标准设置为 **[!UICONTROL Every time a record is updated and meets the condition requirements]**.
+
+   ![](assets/using-a-custom-revenue-amount-field-4.png)
+
+1. 在“优化流量”部分下，选择 **[!UICONTROL Fast Field Updates]**. 单击 **[!UICONTROL Done]** 在右下角。
+
+   ![](assets/using-a-custom-revenue-amount-field-5.png)
+
+1. 要添加元素，请单击加号(+)图标并选择 **[!UICONTROL Update Triggering Record]**.
+
+   ![](assets/using-a-custom-revenue-amount-field-6.png)
+
+1. 在“新建更新记录”窗口中，输入以下内容：
+
+   * 输入标签 — 将自动生成API名称
+   * 在“如何查找记录以更新并设置其值”下，选择 **[!UICONTROL Use the opportunity record that triggered the flow]**.
+   * 在&quot;[!UICONTROL Set Filter Conditions]”部分，选择 **[!UICONTROL Always Update Record]** 作为更新记录的条件要求。
+   * 在&quot;[!UICONTROL Set Field Values for the Campaign Record]，”从字段中，选择Marketo Measure Opportunity Amount和from value。 然后选择您的自定义金额字段。
+   * 单击 **[!UICONTROL Done]**.
+
+   ![](assets/using-a-custom-revenue-amount-field-7.png)
+
+1. 单击 **[!UICONTROL Save]**. 此时会出现一个弹出窗口。 在保存流量窗口中键入“流量标签”（将自动生成流量API名称）。 单击 **[!UICONTROL Save]** 再来一次。
+
+   ![](assets/using-a-custom-revenue-amount-field-8.png)
+
+1. 单击 **[!UICONTROL Activate]** 按钮以激活流。
+
+   ![](assets/using-a-custom-revenue-amount-field-9.png)
+
+## 在Salesforce Classic中创建工作流 {#create-the-workflow-in-salesforce-classic}
+
+以下步骤适用于Salesforce Classic用户。 如果已切换到Salesforce Lightning，则这些步骤 [可在上找到](#create-the-workflow-in-salesforce-lightning).
+
 1. 导航到 **[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Workflow & Approvals]** > **[!UICONTROL Workflow Rules]**.
 
-   ![](assets/1.jpg)
+   ![](assets/using-a-custom-revenue-amount-field-10.png)
 
 1. 选择 **[!UICONTROL New Rule]**，将对象设置为“Opportunity” ，然后单击 **[!UICONTROL Next]**.
 
-   ![](assets/2.jpg)
+   ![](assets/using-a-custom-revenue-amount-field-11.png)
 
-   ![](assets/3.jpg)
+   ![](assets/using-a-custom-revenue-amount-field-12.png)
 
 1. 配置工作流。 将规则名称设置为“更新” [!DNL Marketo Measure] 机会金额。” 将评估标准设置为“已创建，并且每次都进行编辑”。 对于规则标准，选择您的自定义“金额”字段并选择运算符 [!UICONTROL as "Not Equal To"] 并将“Value”字段留空。
 
-   ![](assets/4.jpg)
+   ![](assets/using-a-custom-revenue-amount-field-13.png)
 
 1. 添加工作流操作。 将此选取列表设置为&quot;[!UICONTROL New Field Update]“
-
-   ![](assets/5.jpg)
+   ![](assets/using-a-custom-revenue-amount-field-14.png)
 
 1. 您将在此处填写字段信息。 在“名称”字段中，我们建议使用此命名：“[!DNL Marketo Measure] Opp金额。” “唯一名称”将根据“名称”字段自动填充。 在“要更新的字段”选取列表中，选择“[!DNL Marketo Measure] 机会金额。” 选择字段后，选中“字段更改后重新评估工作流规则”框。 在“指定新字段值”中，选择“使用公式设置新值”。 在空框中，放置自定义金额字段的API名称。 单击 **[!UICONTROL Save]**.
 
-   ![](assets/6.png)
+   ![](assets/using-a-custom-revenue-amount-field-15.png)
 
-1. 您将会返回到工作流的汇总页面，请确保“激活”，这样您就没问题了。 要激活，请单击 **编辑** ，然后单击 **激活**.
+1. 您将会返回到工作流的汇总页面，请确保“激活”，这样您就没问题了。 要激活，请单击 **[!UICONTROL Edit]** ，然后单击 **[!UICONTROL Activate]**.
 
    完成这些步骤后，需要更新机会以触发工作流以从中获取新值 [!UICONTROL custom opportunity] 字段。
 
