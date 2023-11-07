@@ -1,5 +1,5 @@
 ---
-description: 最新发行说明 —  [!DNL Marketo Measure]  — 产品文档
+description: 最新发行说明 -  [!DNL Marketo Measure]  - 产品文档
 title: 最新发行说明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
