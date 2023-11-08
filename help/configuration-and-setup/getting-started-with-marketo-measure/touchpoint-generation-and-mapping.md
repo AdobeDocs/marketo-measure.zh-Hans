@@ -4,7 +4,7 @@ description: 接触点生成和映射 —  [!DNL Marketo Measure]  — 产品文
 title: 接触点生成和映射
 exl-id: bb4988f5-4fbc-43b7-9544-da541b8e1d32
 feature: Touchpoints
-source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
+source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
@@ -47,7 +47,7 @@ ht-degree: 0%
 >[!MORELIKETHIS]
 >
 >* [将在线接触点映射到 [!DNL Marketo Measure] 渠道/子渠道](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md)
->* [从SFDC内同步CRM营销活动](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md)
+>* [从SFDC内同步CRM营销活动](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md)
 >* [正在从内部同步CRM营销活动 [!DNL Marketo Measure]](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)
 >* [将CRM营销活动映射到 [!DNL Marketo Measure] 渠道/子渠道](/help/channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
 >* [从销售活动创建接触点](/help/advanced-marketo-measure-features/activities-attribution/salesforce-activities-attribution.md)

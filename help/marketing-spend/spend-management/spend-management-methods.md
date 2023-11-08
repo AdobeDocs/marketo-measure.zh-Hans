@@ -3,7 +3,7 @@ description: 支出管理方法 —  [!DNL Marketo Measure]  — 产品文档
 title: 支出管理方法
 exl-id: 36478d8d-986c-4d4f-8854-3287d6c57a9d
 feature: Spend Management
-source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
+source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 启用此功能后，将自动从满足以下条件的任何CRM营销活动/项目中拉入支出
 
-i. [!DNL Marketo Measure] 首先查看促销活动/项目是否通过匹配项创建接触点 [Campaign同步规则](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md) 已创建，或匹配的 [程序同步规则](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md) 创建的任何对象，或 [启用买方接触点值](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md#how-to-create-a-campaign-and-sync-buyer-touchpoints) 是“包括所有营销活动成员”或“包括‘已响应’营销活动成员”。
+i. [!DNL Marketo Measure] 首先查看促销活动/项目是否通过匹配项创建接触点 [Campaign同步规则](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md) 已创建，或匹配的 [程序同步规则](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md) 创建的任何对象，或 [启用买方接触点值](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md#how-to-create-a-campaign-and-sync-buyer-touchpoints) 是“包括所有营销活动成员”或“包括‘已响应’营销活动成员”。
 
 二、 必须在营销活动/项目群中填充开始日期
 

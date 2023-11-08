@@ -4,7 +4,7 @@ description: 测试Marketo Measure与Salesforce沙盒的集成 —  [!DNL Market
 title: 测试Marketo Measure与Salesforce沙盒的集成
 exl-id: df40b000-4572-46df-aef5-8f690ca8ed7a
 feature: Salesforce
-source-git-commit: 3df1bd288ebd65f75a2ed52d7c8a6faf50c7ff1f
+source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 其中一项 [!DNL Marketo Measure] 核心功能是能够通过网站上的操作跟踪您的数字营销工作，然后将该数据推送到生产环境 [!DNL Salesforce org] 通过Leads和Contact。 但是，通常，在沙盒集成中不会从您的网站创建入站潜在客户，因此对数据的关注将从纯粹离线角度进行。
 
-以下是测试两个阶段中引用的两个源。 [步骤1-4](https://help.salesforce.com/apex/HTViewHelpDoc?id=lead_import_wizard.htm&amp;language=en_US) 和 [步骤5-6](/help/channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md). 我们建议查看这些文档，因为它们在某些方面提供了更多详细信息。
+以下是测试两个阶段中引用的两个源。 [步骤1-4](https://help.salesforce.com/apex/HTViewHelpDoc?id=lead_import_wizard.htm&amp;language=en_US) 和 [步骤5-6](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md). 我们建议查看这些文档，因为它们在某些方面提供了更多详细信息。
 
 1. 您需要在CSV中创建一些潜在客户，以便将其上传到Campaign。 这样做的方法是通过生产Salesforce中的报告导出一些Lead。 否则，您可以在Excel文件中手动创建潜在客户，然后将其保存为CSV以供导入。 你只需要大约20条记录。 文件需要具有以下列：
 

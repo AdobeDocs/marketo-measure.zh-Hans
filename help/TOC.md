@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: “[!DNL Marketo Measure] 指南”
 user-guide-description: '"[!DNL Marketo Measure] 可让营销人员深入了解哪些营销活动在为公司增加收入方面最有效。”'
-source-git-commit: 560ca558ae9ef4d2ef4da57eb9bfa672ed00e0fc
+source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '797'
 ht-degree: 2%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 2%
    + 快速入门 [!DNL Marketo Measure] {#getting-started-with-marketo-measure}
       + [接触点生成和映射](configuration-and-setup/getting-started-with-marketo-measure/touchpoint-generation-and-mapping.md)
       + [归因映射方法](configuration-and-setup/getting-started-with-marketo-measure/attribution-mapping-methodology.md)
+      + [Adobe Admin Console设置](configuration-and-setup/getting-started-with-marketo-measure/adobe-admin-console-setup.md)
       + [买方接触点和买方归因接触点之间的差异](configuration-and-setup/getting-started-with-marketo-measure/difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints.md)
       + [跨BT和的接触点位置和生成说明 [!DNL BATs]](configuration-and-setup/getting-started-with-marketo-measure/explanation-of-touchpoint-positions-and-generation-across-bts-and-bats.md)
       + [[!DNL Marketo Measure] CRM无包集成](configuration-and-setup/getting-started-with-marketo-measure/marketo-measure-crm-packageless-integration.md)
@@ -80,13 +81,13 @@ ht-degree: 2%
       + [脱机自定义渠道设置](channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
       + [自定义Campaign同步](channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)
       + [多个营销活动记录类型的配置](channel-tracking-and-setup/offline-channels/configurations-for-multiple-campaign-record-types.md)
-      + 已弃用的进程 {#deprecated-processes}
-         + [[!UICONTROL Campaigns and Campaign Members]](channel-tracking-and-setup/offline-channels/deprecated-processes/campaigns-and-campaign-members.md)
-         + [Campaign同步日期](channel-tracking-and-setup/offline-channels/deprecated-processes/campaign-sync-dates.md)
-         + [创建营销活动列表视图 [!DNL Salesforce] 营销活动](channel-tracking-and-setup/offline-channels/deprecated-processes/creating-a-campaign-list-view-for-salesforce-campaigns.md)
-         + [Dynamics活动和营销列表](channel-tracking-and-setup/offline-channels/deprecated-processes/dynamics-campaigns-and-marketing-lists.md)
-         + [同步历史数据](channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-historical-data.md)
-         + [同步离线营销活动](channel-tracking-and-setup/offline-channels/deprecated-processes/syncing-offline-campaigns.md)
+      + 旧流程 {#legacy-processes}
+         + [[!UICONTROL Campaigns and Campaign Members]](channel-tracking-and-setup/offline-channels/legacy-processes/campaigns-and-campaign-members.md)
+         + [Campaign同步日期](channel-tracking-and-setup/offline-channels/legacy-processes/campaign-sync-dates.md)
+         + [创建营销活动列表视图 [!DNL Salesforce] 营销活动](channel-tracking-and-setup/offline-channels/legacy-processes/creating-a-campaign-list-view-for-salesforce-campaigns.md)
+         + [Dynamics活动和营销列表](channel-tracking-and-setup/offline-channels/legacy-processes/dynamics-campaigns-and-marketing-lists.md)
+         + [同步历史数据](channel-tracking-and-setup/offline-channels/legacy-processes/syncing-historical-data.md)
+         + [同步离线营销活动](channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md)
 + API连接 {#api-connections}
    + 利用 [!DNL Marketo Measure]的API连接 {#utilizing-marketo-measures-api-connections}
       + [集成式广告平台](api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md)
