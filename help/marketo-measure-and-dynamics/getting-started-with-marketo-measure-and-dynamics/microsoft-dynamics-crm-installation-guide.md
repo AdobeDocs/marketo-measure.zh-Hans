@@ -4,9 +4,9 @@ description: '"[!DNL Microsoft Dynamics] CRM安装指南 — Marketo Measure —
 title: '"[!DNL Microsoft Dynamics] CRM安装指南”'
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
-source-git-commit: 68eb5bf83d589c9161490b1772551ed46a9ce444
+source-git-commit: 86d610d07ab699266ba68a6f2eaf7c7981e62019
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ ht-degree: 0%
 
 ![](assets/3.png)
 
-## [!DNL Marketo Measure] 用户权限 {#marketo-measure-user-permissions}
+## 创建 [!DNL Marketo Measure] 用户 {#creating-a-marketo-measure-user}
 
-我们建议创建一个 [!DNL Marketo Measure] Dynamics中的用户，用于我们通过导出和导入数据，以避免CRM中的其他用户出现任何问题。 记下用户名和密码以及端点URL，因为这将用于创建 [!DNL Marketo Measure] 帐户。
+我们建议在Dynamics中创建专门的Marketo Measure用户作为“应用程序用户”，以便我们通过来导出和导入数据，从而避免您的CRM中的其他用户出现任何问题。 记下用户名和密码以及端点URL，因为它们在创建 [!DNL Marketo Measure] 帐户。
 
 ## 安全角色 {#security-roles}
 

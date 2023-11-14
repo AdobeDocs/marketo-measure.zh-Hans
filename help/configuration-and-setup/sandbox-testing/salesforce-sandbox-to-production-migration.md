@@ -4,9 +4,9 @@ description: Salesforce沙盒到生产环境的迁移 —  [!DNL Marketo Measure
 title: Salesforce沙盒到生产环境的迁移
 exl-id: b2b71c4a-f192-43ce-a27e-cbd0ec3cf008
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 86d610d07ab699266ba68a6f2eaf7c7981e62019
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,6 @@ ht-degree: 0%
 * 安装两个 [!DNL Marketo Measure] 使用&quot;[!UICONTROL All Users]”设置
 
    * [基础包](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"}
-   * [功能板扩展包](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t610000001jI6){target="_blank"}
 
 * 欲知关于 [!DNL Marketo Measure] 关系 [!DNL Salesforce]，查看 [本文](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
 * 一点 [!DNL Salesforce] 配置是必需的。 下面列出了具体的操作项目 [下面的步骤4](#salesforce-configuration)
