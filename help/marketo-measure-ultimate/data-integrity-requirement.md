@@ -4,7 +4,7 @@ title: ’[!DNL Marketo Measure] 终极数据完整性要求
 hide: true
 hidefromtoc: true
 feature: Integration, Tracking, Attribution
-source-git-commit: 3725ef14f90269ebdada1d81692f3b7283e6ec6e
+source-git-commit: 89b50552455dbd4c9b60d101eaf6e1b0ff22c0c4
 workflow-type: tm+mt
 source-wordcount: '1465'
 ht-degree: 18%
@@ -17,7 +17,7 @@ ht-degree: 18%
 
 ## 实体对象 {#entity-object}
 
-<table>
+<table style="table-layout:auto">
   <tr>
     <th>XDM类</th>
     <th>XDM字段组</th>
@@ -1051,7 +1051,7 @@ ht-degree: 18%
 
 ## 支持的体验事件类型 {#experienceevent-type-supported}
 
-<table>
+<table style="table-layout:auto">
   <tr>
     <th>事件类型</th>
     <th>XDM事件类型</th>
