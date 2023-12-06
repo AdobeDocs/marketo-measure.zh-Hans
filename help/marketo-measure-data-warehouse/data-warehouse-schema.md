@@ -1,19 +1,19 @@
 ---
 unique-page-id: 35586140
-description: data warehouse架构 — Marketo Measure — 产品文档
-title: data warehouse架构
+description: Data Warehouse架构 — Marketo Measure — 产品文档
+title: Data Warehouse架构
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 3165d821000a1369ed6fdff3f786ae6632ea39f4
 workflow-type: tm+mt
-source-wordcount: '22610'
-ht-degree: 5%
+source-wordcount: '20697'
+ht-degree: 3%
 
 ---
 
-# data warehouse架构 {#data-warehouse-schema}
+# Data Warehouse架构 {#data-warehouse-schema}
 
-data warehouse允许您跟踪所需数量的数据，随时随地报告归因数据，并将其插入其他数据集。
+Data Warehouse允许您跟踪所需数量的数据，随时随地报告归因数据，并将其插入其他数据集。
 
 >[!IMPORTANT]
 >
@@ -26,7 +26,7 @@ data warehouse允许您跟踪所需数量的数据，随时随地报告归因数
 
 ## 实体关系图 {#entity-relationship-diagrams}
 
-此 _data warehouse数据模型_ ERD显示data warehouse中的数据如何流动以及如何链接在一起。 此图不包括data warehouse中所有可用的表，因为其中某些表表示映射表、其他表的视图或我们不建议再使用的已弃用表。 请参阅以下data warehouse中对表格和列的详细说明。 其中许多表包含反正规化的字段，但是，此图表是推荐的数据模型，它利用来自维表的数据。
+此 _Data Warehouse数据模型_ ERD显示Data Warehouse中的数据如何流动以及如何链接在一起。 此图不包括数据仓库中所有可用的表，因为其中某些表表示映射表、其他已存在的表的视图或我们不建议再使用的已弃用表。 请参阅下面数据仓库中对表格和列的详细说明。 其中许多表包含反正规化的字段，但是，此图表是推荐的数据模型，它利用来自维表的数据。
 
 其他 _广告维度数据模型_ ERD提供了一个视图，其中显示了如何以最佳方式将特定维度的广告表链接回主数据模型中的表。 虽然广告维度在其他表中也进行了反规范化，但这表示连接这些维度的推荐模型。
 
@@ -39,7 +39,7 @@ _单击图像的全尺寸版本_
  </colgroup> 
  <tbody> 
   <tr> 
-   <td><strong>data warehouse数据模型</strong></td> 
+   <td><strong>Data Warehouse数据模型</strong></td> 
    <td><strong>广告维度数据模型</strong></td> 
   </tr> 
   <tr> 
@@ -179,12 +179,12 @@ _单击图像的全尺寸版本_
         <p>源系统帐户ID。</p>
       </td>
       <td>
-        <p>0013100001phrBAAAY</p>
+        <p>0013100001phrBAAY</p>
       </td>
     </tr>
     <tr>
       <td>
-        <p>电子邮件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -1394,7 +1394,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>从utm_medium中的URL解析。</td>
       <td>
-        <p>lisu07261601</p>
+        <p>辘辘市07261601</p>
       </td>
     </tr>
     <tr>
@@ -1792,7 +1792,7 @@ _单击图像的全尺寸版本_
         <p>此表的主对象或实体。 在本例中，为“Campaign”。</p>
       </td>
       <td>
-        <p>营销活动</p>
+        <p>Campaign</p>
       </td>
     </tr>
     <tr>
@@ -2673,7 +2673,7 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>电子邮件</td>
+      <td>EMAIL</td>
       <td>varchar</td>
       <td>与最佳可得技术关联的电子邮件地址。</td>
       <td>person@adobe.com</td>
@@ -2756,7 +2756,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY1</p>
+        <p>类别1</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2770,7 +2770,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY2</p>
+        <p>类别2</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2784,7 +2784,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY3</p>
+        <p>类别3</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2798,7 +2798,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY4</p>
+        <p>类别4</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2810,7 +2810,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY5</p>
+        <p>类别5</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2820,7 +2820,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY6</p>
+        <p>类别6</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2830,7 +2830,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY7</p>
+        <p>类别7</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2840,7 +2840,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY8</p>
+        <p>类别8</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2850,7 +2850,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY9</p>
+        <p>类别9</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2860,7 +2860,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY10</p>
+        <p>类别10</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2870,7 +2870,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY11</p>
+        <p>类别11</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2880,7 +2880,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY12</p>
+        <p>类别12</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2890,7 +2890,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY13</p>
+        <p>类别13</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2900,7 +2900,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY14</p>
+        <p>类别14</p>
       </td>
       <td>
         <p>varchar</p>
@@ -2910,7 +2910,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY15</p>
+        <p>类别15</p>
       </td>
       <td>
         <p>varchar</p>
@@ -4222,7 +4222,7 @@ _单击图像的全尺寸版本_
         <p>源系统中的联系人ID。</p>
       </td>
       <td>
-        <p>0030Z00003OzioeQAB</p>
+        <p>0030Z00003OzoeQAB</p>
       </td>
     </tr>
     <tr>
@@ -4255,7 +4255,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>电子邮件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -5674,7 +5674,7 @@ _单击图像的全尺寸版本_
         <p>与事件关联的联系人的ID。</p>
       </td>
       <td>
-        <p>0030Z00003OyjbOQAR</p>
+        <p>0030Z00003奥伊杰布奥加尔</p>
       </td>
     </tr>
     <tr>
@@ -6695,7 +6695,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>电子邮件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -7118,12 +7118,12 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>日期</td>
-      <td>date</td>
+      <td>日期</td>
       <td>事件发生日期。</td>
       <td>2018-08-28</td>
     </tr>
     <tr>
-      <td>时间戳</td>
+      <td>TIMESTAMP</td>
       <td>timestamp_ntz</td>
       <td>事件发生日期和时间。</td>
       <td>2018-08-28 19:39:15.000</td>
@@ -7373,7 +7373,7 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>电子邮件</td>
+      <td>EMAIL</td>
       <td>varchar</td>
       <td>记录的电子邮件地址。</td>
       <td>personb@adobe.com</td>
@@ -7803,7 +7803,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>电子邮件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -9399,7 +9399,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>电子邮件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -9712,7 +9712,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>电子邮件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -10333,7 +10333,7 @@ _单击图像的全尺寸版本_
         <p>与过渡关联的机会的ID。</p>
       </td>
       <td>
-        <p>0060Z00000nEgjlQAC</p>
+        <p>0060Z00000n埃格耶尔QAC</p>
       </td>
     </tr>
     <tr>
@@ -10352,7 +10352,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>电子邮件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -10825,7 +10825,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>电子邮件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -11346,7 +11346,7 @@ _单击图像的全尺寸版本_
 
 ### 商业会话(_S) {#biz-sessions}
 
-从页面查看处理的会话。 多个页面查看可构成一个会话，单个访客ID可与多个会话关联。
+从页面查看处理的会话。 多个页面查看可组成一个会话，单个访客ID可与多个会话关联。
 
 <table>
   <tbody>
@@ -12017,7 +12017,7 @@ _单击图像的全尺寸版本_
         <p>从utm_term的URL中解析。</p>
       </td>
       <td>
-        <p>lisu07261601</p>
+        <p>辘辘市07261601</p>
       </td>
     </tr>
     <tr>
@@ -13083,7 +13083,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>电子邮件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13209,7 +13209,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY1</p>
+        <p>类别1</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13221,7 +13221,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY2</p>
+        <p>类别2</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13235,7 +13235,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY3</p>
+        <p>类别3</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13249,7 +13249,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY4</p>
+        <p>类别4</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13263,7 +13263,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY5</p>
+        <p>类别5</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13275,7 +13275,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY6</p>
+        <p>类别6</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13287,7 +13287,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY7</p>
+        <p>类别7</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13297,7 +13297,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY8</p>
+        <p>类别8</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13307,7 +13307,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY9</p>
+        <p>类别9</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13317,7 +13317,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY10</p>
+        <p>类别10</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13327,7 +13327,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY11</p>
+        <p>类别11</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13337,7 +13337,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY12</p>
+        <p>类别12</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13347,7 +13347,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY13</p>
+        <p>类别13</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13357,7 +13357,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY14</p>
+        <p>类别14</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13369,7 +13369,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>CATEGORY15</p>
+        <p>类别15</p>
       </td>
       <td>
         <p>varchar</p>
@@ -13830,7 +13830,7 @@ _单击图像的全尺寸版本_
         <p>从中解析广告的广告帐户中的创意内容的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
-        <p>lisu03151846</p>
+        <p>辘辘市03151846</p>
       </td>
     </tr>
     <tr>
@@ -13914,7 +13914,7 @@ _单击图像的全尺寸版本_
         <p>从付费搜索购买购买关键词（从广告解析来源广告的广告帐户提取）的名称。 这适用于Google AdWords和Bing Ads（搜索）</p>
       </td>
       <td>
-        <p>lisu03151846</p>
+        <p>辘辘市03151846</p>
       </td>
     </tr>
     <tr>
@@ -14246,102 +14246,52 @@ _单击图像的全尺寸版本_
 <table>
   <tbody>
     <tr>
-      <th>
-        <p>列</p>
-      </th>
-      <th>
-        <p>数据类型</p>
-      </th>
-      <th>
-        <p>描述</p>
-      </th>
-      <th>
-        <p>示例数据</p>
-      </th>
+      <th>列</th>
+      <th>数据类型</th>
+      <th>描述</th>
+      <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>完整的URL，。</p>
-      </td>
-      <td>
-        <p>https://www.adobe.com/blog/strategic-marketing-plangoals</p>
-      </td>
+      <td>ID</td>
+      <td>varchar</td>
+      <td>完整的URL，。</td>
+      <td>https://www.adobe.com/blog/strategic-marketing-plangoals</td>
     </tr>
     <tr>
-      <td>
-        <p>方案</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>网页在网络上的安全通信。</p>
-      </td>
-      <td>
-        <p>https</p>
-      </td>
+      <td>方案</td>
+      <td>varchar</td>
+      <td>网页在网络上的安全通信。</td>
+      <td>https</td>
     </tr>
     <tr>
-      <td>
-        <p>主机</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>URL的域，包含任何子域。</p>
-      </td>
-      <td>
-        <p>www.adobe.com</p>
-      </td>
+      <td>主机</td>
+      <td>varchar</td>
+      <td>URL的域，包含任何子域。</td>
+      <td>www.adobe.com</td>
     </tr>
     <tr>
-      <td>
-        <p>端口</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>来自Internet主机的端口（URL中的可选）。</p>
-      </td>
-      <td>
-        <p>584</p>
-      </td>
+      <td>PAGE_TITLE</td>
+      <td>varchar</td>
+      <td>页面标题。</td>
+      <td>下载B2B营销归因的CMO指南</td>
     </tr>
     <tr>
-      <td>
-        <p>路径</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>URL中指向主机上特定位置的部分。</p>
-      </td>
-      <td>
-        <p>/blog/strategic-marketing-plangoals</p>
-      </td>
+      <td>路径</td>
+      <td>varchar</td>
+      <td>URL中指向主机上特定位置的部分。</td>
+      <td>/blog/strategic-marketing-plangoals</td>
     </tr>
     <tr>
-      <td>
-        <p>ROW_KEY</p>
-      </td>
-      <td>
-        <p>数字(38,0)</p>
-      </td>
-      <td>
-        <p>Biz_Facts视图的外键。</p>
-      </td>
-      <td>
-        <p>5686109553536636820</p>
-      </td>
+      <td>端口</td>
+      <td>varchar</td>
+      <td>来自Internet主机的端口（URL中的可选）。</td>
+      <td>584</td>
+    </tr>
+    <tr>
+      <td>ROW_KEY</td>
+      <td>数字(38,0)</td>
+      <td>Biz_Facts视图的外键。</td>
+      <td>5686109553536636820</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -14414,7 +14364,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>电子邮件</p>
+        <p>EMAIL</p>
       </td>
       <td>
         <p>varchar</p>
