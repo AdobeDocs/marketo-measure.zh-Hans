@@ -4,9 +4,9 @@ description: Salesforce沙盒到生产环境的迁移 —  [!DNL Marketo Measure
 title: Salesforce沙盒到生产环境的迁移
 exl-id: b2b71c4a-f192-43ce-a27e-cbd0ec3cf008
 feature: Salesforce
-source-git-commit: 86d610d07ab699266ba68a6f2eaf7c7981e62019
+source-git-commit: ad658a513b01dc7a51299abcb7313ff1877e49f3
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 如果您选择测试 [!DNL Marketo Measure] 在 [!DNL Salesforce] 沙盒环境，请在您准备就绪后，按照以下说明迁移到生产。 下面的说明假定您已下载 [!DNL Marketo Measure] 打包到您的沙盒组织中，执行了必要的测试并准备推送 [!DNL Marketo Measure] 到生产。
 
-## 步骤1：安装 [!DNL Marketo Measure] 将包放入生产环境 [!DNL Salesforce] 实例 {#install-marketo-measure-packages-into-your-production-salesforce-instance}
+## 步骤1：安装 [!DNL Marketo Measure] 打包到生产环境中 [!DNL Salesforce] 实例
 
-* 安装两个 [!DNL Marketo Measure] 使用&quot;[!UICONTROL All Users]”设置
+* 安装 [!DNL Marketo Measure] 使用&quot;[!UICONTROL All Users]”设置
 
    * [基础包](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"}
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 * 登录到 [!DNL Marketo Measure] experience.adobe.com/marketo-measure上的应用程序
 * 导航到 [!UICONTROL My Account] >[!UICONTROL Settings] > [!UICONTROL Connections]
 * 成功删除沙盒连接后，连接将从页面中消失，否则连接仍会存在，并且状态为正在删除
-* 单击 &quot;[!UICONTROL Set up New CRM connection]&quot;
+* 单击“[!UICONTROL Set up New CRM connection]&quot;
 * 在&quot;[!UICONTROL Select CRM Connection]”模式对话框，单击“[!UICONTROL Connect]”操作 [!DNL Salesforce] 平台，选择&#39;&#39;[!UICONTROL Production]”选项
 * 系统会提示您输入凭据，请确保输入生产登录详细信息
 
