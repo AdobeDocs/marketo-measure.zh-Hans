@@ -4,10 +4,10 @@ product: Bizible
 audience: end-user
 user-guide-title: “[!DNL Marketo Measure] 指南”
 user-guide-description: '"[!DNL Marketo Measure] 可让营销人员深入了解哪些营销活动在为公司增加收入方面最有效。”'
-source-git-commit: 89b50552455dbd4c9b60d101eaf6e1b0ff22c0c4
+source-git-commit: de74e51c023dfae454e51f99f91a3b4df7423ac2
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 2%
+source-wordcount: '806'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 2%
          + [正在连接 [!DNL Marketo Measure] 用于取消退回脚本管理器](marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/connecting-marketo-measure-to-unbounce-script-manager.md)
          + [IFrame Forms和 [!DNL Marketo Measure]](marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/iframe-forms-and-marketo-measure.md)
       + [不包括 [!DNL Marketo Measure] 来自特定Forms](marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md)
-      + [[!DNL Marketo Measure] Cookie](marketo-measure-tracking/setting-up-tracking/marketo-measure-cookies.md)
+      + [[!DNL Marketo Measure] Cookies](marketo-measure-tracking/setting-up-tracking/marketo-measure-cookies.md)
       + [的定义 [!DNL Marketo Measure] Web会话](marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions.md)
       + [测试最佳实践](marketo-measure-tracking/setting-up-tracking/best-practices-for-testing.md)
 + 配置和设置 {#configuration-and-setup}
@@ -154,6 +154,7 @@ ht-degree: 2%
       + [新增发现功能板指南](marketo-measure-discover-ui/dashboards/new-discover-dashboard-guide.md)
       + [收入概览仪表板](marketo-measure-discover-ui/dashboards/revenue-overview-dashboard.md)
       + [已归因的收入仪表板](marketo-measure-discover-ui/dashboards/attributed-revenue-dashboard.md)
+        [参与仪表板](marketo-measure-discover-ui/dashboards/engagement-dashboard.md)
       + [ROI仪表板](marketo-measure-discover-ui/dashboards/roi-dashboard.md)
       + [Passport信息板](marketo-measure-discover-ui/dashboards/passport-dashboard.md)
       + [Web流量仪表板](marketo-measure-discover-ui/dashboards/web-traffic-dashboard.md)
@@ -200,7 +201,7 @@ ht-degree: 2%
       + [[!DNL Marketo Measure] 101报表概述](marketo-measure-salesforce-reporting/marketo-measure-reports/marketo-measure-101-reports-overview.md)
       + [按营销渠道列出的机会](marketo-measure-salesforce-reporting/marketo-measure-reports/opportunities-by-marketing-channel.md)
       + [按营销渠道列出的已关闭的丢失机会](marketo-measure-salesforce-reporting/marketo-measure-reports/closed-lost-opportunities-by-marketing-channel.md)
-      + [[!UICONTROL Leads with Buyer Touchpoints] 报告](marketo-measure-salesforce-reporting/marketo-measure-reports/leads-with-buyer-touchpoints-report.md)
+      + [[!UICONTROL Leads with Buyer Touchpoints] 报表](marketo-measure-salesforce-reporting/marketo-measure-reports/leads-with-buyer-touchpoints-report.md)
       + [报告有无买方归因接触点的商机](marketo-measure-salesforce-reporting/marketo-measure-reports/reporting-on-opportunities-with-or-without-buyer-attribution-touchpoints.md)
       + [我的报告中的重复记录](marketo-measure-salesforce-reporting/marketo-measure-reports/duplicate-records-in-my-report.md)
    + 其他功能 {#additional-functionality}
