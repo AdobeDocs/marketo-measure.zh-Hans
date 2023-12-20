@@ -4,7 +4,7 @@ title: 集成权限概述
 hide: true
 hidefromtoc: true
 feature: APIs, Integration
-source-git-commit: 4953d6c51a87669ced0a13e2a54810d14976585c
+source-git-commit: 9196877384140d60a22012b43ea960017528f4d5
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 3%
@@ -18,13 +18,13 @@ ht-degree: 3%
 <table>
 <thead>
   <tr>
-    <th>集成</th>
-    <th>数据类型
+    <th style="width:10%">集成</th>
+    <th style="width:20%">数据类型
     <li>Web交互数据</li>
     <li>B2B系统数据</li>
     <li>广告平台数据</li></th>
-    <th>我们跟踪的内容</th>
-    <th>权限要求</th>
+    <th style="width:30%">我们跟踪的内容</th>
+    <th style="width:40%">权限要求</th>
   </tr>
 </thead>
 <tbody>
