@@ -4,7 +4,7 @@ title: 集成权限概述
 hide: true
 hidefromtoc: true
 feature: APIs, Integration
-source-git-commit: 9196877384140d60a22012b43ea960017528f4d5
+source-git-commit: 1c3cd5ac9999550003765a9e1ed8d538224fe8a9
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 3%
@@ -33,24 +33,24 @@ ht-degree: 3%
     <td>B2B系统数据    
 </td>
     <td>Marketo Measure正在跟踪：
-    <br>
+    <p>
     <li>帐户</li>
-<li>Campaign</li>
-<li>CampaignMember</li>
-<li>联系人</li>
-<li>CurrentconversionRange</li>
-<li>货币状态</li>
-<li>事件</li>
-<li>FieldHistory （Lead 、 Contact和Opportunity ）</li>
-<li>商机</li>
-<li>机会</li>
-<li>Opportuncontactrole</li>
-<li>机会历史记录</li>
-<li>任务</li>
-<br>
+    <li>Campaign</li>
+    <li>CampaignMember</li>
+    <li>联系人</li>
+    <li>CurrentconversionRange</li>
+    <li>货币状态</li>
+    <li>事件</li>
+    <li>FieldHistory （Lead 、 Contact和Opportunity ）</li>
+    <li>商机</li>
+    <li>机会</li>
+    <li>Opportuncontactrole</li>
+    <li>机会历史记录</li>
+    <li>任务</li>
+<p>
 创建的接触点和其他数据将写入Account、Campaign、CampaignMember、Case、Contact、Lead和Opportunity上的自定义bizible字段中。</td>
-    <td><b>Salesforce连接的用户权限（必需）</b>
-    <br>
+    <td><b>Salesforce已连接用户权限（必需）</b>
+    <p>
     <b>为专用用户设置的Marketo Measure管理员权限：</b> 允许SFDC管理员对Marketo度量对象执行CRUD操作。
     <br>
     <b>查看和编辑转化后的潜在客户权限集：</b> 这允许Marketo Measure在潜在客户转换为联系人后对其进行装饰。
