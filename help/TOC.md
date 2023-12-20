@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: “[!DNL Marketo Measure] 指南”
 user-guide-description: '"[!DNL Marketo Measure] 可让营销人员深入了解哪些营销活动在为公司增加收入方面最有效。”'
-source-git-commit: 4d91899f6126a83b29170c7c5bbe146ed49ad9b0
+source-git-commit: 4953d6c51a87669ced0a13e2a54810d14976585c
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '821'
 ht-degree: 1%
 
 ---
@@ -92,6 +92,7 @@ ht-degree: 1%
 + API连接 {#api-connections}
    + 利用 [!DNL Marketo Measure]的API连接 {#utilizing-marketo-measures-api-connections}
       + [集成式广告平台](api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md)
+      + [集成权限概述](api-connections/utilizing-marketo-measures-api-connections/integration-permissions-overview.md)
       + [API连接的最佳实践](api-connections/utilizing-marketo-measures-api-connections/best-practices-for-api-connections.md)
       + [竞价管理工具如何影响 [!DNL Marketo Measure]](api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md)
       + [[!DNL Marketo Measure] 参数](api-connections/utilizing-marketo-measures-api-connections/marketo-measure-parameters.md)

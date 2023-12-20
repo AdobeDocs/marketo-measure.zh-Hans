@@ -2,7 +2,7 @@
 description: JavaScript收集的数据 —  [!DNL Marketo Measure]  — 产品文档
 title: JavaScript收集的数据
 feature: Tracking
-source-git-commit: 2be08b96fb9f6d027e80751db64f16a7f2893764
+source-git-commit: 4953d6c51a87669ced0a13e2a54810d14976585c
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 6%
@@ -49,25 +49,25 @@ Marketo Measure会为所有类型的请求收集以下常用数据：
     <td>查询参数</td>
     <td>_biz_u</td>
     <td>字符串</td>
-    <td>Bizible Cookie ID</td>
+    <td>Bizible Cookie ID。</td>
   </tr>
   <tr>
     <td>查询参数</td>
     <td>_biz_l</td>
     <td>字符串</td>
-    <td>当前页面URL</td>
+    <td>当前页面URL。</td>
   </tr>
   <tr>
     <td>查询参数</td>
     <td>_biz_t</td>
     <td>长</td>
-    <td>活动时间戳</td>
+    <td>活动时间戳。</td>
   </tr>
   <tr>
     <td>查询参数</td>
     <td>_biz_i</td>
     <td>字符串</td>
-    <td>当前页面标题</td>
+    <td>当前页面标题。</td>
   </tr>
 </tbody>
 </table>
@@ -118,7 +118,7 @@ Marketo Measure会为所有类型的请求收集以下常用数据：
     <td>/u</td>
     <td>mapType</td>
     <td>枚举</td>
-    <td>检测到哪种用户id映射bizible.js(Marketo munchkin id和AdobeECID)</td>
+    <td>检测到哪种用户id映射bizible.js(Marketo Munchkin ID和AdobeECID)</td>
   </tr>
   <tr>
     <td></td>
