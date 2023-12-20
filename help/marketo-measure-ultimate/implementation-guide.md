@@ -1,19 +1,17 @@
 ---
 description: ’[!DNL Marketo Measure] 最终实施指南 —  [!DNL Marketo Measure]  — 产品文档'
 title: ’[!DNL Marketo Measure] 最终实施指南
-hide: true
-hidefromtoc: true
 feature: Integration, Tracking, Attribution
-source-git-commit: a1838bec06d1a626bb282f8e7d26814840f860a7
+source-git-commit: 041079d08d8e1993ecc31368c443a9a6fe3a8336
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '966'
 ht-degree: 0%
 
 ---
 
 # [!DNL Marketo Measure] 最终实施指南 {#marketo-measure-ultimate-implementation-guide}
 
-介绍句子
+本文可作为Marketo Measure Ultimate的实施指南，为您提供清晰的步骤和分析，以确保成功的集成和利用。
 
 ## 使用Ultimate与标准层的主要区别 {#main-differences-when-using-ultimate-over-standard-tiers}
 
@@ -84,7 +82,7 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
    >* 如果将一种架构类型映射到另一种相同的架构类型，则会自动完成映射。
    >* 您还可以从系统中的其他流导入映射。
    >* 您可以将一个“源”字段映射到多个目标字段，但无法执行相反操作。
-   >* 您可以创建计算字段（ExL：数据准备映射函数）。
+   >* 您可以创建计算字段([数据准备映射函数](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html){target="_blank"})。
 
    >[!CAUTION]
    >
@@ -107,8 +105,6 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 * 要查看数据流错误，请选择一个数据流，选择一个数据流运行，然后单击“错误诊断预览”。
 
 ## 数据检测 {#data-inspection}
-
-ExL： Marketo Measure Ultimate数据完整性要求本文档包括每个XDM的必填字段以及检查查询。 它将在ExL中发布。  — 上面已标记 — 请再次POST???
 
 选项1：要直接从UI运行查询，请访问数据管理下的查询选项卡。
 
