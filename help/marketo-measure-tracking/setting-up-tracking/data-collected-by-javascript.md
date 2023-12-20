@@ -2,7 +2,7 @@
 description: JavaScript收集的数据 —  [!DNL Marketo Measure]  — 产品文档
 title: JavaScript收集的数据
 feature: Tracking
-source-git-commit: 4d91899f6126a83b29170c7c5bbe146ed49ad9b0
+source-git-commit: 2be08b96fb9f6d027e80751db64f16a7f2893764
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 6%
@@ -13,8 +13,13 @@ ht-degree: 6%
 
 了解Marketo Measure JavaScript在部署时收集的数据。
 
-示例请求：
-`https://cdn.bizible.com/m/ipv?_biz_r=https%3A%2F%2Fwww.google.com%2F&_biz_h=-1801745101&_biz_u=7059e81415f34f7bbaf40fe32fdcba21&_biz_s=8cbeed&_biz_l=https%3A%2F%2Fwww.zendesk.com%2Fservice%2F&_biz_t=1676483822155&_biz_i=Customer%20service%20software%20for%20the%20best%20customer%20experiences%20%7C%20Zendesk&_biz_n=0&rnd=235938&cdn_o=a&_biz_z=1676483822155`
+**示例请求：**
+
+```
+https://cdn.bizible.com/m/ipv?_biz_r=https%3A%2F%2Fwww.google.com%2F&_biz_h=-1801745101&_biz_u=7059e81415f34f7bbaf40fe32fdcba21&_biz_s=8cbeed&_biz_l=https%3A%2F%2Fwww.zendesk.com%2Fservice%2F&_biz_t=1676483822155&_biz_i=Customer%20service%20software%20for%20the%20best%20customer%20experiences%20%7C%20Zendesk&_biz_n=0&rnd=235938&cdn_o=a&_biz_z=1676483822155
+```
+
+<br>
 
 Marketo Measure会为所有类型的请求收集以下常用数据：
 
