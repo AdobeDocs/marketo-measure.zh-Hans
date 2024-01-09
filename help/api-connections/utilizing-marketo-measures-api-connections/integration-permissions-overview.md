@@ -4,9 +4,9 @@ title: 集成权限概述
 hide: true
 hidefromtoc: true
 feature: APIs, Integration
-source-git-commit: d7ded9075f7f5831314d59294327f1e4928baf8a
+source-git-commit: 3d4ee7c71ed241c8e3885b4db57168f753dcdf65
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '840'
 ht-degree: 2%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 2%
 <thead>
   <tr>
     <th style="width:10%">集成</th>
-    <th style="width:20%">数据类型
+    <th style="width:25%">数据类型
     <li>Web交互数据</li>
     <li>B2B系统数据</li>
     <li>广告平台数据</li></th>
-    <th style="width:30%">我们跟踪的内容</th>
+    <th style="width:25%">我们跟踪的内容</th>
     <th style="width:40%">权限要求</th>
   </tr>
 </thead>
@@ -60,6 +60,7 @@ ht-degree: 2%
     <b>Marketo Measure Standard用户：</b> 允许用户从Marketo Measure对象中读取记录。
     <p>
     <b>Salesforce标准字段权限</b>
+    <br>
     <a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">Salesforce标准对象和访问</a>
     <p>
     <b>Salesforce自定义字段权限</b>
@@ -94,11 +95,11 @@ ht-degree: 2%
 <p>
 创建的接触点和其他数据将写入Account、Campaign、CampaignResponse、Contact、Lead、List、Opportunity和PhoneCall上的自定义bizible字段中</td>
     <td><b>Marketo Measure用户权限</b>
-<p>
+<br>
 我们建议在Dynamics中创建专门的Marketo Measure用户，以便我们通过来导出和导入数据，从而避免您的CRM中的其他用户出现任何问题。 记下用户名和密码以及端点URL，因为创建Marketo Measure帐户时将使用此选项。
 <p>
 <b>安全角色</b>
-<p>
+<br>
 如果您的组织使用Dynamics安全角色，请确保连接的用户或专用的Marketo Measure用户具有所需实体的足够读/写权限。
 <br>
 安全角色位于此处：设置&gt;安全&gt;安全角色
@@ -132,21 +133,36 @@ Marketo Measure正在跟踪帐户、促销活动、广告组、广告、过滤�
 <li>需要电子邮件权限才能允许用户登录其Facebook电子邮件。</li>
 <p>
 <b>范围</b>
-<p>
+<br>
 <a href="https://developers.facebook.com/docs/permissions/reference/ads_management/">ads_management</a>
 <br>
 <li>以编程方式创建营销活动、管理广告和获取量度。</li>
 <li>构建广告管理工具，为广告商提供创新解决方案和独特的价值。</li>
-<p>
+<br>
+<br>
 <a href="https://developers.facebook.com/docs/permissions/reference/email">电子邮件</a>
 <br>
 <li>与用户通信，并允许他们使用与其Facebook个人资料关联的电子邮件地址登录到您的应用程序。</li></td>
   </tr>
   <tr>
     <td>LinkedIn</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>广告平台数据
+    <p>
+    B2B系统数据（Lead Gen Form Data，包括表单和提交内容，分类为CRM活动）。</td>
+    <td>Marketo Measure正在跟踪LinkedIn广告促销活动、创意和成本数据，以及潜在客户Forms和回应。 根据导入的数据，我们可以生成LinkedIn接触点并将潜在客户表单响应与客户关联起来。</td>
+    <td><li>Marketo Measure需要营销活动经理或客户经理角色才能下载成本数据。 （范围行1）</li>
+    <br>
+    <li>Marketo Measure需要超级管理员（页面管理员角色，范围第2行）或潜在客户Forms经理（付费媒体管理员角色，范围第3行）来访问潜在客户表单数据</li>
+    <br>
+    <li>Marketo Measure需要超级管理员（页面管理员角色，范围第2行）或赞助的内容海报（付费媒体管理员角色，范围第3行）才能处理自动标记</li>
+    <p>
+    <b>范围</b>
+    <br>
+    <a href="https://www.linkedin.com/campaignmanager/accounts">在门户中设置用户角色(需要登录到LinkedIn帐户)</a> - <a href="https://www.linkedin.com/help/lms/answer/a425731/user-roles-and-functions-in-campaign-manager">用户角色概述</a>：用户角色，查看和管理用户权限，分配帐户经理或营销活动经理等角色
+    <p>
+    <a href="https://www.linkedin.com/help/linkedin/answer/a570172/add-or-remove-admins-on-your-showcase-page?lang=en">设置页面管理员角色 —  <a href="https://www.linkedin.com/help/linkedin/answer/a541981/linkedin-page-admin-roles-overview">页面管理员角色定义</a>：页面管理员角色，在所需的管理员页面上
+    <p>
+    <a href="https://www.linkedin.com/help/linkedin/answer/a570172/add-or-remove-admins-on-your-showcase-page?lang=en">设置付费媒体管理员角色（查找付费媒体管理员） —  <a href="https://www.linkedin.com/help/linkedin/answer/a554540">付费媒体管理员定义</a>：付费媒体管理员角色</td>
   </tr>
   <tr>
     <td>Doubleclick</td>
