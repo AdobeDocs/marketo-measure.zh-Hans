@@ -2,7 +2,7 @@
 description: 参与仪表板 —  [!DNL Marketo Measure]  — 产品
 title: 参与仪表板
 feature: Reporting
-source-git-commit: 96a10a202e72f43c45041a4cb37a244d1722db17
+source-git-commit: b037a4a1be5c7d089cc94590caf91be05af4dd22
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 * 接触的人：具有任何接触点的人总数。
 * 每个人的接触点：每个被接触者的平均接触点数。
 
-## 随时间变化的接触点和人员 {#touchpoints-and-people-touched-over-time}
+### 随时间变化的接触点和人员 {#touchpoints-and-people-touched-over-time}
 
 时间序列条形图显示每个人的每月、每季和每年的接触点数、接触人员数和接触点数。
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ![](assets/engagement-dashboard-1.png)
 
-## 渠道接触的接触点/人员 {#touchpoints-people-touched-by-channel}
+### 渠道接触的接触点/人员 {#touchpoints-people-touched-by-channel}
 
 显示按渠道/子渠道/营销活动分段的接触点或人员的条形图。
 
