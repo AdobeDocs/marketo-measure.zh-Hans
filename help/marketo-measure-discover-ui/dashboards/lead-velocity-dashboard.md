@@ -4,13 +4,70 @@ title: 潜在客户周转率功能板
 hide: true
 hidefromtoc: true
 feature: Reporting
-source-git-commit: fad900c97f25e7d19692fb2b4403b439e479caa1
+source-git-commit: f0e6ba1166e86eeb50812914afb4116f0e0eb372
 workflow-type: tm+mt
-source-wordcount: '12'
-ht-degree: 0%
+source-wordcount: '344'
+ht-degree: 1%
 
 ---
 
 # 潜在客户周转率功能板 {#lead-velocity-dashboard}
 
-即将推出
+Velocity功能板提供了有关潜在客户在销售漏斗中流动速度的动态视图，从而为营销人员和销售团队提供了有关各个渠道中的转化时间的重要洞察。 此工具在回答有关商机转化持续时间以及销售阶段进展效率的关键问题方面有着无价的帮助，使您能够优化参与策略以加快增长和转化。
+
+此仪表板回答的问题：
+
+* 转化商机平均需要多长时间？
+* 平均而言，对于每个阶段，潜在客户或联系人需要多长时间才能进入下一个阶段？ 这段时间会如何变化？
+
+## 功能板组件 {#dashboard-components}
+
+### 按阶段列出的销售线索/接触速度 {#lead-contact-velocity-by-stage}
+
+条形图显示了在特定时间范围内每个销售阶段销售线索/联系人所花费的平均持续时间（以天为单位）。
+
+图表回答的问题：
+
+哪个销售阶段通常具有最长销售线索/联系人的持续时间？
+与“MQL”阶段相比，“首次联系”阶段所花费的时间如何？
+
+![](assets/lead-velocity-dashboard-1.png)
+
+### 随时间变化的潜在客户/联系速度 {#lead-contact-velocity-over-time}
+
+时间序列折线图显示了在指定时间范围内每个销售阶段销售线索/联系人所花费的平均时间（以天为单位）。
+
+* 利用向下钻取和向上钻取功能按月、季度或年对数据进行分类。
+* 将鼠标悬停在线上可显示详细信息。
+
+图表回答的问题：
+
+* 在所观察的月份中，潜在客户/联系在每个阶段的逗留时间趋势如何？
+* 潜在客户/联系人在哪一个月经历了销售阶段的最快进展？
+
+![](assets/lead-velocity-dashboard-2.png)
+
+## 按渠道列出的销售线索/联系速度 {#lead-contact-velocity-by-channel}
+
+条形图显示每个漏斗阶段中剩余的潜在客户/联系人的平均持续时间（以天为单位），并按“渠道”进行分段。
+
+将鼠标悬停在线上可显示详细信息。
+
+图表回答的问题：
+
+* 哪个渠道显示了在漏斗阶段进展最快的潜在客户？
+* “MQL”阶段中的潜在客户速度在不同渠道中会有什么不同？
+
+![](assets/lead-velocity-dashboard-3.png)
+
+## 筛选器窗格 {#filter-pane}
+
+此仪表板配备了以下设置和过滤器：
+
+* 日期
+   * 基于：转换日期
+* 阶段
+* 渠道
+* 子渠道
+* Campaign
+* 区段
