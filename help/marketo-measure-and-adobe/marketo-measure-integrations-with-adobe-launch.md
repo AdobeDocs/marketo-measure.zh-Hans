@@ -3,9 +3,9 @@ description: ’[!DNL Marketo Measure] 与AdobeLaunch的集成 —  [!DNL Market
 title: ’[!DNL Marketo Measure] 与AdobeLaunch的集成
 exl-id: 316ee8a8-b2d3-42e9-9ee5-c9b1d91c2769
 feature: Integration
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 1b583dac72aadff5d7c2352a064e2ff842b91891
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
@@ -44,13 +44,13 @@ Adobe Launch扩展专为现有的 [!DNL Marketo Measure] 已在其网站上使�
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-4.png)
 
-1. 在Bizible AccountId字段中，键入您网站的URL。
+1. 在Bizible AccountId字段中，键入您网站的URL(例如， `adobe.com`)。
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-5.png)
 
    >[!NOTE]
    >
-   >此字段不是Business_Prod.Business表中的“帐户ID”。 来自给定URL的所有Web活动都将映射到 [!DNL Marketo Measure] 租户。
+   >此字段不是Business_Prod.Business表中的“帐户ID”。 来自给定URL的所有Web活动(例如， `adobe.com`)将被映射到 [!DNL Marketo Measure] 租户。
 
 1. 单击 **[!UICONTROL Save]**.
 
