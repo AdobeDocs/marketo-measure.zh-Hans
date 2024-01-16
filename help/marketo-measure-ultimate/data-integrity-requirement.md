@@ -3,10 +3,10 @@ description: ’[!DNL Marketo Measure] 最终数据完整性要求 —  [!DNL Ma
 title: ’[!DNL Marketo Measure] 终极数据完整性要求
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: 034c4639e6054118052524c457995f4caf7a4bf2
+source-git-commit: 327daa56fe1b346d067f2e0fb39006b91e6849ee
 workflow-type: tm+mt
-source-wordcount: '1465'
-ht-degree: 18%
+source-wordcount: '1493'
+ht-degree: 17%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 18%
     <th>XDM路径</th>
     <th>XDM类型</th>
     <th>数据源字段</th>
-    <th>必需?</th>
+    <th>必需？</th>
     <th>备注</th>
   </tr>
   <tbody>
@@ -407,7 +407,7 @@ ht-degree: 18%
       <td>b2b.personStatus</td>
       <td>字符串</td>
       <td>状态</td>
-      <td>是，仅适用于Lead personType</td>
+      <td><mark>是，仅适用于Lead personType</mark></td>
       <td>仅当b2b.personType为“潜在客户”时才需要</td>
     </tr>
     <tr>
@@ -431,7 +431,7 @@ ht-degree: 18%
       <td>b2b.isConverted</td>
       <td>布尔值</td>
       <td>IsConverted</td>
-      <td>是，仅适用于Lead personType</td>
+      <td><mark>是，仅适用于Lead personType</mark></td>
       <td>仅当b2b.personType为“潜在客户”时才需要</td>
     </tr>
     <tr>
@@ -621,7 +621,7 @@ ht-degree: 18%
     <tr>
       <td></td>
       <td>expectedCloseDate</td>
-      <td>date</td>
+      <td>日期</td>
       <td>关闭日期</td>
       <td>是</td>
       <td></td>
@@ -855,7 +855,7 @@ ht-degree: 18%
     <tr>
       <td></td>
       <td>endDate</td>
-      <td>date</td>
+      <td>日期</td>
       <td>NextStartDate</td>
       <td>是</td>
       <td></td>
@@ -863,7 +863,7 @@ ht-degree: 18%
     <tr>
       <td></td>
       <td>startDate</td>
-      <td>date</td>
+      <td>日期</td>
       <td>开始日期</td>
       <td>是</td>
       <td></td>
@@ -896,7 +896,7 @@ ht-degree: 18%
     <th>XDM路径</th>
     <th>XDM类型</th>
     <th>数据源字段</th>
-    <th>必需?</th>
+    <th>必需？</th>
     <th>备注</th>
   </tr>
   <tbody>
@@ -906,7 +906,7 @@ ht-degree: 18%
     <tr>
       <td rowspan="3">XDM ExperienceEvent</td>
       <td></td>
-      <td>_ID</td>
+      <td>_id</td>
       <td>字符串</td>
       <td>ID</td>
       <td>是</td>

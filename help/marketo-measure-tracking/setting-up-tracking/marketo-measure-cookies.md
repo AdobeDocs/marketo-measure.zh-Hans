@@ -1,19 +1,23 @@
 ---
 unique-page-id: 18874590
 description: '"[!DNL Marketo Measure] Cookie - [!DNL Marketo Measure]  — 产品文档”'
-title: "[!DNL Marketo Measure] Cookie"
+title: '"[!DNL Marketo Measure] Cookies”'
 exl-id: de6e35ae-af92-43ba-8416-3e07d3dd470c
 feature: Tracking
-source-git-commit: 69304dddf3569cd92c95a50e9a2e346acdad0f43
+source-git-commit: 327daa56fe1b346d067f2e0fb39006b91e6849ee
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 6%
+source-wordcount: '397'
+ht-degree: 4%
 
 ---
 
 # Marketo Measure Cookies {#marketo-measure-cookies}
 
 了解各种 [!DNL Marketo Measure] 在您应用时加载到您网站上的Cookie [!DNL Marketo Measure] 将JavaScript添加到登陆页面。 这些信息在实施过程中可能会对Web开发团队非常有用。
+
+>[!IMPORTANT]
+>
+>出于隐私考虑，第三方Cookie即将退出。 Google Chrome宣布在2024年第3季度弃用第三方Cookie，这实际上标志着这种跟踪形式的结束。 因此，Adobe将弃用依赖第三方Cookie的Marketo Measure功能，特别是跨域跟踪和浏览归因，后者使用Google/DoubleClick展示次数Cookie。 任何其他Marketo Measure功能都不会受到影响。 第一方Cookie的使用也不受影响。 按照Google的时间表，预计上述两个功能的弃用日期为2024年6月1日。 Adobe客户仍可使用此日期之前收集的相关数据。
 
 <table>
 <thead>
