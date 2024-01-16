@@ -3,7 +3,7 @@ description: 最新发行说明 —  [!DNL Marketo Measure]  — 产品文档
 title: 最新发行说明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 40cd00c8edeb04c1939db9402d537d4c0e7a3406
+source-git-commit: d1fffd4848452f0e1b2abfaf89c2a10fba123036
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->虽然当前功能板将在2024年1月中旬之前弃用，但在此之前，您可以同时使用两个版本，以确保顺利过渡。
+>虽然当前功能板将在2024年3月之前弃用，但在此之前，您可以同时使用这两个版本，以确保顺利过渡。
 
 **IP地址数据删除**
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->虽然当前功能板将在2024年1月中旬之前弃用，但在此之前，您可以同时使用两个版本，以确保顺利过渡。
+>虽然当前功能板将在2024年3月之前弃用，但在此之前，您可以同时使用这两个版本，以确保顺利过渡。
 
 ### 弃用 {#deprecations}
 
