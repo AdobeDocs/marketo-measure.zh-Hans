@@ -3,9 +3,9 @@ description: 分段的最佳实践 —  [!DNL Marketo Measure]  — 产品文档
 title: 分段的最佳实践
 exl-id: 68281210-383b-4688-86e9-27fbdc1fabbb
 feature: Segmentation
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,9 @@ ht-degree: 0%
 * 将区段名称与组织的命名法保持一致，即，类别=筛选器名称，区段=筛选器值
 * 请勿在规则中使用公式字段
 * 如有可能，请同时在Lead/Contact和Opportunity上构建分段，以便您可以在整个漏斗中使用它
+   * 如果您是Marketo Measure Ultimate客户并将您的默认功能板对象设置为Contact，请不要使用下面两个特定于Lead的字段([在此处了解详情](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"})。
+      * b2b.personStatus
+      * b2b.isConverted
    * 并非每个区段类别在整个漏斗中都保持一致
       * 例如，“Opportunity Type”的区段类别不会与Lead相关，但与“Region”相关的区段可能是可以在整个漏斗中定义的类别
 * 考虑您当前希望对数据进行切片的方式，无论它位于CRM还是BI工具中，都可以考虑将其构建为中的区段 [!DNL Marketo Measure] 这样您便可以在发现中使用相同的报表

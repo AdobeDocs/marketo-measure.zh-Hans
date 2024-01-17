@@ -2,9 +2,9 @@
 description: ’[!DNL Marketo Measure] 最终实施指南 —  [!DNL Marketo Measure]  — 产品文档'
 title: ’[!DNL Marketo Measure] 最终实施指南
 feature: Integration, Tracking, Attribution
-source-git-commit: 041079d08d8e1993ecc31368c443a9a6fe3a8336
+source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -145,6 +145,11 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 ![](assets/marketo-measure-ultimate-implementation-guide-5.png)
 
 如果未映射阶段，系统将无法正常运行，因为没有位置可供数据访问。
+
+如果您是Marketo Measure Ultimate客户并将您的默认功能板对象设置为Contact，请不要使用下面两个特定于Lead的字段([在此处了解详情](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"})。
+
+* b2b.personStatus
+* b2b.isConverted
 
 **营销活动成员规则：**
 

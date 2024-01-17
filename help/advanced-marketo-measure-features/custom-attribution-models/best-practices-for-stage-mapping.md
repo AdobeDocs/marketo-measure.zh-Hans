@@ -3,9 +3,9 @@ description: 阶段映射的最佳实践 —  [!DNL Marketo Measure]  — 产品
 title: 阶段映射的最佳实践
 exl-id: 1ed380a1-4a3a-4761-b70f-cdf2e290329d
 feature: Tracking, Custom Models
-source-git-commit: 3bad77a72c0dea6caf0daadbb594f10f791af715
+source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,9 @@ ht-degree: 0%
    * 布尔字段是最佳实践推荐
 * 请注意，“潜在客户”或“联系人”阶段部分分为“丢失”、“打开”和“已转换”；验证阶段是否位于其相应的阶段部分
    * 在不正确的阶段分区中设置阶段可能会导致高度不正确 [!DNL Marketo Measure] 数据
+   * 如果您是Marketo Measure Ultimate客户并将您的默认功能板对象设置为Contact，请不要使用下面两个特定于Lead的字段([在此处了解详情](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"})。
+      * b2b.personStatus
+      * b2b.isConverted
 * 请注意， Opportunity阶段部分分为Lost 、 Open和Won ；验证阶段是否位于其相应的阶段部分
    * 在不正确的阶段分区中设置阶段可能会导致高度不正确 [!DNL Marketo Measure] 收入或管道收入数据
 * 避免使用重复的阶段名称（我们的系统将检测到它们并自动删除一个）。
