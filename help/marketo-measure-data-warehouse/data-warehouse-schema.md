@@ -4,9 +4,9 @@ description: Data Warehouse架构 — Marketo Measure — 产品文档
 title: Data Warehouse架构
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: 3165d821000a1369ed6fdff3f786ae6632ea39f4
+source-git-commit: c1fc48028014160635c454138eb4ad8efb02c74a
 workflow-type: tm+mt
-source-wordcount: '20697'
+source-wordcount: '20757'
 ht-degree: 3%
 
 ---
@@ -147,8 +147,23 @@ _单击图像的全尺寸版本_
       <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
+    <tr>
+      <td><b>∗</b> 行业</td>
+      <td>varchar</td>
+      <td>帐户的主要业务。</td>
+      <td>零售、电信</td>
+    </tr>
+    <tr>
+      <td><b>∗</b> 国家/地区</td>
+      <td>varchar</td>
+      <td>帐户地址的国家/地区部分。</td>
+      <td>美国、加拿大</td>
+    </tr>
   </tbody>
 </table>
+<p>
+<b>∗</b> <i>仅在Marketo Measure Ultimate中可用</i>
+<p>
 
 ### BIZ_ACCOUNT_TO_EMAIL {#biz-account-to-emails}
 
@@ -169,74 +184,34 @@ _单击图像的全尺寸版本_
       <td>0013800001MMPPiAAP_person@adobe.com|2022-01-05 17:22:13.000</td>
     </tr>
     <tr>
-      <td>
-        <p>ACCOUNT_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>源系统帐户ID。</p>
-      </td>
-      <td>
-        <p>0013100001phrBAAY</p>
-      </td>
+      <td>ACCOUNT_ID</td>
+      <td>varchar</td>
+      <td>源系统帐户ID。</td>
+      <td>0013100001phrBAAY</td>
     </tr>
     <tr>
-      <td>
-        <p>EMAIL</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>已通过“联系人”关系或“潜在客户至帐户”映射映射至帐户的电子邮件地址。</p>
-      </td>
-      <td>
-        <p>person@adobe.com</p>
-      </td>
+      <td>EMAIL</td>
+      <td>varchar</td>
+      <td>已通过“联系人”关系或“潜在客户至帐户”映射映射至帐户的电子邮件地址。</td>
+      <td>person@adobe.com</td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
-      <td>
-        <p>源系统中帐户的上次修改日期。</p>
-      </td>
-      <td>
-        <p>2018-08-31 23:53:39.000</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
+      <td>源系统中帐户的上次修改日期。</td>
+      <td>2018-08-31 23:53:39.000</td>
     </tr>
     <tr>
-      <td>
-        <p>创建日期</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
-      <td>
-        <p>源系统中帐户的创建日期。</p>
-      </td>
-      <td>
-        <p>2018-08-18 22:01:32.000</p>
-      </td>
+      <td>创建日期</td>
+      <td>timestamp_ntz</td>
+      <td>源系统中帐户的创建日期。</td>
+      <td>2018-08-18 22:01:32.000</td>
     </tr>
     <tr>
-      <td>
-        <p>IS_DELETED</p>
-      </td>
-      <td>
-        <p>布尔值</p>
-      </td>
-      <td>
-        <p>是否将该记录视为已删除。</p>
-      </td>
-      <td>
-        <p>false</p>
-      </td>
+      <td>IS_DELETED</td>
+      <td>布尔值</td>
+      <td>是否将该记录视为已删除。</td>
+      <td>false</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -272,58 +247,29 @@ _单击图像的全尺寸版本_
     <th><strong>示例数据</strong></th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>源系统中的活动ID。</p>
-      </td>
-      <td>
-        <p>1678625515</p>
-      </td>
+      <td>ID</td>
+      <td>varchar</td>
+      <td>源系统中的活动ID。</td>
+      <td>1678625515</td>
     </tr>
     <tr>
-      <td>
-        <p>商机ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>商机ID</td>
+      <td>varchar</td>
       <td>与活动关联的潜在客户的ID。</td>
-      <td>
-        <p>15530482</p>
-      </td>
+      <td>15530482</td>
     </tr>
     <tr>
-      <td>
-        <p>CONTACT_ID</p>
+      <td>CONTACT_ID</td>
+      <td>varchar</td>
+      <td>与活动关联的联系人的ID。
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>与活动关联的联系人的ID。</p>
-      </td>
-      <td>
-        <p>13792552</p>
-      </td>
+      <td>13792552</td>
     </tr>
     <tr>
-      <td>
-        <p>ACTIVITY_TYPE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>源系统中活动类型的ID。</p>
-      </td>
-      <td>
-        <p>104</p>
-      </td>
+      <td>ACTIVITY_TYPE_ID</td>
+      <td>varchar</td>
+      <td>源系统中活动类型的ID。</td>
+      <td>104</td>
     </tr>
     <tr>
       <td>ACTIVITY_TYPE_NAME</td>
@@ -372,7 +318,7 @@ _单击图像的全尺寸版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>IS_DELETD</td>
+      <td>IS_DELETED</td>
       <td>布尔值</td>
       <td>是否将该记录视为已从源系统中删除。</td>
       <td>false</td>
@@ -4388,18 +4334,10 @@ _单击图像的全尺寸版本_
       <td>{"Contact_Type__c"："CMO"， "Foo"："Bar"}</td>
     </tr>
     <tr>
-      <td>
-        <p>ROW_KEY</p>
-      </td>
-      <td>
-        <p>数字(38,0)</p>
-      </td>
-      <td>
-        <p>Biz_Facts视图的外键。</p>
-      </td>
-      <td>
-        <p>3263982503087870000</p>
-      </td>
+      <td>ROW_KEY</td>
+      <td>数字(38,0)</td>
+      <td>Biz_Facts视图的外键。</td>
+      <td>3263982503087870000</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -4419,8 +4357,17 @@ _单击图像的全尺寸版本_
       <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
+    <tr>
+      <td><b>∗</b> JOB_TITLE</td>
+      <td>varchar</td>
+      <td>联系人的职务。</td>
+      <td>首席执行官、副总裁</td>
+    </tr>
   </tbody>
 </table>
+<p>
+<b>∗</b> <i>仅在Marketo Measure Ultimate中可用</i>
+<p>
 
 ### 业务转化率 {#biz-conversion-rates}
 
@@ -4726,7 +4673,7 @@ _单击图像的全尺寸版本_
         <p>从广告连接提取的广告组的名称。</p>
       </td>
       <td>
-        <p>归因管理软件 |短语</p>
+        <p>归因管理软件 | 短语</p>
       </td>
     </tr>
     <tr>
@@ -10271,8 +10218,17 @@ _单击图像的全尺寸版本_
       <td>在Snowflake中标记为已删除记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
+    <tr>
+      <td><b>∗</b> 机会类型</td>
+      <td>varchar</td>
+      <td>机会的类型，如新业务、续订等。</td>
+      <td>续订，潜在客户</td>
+    </tr>
   </tbody>
 </table>
+<p>
+<b>∗</b> <i>仅在Marketo Measure Ultimate中可用</i>
+<p>
 
 ### BIZ_OPP_STAGE_TRANSITIONS {#biz-opp-stage-transitions}
 
