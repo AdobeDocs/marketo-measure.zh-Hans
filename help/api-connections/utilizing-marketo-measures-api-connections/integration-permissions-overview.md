@@ -4,10 +4,10 @@ title: 集成权限概述
 hide: true
 hidefromtoc: true
 feature: APIs, Integration
-source-git-commit: 3d4ee7c71ed241c8e3885b4db57168f753dcdf65
+source-git-commit: 95bdfe7c95111b6c6430e2de2b5eef050183fb0b
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 2%
+source-wordcount: '1286'
+ht-degree: 1%
 
 ---
 
@@ -166,38 +166,74 @@ Marketo Measure正在跟踪帐户、促销活动、广告组、广告、过滤�
   </tr>
   <tr>
     <td>Doubleclick</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>广告平台数据</td>
+    <td>Marketo Measure正在跟踪帐户、广告商、促销活动、（自定义）登陆页面、广告、创意、投放和网站。</td>
+    <td><li>需要用户的主要Google帐户电子邮件地址</li>
+<li>访问Campaign Manager 360帐户所需的Campaign Manager权限</li>
+<ul>
+<li>查看和管理DoubleClick广告商报告</li>
+<li>查看和管理DoubleClick Campaign经理显示广告营销活动</li>
+<p>
+    <b>范围</b>
+    <br>
+    <a href="https://www.googleapis.com/auth/userinfo.email">https://www.googleapis.com/auth/userinfo.email</a>：查看您的主要Google帐户电子邮件地址
+    <p>
+     <a href="https://www.googleapis.com/auth/dfareporting">https://www.googleapis.com/auth/dfareporting</a>：查看并管理广告商的DoubleClick报表
+    <p>
+     <a href="https://www.googleapis.com/auth/dfatrafficking">https://www.googleapis.com/auth/dfatrafficking</a>：查看和管理DoubleClick Campaign Manager (DCM)的显示广告营销活动</td>
   </tr>
   <tr>
     <td>AdWords</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>广告平台数据</td>
+    <td>我们与AdWords集成以：
+<p>
+<li>导入客户广告数据</li>
+<li>导入客户广告成本数据</li>
+<li>通过附加url参数/更新URL跟踪模板来更新客户端的广告</li>
+<p>
+Marketo Measure正在跟踪促销活动、广告组、创意内容、网站链接和关键字。</td>
+    <td><li>需要用户的主要Google帐户电子邮件地址</li>
+<p>
+    <b>范围</b>
+    <br>
+    <a href="https://www.googleapis.com/auth/userinfo.email">https://www.googleapis.com/auth/userinfo.email</a>：查看您的主要Google帐户电子邮件地址</td>
   </tr>
   <tr>
     <td>Bing</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>广告平台数据</td>
+    <td>Marketo Measure正在跟踪帐户、营销活动、广告组、创意和关键字。</td>
+    <td><li>用户必须通过其Microsoft帐户授予“离线访问权限”(这可以授予Marketo Measure对最终用户的UserInfo的访问权限，即使未登录也是如此)。 请参阅 <a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">Microsoft的页面</a> 如何操作。</li>
+<p>
+    <b>范围</b>
+    <br>
+    <a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access</a>：维护对您已授予其权限的数据的访问权限。</td>
   </tr>
   <tr>
     <td>Marketo Engage</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>B2B系统数据</td>
+    <td>Marketo集成使Marketo Measure能够收集Marketo活动、人员、项目和项目成员资格。 此外，Marketo Measure还跟踪Marketo Cookie (Munchkin ID)，以便将Marketo Web活动关联到Marketo Measure潜在接触点， <a href="/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#cookie-mapping">如此处所述</a>：
+    <p>
+    <i>作为Marketo Measure与Marketo集成的结果，Marketo Measure Cookie ID现在也已映射并与Marketo Munchkin ID同步。 这有助于弥合将匿名首次接触归因于Web会话的差距，而不是将FT和LC接触都归因于Marketo活动。</i>
+    </td>
+    <td>客户必须创建一个专用的Marketo EngageAPI用户，并向Marketo Measure提供凭据。 无需其他权限配置。 <a href="/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/set-up-marketo-connection.md#configuring-the-integration">了解详情</a>.</td>
   </tr>
   <tr>
     <td>Adobe Analytics</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>B2B系统数据</td>
+    <td>通过B2B客户属性集成，Marketo Measure和Adobe Analytics的共同用户可以使用源自Marketo Measure归因引擎的有价值元数据扩充其Adobe Analytics用户配置文件，并通过其与CRM(Microsoft Dynamics和Salesforce)的同步功能扩充这些用户配置文件。 <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md">了解详情</a>.</td>
+    <td>客户必须向Marketo Measure提供别名ID和FTP服务器凭据，以便将数据上传到其Analytics实例的位置。
+    <p>
+    请注意以下信息，因为在此过程中的某些后续步骤中您将需要这些信息：
+    <p>
+    <li>别名ID，可以是您希望它成为的任何值。 我们建议使用“marketomeasure_id”</li>
+    <li>FTP服务器主机名和凭据（用户名和密码）</li>
+    <p>
+    <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md#configuring-the-integration">了解更多</a></td>
   </tr>
   <tr>
     <td>Bizible Javascript</td>
     <td></td>
-    <td></td>
+    <td><a href="/help/marketo-measure-tracking/setting-up-tracking/data-collected-by-javascript.md">bizible.js收集哪些数据</a>.</td>
     <td></td>
   </tr>
 </tbody>
