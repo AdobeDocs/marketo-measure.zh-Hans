@@ -3,7 +3,7 @@ description: 最新发行说明 —  [!DNL Marketo Measure]  — 产品文档
 title: 最新发行说明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: cc22d6af742de7cc1acd40bc3e8d6f4f9bf93fe1
+source-git-commit: 2e474dfbda67b53dbf643defa383fc1b4c5f0b42
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 0%
@@ -102,7 +102,7 @@ ht-degree: 0%
 
 <p>
 
-* **Salesforce字段弃用**
+#### Salesforce字段弃用 {#salesforce-field-deprecations}
 
 我们将逐步停止将导出作业导出到Lead/Contact对象，以简化集成并消除导出到Salesforce标准对象的需要。 下面列出的非规范化字段也将弃用，因为客户可以从其接触点对象获取相同的数据。 _**弃用的时间是2024年6月。**_
 
