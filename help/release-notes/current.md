@@ -3,9 +3,9 @@ description: 最新发行说明 —  [!DNL Marketo Measure]  — 产品文档
 title: 最新发行说明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: d1fffd4848452f0e1b2abfaf89c2a10fba123036
+source-git-commit: cc22d6af742de7cc1acd40bc3e8d6f4f9bf93fe1
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 我们将逐步停止将导出作业导出到Lead/Contact对象，以简化集成并消除导出到Salesforce标准对象的需要。 下面列出的非规范化字段也将弃用，因为客户可以从其接触点对象获取相同的数据。 _**弃用的时间是2024年6月。**_
 
-<table style="width:300px">
+<table style="width:350px">
 <tbody>
   <tr>
     <td>bizible2__Ad_Campaign_Name_FT__c</td>
@@ -140,6 +140,40 @@ ht-degree: 0%
   </tr>
 </tbody>
 </table>
+
+以下字段包含有关接触点和归因接触点对象的相同信息：
+
+* bizible2__Ad_Campaign_Name__c
+* bizible2__Landing_Page__c
+* bizible2__Marketing_Channel__c
+* bizible2__Touchpoint_Date__c
+* bizible2__Touchpoint_Source__c
+
+**必需操作**
+
+* 为具有或不具有接触点的潜在客户和联系人创建新的报告类型。
+
+![](assets/release-notes-2023-1.png)
+
+* 创建报告，这些报告捕获利用已删除字段的任何现有报告的功能。 在此过程中，您需要更改报告中的字段，如下所示：
+
+   * 删除Lead/Contact FT/LC字段：
+
+![](assets/release-notes-2023-2.png)
+
+* 添加接触点字段：
+
+![](assets/release-notes-2023-3.png)
+
+* “接触点位置”过滤器以及任何使用FT/LC字段（包括“日期”字段）的过滤器，都应更新如下：
+
+![](assets/release-notes-2023-4.png)
+
+![](assets/release-notes-2023-5.png)
+
+* 删除任何利用从Lead/Contact对象中删除的字段不再引用这些字段的现有报告。
+
+<p>
 
 * **Dynamics包相关**
 
