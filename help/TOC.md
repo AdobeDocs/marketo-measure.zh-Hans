@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: “[!DNL Marketo Measure] 指南”
 user-guide-description: '"[!DNL Marketo Measure] 可让营销人员深入了解哪些营销活动在为公司增加收入方面最有效。”'
-source-git-commit: 4953d6c51a87669ced0a13e2a54810d14976585c
+source-git-commit: 969cb2b4fb85aeb5c3a3aa21ead3eb5f4ff15ad9
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '823'
 ht-degree: 1%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 1%
       + [归因映射方法](configuration-and-setup/getting-started-with-marketo-measure/attribution-mapping-methodology.md)
       + [Adobe Admin Console设置](configuration-and-setup/getting-started-with-marketo-measure/adobe-admin-console-setup.md)
       + [买方接触点和买方归因接触点之间的差异](configuration-and-setup/getting-started-with-marketo-measure/difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints.md)
+      + [错误通知](configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md)
       + [跨BT和的接触点位置和生成说明 [!DNL BATs]](configuration-and-setup/getting-started-with-marketo-measure/explanation-of-touchpoint-positions-and-generation-across-bts-and-bats.md)
       + [[!DNL Marketo Measure] CRM无包集成](configuration-and-setup/getting-started-with-marketo-measure/marketo-measure-crm-packageless-integration.md)
    + [!DNL Marketo Measure] 和Salesforce {#marketo-measure-and-salesforce}
