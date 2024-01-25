@@ -4,7 +4,7 @@ title: 错误通知
 hide: true
 hidefromtoc: true
 feature: Fundamentals
-source-git-commit: 656c84090c93adb55a661869061e9e0771ede03d
+source-git-commit: 79f430fc8c0d5331bc4c12dee4937bb18dd801ce
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -42,10 +42,10 @@ ht-degree: 0%
           </ul>
           <p>您还可以按照以下步骤调整Marketo Measure使用的CRM积分：</p>
           <ul>
-            <li>导航到CRM → General→设置</li>
+            <li>导航到 <b>设置</b> &gt; <b>CRM</b> &gt; <b>常规</b></li>
             <li>更新每日CRM API限制<br/>
               <ul>
-                <li><b>注意</b>：默认值为100,000</li>
+                <li><b>注意：默认值为100,000</b></li>
               </ul>
             </li>
           </ul>
