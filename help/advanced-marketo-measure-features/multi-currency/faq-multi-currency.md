@@ -4,9 +4,9 @@ description: 常见问题解答（多货币） —  [!DNL Marketo Measure]  — 
 title: 常见问题解答（多货币）
 exl-id: 1d0936fb-4e66-4877-98d2-32c678a7ef3e
 feature: Multi-Currency
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
@@ -54,3 +54,7 @@ ht-degree: 0%
 **如果我的客户使用工作流填充已转换的字段，以后应如何使用此字段？**
 
 由于我们现在提供的产品将为客户处理转化，因此我们建议客户删除工作流和自定义字段，并允许我们导入其原始金额值。
+
+>[!MORELIKETHIS]
+>
+>[错误通知](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md){target="_blank"}

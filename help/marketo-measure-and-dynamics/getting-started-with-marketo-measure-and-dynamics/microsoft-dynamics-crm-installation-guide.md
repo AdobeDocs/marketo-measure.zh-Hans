@@ -4,9 +4,9 @@ description: '"[!DNL Microsoft Dynamics] CRM安装指南 — Marketo Measure —
 title: '"[!DNL Microsoft Dynamics] CRM安装指南”'
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
-source-git-commit: 86d610d07ab699266ba68a6f2eaf7c7981e62019
+source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -175,3 +175,7 @@ ht-degree: 0%
    >[!NOTE]
    >
    >当您禁用Marketo Measure将数据导出到Dynamics时，它不会删除任何现有数据。 有关删除现有数据的帮助，请联系Dynamics支持。
+
+   >[!MORELIKETHIS]
+   >
+   >[错误通知](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md){target="_blank"}

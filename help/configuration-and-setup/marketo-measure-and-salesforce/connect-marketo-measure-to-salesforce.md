@@ -4,9 +4,9 @@ description: 将Marketo Measure连接到Salesforce - [!DNL Marketo Measure]  —
 title: 将Marketo Measure连接到Salesforce
 exl-id: 9be8d3fa-1045-4e41-bc2e-5b9d4d3513ae
 feature: Salesforce
-source-git-commit: 5b1511395aff958f20f74c8a52c2701c4a64329d
+source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -68,3 +68,7 @@ Marketo Measure采用CRM集成任务，通过集成用户与客户的Salesforce�
 >[!NOTE]
 >
 >要增加所连接解决方案的可用Salesforce API积分，请联系您的Salesforce管理员和参考 [此Salesforce文档](https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_api.htm){target="_blank"}.
+
+>[!MORELIKETHIS]
+>
+>[错误通知](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md){target="_blank"}

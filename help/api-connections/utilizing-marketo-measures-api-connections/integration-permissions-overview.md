@@ -2,9 +2,9 @@
 description: 集成权限概述 —  [!DNL Marketo Measure]  — 产品文档
 title: 集成权限概述
 feature: APIs, Integration
-source-git-commit: e427f5e9f234917c033188116602d4798701118c
+source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1288'
 ht-degree: 1%
 
 ---
@@ -236,3 +236,7 @@ Marketo Measure正在跟踪促销活动、广告组、创意内容、网站链�
   </tr>
 </tbody>
 </table>
+
+>[!MORELIKETHIS]
+>
+>[错误通知](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md){target="_blank"}
