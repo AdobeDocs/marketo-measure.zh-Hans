@@ -3,7 +3,7 @@ description: ’[!DNL Marketo Measure] 最终数据完整性要求 —  [!DNL Ma
 title: ’[!DNL Marketo Measure] 终极数据完整性要求
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: b5277eef02d22b1f8cc10c184f232adb2ad7ac06
+source-git-commit: 23890f24412e234f9ab7c08b684b6064eac5d0ed
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 17%
@@ -1366,7 +1366,7 @@ select 'last updated date', count(*) from salesforce_contact where extSourceSyst
 我们建议在字段映射中使用计算字段将该字段默认为非NULL值。 以下是两个示例：
 
 * 如果某些opportunity记录的opportunityName为null ，请在字段映射中创建并使用以下计算字段
-   * `iif(name != null && name != "", name, "Unknown")`
+   * `iif(name != null && trim(name) != "", name, "Unknown")`
 
 * 如果某些experienceevent记录的leadOperation.campaignProgression.campaignID为空，请在字段映射中创建并使用以下计算字段
    * `iif(leadOperation.campaignProgression.campaignID != null && leadOperation.campaignProgression.campaignID != "" , to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", leadOperation.campaignProgression.campaignID, "sourceKey", concat(leadOperation.campaignProgression.campaignID,"@123-abc-321.Marketo")), iif(eventType == "leadOperation.statusInCampaignProgressionChanged", to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", "Unknown", "sourceKey", "Unknown@123-abc-321.Marketo"), null))`
