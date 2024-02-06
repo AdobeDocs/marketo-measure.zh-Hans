@@ -4,9 +4,9 @@ description: Data Warehouse架构 — Marketo Measure — 产品文档
 title: Data Warehouse架构
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: c1fc48028014160635c454138eb4ad8efb02c74a
+source-git-commit: cec688a6e3495679bf8d16f3974a0bb32302601d
 workflow-type: tm+mt
-source-wordcount: '20757'
+source-wordcount: '20781'
 ht-degree: 3%
 
 ---
@@ -6740,6 +6740,10 @@ _单击图像的全尺寸版本_
 ### BIZ_FACTS {#biz-facts}
 
 将展示次数、页面查看次数、访问次数、表单提交次数、用户接触点、接触点(BT)、归因接触点(BAT)和成本数据结合使用。 在内部使用以支持 [!DNL Marketo Measure] 报表。
+
+>[!IMPORTANT]
+>
+>2024年年中，Marketo Measure将弃用此表。 如果您希望自行创建，请运行 [此SQL查询](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.sql).
 
 <table>
   <tbody>
