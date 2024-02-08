@@ -4,9 +4,9 @@ description: Data Warehouse架构 — Marketo Measure — 产品文档
 title: Data Warehouse架构
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: cec688a6e3495679bf8d16f3974a0bb32302601d
+source-git-commit: 737fe3e5e780e654b2e53f58c957cf67ec97548c
 workflow-type: tm+mt
-source-wordcount: '20781'
+source-wordcount: '20777'
 ht-degree: 3%
 
 ---
@@ -8120,9 +8120,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>varchar</p>
       </td>
-      <td>
-        <p>Internet服务提供商的名称，由具有高级地域IP跟踪的客户使用。</p>
-      </td>
+      <td>预期为空，因为字段已过时。</td>
       <td>
         <p>AT&amp;T反向</p>
       </td>
@@ -12037,9 +12035,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>varchar</p>
       </td>
-      <td>
-        <p>用户的互联网服务提供商</p>
-      </td>
+      <td>预期为空，因为字段已过时。</td>
       <td>
         <p>AT&amp;T反向</p>
       </td>
