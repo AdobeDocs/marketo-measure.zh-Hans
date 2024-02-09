@@ -4,7 +4,7 @@ description: Data Warehouse架构 — Marketo Measure — 产品文档
 title: Data Warehouse架构
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: b7675bb771c41f6d0e0b2718e64a152c78e405af
+source-git-commit: 6cc1c20c2fa0e801b2c245a5a0473f0546b15da4
 workflow-type: tm+mt
 source-wordcount: '20775'
 ht-degree: 3%
@@ -357,349 +357,164 @@ _单击图像的全尺寸版本_
 <table>
   <tbody>
     <tr>
-      <th>
-        <p><strong>列</strong></p>
-      </th>
-      <th>
-        <p><strong>数据类型</strong></p>
-      </th>
-      <th>
-        <p><strong>描述</strong></p>
-      </th>
-      <th>
-        <p><strong>示例数据</strong></p>
-      </th>
+      <th><strong>列</strong></th>
+      <th><strong>数据类型</strong></th>
+      <th><strong>描述</strong></th>
+      <th><strong>示例数据</strong></th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>广告的唯一ID。</p>
-      </td>
-      <td>
-        <p>fb.106851586409075.6052044288804.6052044290004.6053457066804</p>
-      </td>
+      <td>ID</td>
+      <td>varchar</td>
+      <td>广告的唯一ID。</td>
+      <td>fb.106851586409075.6052044288804.6052044290004.6053457066804</td>
     </tr>
     <tr>
-      <td>
-        <p>DISPLAY_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>源系统中的广告ID。</p>
-      </td>
-      <td>
-        <p>6053457066804</p>
-      </td>
+      <td>DISPLAY_ID</td>
+      <td>varchar</td>
+      <td>源系统中的广告ID。</td>
+      <td>6053457066804</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_ACCOUNT_UNIQUE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>从中导入广告的广告帐户的ID。</p>
-      </td>
-      <td>
-        <p>fb.106851586409075</p>
-      </td>
+      <td>AD_ACCOUNT_UNIQUE_ID</td>
+      <td>varchar</td>
+      <td>从中导入广告的广告帐户的ID。</td>
+      <td>fb.106851586409075</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_ACCOUNT_NAME</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>从中导入广告的广告帐户的名称。</p>
-      </td>
-      <td>
-        <p>[!DNL Marketo Measure] 帐户</p>
-      </td>
+      <td>AD_ACCOUNT_NAME</td>
+      <td>varchar</td>
+      <td>从中导入广告的广告帐户的名称。</td>
+      <td>[!DNL Marketo Measure] 帐户</td>
     </tr>
     <tr>
-      <td>
-        <p>ADVERTISER_UNIQUE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>广告商（尤其是Doubleclick）的ID。</p>
-      </td>
-      <td>
-        <p>300181641</p>
-      </td>
+      <td>ADVERTISER_UNIQUE_ID</td>
+      <td>varchar</td>
+      <td>广告商（尤其是Doubleclick）的ID。</td>
+      <td>300181641</td>
     </tr>
     <tr>
-      <td>
-        <p>ADVERTISER_NAME</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>广告商的名称，专门用于Doubleclick。</p>
-      </td>
-      <td>
-        <p>Marketing Analytics</p>
-      </td>
+      <td>ADVERTISER_NAME</td>
+      <td>varchar</td>
+      <td>广告商的名称，专门用于Doubleclick。</td>
+      <td>Marketing Analytics</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_GROUP_UNIQUE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>广告的广告组ID。</p>
-      </td>
-      <td>
-        <p>fb.106851586409075.6052044288804.6052044290004</p>
-      </td>
+      <td>AD_GROUP_UNIQUE_ID</td>
+      <td>varchar</td>
+      <td>广告的广告组ID。</td>
+      <td>fb.106851586409075.6052044288804.6052044290004</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_GROUP_NAME</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>广告的广告组的名称。</p>
-      </td>
-      <td>
-        <p>广告B的广告集</p>
-      </td>
+      <td>AD_GROUP_NAME</td>
+      <td>varchar</td>
+      <td>广告的广告组的名称。</td>
+      <td>广告B的广告集</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_CAMPAIGN_UNIQUE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>广告的营销活动ID。</p>
-      </td>
-      <td>
-        <p>fb.106851586409075.6052044288804</p>
-      </td>
+      <td>AD_CAMPAIGN_UNIQUE_ID</td>
+      <td>varchar</td>
+      <td>广告的营销活动ID。</td>
+      <td>fb.106851586409075.6052044288804</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_CAMPAIGN_NAME</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>广告的促销活动名称。</p>
-      </td>
-      <td>
-        <p>商机开发营销活动</p>
-      </td>
+      <td>AD_CAMPAIGN_NAME</td>
+      <td>varchar</td>
+      <td>广告的促销活动名称。</td>
+      <td>商机开发营销活动</td>
     </tr>
     <tr>
-      <td>
-        <p>IS_ACTIVE</p>
-      </td>
-      <td>
-        <p>布尔值</p>
-      </td>
-      <td>
-        <p>广告在源系统中是否仍然处于活动状态。</p>
-      </td>
-      <td>
-        <p>false</p>
-      </td>
+      <td>IS_ACTIVE</td>
+      <td>布尔值</td>
+      <td>广告在源系统中是否仍然处于活动状态。</td>
+      <td>false</td>
     </tr>
     <tr>
-      <td>
-        <p>IS_DELETED</p>
-      </td>
-      <td>
-        <p>布尔值</p>
-      </td>
-      <td>
-        <p>广告是否已在源系统中删除。</p>
-      </td>
-      <td>
-        <p>false</p>
-      </td>
+      <td>IS_DELETED</td>
+      <td>布尔值</td>
+      <td>广告是否已在源系统中删除。</td>
+      <td>false</td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
-      <td>
-        <p>上次修改记录的日期。</p>
-      </td>
-      <td>
-        <p>2018-08-02 06:35:59.000</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
+      <td>上次修改记录的日期。</td>
+      <td>2018-08-02 06:35:59.000</td>
     </tr>
     <tr>
-      <td>
-        <p>FIRST_IMPORT</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
-      <td>
-        <p>首次从源系统导入记录的日期。</p>
-      </td>
-      <td>
-        <p>2018-08-02 06:35:59.000</p>
-      </td>
+      <td>FIRST_IMPORT</td>
+      <td>timestamp_ntz</td>
+      <td>首次从源系统导入记录的日期。</td>
+      <td>2018-08-02 06:35:59.000</td>
     </tr>
     <tr>
-      <td>
-        <p>名称</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>源系统中的广告的名称。</p>
-      </td>
-      <td>
-        <p>广告2</p>
-      </td>
+      <td>名称</td>
+      <td>varchar</td>
+      <td>源系统中的广告的名称。</td>
+      <td>广告2</td>
     </tr>
     <tr>
-      <td>
-        <p>NEEDS_UPDATE</p>
+      <td>NEEDS_UPDATE</td>
+      <td>布尔值</td>
+      <td>是否需要更新广告 [!DNL Marketo Measure] 标记。
+      <p>（诊断字段，由内部处理使用。）
       </td>
-      <td>
-        <p>布尔值</p>
-      </td>
-      <td>
-        <p>是否需要更新广告 [!DNL Marketo Measure] 标记。</p>
-        <p>（诊断字段，由内部处理使用。）</p>
-      </td>
-      <td>
-        <p>false</p>
-      </td>
+      <td>false</td>
     </tr>
     <tr>
-      <td>
-        <p>分组密钥</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>分组密钥</td>
+      <td>varchar</td>
       <td>用于内部处理的诊断字段。</td>
-      <td>
-        <p>fb.106851586409075.6052044288804.6052044290004</p>
-      </td>
+      <td>fb.106851586409075.6052044288804.6052044290004</td>
     </tr>
     <tr>
-      <td>
-        <p>实体类型</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>此表的主对象或实体。 在本例中，“广告”。</p>
-      </td>
-      <td>
-        <p>广告</p>
-      </td>
+      <td>实体类型</td>
+      <td>varchar</td>
+      <td>此表的主对象或实体。 在本例中，“广告”。</td>
+      <td>广告</td>
     </tr>
     <tr>
-      <td>
-        <p>PROVIDER_TYPE</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>广告的广告提供商的名称。</p>
-      </td>
-      <td>
-        <p>Facebook</p>
-      </td>
+      <td>PROVIDER_TYPE</td>
+      <td>varchar</td>
+      <td>广告的广告提供商的名称。</td>
+      <td>Facebook</td>
     </tr>
     <tr>
-      <td>
-        <p>URL_CURRENT</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>登陆页面的URL。</p>
-        <p>（诊断字段，用于内部处理。）</p>
+      <td>URL_CURRENT</td>
+      <td>varchar</td>
+      <td>登陆页面的URL。
+        <p>（诊断字段，用于内部处理。）
       </td>
       <td></td>
     </tr>
     <tr>
-      <td>
-        <p>URL_OLD</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>URL_CURRENT的上一个值。</p>
-        <p>（诊断字段，用于内部处理。）</p>
+      <td>URL_OLD</td>
+      <td>varchar</td>
+      <td>URL_CURRENT的上一个值。
+      <p>（诊断字段，用于内部处理。）
       </td>
       <td></td>
     </tr>
     <tr>
-      <td>
-        <p>URL已请求</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>URL将修饰的内容 [!DNL Marketo Measure] 参数。</p>
-        <p>（诊断字段，用于内部处理。）</p>
+      <td>URL已请求</td>
+      <td>varchar</td>
+      <td>URL将修饰的内容 [!DNL Marketo Measure] 参数。
+      <p>（诊断字段，用于内部处理。）
       </td>
       <td></td>
     </tr>
     <tr>
-      <td>
-        <p>URL_ALTENATIVES</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>从源系统导入。</p>
-        <p>（诊断字段，用于内部处理。）</p>
+      <td>URL_ALTENATIVES</td>
+      <td>varchar</td>
+      <td>从源系统导入。
+      <p>（诊断字段，用于内部处理。）
       </td>
       <td></td>
     </tr>
     <tr>
-      <td>
-        <p>ROW_KEY</p>
-      </td>
-      <td>
-        <p>数字(38,0)</p>
-      </td>
-      <td>
-        <p>Biz_Facts视图的外键。</p>
-      </td>
-      <td>
-        <p>6008900572523230000</p>
-      </td>
+      <td>ROW_KEY</td>
+      <td>数字(38,0)</td>
+      <td>Biz_Facts视图的外键。</td>
+      <td>6008900572523230000</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
@@ -735,277 +550,126 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>广告商的唯一ID。</p>
-      </td>
-      <td>
-        <p>dc.6114.9143143</p>
-      </td>
+      <td>ID</td>
+      <td>varchar</td>
+      <td>广告商的唯一ID。</td>
+      <td>dc.6114.9143143</td>
     </tr>
     <tr>
-      <td>
-        <p>DISPLAY_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>DISPLAY_ID</td>
+      <td>varchar</td>
       <td>源系统中的广告商ID。</td>
       <td>9143143</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_ACCOUNT_UNIQUE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>从中导入广告的广告帐户的ID。</p>
-      </td>
-      <td>
-        <p>fb.106851586409075</p>
-      </td>
+      <td>AD_ACCOUNT_UNIQUE_ID</td>
+      <td>varchar</td>
+      <td>从中导入广告的广告帐户的ID。</td>
+      <td>fb.106851586409075</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_ACCOUNT_NAME</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>从中导入广告的广告帐户的名称。</p>
-      </td>
-      <td>
-        <p>[!DNL Marketo Measure] 帐户</p>
-      </td>
+      <td>AD_ACCOUNT_NAME</td>
+      <td>varchar</td>
+      <td>从中导入广告的广告帐户的名称。</td>
+      <td>[!DNL Marketo Measure] 帐户</td>
     </tr>
     <tr>
-      <td>
-        <p>ADVERTISER_UNIQUE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>广告商的ID，专门用于Doubleclick。</p>
-      </td>
-      <td>
-        <p>300181641</p>
-      </td>
+      <td>ADVERTISER_UNIQUE_ID</td>
+      <td>varchar</td>
+      <td>广告商的ID，专门用于Doubleclick。</td>
+      <td>300181641</td>
     </tr>
     <tr>
-      <td>
-        <p>ADVERTISER_NAME</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>广告商的名称，专门用于Doubleclick。</p>
-      </td>
-      <td>
-        <p>[!DNL Marketo Measure] Marketing Analytics</p>
-      </td>
+      <td>ADVERTISER_NAME</td>
+      <td>varchar</td>
+      <td>广告商的名称，专门用于Doubleclick。</td>
+      <td>[!DNL Marketo Measure] Marketing Analytics</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_GROUP_UNIQUE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>预期为空，因为任何广告层次结构中的广告商上方没有广告组。</p>
-      </td>
-      <td>
-        <p>null</p>
-      </td>
+      <td>AD_GROUP_UNIQUE_ID</td>
+      <td>varchar</td>
+      <td>预期为空，因为任何广告层次结构中的广告商上方没有广告组。</td>
+      <td>null</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_GROUP_NAME</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>预期为空，因为任何广告层次结构中的广告商上方没有广告组。</p>
-      </td>
-      <td>
-        <p>null</p>
-      </td>
+      <td>AD_GROUP_NAME</td>
+      <td>varchar</td>
+      <td>预期为空，因为任何广告层次结构中的广告商上方没有广告组。</td>
+      <td>null</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_CAMPAIGN_UNIQUE_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>预期为空，因为任何广告层次结构中的广告商上方没有广告营销活动。</p>
-      </td>
-      <td>
-        <p>null</p>
-      </td>
+      <td>AD_CAMPAIGN_UNIQUE_ID</td>
+      <td>varchar</td>
+      <td>预期为空，因为任何广告层次结构中的广告商上方没有广告营销活动。</td>
+      <td>null</td>
     </tr>
     <tr>
-      <td>
-        <p>AD_CAMPAIGN_NAME</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>预期为空，因为任何广告层次结构中的广告广告商上方没有营销活动。</p>
-      </td>
-      <td>
-        <p>null</p>
-      </td>
+      <td>AD_CAMPAIGN_NAME</td>
+      <td>varchar</td>
+      <td>预期为空，因为任何广告层次结构中的广告广告商上方没有营销活动。</td>
+      <td>null</td>
     </tr>
     <tr>
-      <td>
-        <p>IS_ACTIVE</p>
-      </td>
-      <td>
-        <p>布尔值</p>
-      </td>
-      <td>
-        <p>广告商是否仍在源系统中处于活动状态。</p>
-      </td>
-      <td>
-        <p>true</p>
-      </td>
+      <td>IS_ACTIVE</td>
+      <td>布尔值</td>
+      <td>广告商是否仍在源系统中处于活动状态。</td>
+      <td>true</td>
     </tr>
     <tr>
-      <td>
-        <p>IS_DELETED</p>
-      </td>
-      <td>
-        <p>布尔值</p>
-      </td>
-      <td>
-        <p>是否已在源系统中删除广告商。</p>
-      </td>
-      <td>
-        <p>false</p>
-      </td>
+      <td>IS_DELETED</td>
+      <td>布尔值</td>
+      <td>是否已在源系统中删除广告商。</td>
+      <td>false</td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
-      <td>
-        <p>上次修改记录的日期。</p>
-      </td>
-      <td>
-        <p>2018-08-02 06:35:59.000</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
+      <td>上次修改记录的日期。</td>
+      <td>2018-08-02 06:35:59.000</td>
     </tr>
     <tr>
-      <td>
-        <p>FIRST_IMPORT</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
-      <td>
-        <p>首次从源系统导入记录的日期。</p>
-      </td>
-      <td>
-        <p>2018-08-02 06:35:59.000</p>
-      </td>
+      <td>FIRST_IMPORT</td>
+      <td>timestamp_ntz</td>
+      <td>首次从源系统导入记录的日期。</td>
+      <td>2018-08-02 06:35:59.000</td>
     </tr>
     <tr>
-      <td>
-        <p>名称</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>源系统中的广告商的名称。</p>
-      </td>
-      <td>
-        <p>[!DNL Marketo Measure] Marketing Analytics</p>
-      </td>
+      <td>名称</td>
+      <td>varchar</td>
+      <td>源系统中的广告商的名称。</td>
+      <td>[!DNL Marketo Measure] Marketing Analytics</td>
     </tr>
     <tr>
-      <td>
-        <p>NEEDS_UPDATE</p>
+      <td>NEEDS_UPDATE</td>
+      <td>布尔值</td>
+      <td>是否需要更新广告商 [!DNL Marketo Measure] 标记。
+      <p>（诊断字段，由内部处理使用。）
       </td>
-      <td>
-        <p>布尔值</p>
-      </td>
-      <td>
-        <p>是否需要更新广告商 [!DNL Marketo Measure] 标记。</p>
-        <p>（诊断字段，由内部处理使用。）</p>
-      </td>
-      <td>
-        <p>false</p>
-      </td>
+      <td>false</td>
     </tr>
     <tr>
-      <td>
-        <p>分组密钥</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>分组密钥</td>
+      <td>varchar</td>
       <td>用于内部处理的诊断字段。</td>
       <td></td>
     </tr>
     <tr>
-      <td>
-        <p>实体类型</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>此表的主对象或实体。 在本例中，为“广告商”。</p>
-      </td>
-      <td>
-        <p>广告商</p>
-      </td>
+      <td>实体类型</td>
+      <td>varchar</td>
+      <td>此表的主对象或实体。 在本例中，为“广告商”。</td>
+      <td>广告商</td>
     </tr>
     <tr>
-      <td>
-        <p>PROVIDER_TYPE</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>广告商的广告提供商。</p>
-      </td>
-      <td>
-        <p>多布莱克</p>
-      </td>
+      <td>PROVIDER_TYPE</td>
+      <td>varchar</td>
+      <td>广告商的广告提供商。</td>
+      <td>多布莱克</td>
     </tr>
     <tr>
-      <td>
-        <p>ROW_KEY</p>
-      </td>
-      <td>
-        <p>数字(38,0)</p>
-      </td>
-      <td>
-        <p>Biz_Facts视图的外键。</p>
-      </td>
-      <td>
-        <p>6008900572523230000</p>
-      </td>
+      <td>ROW_KEY</td>
+      <td>数字(38,0)</td>
+      <td>Biz_Facts视图的外键。</td>
+      <td>6008900572523230000</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
