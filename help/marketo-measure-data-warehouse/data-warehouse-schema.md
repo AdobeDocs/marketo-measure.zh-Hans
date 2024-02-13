@@ -4,9 +4,9 @@ description: Data Warehouse架构 — Marketo Measure — 产品文档
 title: Data Warehouse架构
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: 6cc1c20c2fa0e801b2c245a5a0473f0546b15da4
+source-git-commit: 79ac3c82c1b67cebc26fedb5e698e531537cce7f
 workflow-type: tm+mt
-source-wordcount: '20775'
+source-wordcount: '21115'
 ht-degree: 3%
 
 ---
@@ -705,12 +705,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>广告帐户的唯一标识符。</p>
       </td>
@@ -722,9 +718,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>DISPLAY_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>源系统中的广告帐户ID。</td>
       <td>
         <p>6601259029</p>
@@ -734,9 +728,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>预期为空，因为这是广告层次结构中广告帐户的记录。</td>
       <td>null</td>
     </tr>
@@ -744,9 +736,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>预期为空，因为这是广告层次结构中广告帐户的记录。</td>
       <td>null</td>
     </tr>
@@ -754,9 +744,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为任何广告层次结构中的广告帐户上方没有广告商。</p>
       </td>
@@ -766,9 +754,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为任何广告层次结构中的广告帐户上方没有广告商。</p>
       </td>
@@ -778,9 +764,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为任何广告层次结构中的广告帐户上方没有广告组。</p>
       </td>
@@ -790,9 +774,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为任何广告层次结构中的广告帐户上方没有广告组。</p>
       </td>
@@ -802,9 +784,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为任何广告层次结构中的广告帐户上方没有广告营销活动。</p>
       </td>
@@ -814,9 +794,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为任何广告层次结构中的广告帐户上方没有广告营销活动。</p>
       </td>
@@ -851,12 +829,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
       </td>
@@ -868,9 +842,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FIRST_IMPORT</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>首次从源系统导入记录的日期。</p>
       </td>
@@ -882,9 +854,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>源系统中的广告帐户的名称。</td>
       <td>
         <p>[!DNL Marketo Measure] 广告帐户</p>
@@ -909,9 +879,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>分组密钥</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部处理的诊断字段。</td>
       <td></td>
     </tr>
@@ -919,9 +887,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>实体类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>此表的主对象或实体。 在本例中，为“Account”。</p>
       </td>
@@ -933,9 +899,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PROVIDER_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>广告帐户的广告提供商的名称。</p>
       </td>
@@ -947,9 +911,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNT_CURRENCY_UNIT</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>源系统中用于广告帐户的货币代码。</p>
       </td>
@@ -961,9 +923,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>COMPANY_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部处理。</td>
       <td>1933789</td>
     </tr>
@@ -971,9 +931,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>源</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>从utm_source的URL中解析。</td>
       <td>
         <p>社交</p>
@@ -983,9 +941,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>中</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>从utm_medium中的URL解析。</td>
       <td>
         <p>辘辘市07261601</p>
@@ -1051,9 +1007,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部诊断。</td>
       <td>
         <p>http://cdn.adobe.com/redir?lp={lpurl}&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}</p>
@@ -1063,9 +1017,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE_OLD</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部诊断。</td>
       <td></td>
     </tr>
@@ -1073,9 +1025,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部诊断。</td>
       <td></td>
     </tr>
@@ -1083,9 +1033,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE_APPLIED</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>在AdWords的广告帐户级别添加的跟踪模板或Bing的跟踪模板可用于标记登陆页面。</p>
       </td>
@@ -1141,12 +1089,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>营销活动的唯一ID。</p>
       </td>
@@ -1158,9 +1102,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>DISPLAY_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>源系统中的营销活动ID。</td>
       <td>
         <p>285114995</p>
@@ -1170,9 +1112,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中导入营销活动的广告帐户的ID。</p>
       </td>
@@ -1184,9 +1124,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中导入营销活动的广告帐户的名称。</p>
       </td>
@@ -1198,9 +1136,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>营销活动（尤其是Doubleclick）的广告商ID。</p>
       </td>
@@ -1212,9 +1148,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>营销活动的广告商名称，专门用于Doubleclick。</p>
       </td>
@@ -1226,9 +1160,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为任何广告层次结构中的促销活动之上没有广告组。</p>
       </td>
@@ -1240,9 +1172,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为任何广告层次结构中的促销活动之上没有广告组。</p>
       </td>
@@ -1252,9 +1182,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>促销活动的唯一ID，请改用ID字段。</p>
       </td>
@@ -1264,9 +1192,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>营销活动的名称，请改用名称字段。</p>
       </td>
@@ -1301,12 +1227,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
       </td>
@@ -1318,9 +1240,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FIRST_IMPORT</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>首次从源系统导入记录的日期。</p>
       </td>
@@ -1332,9 +1252,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>营销活动的名称。</p>
       </td>
@@ -1361,9 +1279,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>分组密钥</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部处理的诊断字段。</td>
       <td></td>
     </tr>
@@ -1371,9 +1287,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>实体类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>此表的主对象或实体。 在本例中，为“Campaign”。</p>
       </td>
@@ -1385,9 +1299,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PROVIDER_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>营销活动的广告提供商的名称。</p>
       </td>
@@ -1413,9 +1325,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部诊断。</td>
       <td></td>
     </tr>
@@ -1423,9 +1333,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE_OLD</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部诊断。</td>
       <td></td>
     </tr>
@@ -1433,9 +1341,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部诊断。</td>
       <td></td>
     </tr>
@@ -1443,9 +1349,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE_APPLIED</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>在AdWords或Bing的“营销活动”级别添加了跟踪模板，用于标记登陆页面。</p>
       </td>
@@ -1509,12 +1413,8 @@ _单击图像的全尺寸版本_
   </tr>
   <tbody>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>广告表单的唯一ID。</p>
       </td>
@@ -1526,9 +1426,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中导入广告表单的广告帐户的ID。</p>
       </td>
@@ -1540,9 +1438,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中导入广告表单的广告帐户的名称。</p>
       </td>
@@ -1565,12 +1461,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
       </td>
@@ -1582,9 +1474,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FIRST_IMPORT</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>首次从源系统导入记录的日期。</p>
       </td>
@@ -1596,9 +1486,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>广告表单的名称。</p>
       </td>
@@ -1610,9 +1498,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>实体类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>此表的主对象或实体。 在本例中，为“AdForm”。</p>
       </td>
@@ -1624,9 +1510,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PROVIDER_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>广告表单的广告提供商的名称。</p>
       </td>
@@ -1638,9 +1522,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>描述</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>广告表单的描述。</p>
       </td>
@@ -1652,9 +1534,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>标题</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>广告表单的标题。</td>
       <td>
         <p>现在是自动化再融资申请流程的时候了</p>
@@ -1664,9 +1544,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>LANDING_URL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>广告表单的登陆URL。</td>
       <td>
         <p>https://adobe.com/blog/refinancing-application-process/</p>
@@ -1676,9 +1554,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>问题</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>广告表单的问题列表。</td>
       <td>
         <p>名字：姓氏：电子邮件地址：国家/地区：职务：公司名称</p>
@@ -1688,9 +1564,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>状态</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>广告表单的状态。</p>
       </td>
@@ -1738,12 +1612,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>广告组的唯一ID。</p>
       </td>
@@ -1755,9 +1625,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>DISPLAY_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>源系统中的广告组ID。</td>
       <td>
         <p>23105326115</p>
@@ -1767,9 +1635,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中导入广告组的广告帐户的ID。</p>
       </td>
@@ -1781,9 +1647,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中导入广告组的广告帐户的名称。</p>
       </td>
@@ -1795,9 +1659,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为Doubleclick广告层次结构中没有广告组。</p>
       </td>
@@ -1809,9 +1671,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为Doubleclick广告层次结构中没有广告组。</p>
       </td>
@@ -1823,9 +1683,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为这是层次结构中广告组的记录。</p>
       </td>
@@ -1837,9 +1695,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为这是层次结构中广告组的记录。</p>
       </td>
@@ -1851,9 +1707,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>广告组的营销活动ID。</p>
       </td>
@@ -1865,9 +1719,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>广告组的促销活动名称。</p>
       </td>
@@ -1904,12 +1756,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
       </td>
@@ -1921,9 +1769,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FIRST_IMPORT</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>首次从源系统导入记录的日期。</p>
       </td>
@@ -1935,9 +1781,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>广告组的名称。</p>
       </td>
@@ -1964,9 +1808,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>分组密钥</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部处理的诊断字段。</td>
       <td></td>
     </tr>
@@ -1974,9 +1816,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>实体类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>此表的主对象或实体。 在本例中，为“AdGroup”。</p>
       </td>
@@ -1988,9 +1828,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PROVIDER_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>广告组的广告提供商的名称。</p>
       </td>
@@ -2002,9 +1840,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_NETWORK_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>运行广告组的介质。</p>
       </td>
@@ -2016,9 +1852,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部诊断。</td>
       <td></td>
     </tr>
@@ -2026,9 +1860,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE_OLD</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部诊断。</td>
       <td></td>
     </tr>
@@ -2036,9 +1868,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部诊断。</td>
       <td></td>
     </tr>
@@ -2046,9 +1876,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE_APPLIED</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>在AdWords的广告帐户级别添加的跟踪模板或Bing的跟踪模板可用于标记登陆页面。</p>
       </td>
@@ -2104,12 +1932,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>广告提供商的唯一ID。</p>
       </td>
@@ -2121,9 +1945,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>广告提供商的名称。</p>
       </td>
@@ -2178,12 +2000,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>买方归因接触点(BAT)的唯一ID。</p>
       </td>
@@ -2193,12 +2011,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
       </td>
@@ -2210,9 +2024,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>机会ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>BAT所属的Opportunity的ID。</p>
       </td>
@@ -2221,12 +2033,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>CONTACT_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>CONTACT_ID</td>
+      <td>varchar</td>
       <td>
         <p>与BAT关联的联系人的ID。</p>
       </td>
@@ -2244,9 +2052,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNT_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>BAT归属于的帐户的ID。</p>
       </td>
@@ -2258,9 +2064,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>USER_TOUCHPOINT_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>生成BAT的用户接触点的ID。</p>
       </td>
@@ -2272,9 +2076,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>接触点日期</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>接触点的日期。</p>
       </td>
@@ -2292,9 +2094,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>MARKETING_TOUCH_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>活动的类型，Web访问、Web窗体、Web聊天、电话、[CRM]营销活动或[CRM]活动。 在CRM中称为“接触点类型”。</p>
       </td>
@@ -2306,9 +2106,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>渠道</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>根据中的自定义渠道定义，接触点所属的渠道 [!DNL Marketo Measure] 应用程序。 在CRM中称为“营销渠道 — 路径”。</p>
       </td>
@@ -2320,9 +2118,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别1</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>第一个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
@@ -2334,9 +2130,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别2</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>根据以下内容中的区段定义，确定接触点属于第二个类别的区段值 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
@@ -2348,9 +2142,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别3</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>接触点所属的第三类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
@@ -2362,9 +2154,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别4</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>根据以下内容中的区段定义，确定接触点所属的第四个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td>
         <p>新业务</p>
@@ -2374,9 +2164,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别5</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>根据以下内容中的区段定义，确定接触点所属的第五个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -2384,9 +2172,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别6</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>根据以下内容中的区段定义，确定接触点所属的第六个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -2394,9 +2180,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别7</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>根据以下内容中的区段定义，确定接触点所属的第七个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -2404,9 +2188,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别8</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>根据以下内容中的区段定义，确定接触点所属的第八个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -2414,9 +2196,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别9</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>第9个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -2424,9 +2204,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别10</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>第10个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -2434,9 +2212,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别11</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>第11个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -2444,9 +2220,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别12</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>第12个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -2454,9 +2228,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别13</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>根据以下内容中的区段定义，确定接触点所属的第十三个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -2464,9 +2236,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别14</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>第14个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -2474,9 +2244,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别15</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>第15个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -2484,9 +2252,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>浏览器名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，检测到用户在会话期间所在的浏览器。</p>
       </td>
@@ -2498,9 +2264,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>浏览器版本</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，查看在会话期间用户所在的检测到的浏览器版本。</p>
       </td>
@@ -2512,9 +2276,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>平台名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，检测到用户在会话期间所在的平台。</p>
       </td>
@@ -2526,9 +2288,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>平台版本</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，查看在会话期间用户所在平台的检测到版本。</p>
       </td>
@@ -2540,9 +2300,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>LANDING_PAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>导致接触点的会话的第一个登陆页面。 在CRM中称为“登陆页面”。</p>
       </td>
@@ -2554,9 +2312,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>LANDING_PAGE_RAW</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>生成接触点的会话的第一个登陆页面。 原始登陆页面将包含URL中的所有查询参数。 在CRM中称为“Landing Page - Raw”。</p>
       </td>
@@ -2568,9 +2324,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>REFERRER_PAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>通常是在用户访问网站之前的外部登陆页面。 在CRM中称为“反向链接页面”。</p>
       </td>
@@ -2582,9 +2336,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>REFERRER_PAGE_RAW</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>通常是在用户访问网站之前的外部登陆页面。 原始反向链接页面可能包含URL中的查询参数。 在CRM中称为“Referrer Page - Raw”。</p>
       </td>
@@ -2596,9 +2348,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FORM_PAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>会话中记录的第一张表单产生了接触点。 后续表单提交不会显示在Attribution_Touchpoints表中，而是显示在Form_Submit表中。 在CRM中称为“表单URL”。</p>
       </td>
@@ -2610,9 +2360,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FORM_PAGE_RAW</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>会话中记录的第一张表单产生了接触点。 后续表单提交不会显示在Attribution_Touchpoints表中，而是显示在Form_Submit表中。 原始表单页面URL中可能包含查询参数。 在CRM中称为“表单URL — 原始”。</p>
       </td>
@@ -2624,9 +2372,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FORM_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>提交表单的日期。</p>
       </td>
@@ -2638,9 +2384,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>城市</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>根据javascript和IP地址，检测用户在会话期间所处的城市。</p>
       </td>
@@ -2652,9 +2396,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>区域</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，查看在会话期间用户所处的检测区域。</p>
       </td>
@@ -2666,9 +2408,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>国家/地区</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>通过javascript和IP地址，可了解在会话期间检测到的用户所在的国家/地区。</p>
       </td>
@@ -2680,9 +2420,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>中</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>用于定义产生接触点的媒介。 这可以从utm_medium的URL中解析。 或者，如果 [!DNL Marketo Measure] 能够解析广告，它可能是“cpc”或“display”之类的值。</p>
       </td>
@@ -2694,9 +2432,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>WEB_SOURCE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>用于定义导致接触点的源。 可以从utm_source中的URL中解析该活动；如果活动是从CRM同步的，则一般设置为“CRM Campaign”；或者 [!DNL Marketo Measure] 能够解析广告，它可能是“Google AdWords”或“Facebook”之类的值。 在CRM中称为“接触点源”。</p>
       </td>
@@ -2708,9 +2444,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>SEARCH_PHRASE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>用户在浏览器中输入要搜索并最终显示在网站上的值。 根据关键词购买情况，这可能与从付费搜索平台购买的关键词匹配，也可能不匹配。</p>
       </td>
@@ -2722,9 +2456,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_PROVIDER</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>广告平台 [!DNL Marketo Measure] 能够从（通常是我们的集成合作伙伴之一）中解析。</p>
       </td>
@@ -2736,9 +2468,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户的ID。</p>
       </td>
@@ -2750,9 +2480,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户的名称。</p>
       </td>
@@ -2764,9 +2492,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告商ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -2778,9 +2504,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告商名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -2792,9 +2516,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>SITE_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中网站的ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -2806,9 +2528,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>站点名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的网站名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -2820,9 +2540,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的版面ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -2834,9 +2552,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PLACEMENT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的投放位置的名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -2848,9 +2564,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的营销活动ID。</p>
       </td>
@@ -2862,9 +2576,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>营销活动名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的营销活动名称。</p>
       </td>
@@ -2876,9 +2588,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告组ID。 这仅适用于Google Adwords。</p>
       </td>
@@ -2890,9 +2600,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告组的名称。 这仅适用于Google AdWords。</p>
       </td>
@@ -2904,9 +2612,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告ID。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
@@ -2918,9 +2624,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告名称。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
@@ -2932,9 +2636,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的创意ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -2946,9 +2648,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的创意内容的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -2960,9 +2660,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DESCRIPTION_1</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>搜索广告中创意的第一行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -2974,9 +2672,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DESCRIPTION_2</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>搜索广告中的创意内容第二行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -2988,9 +2684,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DESTINATION_URL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从搜索广告点进的登陆页面，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -3002,9 +2696,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DISPLAY_URL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>在搜索广告上显示的友好URL名称，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -3016,9 +2708,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从付费搜索购买购买的关键字ID，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -3030,9 +2720,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>KEYWORD_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从付费搜索购买购买关键词（从广告解析来源广告的广告帐户提取）的名称。 这适用于Google AdWords和Bing Ads（搜索）</p>
       </td>
@@ -3044,9 +2732,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>KEYWORD_MATCH_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>在搜索短语和购买的关键字之间找到的匹配类型。</p>
       </td>
@@ -3357,6 +3043,163 @@ _单击图像的全尺寸版本_
   </tbody>
 </table>
 
+## BIZ_ATTRIBUTION_AI_TOUCHPOINTS {#biz-attribution-ai-touchpoints}
+
+从Attribution AI集成生成的数据。 这些字段仅针对Marketo Measure Ultimate客户填充。
+
+<table>
+<thead>
+  <tr>
+    <th>列</th>
+    <th>数据类型</th>
+    <th>描述</th>
+    <th>示例数据</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>CONVERSION_DATE</td>
+    <td>Timestamp_ntz</td>
+    <td>转换日期</td>
+    <td>2020-01-01 01:01:00.000</td>
+  </tr>
+  <tr>
+    <td>CONVERSION_NAME</td>
+    <td>varchar</td>
+    <td>转化事件的名称（由客户在UI设置中指定）</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>CONVERSION_ID</td>
+    <td>varchar</td>
+    <td>转化事件的id（这是随源数据集中的事件数据记录一起发送的原始唯一id值）</td>
+    <td>0013100001b44aGAAQ</td>
+  </tr>
+  <tr>
+    <td>CONVERSION_EVENT_ID</td>
+    <td>varchar</td>
+    <td>转化事件的原始MM事件ID 
+    <br>映射到用户接触点或阶段过渡</td>
+    <td>00U0Z00000pCZmyUAG</td>
+  </tr>
+  <tr>
+    <td>CONVERSION_ACCOUNT_ID</td>
+    <td>varchar</td>
+    <td>转化事件的原始MM帐户ID</td>
+    <td>0013100001kpAZxAAM</td>
+  </tr>
+  <tr>
+    <td>CONVERSION_PORTUNITY_ID</td>
+    <td>varchar</td>
+    <td>转化事件的原始MM机会ID</td>
+    <td>0060Z00000lFHtOQAW</td>
+  </tr>
+  <tr>
+    <td>CONVERSION_LEAD_ID</td>
+    <td>varchar</td>
+    <td>转化事件的原始MM潜在客户ID <br>大多数情况下可能为空</td>
+    <td>00Q0Z000013dw4GUAQ</td>
+  </tr>
+  <tr>
+    <td>CONVERSION_CONTACT_ID</td>
+    <td>varchar</td>
+    <td>转化事件的原始毫米联系人ID
+    <br>大多数情况下可能为空</td>
+    <td>00331000032hMxRAAU</td>
+  </tr>
+  <tr>
+    <td>CONVERSION_EVENT_TYPE</td>
+    <td>varchar</td>
+    <td>转化事件类型（b2b =商机转化，b2c =商机转化）</td>
+    <td>b2b</td>
+  </tr>
+  <tr>
+    <td>SCORE_DATE</td>
+    <td>Timestamp_ntz</td>
+    <td>上次对接触点进行评分的日期</td>
+    <td>2020-01-01 01:01:00.000</td>
+  </tr>
+  <tr>
+    <td>影响百分比</td>
+    <td>数字(38,35)</td>
+    <td>每个接触点负责的转化比例</td>
+    <td>0.10</td>
+  </tr>
+  <tr>
+    <td>INCREMENTAL_PERCENT</td>
+    <td>数字(38,35)</td>
+    <td>接触点直接引起的边际影响的数量</td>
+    <td>0.25</td>
+  </tr>
+  <tr>
+    <td>接触点日期</td>
+    <td>Timestamp_ntz</td>
+    <td>接触点或阶段过渡日期</td>
+    <td>2020-01-01 01:01:00.000</td>
+  </tr>
+  <tr>
+    <td>TOUCHPOINT_EVENT_ID</td>
+    <td>varchar</td>
+    <td>生成接触点的事件的ID</td>
+    <td>00U3100000VLUnEEAX</td>
+  </tr>
+  <tr>
+    <td>TOUCHPOINT_OPPORTUNITY_ID</td>
+    <td>varchar</td>
+    <td>与接触点关联的商机ID</td>
+    <td>0060Z00000lFHtOQAW</td>
+  </tr>
+  <tr>
+    <td>TOUCHPOINT_ACCOUNT_ID</td>
+    <td>varchar</td>
+    <td>与接触点关联的帐户的id</td>
+    <td>0013100001kpAZxAAM</td>
+  </tr>
+  <tr>
+    <td>接触点商机ID</td>
+    <td>varchar</td>
+    <td>与接触点关联的商机ID</td>
+    <td>00Q0Z000013dw4GUAQ</td>
+  </tr>
+  <tr>
+    <td>TOUCHPOINT_CONTACT_ID</td>
+    <td>varchar</td>
+    <td>与接触点关联的联系人的id</td>
+    <td>00331000032hMxRAAU</td>
+  </tr>
+  <tr>
+    <td>COUNT_TO_CONVERSION</td>
+    <td>数字(38,0)</td>
+    <td>导致转化事件的链中接触点的排名或序数值</td>
+    <td>10000</td>
+  </tr>
+  <tr>
+    <td>AAI_SOURCE_ID</td>
+    <td>varchar</td>
+    <td>归因人工智能源表的外键</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>_CREATED_DATE</td>
+    <td>Timestamp_ntz</td>
+    <td>在Snowflake中创建记录的日期</td>
+    <td>2020-01-01 01:01:00.000</td>
+  </tr>
+  <tr>
+    <td>修改日期(_M)</td>
+    <td>Timestamp_ntz</td>
+    <td>上次在Snowflake中修改记录的日期</td>
+    <td>2020-01-01 01:01:00.000</td>
+  </tr>
+  <tr>
+    <td>_DELETED_日期</td>
+    <td>Timestamp_ntz</td>
+    <td>在Snowflake中删除记录的日期</td>
+    <td>2020-01-01 01:01:00.000</td>
+  </tr>
+</tbody>
+</table>
+
 ### BIZ_CAMPAIGN_MEMBERS {#biz-campaign-members}
 
 从源系统导入的营销活动成员。 如果禁用了Campaign同步，则此表将为空。
@@ -3370,26 +3213,14 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
-      <td>
-        <p>源系统中的营销活动成员ID。</p>
-      </td>
-      <td>
-        <p>00v0Z00001VVzdLQAT</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
+      <td>源系统中的营销活动成员ID。</td>
+      <td>00v0Z00001VVzdLQAT</td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>源系统中营销活动成员的上次修改日期。</p>
       </td>
@@ -3398,12 +3229,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>创建日期</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>创建日期</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>源系统中营销活动成员的创建日期。</p>
       </td>
@@ -3415,9 +3242,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>BIZIBLE_TOUCH_POINT_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>客户设置为覆盖促销活动日期并将此值用作接触点日期的日期和时间。</p>
       </td>
@@ -3429,9 +3254,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>商机ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>营销活动成员关联到的潜在客户的ID。</p>
       </td>
@@ -3443,23 +3266,15 @@ _单击图像的全尺寸版本_
       <td>
         <p>潜在客户电子邮件</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>营销活动成员关联到的潜在客户的电子邮件。</p>
       </td>
-      <td>
-        <p>persona@adobe.com</p>
-      </td>
+      <td>persona@adobe.com</td>
     </tr>
     <tr>
-      <td>
-        <p>CONTACT_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>CONTACT_ID</td>
+      <td>varchar</td>
       <td>
         <p>营销活动成员绑定的联系人的ID。</p>
       </td>
@@ -3471,23 +3286,17 @@ _单击图像的全尺寸版本_
       <td>
         <p>CONTACT_EMAIL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>营销活动成员关联到的联系人的电子邮件。</p>
       </td>
-      <td>
-        <p>persona@adobe.com</p>
-      </td>
+      <td>persona@adobe.com</td>
     </tr>
     <tr>
       <td>
         <p>状态</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>营销活动成员的状态，通常设置为“已发送”、“已响应”或其他自定义值。 此状态与Campaign_Sync_Type绑定，以确定要为其创建接触点的促销活动成员。</p>
       </td>
@@ -3513,9 +3322,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FIRST_RESPONDED_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>营销活动成员首次响应的日期。</p>
       </td>
@@ -3527,9 +3334,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>营销活动名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>营销活动成员所属的相关营销活动的名称。</p>
       </td>
@@ -3541,9 +3346,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CAMPAIGN_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>活动成员所属的相关活动的ID。</p>
       </td>
@@ -3555,9 +3358,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>营销活动类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>在该营销策划成员所属的相关营销策划上选择的类型。 类型用于映射营销渠道。</p>
       </td>
@@ -3569,9 +3370,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>campaign_SYNC_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>确定要为其创建接触点的营销活动成员。 可能的值为：Include_All、Include_Responded、Exclude_All。</p>
       </td>
@@ -3583,9 +3382,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>潜在客户同步状态</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>“审核”字段，指明是否为Lead生成了Buyer Touchpoint。 如果未创建接触点，则会给出它不符合条件的原因。</p>
       </td>
@@ -3597,9 +3394,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CONTACT_SYNC_STATUS</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>“审核”字段，指明是否为联系人生成了买方接触点。 如果未创建接触点，则会给出它不符合条件的原因。</p>
       </td>
@@ -3611,9 +3406,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>OPP_SYNC_STATUS</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>“审核”字段，指明是否为Opportunity生成了“买方归因”接触点。 如果未创建接触点，则会给出它不符合条件的原因。</p>
       </td>
@@ -3675,12 +3468,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>渠道的唯一ID。</p>
       </td>
@@ -3692,9 +3481,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>渠道的名称。</p>
       </td>
@@ -3750,12 +3537,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>源系统中的联系人ID。</p>
       </td>
@@ -3764,12 +3547,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次从源系统修改联系人记录的日期。</p>
       </td>
@@ -3778,12 +3557,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>创建日期</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>创建日期</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>从源系统创建Contact记录的日期。</p>
       </td>
@@ -3795,23 +3570,17 @@ _单击图像的全尺寸版本_
       <td>
         <p>EMAIL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>来自源系统的联系人的电子邮件地址。</p>
       </td>
-      <td>
-        <p>persona@adobe.com</p>
-      </td>
+      <td>persona@adobe.com</td>
     </tr>
     <tr>
       <td>
         <p>ACCOUNTID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与联系人相关的帐户的ID。</p>
       </td>
@@ -3823,9 +3592,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>潜在客户来源</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>创建Lead的来源。</p>
       </td>
@@ -3837,9 +3604,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>BIZIBLE_STAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>联系人的当前阶段，识别为自定义阶段，可在 [!DNL Marketo Measure] 应用程序。</p>
       </td>
@@ -3851,9 +3616,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>BIZIBLE_STAGE_PREVIOUS</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>联系人之前的所有阶段，均识别为自定义阶段，可在中创建 [!DNL Marketo Measure] 应用程序。</p>
       </td>
@@ -3879,9 +3642,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>BIZIBLE_COOKIE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>此 [!DNL Marketo Measure] 用于从集成合作伙伴填充以将离线事件映射到Web会话的Cookie ID。 要求：启用呼叫跟踪：True</p>
       </td>
@@ -4160,9 +3921,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从广告连接提取的广告帐户的ID。</p>
       </td>
@@ -4174,9 +3933,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从广告连接提取的广告帐户的名称。</p>
       </td>
@@ -4202,9 +3959,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从广告连接拉取的活动的ID。</p>
       </td>
@@ -4216,9 +3971,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>营销活动名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从广告连接中拉取的营销活动的名称。</p>
       </td>
@@ -4244,9 +3997,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从广告连接拉取的广告组的ID。</p>
       </td>
@@ -4258,9 +4009,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从广告连接提取的广告组的名称。</p>
       </td>
@@ -4286,9 +4035,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从广告连接中拉取的广告的ID。</p>
       </td>
@@ -4300,9 +4047,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从广告连接中拉取的广告的名称。</p>
       </td>
@@ -4328,9 +4073,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从广告连接提取的创意ID。</p>
       </td>
@@ -4342,9 +4085,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从广告连接提取的创意的名称。</p>
       </td>
@@ -4370,9 +4111,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从广告连接中提取的关键字ID。</p>
       </td>
@@ -4384,9 +4123,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>KEYWORD_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从广告连接中提取的关键字的名称。</p>
       </td>
@@ -4412,9 +4149,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从广告连接中提取的投放位置的ID。</p>
       </td>
@@ -4426,9 +4161,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PLACEMENT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从广告连接提取的投放位置的名称。</p>
       </td>
@@ -4454,9 +4187,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>SITE_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从Ad连接拉取的站点的ID。</p>
       </td>
@@ -4468,9 +4199,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>站点名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从Ad连接中拉取的站点的名称。</p>
       </td>
@@ -4624,12 +4353,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>创意的唯一ID。</p>
       </td>
@@ -4641,9 +4366,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>DISPLAY_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>源系统中的创作ID。</td>
       <td>
         <p>10426699711</p>
@@ -4653,9 +4376,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中导入创意的广告帐户的ID。</p>
       </td>
@@ -4665,9 +4386,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中导入Creative的广告帐户的名称。</p>
       </td>
@@ -4679,9 +4398,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>创意广告商（尤其是Doubleclick）的ID。</p>
       </td>
@@ -4693,9 +4410,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>创意广告商（尤其是Doubleclick）的名称。</p>
       </td>
@@ -4707,9 +4422,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>创意的广告组ID。</p>
       </td>
@@ -4719,9 +4432,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>创意内容的广告组的名称。</p>
       </td>
@@ -4731,9 +4442,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>创意活动的营销活动ID。</p>
       </td>
@@ -4745,9 +4454,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>创意活动的名称。</p>
       </td>
@@ -4784,12 +4491,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
       </td>
@@ -4801,9 +4504,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FIRST_IMPORT</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>首次从源系统导入记录的日期。</p>
       </td>
@@ -4815,9 +4516,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>源系统中创意内容的名称。</p>
       </td>
@@ -4844,9 +4543,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>分组密钥</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部处理的诊断字段。</td>
       <td></td>
     </tr>
@@ -4854,9 +4551,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>实体类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>此表的主对象或实体。 在本例中，为“Creative”。</p>
       </td>
@@ -4868,9 +4563,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PROVIDER_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>创意广告提供商的名称。</p>
       </td>
@@ -4882,9 +4575,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>URL_CURRENT</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>URL的当前版本，包括所有标记。</p>
         <p>（诊断字段，用于内部处理。）</p>
@@ -4897,9 +4588,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>URL_DISPLAY</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>Creative上显示的简短友好URL。</p>
       </td>
@@ -4911,9 +4600,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>URL_OLD</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>URL_CURRENT的上一个值。</p>
         <p>（诊断字段，用于内部处理。）</p>
@@ -4924,9 +4611,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>URL已请求</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>URL将修饰的内容 [!DNL Marketo Measure] 参数。</p>
         <p>（诊断字段，用于内部处理。）</p>
@@ -4937,9 +4622,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>URL_SHORTED</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>Creative上显示的简短友好URL。 (仅用于LinkedIn Ads。)</td>
       <td></td>
     </tr>
@@ -4947,9 +4630,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>广告类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>创意的类型，可以是文本或显示</p>
       </td>
@@ -4975,9 +4656,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>标题</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>创意的顶层（标题）</p>
       </td>
@@ -4989,9 +4668,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>DESCRIPTION_LINE_1</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>创意内容第一行的副本</p>
       </td>
@@ -5003,9 +4680,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>DESCRIPTION_LINE_2</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>创意内容第二行的副本</p>
       </td>
@@ -5017,9 +4692,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>诊断字段，用于内部处理。</td>
       <td></td>
     </tr>
@@ -5027,9 +4700,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE_OLD</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>诊断字段，用于内部处理。</td>
       <td></td>
     </tr>
@@ -5037,9 +4708,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>诊断字段，用于内部处理。</td>
       <td></td>
     </tr>
@@ -5047,9 +4716,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE_APPLIED</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>诊断字段，用于内部处理。</p>
       </td>
@@ -5061,9 +4728,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>SHARE_URN</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>共享Id。 (仅用于LinkedIn Ads。)</p>
       </td>
@@ -5115,12 +4780,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>源系统中的事件ID。</p>
       </td>
@@ -5129,12 +4790,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>创建日期</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>创建日期</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>从源系统创建事件的日期。</p>
       </td>
@@ -5143,12 +4800,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改源系统中的事件的日期。</p>
       </td>
@@ -5160,9 +4813,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>商机ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与事件关联的商机的ID。</p>
       </td>
@@ -5174,9 +4825,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>潜在客户电子邮件</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与事件关联的潜在客户的电子邮件。</p>
       </td>
@@ -5185,12 +4834,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>CONTACT_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>CONTACT_ID</td>
+      <td>varchar</td>
       <td>
         <p>与事件关联的联系人的ID。</p>
       </td>
@@ -5202,9 +4847,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CONTACT_EMAIL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与事件关联的联系人的电子邮件。</p>
       </td>
@@ -5216,9 +4859,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>BIZIBLE_COOKIE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>此 [!DNL Marketo Measure] 用于从集成合作伙伴填充以将离线事件映射到Web会话的Cookie ID。 要求：启用呼叫跟踪：True</p>
       </td>
@@ -5230,9 +4871,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>活动类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>源系统中的活动类型名称。</p>
       </td>
@@ -5244,9 +4883,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>EVENT_ST_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>事件的开始日期，用于确定接触点日期的选项之一。</p>
       </td>
@@ -5258,9 +4895,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>EVENT_END_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>事件的结束日期，用于确定接触点日期的选项之一。</p>
       </td>
@@ -5320,12 +4955,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>源系统中的任务ID。</p>
       </td>
@@ -5334,12 +4965,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>创建日期</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>创建日期</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>从源系统创建任务的日期。</p>
       </td>
@@ -5348,12 +4975,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次从源系统修改任务的日期。</p>
       </td>
@@ -5365,9 +4988,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>商机ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与任务关联的潜在客户的ID。</p>
       </td>
@@ -5379,9 +5000,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>潜在客户电子邮件</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与Task关联的Lead的电子邮件。</p>
       </td>
@@ -5390,12 +5009,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>CONTACT_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>CONTACT_ID</td>
+      <td>varchar</td>
       <td>
         <p>与任务关联的联系人的ID。</p>
       </td>
@@ -5407,9 +5022,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CONTACT_EMAIL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与任务关联的联系人的电子邮件。</p>
       </td>
@@ -5421,9 +5034,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>BIZIBLE_COOKIE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>此 [!DNL Marketo Measure] 用于从集成合作伙伴填充以将离线事件映射到Web会话的Cookie ID。 要求：启用呼叫跟踪：True</p>
       </td>
@@ -5435,9 +5046,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>活动类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>源系统中的活动类型名称。</p>
       </td>
@@ -5449,9 +5058,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>活动日期</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>任务发生日期，用于确定接触点日期的选项之一。</p>
       </td>
@@ -5511,9 +5118,7 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
+       <td>ID</td>
       <td>数字(38,0)</td>
       <td>货币记录的唯一ID。</td>
       <td>139474809945095870</td>
@@ -5617,9 +5222,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>VISITOR_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>相关访客id的第一个Cookie ID。</p>
       </td>
@@ -5629,9 +5232,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>COOKIE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>记录事件时记录的Cookie ID。</p>
       </td>
@@ -5641,9 +5242,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>EVENT_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>记录聊天的日期。</p>
       </td>
@@ -5657,9 +5256,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>IP地址</td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>记录试验时记录的IP地址。</p>
       </td>
@@ -5669,9 +5266,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>EXPERIMENT_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从AB测试平台提取的试验ID。</p>
       </td>
@@ -5681,9 +5276,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>试验名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从AB测试平台提取的试验名称。</p>
       </td>
@@ -5693,9 +5286,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>VARIATION_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从AB测试平台提取的试验的变量ID。</p>
       </td>
@@ -5705,9 +5296,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>VARIATION_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从AB测试平台拉取的试验的变量名称。</p>
       </td>
@@ -5717,9 +5306,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ABTEST_USER_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从AB测试平台提取试验服务的用户的ID。</p>
       </td>
@@ -5774,9 +5361,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>VISITOR_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>相关访客id的第一个Cookie ID。</p>
       </td>
@@ -5786,9 +5371,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>COOKIE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从自定义javascript触发事件时记录的Cookie ID。</p>
       </td>
@@ -5798,9 +5381,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>EVENT_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>从自定义javascript触发事件的日期。</p>
       </td>
@@ -5816,9 +5397,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>IP地址</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从自定义javascript触发事件时记录的IP地址。</p>
       </td>
@@ -5828,9 +5407,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>键</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>为从自定义javascript触发的事件指定的名称。</p>
       </td>
@@ -5840,9 +5417,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>值</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>为通过自定义javascript触发的事件指定的值。</p>
       </td>
@@ -5894,12 +5469,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>记录的唯一ID。</p>
       </td>
@@ -5909,9 +5480,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>DISPLAY_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td></td>
     </tr>
@@ -5919,9 +5488,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>从中导入登陆页面的广告帐户的ID。</td>
       <td></td>
     </tr>
@@ -5929,9 +5496,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>从中导入登陆页面的广告帐户的名称</td>
       <td></td>
     </tr>
@@ -5939,9 +5504,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>登陆页面（尤其是Doubleclick）的广告商ID。</p>
       </td>
@@ -5951,9 +5514,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>登陆页面的广告商名称，专门用于Doubleclick。</p>
       </td>
@@ -5965,9 +5526,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>登陆页面的广告组的ID。</td>
       <td></td>
     </tr>
@@ -5975,9 +5534,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>登陆页面的广告组的名称。</p>
       </td>
@@ -5987,9 +5544,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>登陆页面营销活动的ID。</p>
       </td>
@@ -5999,9 +5554,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>登陆页面的Campaign的名称。</p>
       </td>
@@ -6028,12 +5581,8 @@ _单击图像的全尺寸版本_
       <td></td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>行的上次修改日期</p>
       </td>
@@ -6043,9 +5592,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FIRST_IMPORT</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td></td>
       <td></td>
     </tr>
@@ -6053,9 +5600,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td></td>
     </tr>
@@ -6073,9 +5618,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>分组密钥</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td></td>
     </tr>
@@ -6083,9 +5626,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>实体类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td></td>
     </tr>
@@ -6093,9 +5634,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PROVIDER_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td></td>
     </tr>
@@ -6103,9 +5642,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_DISPLAY_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td></td>
     </tr>
@@ -6113,9 +5650,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DISPLAY_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td></td>
     </tr>
@@ -6123,9 +5658,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>URL_CURRENT</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td></td>
     </tr>
@@ -6133,9 +5666,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>URL_OLD</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td></td>
     </tr>
@@ -6184,9 +5715,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>EMAIL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与会话中的给定访客ID关联的已知电子邮件地址</p>
       </td>
@@ -6198,9 +5727,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>VISITOR_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>相关访客ID的第一个Cookie</p>
       </td>
@@ -6209,12 +5736,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>行的上次修改日期</p>
       </td>
@@ -6223,12 +5746,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>创建日期</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>创建日期</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>行的创建日期</p>
       </td>
@@ -6620,12 +6139,8 @@ _单击图像的全尺寸版本_
       <td>2018-08-28 19:39:15.000</td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改行的日期。</p>
       </td>
@@ -6799,9 +6314,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>机会ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>源系统中的机会ID。</p>
       </td>
@@ -6813,9 +6326,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>OPP_CREATED_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>从源系统创建Opportunity的日期。</p>
       </td>
@@ -6827,9 +6338,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>OPP_CLOSE_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>源系统中Opportunity的关闭日期。</p>
       </td>
@@ -6841,21 +6350,15 @@ _单击图像的全尺寸版本_
       <td>
         <p>CONTACT_CREATE_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>从源系统创建Contact记录的日期。</p>
       </td>
       <td>2017-04-28 00:21:52.000</td>
     </tr>
     <tr>
-      <td>
-        <p>CONTACT_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>CONTACT_ID</td>
+      <td>varchar</td>
       <td>
         <p>源系统中的联系人ID。</p>
       </td>
@@ -6873,9 +6376,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>潜在客户创建日期</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>从源系统创建Lead记录的日期。</p>
       </td>
@@ -6887,9 +6388,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>商机ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>源系统中的潜在客户ID。</p>
       </td>
@@ -7087,12 +6586,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>表单提交的唯一ID。</p>
       </td>
@@ -7104,9 +6599,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>COOKIE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>在记录表单提交时记录的Cookie ID。</p>
       </td>
@@ -7118,9 +6611,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>VISITOR_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>相关访客id的第一个Cookie ID。 如果记录标记为is_duplicated = true ，则此字段将为null。</p>
       </td>
@@ -7132,9 +6623,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>SESSION_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>记录表单提交时记录的会话ID。 如果记录标记为is_duplicated = true ，则此字段将为null。</p>
       </td>
@@ -7146,9 +6635,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>EVENT_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>提交表单的日期。</p>
       </td>
@@ -7157,12 +6644,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
       </td>
@@ -7174,9 +6657,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CURRENT_PAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>提交表单的URL，不含查询参数。</p>
       </td>
@@ -7188,9 +6669,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CURRENT_PAGE_RAW</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>提交表单的URL，包括任何查询参数。</p>
       </td>
@@ -7202,9 +6681,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>IP地址</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>提交表单时记录的IP地址。</p>
       </td>
@@ -7216,9 +6693,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>指示事件的类型。</td>
       <td>
         <p>FormSubmit</p>
@@ -7228,9 +6703,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>USER_AGENT_STRING</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>提交表单时记录的设备和浏览器。</p>
       </td>
@@ -7242,9 +6715,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CLIENT_SEQUENCE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>指示页面查看在会话中发生的顺序。</td>
       <td>
         <p>4</p>
@@ -7254,9 +6725,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CLIENT_RANDOM</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部审计和处理。</td>
       <td>
         <p>20042b6b7af44512b43f6244d86faf4c</p>
@@ -7290,9 +6759,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>EMAIL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>表单上提供的电子邮件地址，从Javascript中捕获。</p>
       </td>
@@ -7304,9 +6771,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>表单类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>指示提交的表单类型。</td>
       <td>
         <p>聊天</p>
@@ -7316,9 +6781,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FORM_SOURCE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>指示识别表单的方法，如onSubmit或AjaxIntercept</p>
       </td>
@@ -7330,9 +6793,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FORM_IDENTIFIER</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>表单的ID值。</td>
       <td>
         <p>-956012665</p>
@@ -7392,12 +6853,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>展示的唯一ID。</p>
       </td>
@@ -7409,9 +6866,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>COOKIE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>展示时记录的Cookie ID。</p>
       </td>
@@ -7421,9 +6876,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>VISITOR_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>相关访客id的第一个Cookie ID。</p>
       </td>
@@ -7433,9 +6886,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>SESSION_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>记录展示时记录的会话ID。</p>
       </td>
@@ -7445,21 +6896,15 @@ _单击图像的全尺寸版本_
       <td>
         <p>EVENT_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>提供展示的日期。</p>
       </td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
       </td>
@@ -7469,9 +6914,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CURRENT_PAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>提供展示的URL，不含查询参数。</p>
       </td>
@@ -7481,9 +6924,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CURRENT_PAGE_RAW</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>提供展示的URL，包括任何查询参数。</p>
       </td>
@@ -7493,9 +6934,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>IP地址</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>展示时记录的IP地址。</p>
       </td>
@@ -7505,9 +6944,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>指示事件的类型。</td>
       <td>印象</td>
     </tr>
@@ -7515,9 +6952,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>USER_AGENT_STRING</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>提交表单时记录的设备和浏览器。</p>
       </td>
@@ -7529,9 +6964,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CLIENT_SEQUENCE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>指示页面查看在会话中发生的顺序。</td>
       <td>
         <p>4</p>
@@ -7541,9 +6974,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CLIENT_RANDOM</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部审计和处理。</td>
       <td>
         <p>20042b6b7af44512b43f6244d86faf4c</p>
@@ -7577,9 +7008,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>REFERRER_PAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>通常是在用户访问网站之前的外部登陆页面。 在CRM中称为“反向链接页面”。</p>
       </td>
@@ -7589,9 +7018,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>REFERRER_PAGE-RAW</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>通常是在用户访问网站之前的外部登陆页面。 原始反向链接页面可能包含URL中的查询参数。 在CRM中称为“Referrer Page - Raw”。</p>
       </td>
@@ -7601,9 +7028,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>城市</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>IP地址中已解析的城市。</p>
       </td>
@@ -7615,9 +7040,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>区域</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>IP地址中已解析的区域。</p>
       </td>
@@ -7629,9 +7052,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>国家/地区</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>IP地址中已解析的国家/地区。</p>
       </td>
@@ -7643,9 +7064,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ISP名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>预期为空，因为字段已过时。</td>
       <td>NULL</td>
     </tr>
@@ -7653,9 +7072,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_PROVIDER</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>广告平台 [!DNL Marketo Measure] 能够从（通常是我们的集成合作伙伴之一）中解析。</p>
       </td>
@@ -7665,9 +7082,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户的ID。</p>
       </td>
@@ -7677,9 +7092,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户的名称。</p>
       </td>
@@ -7689,9 +7102,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告商ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -7703,9 +7114,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告商名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -7717,9 +7126,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>SITE_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中网站的ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -7731,9 +7138,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>站点名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的网站名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -7745,9 +7150,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的版面ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -7759,9 +7162,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PLACEMENT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的投放位置的名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -7773,9 +7174,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的营销活动ID。</p>
       </td>
@@ -7785,9 +7184,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>营销活动名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的营销活动名称。</p>
       </td>
@@ -7797,9 +7194,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为Doubleclick层次结构中没有展示次数广告组</p>
       </td>
@@ -7811,9 +7206,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为Doubleclick层次结构中没有展示次数广告组</p>
       </td>
@@ -7825,9 +7218,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告ID。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
@@ -7839,9 +7230,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告名称。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
@@ -7853,9 +7242,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
       </td>
@@ -7867,9 +7254,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
       </td>
@@ -7879,9 +7264,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DESCRIPTION_1</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
       </td>
@@ -7891,9 +7274,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DESCRIPTION_2</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
       </td>
@@ -7903,9 +7284,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DESTINATION_URL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
       </td>
@@ -7915,9 +7294,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DISPLAY_URL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
       </td>
@@ -7927,9 +7304,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>由于展示次数的Doubleclick层次结构中没有Keyword，因此预期为空。</p>
       </td>
@@ -7939,9 +7314,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>KEYWORD_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>由于展示次数的Doubleclick层次结构中没有Keyword，因此预期为空。</p>
       </td>
@@ -7951,9 +7324,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>KEYWORD_MATCH_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>由于展示次数的Doubleclick层次结构中没有Keyword，因此预期为空。</p>
       </td>
@@ -7963,9 +7334,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>浏览器名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，检测到用户在会话期间所在的浏览器。</p>
       </td>
@@ -7977,9 +7346,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>浏览器版本</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，查看在会话期间用户所在的检测到的浏览器版本。</p>
       </td>
@@ -7991,9 +7358,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>平台名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，检测到用户在会话期间所在的平台。</p>
       </td>
@@ -8005,9 +7370,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>平台版本</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，查看在会话期间用户所在平台的检测到版本。</p>
       </td>
@@ -8131,12 +7494,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>关键字的唯一ID。</p>
       </td>
@@ -8148,9 +7507,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>DISPLAY_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>源系统中的关键字ID。</td>
       <td>
         <p>39464932147</p>
@@ -8160,9 +7517,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中导入关键字的广告帐户的ID。</p>
       </td>
@@ -8172,9 +7527,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中导入关键字的广告帐户的名称。</p>
       </td>
@@ -8184,9 +7537,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>由于展示次数的Doubleclick层次结构中没有Keyword，因此预期为空。</p>
       </td>
@@ -8198,9 +7549,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>由于展示次数的Doubleclick层次结构中没有Keyword，因此预期为空。</p>
       </td>
@@ -8212,9 +7561,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>关键字的广告组ID。</p>
       </td>
@@ -8226,9 +7573,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>关键字的广告组的名称。</p>
       </td>
@@ -8240,9 +7585,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>关键字的促销活动ID。</p>
       </td>
@@ -8254,9 +7597,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>关键字的促销活动名称。</p>
       </td>
@@ -8293,12 +7634,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
       </td>
@@ -8308,9 +7645,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FIRST_IMPORT</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>首次从源系统导入记录的日期。</p>
       </td>
@@ -8322,9 +7657,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>源系统中的关键字的名称。</p>
       </td>
@@ -8351,9 +7684,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>分组密钥</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部处理的诊断字段。</td>
       <td>
         <p>ba.3284209.132630532.3646889365</p>
@@ -8363,9 +7694,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>实体类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>此表的主对象或实体。 在本例中，为“Keyword”。</p>
       </td>
@@ -8377,9 +7706,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PROVIDER_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>关键字的广告提供商的名称。</p>
       </td>
@@ -8391,9 +7718,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>URL_CURRENT</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>登陆页面的URL。</p>
         <p>（诊断字段，用于内部处理。）</p>
@@ -8404,9 +7729,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>URL_OLD</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>URL_CURRENT的上一个值。</p>
         <p>（诊断字段，用于内部处理。）</p>
@@ -8438,9 +7761,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>WORD</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用户输入的搜索阶段。</td>
       <td>
         <p>收入归因b2b</p>
@@ -8450,9 +7771,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>MATCH_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>在搜索短语和关键词之间找到的匹配类型。</p>
       </td>
@@ -8464,9 +7783,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部诊断。</td>
       <td>http://cdn.adobe.com/redir?lp={lpurl}&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}</td>
     </tr>
@@ -8474,9 +7791,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE_OLD</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部诊断。</td>
       <td></td>
     </tr>
@@ -8484,9 +7799,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE_REQUESTED</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部诊断。</td>
       <td></td>
     </tr>
@@ -8494,9 +7807,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRACKING_URL_TEMPLATE_APPLIED</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>URL跟踪模板 [!DNL Marketo Measure] 已添加到关键字。</td>
       <td>
         <p>http://cdn.adobe.com/redir?lp={lpurl}&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}</p>
@@ -8548,12 +7859,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>登陆页面的唯一ID。</p>
       </td>
@@ -8563,9 +7870,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>DISPLAY_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td></td>
     </tr>
@@ -8573,9 +7878,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>从中导入登陆页面的广告帐户的ID。</td>
       <td></td>
     </tr>
@@ -8583,9 +7886,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>从中导入登陆页面的广告帐户的名称。</td>
       <td></td>
     </tr>
@@ -8593,9 +7894,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>登陆页面（尤其是Doubleclick）的广告商ID。</p>
       </td>
@@ -8605,9 +7904,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>登陆页面的广告商名称，专门用于Doubleclick。</p>
       </td>
@@ -8617,9 +7914,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>登陆页面的广告组的ID。</td>
       <td></td>
     </tr>
@@ -8627,9 +7922,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>登陆页面的广告组的名称。</td>
       <td></td>
     </tr>
@@ -8637,9 +7930,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>登陆页面营销活动的ID。</td>
       <td></td>
     </tr>
@@ -8647,9 +7938,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>登陆页面的Campaign的名称。</td>
       <td></td>
     </tr>
@@ -8674,12 +7963,8 @@ _单击图像的全尺寸版本_
       <td></td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>行的上次修改日期。</p>
       </td>
@@ -8689,9 +7974,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FIRST_IMPORT</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td></td>
       <td></td>
     </tr>
@@ -8699,9 +7982,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td></td>
     </tr>
@@ -8719,9 +8000,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>分组密钥</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td></td>
     </tr>
@@ -8729,9 +8008,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>实体类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td></td>
     </tr>
@@ -8739,9 +8016,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PROVIDER_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td></td>
     </tr>
@@ -8749,9 +8024,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>URL_CURRENT</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td></td>
     </tr>
@@ -8759,9 +8032,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>URL_OLD</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td></td>
     </tr>
@@ -8769,9 +8040,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>URL已请求</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td></td>
     </tr>
@@ -8809,12 +8078,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>源系统中的潜在客户ID。</p>
       </td>
@@ -8823,12 +8088,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次从源系统修改潜在客户记录的日期。</p>
       </td>
@@ -8837,12 +8098,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>创建日期</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>创建日期</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>从源系统创建Lead记录的日期。</p>
       </td>
@@ -8852,9 +8109,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>EMAIL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>源系统中潜在客户的电子邮件地址。</p>
       </td>
@@ -8864,9 +8119,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>WEB站点</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从源系统为Lead输入的网站，用于Lead2Account映射。</p>
       </td>
@@ -8878,9 +8131,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>公司</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从源系统为Lead输入的公司名称用于Lead2Account映射。</p>
       </td>
@@ -8892,9 +8143,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>潜在客户来源</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>创建Lead的来源。</p>
       </td>
@@ -8920,9 +8169,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>转化后的机会ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>Lead转化后相关Opportunity的ID。</p>
       </td>
@@ -8934,9 +8181,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CONVERTED_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>Lead转换为Contact的日期。</p>
       </td>
@@ -8948,9 +8193,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CONVERTED_CONTACT_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>商机转化后相关联系人的ID。</p>
       </td>
@@ -8962,9 +8205,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNTID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>映射帐户的ID。 要求：启用ABM</p>
       </td>
@@ -8976,9 +8217,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>BIZIBLE_STAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>Lead的当前阶段，识别为自定义阶段，可在 [!DNL Marketo Measure] 应用程序。</p>
       </td>
@@ -8990,9 +8229,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>BIZIBLE_STAGE_PREVIOUS</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>Lead的所有先前阶段，识别为自定义阶段，可在 [!DNL Marketo Measure] 应用程序。</p>
       </td>
@@ -9018,9 +8255,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>LEAD_SCORE_MODEL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>（已弃用）</p>
       </td>
@@ -9032,9 +8267,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>LEAD_SCORE_RESULTS</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>（已弃用）</p>
       </td>
@@ -9046,9 +8279,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>BIZIBLE_COOKIE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>此 [!DNL Marketo Measure] 用于从集成合作伙伴填充以将离线事件映射到Web会话的Cookie ID。 要求：启用呼叫跟踪：True</p>
       </td>
@@ -9140,12 +8371,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>过渡的唯一ID。</p>
       </td>
@@ -9157,9 +8384,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>EMAIL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>为相关潜在客户/联系人提供的电子邮件地址。</p>
       </td>
@@ -9171,9 +8396,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>商机ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与过渡关联的商机ID。</p>
       </td>
@@ -9182,12 +8405,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>CONTACT_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>CONTACT_ID</td>
+      <td>varchar</td>
       <td>
         <p>与过渡关联的联系人的ID。</p>
       </td>
@@ -9199,9 +8418,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>接触点ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与过渡关联的买方接触点的ID。</p>
       </td>
@@ -9213,9 +8430,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRANSITION_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>记录过渡到阶段的日期。</p>
       </td>
@@ -9227,9 +8442,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>STAGE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>过渡阶段的标识值。</p>
       </td>
@@ -9241,9 +8454,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>阶段</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>过渡阶段的名称。</p>
       </td>
@@ -9323,9 +8534,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PREVIOUS_STAGE_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上一个阶段的过渡日期（根据阶段排名）。</p>
       </td>
@@ -9337,9 +8546,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>NEXT_STAGE_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>根据阶段排名，确定下一阶段的过渡日期。</p>
       </td>
@@ -9348,12 +8555,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>记录的上次修改日期。</p>
       </td>
@@ -9409,12 +8612,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>源系统中的机会ID。</p>
       </td>
@@ -9423,24 +8622,16 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>源系统中Opportunity的最后修改日期。</p>
       </td>
       <td>2017-11-28 21:26:44.000</td>
     </tr>
     <tr>
-      <td>
-        <p>创建日期</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>创建日期</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>源系统中Opportunity创建日期。</p>
       </td>
@@ -9450,9 +8641,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNT_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>相关帐户的ID。</p>
       </td>
@@ -9464,9 +8653,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>源系统中的Opportunity Name。</p>
       </td>
@@ -9506,9 +8693,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CLOSE_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>来源系统中Opportunity的预期或实际结束日期。</p>
       </td>
@@ -9520,9 +8705,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>BIZIBLE_CUSTOM_MODEL_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>（已弃用）</p>
       </td>
@@ -9548,9 +8731,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CONVERTED_FROM_LEAD_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>已转换为此Opportunity的相关商机的ID。</p>
         <p>请注意，未设置此字段，并且为所有客户的Snowflake返回null。</p>
@@ -9563,9 +8744,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CONVERTED_FROM_LEAD_EMAIL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>已转换为此Opportunity的相关Lead的电子邮件。</p>
         <p>请注意，未设置此字段，并且为所有客户的Snowflake返回null。</p>
@@ -9578,9 +8757,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PRIMARY_CONTACT_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>如果使用“主要联系人角色”，则相关联系人的ID将列为主要联系人角色。</p>
       </td>
@@ -9592,9 +8769,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PRIMARY_CONTACT_EMAIL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>如果使用“主要联系人角色”，则相关联系人的电子邮件将列为“主要联系人角色”。</p>
       </td>
@@ -9620,9 +8795,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>BIZIBLE_STAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>Opportunity的当前阶段，如 [!DNL Marketo Measure] 应用程序。</p>
       </td>
@@ -9634,9 +8807,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>BIZIBLE_STAGE_PREVIOUS</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>Opportunity以前经历的所有阶段的字符串，如 [!DNL Marketo Measure] 应用程序。</p>
       </td>
@@ -9731,12 +8902,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>过渡的唯一ID。</p>
       </td>
@@ -9748,9 +8915,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNT_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与机会关联的帐户的ID。</p>
       </td>
@@ -9762,9 +8927,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>机会ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与过渡关联的机会的ID。</p>
       </td>
@@ -9773,12 +8936,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>CONTACT_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>CONTACT_ID</td>
+      <td>varchar</td>
       <td>
         <p>与过渡关联的联系人的ID。</p>
       </td>
@@ -9790,9 +8949,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>EMAIL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>为相关联系人提供的电子邮件地址。</p>
       </td>
@@ -9804,9 +8961,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>接触点ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与过渡关联的买方归因接触点ID。</p>
       </td>
@@ -9818,9 +8973,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>TRANSITION_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>记录过渡到阶段的日期。</p>
       </td>
@@ -9832,9 +8985,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>阶段</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>过渡阶段的名称。</p>
       </td>
@@ -9846,9 +8997,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>STAGE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>过渡阶段的标识值。</p>
       </td>
@@ -9926,9 +9075,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PREVIOUS_STAGE_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上一个阶段的过渡日期（根据阶段排名）。</p>
       </td>
@@ -9940,9 +9087,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>NEXT_STAGE_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>根据阶段排名，确定下一阶段的过渡日期。</p>
       </td>
@@ -9951,12 +9096,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>记录的上次修改日期。</p>
       </td>
@@ -10012,12 +9153,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>页面查看的唯一ID。</p>
       </td>
@@ -10029,9 +9166,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>COOKIE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>在记录页面查看时记录的Cookie ID。</p>
       </td>
@@ -10043,9 +9178,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>VISITOR_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>相关访客id的第一个Cookie。</p>
       </td>
@@ -10057,9 +9190,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>SESSION_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与页面查看关联的会话ID。</p>
       </td>
@@ -10071,9 +9202,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>EVENT_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>页面查看发生的日期。</p>
       </td>
@@ -10082,12 +9211,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
       </td>
@@ -10099,9 +9224,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CURRENT_PAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>页面查看的URL，不含查询参数。</p>
       </td>
@@ -10113,9 +9236,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CURRENT_PAGE_RAW</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>页面查看的URL，包括任何查询参数。</p>
       </td>
@@ -10127,9 +9248,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>IP地址</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>提交表单时记录的IP地址。</p>
       </td>
@@ -10141,9 +9260,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>指示事件的类型。</td>
       <td>
         <p>页面查看</p>
@@ -10153,9 +9270,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>USER_AGENT_STRING</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>提交表单时记录的设备和浏览器。</p>
       </td>
@@ -10181,9 +9296,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CLIENT_RANDOM</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部审计和处理。</td>
       <td>
         <p>103532</p>
@@ -10213,9 +9326,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>REFERRER_PAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>页面查看源自的URL，不带查询参数。</p>
       </td>
@@ -10227,9 +9338,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>REFERRER_PAGE_RAW</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>页面查看源自的URL，包括任何查询参数。</p>
       </td>
@@ -10241,9 +9350,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PAGE_TITLE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>页面标题。</p>
       </td>
@@ -10255,9 +9362,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>EMAIL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>在表单上提供的电子邮件地址，从Javascript中捕获。</p>
       </td>
@@ -10329,12 +9434,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>投放位置的唯一ID。</p>
       </td>
@@ -10346,9 +9447,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>DISPLAY_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>源系统中的版面ID。</td>
       <td>10426699711</td>
     </tr>
@@ -10356,9 +9455,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中导入版面的广告帐户的ID。</p>
       </td>
@@ -10368,9 +9465,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中导入版面的广告帐户的名称。</p>
       </td>
@@ -10380,9 +9475,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>专门用于Doubleclick的投放位置广告商的ID。</p>
       </td>
@@ -10392,9 +9485,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>专门用于Doubleclick的投放位置的广告商名称。</p>
       </td>
@@ -10404,9 +9495,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为任何广告层次结构中的投放位置上方没有广告组。</p>
       </td>
@@ -10416,9 +9505,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为任何广告层次结构中的投放位置上方没有广告组。</p>
       </td>
@@ -10428,9 +9515,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>投放位置营销活动的ID。</p>
       </td>
@@ -10440,9 +9525,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>投放位置的营销活动名称。</p>
       </td>
@@ -10473,12 +9556,8 @@ _单击图像的全尺寸版本_
       <td>false</td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
       </td>
@@ -10488,9 +9567,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FIRST_IMPORT</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>首次从源系统导入记录的日期。</p>
       </td>
@@ -10500,9 +9577,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>源系统中的版面的名称。</p>
       </td>
@@ -10525,9 +9600,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>分组密钥</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部处理的诊断字段。</td>
       <td></td>
     </tr>
@@ -10535,9 +9608,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>实体类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>此表的主对象或实体。 在本例中，为“版面”。</p>
       </td>
@@ -10547,9 +9618,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PROVIDER_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>投放的广告提供商的名称。</p>
       </td>
@@ -10601,12 +9670,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>区段的唯一ID。</p>
       </td>
@@ -10618,9 +9683,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>区段的名称。</p>
       </td>
@@ -10679,9 +9742,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>指示区段名称映射到的类别。</p>
       </td>
@@ -10690,12 +9751,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
       </td>
@@ -10707,9 +9764,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>区段名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>映射到类别的区段名称。</p>
       </td>
@@ -10763,12 +9818,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>会话的唯一ID。</p>
       </td>
@@ -10780,9 +9831,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>VISITOR_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>相关访客id的第一个Cookie。</p>
       </td>
@@ -10792,9 +9841,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>COOKIE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>会话的已记录Cookie ID。</p>
       </td>
@@ -10804,9 +9851,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>EVENT_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>会话日期。</p>
       </td>
@@ -10818,9 +9863,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>修改日期</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
       </td>
@@ -10838,9 +9881,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>渠道</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>归属于会话的渠道，如中设置的渠道定义所定义。 [!DNL Marketo Measure] 应用程序。</p>
       </td>
@@ -10852,9 +9893,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PAGE_TITLE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>网页的名称。</p>
       </td>
@@ -10866,9 +9905,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>LANDING_PAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>会话第一个页面查看的URL，不含查询参数。</p>
       </td>
@@ -10880,9 +9917,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>LANDING_PAGE_RAW</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>会话的第一次页面查看的URL，包括任何查询参数。</p>
       </td>
@@ -10894,9 +9929,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>REFERRER_PAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>会话源自的URL，不带查询参数。</p>
       </td>
@@ -10908,9 +9941,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>REFERRER_PAGE_RAW</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>会话源自的URL，包括任何查询参数。</p>
       </td>
@@ -10922,9 +9953,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>REFERRER_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>反向链接页面的名称。</p>
       </td>
@@ -10936,9 +9965,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>SEARCH_PHRASE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>用户在浏览器中输入要搜索并且最终出现在网站上的值。</p>
       </td>
@@ -10950,9 +9977,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>WEB_SOURCE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>用于定义导致会话的源。 在以下情况下，可以从utm_source的URL中解析该内容，或将其设置为广告提供商 [!DNL Marketo Measure] 能够解析广告。</p>
       </td>
@@ -11020,9 +10045,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>设备</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>会话期间用户的浏览器和操作系统。</p>
       </td>
@@ -11034,9 +10057,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_PROVIDER</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>广告平台 [!DNL Marketo Measure] 从解决，通常是我们的集成合作伙伴之一。</p>
       </td>
@@ -11048,9 +10069,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户的ID。</p>
       </td>
@@ -11062,9 +10081,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户的名称。</p>
       </td>
@@ -11076,9 +10093,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告商的ID，尤其是从Doubleclick连接解析广告的广告商。</p>
       </td>
@@ -11090,9 +10105,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告商的名称，尤其是从Doubleclick连接解析的广告商。</p>
       </td>
@@ -11104,9 +10117,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>SITE_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的网站的ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -11118,9 +10129,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>站点名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的站点的名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -11132,9 +10141,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的平台的ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -11146,9 +10153,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PLACEMENT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的投放位置的名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -11160,9 +10165,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的营销活动的ID。</p>
       </td>
@@ -11174,9 +10177,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>营销活动名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的营销活动的名称。</p>
       </td>
@@ -11188,9 +10189,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告组的ID。 这仅适用于Google Adwords。</p>
       </td>
@@ -11202,9 +10201,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告组的名称。 这仅适用于Google Adwords。</p>
       </td>
@@ -11216,9 +10213,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析的广告的ID。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
@@ -11228,9 +10223,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析的广告的名称。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
@@ -11240,9 +10233,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的创意的ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -11254,9 +10245,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的创意内容的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -11268,9 +10257,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DESCRIPTION_1</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>搜索广告中创意的第一行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -11282,9 +10269,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DESCRIPTION_2</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>搜索广告中的创意内容第二行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -11296,9 +10281,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DESTINATION_URL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从搜索广告点进的登陆页面，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -11310,9 +10293,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DISPLAY_URL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>在搜索广告上显示的友好URL名称，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -11324,9 +10305,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的关键字的ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -11338,9 +10317,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>KEYWORD_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的关键字的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -11352,9 +10329,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>KEYWORD_MATCH_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>在搜索短语和购买的关键字之间找到的匹配类型。</p>
       </td>
@@ -11366,9 +10341,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CAMPAIGN</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从utm_campaign的URL中解析。</p>
       </td>
@@ -11380,9 +10353,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>源</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从utm_source的URL中解析。</p>
       </td>
@@ -11394,9 +10365,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>中</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从utm_medium中的URL解析。</p>
       </td>
@@ -11408,9 +10377,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>术语</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从utm_term的URL中解析。</p>
       </td>
@@ -11422,9 +10389,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>内容</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从utm_content的URL中解析。</p>
       </td>
@@ -11436,9 +10401,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>城市</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>IP地址中已解析的城市。</p>
       </td>
@@ -11448,9 +10411,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>区域</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>IP地址中已解析的区域。</p>
       </td>
@@ -11460,9 +10421,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>国家/地区</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>IP地址中已解析的国家/地区。</p>
       </td>
@@ -11472,9 +10431,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ISP名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>预期为空，因为字段已过时。</td>
       <td>
         <p>NULL</p>
@@ -11484,9 +10441,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>IP地址</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>会话时记录的IP地址。</p>
       </td>
@@ -11622,12 +10577,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>网站的唯一ID。</p>
       </td>
@@ -11637,9 +10588,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>DISPLAY_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>源系统中的站点ID。</td>
       <td>39464932147</td>
     </tr>
@@ -11647,9 +10596,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中导入网站的广告帐户的ID。</p>
       </td>
@@ -11659,9 +10606,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中导入网站的广告帐户的名称。</p>
       </td>
@@ -11671,9 +10616,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>网站广告商（尤其是Doubleclick）的ID。</p>
       </td>
@@ -11685,9 +10628,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>网站广告商（尤其是Doubleclick）的名称。</p>
       </td>
@@ -11699,9 +10640,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为任何广告层次结构中的网站上方没有广告组。</p>
       </td>
@@ -11711,9 +10650,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>预期为空，因为任何广告层次结构中的网站上方没有广告组。</p>
       </td>
@@ -11723,9 +10660,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>网站促销活动的ID。</p>
       </td>
@@ -11737,9 +10672,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>网站的Campaign的名称。</p>
       </td>
@@ -11770,12 +10703,8 @@ _单击图像的全尺寸版本_
       <td>false</td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
       </td>
@@ -11785,9 +10714,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FIRST_IMPORT</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>首次从源系统导入记录的日期。</p>
       </td>
@@ -11797,9 +10724,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>源系统中的站点名称。</p>
       </td>
@@ -11822,9 +10747,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>分组密钥</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>用于内部处理的诊断字段。</td>
       <td></td>
     </tr>
@@ -11832,9 +10755,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>实体类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>此表的主对象或实体。 在本例中，为“站点”。</p>
       </td>
@@ -11844,9 +10765,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PROVIDER_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>站点的广告提供商的名称。</p>
       </td>
@@ -11900,12 +10819,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>站点链接的唯一ID</p>
       </td>
@@ -11917,9 +10832,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>DISPLAY_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td>
         <p>1654234342</p>
@@ -11929,9 +10842,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>网站链接的已连接广告帐户的ID</p>
       </td>
@@ -11943,9 +10854,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_ACCOUNT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>站点链接的已连接广告帐户的名称</p>
       </td>
@@ -11957,9 +10866,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>网站链接的广告商ID，专门用于Doubleclick。</p>
       </td>
@@ -11971,9 +10878,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>站点链接的广告商名称，专门用于Doubleclick。</p>
       </td>
@@ -11985,9 +10890,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>站点链接的广告组ID</p>
       </td>
@@ -11997,9 +10900,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>站点链接的广告组的名称</p>
       </td>
@@ -12009,9 +10910,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>站点链接的活动的ID</p>
       </td>
@@ -12023,9 +10922,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_CAMPAIGN_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>站点链接的营销活动的名称</p>
       </td>
@@ -12062,12 +10959,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>行的上次修改日期</p>
       </td>
@@ -12079,9 +10972,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FIRST_IMPORT</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>首次下载站点链接的日期 [!DNL Marketo Measure]</p>
       </td>
@@ -12093,9 +10984,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>站点链接的名称</p>
       </td>
@@ -12119,9 +11008,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>分组密钥</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td></td>
       <td>
         <p>aw.6601259029.285077795</p>
@@ -12131,9 +11018,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>实体类型</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>此表的主对象或实体。 在本例中，“SiteLink”</p>
       </td>
@@ -12145,9 +11030,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PROVIDER_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>站点链接的广告提供商的名称</p>
       </td>
@@ -12159,9 +11042,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>URL_CURRENT</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>登陆页面的URL。</p>
         <p>（诊断字段，用于内部处理。）</p>
@@ -12175,9 +11056,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>URL_OLD</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>URL_CURRENT的上一个值。</p>
         <p>（诊断字段，用于内部处理。）</p>
@@ -12188,9 +11067,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>URL已请求</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>URL将修饰的内容 [!DNL Marketo Measure] 参数。</p>
         <p>（诊断字段，用于内部处理。）</p>
@@ -12231,12 +11108,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>阶段的唯一ID。</p>
       </td>
@@ -12245,12 +11118,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
       </td>
@@ -12262,9 +11131,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>暂存名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>舞台的名称。</p>
       </td>
@@ -12328,9 +11195,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>暂存状态</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>阶段的状态，如 [!DNL Marketo Measure] 应用程序阶段映射。</p>
       </td>
@@ -12426,12 +11291,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>买方接触点(BT)的唯一ID。</p>
       </td>
@@ -12440,12 +11301,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
       </td>
@@ -12457,21 +11314,15 @@ _单击图像的全尺寸版本_
       <td>
         <p>EMAIL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>与BT关联的电子邮件地址。</td>
       <td>
         <p>person@adobe.com</p>
       </td>
     </tr>
     <tr>
-      <td>
-        <p>CONTACT_ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>CONTACT_ID</td>
+      <td>varchar</td>
       <td>
         <p>与BT关联的联系人的ID。</p>
       </td>
@@ -12481,9 +11332,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNT_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与BT关联的帐户的ID。</p>
       </td>
@@ -12495,9 +11344,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>商机ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与BT关联的商机的ID。</p>
       </td>
@@ -12509,9 +11356,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>UNIQUE_ID_PERSON</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与潜在客户或联系人相关的父人员记录。</p>
       </td>
@@ -12523,9 +11368,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>USER_TOUCHPOINT_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>生成BT的用户接触点的ID。</p>
       </td>
@@ -12543,9 +11386,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>接触点日期</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>接触点的日期。</p>
       </td>
@@ -12557,9 +11398,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>MARKETING_TOUCH_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>活动的类型，Web访问、Web窗体、Web聊天、电话、[CRM]营销活动或[CRM]活动。 在CRM中称为“接触点类型”。</p>
       </td>
@@ -12571,9 +11410,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>渠道</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>根据中的自定义渠道定义，接触点所属的渠道 [!DNL Marketo Measure] 应用程序。 在CRM中称为“营销渠道 — 路径”。</p>
       </td>
@@ -12583,9 +11420,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别1</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>第一个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
@@ -12595,9 +11430,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别2</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>根据以下内容中的区段定义，确定接触点属于第二个类别的区段值 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
@@ -12609,9 +11442,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别3</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>接触点所属的第三类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
@@ -12623,9 +11454,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别4</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>根据以下内容中的区段定义，确定接触点所属的第四个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
@@ -12637,9 +11466,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别5</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>根据以下内容中的区段定义，确定接触点所属的第五个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
@@ -12649,9 +11476,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别6</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>根据以下内容中的区段定义，确定接触点所属的第六个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
@@ -12661,9 +11486,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别7</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>根据以下内容中的区段定义，确定接触点所属的第七个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -12671,9 +11494,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别8</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>根据以下内容中的区段定义，确定接触点所属的第八个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -12681,9 +11502,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别9</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>第9个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -12691,9 +11510,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别10</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>第10个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -12701,9 +11518,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别11</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>第11个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -12711,9 +11526,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别12</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>第12个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -12721,9 +11534,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别13</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>根据以下内容中的区段定义，确定接触点所属的第十三个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
@@ -12731,9 +11542,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别14</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>第14个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
@@ -12743,9 +11552,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>类别15</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>第15个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
       </td>
@@ -12755,9 +11562,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>浏览器名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，检测到用户在会话期间所在的浏览器。</p>
       </td>
@@ -12767,9 +11572,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>浏览器版本</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，查看在会话期间用户所在的检测到的浏览器版本。</p>
       </td>
@@ -12781,9 +11584,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>平台名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，检测到用户在会话期间所在的平台。</p>
       </td>
@@ -12795,9 +11596,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>平台版本</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，查看在会话期间用户所在平台的检测到版本。</p>
       </td>
@@ -12807,9 +11606,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>LANDING_PAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>导致接触点的会话的第一个登陆页面。 在CRM中称为“登陆页面”。</p>
       </td>
@@ -12821,9 +11618,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>LANDING_PAGE_RAW</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>生成接触点的会话的第一个登陆页面。 原始登陆页面将包含URL中的所有查询参数。 在CRM中称为“Landing Page - Raw”。</p>
       </td>
@@ -12835,9 +11630,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>REFERRER_PAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>通常是在用户访问网站之前的外部登陆页面。 在CRM中称为“反向链接页面”。</p>
       </td>
@@ -12847,9 +11640,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>REFERRER_PAGE_RAW</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>通常是在用户访问网站之前的外部登陆页面。 原始反向链接页面可能包含URL中的查询参数。 在CRM中称为“Referrer Page - Raw”。</p>
       </td>
@@ -12861,9 +11652,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FORM_PAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>会话中记录的第一张表单产生了接触点。 后续表单提交不会显示在接触点表中，而是显示在Form_Submit表中。 在CRM中称为“表单URL”。</p>
       </td>
@@ -12881,9 +11670,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FORM_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>提交表单的日期。</p>
       </td>
@@ -12895,9 +11682,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>城市</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>根据javascript和IP地址，检测用户在会话期间所处的城市。</p>
       </td>
@@ -12909,9 +11694,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>区域</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，查看在会话期间用户所处的检测区域。</p>
       </td>
@@ -12923,9 +11706,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>国家/地区</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>通过javascript和IP地址，可了解在会话期间检测到的用户所在的国家/地区。</p>
       </td>
@@ -12937,9 +11718,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>中</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>用于定义产生接触点的媒介。 这可以从utm_medium的URL中解析。 或者，如果 [!DNL Marketo Measure] 能够解析广告，它可能是“cpc”或“display”之类的值。</p>
       </td>
@@ -12951,9 +11730,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>WEB_SOURCE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>用于定义导致接触点的源。 可以从utm_source中的URL中解析该活动；如果活动是从CRM同步的，则一般设置为“CRM Campaign”；或者 [!DNL Marketo Measure] 能够解析广告，它可能是“Google AdWords”或“Facebook”之类的值。 在CRM中称为“接触点源”。</p>
       </td>
@@ -12965,9 +11742,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>SEARCH_PHRASE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>用户在浏览器中输入要搜索并最终显示在网站上的值。 根据关键词购买情况，这可能与从付费搜索平台购买的关键词匹配，也可能不匹配。</p>
       </td>
@@ -12979,9 +11754,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_PROVIDER</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>广告平台 [!DNL Marketo Measure] 能够从（通常是我们的集成合作伙伴之一）中解析。</p>
       </td>
@@ -12993,9 +11766,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户的ID。</p>
       </td>
@@ -13007,9 +11778,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户的名称。</p>
       </td>
@@ -13021,9 +11790,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告商ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -13035,9 +11802,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告商名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -13049,9 +11814,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>SITE_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中网站的ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -13063,9 +11826,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>站点名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的网站名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -13077,9 +11838,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的版面ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -13091,9 +11850,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PLACEMENT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的投放位置的名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -13105,9 +11862,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的营销活动ID。</p>
       </td>
@@ -13119,9 +11874,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>营销活动名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的营销活动名称。</p>
       </td>
@@ -13133,9 +11886,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告组ID。 这仅适用于Google Adwords。</p>
       </td>
@@ -13145,9 +11896,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告组的名称。 这仅适用于Google AdWords。</p>
       </td>
@@ -13157,9 +11906,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告ID。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
@@ -13169,9 +11916,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告名称。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
@@ -13181,9 +11926,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的创意ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -13195,9 +11938,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的创意内容的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -13209,9 +11950,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DESCRIPTION_1</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>搜索广告中创意的第一行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -13223,9 +11962,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DESCRIPTION_2</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>搜索广告中的创意内容第二行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -13237,9 +11974,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DESTINATION_URL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从搜索广告点进的登陆页面，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -13251,9 +11986,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DISPLAY_URL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>在搜索广告上显示的友好URL名称，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -13265,9 +11998,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从付费搜索购买购买的关键字ID，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -13279,9 +12010,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>KEYWORD_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从付费搜索购买购买关键词（从广告解析来源广告的广告帐户提取）的名称。 这适用于Google AdWords和Bing Ads（搜索）</p>
       </td>
@@ -13293,9 +12022,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>KEYWORD_MATCH_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>在搜索短语和购买的关键字之间找到的匹配类型。</p>
       </td>
@@ -13699,12 +12426,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>
         <p>用户接触点的唯一ID。</p>
       </td>
@@ -13713,12 +12436,8 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>MODIFIED_DATE</td>
+      <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
       </td>
@@ -13730,9 +12449,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>EMAIL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>与用户接触点关联的电子邮件地址。</p>
       </td>
@@ -13744,9 +12461,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>SESSION_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>创建用户接触点的会话的ID。</p>
       </td>
@@ -13758,9 +12473,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CAMPAIGN_MEMBER_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>创建用户接触点的营销活动成员的ID。</p>
       </td>
@@ -13778,9 +12491,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CRM_EVENT_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>创建用户接触点的事件的ID。</p>
       </td>
@@ -13792,9 +12503,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CRM_TASK_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>为创建用户接触点的任务指定。</p>
       </td>
@@ -13806,9 +12515,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>IMPRESSION_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>创建用户接触点的展示的ID。</p>
       </td>
@@ -13830,9 +12537,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>接触点日期</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>发生用户接触点的日期。</p>
       </td>
@@ -13844,9 +12549,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>MARKETING_TOUCH_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>活动的类型，Web访问、Web窗体、Web聊天、电话、[CRM]营销活动或[CRM]活动。 在CRM中称为“接触点类型”。</p>
       </td>
@@ -13858,9 +12561,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>渠道</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>根据中的自定义渠道定义，接触点所属的渠道 [!DNL Marketo Measure] 应用程序。 在CRM中称为“营销渠道 — 路径”。</p>
       </td>
@@ -13872,9 +12573,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>浏览器名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，检测到用户在会话期间所在的浏览器。</p>
       </td>
@@ -13886,9 +12585,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>浏览器版本</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，查看在会话期间用户所在的检测到的浏览器版本。</p>
       </td>
@@ -13900,9 +12597,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>平台名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，检测到用户在会话期间所在的平台。</p>
       </td>
@@ -13914,9 +12609,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>平台版本</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，查看在会话期间用户所在平台的检测到版本。</p>
       </td>
@@ -13928,9 +12621,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>LANDING_PAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>导致接触点的会话的第一个登陆页面。 在CRM中称为“登陆页面”。</p>
       </td>
@@ -13942,9 +12633,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>LANDING_PAGE_RAW</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>生成接触点的会话的第一个登陆页面。 原始登陆页面将包含URL中的所有查询参数。 在CRM中称为“Landing Page - Raw”。</p>
       </td>
@@ -13956,9 +12645,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>REFERRER_PAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>通常是在用户访问网站之前的外部登陆页面。 在CRM中称为“反向链接页面”。</p>
       </td>
@@ -13970,9 +12657,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>REFERRER_PAGE_RAW</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>通常是在用户访问网站之前的外部登陆页面。 原始反向链接页面可能包含URL中的查询参数。 在CRM中称为“Referrer Page - Raw”。</p>
       </td>
@@ -13984,9 +12669,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FORM_PAGE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>会话中记录的第一张表单产生了接触点。 后续表单提交不会显示在Attribution_Touchpoints表中，而是显示在Form_Submit表中。 在CRM中称为“表单URL”。</p>
       </td>
@@ -13998,9 +12681,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FORM_PAGE_RAW</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>会话中记录的第一张表单产生了接触点。 后续表单提交不会显示在Attribution_Touchpoints表中，而是显示在Form_Submit表中。 原始表单页面URL中可能包含查询参数。 在CRM中称为“表单URL — 原始”。</p>
       </td>
@@ -14012,9 +12693,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>FORM_DATE</p>
       </td>
-      <td>
-        <p>timestamp_ntz</p>
-      </td>
+      <td>timestamp_ntz</td>
       <td>
         <p>提交表单的日期。</p>
       </td>
@@ -14026,9 +12705,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>城市</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>根据javascript和IP地址，检测用户在会话期间所处的城市。</p>
       </td>
@@ -14040,9 +12717,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>区域</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从javascript和IP地址中，查看在会话期间用户所处的检测区域。</p>
       </td>
@@ -14054,9 +12729,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>国家/地区</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>通过javascript和IP地址，可了解在会话期间检测到的用户所在的国家/地区。</p>
       </td>
@@ -14068,9 +12741,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>中</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>用于定义产生接触点的媒介。 这可以从utm_medium的URL中解析。 或者，如果 [!DNL Marketo Measure] 能够解析广告，它可能是“cpc”或“display”之类的值。</p>
       </td>
@@ -14082,9 +12753,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>WEB_SOURCE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>用于定义导致接触点的源。 可以从utm_source中的URL中解析该活动；如果活动是从CRM同步的，则一般设置为“CRM Campaign”；或者 [!DNL Marketo Measure] 能够解析广告，它可能是“Google AdWords”或“Facebook”之类的值。 在CRM中称为“接触点源”。</p>
       </td>
@@ -14096,9 +12765,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>SEARCH_PHRASE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>用户在浏览器中输入要搜索并最终显示在网站上的值。 根据关键词购买情况，这可能与从付费搜索平台购买的关键词匹配，也可能不匹配。</p>
       </td>
@@ -14110,9 +12777,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_PROVIDER</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>广告平台 [!DNL Marketo Measure] 能够从（通常是我们的集成合作伙伴之一）中解析。</p>
       </td>
@@ -14124,9 +12789,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户的ID。</p>
       </td>
@@ -14138,9 +12801,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ACCOUNT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户的名称。</p>
       </td>
@@ -14152,9 +12813,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告商ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -14166,9 +12825,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>ADVERTISER_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告商名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -14180,9 +12837,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>SITE_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中网站的ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -14194,9 +12849,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>站点名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的网站名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -14208,9 +12861,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PLACEMENT_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的版面ID。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -14222,9 +12873,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>PLACEMENT_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的投放位置的名称。 这仅适用于Doubleclick促销活动管理器。</p>
       </td>
@@ -14236,9 +12885,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CAMPAIGN_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的营销活动ID。</p>
       </td>
@@ -14250,9 +12897,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>营销活动名称</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的营销活动名称。</p>
       </td>
@@ -14264,9 +12909,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告组ID。 这仅适用于Google Adwords。</p>
       </td>
@@ -14278,9 +12921,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_GROUP_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告组的名称。 这仅适用于Google AdWords。</p>
       </td>
@@ -14292,9 +12933,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告ID。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
@@ -14304,9 +12943,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>AD_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的广告名称。 这适用于Doubleclick Campaign Manager和Facebook（显示）。</p>
       </td>
@@ -14316,9 +12953,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的创意ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -14330,9 +12965,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从中解析广告的广告帐户中的创意内容的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -14344,9 +12977,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DESCRIPTION_1</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>搜索广告中创意的第一行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -14358,9 +12989,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DESCRIPTION_2</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>搜索广告中的创意内容第二行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -14372,9 +13001,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DESTINATION_URL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从搜索广告点进的登陆页面，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -14386,9 +13013,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>CREATIVE_DISPLAY_URL</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>在搜索广告上显示的友好URL名称，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -14400,9 +13025,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>KEYWORD_UNIQUE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从付费搜索购买购买的关键字ID，从从中解析广告的广告帐户提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
@@ -14414,9 +13037,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>KEYWORD_NAME</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>从付费搜索购买购买关键词（从广告解析来源广告的广告帐户提取）的名称。 这适用于Google AdWords和Bing Ads（搜索）</p>
       </td>
@@ -14428,9 +13049,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>KEYWORD_MATCH_TYPE</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>
         <p>在搜索短语和购买的关键字之间找到的匹配类型。</p>
       </td>
@@ -14592,12 +13211,8 @@ _单击图像的全尺寸版本_
       <th>示例数据</th>
     </tr>
     <tr>
-      <td>
-        <p>ID</p>
-      </td>
-      <td>
-        <p>varchar</p>
-      </td>
+       <td>ID</td>
+      <td>varchar</td>
       <td>映射记录的唯一ID。</td>
       <td>
         <p>0d643578c0c74753eff91abe668ed328|2020-06-17:19:03:36|0002|0|568668</p>
@@ -14607,9 +13222,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>COOKIE_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>此 [!DNL Marketo Measure] 记录的Cookie ID。</td>
       <td>0d643578c0c74753eff91abe668ed328</td>
     </tr>
@@ -14617,9 +13230,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>VISITOR_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>相关访客id的第一个Cookie ID。</td>
       <td>v_0d643578c0c74753eff91abe668ed328</td>
     </tr>
@@ -14627,9 +13238,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>SESSION_ID</p>
       </td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>此 [!DNL Marketo Measure] 会话ID。</td>
       <td>2018-08-06:01-35-24-1231230.9bc63c34482f</td>
     </tr>
@@ -14644,9 +13253,7 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>
-        <p>MODIFIED_DATE</p>
-      </td>
+      <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
       <td>
         <p>上次修改记录的日期。</p>
@@ -14657,9 +13264,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>CURRENT_PAGE</td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>页面查看的URL，不含查询参数。</td>
       <td>
         <p>https://learn.atest.com/simplify-retention-starter-kit.html</p>
@@ -14667,9 +13272,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>CURRENT_PAGE_RAW</td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>页面查看的URL，包括任何查询参数。</td>
       <td>
         <p>https://learn.atest.com/simplify-retention-starter-kit.html?x=nGfrBF&amp;utm_medium=cpc&amp;utm_source=intensify</p>
@@ -14677,9 +13280,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>IP地址</td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>记录的IP地址。</td>
       <td>
         <p>159.203.142.127</p>
@@ -14687,9 +13288,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>类型</td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>指示事件的类型。</td>
       <td>
         <p>主机映射</p>
@@ -14697,9 +13296,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>USER_AGENT_STRING</td>
-      <td>
-        <p>varchar</p>
-      </td>
+      <td>varchar</td>
       <td>在页面查看时记录的设备和浏览器。</td>
       <td>
         <p>Mozilla/5.0 (Windows NT 10.0；Win64；x64) AppleWebKit/537.36 （KHTML，如Gecko） Chrome/79.0.3945.130 Safari/537.36</p>
