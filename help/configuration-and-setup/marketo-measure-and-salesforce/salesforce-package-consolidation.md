@@ -1,11 +1,11 @@
 ---
 description: ’[!DNL Salesforce] 包整合 —  [!DNL Marketo Measure]  — 产品文档'
 title: ’[!DNL Salesforce] 包合并
-exl-id: f1bd5dcb-d021-4140-b6b9-cdb40e566c4b
+exl-id: ae559f5f-91bf-4504-9d5a-af47f95ca01f
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: d6bba3ea7cf97ef730681da1e21cf76e9edab779
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 我们添加了两个新字段以增强您的报告功能：
 
 * form_name：现在BT/BAT对象中提供了此字段，可让用户根据表单名称创建报告。
-* user_touchpoint_id：此字段允许用户创建具有独特用户接触点计数的报表。
+* user_touchpoint_id：此字段允许用户创建具有独特用户接触点计数(`bizible2__User_Touchpoint_V2__c` （在Salesforce中）。
 
 ## 支持和过渡 {#support-and-transition}
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ![](assets/salesforce-package-consolidation-2.png)
 
-## 常见问题解答 {#faq}
+## 常见问题 {#faq}
 
 **合并的包是否会与我现有包中的字段冲突？**
 
@@ -61,8 +61,8 @@ ht-degree: 0%
 
 **V1和V2_EXT软件包中的字段是否可以在整合软件包中使用？**
 
-是. 整合后的包将包含V1中的相同字段，并包含按对象进一步细分的字段，以及通过“接触点”字段划分的V2_EXT字段。
+是的。 整合后的包将包含V1中的相同字段（通过接触点字段进一步按对象划分和V2_EXT字段）。
 
 **能否在合并包中重新创建使用V2_EXT字段的报告？**
 
-是. 请按照 [必需操作](#retired-actions) 部分。
+是的。 请按照 [必需操作](#retired-actions) 部分。
