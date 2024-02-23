@@ -3,7 +3,7 @@ description: 新增发现功能板指南 —  [!DNL Marketo Measure]  — 产品
 title: 新增发现功能板指南
 feature: Reporting
 exl-id: 088ccd63-dcf8-49c0-abbb-02f10ed8ae6e
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 090c9da13c3956a229f09355d37cc590eb0a3728
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
     <tr>
       <td>概述</td>
       <td><ul><li><strong>收入</strong>：归因收入、收入概述、ROI功能板</li>
-          <li><strong>概述</strong>:<ul>              <li>已归因的收入仪表板：按渠道在一段时间内的已归因收入</li>
+          <li><strong>概述</strong>：<ul>              <li>已归因的收入仪表板：按渠道在一段时间内的已归因收入</li>
             <li>ROI仪表板：随时间变化的成本图表</li></ul></li><li><strong>支出</strong>： ROI仪表板</li>
           <li><strong>交易</strong>：归因收入、收入概述、ROI功能板</li>
           <li>
@@ -39,14 +39,12 @@ ht-degree: 0%
           <li>
             <strong>Pipeline收入：</strong>已弃用（请参阅下文）</li>
           <li>
-            <strong>平均交易规模： </strong>已弃用（请参阅下文）</li>
-        </ul>
+            <strong>平均交易规模： </strong>已弃用（请参阅下文）</li></ul>
       </td>
     </tr>
     <tr>
       <td>增长</td>
-      <td>
-        <ul>
+      <td><ul>
           <li>
             <strong>随时间变化的收入和收入</strong>：归因收入、收入概述、ROI功能板</li>
           <li>
@@ -186,7 +184,7 @@ ht-degree: 0%
           <li>
             <strong>收入</strong>：归因收入、收入概述、ROI功能板</li>
           <li>
-            <strong>概述</strong>:<ul>
+            <strong>概述</strong>：<ul>
               <li>已归因的收入仪表板：按渠道在一段时间内的已归因收入</li>
               <li>ROI仪表板：随时间变化的成本图表</li>
             </ul>

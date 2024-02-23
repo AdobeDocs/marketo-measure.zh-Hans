@@ -2,9 +2,9 @@
 description: 参与仪表板 —  [!DNL Marketo Measure]  — 产品
 title: 参与仪表板
 feature: Reporting
-source-git-commit: b037a4a1be5c7d089cc94590caf91be05af4dd22
+source-git-commit: 090c9da13c3956a229f09355d37cc590eb0a3728
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -59,3 +59,11 @@ ht-degree: 0%
 * 与特定渠道/子渠道/营销活动中接触的人员相比，接触点数量如何？
 
 ![](assets/engagement-dashboard-2.png)
+
+## 筛选器窗格 {#filter-pane}
+
+此仪表板配备了以下设置和过滤器：
+
+* 日期（基于接触点日期）
+* 渠道、子渠道
+* Campaign

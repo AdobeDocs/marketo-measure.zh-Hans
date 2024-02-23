@@ -2,9 +2,9 @@
 description: ’[!DNL Marketo Measure] 最终实施指南 —  [!DNL Marketo Measure]  — 产品文档'
 title: ’[!DNL Marketo Measure] 最终实施指南
 feature: Integration, Tracking, Attribution
-source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
+source-git-commit: 090c9da13c3956a229f09355d37cc590eb0a3728
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1014'
 ht-degree: 0%
 
 ---
@@ -66,6 +66,10 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 ![](assets/marketo-measure-ultimate-implementation-guide-3.png)
 
 ## 数据流 {#dataflows}
+
+>[!IMPORTANT]
+>
+>添加新数据集时，我们建议创建一个新流量而不是使用现有流量。
 
 [数据流概述](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html){target="_blank"}
 
