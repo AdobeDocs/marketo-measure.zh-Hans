@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874539
-description: 创建自定义 [!DNL Marketo Measure] 报表类型 —  [!DNL Marketo Measure]  — 产品文档
+description: 创建自定义 [!DNL Marketo Measure] 报表类型 —  [!DNL Marketo Measure]
 title: 创建自定义 [!DNL Marketo Measure] 报表类型
 exl-id: 1d72a04f-6a2d-4607-ad09-3b025125156a
 feature: Reporting
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您可能会看到说明“[!DNL Marketo Measure]”已添加到我们的文档中，但仍会看到“[!DNL Bizible]”（在您的CRM中）。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
+>您可能会看到说明“[!DNL Marketo Measure]”在文档中，但仍请参见“[!DNL Bizible]”（在您的CRM中）。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
 了解如何创建自定义 [!DNL Marketo Measure] [!DNL Salesforce] 报表类型。 我们建议创建三种不同的报表类型：具有买方接触点的潜在客户（自定义）、 [!DNL Marketo Measure] 具有买方接触点（自定义）的人员，具有买方归因接触点（自定义）的商机。
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 1. 定义自定义报表类型。
 
-   * [!UICONTROL Report Type Focus] > [!UICONTROL Primary Object]: 机会
+   * [!UICONTROL Report Type Focus] > [!UICONTROL Primary Object]：机会
    * [!UICONTROL Identification] > [!UICONTROL Report Type Label]：通过买方归因接触点发现商机（自定义）
    * [!UICONTROL Store in Category]：其他报表
    * [!UICONTROL Deployment] > [!UICONTROL Deployment Status]：已部署

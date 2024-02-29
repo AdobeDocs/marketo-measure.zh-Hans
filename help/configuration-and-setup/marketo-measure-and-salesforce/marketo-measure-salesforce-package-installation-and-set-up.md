@@ -1,18 +1,18 @@
 ---
-description: '"[!DNL Marketo Measure] Salesforce包的安装和设置 —  [!DNL Marketo Measure]  — 产品文档”'
+description: "[!DNL Marketo Measure] Salesforce包的安装和设置 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] [!DNL Salesforce] 软件包安装和设置”'
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
-source-git-commit: 68eb5bf83d589c9161490b1772551ed46a9ce444
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 
 # [!DNL Marketo Measure] Salesforce包的安装和设置 {#marketo-measure-salesforce-package-installation-and-set-up}
 
-安装之前 [!DNL Marketo Measure] [!DNL Salesforce] 基础包，您需要确定是否首先在 [!DNL Salesforce] 沙盒，然后再迁移到Salesforce生产实例。
+安装之前 [!DNL Marketo Measure] [!DNL Salesforce] 基本软件包中，您必须确定是否首先在 [!DNL Salesforce] 沙盒，然后再迁移到Salesforce生产实例。
 
 >[!NOTE]
 >
@@ -24,11 +24,11 @@ ht-degree: 0%
 * 自定义 [!DNL Marketo Measure] 字段
 * 25 [!DNL Stock] 报表
 
-[!DNL Marketo Measure] 能够阅读标准内容 [!DNL Salesforce] 对象、字段和记录， [!DNL Marketo Measure] 永远不会更新数据或向其推送数据。 收集的所有数据 [!DNL Marketo Measure] Javascript将显示在 [!DNL Marketo Measure] 自定义对象和字段。
+[!DNL Marketo Measure] 能够阅读标准内容 [!DNL Salesforce] 对象、字段和记录， [!DNL Marketo Measure] 永远不会更新数据或向其推送数据。 收集的所有数据 [!DNL Marketo Measure] JavaScript将在 [!DNL Marketo Measure] 自定义对象和字段。
 
 请按照以下步骤安装 [!DNL Marketo Measure Salesforce] 基础包。
 
-1. 使用无痕浏览器，转到 [Salesforce Appexchange](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"} 并登录。
+1. 使用无痕浏览器，转到 [SalesforceAppExchange](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"} 并登录。
 
 1. 在中安装 [!DNL Marketo Measure] 沙盒或生产环境包。
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 [!DNL Marketo Measure] 通过连接的发送和接收数据 [!DNL Salesforce] 用户属于 [!DNL Marketo Measure] 应用程序。
 
-为了将接触点数据推送到 [!DNL Salesforce] 实例中，连接的用户必须有权访问 [!DNL Marketo Measure] 自定义对象（例如，买方接触点和买方归因接触点）以及标准 [!DNL Salesforce] 诸如潜在客户和联系人之类的对象。
+要将接触点数据推送到 [!DNL Salesforce] 实例中，连接的用户必须有权访问 [!DNL Marketo Measure] 自定义对象（例如，买方接触点和买方归因接触点）以及标准 [!DNL Salesforce] 诸如潜在客户和联系人之类的对象。
 
 创建 [!DNL Marketo Measure] 配置文件以确保您在将数据推送到Salesforce时不会遇到验证错误。
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 1. 启用“营销用户”作为用户级别权限。
 
-* 此 [!UICONTROL Marketing User] 通过复选框，用户可创建营销活动并使用营销活动导入向导。 如果未选择此选项，则用户只能查看营销活动和高级营销活动设置，编辑单个潜在客户或联系人的营销活动历史记录，以及运行营销活动报表。 [!DNL Marketo Measure] 需要能够读取和写入campaign对象。
+* 此 [!UICONTROL Marketing User] 通过复选框，用户可创建营销活动并使用营销活动导入向导。 如果未选择此选项，则用户只能查看营销活动和高级营销活动设置，编辑单个潜在客户或联系人的营销活动历史记录，以及运行营销活动报表。 [!DNL Marketo Measure] 必须能够读取和写入campaign对象。
 
 步骤3：从所有触发器、工作流和流程中排除此配置文件
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 1. 选择 **[!UICONTROL Connections]** 内部 **[!UICONTROL Integrations]** 分组。
 
-1. 单击当前连接的右侧的键图标 [!DNL Salesforce] 连接并选择 **使用生产环境重新授权**. 使用新用户凭据再次登录（如果出现提示）。
+1. 单击当前连接的右侧的键图标 [!DNL Salesforce] 连接并选择 **通过生产环境重新授权**. 使用新用户凭据再次登录（如果出现提示）。
 
 >[!MORELIKETHIS]
 >

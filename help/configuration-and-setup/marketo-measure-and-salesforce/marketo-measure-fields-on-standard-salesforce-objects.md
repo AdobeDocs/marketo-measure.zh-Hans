@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874574
-description: '"[!DNL Marketo Measure] 标准字段 [!DNL Salesforce] 对象 —  [!DNL Marketo Measure]  — 产品文档”'
+description: "[!DNL Marketo Measure] 标准字段 [!DNL Salesforce] 对象 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] 标准字段 [!DNL Salesforce] 对象”'
 exl-id: c9d5254f-06bd-4813-bb29-1a4955b37041
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 接触点日期(LC)：这是商机创建接触交互的日期。
 
-## 营销活动 {#campaign}
+## Campaign {#campaign}
 
 仅添加了4个字段、1个按钮和1个验证规则。
 
@@ -137,7 +137,7 @@ BizibleID：将其用于“潜在客户”与接触点的关联关联中的活�
 
 ## 机会 {#opportunity}
 
-[!DNL Marketo Measure] 机会金额：此字段用在对Opportunity使用自定义金额字段的情况下。 我们将该自定义字段值映射到 [!DNL Marketo Measure] 使用工作流的Opportunity Amount ，然后为买方归因接触点对象上的Revenue attribution字段读取此字段。
+[!DNL Marketo Measure] 业务机会金额：此字段用在业务机会中使用自定义金额字段的方案。 我们将该自定义字段值映射到 [!DNL Marketo Measure] 使用工作流的Opportunity Amount ，然后为买方归因接触点对象上的Revenue attribution字段读取此字段。
 
 ## 活动 {#activity}
 

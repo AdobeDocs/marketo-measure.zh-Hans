@@ -1,17 +1,17 @@
 ---
-description: 错误通知 —  [!DNL Marketo Measure]  — 产品文档
+description: 错误通知 —  [!DNL Marketo Measure]
 title: 错误通知
 feature: Fundamentals
-source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
 
 # 错误通知 {#error-notifications}
 
-以下是您可以通过应用程序内通知或电子邮件收到的错误列表。 如果您收到其中的任何信息，请按照相应的故障排除步骤操作。 如果这些步骤不能解决问题，请联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support).
+以下是您可以通过应用程序内通知或电子邮件收到的错误列表。 如果收到其中的任何信息，请按照相应的故障诊断步骤操作。 如果这些步骤不能解决问题，请联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support).
 
 <table>
   <tbody>
@@ -54,7 +54,7 @@ ht-degree: 0%
     </tr>
     <tr>
       <td>INVALID_ADOBE_ANALYTICS_CONFIGURATION</td>
-      <td>AdobeAnalytics导出期间出错： INVALID_ANALYTICS_CONFIGURATION_ADOBE：错误：不允许上传。 请先确认数据源架构，然后再上传。 数据源Id：1234</td>
+      <td>AdobeAnalytics导出期间出错： INVALID_ANALYTICS_CONFIGURATION_ADOBE：错误：不允许上传。 在上载之前确认数据源架构。 数据源Id：1234</td>
       <td>Adobe Analytics集成配置不正确。</td>
       <td>请参阅以下帮助文章以确保正确配置：
         <ul>
@@ -139,7 +139,7 @@ ht-degree: 0%
     </tr>
     <tr>
       <td>不支持的_CRM_PACKAGE_VERSION</td>
-      <td>Crm导入期间出错：UNSUPPORTED_CRM_PACKAGE_VERSION ：请更新您的CRM包</td>
+      <td>Crm导入期间出错：UNSUPPORTED_CRM_PACKAGE_VERSION ：更新您的CRM包</td>
       <td>不再支持检测到的当前包。</td>
       <td>将您的包升级到最新版本：
         <ul>

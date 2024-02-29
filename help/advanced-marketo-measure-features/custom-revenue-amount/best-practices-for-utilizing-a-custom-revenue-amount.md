@@ -1,11 +1,11 @@
 ---
-description: 利用自定义收入额的最佳实践 —  [!DNL Marketo Measure]  — 产品文档
+description: 利用自定义收入额的最佳实践 —  [!DNL Marketo Measure]
 title: 利用自定义收入额的最佳实践
 exl-id: 553bd75a-512a-4733-a24b-8112eb420afc
 feature: Custom Revenue Amount
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 * 在您的 [!DNL Marketo Measure] 帐户，转到&#39;[!UICONTROL Opportunities]CRM下的&#39;部分
 * 识别 [!UICONTROL Custom Opportunity Amount] 字段，此处为您的 [!UICONTROL custom revenue amount API] 字段应列出
 * 确认这仍然是正确的字段
-* 另外，请 [!DNL Salesforce] 管理员确认中的自定义收入额工作流 [!DNL Salesforce] 仍在运行
+* 另外，请让您的 [!DNL Salesforce] 管理员确认中的自定义收入额工作流 [!DNL Salesforce] 仍在运行
 
 除了年度审查外，某些组织变化可能表明需要审查收入额设置……
 

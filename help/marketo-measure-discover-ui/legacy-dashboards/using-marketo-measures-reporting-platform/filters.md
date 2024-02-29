@@ -1,13 +1,13 @@
 ---
 unique-page-id: 18874656
-description: 筛选器 —  [!DNL Marketo Measure]  — 产品文档
+description: 筛选器 —  [!DNL Marketo Measure]
 title: 过滤器
 exl-id: 249266c8-9ff5-4895-979c-4f377423d031
 feature: Reporting
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ _用于：概述、营销支出、广告ROI、基于帐户的营销、Web流量�
 
 选择要应用于展示板的单个归因模型：首次接触、潜在客户创建接触、U形、W形、完整路径或自定义模型。 “完整路径”和“自定义模型”并非在所有层都可用。
 
-**Campaign**
+**营销活动**
 
 _用于：概述、增长、广告ROI、Web流量、CMO、付费媒体、内容营销、Passport_
 
@@ -73,7 +73,7 @@ _用于：概述、增长、营销支出、广告ROI、基于帐户的营销、W
 
 选择要使用的日期类型，并将其绑定到日期过滤器。 默认日期类型因主板而异。 “接触点日期”是指进行营销活动的日期，“创建日期”是指CRM中创建Lead或Contact或Opportunity的日期，“关闭日期”是关闭Opportunity的日期。
 
-**维度**
+**Dimension**
 
 _使用位置：付费媒体_
 
@@ -155,7 +155,7 @@ _用于：概述、Web流量、CMO、付费媒体、内容营销_
 * 页面查看次数
 * Forms
 
-**阶段**
+**Stage**
 
 _使用位置： Velocity_
 

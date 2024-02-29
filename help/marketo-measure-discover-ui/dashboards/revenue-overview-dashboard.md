@@ -3,9 +3,9 @@ description: 收入概览仪表板 —  [!DNL Marketo Measure]  — 产品
 title: 收入概览仪表板
 feature: Reporting
 exl-id: 37e00d79-18f4-46f1-9a1a-e25bbfd55bfd
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 此并排时间序列条形图将总收入与归因收入进行了对比，清楚地显示了您对总体收入的市场影响。
 
-* 利用向下钻取和向上钻取功能按季度和年度对数据进行分类。
+* 使用向下钻取和向上钻取功能按季度和年对数据进行分类。
 * 将鼠标悬停在条形图的某个部分上可显示其详细信息。
 
 **图表回答的问题：**

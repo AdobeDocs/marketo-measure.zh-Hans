@@ -3,9 +3,9 @@ description: Data Warehouse访问 — Reader帐户 — 产品文档
 title: Data Warehouse访问权限 — Reader帐户
 exl-id: 2aa73c41-47ab-4f11-96d8-dafb642308fc
 feature: Data Warehouse
-source-git-commit: f8a37a996afefe78900e57e1eb166cdd50b5347f
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Snowflake访问链接 {#snowflake-access-link}
 
-要访问Snowflake数据仓库，您需要导航到Snowflake帐户的特定URL。 您可以通过登录找到此访问链接 [!DNL Marketo Measure] 并按照以下步骤导航到Data Warehouse信息页面。
+要访问SnowflakeData Warehouse，您需要导航到Snowflake帐户的特定URL。 您可以通过登录找到此访问链接 [!DNL Marketo Measure] 并按照以下步骤导航到Data Warehouse信息页面。
 
 1. 在 [!DNL Marketo Measure]，在页面顶部，单击 **[!UICONTROL My Account]** > **[!UICONTROL Settings]**.
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
    ![](assets/data-warehouse-access-reader-account-2.png)
 
-1. 在此页面上，您可以找到指向Snowflake数据仓库和用户名的链接。
+1. 在此页面上，您可以找到指向SnowflakeData Warehouse和用户名的链接。
 
    ![](assets/data-warehouse-access-reader-account-3.png)
 
@@ -32,7 +32,7 @@ ht-degree: 0%
    >
    >这是一个只读帐户，可供贵组织使用，而不仅仅限于个人用户。 您组织内有权访问的任何用户 [!DNL Marketo Measure] 可以使用此帐户登录SnowflakeData Warehouse读取器帐户。
 
-1. 单击SnowflakeURL中提供的链接，您将转到Snowflake登录页面，并在其中输入用户名和密码。 _如果您没有密码，请参阅以下步骤重置密码_.
+1. 单击SnowflakeURL中提供的链接，此时您将转到Snowflake登录页面，并在其中输入用户名和密码。 _如果您没有密码，请参阅以下步骤重置密码_.
 
    ![](assets/data-warehouse-access-reader-account-4.png)
 

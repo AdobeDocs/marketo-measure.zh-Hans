@@ -1,11 +1,11 @@
 ---
-description: API连接的最佳实践 —  [!DNL Marketo Measure]  — 产品文档
+description: API连接的最佳实践 —  [!DNL Marketo Measure]
 title: API连接的最佳实践
 exl-id: b8550e4e-a567-427f-b5d3-50232553a066
 feature: APIs, Integration
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 0%
 * 此人已不在公司
 * API更新
 
-如果您的团队经历了以上任何场景，请在 [!DNL Marketo Measure] 应用程序，确保他们无需重新授权。
+如果您的团队经历了以上任何场景，请检查您在中的API连接 [!DNL Marketo Measure] 应用程序，确保他们无需重新授权。
 
 >[!MORELIKETHIS]
 >

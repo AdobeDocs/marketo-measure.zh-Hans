@@ -4,9 +4,9 @@ description: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] Interact - Mark
 title: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] Interact
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 feature: Salesforce
-source-git-commit: 3be29892b58852cf080828e9eeff969ac08cc62b
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1263'
 ht-degree: 19%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 19%
 
 ## Salesforce和 [!DNL Marketo Measure] {#salesforce-and-marketo-measure}
 
-一旦 [!DNL Marketo Measure] 已创建帐户并 [!DNL Salesforce] 已连接， [!DNL Marketo Measure] 将开始将营销数据推送到CRM实例，只要 [!DNL Marketo Measure] 已安装受管软件包，并且 [!DNL Marketo Measure] Salesforce用户具有编辑权限。
+一旦 [!DNL Marketo Measure] 已创建帐户并 [!DNL Salesforce] 已连接， [!DNL Marketo Measure] 开始将营销数据推送到CRM实例，前提是 [!DNL Marketo Measure] 已安装受管软件包，并且 [!DNL Marketo Measure] Salesforce用户具有编辑权限。
 
 如果您未安装 [!DNL Marketo Measure] Salesforce包， [!DNL Marketo Measure] 不会向Salesforce实例写入任何数据。
 
@@ -31,11 +31,11 @@ ht-degree: 19%
 
 ![](assets/how-bizible-and-salesforce-interact-2.png)
 
-在修改此设置时，请牢记，较小的批次将消耗您的CRM中的更多API积分。 仅当您在CRM中遇到CPU超时或CPU负载过高时，才建议减小批次大小。
+在修改此设置时，请记住，较小的批次大小会消耗您的CRM中的更多API积分。 仅当您在CRM中遇到CPU超时或CPU负载过高时，才建议减小批次大小。
 
 ## Salesforce标准对象和访问 {#salesforce-standard-objects-and-access}
 
-这将列出 [!DNL Salesforce] 符合以下条件的标准对象 [!DNL Marketo Measure] 与交互，以及在建立连接后我们添加到这些对象的自定义字段，并且 [!DNL Marketo Measure] 软件包已安装。 开箱即用， [!DNL Marketo Measure] 不会写入任何标准 [!DNL Salesforce] 对象字段。
+这将列出 [!DNL Salesforce] 符合以下条件的标准对象 [!DNL Marketo Measure] 与交互，并建立连接后我们添加到这些对象的自定义字段，以及 [!DNL Marketo Measure] 软件包已安装。 开箱即用， [!DNL Marketo Measure] 不会写入任何标准 [!DNL Salesforce] 对象字段。
 
 **商机**
 
@@ -806,7 +806,7 @@ ht-degree: 19%
 
 ## [!DNL Marketo Measure] 中的自定义对象 [!DNL Salesforce] {#marketo-measure-custom-objects-in-salesforce}
 
-除了在SFDC的标准对象上创建自定义字段外，在 [!DNL Marketo Measure] 软件包已安装，它将创建几个自定义对象。 以下是这些自定义对象的列表，以及一个表示以下字段的表： [!DNL Marketo Measure] 将写入。
+除了在SFDC的标准对象上创建自定义字段外，在 [!DNL Marketo Measure] 软件包已安装，它会创建几个自定义对象。 以下是这些自定义对象的列表，以及一个表示以下字段的表： [!DNL Marketo Measure] 将写入。
 
 **买方接触点**
 

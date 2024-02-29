@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874582
-description: '"[!DNL Marketo Measure] Salesforce对象 —  [!DNL Marketo Measure]  — 产品文档”'
+description: "[!DNL Marketo Measure] Salesforce对象 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] Salesforce对象”'
 exl-id: d5d6f334-6531-40fa-b043-75b49d8f43d5
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 289c40a07c60ccc0262e2aaf95f21fca0c945b11
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 * [买方归因接触点](#attribution)
 * [[!DNL Marketo Measure] 人员](#person)
 * [[!DNL Marketo Measure] A/B测试](#ab)
-* [[!DNL Marketo Measure] 事件](#events)
+* [[!DNL Marketo Measure] 活动](#events)
 
 由要跟踪的内容捕获的接触点将写入由安装创建的自定义对象。 [!DNL Bizible Salesforce] 包。
 
@@ -55,11 +55,11 @@ BAT对象在 [!UICONTROL Opportunity]， [!UICONTROL Contact]、和 [!UICONTROL 
 
 ## [!DNL Marketo Measure] 人员 {#marketo-measure-person}
 
-此 [!DNL Marketo Measure] 人员对象将Lead和Contact对象关联在一起。 开箱即用的Salesforce不提供在同一报告中使用Lead和Contact对象创建报告的选项。 通过与Lead和Contact对象关联， [!DNL Marketo Measure] 人员允许您在同一报表中报告两个对象。 当Lead已转换为Contact时，这尤其有用。 在 [!DNL Marketo Measure] 人员记录：您将看到对相应Lead和/或Contact记录的查找、与人员关联的接触点相关列表以及人员ID（始终是Lead/Contact的电子邮件地址）。 由于 [!DNL Marketo Measure] 人员与商机和联系人对象相关，将永远不会 [!DNL Marketo Measure] 与买方归因接触点关联的人员记录。 以下是 [!DNL Marketo Measure] Salesforce中的人员记录：
+此 [!DNL Marketo Measure] 人员对象将Lead和Contact对象关联在一起。 开箱即用的Salesforce不提供在同一报告中使用Lead和Contact对象创建报告的选项。 通过与Lead和Contact对象关联， [!DNL Marketo Measure] 人员允许您在同一报表中报告两个对象。 当Lead已转换为Contact时，这尤其有用。 在 [!DNL Marketo Measure] 人员记录：您将看到对相应Lead和/或Contact记录的查找、与人员关联的接触点的相关列表以及人员ID（始终是Lead/Contact的电子邮件地址）。 由于 [!DNL Marketo Measure] 人员与商机和联系人对象相关，将永远不会 [!DNL Marketo Measure] 与买方归因接触点关联的人员记录。 以下是 [!DNL Marketo Measure] Salesforce中的人员记录：
 
 ![](assets/4.png)
 
-## [!DNL Marketo Measure] A/B 测试 {#marketo-measure-a-b-test}
+## [!DNL Marketo Measure] A/B测试 {#marketo-measure-a-b-test}
 
 如果您通过运行A/B测试 [!DNL Optimizely] 或VWO (Visual Web Optimizer)，您可以将这些帐户连接到 [!DNL Marketo Measure] 用于在Salesforce中查看A/B测试数据的帐户。 此 [!DNL Marketo Measure] A/B测试对象基本上允许您从Optimizy/VWO中获取A/B测试数据，并将该数据关联到潜在客户和联系人。
 
@@ -67,13 +67,13 @@ BAT对象在 [!UICONTROL Opportunity]， [!UICONTROL Contact]、和 [!UICONTROL 
 
 此 [!DNL Marketo Measure] A/B测试对象将作为相关列表显示在 [!UICONTROL Leads]， [!UICONTROL Contacts] 和 [!UICONTROL Opportunity] 页数。 该列表显示了您正在优化或VWO中运行的所有试验和变体，并允许您查看与特定潜在客户和联系人相关的试验/变体。
 
-## [!DNL Marketo Measure] 事件 {#marketo-measure-events}
+## [!DNL Marketo Measure] 活动 {#marketo-measure-events}
 
 此 [!DNL Marketo Measure] 事件对象允许您跟踪网站上发生的特定事件。 要跟踪网站上发生的特定事件，除了必须在页面上添加自定义代码之外， [!DNL Marketo Measure] Javascript。 捕获的信息将显示在 [!DNL Marketo Measure] 对象相关列表，该列表可在 [!UICONTROL Leads]， [!UICONTROL Contacts] 和 [!UICONTROL Opportunity] 页数。 此 [!DNL Marketo Measure] 事件对象 *不会* 绑定到归因数据。 此对象的目的是查看用户是否在您的网站上执行特定操作。
 
 ## [!DNL Marketo Measure] 字段 {#marketo-measure-fields}
 
-由捕获的数据 [!DNL Marketo Measure] Javascript将被推送到自定义 [!DNL Marketo Measure] 我们内部 [!DNL Marketo Measure] 对象。 某些字段将仅存在于某些对象上。 获取所有 [!DNL Marketo Measure] 字段，请 [单击此处](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md). 用于的可视化图表 [!DNL Marketo Measure] 对象每个 [!DNL Marketo Measure] 字段与，请 [单击此处](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md).
+由捕获的数据 [!DNL Marketo Measure] JavaScript将推送到自定义 [!DNL Marketo Measure] 中的字段 [!DNL Marketo Measure] 对象。 某些字段仅存在于某些对象中。 您可以查看 [词汇表[[!DNL Marketo Measure] 字段]](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md) 和 [相关可视化图表 [!DNL Marketo Measure] 对象](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md).
 
 ## [!DNL Marketo Measure] 报告和仪表板 {#marketo-measure-reports-and-dashboards}
 

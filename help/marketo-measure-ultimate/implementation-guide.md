@@ -1,10 +1,10 @@
 ---
-description: ’[!DNL Marketo Measure] 最终实施指南 —  [!DNL Marketo Measure]  — 产品文档'
+description: ’[!DNL Marketo Measure] 最终实施指南 —  [!DNL Marketo Measure]’
 title: ’[!DNL Marketo Measure] 最终实施指南
 feature: Integration, Tracking, Attribution
-source-git-commit: 090c9da13c3956a229f09355d37cc590eb0a3728
+source-git-commit: 289c40a07c60ccc0262e2aaf95f21fca0c945b11
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---

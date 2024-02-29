@@ -1,11 +1,11 @@
 ---
-description: Adobe Experience Cloud界面概述 —  [!DNL Marketo Measure]  — 产品文档
+description: Adobe Experience Cloud界面概述 —  [!DNL Marketo Measure]
 title: Adobe Experience Cloud界面概述
 exl-id: 15bd7590-8eb0-46e5-9883-3be11ff58c9e
 feature: Integration, Tracking
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Experience Cloud界面与Adobe Experience Cloud应用程序和服务的外
 
 ## 新增功能 {#new-features}
 
-除了已更新的外观和感觉外，您还会注意到以下功能：
+除了已更新的外观和感觉外，请注意以下功能：
 
 **域管理**
 
@@ -44,7 +44,7 @@ Adobe Experience Cloud界面与Adobe Experience Cloud应用程序和服务的外
 
 **应用程序切换器**
 
-那些有权访问多个Adobe产品的用户能够轻松地在它们之间切换。
+那些有权访问多个Adobe产品的用户能够轻松地在它们之间进行切换。
 
 ![](assets/unified-shell-overview-7.png)
 
@@ -58,11 +58,11 @@ Adobe Experience Cloud界面与Adobe Experience Cloud应用程序和服务的外
 
 **Adobe设置**
 
-单击配置文件图标以更改您的语言或其他全Adobe首选项。 您还可以设置 [!DNL Marketo Measure]通过单击 **我的设置**.
+要更改您的语言或其他Adobe范围的首选项，请单击您的配置文件图标。 您还可以设置 [!DNL Marketo Measure]通过单击 **我的设置**.
 
 ![](assets/unified-shell-overview-10.png)
 
-## 常见问题解答 {#faq}
+## 常见问题 {#faq}
 
 **我的书签会发生什么情况？**
 
@@ -70,8 +70,8 @@ Adobe Experience Cloud界面与Adobe Experience Cloud应用程序和服务的外
 
 **我无法登录 [!DNL Marketo Measure] 通过Experience Cloud界面。 可能出现什么问题？**
 
-如果您可以登录到Adobe Experience Cloud，但看到如下所示的页面，则问题可能出在 [!DNL Marketo Measure] 侧：
+如果您可以登录到Adobe Experience Cloud，但看到类似于以下内容的页面，则问题可能出在 [!DNL Marketo Measure] 侧：
 
 ![](assets/unified-shell-overview-11.png)
 
-如果您收到上述错误，请 [联系支持人员](https://nation.marketo.com/t5/support/ct-p/Support) 以寻求帮助。
+如果您收到上述错误， [联系支持人员](https://nation.marketo.com/t5/support/ct-p/Support) 以寻求帮助。

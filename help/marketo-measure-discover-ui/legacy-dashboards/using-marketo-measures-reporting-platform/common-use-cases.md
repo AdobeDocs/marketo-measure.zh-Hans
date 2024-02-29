@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874658
-description: 常见用例 —  [!DNL Marketo Measure]  — 产品文档
+description: 常见用例 —  [!DNL Marketo Measure]
 title: 常见用例
 exl-id: bf271658-9460-4fb2-9a0f-0c7404348421
 feature: Reporting
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 联系人已创建 {#contacts-created}
 
-要查看按维度分组的已创建联系人总数，请导航到“发现”的概述或CMO仪表板，打开图块上方的“筛选器”，将“量度”筛选器调整为“联系人”，然后将“日期类型”移动到“创建日期”。 完成!
+要查看按维度分组的已创建联系人总数，请导航到“发现”的概述或CMO仪表板，打开图块上方的“筛选器”，将“量度”筛选器调整为“联系人”，然后将“日期类型”移动到“创建日期”。 完成！
 
 要获取联系人总数或查看随时间变化的联系人总数，请导航到“增长”仪表板，将日期类型调整为“创建日期”，然后选择所需的时间范围。 Contacts和Contacts Over Time是此仪表板中以联系人为中心的磁贴。
 

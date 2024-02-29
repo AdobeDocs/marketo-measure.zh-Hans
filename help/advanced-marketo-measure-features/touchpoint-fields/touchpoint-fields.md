@@ -1,12 +1,12 @@
 ---
 unique-page-id: 37355835
-description: 接触点字段 —  [!DNL Marketo Measure]  — 产品文档
+description: 接触点字段 —  [!DNL Marketo Measure]
 title: 接触点字段
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
+source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1945'
 ht-degree: 0%
 
 ---
@@ -213,7 +213,7 @@ Segment__c和Grade__c的Opportunity对象上有单独的字段，用户希望将
 
 **如何使用什么表达式从单个登陆页面提取多个参数？**
 
-与提取示例#4一样，您将需要创建多个字段来提取每个参数。 因此，如果您有五个不同的值，您将创建五个接触点字段来提取每个值。
+与提取示例#4一样，您需要创建多个字段来提取每个参数。 因此，如果您有五个不同的值，您将创建五个接触点字段来提取每个值。
 
 **为什么我看不到新字段在 [!DNL Marketo Measure] 纲要？**
 

@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874604
-description: 自定义分段 —  [!DNL Marketo Measure]  — 产品文档
+description: 自定义分段 —  [!DNL Marketo Measure]
 title: 自定义分段
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
 feature: Segmentation
-source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
+source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '727'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 0%
 * 对Opportunity区段规则重复此流程
 * “其他”类别是将捕获任何未定义接触点的默认区段。 您可以更改默认区段的名称
 * 单击垃圾桶图标可删除整个类别或类别中的单个规则。 或者，单击铅笔图标以编辑类别或规则
-* 您会注意到您有一个“[!UICONTROL Save]”按钮和“保存并处理”按钮。 使用“保存”按钮可保存您所做的工作以及随时间发生的更改。 仅在确保以下各项后使用“保存并处理”按钮：
+* 请注意，您拥有&quot;[!UICONTROL Save]”按钮和“保存并处理”按钮。 使用“保存”按钮可保存您所做的工作以及随时间发生的更改。 仅在确保以下各项后使用“保存并处理”按钮：
 
    * 您的映射是准确的
    * 您已添加要在一个类别中跟踪的所有区段

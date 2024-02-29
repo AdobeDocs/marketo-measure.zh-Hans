@@ -1,19 +1,19 @@
 ---
 unique-page-id: 18874694
-description: Salesforce沙盒到生产环境的迁移 —  [!DNL Marketo Measure]  — 产品文档
+description: Salesforce沙盒到生产环境的迁移 —  [!DNL Marketo Measure]
 title: Salesforce沙盒到生产环境的迁移
 exl-id: b2b71c4a-f192-43ce-a27e-cbd0ec3cf008
 feature: Salesforce
-source-git-commit: ad658a513b01dc7a51299abcb7313ff1877e49f3
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
 
 # Salesforce沙盒到生产环境的迁移 {#salesforce-sandbox-to-production-migration}
 
-如果您选择测试 [!DNL Marketo Measure] 在 [!DNL Salesforce] 沙盒环境，请在您准备就绪后，按照以下说明迁移到生产。 下面的说明假定您已下载 [!DNL Marketo Measure] 打包到您的沙盒组织中，执行了必要的测试并准备推送 [!DNL Marketo Measure] 到生产。
+如果您选择测试 [!DNL Marketo Measure] 在 [!DNL Salesforce] 沙盒环境，请在准备就绪后，按照以下说明迁移到生产环境。 下面的说明假定您已下载 [!DNL Marketo Measure] 打包到您的沙盒组织中，执行了必要的测试并准备推送 [!DNL Marketo Measure] 到生产。
 
 ## 步骤1：安装 [!DNL Marketo Measure] 打包到生产环境中 [!DNL Salesforce] 实例
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 * 登录到 [!DNL Marketo Measure] experience.adobe.com/marketo-measure上的应用程序
 * 导航到我的帐户>[!UICONTROL Settings] >[!UICONTROL Connections]
 * 单击SFDC连接旁边的垃圾桶图标以删除
-* 系统将提示您确认删除操作。 请确保仔细阅读提示并了解删除的后果
+* 系统会提示您确认删除操作。 请确保仔细阅读提示并了解删除的后果
 
   ![](assets/salesforce-sandbox-to-production-migration-1.png)
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 * 登录到 [!DNL Marketo Measure] experience.adobe.com/marketo-measure上的应用程序
 * 导航到 [!UICONTROL My Account] >[!UICONTROL Settings] > [!UICONTROL Connections]
-* 成功删除沙盒连接后，连接将从页面中消失，否则连接仍会存在，并且状态为正在删除
+* 成功删除沙盒连接后，该连接将从页面中消失，否则连接仍会存在，并且状态为“正在删除”
 * 单击“[!UICONTROL Set up New CRM connection]&quot;
 * 在&quot;[!UICONTROL Select CRM Connection]”模式对话框，单击“[!UICONTROL Connect]”操作 [!DNL Salesforce] 平台，选择&#39;&#39;[!UICONTROL Production]”选项
 * 系统会提示您输入凭据，请确保输入生产登录详细信息
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 [权限集](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
 
-[共享报告](https://help.salesforce.com/articleView?id=analytics_share_folder.htm&amp;type=0){target="_blank"}
+[共享报告](https://help.salesforce.com/s/articleView?language=en_US&amp;id=analytics_share_folder.htm&amp;type=0){target="_blank"}
 
 [隐藏不必要的报表类型](/help/configuration-and-setup/marketo-measure-and-salesforce/hiding-unnecessary-report-types.md)
 

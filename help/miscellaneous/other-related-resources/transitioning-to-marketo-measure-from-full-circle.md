@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874535
-description: 转换到 [!DNL Marketo Measure] 从完整圆圈 —  [!DNL Marketo Measure]  — 产品文档
+description: 转换到 [!DNL Marketo Measure] 从完整圆圈 —  [!DNL Marketo Measure]
 title: 转换到 [!DNL Marketo Measure] 从完整圆形
 exl-id: fd471771-33e2-413a-b155-02ba6e32e10c
 feature: Attribution, Fundamentals
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---

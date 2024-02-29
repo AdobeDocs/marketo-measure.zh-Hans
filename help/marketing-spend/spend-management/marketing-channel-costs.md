@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874602
-description: 营销渠道成本 —  [!DNL Marketo Measure]  — 产品文档
+description: 营销渠道成本 —  [!DNL Marketo Measure]
 title: 营销渠道成本
 exl-id: 36ccaff3-db55-47bd-a24e-4aa1894f13e0
 feature: Channels, Spend Management
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -45,11 +45,11 @@ ht-degree: 0%
 
 默认日期范围将从您的开始日期开始 [!DNL Marketo Measure] 到当前月。 为确保成本保持正确，您不能输入未来月份的成本，但可以在与合作之前输入月份的成本 [!DNL Marketo Measure].
 
-**筛选器**
+**筛选**
 
 要在“营销支出”表中缩小结果范围，请选择顶部的一个渠道以过滤掉其他渠道。 当您的团队专注于单个渠道时，这将很有帮助。
 
-**搜索**
+**Search**
 
 使用搜索框从渠道、子渠道或营销活动中查找匹配的文本。
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 无论浏览器中处于哪个视图，如果它是筛选视图或包含所有日期和渠道的默认视图，则可以上传任何CSV。
 
-我们遇到的最常见错误是日期列的格式，如果日期格式发生更改，可能会发生此错误；如果在Excel和/或Google工作表之间移动，则可能会有意发生此错误。 请牢记，日期应为MM-YY，因此Sep-12日期应为9月12日而非9月12日，或May-12日期应为05-12日期。
+我们遇到的最常见错误是日期列的格式，如果日期格式发生更改，可能会发生此错误；如果在Excel和/或Google工作表之间移动，则可能会有意发生此错误。 请记住，日期应为MM-YY，因此9月12日而不是9月12日，或者5月12日而不是05-12日。
 
 ## 开始之前 {#before-you-begin}
 
@@ -113,7 +113,7 @@ _其他说明_：
 
 转到 **[!UICONTROL Cost]** 的部分 [!DNL Marketo Measure] 应用程序并单击 **[!UICONTROL Upload.CSV]**. 系统将刷新并反映新信息。
 
-## 常见问题解答 {#faq}
+## 常见问题 {#faq}
 
 **为什么数字出现在CSV中**
 

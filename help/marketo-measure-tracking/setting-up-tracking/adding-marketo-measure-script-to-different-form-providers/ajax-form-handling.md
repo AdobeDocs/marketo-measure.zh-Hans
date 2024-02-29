@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874745
-description: AJAX表单处理 —  [!DNL Marketo Measure]  — 产品文档
+description: AJAX表单处理 —  [!DNL Marketo Measure]
 title: AJAX表单处理
 exl-id: 042e42ff-d8d9-4380-b878-aba4934bc4a0
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 场景1 — 包含AJAX提交的HTML表单 {#scenario-html-form-with-an-ajax-submit}
 
-使用包含AJAX（或其他机制）的表单将转化日期从客户端提交到我们的服务器时， [!DNL Marketo Measure] 可能不知道客户通过我们监控的任何标准路径进行的转化。 在此方案中，我们可以利用简单的API（如下所示）。
+使用包含AJAX（或其他机制）的表单将转化日期从客户端提交到我们的服务器时， [!DNL Marketo Measure] 可能不知道客户通过我们监控的任何标准路径进行的转化。 在此场景中，我们可以使用简单的API（如下所示）。
 
 如果您处理自己的表单提交，则可以明确调用 [!DNL Marketo Measure] 从Javascript访问。 [!DNL Marketo Measure] 将从表单中收集所有相关信息，并将其异步发布到我们的服务器。
 

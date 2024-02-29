@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874688
-description: CRM Campaign成本 —  [!DNL Marketo Measure]  — 产品文档
+description: CRM Campaign成本 —  [!DNL Marketo Measure]
 title: CRM Campaign成本
 exl-id: d967cabe-b9f1-4ea1-a81b-e4484c703ecf
 feature: Spend Management
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 ## Marketo程序同步 {#marketo-program-sync}
 
-如果将Marketo项目作为营销活动引入CRM，您将需要确保将开始日期、结束日期和期间成本映射设置为必需的CRM字段。 由于没有映射到“启用买方接触点”字段，因此您仍需要启用这些促销活动，以便我们了解如何提取成本。
+如果将Marketo项目作为促销活动引入CRM，您将需要确保将开始日期、结束日期和期间成本映射设置为必需的CRM字段。 由于没有映射到“启用买方接触点”字段，因此您仍需要启用这些促销活动，以便我们了解如何提取成本。
 
 ## 编辑成本 {#editing-the-costs}
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 对成本或分配的任何更改必须在CRM中完成，以便我们能够指向单一真实点。
 
-## 常见问题解答 {#faq}
+## 常见问题 {#faq}
 
 **我已经对我的营销活动进行了更改 — 我何时应会看到营销支出表或报表中的更改？**
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 **我已填写开始日期、结束日期和成本，但为什么我的成本仍未显示在 [!DNL Marketo Measure]？**
 
-请检查您是否将“启用买方接触点”值设置为“包括所有营销活动成员”，或至少设置为“包括‘已响应’的营销活动成员”，或者您是否创建了包含此营销活动的自定义营销活动同步规则。 如果您已确认此消息但仍看不到Campaign，请联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 这样我们才能检查您的营销活动是否正确导入。
+检查您是否将“启用买方接触点”值设置为“包括所有促销活动成员”，或至少设置为“包括‘已响应’促销活动成员”，或者您是否创建了包含此促销活动的自定义促销活动同步规则。 如果您已确认此消息但仍看不到Campaign，请联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 这样我们才能检查您的营销活动是否正确导入。
 
 **我需要更改营销活动的分布，以便在特定月份中加重其重量。 我该怎么做？**
 
@@ -99,4 +99,4 @@ ht-degree: 0%
 
 **您建议我们如何通过在CRM中设置的Digital Campaigns来节约成本？**
 
-因为我们的 [!DNL Marketo Measure] javascript已经在跟踪您网站上的Web活动，我们建议不要同步任何通过Web窗体或其他网站活动跟踪促销活动成员的促销活动，因为它会重复计算接触次数。 因此，如果我们尚未与该平台(即Twitter、Adroll)集成，您可能希望继续使用营销支出中的“CSV上传”选项来跟踪这些在线/数字成本。
+因为我们的 [!DNL Marketo Measure] javascript已经在跟踪您网站上的Web活动，我们建议不要同步任何通过Web窗体或其他网站活动跟踪促销活动成员的促销活动，因为它会重复计算接触次数。 因此，如果我们尚未与Marketing Spent集成(即Twitter、Adroll)，您可能希望继续使用Marketing Spent中的CSV Upload选项来跟踪这些在线/数字成本。

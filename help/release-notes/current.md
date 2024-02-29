@@ -1,18 +1,18 @@
 ---
-description: 最新发行说明 —  [!DNL Marketo Measure]  — 产品文档
+description: 最新发行说明 —  [!DNL Marketo Measure]
 title: 最新发行说明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: ecca4ace2bf79a3c276976ea14a73acf4927d622
+source-git-commit: 289c40a07c60ccc0262e2aaf95f21fca0c945b11
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
 
 # 发行说明：2023年 {#release-notes-2023}
 
-在下方，您将找到2023版的所有新增功能和更新功能。
+在下面您将找到2023版的所有新增功能和更新功能。
 
 ## 第4季度发行 {#q4-release}
 
@@ -157,7 +157,7 @@ ht-degree: 0%
 
 * 创建报告，这些报告捕获利用已删除字段的任何现有报告的功能。 在此过程中，您需要更改报告中的字段，如下所示：
 
-   * 删除Lead/Contact FT/LC字段：
+* 删除Lead/Contact FT/LC字段：
 
 ![](assets/release-notes-2023-2.png)
 

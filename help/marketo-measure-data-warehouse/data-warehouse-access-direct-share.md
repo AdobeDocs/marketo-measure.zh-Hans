@@ -1,20 +1,20 @@
 ---
-description: data warehouse访问 — 直接共享 — 产品文档
-title: data warehouse访问 — 直接共享
+description: Data Warehouse访问 — 直接共享 — 产品文档
+title: Data Warehouse访问 — 直接共享
 exl-id: 940c3316-5f94-4aa2-a656-aec5eb7b7450
 feature: Data Warehouse
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
-# data warehouse访问 — 直接共享 {#data-warehouse-access-direct-share}
+# Data Warehouse访问 — 直接共享 {#data-warehouse-access-direct-share}
 
 ## 要求 {#requirements}
 
-为了 [!DNL Marketo Measure] 要设置与data warehouse的直接共享，您必须满足以下要求。
+为了 [!DNL Marketo Measure] 要设置直接共享到Data Warehouse，您必须满足以下要求。
 
 * 您有自己的Snowflake实例。
 * 您的Snowflake实例位于Azure East US 2Snowflake区域。
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 输入Snowflake帐户ID {#enter-snowflake-account-id}
 
-打开 **设置** Marketo Measure部分，然后导航到 **data warehouse** 页面。 在 **直接共享** 部分，输入您的 [Snowflake帐户ID](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html){target="_blank"} 在提供的框中，然后单击 **连接**.
+打开 **设置** Marketo Measure部分，然后导航到 **Data Warehouse** 页面。 在 **直接共享** 部分，输入您的 [Snowflake帐户ID](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html){target="_blank"} 在提供的框中，然后单击 **连接**.
 
 ![](assets/data-warehouse-access-direct-share-1.png)
 

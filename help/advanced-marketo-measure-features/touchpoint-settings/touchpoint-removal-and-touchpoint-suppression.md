@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874710
-description: 接触点移除和接触点抑制 —  [!DNL Marketo Measure]  — 产品文档
+description: 接触点移除和接触点抑制 —  [!DNL Marketo Measure]
 title: 接触点移除和接触点抑制
 exl-id: 201af648-6525-4a80-a7e5-3cbeeb1670b6
 feature: Touchpoints
-source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
+source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 从添加规则并选择将定义标准的字段开始。
 
-从与下一组值（您将在下一列添加）相关的运算符列表中进行选择。
+从与下一组值（将在下一列添加）相关的运算符列表中进行选择。
 
 ![](assets/1-1.png)
 

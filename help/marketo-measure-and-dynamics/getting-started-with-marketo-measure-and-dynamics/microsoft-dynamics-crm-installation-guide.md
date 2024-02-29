@@ -4,9 +4,9 @@ description: '"[!DNL Microsoft Dynamics] CRM安装指南 — Marketo Measure —
 title: '"[!DNL Microsoft Dynamics] CRM安装指南”'
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
-source-git-commit: b7aea1e0789b2f4f3fd4b250c0f66595618317bb
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -94,11 +94,11 @@ ht-degree: 0%
 
 **收入**
 
-[!DNL Marketo Measure] 默认指向标准实际收入字段。 如果您没有使用此项，请说明您如何向解决方案工程师或成功经理报告收入，因为这将需要自定义工作流。
+[!DNL Marketo Measure] 默认指向标准实际收入字段。 如果您没有使用此功能，请说明您如何作为自定义工作流向解决方案工程师或成功经理报告收入。
 
 **关闭日期**
 
-[!DNL Marketo Measure] 指向现成的“实际关闭日期”字段。 如果您没有使用此字段，或者也未使用预计关闭日期字段，请向解决方案工程师或成功经理说明您的流程。 可能需要使用自定义工作流来考虑这两个字段。
+[!DNL Marketo Measure] 指向现成的“实际关闭日期”字段。 如果您没有使用此字段，也没有使用预计关闭日期字段，请向解决方案工程师或成功经理说明您的流程。 可能需要使用自定义工作流来考虑这两个字段。
 
 ## 配置连接和数据提供程序 {#configuring-your-connections-and-data-providers}
 
@@ -128,7 +128,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >有关OAuth的更多信息，请访问 [本文](/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/oauth-with-azure-active-directory-for-dynamics-crm.md). 如果您对流程有任何疑问，请联系贵机构的 [!DNL Marketo Measure] 客户代表。
+   >有关OAuth的详细信息，请访问 [本文](/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/oauth-with-azure-active-directory-for-dynamics-crm.md). 如果您对流程有任何疑问，请联系贵机构的 [!DNL Marketo Measure] 客户代表。
 
 1. 在本例中，我们选择了“凭据”。 输入您的凭据，然后单击 **[!UICONTROL Next]**.
 
@@ -170,11 +170,11 @@ ht-degree: 0%
    >
    >默认情况下， [!DNL Marketo Measure] 每次在作业向CRM发送数据时，将每个API点数导出200条记录。 对于大多数客户而言，这提供了所消耗的API积分之间的最佳平衡。 [!DNL Marketo Measure] 和CRM上的CPU资源要求。 但是，对于具有复杂CRM配置（如工作流和触发器）的客户，较小的批处理大小可能有助于提高CRM性能。 为此， [!DNL Marketo Measure] 允许客户配置CRM导出批次大小。 此设置位于“ ”中的“设置”>“CRM”>“常规”页面 [!DNL Marketo Measure] Web应用程序和客户可以选择批量为200（默认）、100、50或25。
    >
-   >在修改此设置时，请牢记，较小的批次将消耗您的CRM中的更多API积分。 仅当您在CRM中遇到CPU超时或CPU负载过高时，才建议减小批次大小。
+   >在修改此设置时，请记住，较小的批次将消耗您的CRM中的更多API积分。 仅当您在CRM中遇到CPU超时或CPU负载过高时，才建议减小批次大小。
 
    >[!NOTE]
    >
-   >当您禁用Marketo Measure将数据导出到Dynamics时，它不会删除任何现有数据。 有关删除现有数据的帮助，请联系Dynamics支持。
+   >当您禁用Marketo Measure将数据导出到Dynamics时，它不会删除任何现有数据。 有关删除现有数据的帮助，请与Dynamics支持部门联系。
 
    >[!MORELIKETHIS]
    >

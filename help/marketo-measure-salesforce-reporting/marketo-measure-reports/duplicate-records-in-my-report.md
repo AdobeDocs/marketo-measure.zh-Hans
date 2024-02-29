@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874634
-description: 我的报告中的重复记录 —  [!DNL Marketo Measure]  — 产品文档
+description: 我的报告中的重复记录 —  [!DNL Marketo Measure]
 title: 我的报告中的重复记录
 exl-id: 4ee42371-5b67-4c69-9b49-3249f33614d0
 feature: Reporting
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您可能会看到说明“[!DNL Marketo Measure]”已添加到我们的文档中，但仍会看到“[!DNL Bizible]”（在您的CRM中）。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
+>您可能会看到说明“[!DNL Marketo Measure]”在文档中，但仍请参见“[!DNL Bizible]”（在您的CRM中）。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
 当您潜入 [!DNL Marketo Measure] 报告位置 [!DNL Salesforce]，您可能会开始在报表中找到“重复”记录。 当您回顾时，您可能会遇到这种感觉 [!DNL Marketo Measure] 现成的报告。
 

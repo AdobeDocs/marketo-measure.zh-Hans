@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874616
-description: 无业务机会的联系人的报表类型 —  [!DNL Marketo Measure]  — 产品文档
+description: 无业务机会的联系人的报表类型 —  [!DNL Marketo Measure]
 title: 无业务机会的联系人的报表类型
 exl-id: 255048be-16ff-4964-85fd-cc07888a05af
 feature: Reporting
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您可能会看到说明“[!DNL Marketo Measure]”已添加到我们的文档中，但仍会看到“[!DNL Bizible]”（在您的CRM中）。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
+>您可能会看到说明“[!DNL Marketo Measure]”在文档中，但仍请参见“[!DNL Bizible]”（在您的CRM中）。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
 要报告未与Opportunity关联的Contacts with Buyer Touchpoints ，您需要创建自定义报告类型。
 

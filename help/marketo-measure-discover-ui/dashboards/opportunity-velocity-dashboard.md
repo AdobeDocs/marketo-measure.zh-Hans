@@ -2,7 +2,7 @@
 description: 机会周转率仪表板 —  [!DNL Marketo Measure]  — 产品
 title: 机会周转率仪表板
 feature: Reporting
-source-git-commit: 35d2dfb0e2b3e0d04c942312fe9c83863064e3f4
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Velocity功能板提供了有关潜在客户在销售漏斗中流动速度的动
 
 时间序列折线图显示指定时间范围内每个销售阶段商机的平均逗留时间（以天为单位）。
 
-* 利用向下钻取和向上钻取功能按月、季度或年对数据进行分类。
+* 使用向下钻取和向上钻取功能按“月”、“季度”或“年”对数据进行分类。
 * 将鼠标悬停在线上可显示详细信息。
 
 图表回答的问题：

@@ -4,9 +4,9 @@ description: PostLC接触点和潜在客户参与 — Marketo Measure — 产品
 title: PostLC接触点和潜在客户参与
 exl-id: 3ee5c571-195e-46c7-b150-fedcbc3614cb
 feature: Touchpoints
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ PostLC接触点是动态的。 作为潜在客户或联系人继续提交PostLC�
 
 ## 如何更改PostLC接触点设置 {#how-to-change-postlc-touchpoint-settings}
 
-要调整潜在客户或联系人的PostLC接触点设置，请按照下面的说明操作。
+要调整潜在客户或联系人的PostLC接触点设置，请按照以下说明操作。
 
 **潜在客户**
 

@@ -1,19 +1,19 @@
 ---
 unique-page-id: 18874726
-description: 配置 [!DNL Marketo Measure] A/B测试集成 —  [!DNL Marketo Measure]  — 产品文档
+description: 配置 [!DNL Marketo Measure] A/B测试集成 —  [!DNL Marketo Measure]
 title: 配置 [!DNL Marketo Measure] A/B测试集成
 exl-id: 25fc25eb-9a72-4824-9a98-cc286e5c1e4a
 feature: A/B Testing, Integration
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---
 
 # 配置 [!DNL Marketo Measure] A/B测试集成 {#configuring-the-marketo-measure-a-b-test-integration}
 
-添加 [!DNL Marketo Measure] A/B测试部分包括Lead 、 Contact 、 Case和Opportunity。 [!DNL Marketo Measure] A/B测试集成允许您跟踪 [优化的](https://optimizely.com/){target="_blank"} and [VWO](https://vwo.com/){target="_blank"} 现场试验。
+添加 [!DNL Marketo Measure] A/B测试部分包括Lead 、 Contact 、 Case和Opportunity。 [!DNL Marketo Measure] A/B测试集成允许您跟踪 [优化的](https://www.optimizely.com/){target="_blank"} and [VWO](https://vwo.com/){target="_blank"} 现场试验。
 
 1. 验证您是否正在使用包 [[!DNL Marketo Measure] v3.9或更高版本](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"}.
 1. 添加&quot;[!DNL Marketo Measure] “ABTests”相关列表到您的页面布局，然后单击 **设置** （扳手）按钮。

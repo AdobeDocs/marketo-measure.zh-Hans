@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874781
-description: 通过归因配置Doubleclick Campaign Manager视图 —  [!DNL Marketo Measure]  — 产品文档
+description: 通过归因配置Doubleclick Campaign Manager视图 —  [!DNL Marketo Measure]
 title: 通过归因配置Doubleclick Campaign管理器视图
 exl-id: 2cc6c2cd-afb7-4052-b18b-9ad0bf16a9fa
 feature: Attribution
-source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
+source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,15 @@ ht-degree: 0%
 
 开始通过从视图到跟踪获得更精细的见解 [!DNL Doubleclick Campaign Manager]，则需要配置我们的跟踪像素。
 
-请 [单击此处](/help/advanced-marketo-measure-features/view-through-attribution/marketo-measure-view-through-attribution-faq.md) 欲知关于 [!DNL Marketo Measure] 通过归因功能查看。
+欲知关于 [!DNL Marketo Measure] 通过归因功能查看，请参阅 [Marketo Measure通过归因常见问题解答进行查看](/help/advanced-marketo-measure-features/view-through-attribution/marketo-measure-view-through-attribution-faq.md).
 
 [!DNL Marketo Measure] 被视为回头支点标记，因为它是通过DCM广告标记进行的第三方调用。 背带标记不适用于图像标记，只能用于iframe或javascript标记。 根据DCM支持部门的说法，这种情况最近没有变化，而且一直如此。 标准标记已于2017年10月2日弃用，但不会影响 [!DNL Marketo Measure] 以跟踪展示。
 
-如果您利用DCM中的父级和子级层次结构，则需要将我们的标记应用于所有级别的展示跟踪。
+如果您在DCM中使用父级和子级层次结构，则需要将我们的标记应用于所有级别的展示跟踪。
 
 ## 如何添加图像标记 {#how-to-add-the-image-tag}
 
-您将标记添加到 [!DNL Doubleclick] 在“广告商”设置下，您将需要创建展示事件标记。
+将标记添加到“广告商”设置下的Doubleclick中，并创建“展示事件”标记。
 
 1. 添加以下代码作为1x1图像像素。
 

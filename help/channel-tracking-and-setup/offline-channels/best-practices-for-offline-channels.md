@@ -1,11 +1,11 @@
 ---
-description: 离线渠道的最佳实践 —  [!DNL Marketo Measure]  — 产品文档
+description: 离线渠道的最佳实践 —  [!DNL Marketo Measure]
 title: 离线渠道的最佳实践
 exl-id: 71c50614-8d5b-469f-bc02-3cc489464a4e
 feature: Channels
-source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 以获得准确结果 [!DNL Marketo Measure] 因此，必须正确设置您的营销渠道。 “[!UICONTROL Marketing Channel]”字段显示接触点可所属的最高级别营销策略组（例如，事件、网络研讨会、内容联合等）。
 
-设置营销渠道有两个方面：在线和离线。 本文档将重点介绍 [!DNL Marketo Measure] 有关设置和维护离线渠道以及如何与同步它们的最佳实践建议 [!DNL Marketo Measure] 通过CRM Campaigns。
+设置营销渠道有两个方面：在线和离线。 本文档重点介绍 [!DNL Marketo Measure] 有关设置和维护离线渠道以及如何与同步它们的最佳实践建议 [!DNL Marketo Measure] 通过CRM Campaigns。
 
 离线渠道有两个关键方面：
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 这些接触点的“营销渠道”值基于活动上的“类型”字段。 “CRM Campaign类型”到“营销渠道”和“子渠道”的映射在的“离线渠道”选项卡中管理。 [!DNL Marketo Measure] 帐户设置。 确保您的离线渠道映射准确且为最新将确保您的离线接触点数据被归因到您网站内的正确营销渠道和子渠道。 [!DNL Marketo Measure] 报表。
 
-## 最佳实践 |离线渠道映射 {#best-practice-offline-channel-mapping}
+## 最佳实践 | 脱机渠道映射 {#best-practice-offline-channel-mapping}
 
 无论您是首次映射离线渠道，还是只检查离线渠道以检查其准确性，请牢记以下最佳实践。
 
@@ -43,19 +43,19 @@ ht-degree: 0%
 * 只应将离线CRM Campaign“类型”映射到离线渠道，因为只与离线营销活动同步 [!DNL Marketo Measure] 要创建接触点，请执行以下操作：
    * ONLINE CRM Campaign“类型”应映射到 [!UICONTROL Marketing Channel] =“NULL”。 建议使用此值，因为它作为“红色标记”，表示您的离线渠道已审核，并且任何映射到“NULL”的CRM Campaign“类型”都在线“类型”，不应与 [!DNL Marketo Measure]. 与在线CRM Campaign“类型”相关的接触点将已经通过进行跟踪 [!DNL Marketo Measure] 在线功能和渠道。 同步这些营销活动存在“重复”接触点/重复计数的风险
 
-## 最佳实践 |脱机Campaign同步 {#best-practice-offline-campaign-sync}
+## 最佳实践 | 脱机Campaign同步 {#best-practice-offline-campaign-sync}
 
 * 确保每个CRM Campaign的“类型”字段均准确
    * “类型”确定在同步后源自营销活动的任何接触点的营销渠道和子渠道
 * 使用基于CRM的Campaign同步方法（启用买方接触点）还是 [!DNL Marketo Measure] 基于应用程序的同步方法（自定义Campaign同步）[!UICONTROL Campaigns]的&#39;选项卡 [!UICONTROL Marketo Measure] 仅当Campaign成员与Campaign和您的品牌有实际的离线接触时，才应创建离线接触点：
    * 对于活动或网络研讨会等离线渠道：“注册”通常通过网站上的表单提交进行跟踪，并且 [!DNL Marketo Measure] 联机功能。 因此，状态为“已注册”的营销活动成员不应从营销活动接收离线接触点，以避免重复计数。 离线接触点应仅代表活动或网络研讨会的“出席情况”。
-   * 某些离线渠道（如内容联合）通常更直接，因为每个营销活动成员都具有相同的“已响应”状态，这表示他们确实对营销活动做出了响应，在这种情况下，请在第三方网站上下载内容，因此应该会收到离线接触点
+   * 某些离线渠道（如内容联合）更加直截了当，因为每个营销活动成员都具有相同的“已响应”状态，这表示他们确实对营销活动做出了响应，在这种情况下，请在第三方网站上下载内容，因此应该会收到一个离线接触点
 * 在中使用自定义Campaign同步方法时 [!DNL Marketo Measure] 在应用程序中，确保“接触点日期”字段基于来自促销活动或促销活动成员的日期字段，该日期字段最能表明何时实际发生接触点交互
-* 如果您需要覆盖源自CRM Campaign的任何离线接触点的“接触点日期”，请利用“批量更新接触点日期”按钮。 “接触点日期”需要尽可能准确，以确保接触点占据尽可能准确的“接触点位置”，从而确定适当的归因点数
+* 如果您需要覆盖源自CRM Campaign的任何离线接触点的“接触点日期”，请使用“批量更新接触点日期”按钮。 “接触点日期”必须尽可能准确，以确保接触点包含尽可能准确的“接触点位置”，从而包含适量的归因点数
 
 ## 维护的最佳实践 {#best-practice-for-maintenance}
 
-初始设置后，离线渠道设置将继续相应地创建离线接触点。 作为最佳实践，我们建议您每年至少两次审查离线设置。 这将保证买方接触点数据干净而准确。
+初始设置后，离线渠道设置将继续相应地创建离线接触点。 作为最佳实践，我们建议您每年至少两次审查离线设置。 这保证了买方接触点数据的干净和准确。
 
 此外，如果您对Campaign管理或流程进行了任何更改，则需要确保更新您的 [!DNL Marketo Measure] 脱机渠道映射和/或同步过程。
 

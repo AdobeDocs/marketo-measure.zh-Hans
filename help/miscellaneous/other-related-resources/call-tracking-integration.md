@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874592
-description: 调用跟踪集成 —  [!DNL Marketo Measure]  — 产品文档
+description: 调用跟踪集成 —  [!DNL Marketo Measure]
 title: 调用跟踪集成
 exl-id: bc35a789-e056-4456-9038-306ed34c2a8e
 feature: Tracking, Integration
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ CallTrackingMetrics必须在其末端执行一些开发工作才能使其正常�
 
 ![](assets/5.png)
 
-## 常见问题解答 {#faq}
+## 常见问题 {#faq}
 
 **为什么我的接触点类型为Web访问？**
 

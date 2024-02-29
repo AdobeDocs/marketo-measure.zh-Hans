@@ -1,10 +1,10 @@
 ---
 unique-page-id: 18874612
-description: Dynamics中的Stock报表和功能板 —  [!DNL Marketo Measure]  — 产品文档
+description: Dynamics中的Stock报表和功能板 —  [!DNL Marketo Measure]
 title: Dynamics中的Stock报表和功能板
 exl-id: 31f8516b-d9f9-4a13-8077-ceaa004b4514
 feature: Microsoft Dynamics
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 3%
@@ -102,7 +102,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td>具有潜在客户和联系人的客户</td> 
-   <td>使用 [!DNL Marketo Measure] 商机帐户匹配。</td> 
+   <td>查看按帐户分组的所有潜在客户和联系人，使用 [!DNL Marketo Measure] 商机帐户匹配。</td> 
    <td>ABM</td> 
   </tr> 
   <tr> 

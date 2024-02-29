@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874789
-description: '"[!DNL Marketo Measure] 权限集 —  [!DNL Marketo Measure]  — 产品文档”'
+description: "[!DNL Marketo Measure] 权限集 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] 权限集”'
 exl-id: 84b7aa24-3934-4584-af05-02e804d00a98
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td><span><strong>[!DNL Marketo Measure] 管理员</strong></span></td> 
-   <td><span>使SFDC管理员能够从中创建、读取、写入和删除记录 [!DNL Marketo Measure] 对象。 许可所依据的 [!DNL Marketo Measure] 将数据推送到SFDC时应启用此权限集。 此外，在以下情况下，建议此许可证能够编辑已转化的Lead：在Lead转化之前 [!DNL Marketo Measure] 将数据应用到记录。 这将确保Salesforce与之间的报告准确性 [!DNL Marketo Measure]. <a href="http://releasenotes.docs.salesforce.com/en-us/spring17/release-notes/rn_sales_leads_view_converted.htm">在此处了解更多信息</a>.</span></td> 
+   <td><span>使SFDC管理员能够从中创建、读取、写入和删除记录 [!DNL Marketo Measure] 对象。 许可所依据的 [!DNL Marketo Measure] 将数据推送到SFDC时应启用此权限集。 此外，建议此许可证能够编辑以前转化过Lead的情形中转化后的Lead [!DNL Marketo Measure] 将数据应用到记录。 这可确保Salesforce与之间的报告准确性 [!DNL Marketo Measure]. <a href="https://help.salesforce.com/articleView?id=release-notes.rn_sales_leads_view_converted.htm&amp;type=5&amp;release=206&amp;language=en_us">在此处了解更多信息</a>.</span></td> 
   </tr> 
   <tr> 
    <td><span><strong>[!DNL Marketo Measure] 营销用户</strong></span></td> 
@@ -52,4 +52,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此外，我们连接的用户需要具有“营销用户” [!DNL Salesforce] 用户级别启用的用户档案，以便我们访问Campaign对象。 要检查此项，请单击 **[!UICONTROL Setup]** > **[!UICONTROL Manage Users]** > **[!UICONTROL Profiles]** > **[!UICONTROL Marketing User]** > **已分配用户**.
+>此外，我们通过连接的用户必须具有“营销用户” [!DNL Salesforce] 用户级别启用的用户档案，用于访问Campaign对象。 要检查此项，请单击 **[!UICONTROL Setup]** > **[!UICONTROL Manage Users]** > **[!UICONTROL Profiles]** > **[!UICONTROL Marketing User]** > **已分配用户**.

@@ -3,7 +3,7 @@ description: 网络流量仪表板 —  [!DNL Marketo Measure]  — 产品
 title: Web流量仪表板
 feature: Reporting
 exl-id: de6eec0c-9d7c-4cb2-8214-9d0fb41b444d
-source-git-commit: 40cd00c8edeb04c1939db9402d537d4c0e7a3406
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -102,7 +102,7 @@ Web流量仪表板可全面查看您网站的访客交互。 深入研究量度�
 
 显示按渠道/子渠道/营销活动划分的访问或独特访客的条形图。
 
-* 利用向下展开和向上展开功能按子渠道和营销活动对数据进行分类。
+* 使用向下和向上钻取功能按子渠道和营销活动对数据进行分类。
 * 将鼠标悬停在每个栏上可查看“访问次数”或“独特访客”。
 
 图表回答的问题：

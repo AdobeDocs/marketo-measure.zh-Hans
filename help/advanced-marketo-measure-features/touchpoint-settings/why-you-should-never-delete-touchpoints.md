@@ -1,19 +1,19 @@
 ---
 unique-page-id: 18874560
-description: 为什么您绝不应该删除接触点 —  [!DNL Marketo Measure]  — 产品文档
+description: 为什么您绝不应该删除接触点 —  [!DNL Marketo Measure]
 title: 为什么绝不应该删除接触点
 exl-id: e74c14ff-0399-4ee9-b732-6686823ff5c7
 feature: Touchpoints
-source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
 # 为什么绝不应该删除接触点 {#why-you-should-never-delete-touchpoints}
 
-如果您发现Opportunity上的某个接触点未正确分配归因点数，请联系您的客户经理以确定后续步骤。 在这些情况下，我们建议使用购买者的接触点抑制功能从SFDC和ROI仪表板中删除接触点。 您的客户经理可帮助创建这些规则。 请不要自己手动删除这些接触点。
+如果您发现Opportunity上的某个接触点未正确分配归因点数，请联系您的客户经理以确定后续步骤。 在这些情况下，我们建议使用购买者的接触点抑制功能从SFDC和ROI仪表板中删除接触点。 您的客户经理可帮助创建这些规则。 请勿自己手动删除这些接触点。
 
 此 [!DNL Marketo Measure] 处理系统不会注册接触点是否已手动从SFDC中删除。 截至目前，还没有触发程序向我们的系统发出信号以调整数据。 [!DNL Marketo Measure] 将不会自动推送另一个接触点来替换已删除的接触点，也不会将该接触点位置或归因重新分配给后续接触点。
 
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 ![](assets/1.png)
 
-如果从SFDC中删除了接触点，请联系 [[!DNL Marketo Support]](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 以请求重新导入您的数据。
+如果接触点已从SFDC中删除，请联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 以请求重新导入您的数据。

@@ -1,13 +1,13 @@
 ---
 unique-page-id: 18874523
-description: '"[!DNL Marketo Measure] 动态架构 —  [!DNL Marketo Measure]  — 产品文档”'
+description: "[!DNL Marketo Measure] 动态架构 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] 动态架构”'
 exl-id: f8da47b1-d844-4bd2-8125-8689cbb5cc30
 feature: Microsoft Dynamics
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1408'
-ht-degree: 17%
+source-wordcount: '1076'
+ht-degree: 22%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 17%
 >
 >您可能会看到说明“[!DNL Marketo Measure]”，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
-在下方，您将找到开始使用所需的Dynamics架构 [!DNL Marketo Measure]. 列出所有实体和字段以及所需的读取和/或写入权限。
+在下方，您会找到开始使用所需的Dynamics架构 [!DNL Marketo Measure]. 列出所有实体和字段以及所需的读取和/或写入权限。
 
 ## 买方接触点 {#buyer-touchpoints}
 
@@ -800,7 +800,7 @@ ht-degree: 17%
  </tbody> 
 </table>
 
-## [!DNL Marketo Measure] 事件 {#marketo-measure-events}
+## [!DNL Marketo Measure] 活动 {#marketo-measure-events}
 
 <table> 
  <tbody> 
@@ -931,7 +931,7 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>emailaddress1</p></td> 
+   <td><p>电子邮件地址1</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 
@@ -1016,7 +1016,7 @@ ht-degree: 17%
    <td> </td> 
   </tr> 
   <tr> 
-   <td><p>emailaddress1</p></td> 
+   <td><p>电子邮件地址1</p></td> 
    <td><p>标准</p></td> 
    <td><p>x</p></td> 
    <td> </td> 

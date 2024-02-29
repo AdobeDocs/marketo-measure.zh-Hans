@@ -4,7 +4,7 @@ description: Marketo Measure框架 — Marketo Measure — 产品文档
 title: Marketo Measure框架
 exl-id: fa6de27c-cdd2-4fd9-ac35-7286fe2752d8
 feature: Fundamentals
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Marketo Measure JavaScript跟踪潜在客户/潜在客户与您的组织之间�
 
 >[!NOTE]
 >
->有关如何添加Marketo Measure JS的说明，请 [单击此处](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md).
+>有关如何添加Marketo Measure JS的说明， [单击此处](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md).
 
 Marketo Measure的JS捕获来自Web访问（包括匿名Web访问）、常规流量/页面导航、内容下载和表单提交的数据。 此数据将推送到您的CRM中，并且每次营销交互都显示为接触点。
 

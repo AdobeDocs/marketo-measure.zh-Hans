@@ -1,12 +1,12 @@
 ---
 unique-page-id: 42762729
-description: '"[!DNL Marketo Engage] 项目集成 —  [!DNL Marketo Measure]  — 产品文档”'
+description: "[!DNL Marketo Engage] 项目集成 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Engage] 程序集成”'
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
 feature: Integration
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1248'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
    ![](assets/two.png)
 
-1. 如果有助于跟踪规则，您可以选择为规则设置名称。 首先，从计划和计划成员资格字段列表中选择要定义规则的字段。 通过选择要检查的运算符和预期值继续构建规则。
+1. 如果有助于跟踪规则，您可以选择为规则设置名称。 您首先要从“计划”和“计划成员资格”字段列表中选择要定义规则的字段。 通过选择要检查的运算符和预期值继续构建规则。
 
    ![](assets/three.png)
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果您的规则需要捕获活动日期，或项目群成员达到特定状态的日期，您需要使用 [!DNL Marketo Engage] 活动集成，并为“更改进展中的状态”活动类型设置规则。
+   >如果您的规则需要获取活动日期，或项目群成员达到特定状态的日期，您需要使用 [!DNL Marketo Engage] 活动集成，并为“更改进展中的状态”活动类型设置规则。
 
    ![](assets/six.png)
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 ## 渠道映射 {#channel-mapping}
 
-从Marketo项目渠道列表中，您将值映射到 [!DNL Marketo Measure] 已在“设置”中创建的自定义营销渠道。 这些程序生成的任何接触点都将继承您在此处选择的渠道和子渠道名称。
+从Marketo项目渠道列表中，您将这些值映射到 [!DNL Marketo Measure] 已在“设置”中创建的自定义营销渠道。 这些程序生成的任何接触点都将继承您在此处选择的渠道和子渠道名称。
 
 1. 首先导航到 **[!UICONTROL My Account]** > **[!UICONTROL Settings]** > **[!UICONTROL Offline Channels]**.
 
@@ -157,11 +157,11 @@ Wayne Enterprises营销团队创建一个Marketo活动规则，以生成“点�
 >
 >通过Cookie映射行为，您可能会找到一些来自Web访问的LC接触点。 Marketo中显示的商机可能没有任何相关活动，那么 [!DNL Marketo Measure] 下载该商机，将其与关联的Cookie相匹配，然后将其跟踪到最近的Web会话，即使不存在创建该商机的表单活动也是如此。
 
-## 常见问题解答 {#faq}
+## 常见问题 {#faq}
 
 **如何将接触点日期设置为进展日期，或项目群成员发生状态更改的日期？**
 
-如果您的规则需要捕获活动日期，或项目群成员达到特定状态的日期，您需要使用 [!DNL Marketo Engage] 活动集成，并为“更改进展中的状态”活动类型设置规则。 否则， [!DNL Marketo Engage] 项目集成仅提供成员资格日期，这是将Marketo人员引入项目的第一个日期，即使存在多个状态也是如此。
+如果您的规则需要获取活动日期，或项目群成员达到特定状态的日期，您需要使用 [!DNL Marketo Engage] 活动集成，并为“更改进展中的状态”活动类型设置规则。 否则， [!DNL Marketo Engage] 项目集成仅提供成员资格日期，这是将Marketo人员引入项目的第一个日期，即使存在多个状态也是如此。
 
 **我能否获取接触点日期的日期选项选择列表？**
 

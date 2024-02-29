@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874660
-description: 常见问题解答 —  [!DNL Marketo Measure]  — 产品文档
+description: 常见问题解答 —  [!DNL Marketo Measure]
 title: 常见问题
 exl-id: f1896bf8-2216-427e-ac3e-98d87efede76
 feature: Reporting
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 **过滤器运算符中的“匹配用户属性”是什么？**
 
-用户属性会应用于用户，例如企业ID、名字或姓氏，但由于我们的用户是您（我们的客户），而不是您的客户，因此用户属性实际上不能在 [!DNL Marketo Measure Discover] 体验。 请随时忽略此选项。 我们正在努力提供更好的自定义过滤器体验，该体验将删除不适用于我们客户的过滤器。
+用户属性会应用于用户，例如企业ID、名字或姓氏，但由于我们的用户是您（我们的客户），而不是您的客户，因此用户属性实际上不能在 [!DNL Marketo Measure Discover] 体验。 我们正在努力提供更好的自定义过滤器体验，该体验将删除不适用于我们客户的过滤器。
 
 **为什么某些默认日期范围会持续到下个月的第一个月？**
 

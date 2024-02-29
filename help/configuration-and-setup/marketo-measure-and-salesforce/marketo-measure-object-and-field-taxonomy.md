@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874584
-description: '"[!DNL Marketo Measure] 对象和字段分类 —  [!DNL Marketo Measure]  — 产品文档”'
+description: "[!DNL Marketo Measure] 对象和字段分类 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] 对象和字段分类”'
 exl-id: 67f1cac8-e2b4-45cc-b1c9-58bf4e1a760d
 feature: Salesforce
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 的定义 [!DNL Marketo Measure] 位于每个对象中的字段 [可在此处找到](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md).
 
-## 常见问题解答 {#faq}
+## 常见问题 {#faq}
 
 **箭头的逻辑是什么？**
 
-每个箭头都描述对象与另一个对象之间的关系。 例如，您将看到 [!DNL Marketo Measure] 人员填充标准上的字段 [!DNL Salesforce] 潜在客户对象。 如果指向它，则表示它填充了箭头的接收端。
+每个箭头都描述对象与另一个对象之间的关系。 例如，您会看到 [!DNL Marketo Measure] 人员填充标准上的字段 [!DNL Salesforce] 潜在客户对象。 如果指向它，则表示它填充了箭头的接收端。
 
 **什么是 [!DNL Marketo Measure] 个人？**
 

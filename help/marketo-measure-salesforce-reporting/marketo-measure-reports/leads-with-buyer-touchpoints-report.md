@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874614
-description: 具有买方接触点的潜在客户报表 —  [!DNL Marketo Measure]  — 产品文档
+description: 具有买方接触点的潜在客户报表 —  [!DNL Marketo Measure]
 title: 具有采购员接触点的潜在客户报表
 exl-id: 0376abb0-5eed-41bb-ab4f-3c204ab437df
 feature: Touchpoints, Reporting
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您可能会看到说明“[!DNL Marketo Measure]”已添加到我们的文档中，但仍会看到“[!DNL Bizible]”（在您的CRM中）。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
+>您可能会看到说明“[!DNL Marketo Measure]”在文档中，但仍请参见“[!DNL Bizible]”（在您的CRM中）。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
 开箱即用地提供多种报告功能，触手可及 [!DNL Marketo Measure]，但是我们建议构建其他一些报表类型。 了解如何创建具有买方接触点的内含性潜在客户报告类型。
 

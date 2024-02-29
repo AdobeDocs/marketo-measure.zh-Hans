@@ -1,10 +1,10 @@
 ---
 unique-page-id: 35586080
-description: linkedIn集成 —  [!DNL Marketo Measure]  — 产品文档
+description: linkedIn集成 —  [!DNL Marketo Measure]
 title: linkedIn集成
 exl-id: 705209ef-1ece-496c-ac2f-6a31055bd993
 feature: APIs, Integration
-source-git-commit: 560ca558ae9ef4d2ef4da57eb9bfa672ed00e0fc
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
 source-wordcount: '2644'
 ht-degree: 0%
@@ -147,7 +147,7 @@ linkedIn表单可能包含多个电子邮件地址。 下载表单响应时，�
 
 **在CRM或Marketo中跟踪潜在客户Gen Forms**
 
-早于 [!DNL Marketo Measure] 而存在LinkedIn Lead Gen Forms集成，客户通常将其表单提交推送到Marketo项目和/或CRM Campaign以跟踪表单并接收对这些活动的归因。 启用Forms销售线索生成设置后，我们希望确保不会重复计算这些表单提交。 请检查以下各项：
+早于 [!DNL Marketo Measure] 而存在LinkedIn Lead Gen Forms集成，客户通常将其表单提交推送到Marketo项目和/或CRM Campaign以跟踪表单并接收对这些活动的归因。 启用Forms销售线索生成设置后，我们希望确保不会重复计算这些表单提交。 检查以下各项：
 
 * CRM对象上的“启用购买者接触点”字段设置为“无”或“排除所有营销活动成员”
 * 更新任何相关的Marketo项目或Marketo活动规则
@@ -159,7 +159,7 @@ linkedIn表单可能包含多个电子邮件地址。 下载表单响应时，�
 
 ## 接触点详细信息 {#touchpoint-details}
 
-一次 [!DNL Marketo Measure] 已成功在LinkedIn creative上标记您的登陆页面，您将能够在接触点上查看已解析的广告数据。 以下是您应会看到的数据值的映射：
+之后 [!DNL Marketo Measure] 已成功在LinkedIn creative上标记您的登陆页面，您可以在接触点上查看已解析的广告数据。 以下是您应会看到的数据值的映射：
 
 <table> 
  <colgroup> 
@@ -328,7 +328,7 @@ linkedIn要求所有创建或修改的广告在发布前都必须通过正常的
 
 **我如何知道我的创意是否会被复制？ 我能看看我的创意人员是否在使用相同的份额吗？**
 
-中未提供共享ID [!DNL LinkedIn] 因此，没有明确和显而易见的方法来检查创意到共享的映射。 如果您怀疑某个创意可能是副本，则可以通过从中打开广告来手动检查 [!DNL LinkedIn] 营销活动管理器 — 这将在新选项卡中打开广告，您可以在URL中找到共享ID。
+中未提供共享ID [!DNL LinkedIn] 因此，没有明确和显而易见的方法来检查创意到共享的映射。 如果您怀疑某个创意可能是副本，则可以通过从中打开广告来手动检查 [!DNL LinkedIn] 营销活动管理器 — 这会在新选项卡中打开广告，您可以在URL中找到共享ID。
 
 ![](assets/six.png)
 

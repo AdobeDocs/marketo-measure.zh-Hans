@@ -1,11 +1,11 @@
 ---
-description: 接触点设置的最佳实践 —  [!DNL Marketo Measure]  — 产品文档
+description: 接触点设置的最佳实践 —  [!DNL Marketo Measure]
 title: 接触点设置的最佳实践
 exl-id: 01e314a6-e33d-45cd-aaa3-c212afec07d1
 feature: Touchpoints
-source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
+source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---

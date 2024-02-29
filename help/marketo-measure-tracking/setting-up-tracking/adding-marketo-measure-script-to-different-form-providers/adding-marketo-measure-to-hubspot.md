@@ -1,13 +1,13 @@
 ---
 unique-page-id: 18874759
-description: 正在添加 [!DNL Marketo Measure] 到 [!DNL Hubspot] - [!DNL Marketo Measure]  — 产品文档
+description: 正在添加 [!DNL Marketo Measure] 到 [!DNL Hubspot] - [!DNL Marketo Measure]
 title: 正在添加 [!DNL Marketo Measure] 到 [!DNL Hubspot]
 exl-id: 633e7ef7-7959-461e-881f-dcc543595b66
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 0%
+source-wordcount: '176'
+ht-degree: 1%
 
 ---
 

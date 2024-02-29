@@ -1,12 +1,12 @@
 ---
 unique-page-id: 42762749
-description: '"[!DNL Marketo Engage] 活动集成 —  [!DNL Marketo Measure]  — 产品文档”'
+description: "[!DNL Marketo Engage] 活动集成 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Engage] 活动集成”'
 exl-id: 463ad9b2-e1bd-49dd-8bf5-0da7b7132f05
 feature: Integration
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1671'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ SFDC活动(26)\
 
 ## 渠道映射 {#channel-mapping}
 
-对于具有项目ID的活动类型中的任意规则，Marketo项目渠道由项目确定。 我们使用项目频道来映射到您的自定义离线频道，因此您需要确保正确配置您的频道 [按照此处的说明](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping).
+对于具有项目ID的活动类型中的任意规则，Marketo项目渠道由项目确定。 我们使用项目渠道来映射到您的自定义离线渠道，因此您将需要确保渠道配置正确 [按照此处的说明](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping).
 
 对于没有项目ID的活动类型中的任何规则，您的第一步是创建营销活动名称。 使用此Campaign名称设置自定义在线渠道 [此处布局](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md).
 
@@ -184,11 +184,11 @@ Wayne Enterprises营销团队创建一个Marketo活动规则，以生成“点�
 >
 >通过Cookie映射行为，您可能会找到一些来自Web访问的LC接触点。 Marketo中显示的商机可能没有任何相关活动，那么 [!DNL Marketo Measure] 下载该商机，将其与关联的Cookie相匹配，然后将其跟踪到最近的Web会话，即使不存在创建该商机的表单活动也是如此。
 
-## 常见问题解答 {#faq}
+## 常见问题 {#faq}
 
 **如何知道是创建Marketo项目规则还是Marketo活动规则？**
 
-此 [!DNL Marketo Engage] 项目集成是一种根据人员是否为项目群成员来生成接触点的简单方法。 如果您有兴趣根据人员更改为特定项目群状态的时间来定义规则， [!DNL Marketo Engage] 活动集成将是您想要的设置，尤其是“进度更改状态”活动类型，这样您的接触点日期可以映射到系统生成的活动日期。
+此 [!DNL Marketo Engage] 项目集成是一种根据人员是否为项目群成员来生成接触点的简单方法。 如果您有兴趣根据人员更改为特定项目群状态的时间来定义规则， [!DNL Marketo Engage] 活动集成将是您想要的设置，尤其是“更改进展中的状态”活动类型，这样您的接触点日期可以映射到系统生成的活动日期。
 
 **为什么我的接触点类型的名称会被截断？**
 

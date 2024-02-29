@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874678
-description: 了解 [!DNL Marketo Measure] AdWords标记 —  [!DNL Marketo Measure]  — 产品文档
+description: 了解 [!DNL Marketo Measure] AdWords标记 —  [!DNL Marketo Measure]
 title: 了解 [!DNL Marketo Measure] AdWords标记
 exl-id: c6658766-d3a8-46ed-b2d2-826eb61ce269
 feature: APIs, Integration, UTM Parameters
-source-git-commit: 3bad77a72c0dea6caf0daadbb594f10f791af715
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 [!DNL Marketo Measure] 建议使用帐户级别、促销活动级别或广告组级别跟踪模板，因为它允许为所有广告添加和减除参数，而不会造成广告历史记录中断或删除的风险。
 
-有两种跟踪模板 [!DNL Marketo Measure] 建议使用。 请使用以下内容确定适合您的版本：
+有两种跟踪模板 [!DNL Marketo Measure] 建议使用。 使用以下内容确定适合您的版本：
 
 * 如果您的所有广告URL都有一个“？” 在其中，使用此URL：
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 
    ![](assets/6-1.png)
 
-## 常见问题解答 {#faq}
+## 常见问题 {#faq}
 
 **问：连接的用户需要哪些权限？**
 

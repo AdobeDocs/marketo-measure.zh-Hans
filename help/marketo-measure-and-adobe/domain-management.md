@@ -1,11 +1,11 @@
 ---
-description: 域管理 —  [!DNL Marketo Measure]  — 产品文档
+description: 域管理 —  [!DNL Marketo Measure]
 title: 域管理
 exl-id: 4db287a0-0267-463c-a359-266b41f15c59
 feature: Integration, Tracking
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
@@ -24,15 +24,15 @@ ht-degree: 0%
 
 ## 在中管理域 [!DNL Marketo Measure] {#managing-domains-in-marketo-measure}
 
-将域添加到Admin Console后， [!DNL Marketo Measure] 会定期将此记录同步到数据库中。 此同步在每晚进行，用户每次访问 **[!UICONTROL Domains]** 中的页面 [!DNL Marketo Measure] UI。 默认情况下，任何 [!DNL Marketo Measure] 将禁用导入，租户必须手动启用每个域。
+将域添加到Admin Console后， [!DNL Marketo Measure] 定期将此记录同步到数据库中。 此同步在每晚进行，用户每次访问 **[!UICONTROL Domains]** 中的页面 [!DNL Marketo Measure] UI。 默认情况下，任何 [!DNL Marketo Measure] 导入已禁用，租户必须手动启用每个域。
 
 ![](assets/domain-management-2.png)
 
-在 **[!UICONTROL Integration]** > **[!UICONTROL Domains]** 页面上，用户将显示已在Admin Console中注册的所有域及其状态。 可以启用或禁用每个域。 如果启用了域， [!DNL Marketo Measure] 跟踪将收集在该域上看到的任何流量。 如果域被禁用， [!DNL Marketo Measure] 将忽略来自该域的任何流量，并且不会创建接触点或其他数据。 [!DNL Marketo Measure] 还将确认域的禁用情况并警告其后果：
+在 **[!UICONTROL Integration]** > **[!UICONTROL Domains]** 页面上，用户会看到已在Admin Console中注册的所有域及其状态。 可以启用或禁用每个域。 如果启用了域， [!DNL Marketo Measure] 跟踪将收集在该域上看到的任何流量。 如果域被禁用， [!DNL Marketo Measure] 忽略来自该域的任何流量，并且不会创建接触点或其他数据。 [!DNL Marketo Measure] 确认域的禁用并警告其后果：
 
 ![](assets/domain-management-3.png)
 
-切换域的影响是即时的，更改不具有追溯性。 将来， [!DNL Marketo Measure] 将在一段时间后清除禁用域中的数据。
+切换域的影响是即时的，更改不具有追溯性。 将来， [!DNL Marketo Measure] 将在设定的时间段后从禁用的域中清除数据。
 
 ## 状态 {#statuses}
 
@@ -45,22 +45,22 @@ Admin Console状态分类如下：
 
 跟踪状态可以如下所示：
 
-* **活动**： [!DNL Marketo Measure] 当前正在从该域接收数据
-* **已禁用**：此域可用于跟踪，但目前处于禁用状态
+* **活动**： [!DNL Marketo Measure] 正在从该域接收数据
+* **已禁用**：此域可用于跟踪，但已禁用
 * **不可用**：此域未验证，因此无法用于跟踪
 
-将鼠标悬停在任何单个状态项上将会触发工具提示，该提示将进一步说明该状态。
+将鼠标悬停在任何单个状态项上会触发工具提示，该提示将进一步说明该状态。
 
-## 常见问题解答 {#faq}
+## 常见问题 {#faq}
 
 **在Admin Console中删除域后会发生什么情况？**
 
-在Admin Console中删除域时， [!DNL Marketo Measure] 会将域标记为已删除。 [!DNL Marketo Measure] 将立即停止跟踪此域上的流量，但不会删除任何之前收集的数据。
+在Admin Console中删除域时， [!DNL Marketo Measure] 将域标记为已删除。 [!DNL Marketo Measure] 将立即停止跟踪此域上的流量，但不会删除任何之前收集的数据。
 
 **为什么我无法启用域？**
 
-在此页面上可能不允许选择域的原因有多种。 如果未在Admin Console中验证域，则它将在 [!DNL Marketo Measure]. 同样，如果域由不同于当前域的Adobe组织拥有 [!DNL Marketo Measure] 租户，可能无法选择它。
+在此页面上可能不允许选择域的原因有多种。 如果未在Admin Console中验证域，则该域在 [!DNL Marketo Measure]. 同样，如果域由不同于当前域的Adobe组织拥有 [!DNL Marketo Measure] 租户，可能无法选择它。
 
 **如何从该列表中删除域？**
 
-如果域的“已启用”开关已关闭， [!DNL Marketo Measure] 将忽略该标记，并将其从以下位置有效删除： [!DNL Marketo Measure]. 要从中永久删除域 [!DNL Marketo Measure]，您必须在中禁用它 [!DNL Marketo Measure]，然后将其从Admin Console中删除。
+如果域的“已启用”开关已关闭， [!DNL Marketo Measure] 会将其忽略，并会将其从以下位置有效移除： [!DNL Marketo Measure]. 要从中永久删除域 [!DNL Marketo Measure]，您必须在中禁用它 [!DNL Marketo Measure]，然后将其从Admin Console中删除。

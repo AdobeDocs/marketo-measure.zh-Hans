@@ -1,12 +1,12 @@
 ---
 unique-page-id: 42762762
-description: 设置Marketo连接 —  [!DNL Marketo Measure]  — 产品文档
+description: 设置Marketo连接 —  [!DNL Marketo Measure]
 title: 设置Marketo连接
 exl-id: 11660539-1cc5-4768-8f22-d6f7cd0b94f3
 feature: Integration
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '181'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 1%
 
    ![](assets/set-up-marketo-connection-4.png)
 
-1. 在新选项卡中，登录到您的Marketo Engage帐户。 转到 **管理员** > **Web服务**. 向下滚动到REST API。 突出显示并保存端点和Identity服务URL。 一会儿你就需要他们了。
+1. 在新选项卡中，登录到您的Marketo Engage帐户。 转到 **管理员** > **Web服务**. 向下滚动到REST API。 突出显示并保存端点和Identity服务URL。 你马上就需要。
 
    ![](assets/set-up-marketo-connection-5.png)
 

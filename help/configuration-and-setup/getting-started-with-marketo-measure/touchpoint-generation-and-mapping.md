@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874554
-description: 接触点生成和映射 —  [!DNL Marketo Measure]  — 产品文档
+description: 接触点生成和映射 —  [!DNL Marketo Measure]
 title: 接触点生成和映射
 exl-id: bb4988f5-4fbc-43b7-9544-da541b8e1d32
 feature: Touchpoints
-source-git-commit: b8ea008c594ed114323dedd3762d1265287193c7
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---

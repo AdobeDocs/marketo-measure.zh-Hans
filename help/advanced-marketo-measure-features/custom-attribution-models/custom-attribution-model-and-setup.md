@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874779
-description: 自定义归因模型和设置 —  [!DNL Marketo Measure]  — 产品文档
+description: 自定义归因模型和设置 —  [!DNL Marketo Measure]
 title: 自定义归因模型和设置
 exl-id: 7b156db2-9ac6-4d32-ac67-06c0aa15d651
 feature: Attribution, Custom Models
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
    登录 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}. 转到 [!UICONTROL My Account] > [!UICONTROL Settings] >并在CRM部分下，选择 **[!UICONTROL Stage Mapping]**.
 
-   在此之后，您需要通过选择 **[!UICONTROL Include in Model]** 盒子。
+   接下来，通过选择 **[!UICONTROL Include in Model]** 盒子。
 
    >[!NOTE]
    >
@@ -43,7 +43,7 @@ ht-degree: 0%
 
    如果还有其他阶段要包括在模型中，但它们不在 [!UICONTROL Lead/Contact Status] 或 [!UICONTROL Opportunity Stage] 列表中，您可以根据CRM中的字段定义自己的自定义阶段。
 
-   在以下示例中，使用日期字段定义自定义“MQL”阶段。 规则只是声明，如果MQL日期字段不为空，则应当将其视为MQL并应当包含在自定义模型中。 请注意，创建自定义阶段后对其进行排序也很重要，这样可以跟踪销售周期的进度。
+   在以下示例中，使用日期字段定义自定义“MQL”阶段。 规则只是声明，如果MQL日期字段不为空，则应当将其视为MQL并应当包含在自定义模型中。 创建自定义阶段后，对其进行排序也很重要，这样可以跟踪销售周期的进度。
 
    ![](assets/2-1.png)
 
@@ -51,7 +51,7 @@ ht-degree: 0%
    >
    >别忘了为自定义字段启用历史记录跟踪。
 
-如果您的自定义模型中正在使用自定义字段，则必须在CRM中启用字段历史记录跟踪。 有关如何启用字段历史记录跟踪的说明， [请单击此处](/help/advanced-marketo-measure-features/custom-attribution-models/custom-model-setup-enable-field-history-tracking.md).
+如果您的自定义模型中使用了自定义字段，则必须在CRM中启用字段历史记录跟踪。 有关启用字段历史记录跟踪的说明，请参阅 [自定义模型设置：启用字段历史记录跟踪](/help/advanced-marketo-measure-features/custom-attribution-models/custom-model-setup-enable-field-history-tracking.md).
 
 1. 确定自定义模型的归因百分比。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
    在标记为“”的最右列&#x200B;**[!UICONTROL Custom]**，”您可以在自定义归因模型中为每个阶段设置百分比权重。 只需在“自定义”列下输入每个阶段的值即可。 则 **[!UICONTROL Save and Reprocess]** 完成后。
 
-   “自定义”列的左侧是 **[!DNL Marketo Measure]机器学习模型**. 机器学习模型根据每个自定义阶段发生的操作，根据赢得交易的相对重要性计算归因权重。 有关机器学习模型的更多信息， [请单击此处](/help/advanced-marketo-measure-features/custom-attribution-models/machine-learning-model-faq.md).
+   左侧 _自定义_ 列是 **[!DNL Marketo Measure]机器学习模型**. 机器学习模型根据每个自定义阶段发生的操作，根据赢得交易的相对重要性计算归因权重。 有关机器学习模型的详细信息，请参阅 [机器学习模型常见问题解答](/help/advanced-marketo-measure-features/custom-attribution-models/machine-learning-model-faq.md).
 
    ![](assets/3.png)
 

@@ -1,12 +1,12 @@
 ---
 unique-page-id: 37356132
-description: '"[!DNL Marketo Measure] Dynamics的收入工作流 —  [!DNL Marketo Measure]  — 产品文档”'
+description: "[!DNL Marketo Measure] Dynamics的收入工作流 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] Dynamics的收入工作流”'
 exl-id: 0e64201a-bc65-4a6d-9192-09c14c810c4a
 feature: Microsoft Dynamics
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---

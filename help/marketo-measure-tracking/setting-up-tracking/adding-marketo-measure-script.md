@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874795
-description: 正在添加 [!DNL Marketo Measure] 脚本 —  [!DNL Marketo Measure]  — 产品文档
+description: 正在添加 [!DNL Marketo Measure] 脚本 —  [!DNL Marketo Measure]
 title: 正在添加 [!DNL Marketo Measure] 脚本
 exl-id: f8773037-04d7-4308-ba04-440e9b990d92
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1312'
 ht-degree: 0%
 
 ---
@@ -56,11 +56,11 @@ ht-degree: 0%
 
 但是，如果您使用任何单独的域或国际域，请务必让您的 [!DNL Marketo Measure] 咨询师知道。 需要手动将域添加到您帐户的 [!DNL Marketo Measure] 结束 [!DNL Marketo Measure] 知道将其他域的数据绑定到您的帐户。 因此，请将任何单独的/国际域名发送至 [!DNL Marketo Measure] 顾问。
 
-如果您使用任何第三方页面，请与您的团队讨论您的用例 [!DNL Marketo Measure] 顾问。 通常，您会希望了解是否可以添加 [!DNL Marketo Measure] JavaScript可跟踪这些页面（如果适用）。 如果无法执行此操作，我们将会探索通过CRM Campaign接触点进行跟踪，以及 [!DNL Marketo Measure] 顾问。
+如果您使用任何第三方页面，请与您的团队讨论您的用例 [!DNL Marketo Measure] 顾问。 通常，您会希望了解是否可以添加自定义版本的 [!DNL Marketo Measure] JavaScript可跟踪这些页面（如果适用）。 如果无法执行此操作，我们将会探索通过CRM Campaign接触点进行跟踪，以及 [!DNL Marketo Measure] 顾问。
 
 您是否有任何不应跟踪的表单 [!DNL Marketo Measure] 由于它们不一定适用于归因（例如，取消订阅表单、客户登录等）？ 如果是这样，您将需要添加排除代码 [本文内容](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md){target="_blank"} 至每个表单
 
-您是否有任何非安全页面？ 如果是这样，您需要保护这些服务器，因为在安全/非安全页面之间导航将中断跟踪会话。
+您是否有任何非安全页面？ 如果是这样的话，您将希望保护他们的安全，因为在安全/非安全页面之间导航将中断跟踪会话。
 
 请确保与您的Web团队进行对话，以便他们知道 [!DNL Marketo Measure] JavaScript应始终位于相应的Web属性上。 如果引入了新页面/表单/站点，请确保部署 [!DNL Marketo Measure] JavaScript是协议的一部分。
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 
 但是，您的 [!DNL Marketo Measure] 顾问可能不像您的Web团队那样熟悉您的网站。 因此，您的Web团队或其他相应的团队务必彻底检查网站，尤其是当存在与上述内容类似的复杂表单正在使用时。 您的团队最终将负责确保正确跟踪所有必需的Web资产，但是如果您了解任何复杂的表单或情况，欢迎您询问 [!DNL Marketo Measure] 测试方面的帮助顾问。
 
-要自行测试表单，请按照以下步骤操作：
+要自行测试表单，请执行以下步骤：
 
 1. 请始终使用无痕浏览器或清除每个表单提交测试之间的缓存，并且每次都使用不同的电子邮件地址。
 

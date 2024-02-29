@@ -1,21 +1,19 @@
 ---
 unique-page-id: 18874708
-description: Salesforce活动归因 —  [!DNL Marketo Measure]  — 产品文档
+description: Salesforce活动归因 —  [!DNL Marketo Measure]
 title: Salesforce活动归因
 exl-id: 1dc6f15b-2a45-4ed3-9fa3-5267366d1f45
 feature: Attribution, Salesforce
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
 
 # Salesforce活动归因 {#salesforce-activities-attribution}
 
-此 [!DNL Marketo Measure] Salesforce活动集成会将特定的任务和事件记录引入归因模型。 开始跟踪未获得应付款的销售电子邮件或销售电话等内容。 要配置活动规则，您需要转到 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}. 从那里，转到 **[!UICONTROL Settings]** 选项卡，然后单击 **[!UICONTROL Activities]** 选项卡。
-
-您即将让您的销售团队非常高兴！ 让我们带您学习一个快速的教程。
+此 [!DNL Marketo Measure] Salesforce活动集成将特定的任务和事件记录引入归因模型。 开始跟踪未获得应付款的销售电子邮件或销售电话等内容。 要配置活动规则，请转到 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}. 从那里，转到 **[!UICONTROL Settings]** 选项卡，然后单击 **[!UICONTROL Activities]** 选项卡。
 
 ![](assets/1.png)
 
@@ -27,20 +25,20 @@ ht-degree: 0%
 
 * 渠道
    * 子渠道
-      * 营销活动
-      * 营销活动
+      * Campaign
+      * Campaign
    * 子渠道
-      * 营销活动
+      * Campaign
 
 >[!TIP]
 >
->例如，如果您要为每位销售代表设置唯一的Campaign ，请使用我们的动态替换参数填写 [!DNL Marketo Measure] 营销活动名称。 在本例中，您可以输入 `"Outbound Sales - {AssignedTo}"` 然后我们把它变成这样 `"Outbound Sales - Jill"` 或 `"Outbound Sales - Jack."` 你不知道我们救了你多少时间！
+>例如，如果要为每个销售代表设置唯一的Campaign，请使用动态替换参数填写 [!DNL Marketo Measure] 营销活动名称。 在同一示例中，您可以输入 `"Outbound Sales - {AssignedTo}"` 它会把它变成 `"Outbound Sales - Jill"` 或 `"Outbound Sales - Jack."`
 
 ![](assets/2.png)
 
 一旦您的 [!DNL Marketo Measure] 活动名称已设置，是时候设置您的活动规则了。
 
-规则可作为一个过滤器，告诉我们哪些记录符合归因条件。 假设您正在CRM中使用类似逻辑创建报告以生成该报告。 您可以灵活地使用和/或语句的组合，并使用各种运算符，如match any、contains、starts with、ends with、equal to等。 在盒装规则中定义“and”语句，或在框外定义“or”语句。
+规则可作为一个过滤器，告诉我们哪些记录符合归因条件。 假设您正在CRM中使用类似逻辑创建报告以生成该报告。 您可以灵活地组合使用和/或语句以及各种运算符，如 `matches any`， `contains`， `starts with`， `ends with`， `is equal to`. 定义 `and` 盒装规则或层中的语句 `or` 语句在框外。
 
 ![](assets/3.png)
 
@@ -48,9 +46,9 @@ ht-degree: 0%
 >
 >公式字段不能在规则中使用，也不会显示在选择列表中。 因为公式在后台计算且不会修改记录， [!DNL Marketo Measure] 无法检测记录是否适合规则。
 >
->确保为ID字段使用正确的值，例如CrmEvent.CreatedById。 [!DNL Salesforce IDs] 长度为18个字符(例如，0054H000007WmrfQAC)。
+>确保为ID字段使用正确的值，例如CrmEvent.CreatedById。 [!DNL Salesforce IDs] 长18个字符(0054H000007WmrfQAC)。
 
-最后，让我们选择一个日期或日期/时间字段用作买方接触点日期。 标准字段和自定义字段均可选择。
+最后，选择一个日期或日期/时间字段用作买方接触点日期。 标准字段和自定义字段均可选择。
 
 >[!TIP]
 >
@@ -58,11 +56,11 @@ ht-degree: 0%
 
 ![](assets/4.png)
 
-不要忘记为任务或事件设置不同的规则。 您需要知道您的销售团队使用哪个对象来记录他们的活动。
+不要忘记为任务或事件设置不同的规则。 您必须知道销售团队使用哪个对象来记录其活动。
 
 ![](assets/5.png)
 
-您可能希望将这些新的接触点放置到其相应的位置 [营销渠道](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome？tab=Channels.Online%20Channels){target="_blank"}. 为此，您可以使用刚刚创建的新促销活动映射定义渠道。 也许您将为BDR渠道创建一个新行，其中促销活动以出站开头。
+您可能希望将这些新的接触点放置到其相应的位置 [营销渠道](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome？tab=Channels.Online%20Channels){target="_blank"}. 为此，请使用刚刚创建的新营销活动映射定义渠道。
 
 >[!TIP]
 >
@@ -70,13 +68,13 @@ ht-degree: 0%
 >
 >开头为（出站）&#42; )
 >
->包含( &#42;出站&#42; )
+包含( &#42;出站&#42; )
 >
->结尾为( &#42;出站)
+结尾为( &#42;出站)
 >
->无通配符基本上表示“等于”，因此请务必根据需要使用它们。
+无通配符基本上表示“等于”，因此请务必根据需要使用它们。
 
-| **操作员** | **用例** |
+| **运算符** | **用例** |
 |---|---|
 | 等于 | 单个值 — 完全匹配 |
 | 包含 | 单个值 — 包含值 |
@@ -85,10 +83,10 @@ ht-degree: 0%
 
 ![](assets/6.png)
 
-最后但同样重要的是，您可以选择输入新渠道的成本。 我们的 [营销支出上传](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome？tab=Reporting.Marketing%20Spent){target="_blank"} 允许您在渠道级别、子渠道级别或营销活动级别输入支出。 使用您的新的 [!DNL Marketo Measure] 促销活动，您可以按月添加这些相关成本，然后查看每个促销活动的ROI！
+最后但同样重要的是，您可以选择输入新渠道的成本。 此 [营销支出上传](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome？tab=Reporting.Marketing%20Spent){target="_blank"} 允许您在渠道级别、子渠道级别或营销活动级别输入支出。 使用您的新的 [!DNL Marketo Measure] 促销活动，您可以按月添加这些相关成本，然后查看每个促销活动的ROI！
 
 ![](assets/7.png)
 
 >[!MORELIKETHIS]
 >
->[活动归因常见问题解答](/help/advanced-marketo-measure-features/activities-attribution/activities-attribution-faq.md)
+[活动归因常见问题解答](/help/advanced-marketo-measure-features/activities-attribution/activities-attribution-faq.md)

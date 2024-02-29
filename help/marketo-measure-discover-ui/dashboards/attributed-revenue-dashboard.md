@@ -3,7 +3,7 @@ description: 已归因的收入仪表板 —  [!DNL Marketo Measure]  — 产品
 title: 已归因的收入仪表板
 feature: Reporting
 exl-id: ff4e9de2-cb34-4b40-9e25-e431941b2be0
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 栈叠条形图显示按渠道划分的每月/季度/年总归因收入。
 
-* 利用向下钻取和向上钻取功能按月、季度或年对数据进行分类。
+* 使用向下钻取和向上钻取功能按“月”、“季度”或“年”对数据进行分类。
 * 将鼠标悬停在条形图区段或条形图之间的空格上可显示详细信息。
 
 **图表回答的问题：**

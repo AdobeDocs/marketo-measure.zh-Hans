@@ -1,34 +1,34 @@
 ---
 unique-page-id: 18874730
-description: 基于帐户的营销概述 —  [!DNL Marketo Measure]  — 产品文档
+description: 了解Account-Based Marketing (ABM)以及AdobeMarketo Measure如何帮助营销和销售团队执行成功的ABM策略。
 title: 基于帐户的营销概述
 exl-id: 2ead69c0-66da-439d-a0ba-25c73c4b308c
 feature: Account-based Marketing
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
 
 # 基于帐户的营销概述 {#account-based-marketing-overview}
 
-以下是ABM的简要概述， [!DNL Marketo Measure] ABM功能，以及如何将其添加到您的 [!DNL Salesforce] 页面布局。 要了解有关ABM的更多信息，请查看 [此页面](https://www.marketo.com/account-based-marketing/){target="_blank"}.
+以下各节简要概述了ABM，其组件 [!DNL Marketo Measure] ABM功能，以及如何将其添加到您的 [!DNL Salesforce] 页面布局。 要了解有关ABM的更多信息，请查阅Adobe [ABM博客](https://business.adobe.com/blog/basics/account-based-marketing){target="_blank"}.
 
-要直接导航到有关在中设置ABM的说明，请执行以下操作 [!DNL Salesforce] 实例，请 [单击此处](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md#setting-up-abm-page-layout-in-salesforce){target="_blank"}.
+有关在 [!DNL Salesforce] 实例，转到 [在Salesforce中设置ABM页面布局](/help/advanced-marketo-measure-features/account-based-marketing/account-based-marketing-overview.md#setting-up-abm-page-layout-in-salesforce){target="_blank"}.
 
 ## 什么是ABM {#what-is-abm}
 
 基于客户的营销ABM是一种营销策略，您可以将目标定位到整个公司和客户，而不仅仅是个人。 [!DNL Marketo Measure] 通过销售线索到客户的映射功能和Predictive Engagement Score ，帮助营销和销售团队执行成功的ABM策略。
 
-为了使我们的基于帐户的营销模型开始填充到您的CRM中， [!DNL Marketo Measure] 需要满足以下条件：
+要使我们的基于帐户的营销模型开始填充到您的CRM中， [!DNL Marketo Measure] 需要满足以下条件：
 
-* 您的CRM需要至少25个拥有至少一个已结束的赢家机会的客户，因此我们可以更好地衡量一个“成功的”客户/机会与您的业务的共同之处。
-* 另一方面，您的CRM需要至少25个帐户，且不存在任何已关闭的获胜机会(所有获胜方必须属于我们的“开放”阶段类别或“已关闭的失败”类别 — 这有助于我们衡量组织中较低级别帐户的成因。
+* 您的CRM需要至少25个拥有至少一个已结束的赢家机会的客户，以更好地衡量一个成功的客户/机会与您的业务的共同之处。
+* 另一方面，您的CRM需要至少25个帐户，且不存在任何已关闭的获胜机会（所有获胜方都必须处于“开放”阶段类别或“已关闭的失败”类别中） — 这有助于我们衡量组织中较低级别帐户的成因。
 
 >[!NOTE]
 >
->上述“坏”帐户需要打开至少12个月，并且不会累积“已关闭的Won”opp；这是我们判断Opp是否出于模型目的而失效的基本准则。
+>上述“坏”帐户必须至少打开12个月，并且不会累积Closed Won opp；这是确定Opp是否出于模型目的而失效的基本准则。
 
 ## 商机到客户的映射 {#lead-to-account-mapping}
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->每个Lead均会按照上述方法的优选顺序尝试与帐户匹配。 进行匹配后，将立即在潜在客户上设置AccountId，并且不会使用其他方法进行匹配。 如果Lead已具有有效的AccountId，则跳过Lead。
+>每个Lead将按照上述方法的优选顺序尝试与帐户匹配。 进行匹配后，将立即在潜在客户上设置AccountId，并且不会使用其他方法进行匹配。 如果Lead已具有有效的AccountId，则跳过Lead。
 
 ## 预测参与度分数 {#predictive-engagement-score}
 
@@ -58,18 +58,18 @@ ht-degree: 0%
 * 帐户中的人数
 * 特定重要页面，以及过去30/60/90天内是否有访问
 * 如果帐户具有已结束的失败/获胜交易
-* 关闭该渠道的可能性是多少
+* 被关闭的输赢可能性有多大
 
 >[!NOTE]
 >
 >您可能会注意到某些帐户的预测参与度分数中存在“N/A”或“ — ”（破折号）的分级。
 
-_等级“N/A”仅仅意味着我们在该帐户上还没有足够的数据来生成真正的等级 — 如果数据更多，最终将会给出一个等级。_
-_等级“ — ”（短划线符号）表示由于时间限制、偶尔会错过流程等，我们的ABM流程尚未处理此帐户。 如果您认为某个帐户应具有基于其他类似帐户或时间范围的等级，请联系并让 [!DNL Marketo Measure] 知道。_
+_等级“N/A”仅仅意味着该帐户上没有足够的数据来生成真正的等级 — 使用更多数据，最终给出一个等级。_
+_等级“ — ”（短划线符号）表示ABM进程尚未处理此帐户，因为时间有限，偶尔会错过进程，依此类推。 如果您认为某个帐户应该具有基于其他类似帐户或时间范围的等级，请联系并让 [!DNL Marketo Measure] 知道。_
 
 ## 在中设置ABM页面布局 [!DNL Salesforce] {#setting-up-abm-page-layout-in-salesforce}
 
-要开始使用PES，您只需将PES字段和相关列表添加到中的相应页面布局即可 [!DNL Salesforce].
+要开始使用PES，必须将PES字段和相关列表添加到中的相应页面布局 [!DNL Salesforce].
 
 1. 导航到 **[!UICONTROL Setup]** > **[!UICONTROL Customize]** > **[!UICONTROL Accounts]** > **[!UICONTROL Page Layout]**. 然后，选择要编辑的页面布局。
 1. 转到 [!UICONTROL Fields] 并将“预测参与度分数”字段移入“帐户信息”部分。

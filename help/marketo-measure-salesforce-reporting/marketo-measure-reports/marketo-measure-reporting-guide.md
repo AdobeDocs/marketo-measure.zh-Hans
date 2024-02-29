@@ -1,11 +1,11 @@
 ---
-description: '"[!DNL Marketo Measure] 报告指南 —  [!DNL Marketo Measure]  — 产品文档”'
+description: "[!DNL Marketo Measure] 报告指南 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] Reporting指南”'
 exl-id: 9b991f9e-c187-4b43-b0a8-8ed3e9a6056b
 feature: Reporting
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '6395'
+source-wordcount: '6431'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 在开始之前，必须非常清楚你的目标，你试图回答的问题，或者你试图解决的问题。 你想讲什么故事？ 结果将做出哪些决策？ 这些基本面因素往往没有得到妥善的考虑，导致所有相关方都感到失望。”
 
-**报告设计**：“接下来，您需要设计报表并确定它将包含的特定维度、量度和数据集。 一种常见做法是为业务用户提供他们要求的确切内容，只是让他们仍然觉得他们的需求没有得到满足。 这是因为企业用户实际寻找的洞察并不总是包含在他们请求的报表中。 好的分析师（或戴分析师帽子的专业多用途分析人员）将提出澄清的问题，建立通用定义（“那么，您真正的意思是潜在客户是什么？”），甚至绘制最终报告的视觉草图，以确保一致性。 只有到那时，你才知道自己有一系列明确的要求，因此才会建立报告。”
+**报告设计**：“接下来，您需要设计报表并确定它将包含的特定维度、量度和数据集。 一种常见做法是为业务用户提供他们要求的确切内容，只是让他们仍然觉得他们的需求没有得到满足。 这是因为企业用户实际寻找的洞察并不总是包含在他们请求的报表中。 优秀的分析师（或戴分析师帽子的MOPS人员）将提出澄清的问题，建立通用定义（“那么，您真正的意思是铅？”），甚至可以绘制最终报告的视觉草图，以确保一致性。 只有到那时，你才知道自己有一系列明确的要求，因此才会建立报告。”
 
 **报告生成**：“一旦你动身修建，遇到路障或死胡同是很常见的事。 例如，您可能会发现您缺少基本的数据点，或者您的对象未按所需的方式链接。 要解决这些问题，我认为理解报告“机器”中“暗藏着”发生的事情也很关键。 这种流畅的操作可让您快速评估报告请求并评估其是否可实现（并在不可实现时更轻松地设计创意解决方案）。”
 
@@ -40,11 +40,11 @@ ht-degree: 0%
 1. **买方归因接触点** (BAT) /机会/客户级别/收入
 
    * 通常用于“漏斗中间和/或底部”（MOFU和BOFU）量度和与相关的报表 _机会_.
-   * 最佳可得技术代表与 **机会** （通过Opportunity Contact Roles或通过共享帐户ID，具体取决于您的设置）。 与仅与人员相关的BT不同，BAT还可以与 **收入**. 因此，您将使用BAT来回答与机会相关的问题，包括已打开或关闭多少机会，或者管道价值和收入赢得多少。
+   * 最佳可得技术代表与 **机会** （通过Opportunity Contact Roles或通过共享帐户ID，具体取决于您的设置）。 与仅与人员相关的BT不同，BAT还可以与 **收入**. 因此，您将使用BAT来回答与机会相关的问题，包括已打开或关闭的机会的数量，或者管道价值和赢得的收入。
 
 >[!NOTE]
 >
->BAT是从BT创建的。 基本上，跟踪是通过BT在个人级别开始的。 在客户上创建Opportunity后，同一客户下所有联系人的BT都将被引用，并有资格创建与Opportunity相关的BAT，因此您将需要根据您尝试回答的问题来使用其中一个：与“人员”量度（ BT报告）相关的问题，或与“Opportunity”量度（ BAT报告）相关的问题
+>BAT是从BT创建的。 基本上，跟踪是通过BT在个人级别开始的。 在客户上创建Opportunity后，同一客户下所有联系人的BT都将被引用，并有资格创建与Opportunity相关的BAT，因此您将希望根据您尝试回答的问题来使用其中一个：与“人员”量度（ BT报告）相关的问题，或与“Opportunity”量度（ BAT报告）相关的问题
 
 支持文章： [买方接触点和买方归因接触点之间的差异](/help/configuration-and-setup/getting-started-with-marketo-measure/difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints.md#configuration-and-setup)
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 1. **具有买方接触点的潜在客户**
 
-**1.1 |按营销渠道显示的新潜在客户**
+**1.1 | 按营销渠道显示的新潜在客户**
 
 按“营销渠道”字段汇总Lead的Buyer Touchpoint数据是最高层次的视图，它表示哪些渠道/策略正在影响新Lead的创建。 将此报表的结构设置为“Date Type”=“Created Date”，以确保在报表中建立“新潜在客户（当在CRM中创建该潜在客户时）的同类群组。
 
@@ -126,9 +126,9 @@ ht-degree: 0%
 
 >[!TIP]
 >
->对于任何“具有买方接触点的潜在客户”报表类型，首先自定义标题为“[!DNL Marketo Measure] 101 |按渠道列出的潜在客户&#39;。 此报告现成可用，它是一个很好的沙盒，已按照上表所述预先构建，可以快速自定义以满足更具体的报告需求。
+>对于任何“具有买方接触点的潜在客户”报表类型，首先自定义标题为“[!DNL Marketo Measure] 101 | 按渠道列出的潜在客户。 此报告现成可用，它是一个很好的沙盒，已按照上表所述预先构建，可以快速自定义以满足更具体的报告需求。
 
-**1.2 |按营销活动显示的新潜在客户（或更细粒度的洞察）**
+**1.2 | 按营销活动显示的新潜在客户（或更细粒度的洞察）**
 
 要更详细地了解“按营销渠道列出的新潜在客户”报表(1.1)中汇总的数据，请在促销活动级别添加其他摘要。 这样，您不仅能够了解“营销渠道”是什么在推动新商机的创建，而且更具体地说，这些渠道中的哪些促销活动表现最佳：
 
@@ -218,7 +218,7 @@ ht-degree: 0%
 * 从测试中过滤掉任何内部记录，通常按电子邮件地址
 * 根据可能特定于您的业务部门的特定“记录类型”进行筛选
 
-**1.3 |按内容显示的新潜在客户（仅限CRM报表）**
+**1.3 | 按内容显示的新潜在客户（仅限CRM报表）**
 
 <table> 
  <tbody>
@@ -269,7 +269,7 @@ ht-degree: 0%
 
 基于“内容”的报表非常适合深入分析在更高级别的营销渠道中推动潜在客户发展的因素，在本例中为“免费搜索”。
 
-**1.4 |给定日期范围内的潜在客户参与总数**
+**1.4 | 给定日期范围内的潜在客户参与总数**
 
 <table> 
  <tbody>
@@ -307,7 +307,7 @@ ht-degree: 0%
 
 其中一个最常见的报告不仅侧重于新的潜在客户或潜在客户级别的参与，而且更具体地说，集中在“营销合格潜在客户”(MQL)上。 在报告MQL时，有多种不同的方法，具体取决于所用的 [!DNL Marketo Measure] 您有权访问的特性和功能。
 
-**2.1 |按渠道营销符合条件的潜在客户（多点触控）**
+**2.1 | 按渠道营销符合条件的潜在客户（多点触控）**
 
 这种衡量营销对影响MQL的影响的方法本质上是“营销渠道的新潜在客户”(1.1)报表的延续，但附加标准是，要衡量的潜在客户更具体地是MQL。 此处仍建议使用U形归因模型，以识别哪些营销渠道和内容在产生潜在客户 _可能_ 成为MQL：
 
@@ -347,7 +347,7 @@ ht-degree: 0%
  </tbody>
 </table>
 
-**2.2 |按渠道营销符合条件的潜在客户（单次接触，仅限CRM）**
+**2.2 | 按渠道营销符合条件的潜在客户（单次接触，仅限CRM）**
 
 这种衡量营销对影响MQL的影响的方法更侧重于确定哪些 _单个接触点_ 是商机到达MQL之前的最后一次接触。
 
@@ -384,7 +384,7 @@ ht-degree: 0%
   </tr>
   <tr>
    <td>最佳模型</td> 
-   <td><i>由于此报表是在单个接触点上筛选的，因此潜在客户级别的归因模型并不相关。 与“Lead Engagement Report”(1.4)一样，此处也将利用接触点记录数来了解哪些渠道最强（每个Lead只能有一个MQL接触点）。</i></td> 
+   <td><i>由于此报表是在单个接触点上筛选的，因此潜在客户级别的归因模型并不相关。 与“Lead Engagement Report”(1.4)一样，此处也将使用接触点记录数来了解哪些渠道最强（每个Lead只能有一个MQL接触点）。</i></td> 
   </tr>
  </tbody>
 </table>
@@ -397,7 +397,7 @@ ht-degree: 0%
 
 还有第三个自定义 [!DNL Marketo Measure] Salesforce中的对象，这些对象在报告人员相关量度时可能非常有用： **该 [!DNL Marketo Measure] 人员(BP)**. BP解决了如何在同一报告中同时表示Lead和Contacts信息的老问题。 它统一所有与“人员”相关的BT (a [!DNL Marketo Measure] 人员的ID是他们的电子邮件地址)。 无论他们是作为潜在客户还是作为联系人存在，BP都作为桥接对象，帮助报告跨越潜在客户和联系人，并在生成关于人员的更复杂报告方面非常有用。
 
-此 [!DNL Marketo Measure] 人员仅与其中一个接触点对象(买方接触点(BT))相关。 这意味着无法将其用于Opportunity或收入相关的指标。 A `[!DNL Marketo Measure] 人员和买方接触点的报表类型有助于理解 _总参与度_ 由于它会显示所有BT，因此可以更具体地确定BT是否与某个引线或接触有关。 例如，如果您正在使用Salesforce Campaign跟踪事件，则CRM Campaign中可能会以潜在客户或联系人的形式存在营销活动成员。 [!DNL Marketo Measure] 无论如何都将为营销活动成员创建接触点，但不具有 [!DNL Marketo Measure] 人员，标准的Salesforce报告将需要两个单独的报告来了解多少 _总计_ 您在活动中的接触点：一个是“具有买方接触点的潜在客户”，另一个是“具有买方接触点的联系人”。 其他几个 [!DNL Marketo Measure] 基于人员的报告用例如下所示：
+此 [!DNL Marketo Measure] 人员仅与其中一个接触点对象(买方接触点(BT))相关。 这意味着它不能用于Opportunity或收入相关的指标。 A `[!DNL Marketo Measure] 人员和买方接触点的报表类型有助于理解 _总参与度_ 由于它会显示所有BT，因此可以更具体地确定BT是否与某个引线或接触有关。 例如，如果您正在使用Salesforce Campaign跟踪事件，则CRM Campaign中可能会以潜在客户或联系人的形式存在营销活动成员。 [!DNL Marketo Measure] 无论如何都将为营销活动成员创建接触点，但不具有 [!DNL Marketo Measure] 人员，标准的Salesforce报告将需要两个单独的报告来了解多少 _总计_ 您在活动中的接触点：一个是“具有买方接触点的潜在客户”，另一个是“具有买方接触点的联系人”。 其他几个 [!DNL Marketo Measure] 基于人员的报告用例如下所示：
 
 **3.1 [!DNL Marketo Measure] 已下载“ebooks”或“whitepapers”的人（下载总数）**
 
@@ -441,7 +441,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->对于任何“潜在客户” [!DNL Marketo Measure] 人员报表类型，首先自定义标题为&#39;的预建报表&#x200B;**[!DNL Marketo Measure]101 |按渠道列出的潜在客户/联系人**’。 此报告现成可用，非常棒 [!DNL Marketo Measure] 基于人员的沙盒。 它已经预先构建，可以快速定制，以满足更具体的报告需求。
+>对于任何“潜在客户” [!DNL Marketo Measure] 人员报表类型，首先自定义标题为&#39;的预建报表&#x200B;**[!DNL Marketo Measure]101 | 按渠道列出的潜在客户/联系人**’。 此报告现成可用，非常棒 [!DNL Marketo Measure] 基于人员的沙盒。 它已经预先构建，可以快速定制，以满足更具体的报告需求。
 
 >[!TIP]
 >
@@ -464,7 +464,7 @@ _此报表仅适用于注册表单托管在您网站上的 [!DNL Marketo Measure
   <tr>
    <td>过滤器</td> 
    <td>“表单URL”包含（例如）<br>
-   <li>/事件</li>
+   <li>/event</li>
    <i>上述过滤条件值仅为示例。 实际值将基于每个组织的URL结构。</i></td> 
   </tr>
   <tr>
@@ -500,7 +500,7 @@ _此报表仅适用于注册表单托管在您网站上的 [!DNL Marketo Measure
 * [在线自定义渠道设置](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md)
 * [脱机自定义渠道设置](/help/channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
 
-本质上，接触点数据将反映跟踪的内容 [!DNL Marketo Measure] 并且可以审核，以确保您的配置与基于以下各项的输入相匹配： UTM参数值、反向链接页面或促销活动类型。 如果接触点数据与您的配置不匹配，则可能需要调整某些内容。 除了“营销渠道”设置之外，您还可以查看接触点数据，确定可能需要哪些接触点 [已隐藏](/help/advanced-marketo-measure-features/touchpoint-settings/touchpoint-removal-and-touchpoint-suppression.md) 或 [分段](/help/advanced-marketo-measure-features/segmentation/custom-segmentation.md). 建议审核“ ”中的接触点数据[!DNL Marketo Measure] 如有可能，在每个月或每季度末显示人员和买方接触点报表。 这将确保您的归因尽可能准确。 “[!DNL Marketo Measure] 101 |现成可用的按渠道排列的潜在客户/联系人报告是一个非常好的起点。 请包含下列字段（如果尚未包含），以查看一些最关键的配置：
+本质上，接触点数据将反映跟踪的内容 [!DNL Marketo Measure] 并且可以审核，以确保您的配置与基于以下各项的输入相匹配： UTM参数值、反向链接页面或促销活动类型。 如果接触点数据与您的配置不匹配，则可能需要调整某些内容。 除了“营销渠道”设置之外，您还可以查看接触点数据，确定可能需要哪些接触点 [已隐藏](/help/advanced-marketo-measure-features/touchpoint-settings/touchpoint-removal-and-touchpoint-suppression.md) 或 [分段](/help/advanced-marketo-measure-features/segmentation/custom-segmentation.md). 建议审核“ ”中的接触点数据[!DNL Marketo Measure] 如有可能，在每个月或每季度末显示人员和买方接触点报表。 这将确保您的归因尽可能准确。 “[!DNL Marketo Measure] 101 | 现成可用的按渠道列出的潜在客户/联系人报告是一个非常好的起点。 请包含下列字段（如果尚未包含），以查看一些最关键的配置：
 
 * **营销渠道**  — 路径= Marketing Channel.Subchannel（在中设置的值） [!DNL Marketo Measure])
 * **接触点源** = utm_source
@@ -511,7 +511,7 @@ _此报表仅适用于注册表单托管在您网站上的 [!DNL Marketo Measure
 
 **买方归因接触点(BAT)**
 
-Buyer Attribution Touchpoints (BAT)表示与Opportunity连接的所有联系人的相关接触点（通过Opportunity Contact Roles或通过共享帐户ID，具体取决于您的设置）。 与BT（主要与人员相关）不同，BAT可以与收入相关。 因此，您将使用BAT来回答与销售机会相关的问题，主要是未完成的问题 _机会/渠道收入_ 和已结束的赢家 _机会/交易/收入_. 在联系人所在的同一客户下创建Opportunity后，就会通过Contact的BT记录创建BAT（BT不会转换为BAT）。 BT数据只是用来创建附加记录（即与Opportunity相关的BAT ）。
+Buyer Attribution Touchpoints (BAT)表示与Opportunity连接的所有联系人的相关接触点（通过Opportunity Contact Roles或通过共享帐户ID，具体取决于您的设置）。 与BT（主要与人员相关）不同，BAT可以与收入相关。 因此，您将使用BAT来回答与商机（主要是未结）相关的问题 _机会/渠道收入_ 和已结束的赢家 _机会/交易/收入_. 在联系人所在的同一客户下创建Opportunity后，就会通过Contact的BT记录创建BAT（BT不会转换为BAT）。 BT数据只是用来创建附加记录（即与Opportunity相关的BAT ）。
 
 买方归因接触点允许我们在漏斗中更深入地衡量营销影响。 _要测量的漏斗深度可以用各种多点接触归因模型表示_.
 
@@ -563,7 +563,7 @@ Buyer Attribution Touchpoints (BAT)表示与Opportunity连接的所有联系人�
 
 ## 使用买方归因接触点(BAT)的建议报表 {#recommended-reports-using-the-buyer-attribution-touchpoint}
 
-**4.1 |按营销渠道显示的新机会**
+**4.1 | 按营销渠道显示的新机会**
 
 按“营销渠道”字段汇总您的商机的买方归因接触点数据是反映哪些渠道/策略正在影响新商机的最高级别视图。 将此报告结构为“Date Type”=“Opportunity Created Date” ，这样可以确保我们还能根据您的CRM中实际创建Opportunity的时间来总结此报告。 这些接触点可能来自之前的某个时间，但它们仍将与在定义的日期范围内创建的Opportunity相关，因此它们会获得归因点数，因为它们被视为影响Opportunity。
 
@@ -583,7 +583,7 @@ Buyer Attribution Touchpoints (BAT)表示与Opportunity连接的所有联系人�
    <td>
    <li>机会阶段* <i>(可选，具体取决于您可能希望限制在报表中的特定业务机会。 例如，您可能只想报告仍与“打开”机会相关联的BAT</i></li>
    <li>Opportunity Type (通常根据特定机会进行筛选，即“新业务”，而不是 <i>所有</i> 机会)</li><br>
-   *应利用“机会类型”的区段过滤器 [!DNL Marketo Measure] 发现</td> 
+   *应使用“机会类型”的区段过滤器 [!DNL Marketo Measure] 发现</td> 
   </tr>
   <tr>
    <td>日期字段/日期类型</td> 
@@ -607,7 +607,7 @@ Buyer Attribution Touchpoints (BAT)表示与Opportunity连接的所有联系人�
 
 >[!TIP]
 >
->对于任何“具有机会的采购员归因接触点”报表类型，从自定义标题为“[!DNL Marketo Measure] 101 |渠道销售机会&#39;。 此报表是现成可用的，是一个很好的沙盒，如上表中所述，已预先构建，可以快速自定义以满足更具体的报表需求（报表使用现成的完整路径模型，因此请确保自定义报表以包含任何其他归因模型，在本例中为W形模型）。
+>对于任何“具有机会的采购员归因接触点”报表类型，从自定义标题为“[!DNL Marketo Measure] 101 | 渠道销售机会&#39;。 此报表是现成可用的，是一个很好的沙盒，如上表中所述，已预先构建，可以快速自定义以满足更具体的报表需求（报表使用现成的完整路径模型，因此请确保自定义报表以包含任何其他归因模型，在本例中为W形模型）。
 
 >[!TIP]
 >
@@ -635,7 +635,7 @@ Buyer Attribution Touchpoints (BAT)表示与Opportunity连接的所有联系人�
    <li>营销渠道=付费搜索</li>
    <li>机会阶段* <i>(可选，具体取决于您可能希望限制在报表中的特定业务机会。 此示例基于在中定义的管道收入 [!DNL Marketo Measure] 通过“打开”机会表示潜在收入/打开管道)</i></li>
    <li>Opportunity Type (通常根据特定机会进行筛选，即“新业务”，而不是 <i>所有</i> 机会)</li><br>
-   *应利用“机会类型”的区段过滤器 [!DNL Marketo Measure] 发现</td> 
+   *应使用“机会类型”的区段过滤器 [!DNL Marketo Measure] 发现</td> 
   </tr>
   <tr>
    <td>日期字段/日期类型</td> 
@@ -658,7 +658,7 @@ Buyer Attribution Touchpoints (BAT)表示与Opportunity连接的所有联系人�
  </tbody>
 </table>
 
-**4.2 |按营销渠道显示的交易**
+**4.2 | 按营销渠道显示的交易**
 
 此报表基本上与第一个买方归因接触点示例(4.1)相同，只是指标现在已从未结机会更改为已结成功交易。 量度应始终为告知使用哪个归因模型的量。 考虑到我们现在正在查看已完成的成功交易及其相关的BAT，我们应使用代表整个购买者历程（交易）的模型。 这可确保在购买者旅程中的任何营销接触跟踪都会获得归因点数：
 
@@ -723,9 +723,9 @@ Buyer Attribution Touchpoints (BAT)表示与Opportunity连接的所有联系人�
 
 在中报告ROI时 [!DNL Marketo Measure] 发现，建议使用“日期类型”=“接触点日期”。 为厘定每元投资的回报，我们需要确保收益归于投资日期。 “Date Type” = “Touchpoint Date”确保报表采用这种结构化方式，而不是创建Opportunity （创建日期）或关闭Opportunity （结束日期）时的结构化方式。 让我们仔细看一下：
 
-下面重点介绍的过滤器对于在中以ROI为重点的报表至关重要 [!DNL Marketo Measure] （您很有可能会在“概述”、“CMO”或“ROI”讨论区中设置这些过滤器）：
+下面重点介绍的过滤器对于在中以ROI为重点的报表至关重要 [!DNL Marketo Measure] （最有可能的情况是，您将在“概述”、“CMO”或“ROI”讨论区中设置这些过滤器）：
 
-**5.1 | “概述”讨论区中的ROI**
+**5.1 | “概述”展示板中的ROI**
 
 ![](assets/bizible-reporting-guide-4.png)
 

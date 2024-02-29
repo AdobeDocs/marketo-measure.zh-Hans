@@ -1,13 +1,13 @@
 ---
 unique-page-id: 37356395
-description: '"[!DNL Marketo Engage] 人员集成 —  [!DNL Marketo Measure]  — 产品文档”'
+description: "[!DNL Marketo Engage] 人员集成 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Engage] 人员集成”'
 exl-id: 51930e84-4ff8-4e35-9d44-ea017c24b051
 feature: Integration
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 0%
+source-wordcount: '867'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ Marketo人员集成允许 [!DNL Marketo Measure] 开始从Marketo下载人员，
 * 生产Marketo实例
 * 生产 [!DNL Salesforce] 或 [!DNL Microsoft Dynamics] 实例
 * 任何付费 [!DNL Marketo Measure] 订阅
-* 已启用SOLR(请联系 [Marketo支持](https://nation.marketo.com/t5/Support/ct-p/Support) 以启用此功能)
+* 已启用SOLR(联系 [Marketo支持](https://nation.marketo.com/t5/Support/ct-p/Support) 以启用此功能)
 
 ## 工作原理 {#how-it-works}
 
@@ -40,7 +40,7 @@ Marketo人员集成允许 [!DNL Marketo Measure] 开始从Marketo下载人员，
 
 ## [!DNL Marketo Measure Discover] {#marketo-measure-discover}
 
-报告中的潜在客户（人员）时 [!DNL Marketo Measure Discover]，您将看到您的Marketo和CRM潜在客户的总数。 要仅报告Marketo人员或CRM潜在客户，您需要为源创建区段类别，然后使用“源系统”字段为Marketo和CRM创建区段规则以定义规则。 创建区段后，您将看到可用于在 [!DNL Marketo Measure Discover] 功能板。
+报告中的潜在客户（人员）时 [!DNL Marketo Measure Discover]，您将看到您的Marketo和CRM潜在客户的总数。 要仅报告Marketo人员或CRM潜在客户，您需要为源创建区段类别，然后使用“源系统”字段为Marketo和CRM创建区段规则以定义规则。 创建区段后，您将看到可在您的区段中过滤的源类别 [!DNL Marketo Measure Discover] 功能板。
 
 ![](assets/bizible-discover-1.png)
 
@@ -71,7 +71,7 @@ Marketo人员集成允许 [!DNL Marketo Measure] 开始从Marketo下载人员，
    <td><p>createdat</p></td> 
   </tr> 
   <tr> 
-   <td><p>电子邮件</p></td> 
+   <td><p>EMAIL</p></td> 
    <td><p>电子邮件</p></td> 
   </tr> 
   <tr> 
@@ -103,7 +103,7 @@ Marketo人员集成允许 [!DNL Marketo Measure] 开始从Marketo下载人员，
 
 *存在一个已知行为问题，即Marketo公司实体中的字段不会影响人员的updatedAt值，因此如果更新了Website或Company等相关字段， [!DNL Marketo Measure] 将无法知晓这些值是否已修改，因为updatedAt日期/时间值未更新。 这会影响ABM功能，在这种情况下，我们将没有新数据来解析潜在客户。 目前没有解决方法，但计划将来解决此问题。
 
-## 常见问题解答 {#faq}
+## 常见问题 {#faq}
 
 **为什么我的CRM和之间的潜在客户计数不同 [!DNL Marketo Measure Discover]？**
 

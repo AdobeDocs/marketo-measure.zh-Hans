@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874682
-description: 营销渠道和子渠道 —  [!DNL Marketo Measure]  — 产品文档
+description: 营销渠道和子渠道 —  [!DNL Marketo Measure]
 title: 营销渠道和子渠道
 exl-id: fbe2a994-cf6d-439c-af96-a562216434cc
 feature: Channels
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '450'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 用途 {#purpose}
 
-定义渠道和子渠道的内容 [!DNL Marketo Measure]，它们与您的内容的关系，两个分类之间的差异，以及它们在 [!DNL Marketo Measure] 应用程序。
+定义渠道和子渠道的内容 [!DNL Marketo Measure]，它们与您的内容的关系，两个分类之间的区别以及它们在 [!DNL Marketo Measure] 应用程序。
 
 ## 概述 {#overview}
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 * 中
 * 源
-* 营销活动
+* Campaign
 * 登陆页面
 * 引用网站
 

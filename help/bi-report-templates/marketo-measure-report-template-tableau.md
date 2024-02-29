@@ -1,11 +1,11 @@
 ---
-description: '"[!DNL Marketo Measure] 报表模板 — 表格 —  [!DNL Marketo Measure]  — 产品文档”'
+description: "[!DNL Marketo Measure] 报表模板 — 表格 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] 报表模板 — Tableau'
 exl-id: 18963be9-5c6e-4454-8244-b50460e2bed5
 feature: Reporting
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '2296'
+source-wordcount: '2276'
 ht-degree: 0%
 
 ---
@@ -70,15 +70,15 @@ ht-degree: 0%
 
 ### 已删除列 {#removed-columns}
 
-为了简化数据模型，并删除冗余和不必要的数据，我们减少了从原始Snowflake表中导入Tableau的列数。 删除的列包括不必要的外键、通过与模型中其他表的关系、审核列和内部使用的字段更好地利用反正规化的维度数据 [!DNL Marketo Measure] 正在处理。 您可以根据需要通过编辑自定义SQL的Select部分中的导入列列表来添加或删除列。
+为了简化数据模型，并删除冗余和不必要的数据，我们减少了从原始Snowflake表中导入Tableau的列数。 删除的列包括不必要的外键、最好通过与模型中其他表的关系使用的反正规化维度数据、审核列以及用于内部的字段 [!DNL Marketo Measure] 正在处理。 您可以根据需要通过编辑自定义SQL的Select部分中的导入列列表来添加或删除列。
 
 >[!NOTE]
 >
->data warehouse中的大多数表包含非正规化的维数据。 我们一直在努力将中的模型正常化并清理 [!DNL Tableau] 尽可能提高性能和数据准确性。 在数值表中包含任何其他非规范化字段时，请务必谨慎，这可能会破坏跨表的维度筛选，并可能导致报告不准确。
+>数据仓库中的大多数表包含非正规化的维数据。 我们一直在努力将中的模型正常化并清理 [!DNL Tableau] 尽可能提高性能和数据准确性。 在数值表中包含任何其他非规范化字段时，请务必谨慎，这可能会破坏跨表的维度筛选，并可能导致报告不准确。
 
 ### 重命名的列 {#renamed-columns}
 
-已对表和列进行了重命名，以使它们更便于用户使用并标准化命名约定。 要查看列名更改，请引用创建表的自定义SQL语句。
+已重命名表和列，使它们更便于用户使用并标准化命名约定。 要查看列名更改，请引用创建表的自定义SQL语句。
 
 ### 已添加行 {#rows-added}
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 ### 区段名称 {#segment-names}
 
-由于区段名称是可自定义的，因此它们在Snowflakedata warehouse中具有通用列名称。 [!DNL BIZ_SEGMENT_NAMES] 是一个映射表，其中列出了通用区段名称及其映射到的自定义区段名称，如 [!DNL Marketo Measure] UI。 如果您使用自定义区段名称并希望更新 [!DNL Tableau] 要合并这些列，请使用此表并手动重命名Tableau模型内的列。 区段列位于“潜在客户”和“归因接触点”表中，只需重命名一次。
+由于区段名称是可自定义的，因此它们在Snowflake数据仓库中具有通用列名称。 [!DNL BIZ_SEGMENT_NAMES] 是一个映射表，其中列出了通用区段名称及其映射到的自定义区段名称，如 [!DNL Marketo Measure] UI。 如果您使用自定义区段名称并希望更新 [!DNL Tableau] 要合并这些列，请使用此表并手动重命名Tableau模型内的列。 区段列位于“潜在客户”和“归因接触点”表中，只需重命名一次。
 
 此 [!UICONTROL CATEGORY] 列列出类别编号，而SEGMENT_NAME列具有其映射到的自定义段名称。
 
@@ -120,7 +120,7 @@ ht-degree: 0%
 
 Opportunity Stage Transitions和Lead Stage Transitions将合并到此模型中的一个表中，其中包含指向 [!UICONTROL Lead and Attribution] 接触点表。 添加了“过渡类型”列，以指定某行是Opportunity阶段还是Lead阶段过渡。
 
-成本和接触点数据共享“渠道”和“促销活动”维度。 但是，Tableau在事实表之间建模共享维度的能力有限。 由于我们限制为仅有一个共享维度表，因此Channel和Campaign数据已合并到一个表中。 在Tableau中，使用两个维度的交叉联接将它们组合到一个表中：渠道和营销活动。 唯一ID是通过关联渠道和营销活动ID创建的。 将同一ID值添加到接触点和成本表，以创建与此组合维度表的关系。
+成本和接触点数据共享“渠道”和“促销活动”维度。 但是，Tableau在事实表之间对共享维建模的能力有限。 由于我们限制为仅有一个共享维度表，因此“渠道”和“促销活动”数据已合并到一个表中。 在Tableau中，使用两个维度的交叉联接将它们组合到一个表中：渠道和营销活动。 唯一ID是通过关联渠道和营销活动ID创建的。 将同一ID值添加到接触点和成本表，以创建与此组合维度表的关系。
 
 ![](assets/marketo-measure-report-template-tableau-12.png)
 
@@ -130,7 +130,7 @@ Opportunity Stage Transitions和Lead Stage Transitions将合并到此模型中�
 >
 >某些事件（如会话）确实具有到“营销活动”和“渠道”维度的直接链接。 如果需要在会话级别报告这些维度，则建议为此目的创建一个单独的数据模型。
 
-成本数据存储在“Snowflakedata warehouse成本”表中的不同合计层。 对于所有广告提供商，促销活动级别的数据可汇总到渠道级别。 因此，此模型根据“campaign_is_aggregatable_cost”标志提取成本数据。 自助报告的成本只能在渠道级别提交，并且不需要具有Campaign数据。 为了尽可能提供最准确的成本报告，系统将根据“channel_is_aggregatable_cost”标志提取自报告的成本。 导入成本数据的查询使用以下逻辑写入：如果ad_provider = &quot;SelfReported&quot;，则channel_is_aggregatable_cost = true，否则campaign_is_aggregatable_cost = true。
+成本数据存储在Snowflake数据仓库成本表中的不同聚合级别上。 对于所有广告提供商，促销活动级别的数据可汇总到渠道级别。 因此，此模型根据“campaign_is_aggregatable_cost”标志提取成本数据。 自助报告的成本只能在渠道级别提交，并且不需要具有Campaign数据。 为了尽可能提供最准确的成本报告，系统将根据“channel_is_aggregatable_cost”标志提取自报告的成本。 导入成本数据的查询使用以下逻辑写入：如果ad_provider = &quot;SelfReported&quot;，则channel_is_aggregatable_cost = true，否则campaign_is_aggregatable_cost = true。
 
 在这个模型的上下文中，Lead [!UICONTROL Contact]， [!UICONTROL Account]、和 [!UICONTROL Opportunity] 数据被视为维度数据，并直接联接到潜在客户和归因接触点表。
 
@@ -143,7 +143,7 @@ Opportunity Stage Transitions和Lead Stage Transitions将合并到此模型中�
 
 ![](assets/marketo-measure-report-template-tableau-13.png)
 
-如果没有能够识别兑换率，则此模型中的货币兑换度量将使用1.0值替代兑换率。 已创建单独的度量值以显示度量的货币值，如果计算包含多个货币值（即，无法将某个值转换为所选货币），则发出警报。 这些指标（成本货币和收入货币）作为工具提示包含在任何显示成本或收入数据的视觉效果中。
+如果没有能够识别兑换率，则此模型中的货币兑换度量将使用1.0值替代兑换率。 已创建单独的度量以显示度量的货币值，如果计算包含多个货币值（即，无法将值转换为所选货币），则发出警报。 这些指标（成本货币和收入货币）作为工具提示包含在任何显示成本或收入数据的视觉效果中。
 
 ![](assets/marketo-measure-report-template-tableau-14.png)
 
@@ -153,7 +153,7 @@ Opportunity Stage Transitions和Lead Stage Transitions将合并到此模型中�
 
 ![](assets/marketo-measure-report-template-tableau-15.png)
 
-要查看直接来自的列的定义 [!DNL Snowflake]，请参阅 [data warehouse文档](/help/marketo-measure-data-warehouse/data-warehouse-schema.md){target="_blank"}.
+要查看直接来自的列的定义 [!DNL Snowflake]，请参见 [数据仓库文档](/help/marketo-measure-data-warehouse/data-warehouse-schema.md){target="_blank"}.
 
 ## 模板和发现之间的差异 {#discrepancies-between-templates-and-discover}
 
@@ -179,13 +179,13 @@ Opportunity Stage Transitions和Lead Stage Transitions将合并到此模型中�
 
 ### 网络流量 {#web-traffic}
 
-报表模板数据模型通过会话与接触点之间的关系标准化渠道、子渠道和营销活动维度数据。 这与发现数据模型不同，后者将这些维度反规范化为会话。 由于这种区别，Discover和报告模板之间的访问和访客的总体计数应该相匹配，但是，一旦按维度显示或过滤，这些数字就不应对齐。 这是因为模板中的维度数据仅适用于导致接触点的Web事件（即非匿名事件）。 欲知更多详情，请参考 [数据模型](#data-model) 部分。
+报表模板数据模型通过会话与接触点之间的关系标准化渠道、子渠道和营销活动维度数据。 这与发现数据模型不同，后者将这些维度反规范化为会话。 由于这种区别，Discover和报告模板之间的访问和访客的总体计数应该相匹配，但是，一旦按维度显示或过滤，这些数字就不应对齐。 这是因为模板中的维度数据仅适用于导致接触点的Web事件（即非匿名事件）。 欲知更多详情，请参见 [数据模型](#data-model) 部分。
 
 网站表单总数在以下两者之间可能存在较小差异 [!DNL Discover] 和模板。 这是因为报表模板中的数据模型通过依次与会话和接触点的关系获取网站表单的维度数据；在少数情况下，网站表单数据没有相关的会话。
 
 ### 潜在客户和客户 {#leads-and-accounts}
 
-所接触帐户的维度报表可能略有不同 [!DNL Discover] 和模板，这再次归因于来自接触点和潜在接触点或归因接触点之间的关系的维度建模。 有关更多详细信息，请参阅归因收入部分中列出的详细信息。
+所接触帐户的维度报表可能略有不同 [!DNL Discover] 和模板，这再次归因于来自接触点和潜在接触点或归因接触点之间的关系的维度建模。 有关更多详细信息，请参阅归因收入部分中概述的详细信息。
 
 中的所有潜在客户计数 [!UICONTROL Discover] 是已归因的销售线索计数，在报表模板中，该指标为 [!UICONTROL leads] 触手可及。 因此，在这两个报告中不可能直接比较这项措施。
 

@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874664
-description: 穿透钻取 —  [!DNL Marketo Measure]  — 产品文档
+description: 穿透钻取 —  [!DNL Marketo Measure]
 title: 穿透钻取
 exl-id: c9ce5a51-e8f9-40ff-aa10-6b059e4998d3
 feature: Reporting
-source-git-commit: e24e01a03218252c06c9a776e0519afbddbe2b8c
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '3849'
+source-wordcount: '3847'
 ht-degree: 0%
 
 ---
@@ -273,7 +273,7 @@ _按周、日期或时间划分的接触点数量。_
 
 _按周、日期或时间细分的帐户数。_
 
-## 网站分析 {#web-analytics}
+## Web 分析 {#web-analytics}
 
 ![](assets/10-1.png)
 

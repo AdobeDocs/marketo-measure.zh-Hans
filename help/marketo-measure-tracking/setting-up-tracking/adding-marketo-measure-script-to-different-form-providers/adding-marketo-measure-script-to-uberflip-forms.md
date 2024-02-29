@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874749
-description: 正在添加 [!DNL Marketo Measure] 编写脚本至 [!DNL Uberflip] FORMS - [!DNL Marketo Measure]  — 产品文档
+description: 正在添加 [!DNL Marketo Measure] 编写脚本至 [!DNL Uberflip] FORMS - [!DNL Marketo Measure]
 title: 正在添加 [!DNL Marketo Measure] 编写脚本至 [!DNL Uberflip] Forms
 exl-id: fb123e15-523d-4931-b4c1-705fe49be3d0
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
    `window['Bizible'] = window['Bizible'] || { _queue: [], Push: function (o, p) {this._queue.push({ type: o, data: p }); } };`
 
-   您将此序言添加到两个 [!DNL Hubs.onLoad] 和 [!DNL Hubs.onPageChange] AJAX Javascript事件挂钩。 (注意：在这些事件挂接中，您可能还会有其他代码。 确保同时包含序言。)
+   您要将前言同时添加到两个 [!DNL Hubs.onLoad] 和 [!DNL Hubs.onPageChange] AJAX Javascript事件挂钩。 (注意：在这些事件挂接中，您可能还会有其他代码。 确保同时包含序言。)
 
    `Hubs.onLoad = function () {`
 

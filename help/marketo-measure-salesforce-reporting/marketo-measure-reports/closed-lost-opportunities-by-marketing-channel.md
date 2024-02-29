@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874632
-description: 按营销渠道列出的已结束的丢失机会 —  [!DNL Marketo Measure]  — 产品文档
+description: 按营销渠道列出的已结束的丢失机会 —  [!DNL Marketo Measure]
 title: 按营销渠道列出的已关闭的丢失机会
 exl-id: 010169fc-f7e7-4ab2-92fe-87e4250dd536
 feature: Channels, Reporting
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---

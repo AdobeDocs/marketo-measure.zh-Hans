@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874722
-description: 测试的最佳实践 —  [!DNL Marketo Measure]  — 产品文档
+description: 测试的最佳实践 —  [!DNL Marketo Measure]
 title: 测试最佳实践
 exl-id: ff95a1a9-d324-47f5-b47d-39014dff77e4
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---

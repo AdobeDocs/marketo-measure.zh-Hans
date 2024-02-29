@@ -1,19 +1,19 @@
 ---
 unique-page-id: 18874680
-description: '"[!DNL Facebook] API - [!DNL Marketo Measure]  — 产品文档”'
-title: "[!DNL Facebook] API"
+description: "[!DNL Facebook] API - [!DNL Marketo Measure]"
+title: '"[!DNL Facebook] API”'
 exl-id: d6d18545-baae-4103-b0a6-c3de681ec833
 feature: APIs, Integration, UTM Parameters
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 1%
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
 # [!DNL Facebook] API {#facebook-api}
 
-## 介绍 {#introduction}
+## 简介 {#introduction}
 
 类似于我们的AdWords &amp; [!DNL Bing Ads] 集成，我们的 [!DNL Facebook] 集成执行两项基本操作：
 
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 启用集成后， [!DNL Marketo Measure] 将开始将广告级别的成本下载到 [!DNL Marketo Measure Marketing ROI] 仪表板。
 
-为使集成正常工作，您需要在页面上 [!DNL Facebook] 帐户。 这将允许我们的系统在所有广告链接上添加_bf参数。 此进程将在您已经添加到的任何其他跟踪参数之上添加新参数 [!DNL Facebook] 广告。
+为使集成正常工作，您必须在页面上 [!DNL Facebook] 帐户。 这将允许我们的系统在所有广告链接上添加_bf参数。 此进程将在您已经添加到的任何其他跟踪参数之上添加新参数 [!DNL Facebook] 广告。
 
 ![](assets/3.gif)
 
@@ -91,45 +91,45 @@ ht-degree: 1%
    <td><p>"Social"，或者[utm_medium]（如果提供）</p></td> 
   </tr> 
   <tr> 
-   <td><p>广告Id或Creative_Unique_Id(Data warehouse)</p></td> 
+   <td><p>广告Id或Creative_Unique_Id(Data Warehouse)</p></td> 
    <td><p>[从utm_content生成的自定义ID]</p></td> 
   </tr> 
   <tr> 
-   <td><p>Ad Content或Creative_Name(Data warehouse)</p></td> 
+   <td><p>Ad Content或Creative_Name(Data Warehouse)</p></td> 
    <td><p>[utm_content]（如果提供）</p></td> 
   </tr> 
   <tr> 
-   <td><p>Keyword Text或Keyword_Name(Data warehouse)</p></td> 
+   <td><p>Keyword Text或Keyword_Name(Data Warehouse)</p></td> 
    <td><p>[utm_term]（如果提供）</p></td> 
   </tr> 
   <tr> 
-   <td><p>Ad_Unique_Id(Data warehouse)</p></td> 
+   <td><p>Ad_Unique_Id(Data Warehouse)</p></td> 
    <td><p>[[!DNL Facebook] 广告ID</p></td> 
   </tr> 
   <tr> 
-   <td><p>Ad_Name(Data warehouse)</p></td> 
+   <td><p>Ad_Name(Data Warehouse)</p></td> 
    <td><p>[[!DNL Facebook] 广告名称]</p></td> 
   </tr> 
   <tr> 
-   <td><p>Keyword_Unique_Id(Data warehouse)</p></td> 
+   <td><p>Keyword_Unique_Id(Data Warehouse)</p></td> 
    <td><p>[从utm_term生成的自定义ID]</p></td> 
   </tr> 
   <tr> 
-   <td><p>Ad_Provider(Data warehouse)</p></td> 
+   <td><p>Ad_Provider(Data Warehouse)</p></td> 
    <td><p>"[!DNL Facebook]"</p></td> 
   </tr> 
   <tr> 
-   <td><p>Account_Unique_ID(Data warehouse)</p></td> 
-   <td><p>[[!DNL Facebook] 帐户 #]</p></td> 
+   <td><p>Account_Unique_ID(Data Warehouse)</p></td> 
+   <td><p>[[!DNL Facebook] 帐户#]</p></td> 
   </tr> 
   <tr> 
-   <td><p>Account_Name(Data warehouse)</p></td> 
+   <td><p>Account_Name(Data Warehouse)</p></td> 
    <td><p>[[!DNL Facebook] 帐户名称]</p></td> 
   </tr> 
  </tbody> 
 </table>
 
-## 常见问题解答 {#faq}
+## 常见问题 {#faq}
 
 **问：什么 [!DNL Facebook] 支持广告 [!DNL Marketo Measure]？**
 

@@ -1,11 +1,11 @@
 ---
-description: ’[!DNL Marketo Measure] Ultimate概述 —  [!DNL Marketo Measure]  — 产品文档'
+description: ’[!DNL Marketo Measure] Ultimate概述 —  [!DNL Marketo Measure]’
 title: ’[!DNL Marketo Measure] 旗舰版概述
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 * 通过字段映射和转换功能，以极大的灵活性转换您的数据，确保正确的数据形状。
 
-* 通过包含的data warehouse使归因分析可用于外部应用程序，以将分析集成到您的工作流中。 更精细的结果数据和基于BI的报表，包括SnowflakeData warehouse，后者提供对精细结果数据的访问，以及使用任何BI工具进行分析和报表的功能。
+* 通过所包含的数据仓库使归因分析可用于外部应用程序，以将这些分析集成到您的工作流中。 更精细的结果数据和基于BI的报表，包括SnowflakeData Warehouse，后者提供对精细结果数据的访问，以及使用任何BI工具进行分析和报表的功能。
 
 * 与RTCDP（B2B或B2P版本）集成，为RTCDP客户提供RTCDP和 [!DNL Marketo Measure] 这两种方法都利用集中式Adobe Experience Platform (AEP)数据。
 

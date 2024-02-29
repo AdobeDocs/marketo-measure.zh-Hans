@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874578
-description: 营销活动和营销活动成员 —  [!DNL Marketo Measure]  — 产品文档
+description: 营销活动和营销活动成员 —  [!DNL Marketo Measure]
 title: 营销活动和营销活动成员
 exl-id: e4e2b154-39ac-4295-a541-7fa6112672e3
 feature: Channels
-source-git-commit: 38c721d10ac33ae85da1d425b6af53b9e3dfd0a1
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 接触点结束日期的用例 {#use-case-for-touchpoint-end-date}
 
-如果在使用之前 [!DNL Marketo Measure]，您使用了一个营销自动化平台来跟踪潜在客户的数字交互（IE表单提交），然后将这些潜在客户上传到 [!DNL Saleforce] Campaign，您可以利用接触点结束日期字段。 您要将接触点结束日期设置为开始日期 [!DNL Marketo Measure] 并启用买方接触点，则每个潜在客户的数字交互都将创建为接触点。 您要将接触点结束日期设置为开始日期的原因 [!DNL Marketo Measure] 这是因为，展望未来，我们将通过我们的javascript跟踪这些数字交互。
+如果在使用之前 [!DNL Marketo Measure]，您使用了一个营销自动化平台来跟踪潜在客户的数字交互（IE表单提交），然后将这些潜在客户上传到 [!DNL Saleforce] Campaign中，您可以使用接触点结束日期字段。 您要将接触点结束日期设置为开始日期 [!DNL Marketo Measure] 并启用买方接触点，则每个潜在客户的数字交互都将创建为接触点。 您要将接触点结束日期设置为开始日期的原因 [!DNL Marketo Measure] 这是因为，展望未来，我们将通过我们的javascript跟踪这些数字交互。
 
 ![](assets/3.png)
 

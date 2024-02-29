@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874572
-description: 复制记录和 [!DNL Marketo Measure] - [!DNL Marketo Measure]  — 产品文档
+description: 复制记录和 [!DNL Marketo Measure] - [!DNL Marketo Measure]
 title: 复制记录和 [!DNL Marketo Measure]
 exl-id: e340100c-120a-4771-946d-336a1458da4e
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >您可能会看到说明“[!DNL Marketo Measure]”，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
-[!DNL Marketo Measure] 在将数据与CRM中的相关潜在客户或联系人匹配时，将电子邮件地址用作我们的唯一标识符。 时间 [!DNL Marketo Measure] 查找具有相同电子邮件地址的多个Lead或Contact，我们将在所有记录中显示相同的数据。 当您报告以下潜在客户或联系人时，就会产生这种影响： [!DNL Marketo Measure] 并且可能会错误地夸大具有买方接触点的独特人员的数量。
+[!DNL Marketo Measure] 在将数据与CRM中的相关潜在客户或联系人匹配时，使用电子邮件地址作为我们的唯一标识符。 时间 [!DNL Marketo Measure] 查找具有相同电子邮件地址的多个Lead或Contact，我们将在所有记录中显示相同的数据。 当您报告以下潜在客户或联系人时，就会产生这种影响： [!DNL Marketo Measure] 并且可能会错误地夸大具有买方接触点的独特人员的数量。
 
 这是什么样的 [!DNL Marketo Measure] 报告？
 

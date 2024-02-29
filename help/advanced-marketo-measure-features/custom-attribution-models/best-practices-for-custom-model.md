@@ -1,9 +1,9 @@
 ---
-description: 自定义模型的最佳实践 —  [!DNL Marketo Measure]  — 产品文档
+description: 自定义模型的最佳实践 —  [!DNL Marketo Measure]
 title: 自定义模型的最佳实践
 exl-id: 7c19bb6a-30fc-4cbd-a58e-f20751102afe
 feature: Custom Models
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 0%

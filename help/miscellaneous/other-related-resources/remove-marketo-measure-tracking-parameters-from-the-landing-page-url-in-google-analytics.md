@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874736
-description: 移除 [!DNL Marketo Measure] Google Analytics中登录页面URL的跟踪参数 —  [!DNL Marketo Measure]  — 产品文档
+description: 移除 [!DNL Marketo Measure] Google Analytics中登录页面URL的跟踪参数 —  [!DNL Marketo Measure]
 title: 移除 [!DNL Marketo Measure] 从Google Analytics中的登陆页面URL跟踪参数
 exl-id: ec81ba4a-bb10-49fd-b62e-5a1bc9e1a023
 feature: Tracking
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '107'
 ht-degree: 0%
 
 ---

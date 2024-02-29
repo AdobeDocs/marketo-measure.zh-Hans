@@ -1,12 +1,12 @@
 ---
-description: 隐私请求 —  [!DNL Marketo Measure]  — 产品文档
+description: 隐私请求 —  [!DNL Marketo Measure]
 title: 隐私请求
 exl-id: 883e475f-9868-412a-b505-230556f38484
 feature: APIs, Tracking
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 2%
+source-wordcount: '248'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 您可以提交单个请求，以从中访问和删除消费者数据 [!DNL Marketo Measure] 有两种方式：
 
-* 通过 [[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=zh-Hans){target="_blank"}.
+* 通过 [[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html){target="_blank"}.
 * 通过 **[!DNL Privacy Service]API**. 请参阅文档 [此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target="_blank"} and the API reference [here](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}.
 
 此 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target="_blank"} 支持两种类型的请求：数据访问和数据删除。

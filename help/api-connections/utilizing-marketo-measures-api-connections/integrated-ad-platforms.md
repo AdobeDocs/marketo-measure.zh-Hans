@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874594
-description: 集成式广告平台 —  [!DNL Marketo Measure]  — 产品文档
+description: 集成式广告平台 —  [!DNL Marketo Measure]
 title: 集成式广告平台
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
-source-git-commit: a2a7657e8377fd5c556d38f6eb815e39d2b8d15e
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1630'
 ht-degree: 0%
 
 ---
@@ -48,9 +48,9 @@ ht-degree: 0%
 
 ## 如何启用 [!DNL Marketo Measure] 自动为Adwords添加标签 {#how-to-enable-marketo-measure-auto-tagging-for-adwords}
 
-启用前 [!DNL Marketo Measure] 自动标记， **请确保在Adwords帐户中的帐户、营销活动或广告组级别启用了跟踪模板。 对于将拥有帐户的所有Adwords帐户，此变量都是必需的 [!DNL Marketo Measure] 已启用自动标记。** 启用跟踪模板可防止广告效果历史记录数据出现任何丢失。 请注意，在关键词、站点链接或广告级别启用跟踪模板将导致广告完成审阅和批准流程，并可能重新启动广告的性能历史记录。 如果根本未启用跟踪模板， [!DNL Marketo Measure] 将附加 [!DNL Marketo Measure] 将参数直接跟踪到广告的“最终URL”，这也会导致广告历史记录数据丢失。
+启用前 [!DNL Marketo Measure] 自动标记， **确保在Adwords帐户中的帐户、营销活动或广告组级别启用了跟踪模板。 对于将拥有帐户的所有Adwords帐户，此变量都是必需的 [!DNL Marketo Measure] 已启用自动标记。** 启用跟踪模板可防止广告效果历史记录数据出现任何丢失。 请注意，在关键词、站点链接或广告级别启用跟踪模板将导致广告完成审阅和批准流程，并可能重新启动广告的性能历史记录。 如果根本未启用跟踪模板， [!DNL Marketo Measure] 将附加 [!DNL Marketo Measure] 将参数直接跟踪到广告的“最终URL”，这也会导致广告历史记录数据丢失。
 
-设置跟踪模板后，请按照以下说明启用 [!DNL Marketo Measure] 自动标记。 注意： [!DNL Marketo Measure] 还将自动标记帐户中所有暂停的广告。
+设置跟踪模板后，按照以下说明启用 [!DNL Marketo Measure] 自动标记。 注意： [!DNL Marketo Measure] 还将自动标记帐户中所有暂停的广告。
 
 1. 登录到您的 [!DNL Marketo Measure] 帐户位置 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}.
 
@@ -147,7 +147,7 @@ Bing Ads的自动标记还会添加以下自定义参数：
 
 请注意，您可以连接 [!DNL Facebook] 帐户 [!DNL Marketo Measure] 应用程序并且不会丢失任何数据 — 只有启用自动标记后才会擦除性能历史记录。
 
-[请参阅本文](https://www.facebook.com/business/help/393890194130036){target="_blank"} 从Facebook ，了解有关导出的更多信息 [!DNL Facebook] 广告报表。
+请参阅 [本文](https://www.facebook.com/business/help/393890194130036){target="_blank"} 从Facebook ，了解有关导出的更多信息 [!DNL Facebook] 广告报表。
 
 ## linkedIn赞助内容 {#linkedin-sponsored-content}
 

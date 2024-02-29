@@ -1,12 +1,12 @@
 ---
 unique-page-id: 37357059
-description: OAuth替换为 [!DNL Azure Active Directory] 对于Dynamics CRM - [!DNL Marketo Measure]  — 产品文档
+description: OAuth替换为 [!DNL Azure Active Directory] 对于Dynamics CRM - [!DNL Marketo Measure]
 title: OAuth替换为 [!DNL Azure Active Directory] 适用于Dynamics CRM的
 exl-id: 0a2f6b29-541d-4965-a460-e6f19b934edb
 feature: Microsoft Dynamics
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '766'
 ht-degree: 0%
 
 ---

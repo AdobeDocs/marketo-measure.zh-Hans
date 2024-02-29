@@ -1,23 +1,23 @@
 ---
 unique-page-id: 18874773
-description: A/B测试设置和报告 —  [!DNL Marketo Measure]  — 产品文档
+description: A/B测试设置和报告 —  [!DNL Marketo Measure]
 title: A/B测试设置和报告
 exl-id: 9a3f0731-5909-4fbf-a35a-9608ff561061
 feature: A/B Testing
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
 
 # A/B测试设置和报告 {#a-b-testing-set-up-and-reporting}
 
-此 [!DNL Marketo Measure] A/B测试集成允许您跟踪 [优化的](https://optimizely.com/){target="_blank"} 和VWO现场实验。 本文指南提供了有关如何添加 [!DNL Marketo Measure] A/B测试部分到潜在客户， [!UICONTROL Contact]、大小写和 [!UICONTROL Opportunity] 页面布局。 我们还将介绍常规报告实践以及运行建议 [!DNL Marketo Measure] A/B报表类型。
+此 [!DNL Marketo Measure] A/B测试集成允许您跟踪 [优化的](https://www.optimizely.com/){target="_blank"} 和VWO现场实验。 本文介绍了如何添加 [!DNL Marketo Measure] A/B测试部分到潜在客户， [!UICONTROL Contact]、大小写和 [!UICONTROL Opportunity] 页面布局。 此外，还涵盖了常规报告实践以及运行建议 [!DNL Marketo Measure] A/B报表类型。
 
 ## 设置 {#set-up}
 
-添加 [!DNL Marketo Measure] A/B测试部分包括Lead 、 Contact 、 Case和Opportunity。 [!DNL Marketo Measure] A/B测试集成允许您跟踪 [优化的](https://optimizely.com/){target="_blank"} and [VWO](https://vwo.com/){target="_blank"} 现场试验。
+添加 [!DNL Marketo Measure] A/B测试部分包括Lead 、 Contact 、 Case和Opportunity。 [!DNL Marketo Measure] A/B测试集成允许您跟踪 [优化的](https://www.optimizely.com/){target="_blank"} and [VWO](https://vwo.com/){target="_blank"} 现场试验。
 
 1. 验证您是否正在使用包 [!DNL Marketo Measure] v3.9或更高版本。 为此，您可以转到 [!UICONTROL Salesforce] >[!UICONTROL Set Up] > [!UICONTROL Installed packages].
 1. 编辑潜在客户页面布局并添加 **[!DNL Marketo Measure]A/B测试** 页面的相关列表。
@@ -45,11 +45,11 @@ ht-degree: 0%
 
 ![](assets/4.png)
 
-A/B报告类型用于报告哪些Lead或Contact或Opportunity参加了A/B测试。 此外，这些报表可以显示与A/B测试中公开的Opportunity关联的收入额。
+A/B报告类型用于报告哪些Lead或Contact或Opportunity参加了A/B测试。 这些报告还会向您显示与A/B测试所暴露的Opportunity相关的收入额。
 
-请注意， Optimizly/VWO是一个内容变体平台，而不是营销渠道，这一点很重要。 因此，这些 [!DNL Marketo Measure] A/B报表类型的使用方式不同于买方接触点报表。 买方接触点报表类型用于了解哪些营销渠道（例如，付费广告、Web直销、社交）将潜在客户或联系人引导至特定页面。 但是， [!DNL Marketo Measure] A/B报告类型不能用于报告变化如何影响Lead或Opportunity。 此外，由于A/B测试变体不是渠道，因此有关变体的详细信息将不会显示在购买者接触点上。
+请注意， Optimizly/VWO是一个内容变体平台，而不是营销渠道，这一点很重要。 因此，这些 [!DNL Marketo Measure] A/B报表类型的使用方式不同于买方接触点报表。 买方接触点报表类型用于了解哪个营销渠道（付费广告、Web直播、社交）将潜在客户或联系人引导至特定页面。 但是， [!DNL Marketo Measure] A/B报告类型不能用于报告变化如何影响Lead或Opportunity。 由于A/B测试变体不是渠道，因此有关变体的详细信息不会显示在购买者接触点上。
 
-以下是报告A/B测试时建议使用的一些常见字段，以帮助提高清晰度和洞察力：
+以下是报告A/B测试时建议使用的一些字段，以帮助提高清晰度和洞察力：
 
 * 商机已转化
 * 试验

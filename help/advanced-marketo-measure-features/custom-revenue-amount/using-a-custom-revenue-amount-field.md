@@ -1,12 +1,12 @@
 ---
 unique-page-id: 18874793
-description: 使用自定义收入金额字段 —  [!DNL Marketo Measure]  — 产品文档
+description: 使用自定义收入金额字段 —  [!DNL Marketo Measure]
 title: 使用自定义收入金额字段
 exl-id: 517ea4f9-aa83-48d0-8ce7-003f4a907430
 feature: Custom Revenue Amount
-source-git-commit: 560ca558ae9ef4d2ef4da57eb9bfa672ed00e0fc
+source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -100,10 +100,10 @@ ht-degree: 0%
 
    ![](assets/using-a-custom-revenue-amount-field-15.png)
 
-1. 您将会返回到工作流的汇总页面，请确保“激活”，这样您就没问题了。 要激活，请单击 **[!UICONTROL Edit]** ，然后单击 **[!UICONTROL Activate]**.
+1. 系统会将您带回工作流的汇总页面，请确保“激活”，此时您将没有发现问题。 要激活，请单击 **[!UICONTROL Edit]** ，然后单击 **[!UICONTROL Activate]**.
 
    完成这些步骤后，需要更新机会以触发工作流以从中获取新值 [!UICONTROL custom opportunity] 字段。
 
-   这可以通过在SFDC中通过Data Loader运行您的机会来实现。 有关在中使用数据加载器的详细信息，请参阅 [本文](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md).
+   这可以通过在SFDC中通过Data Loader运行您的机会来实现。 查找有关在中使用数据加载器的详细信息 [本文](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md).
 
-如果在此过程中有任何问题，请随时联系Adobe客户团队（您的客户经理）或 [[!DNL Marketo] 支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+如果过程中有任何问题，请随时联系Adobe客户团队（您的客户经理）或 [[!DNL Marketo] 支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
