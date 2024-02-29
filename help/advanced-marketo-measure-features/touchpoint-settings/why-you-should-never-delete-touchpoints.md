@@ -4,9 +4,9 @@ description: 为什么您绝不应该删除接触点 —  [!DNL Marketo Measure]
 title: 为什么绝不应该删除接触点
 exl-id: e74c14ff-0399-4ee9-b732-6686823ff5c7
 feature: Touchpoints
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 ![](assets/1.png)
 
-如果从SFDC中删除了接触点，请联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 以请求重新导入您的数据。
+如果从SFDC中删除了接触点，请联系 [[!DNL Marketo Support]](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 以请求重新导入您的数据。

@@ -3,7 +3,7 @@ description: 分段的最佳实践 —  [!DNL Marketo Measure]  — 产品文档
 title: 分段的最佳实践
 exl-id: 68281210-383b-4688-86e9-27fbdc1fabbb
 feature: Segmentation
-source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 推送到 [!DNL Salesforce]，则区段值将写入“区段”字段，并且位于任何买方接触点报表类型中。 这允许跨两个平台进行统一报告。 区段还可以在任何接触点的“接触点详细信息”中找到。
 
-推送到“发现”后，区段将作为可用过滤器显示在位于所有展示板上的过滤器下拉菜单中。
+推送到 [!UICONTROL Discover]中，区段将作为可用过滤器显示在位于所有展示板上的过滤器下拉菜单中。
 
 ## 最佳实践 {#best-practice}
 

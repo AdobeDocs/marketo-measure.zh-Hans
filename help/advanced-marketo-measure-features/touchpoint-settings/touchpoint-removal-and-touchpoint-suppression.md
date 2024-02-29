@@ -4,9 +4,9 @@ description: 接触点移除和接触点抑制 —  [!DNL Marketo Measure]  — 
 title: 接触点移除和接触点抑制
 exl-id: 201af648-6525-4a80-a7e5-3cbeeb1670b6
 feature: Touchpoints
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->要将字段中的值留空或NULL，只需将“值”框留空即可。 这将考虑各种场景，例如针对没有表单URL的接触点进行评估。
+>要将字段中的值留为空白或NULL，只需将 [!UICONTROL Value] 框为空。 这将考虑各种场景，例如针对没有表单URL的接触点进行评估。
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ![](assets/2.png)
 
-`3)` 如果您的规则变得复杂，并且需要重新创建组并对每个语句进行细微的更改，请使用“克隆”选项以简化操作。
+`3)` 如果您的规则变得复杂，并且您需要重新创建组并对每个语句进行细微更改，请使用 [!UICONTROL Clone] 让事情变得更简单的选择。
 
 ![](assets/3.png)
 
@@ -65,9 +65,9 @@ ht-degree: 0%
 
 ![](assets/5.png)
 
-要完成，请保存并处理您的规则。 如果您要进行大量更改，请确保在此过程中保存更改。 [!DNL Marketo Measure] 在您单击 **保存并处理** 按钮。
+要结束， [!UICONTROL Save and Process] 你的规矩。 如果您要进行大量更改，请确保在此过程中保存更改。 [!DNL Marketo Measure] 在您单击 **保存并处理** 按钮。
 
-| **操作员** | **用例** |
+| **运算符** | **用例** |
 |---|---|
 | 等于 | 单个值 — 完全匹配 |
 | 包含 | 单个值 — 包含值 |

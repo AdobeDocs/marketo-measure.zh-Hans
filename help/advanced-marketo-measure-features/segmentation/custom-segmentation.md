@@ -4,9 +4,9 @@ description: 自定义分段 —  [!DNL Marketo Measure]  — 产品文档
 title: 自定义分段
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
 feature: Segmentation
-source-git-commit: 7bb458941e513b6155b834d27f76f0b5df4e0a09
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 在使用此功能之前，请确定您想要过滤的接触点信息。 请记住在CRM中为您的记录类型使用准确的值。 该设置将从营销漏斗的顶部到底部过滤接触点。
 
-步骤2 — 登录并找到区段功能。
+第2步 — 登录并找到 [!UICONTROL Segments] 功能。
 
 * 转到 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} 并登录
 * 在 [!UICONTROL My Account] 选项卡，选择 [!UICONTROL Settings]
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 步骤4 — 添加筛选规则。
 
-* 首先，输入类别名称。 业务类型就是一个例子。 完成后，单击复选标记。 在添加区段之前，需要输入类别名称
+* 首先，输入类别名称。 [!UICONTROL Business Type] 就是一个例子。 完成后，单击复选标记。 在添加区段之前，需要输入类别名称
 * 单击加号以添加区段
 * 输入区段名称。 例如，您可以有一个区段用于新业务、合作伙伴、续订或追加销售
 
@@ -57,11 +57,11 @@ ht-degree: 0%
 >
 >公式字段不能在规则中使用，也不会显示在选择列表中。 因为公式在后台计算且不会修改记录， [!DNL Marketo Measure] 无法检测记录是否适合规则。
 
-* “值”选项不是下拉列表，必须手动输入其值。 请务必查看Salesforce组织中的值
+* 此 [!UICONTROL Value] 选项不是下拉列表，必须手动输入其值。 请务必查看Salesforce组织中的值
 * 对Opportunity区段规则重复此流程
 * “其他”类别是将捕获任何未定义接触点的默认区段。 您可以更改默认区段的名称
 * 单击垃圾桶图标可删除整个类别或类别中的单个规则。 或者，单击铅笔图标以编辑类别或规则
-* 您会注意到有一个“保存”按钮和一个“保存并处理”按钮。 使用“保存”按钮可保存您所做的工作以及随时间发生的更改。 仅在确保以下各项后使用“保存并处理”按钮：
+* 您会注意到您有一个“[!UICONTROL Save]”按钮和“保存并处理”按钮。 使用“保存”按钮可保存您所做的工作以及随时间发生的更改。 仅在确保以下各项后使用“保存并处理”按钮：
 
    * 您的映射是准确的
    * 您已添加要在一个类别中跟踪的所有区段

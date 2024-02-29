@@ -4,9 +4,9 @@ description: 通过归因配置Doubleclick Campaign Manager视图 —  [!DNL Mar
 title: 通过归因配置Doubleclick Campaign管理器视图
 exl-id: 2cc6c2cd-afb7-4052-b18b-9ad0bf16a9fa
 feature: Attribution
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您使用 [!DNL Marketo Measure] 和DoubleClick Campaign Manager集成，我们需要 [API连接](/help/api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md#how-to-connect-ad-platforms) 因此，我们可以下载促销活动的详细信息和创意内容以解决广告。
+>如果您使用 [!DNL Marketo Measure] 和 [!DNL DoubleClick Campaign Manager] 集成，我们需要 [API连接](/help/api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md#how-to-connect-ad-platforms) 因此，我们可以下载促销活动的详细信息和创意内容以解决广告。
 
-要使用Doubleclick Campaign Manager通过跟踪从视图获得更精细的见解，需要配置我们的跟踪像素。
+开始通过从视图到跟踪获得更精细的见解 [!DNL Doubleclick Campaign Manager]，则需要配置我们的跟踪像素。
 
 请 [单击此处](/help/advanced-marketo-measure-features/view-through-attribution/marketo-measure-view-through-attribution-faq.md) 欲知关于 [!DNL Marketo Measure] 通过归因功能查看。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 如何添加图像标记 {#how-to-add-the-image-tag}
 
-您将将该标记添加到“广告商”设置下的Doubleclick中，并且您将需要创建展示事件标记。
+您将标记添加到 [!DNL Doubleclick] 在“广告商”设置下，您将需要创建展示事件标记。
 
 1. 添加以下代码作为1x1图像像素。
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 1. 添加后，请确认分隔符的映射如下所示。 在应用标记后，此操作应该自动完成：
 
-   v = %eadv！ 展开广告商ID\
+   v = %eadv！ [!DNL Expand] 广告商ID\
    a = %eaid！ 展开广告Id\
    c = %ecid！ 展开创作Id\
    s = %esid！ 展开站点ID\
@@ -47,7 +47,7 @@ ht-degree: 0%
 
    ![](assets/1.png)
 
-## 常见问题解答 {#faq}
+## 常见问题 {#faq}
 
 **问：图像标记是否安全？**
 

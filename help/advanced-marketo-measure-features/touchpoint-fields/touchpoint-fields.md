@@ -4,9 +4,9 @@ description: 接触点字段 —  [!DNL Marketo Measure]  — 产品文档
 title: 接触点字段
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: cc786cb3af08fa36af91ef22f4dba3072c9617eb
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1947'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 提取
 
-提取运算符从其他位置的字段中提取值，例如：促销活动字段、潜在客户字段，或者在更高级的用例中。 [从登陆页面提取自定义参数](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}. It then places it onto a Touchpoint Field (See [Maps To Example](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"} #2)。
+此 [!UICONTROL extracts] 运算符从其他位置提取字段中的值，例如：促销活动字段、潜在客户字段，或者在更高级的用例中， [从登陆页面提取自定义参数](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}. It then places it onto a Touchpoint Field (See [Maps To Example](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"} #2)。
 
 **示例#1**
 
@@ -123,7 +123,7 @@ ht-degree: 0%
 
 **将映射到**
 
-映射到运算符会创建一个需要转换或存储为其他值的值表。 通常，它采用键值的形式，其中代码表示友好名称，需要映射到该友好名称。
+此 [!UICONTROL maps to] 运算符会创建一个值表，这些值需要转换或存储到另一个值中。 通常，它采用键值的形式，其中代码表示友好名称，需要映射到该友好名称。
 
 **示例#1**
 
@@ -145,18 +145,18 @@ ht-degree: 0%
    * **(** 标记提取开始
 
       * 请注意，由于我们仅提取4，因此只有第一位数字具有左圆括号
-
    * **)** 标记提取结束
 
       * 请注意，由于我们仅提取4，因此只有第一位数字具有右括号
-
    * **\d** 告诉我们正在提取一个“数字”
    * **{2}** 是我们正在提取的字符数
+
+
 
 * 单击 [!UICONTROL Save]. 您必须先保存新字段，然后才能将其用于下一个规则！
 * 接下来，我们要将第一个数字的所有可能值映射到其友好名称
 * 创建计算字段并将其标记为“Region_Name”
-* 从搜索提取字段开始，定义规则。 在本例中，为Touchpoint.Region
+* 从搜索提取字段开始，定义规则。 在本例中， [!DNL Touchpoint.Region]
 * 使用运算符&#39;&#39;[!UICONTROL maps to]”，因为我们希望为每个数字创建与其值的映射
 * 您将看到一个表来列出每个映射。 最终，它看上去将类似于此：
 * 根据上面的映射和URL，使用此登陆页面的接触点的“Region_Value”将为“EMEA”
@@ -171,7 +171,7 @@ ht-degree: 0%
 
 **连接**
 
-contenates运算符将多个字段中的值组合到单个字段中。 这对于创建跨多个字段提取数据的自定义值非常有用，以便
+此 [!UICONTROL concatenates] 运算符将多个字段中的值组合到单个字段中。 这对于创建跨多个字段提取数据的自定义值非常有用，以便
 
 **示例#1**
 
@@ -197,7 +197,7 @@ Segment__c和Grade__c的Opportunity对象上有单独的字段，用户希望将
 
 ![](assets/eleven.png)
 
-## 常见问题解答 {#faq}
+## 常见问题 {#faq}
 
 **我们可以创建的接触点字段数量是否存在上限？**
 
@@ -217,11 +217,11 @@ Segment__c和Grade__c的Opportunity对象上有单独的字段，用户希望将
 
 **为什么我看不到新字段在 [!DNL Marketo Measure] 纲要？**
 
-需要执行额外的操作才能在中公开新字段。 [!DNL Marketo Measure] 架构Data warehouse。 目前，通过设置和配置公开字段，因此您可以在构建区段或创建接触点删除规则时使用接触点字段。
+需要执行额外的操作才能在中公开新字段。 [!DNL Marketo Measure] 架构Data Warehouse。 目前，通过设置和配置公开字段，因此您可以在构建区段或创建接触点删除规则时使用接触点字段。
 
 **如何验证提取表达式是否有效以及提取的值是否正确？**
 
-有一个在线工具([https://regex101.com/](https://regex101.com/){target="_blank"})，可以运行并测试表达式。 表达式如果有效，则显示绿色；如果无效，则显示红色。 另外，右上方的说明框非常有用，可告诉您正在提取的内容。
+有一个在线工具([[!DNL https]：//regex101.com/](https://regex101.com/){target="_blank"})，可以运行并测试表达式。 表达式如果有效，则显示绿色；如果无效，则显示红色。 此外， [!UICONTROL explanation] 右上方的框很有用，可告诉您正在提取的内容。
 
 ![](assets/twelve.png)
 
