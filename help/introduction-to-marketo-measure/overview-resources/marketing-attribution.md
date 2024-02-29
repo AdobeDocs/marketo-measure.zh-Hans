@@ -4,10 +4,10 @@ description: 营销归因 — Marketo Measure — 产品文档
 title: 营销归因
 exl-id: 6d838612-d158-4db0-bb9e-b615066fd97b
 feature: Attribution
-source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
+source-git-commit: 204340c77a173c3e8fd87b65ed47a1a0dbc35880
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 4%
 
 ## 欢迎使用Marketo Measure {#welcome-to-marketo-measure}
 
-Marketo Measure 使营销人员能够洞悉哪些营销活动在为公司增加收入方面最有效。Marketo Measure是一种营销归因解决方案，可自动跟踪和报告渠道效果，让您可见哪些渠道可带来最大的客户参与度，并允许您相应地优化营销支出。
+Marketo Measure使营销人员能够洞悉哪些营销工作在为公司增加收入方面最有效。 Marketo Measure是一种营销归因解决方案，可自动跟踪和报告渠道效果，让您可见哪些渠道可带来最大的客户参与度，并允许您相应地优化营销支出。
 
 ## 营销归因 {#marketing-attribution-1}
 
 **营销归因** 是将收入点数分配给营销接触点的过程。 这是通过跟踪潜在客户的整个客户历程来完成的，从他们与公司的首次互动到交易完成。 该交易产生的收入被归因于推动销售的营销接触点。 提供给接触点的收入点数取决于该接触点对客户的购买决策的影响程度。
 
-**接触点** 请参阅潜在客户/潜在客户与您的在线或离线营销工作之间的交互。 有四个 **主要&#x200B;**接触点** 在营销归因中考虑的因素。 它们反映了客户历程的不同阶段。 这些主要的接触点，也称为 **里程碑接触点**，包括： First Touch (FT) 、 Lead Creation (LC) 、 Opportunity Creation (OC) 、 Closed Won deal (CW)。
+**接触点** 请参阅潜在客户/潜在客户与您的在线或离线营销工作之间的交互。 有四个 **主要接触点** 在营销归因中考虑的因素。 它们反映了客户历程的不同阶段。 这些主要的接触点，也称为 **里程碑接触点**，包括： First Touch (FT) 、 Lead Creation (LC) 、 Opportunity Creation (OC) 、 Closed Won deal (CW)。
 
 ![](assets/1.png)
 
