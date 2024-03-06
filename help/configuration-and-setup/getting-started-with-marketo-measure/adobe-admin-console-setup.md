@@ -3,9 +3,9 @@ description: Adobe Admin Console设置 — Marketo Measure — 产品文档
 title: Adobe Admin Console设置
 feature: Installation
 exl-id: f9edacae-79e0-408c-ac37-bbe67c185f2d
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 作为Adobe包中的产品， [!DNL Marketo Measure] 使用Adobe Admin Console for Identity Management的完整功能。 更多资源可以 [在此处找到](https://helpx.adobe.com/cn/enterprise/using/admin-console.html).
 
-我们建议查看您可用的所有资源、最佳实践和选项，以便 [Identity Management](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
+建议您查看可用的资源、最佳实践和选项，以便用于 [Identity Management](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
 
 有关在Adobe Admin Console中设置Identity Management的指导和审查，请联系 [!DNL Marketo Measure] 客户代表。
 

@@ -3,9 +3,9 @@ description: API连接的最佳实践 —  [!DNL Marketo Measure]
 title: API连接的最佳实践
 exl-id: b8550e4e-a567-427f-b5d3-50232553a066
 feature: APIs, Integration
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '736'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 最佳实践 {#best-practice}
 
-无论您连接的是哪个广告平台，都必须牢记以下准则！
+无论您连接的广告平台如何，请务必牢记以下准则！
 
 * 使用管理员进行连接
 * 您可以为一个平台连接多个广告帐户

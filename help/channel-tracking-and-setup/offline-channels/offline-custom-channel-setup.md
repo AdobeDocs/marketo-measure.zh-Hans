@@ -4,9 +4,9 @@ description: 脱机自定义渠道设置 —  [!DNL Marketo Measure]
 title: 脱机自定义渠道设置
 exl-id: c5697714-1a79-40bd-8b7c-e10768f4ef67
 feature: Channels
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -77,9 +77,9 @@ SFDC促销活动类型将显示在离线渠道的选项卡中，列在下 [!DNL 
 
 >[!TIP]
 >
->想要确定 _时间_ a [!DNL Salesforce] 营销活动类型被提取到 [!DNL Marketo Measure] 渠道映射？ 只需转到 **[!UICONTROL Setup]** > **[!UICONTROL Campaigns]** > **[!UICONTROL Fields]** > **[!UICONTROL Type]**. 然后，您可以查看选择列表中包含哪些值以及哪些值处于非活动状态。 未激活的报表将不会在我们的“”中显示为可选类型[!UICONTROL Offline Channels]“ ”部分。 请注意，此过程可能需要几分钟到48小时的时间。
+>想要确定 _时间_ a [!DNL Salesforce] 营销活动类型被提取到 [!DNL Marketo Measure] 渠道映射？ 转到 **[!UICONTROL Setup]** > **[!UICONTROL Campaigns]** > **[!UICONTROL Fields]** > **[!UICONTROL Type]**. 然后，您可以查看选择列表中包含哪些值以及哪些值处于非活动状态。 未激活的报表将不会在我们的“”中显示为可选类型[!UICONTROL Offline Channels]“ ”部分。 请注意，此过程可能需要几分钟到48小时的时间。
 
-单击 **[!UICONTROL Save]** 等你完工，然后 [!DNL Marketo Measure] 将上传更改并重新处理数据。
+单击 **[!UICONTROL Save]** 当您完成并 [!DNL Marketo Measure] 将上传更改并重新处理数据。
 
 >[!MORELIKETHIS]
 >

@@ -4,16 +4,16 @@ description: "[!DNL Marketo Engage] 活动集成 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Engage] 活动集成”'
 exl-id: 463ad9b2-e1bd-49dd-8bf5-0da7b7132f05
 feature: Integration
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1640'
 ht-degree: 0%
 
 ---
 
 # [!DNL Marketo Engage] 活动集成 {#marketo-engage-activities-integration}
 
-作为整体的 [!DNL Marketo Measure] 和 [!DNL Marketo Engage] 集成，这种引入Marketo活动的努力将发挥巨大作用。 通过Marketo Activities，系统会跟踪点击电子邮件、更改得分或更改进度状态等事件 — 可以缩小这些活动类型并将其定义为选择符合接触点条件的子集。 在这些活动上创建接触点后，即会在参与历程中进行跟踪，并与您的其他营销渠道（如付费搜索或合作伙伴营销）一起衡量。
+作为整体的 [!DNL Marketo Measure] 和 [!DNL Marketo Engage] 集成，这种引入Marketo活动的努力将发挥巨大作用。 通过Marketo活动，系统会跟踪如下事件 `Click Email`， `Change Score` 或 `Change Status in Progression`  — 可以缩小和定义这些活动类型，以选择符合接触点条件的子集。 在这些活动上创建接触点后，即会在参与历程中进行跟踪，并与您的其他营销渠道（如付费搜索或合作伙伴营销）一起衡量。
 
 ## 要求 {#requirements}
 
@@ -32,17 +32,17 @@ ht-degree: 0%
 
    ![](assets/two-1.png)
 
-   首先需要选择计划构建规则的活动类型列表。 没有硬性数量的活动类型是必需的，但我们还建议您不要让接触点过载并淡化重要里程碑的重要性。 话虽如此，您无需超过5种活动类型即可跟踪相关参与。
+   首先需要选择计划构建规则的活动类型列表。 不需要固定数量的活动类型，但建议您不要让接触点过载并淡化重要里程碑的重要性。 这样，您就无需超过五种活动类型即可跟踪相关参与。
 
 1. 单击下面的下拉菜单 [!UICONTROL Select Activities Types] 开始选择各种类型。
 
    ![](assets/three-1.png)
 
-1. 选择所有需要的活动后，您也会看到它们已填充到您的 [!UICONTROL Selected Activities List] 以及下 [!UICONTROL Define Rules].
+1. 选择所有需要的活动后，您会看到它们已填充到 [!UICONTROL Selected Activities List] 和下 [!UICONTROL Define Rules].
 
    ![](assets/four-1.png)
 
-1. 对于每个活动类型，您将需要定义一个或多个规则来确定哪些记录符合接触点条件。 例如，我们将为“更改得分”活动类型添加规则，以便系统在Marketo人员达到90分或更高的分数时创建一个接触点。
+1. 对于每个活动类型，您必须定义一个或多个规则来确定哪些记录适用于接触点。 在本例中，我们为“更改得分”活动类型添加了一个规则，以便系统在Marketo人员达到90分或更高Score时创建一个接触点。
 
 1. 首先，根据活动类型，您可能需要设置 [!DNL Marketo Measure] 稍后可用于渠道映射的营销活动名称。 [!DNL Marketo Measure] 营销活动名称可以在多个规则中重复使用。 这有助于在单个渠道规则中使用更广泛的名称。 并非所有活动类型都包含Marketo程序，因此第一步，需要指定一个名称。
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
    ![](assets/five-1.png)
 
-1. 在我们的“更改得分”示例中，我们不需要输入促销活动名称，因为我们可以从Marketo项目中提取该信息。 现在，您可以创建规则表达式。 按照我们的示例，我们要选择字段&quot;[!UICONTROL New Value]带有运算符“”的“[!UICONTROL is greater than]”创建URL。
+1. 在“更改得分”示例中，需要输入“促销活动名称”，因为该信息是从Marketo项目中提取的。 现在创建规则表达式。 在此示例之后，选择字段»[!UICONTROL New Value]带有运算符“”的“[!UICONTROL is greater than]”创建URL。
 
    您可以展开规则，并通过添加“and”或“or”语句来缩小结果范围，从而添加其他过滤器或标准。
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
    ![](assets/seven-1.png)
 
-1. 最后，选择我们应该使用什么作为接触点日期。 所有可用的日期或日期/时间字段都将在此处显示Marketo。 除非您有自定义日期字段，否则您将会看到&quot;[!UICONTROL Activity Date]“
+1. 最后，选择要用作接触点日期的内容。 所有可用的日期或日期/时间字段均在此处显示Marketo。 除非您有自定义日期字段，否则您会看到“[!UICONTROL Activity Date]“
 
    ![](assets/eight-1.png)
 
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 ## 活动类型 {#activity-types}
 
-有些活动类型会向我们提供项目ID和项目名称，因此可以轻松将其映射到买方接触点上的促销活动ID和促销活动名称。 对于其他人，没有程序关联，因此部分规则定义将要求您创建 [!DNL Marketo Measure] 营销活动名称。 以下是每个类别的列表：
+有些活动类型会向我们提供项目ID和项目名称，因此可以轻松将其映射到买方接触点上的促销活动ID和促销活动名称。 对于其他人，没有程序关联，因此规则定义的一部分要求您创建 [!DNL Marketo Measure] 营销活动名称。 以下是每个类别的列表：
 
 **具有项目ID的活动类型**
 
@@ -154,7 +154,7 @@ SFDC活动(26)\
 
 ## 渠道映射 {#channel-mapping}
 
-对于具有项目ID的活动类型中的任意规则，Marketo项目渠道由项目确定。 我们使用项目渠道来映射到您的自定义离线渠道，因此您将需要确保渠道配置正确 [按照此处的说明](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping).
+对于具有项目ID的活动类型中的任意规则，Marketo项目渠道由项目确定。 我们使用项目渠道来映射到您的自定义离线渠道，因此您需要确保正确配置渠道 [按照此处的说明](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping).
 
 对于没有项目ID的活动类型中的任何规则，您的第一步是创建营销活动名称。 使用此Campaign名称设置自定义在线渠道 [此处布局](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md).
 
@@ -168,7 +168,7 @@ SFDC活动(26)\
 
 由于 [!DNL Marketo Measure] 与Marketo集成， [!DNL Marketo Measure] Cookie ID现在也已映射并与 [!DNL Marketo Munchkin Id]. 这有助于弥合将匿名首次接触归因于Web会话的差距，而不是将FT和LC接触都归因于Marketo活动。 设想一下这种情形：
 
-Mark点击了一下Facebook广告，然后登陆了wayneenterprises.com ，在那里他受到了 [!DNL Marketo Measure] Id 123和 [!DNL Marketo Munchkin Id] 456。 没有表单填写。
+Mark单击Facebook广告并登陆wayneenterprises.com ，在那里他获得了一个Cookie [!DNL Marketo Measure] Id 123和 [!DNL Marketo Munchkin Id] 456。 没有表单填写。
 
 Wayne Enterprises营销团队会向特定的目标潜在客户发送电子邮件爆炸邮件，其中一个潜在客户是 `mark@email.com`.
 
@@ -188,11 +188,11 @@ Wayne Enterprises营销团队创建一个Marketo活动规则，以生成“点�
 
 **如何知道是创建Marketo项目规则还是Marketo活动规则？**
 
-此 [!DNL Marketo Engage] 项目集成是一种根据人员是否为项目群成员来生成接触点的简单方法。 如果您有兴趣根据人员更改为特定项目群状态的时间来定义规则， [!DNL Marketo Engage] 活动集成将是您想要的设置，尤其是“更改进展中的状态”活动类型，这样您的接触点日期可以映射到系统生成的活动日期。
+此 [!DNL Marketo Engage] 项目集成是一种根据人员是否为项目的项目成员来生成接触点的简单方法。 如果您希望根据人员更改至特定项目群状态的时间来定义规则，请 [!DNL Marketo Engage] 活动集成将是您想要的设置，尤其是“更改进展中的状态”活动类型，这样您的接触点日期可以映射到系统生成的活动日期。
 
 **为什么我的接触点类型的名称会被截断？**
 
-“接触点类型”字段创建于 [!DNL Marketo Measure] 包含16个字符的包。 不幸的是，更改字段的字符限制将需要弃用现有字段并创建新字段。 “接触点类型”的值是“活动类型”，同样在“媒介”字段中进行了设置。
+“接触点类型”字段创建于 [!DNL Marketo Measure] 包含16个字符的包。 不幸的是，更改字段的字符限制将需要弃用现有字段并创建一个字段。 “接触点类型”的值是“活动类型”，同样在“媒介”字段中进行了设置。
 
 **为什么我的自定义活动类型没有显示在可用活动列表中？**
 
@@ -200,7 +200,7 @@ Wayne Enterprises营销团队创建一个Marketo活动规则，以生成“点�
 
 **如何确定要为其生成接触点的活动类型？**
 
-尽管您可以创建的活动类型数量没有限制，但我们通常建议创建的活动类型不超过5个。 确定哪些营销活动相关程度足以成为接触点历程的一部分需要时间。 例如，“取消订阅电子邮件”可能不是要跟踪的重要接触点，但包含其他过滤器的“点击电子邮件”可能是一个很好的接触点。 这因每个组织和每个团队而异，因此我们建议您与团队合作，一起脑力激荡此处的最佳方法。
+尽管您可以创建的活动类型的数量没有限制，但我们通常建议创建的活动类型不超过5个。 确定哪些营销活动相关程度足以成为接触点历程的一部分需要时间。 例如，“取消订阅电子邮件”可能不是要跟踪的重要接触点，但包含其他过滤器的“点击电子邮件”可能是一个很好的接触点。 这因每个组织和每个团队而异，因此我们建议您与团队合作，一起脑力激荡此处的最佳方法。
 
 **为何我的浏览器名称被截断？**
 

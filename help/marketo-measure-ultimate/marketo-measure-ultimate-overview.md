@@ -3,9 +3,9 @@ description: ’[!DNL Marketo Measure] Ultimate概述 —  [!DNL Marketo Measure
 title: ’[!DNL Marketo Measure] 旗舰版概述
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 [!DNL Marketo Measure Ultimate] 包含其他功能：
 
-* 从几乎任何数据源以及同一类型的多个数据源进行摄取，以引入所有数据来进行归因。
+* 从几乎任何数据源和多个相同类型的数据源进行摄取，以引入所有数据来进行归因。
    * 可与几乎任何CRM一起使用，而不仅仅是Salesforce和Dynamics。
    * 将多个CRM实例和/或MAP实例连接到一个 [!DNL Marketo Measure] 实例。
    * 引入第三方网络研讨会注册和参与数据。
@@ -39,13 +39,13 @@ ht-degree: 0%
 
 **通过AEP导入B2B数据**
 
-营销人员应通过AEP引入其B2B数据（例如客户、机会、联系人、潜在客户、营销活动、营销活动成员、活动）。 Ultimate不再提供直接CRM和Marketo Engage连接。 营销人员将继续通过直接连接引入广告平台数据，并通过跟踪Web活动 [!DNL Marketo Measure] javascript。
+营销人员应通过AEP引入其B2B数据（例如，客户、机会、联系人、潜在客户、促销活动、促销活动成员、活动）。 Ultimate不再提供直接CRM和Marketo Engage连接。 营销人员继续通过直接连接引入广告平台数据，并通过跟踪Web活动 [!DNL Marketo Measure] javascript。
 
 ![](assets/marketo-measure-ultimate-overview-3.png)
 
 **默认货币设置**
 
-[!DNL Marketo Measure Ultimate] 将默认货币设置为USD，直到用户更改为止。 设置新的默认货币将更新数据，而无需重新处理。 只要所选货币以目标ISO代码的形式存在，就无需提交兑换率。
+[!DNL Marketo Measure Ultimate] 将默认货币设置为USD，直到用户更改它。 设置新的默认货币可更新数据，而无需重新处理。 只要所选货币以目标ISO代码的形式存在，就无需提交兑换率。
 
 ![](assets/marketo-measure-ultimate-overview-4.png)
 
@@ -55,11 +55,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->A [!DNL Marketo Measure Ultimate] 生产实例需要映射到AEP生产沙盒，即 [!DNL Marketo Measure Ultimate] 开发人员实例需要映射到AEP开发人员沙盒。
+>A [!DNL Marketo Measure Ultimate] 生产实例必须映射到AEP生产沙盒，即 [!DNL Marketo Measure Ultimate] 开发人员实例必须映射到AEP开发人员沙盒。
 
-保存沙盒映射选择后，您现在无法在应用程序中更改它。 要更改它，请联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+一旦保存了沙盒映射选择，您就无法在应用程序中更改它。 要更改它，请联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
-来自给定数据源的给定实体（例如，帐户）的数据只能进入一个数据集。 每个数据集只能包含在一个数据流中。 违规将在运行时停止数据流。
+来自给定数据源的给定实体（例如，帐户）的数据只能进入一个数据集。 每个数据集只能包含在一个数据流中。 违规会在运行时停止数据流。
 
 ![](assets/marketo-measure-ultimate-overview-5.png)
 
@@ -106,8 +106,8 @@ Campaign成员接触点规则和活动接触点规则特定于数据集。
 
 ## 限制 {#limitations}
 
-* 目前数据转换规则的可用字段有限。
-* 现有第1/2/3层用户没有迁移路径。 需要新的实施，但我们将帮助从现有实例迁移跟踪的Web活动数据。
+* 有限字段可用于数据转换规则。
+* 现有第1/2/3层用户没有迁移路径。 需要新的实施，但我们会帮助从现有实例迁移跟踪的Web活动数据。
 
 >[!MORELIKETHIS]
 >

@@ -4,9 +4,9 @@ description: 授权 [!DNL Salesforce] 访问 [!DNL Marketo Measure] 支持 —  
 title: 授权 [!DNL Salesforce] 访问Marketo Measure支持
 exl-id: 97383cca-3c3b-42d3-83bc-5886d8005ac3
 feature: Salesforce
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---

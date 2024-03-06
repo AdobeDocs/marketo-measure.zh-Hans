@@ -2,9 +2,9 @@
 description: 参与仪表板 —  [!DNL Marketo Measure]  — 产品
 title: 参与仪表板
 feature: Reporting
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 ### KPI拼贴 {#kpi-tiles}
 
 * 接触点：生成的原始接触点总数。
-   * 买方接触点和买方归因接触点是通过为信用选择特定接触点创建的归因结果。 并非所有接触点都将被选为BT和BAT。
+   * 买方接触点和买方归因接触点是通过为信用选择特定接触点创建的归因结果。 并非所有接触点都被选为BT和BAT。
 * 接触的人：具有任何接触点的人总数。
 * 每个人的接触点：每个被接触者的平均接触点数。
 

@@ -4,9 +4,9 @@ description: "[!DNL Marketo Measure] CRM无包集成 —  [!DNL Marketo Measure]
 title: '"[!DNL Marketo Measure] CRM无包集成”'
 exl-id: a4f31d82-63ec-4bb2-bc8b-d3495e61af4f
 feature: Integration
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ A [!DNL Marketo Measure] CRM无包集成仍需要访问标准CRM对象，如潜�
 
 [!DNL Microsoft Dynamics] 客户点击 [此处](/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/microsoft-dynamics-crm-installation-guide.md).
 
-完成上述步骤后，即可开始使用了。 如果您在此过程中遇到任何问题，请随时联系您的 [!DNL Marketo Measure] 代表或 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
+完成这些步骤后，集成应该可以正常运行。 如果您遇到任何问题，请联系 [!DNL Marketo Measure] 代表或 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}.
 
 >[!NOTE]
 >

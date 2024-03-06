@@ -4,9 +4,9 @@ description: "[!DNL Marketo Measure] 动态架构 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] 动态架构”'
 exl-id: f8da47b1-d844-4bd2-8125-8689cbb5cc30
 feature: Microsoft Dynamics
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1070'
 ht-degree: 22%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 22%
 >
 >您可能会看到说明“[!DNL Marketo Measure]”，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
-在下方，您会找到开始使用所需的Dynamics架构 [!DNL Marketo Measure]. 列出所有实体和字段以及所需的读取和/或写入权限。
+以下是开始使用所需的Dynamics架构 [!DNL Marketo Measure]. 列出所有实体和字段以及所需的读取和/或写入权限。
 
 ## 买方接触点 {#buyer-touchpoints}
 
@@ -912,7 +912,7 @@ ht-degree: 22%
 
 ## Dynamics标准实体 {#dynamics-standard-entities}
 
-此列表提供具有以下功能的Dynamics Standard实体： [!DNL Marketo Measure] 与交互，以及我们添加到这些实体的自定义字段交互。
+此列表提供具有以下功能的Dynamics Standard实体： [!DNL Marketo Measure] 与交互，以及我们添加到这些实体的自定义字段。
 
 **商机**
 

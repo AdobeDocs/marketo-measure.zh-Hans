@@ -4,9 +4,9 @@ description: Marketo Measure框架 — Marketo Measure — 产品文档
 title: Marketo Measure框架
 exl-id: fa6de27c-cdd2-4fd9-ac35-7286fe2752d8
 feature: Fundamentals
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Marketo Measure与CRM集成，以存放和管理Marketo Measure JS捕获的所�
 
 ![](assets/1-2.png)
 
-通过在CRM中显示Marketo Measure数据，您将能够查看与每个接触点相关的粒度信息并生成报告以了解您的渠道的执行情况。
+通过在CRM中显示Marketo Measure数据，您可以查看与每个接触点相关的粒度信息，并生成报告以了解您的渠道的执行情况。
 
 ## 第三方应用程序 {#third-party-applications}
 

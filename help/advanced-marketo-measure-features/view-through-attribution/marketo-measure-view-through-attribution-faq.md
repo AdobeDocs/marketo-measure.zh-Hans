@@ -4,7 +4,7 @@ description: "[!DNL Marketo Measure] 通过归因常见问题解答进行查看 
 title: '"[!DNL Marketo Measure] 通过归因常见问题解答进行查看”'
 exl-id: d20e88f3-3ff8-4381-a4b8-6862798caa74
 feature: Attribution
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 为什么是 [!UICONTROL View Through Attribution] 重要事项？ {#why-is-view-through-attribution-important}
 
-从历史上看，营销人员很难在归因分析中考虑重新定位或展示广告。 潜在客户可能会一次又一次地接触到重新定位的广告，但他们不太可能实际点击这些广告之一，并在同一会话中填写表格。 现在，我们的通过归因查看解决方案能够跟踪某人是否接触了展示广告。 此接触点将附加到个人记录中，并将一直执行，直到潜在客户成为客户。 有了这些信息，营销人员现在可以更好地了解其重新定位广告的表现。
+从历史上看，营销人员很难在归因分析中考虑重新定位或展示广告。 潜在客户可能会一次又一次地接触到重新定位的广告，但他们实际上不太可能单击这些广告之一，并在同一会话中填写表格。 现在，我们的通过归因查看解决方案能够跟踪某人是否接触了展示广告。 此接触点将附加到个人记录中，并将一直执行，直到潜在客户成为客户。 有了这些信息，营销人员现在可以更好地了解其重新定位广告的表现。
 
 ## 设置过程中涉及哪些内容？ {#what-is-involved-in-setting-this-up}
 

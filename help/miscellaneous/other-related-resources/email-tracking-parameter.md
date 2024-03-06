@@ -4,9 +4,9 @@ description: 电子邮件跟踪参数 —  [!DNL Marketo Measure]
 title: 电子邮件跟踪参数
 exl-id: e2cfd59e-ce4a-4cbb-b64a-828d1db7410f
 feature: Tracking
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '403'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 当访客访问您的网站时， [!DNL Marketo Measure] 期望找到包含电子邮件地址或 [!DNL Salesforce] ID，以便我们可以将该访问与“表单提交”相关联，并生成该活动接触点。
 
-作为客户，您可以像往常一样构建电子邮件模板。 在需要为要跟踪的操作添加登陆页面后，您需要确定令牌、变量标记或宏，营销自动化平台可以接受这些标记或宏以动态显示每个人的值。
+作为客户，您可以像往常一样构建电子邮件模板。 在需要为要跟踪的操作添加登陆页面后，您必须确定令牌、变量标记或宏，营销自动化平台可以接受这些标记或宏以动态显示每个人的值。
 
 Marketo Measure接受以下值：电子邮件地址、Salesforce潜在客户Id或Salesforce联系人Id。
 
@@ -72,6 +72,6 @@ Marketo Measure接受以下值：电子邮件地址、Salesforce潜在客户Id�
  </tbody> 
 </table>
 
-最后，在内部 [!DNL Marketo Measure]，您需要指定跟踪参数，以便 [!DNL Marketo Measure] 可以找到电子邮件或ID值。 默认值为“mailId”，如上面的示例和下面的屏幕快照所示。 在的“设置”中输入值 [!DNL Marketo Measure]，然后单击 **[!UICONTROL Save]**.
+最后，在内部 [!DNL Marketo Measure]，您必须指定跟踪参数，以便 [!DNL Marketo Measure] 可以找到电子邮件或ID值。 默认值为“mailId”，如上面的示例和下面的屏幕快照所示。 在的“设置”中输入值 [!DNL Marketo Measure]，然后单击 **[!UICONTROL Save]**.
 
 ![](assets/one.png)

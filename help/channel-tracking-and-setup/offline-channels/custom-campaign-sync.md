@@ -4,9 +4,9 @@ description: 自定义Campaign同步 —  [!DNL Marketo Measure]
 title: 自定义Campaign同步
 exl-id: 66f0e4e3-c1b6-443e-8ffa-06b67862b855
 feature: Channels
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,6 @@ ht-degree: 0%
 
    ![](assets/9.png)
 
-1. 您还可以单击Member count （成员计数）以查看作为Campaign规则资格一部分的潜在客户和联系人及其ID的列表。 这只是一个示例集，最多可显示50个记录，以便您了解哪些记录符合条件。
+1. 您还可以单击成员数以查看属于Campaign规则资格的销售线索和联系人及其ID的列表。 这只是一个示例集，最多可显示50个记录，以便您了解哪些记录符合条件。
 
    ![](assets/10.png)

@@ -4,9 +4,9 @@ description: "[!DNL Marketo Measure] Cookie - [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] Cookies”'
 exl-id: de6e35ae-af92-43ba-8416-3e07d3dd470c
 feature: Tracking
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '393'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->出于隐私考虑，第三方Cookie即将退出。 Google Chrome宣布在2024年第3季度弃用第三方Cookie，这实际上标志着这种跟踪形式的结束。 因此，Adobe将弃用依赖第三方Cookie的Marketo Measure功能，特别是跨域跟踪和浏览归因，后者使用Google/DoubleClick展示次数Cookie。 任何其他Marketo Measure功能都不会受到影响。 第一方Cookie的使用也不受影响。 按照Google的时间表，预计上述两个功能的弃用日期为2024年6月1日。 Adobe客户仍可使用此日期之前收集的相关数据。
+>出于隐私考虑，第三方Cookie即将退出。 Google Chrome宣布在2024年第3季度弃用第三方Cookie，这实际上标志着这种跟踪形式的结束。 因此，Adobe将弃用依赖第三方Cookie的Marketo Measure功能，特别是跨域跟踪和浏览归因，后者使用Google/DoubleClick展示次数Cookie。 任何其他Marketo Measure功能都不会受到影响。 第一方Cookie的使用也不受影响。 按照Google的时间表，预计上述两个功能的弃用日期为2024年6月1日。 在此日期之前收集的相关数据仍可供Adobe客户使用。
 
 <table>
 <thead>
@@ -97,7 +97,7 @@ ht-degree: 4%
   </tr>
   <tr>
     <td>_BUID</td>
-    <td>第三方，域=。<a href="http://bizible.com/">bizible.com</a></td>
+    <td>第三方，域=。<a href="https://business.adobe.com/products/marketo/bizible.html">bizible.com</a></td>
     <td>跨多个域标识用户的通用用户ID。</td>
     <td>1年</td>
     <td>是</td>
@@ -116,6 +116,6 @@ ht-degree: 4%
 </tbody>
 </table>
 
-如果在JavaScript设置期间触发了Web应用程序防火墙(WAF)警告，则用户可以禁用该WAF规则或将Cookie列入允许列表，如下例所示：
+如果在JavaScript设置期间触发了Web应用程序防火墙(WAF)警告，则用户可以禁用该WAF规则或允许列表Cookie，如下例所示：
 
 ![](assets/marketo-measure-cookies-1.png)

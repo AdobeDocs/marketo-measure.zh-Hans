@@ -2,9 +2,9 @@
 description: ’[!DNL Marketo Measure] 最终实施指南 —  [!DNL Marketo Measure]’
 title: ’[!DNL Marketo Measure] 最终实施指南
 feature: Integration, Tracking, Attribution
-source-git-commit: 289c40a07c60ccc0262e2aaf95f21fca0c945b11
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 使用Ultimate与标准层的主要区别 {#main-differences-when-using-ultimate-over-standard-tiers}
 
-通过AEP导入B2B数据：营销人员应通过AEP导入其B2B数据（例如，客户、机会、联系人、潜在客户、营销活动、营销活动成员、活动）。 从几乎任何数据源以及同一类型的多个数据源进行摄取，以引入所有数据来进行归因。
+通过AEP导入B2B数据：营销人员应通过AEP导入其B2B数据（例如，客户、机会、联系人、潜在客户、营销活动、营销活动成员、活动）。 从几乎任何数据源和多个相同类型的数据源进行摄取，以引入所有数据来进行归因。
 
 * 可与几乎任何CRM一起使用，而不仅仅是Salesforce和Dynamics。
 * 将多个CRM实例和/或MAP实例连接到一个Marketo Measure实例。
@@ -24,11 +24,11 @@ ht-degree: 0%
 Ultimate不再提供直接CRM和Marketo Engage连接。
 
 * Ultimate不会将数据推送回CRM。 客户可以使用数据仓库中的数据。
-* 营销人员将继续通过直接连接引入广告平台数据，并通过Marketo Measure javascript跟踪Web活动。
+* 营销人员继续通过直接连接和通过Marketo Measure javascript跟踪Web活动来引入广告平台数据。
 
-最终用户将配置AEP。 如果他们已经具有AEP，我们将不会重新配置新实例。
+最终用户会配置AEP。 如果他们已经具有AEP，我们将不会重新配置新实例。
 
-* 所设置的AEP版本将仅包括所有源连接器、架构数据建模、数据集、Ad Hoc查询服务和适用于Marketo Measure的目标。
+* 配置的AEP版本包括所有源连接器、架构数据建模、数据集、临时查询服务，以及仅适用于Marketo Measure的目标。
 
 了解有关 [Marketo Measure Ultimate](/help/marketo-measure-ultimate/marketo-measure-ultimate-overview.md){target="_blank"}.
 
@@ -51,7 +51,7 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 
 ## 创建架构 {#creating-a-schema}
 
-我们建议使用自动生成实用程序来创建10个标准B2B架构。
+我们建议使用自动生成实用程序来创建十个标准B2B架构。
 
 * 下载和设置实用程序的步骤 [可在此处找到](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}.
 
@@ -61,7 +61,7 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 
 ![](assets/marketo-measure-ultimate-implementation-guide-2.png)
 
-* 选择一个帐户和所有B2B模板，以创建10个标准B2B架构。
+* 选择一个帐户和所有B2B模板，以创建十个标准B2B架构。
 
 ![](assets/marketo-measure-ultimate-implementation-guide-3.png)
 
@@ -69,7 +69,7 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 
 >[!IMPORTANT]
 >
->添加新数据集时，我们建议创建一个新流量而不是使用现有流量。
+>添加新数据集时，我们建议创建流量而不是使用现有流量。
 
 [数据流概述](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html){target="_blank"}
 
@@ -78,7 +78,7 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 1. 选择源。
 1. 选择现有帐户或创建帐户。
 1. 从可用类型列表中选择数据类型，以从源导入。
-1. 选择现有数据集或创建新数据集。
+1. 选择现有数据集或创建数据集。
 1. 将源中的字段映射到架构。
 
    >[!NOTE]
@@ -91,7 +91,7 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
    >[!CAUTION]
    >
    >* 您可以编辑数据流，但在更改映射时不会回填数据。
-   >* 如果必填字段为NULL，则将拒绝整个流。
+   >* 如果必填字段为NULL，则会拒绝整个流。
 
    >[!NOTE]
    >
@@ -99,7 +99,7 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 
 1. 设置数据加载节奏。
 1. 查看并完成。
-1. 检查数据流状态测量UI设置中的“帐户状态”页面。
+1. 检查测量UI设置中的“帐户状态”页面，了解数据流状态。
 
 **监控：**
 
@@ -131,12 +131,12 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 
 >[!NOTE]
 >
->* 来自给定源的给定实体（例如，帐户）的数据只能进入一个数据集。 每个数据集只能包含在一个数据流中。 违规将在运行时停止数据流。
->* 在AEP中删除整个目标以删除度量中的数据。 禁用将仅停止新数据导出并保留旧数据。
+>* 来自给定源的给定实体（例如，帐户）的数据只能进入一个数据集。 每个数据集只能包含在一个数据流中。 违规会在运行时停止数据流。
+>* 在AEP中删除整个目标以删除度量中的数据。 禁用将停止新数据导出并保留旧数据。
 >* 测量配置的外观大致相同，但某些部分（如暂存映射）的外观会有所不同。
 >* 新数据流生成流运行需要几个小时，然后定期进行每小时一次。
 
-在衡量标准中，需要在“货币”部分设置默认货币
+在衡量标准中，必须在“货币”部分中设置默认货币
 
 * 如果您使用多货币，则必须在AEP中填充货币兑换率架构，以便我们读取和进行兑换。
 
@@ -157,11 +157,11 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 
 **营销活动成员规则：**
 
-需要选择一个数据集并为每个数据集设置规则。
+选择一个数据集并为每个数据集设置规则。
 
 **体验事件规则：**
 
-需要选择一个数据集并选择活动类型。
+选择数据集并选择活动类型。
 
 * 尚不支持自定义活动。
 * 如果客户的活动不适合可用选项，我们建议将其分类为“有趣的时刻”，并使用自定义字段区分它们。
@@ -169,7 +169,7 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 **脱机渠道：**
 
 * 我们不执行特定于数据集的渠道映射规则，因此这将是全局的。
-* 我们最终需要匹配CRM营销活动类型和渠道，但现在，作为解决方法，我们可以将渠道名称映射到两个字段。
+* 我们最终必须匹配CRM Campaign类型和渠道，但现在，作为解决方法，可以将渠道名称映射到两个字段。
 * **渠道规则：回填的数据将没有阶段过渡数据。**
 
 接触点和区段设置保持不变。

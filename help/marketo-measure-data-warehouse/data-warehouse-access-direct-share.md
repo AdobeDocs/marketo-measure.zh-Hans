@@ -3,9 +3,9 @@ description: Data Warehouse访问 — 直接共享 — 产品文档
 title: Data Warehouse访问 — 直接共享
 exl-id: 940c3316-5f94-4aa2-a656-aec5eb7b7450
 feature: Data Warehouse
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## 要求 {#requirements}
 
-为了 [!DNL Marketo Measure] 要设置直接共享到Data Warehouse，您必须满足以下要求。
+对象 [!DNL Marketo Measure] 要设置直接共享到Data Warehouse，您必须满足以下要求。
 
 * 您有自己的Snowflake实例。
 * 您的Snowflake实例位于Azure East US 2Snowflake区域。
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 限制 {#limitations}
 
-[!DNL Marketo Measure] 由于当前的Snowflake直接共享限制，将只能使用Azure East US 2中的帐户设置Snowflake直接共享。 如果您要求您的数据在其他Snowflake地区可用，我们建议在位于Azure East US 2的Snowflake帐户中制作数据副本，并利用 [Snowflake数据库复制](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"} 功能，可在您选择的Snowflake地区/帐户中复制您的数据。
+[!DNL Marketo Measure] 由于当前的Snowflake直接共享限制，将只能使用Azure East US 2中的帐户设置Snowflake直接共享。 如果您要求您的数据在其他Snowflake地区可用，我们建议在Azure East US 2的Snowflake帐户中制作数据副本，并使用 [Snowflake数据库复制](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"} 功能，可在您选择的Snowflake地区/帐户中复制您的数据。
 
 ## 输入Snowflake帐户ID {#enter-snowflake-account-id}
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 访问共享 {#accessing-the-share}
 
-为提供的帐户ID创建共享后，您必须完成 [设置步骤](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"} Snowflake以访问数据。
+在为提供的帐户ID创建共享后，您必须完成 [设置步骤](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"} 访问Snowflake实例中的数据。
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ ht-degree: 0%
 USE ROLE ACCOUNTADMIN
 ```
 
-* 查看可用股份（这将显示已授予股份的名称）
+* 查看可用股份（此处显示已授予股份的名称）
 
 ```
 SHOW SHARES

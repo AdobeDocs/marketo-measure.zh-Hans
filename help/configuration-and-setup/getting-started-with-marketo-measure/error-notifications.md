@@ -2,9 +2,9 @@
 description: 错误通知 —  [!DNL Marketo Measure]
 title: 错误通知
 feature: Fundamentals
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
       <td>API已禁用</td>
       <td>Crm导入期间出错： API_DISABLED ：已为此用户禁用API调用</td>
       <td>已为Marketo Measure用户禁用API权限。</td>
-      <td>请参阅以下Salesforce文档，了解有关 <a href="https://help.salesforce.com/s/articleView?id=sf.branded_apps_commun_api_permset.htm&amp;type=5">如何启用API访问</a>.</td>
+      <td>请参阅以下Salesforce文档，了解有关 <a href="https://help.salesforce.com/s/articleView?language=en_US&amp;id=sf.branded_apps_commun_api_permset.htm&amp;type=5">如何启用API访问</a>.</td>
     </tr>
     <tr>
       <td>API_LIMIT_EXCEEDED</td>
@@ -54,7 +54,7 @@ ht-degree: 0%
     </tr>
     <tr>
       <td>INVALID_ADOBE_ANALYTICS_CONFIGURATION</td>
-      <td>AdobeAnalytics导出期间出错： INVALID_ANALYTICS_CONFIGURATION_ADOBE：错误：不允许上传。 在上载之前确认数据源架构。 数据源Id：1234</td>
+      <td>Adobe Analytics导出期间出错： INVALID_ANALYTICS_CONFIGURATION_INVALID_ADOBE：错误：不允许上传。 在上载之前确认数据源架构。 数据源Id：1234</td>
       <td>Adobe Analytics集成配置不正确。</td>
       <td>请参阅以下帮助文章以确保正确配置：
         <ul>

@@ -3,9 +3,9 @@ description: 跨BT和BAT的接触点位置和生成说明 —  [!DNL Marketo Mea
 title: 跨BT和的接触点位置和生成说明 [!DNL BATs]
 exl-id: 4903f917-a366-4767-a126-5216d2377399
 feature: Touchpoints
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: cd5597a681f388a5b5c743dadd38bf3127811bff
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 **生成接触点位置和流经买家历程**
 
-了解买方接触点位置及其触发方式对于成功报告至关重要 [!DNL Marketo Measure] 数据。 您将需要清楚地了解您的潜在客户在买方历程中的行为，进而了解他们在接触点数据中的外观。 有关此主题的更多上下文，我们建议查看 [[!UICONTROL Touchpoint Generation & Mapping]](/help/configuration-and-setup/getting-started-with-marketo-measure/touchpoint-generation-and-mapping.md) 文章。
+了解买方接触点位置及其触发方式对于成功报告至关重要 [!DNL Marketo Measure] 数据。 您希望清楚地了解您的潜在客户在买方历程中的行为方式，以及这些行为在接触点数据中会是什么样子。 有关此主题的更多上下文，我们建议查看 [[!UICONTROL Touchpoint Generation & Mapping]](/help/configuration-and-setup/getting-started-with-marketo-measure/touchpoint-generation-and-mapping.md) 文章。
 
 [!DNL Marketo Measure] 具有由购买者历程中的各个步骤触发的各种接触点位置。 报告时 [!DNL Marketo Measure] 数据包含两组接触点数据：买方接触点(BT)和买方归因接触点(BAT)。 您可能会注意到，这些数据集与不同对象之间的位置稍有不同。 有关此主题的更多上下文，我们建议查看 [买方接触点(BT)与买方归因接触点(BAT)之间的区别](/help/configuration-and-setup/getting-started-with-marketo-measure/difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints.md) 文章。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 * [!DNL Marketo Measure] 101：按ID列出的潜在客户/联系人
 * [!DNL Marketo Measure] 101：按渠道列出的潜在客户/联系人
 
-下面概述了买方接触点位置，其中描述了个人在历程中的位置以及为获得该位置而采取的操作。
+下面概述了购买者接触点位置，其中描述了个人在其历程中的位置以及他们为获得该位置所采取的操作。
 
 <table> 
  <tbody>
@@ -42,7 +42,7 @@ ht-degree: 0%
   <tr>
    <td>商机创建(LC)</td> 
    <td>表单填写 <strong>或者</strong> 活动/项目包含</td> 
-   <td>个人填写的第一个表单（通常是表单提交，但也可能是营销活动/项目包含）</td> 
+   <td>第一个表单用于填充个人（通常是表单提交，但也可能是营销活动/项目包含）</td> 
   </tr>
   <tr>
    <td>POST LC</td> 
@@ -52,7 +52,7 @@ ht-degree: 0%
  </tbody>
 </table>
 
-**买方归因接触点(BATS)**：这些是与Opportunity及其历程关联的接触点。 这些接触点将连接到收入，因为它们连接到Opportunity及其联系人。 以下现成的报告基于买方归因接触点数据构建。
+**买方归因接触点(BATS)**：这些是与Opportunity及其历程关联的接触点。 这些接触点与Opportunity及其Contacts关联，因此与收入关联。 以下现成的报告基于买方归因接触点数据构建。
 
 * [!DNL Marketo Measure] 101：按ID列出的机会
 * [!DNL Marketo Measure] 101：按ID渠道列出的机会
@@ -72,7 +72,7 @@ ht-degree: 0%
   <tr>
    <td>商机创建(LC)</td> 
    <td>表单填写 <strong>或者</strong> 活动/项目包含</td> 
-   <td>联系人填写的第一个表单（通常是表单提交，但也可能是营销活动/项目包含）</td> 
+   <td>联系人的第一个表单填写（通常是表单提交，但也可能是营销活动/项目包含）</td> 
   </tr>
   <tr>
    <td>机会创建</td> 
@@ -92,7 +92,7 @@ ht-degree: 0%
  </tbody>
 </table>
 
-[!DNL Marketo Measure] 具备这两组接触点数据，从而清楚地了解个人的历程以及机会。 这两个接触点数据集为您提供了从漏斗顶部到漏斗底部所发生情况的清晰地图。
+[!DNL Marketo Measure] 具备这两组接触点数据，从而清楚地了解个人的历程和机会。 这两个接触点数据集为您提供了从漏斗顶部到漏斗底部所发生情况的清晰地图。
 
 以下示例显示了从买方接触点(BT)到买方归因接触点(BAT)的数据流。 在此示例中，人员A和人员B都是创建日期为2020年7月3日且结束日期为2020年6月3日的同一Opportunity的一部分。
 

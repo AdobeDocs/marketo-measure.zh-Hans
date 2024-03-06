@@ -2,9 +2,10 @@
 description: 了解功能板基础知识 —  [!DNL Marketo Measure]  — 产品
 title: 了解功能板基础知识
 feature: Reporting
-source-git-commit: b984779d8d4795bf43b7494d5cba06ab84ae097d
+exl-id: 597a4f7c-4965-4bcb-bf28-607abc9b7545
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -105,6 +106,6 @@ ht-degree: 0%
 
 ### 工具提示 {#tooltips}
 
-工具提示提供有关显示数据的补充详细信息。 只需将鼠标悬停在可视元素上，就会弹出上下文工具提示，提供与该特定数据点相关的见解或解释。
+工具提示提供有关显示数据的补充详细信息。 将鼠标悬停在可视元素上，此时会弹出一个上下文工具提示，其中提供与该特定数据点相关的见解或解释。
 
 ![](assets/discover-dashboard-basics-13.gif)

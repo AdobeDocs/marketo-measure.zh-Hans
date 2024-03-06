@@ -4,9 +4,9 @@ description: Salesforce活动归因 —  [!DNL Marketo Measure]
 title: Salesforce活动归因
 exl-id: 1dc6f15b-2a45-4ed3-9fa3-5267366d1f45
 feature: Attribution, Salesforce
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 一旦您的 [!DNL Marketo Measure] 活动名称已设置，是时候设置您的活动规则了。
 
-规则可作为一个过滤器，告诉我们哪些记录符合归因条件。 假设您正在CRM中使用类似逻辑创建报告以生成该报告。 您可以灵活地组合使用和/或语句以及各种运算符，如 `matches any`， `contains`， `starts with`， `ends with`， `is equal to`. 定义 `and` 盒装规则或层中的语句 `or` 语句在框外。
+规则可作为一个过滤器，告诉我们哪些记录符合归因条件。 假设您现在在CRM中使用类似的逻辑创建报告来生成该报告。 您可以灵活地组合使用和/或语句以及各种运算符，如 `matches any`， `contains`， `starts with`， `ends with`， `is equal to`. 定义 `and` 盒装规则或层中的语句 `or` 语句在框外。
 
 ![](assets/3.png)
 

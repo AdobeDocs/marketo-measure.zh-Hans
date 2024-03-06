@@ -3,9 +3,9 @@ description: 接触点设置的最佳实践 —  [!DNL Marketo Measure]
 title: 接触点设置的最佳实践
 exl-id: 01e314a6-e33d-45cd-aaa3-c212afec07d1
 feature: Touchpoints
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 最佳实践 {#best-practice}
 
-无论您是首次建立接触点设置规则，还是只是审查这些规则以检查准确性，请牢记以下最佳实践。
+无论您是首次建立接触点设置规则，还是只是审查这些规则以检查其准确性，请牢记以下最佳实践。
 
 * 创建规则之前，建立要隐藏或删除的数据列表
 * 准确地确定哪些字段将清楚地表示您设置的一个或多个规则

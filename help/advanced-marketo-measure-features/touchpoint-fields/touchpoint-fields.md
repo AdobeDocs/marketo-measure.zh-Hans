@@ -4,9 +4,9 @@ description: 接触点字段 —  [!DNL Marketo Measure]
 title: 接触点字段
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '1945'
+source-wordcount: '1949'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 启用功能 {#enabling-the-feature}
 
-从 [!DNL Marketo Measure] 设置菜单，导航到接触点字段页面。 从该位置，您可以通过选择 **是** 下 **启用计算字段**. 启用该选项后，您便可以创建接触点字段。
+从 [!DNL Marketo Measure] 设置菜单，导航到接触点字段页面。 从该位置，您可以通过选择 **是** 下 **启用计算字段**. 启用该功能后，您可以创建接触点字段。
 
 ![](assets/one.png)
 

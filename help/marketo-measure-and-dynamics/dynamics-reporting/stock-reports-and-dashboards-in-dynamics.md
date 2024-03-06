@@ -4,9 +4,9 @@ description: Dynamics中的Stock报表和功能板 —  [!DNL Marketo Measure]
 title: Dynamics中的Stock报表和功能板
 exl-id: 31f8516b-d9f9-4a13-8077-ceaa004b4514
 feature: Microsoft Dynamics
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '911'
 ht-degree: 3%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 3%
 >
 >您可能会看到说明“[!DNL Marketo Measure]”，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
-此 [!DNL Marketo Measure] 受管解决方案附带许多库存仪表板和报表，旨在满足您在查看时的基本需求 [!DNL Marketo Measure] dynamics中的数据。 以下是完整列表和一些常见用例。
+此 [!DNL Marketo Measure] 受管解决方案附带几个Stock功能板和报表，旨在满足您在查看时的基本需求 [!DNL Marketo Measure] dynamics中的数据。 以下是完整列表和一些常见用例。
 
-## 仪表板（共9个） {#dashboards-total}
+## 功能板（共9个） {#dashboards-total}
 
 <table> 
  <colgroup> 
@@ -152,12 +152,12 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td>按AdWords名称(FT)排列的潜在客户</td> 
-   <td>衡量每个AdWords促销活动首次接触的潜在客户数量。</td> 
+   <td>测量每个AdWords营销活动首次接触的潜在客户数量。</td> 
    <td>全部</td> 
   </tr> 
   <tr> 
    <td>按AdWords名称(LC)排列的潜在客户</td> 
-   <td>衡量通过每个AdWords促销活动中的潜在客户创建接触产生了多少潜在客户。</td> 
+   <td>测量通过每个AdWords营销活动中的潜在客户创建接触产生了多少潜在客户。</td> 
    <td>全部</td> 
   </tr> 
   <tr> 

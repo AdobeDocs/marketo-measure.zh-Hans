@@ -3,9 +3,9 @@ description: 域管理 —  [!DNL Marketo Measure]
 title: 域管理
 exl-id: 4db287a0-0267-463c-a359-266b41f15c59
 feature: Integration, Tracking
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ![](assets/domain-management-2.png)
 
-在 **[!UICONTROL Integration]** > **[!UICONTROL Domains]** 页面上，用户会看到已在Admin Console中注册的所有域及其状态。 可以启用或禁用每个域。 如果启用了域， [!DNL Marketo Measure] 跟踪将收集在该域上看到的任何流量。 如果域被禁用， [!DNL Marketo Measure] 忽略来自该域的任何流量，并且不会创建接触点或其他数据。 [!DNL Marketo Measure] 确认域的禁用并警告其后果：
+在 **[!UICONTROL Integration]** > **[!UICONTROL Domains]** 页面上，用户会看到已在Admin Console中注册的所有域及其状态。 可以启用或禁用每个域。 如果启用了域， [!DNL Marketo Measure] 跟踪将收集在该域上看到的任何流量。 如果域被禁用， [!DNL Marketo Measure] 会忽略来自该域的任何流量，并且不会创建接触点或其他数据。 [!DNL Marketo Measure] 确认域禁用，并警告任何后果：
 
 ![](assets/domain-management-3.png)
 
@@ -55,7 +55,7 @@ Admin Console状态分类如下：
 
 **在Admin Console中删除域后会发生什么情况？**
 
-在Admin Console中删除域时， [!DNL Marketo Measure] 将域标记为已删除。 [!DNL Marketo Measure] 将立即停止跟踪此域上的流量，但不会删除任何之前收集的数据。
+在Admin Console中删除域时， [!DNL Marketo Measure] 将域标记为已删除。 [!DNL Marketo Measure] 立即停止跟踪此域上的流量，但不会删除任何之前收集的数据。
 
 **为什么我无法启用域？**
 

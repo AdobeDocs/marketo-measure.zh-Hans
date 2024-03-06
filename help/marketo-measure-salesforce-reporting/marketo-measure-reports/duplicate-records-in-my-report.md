@@ -4,9 +4,9 @@ description: 我的报告中的重复记录 —  [!DNL Marketo Measure]
 title: 我的报告中的重复记录
 exl-id: 4ee42371-5b67-4c69-9b49-3249f33614d0
 feature: Reporting
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 当您潜入 [!DNL Marketo Measure] 报告位置 [!DNL Salesforce]，您可能会开始在报表中找到“重复”记录。 当您回顾时，您可能会遇到这种感觉 [!DNL Marketo Measure] 现成的报告。
 
-在使用“采购员接触点”对象或“采购员归因接触点”对象进行报告时，请务必了解一点，您不再报告销售线索、联系人或业务机会的数量，而是报告与这些标准对象（销售线索、联系人、业务机会）关联的采购员接触点或采购员归因接触点的数量。
+在使用“采购员接触点”对象或“采购员归因接触点”对象进行报告时，请务必了解，您不再报告销售线索、联系人或业务机会的数量，而是报告与这些标准对象（销售线索、联系人、业务机会）关联的采购员接触点或采购员归因接触点的数量。
 
 让我们以以下报表为例：
 

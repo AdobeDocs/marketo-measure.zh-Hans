@@ -4,9 +4,9 @@ description: 同步离线营销活动 —  [!DNL Marketo Measure]
 title: 同步离线营销活动
 exl-id: a6f9e217-ff6e-474d-9f14-c6f6238c9e84
 feature: Channels
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 总之，如果您使用 [!UICONTROL Bulk Update Touchpoint Date] 按钮并将接触点日期更改为事件的日期， [!DNL Marketo Measure] 将生成事件实际日期（而非上传日期）的接触点。
 
-您还可以更新现有营销活动上所有营销活动成员的日期。 执行此操作时，请确保接触点的日期是成员交互的日期。 只需单击“批量更新购买者接触点日期”，根据情况筛选营销活动成员列表，然后在“[!UICONTROL Select Date]”选项位于营销活动成员列表上方，添加与事件发生日期相同的日期。
+您还可以更新现有营销活动上所有营销活动成员的日期。 执行此操作时，请确保接触点的日期是成员交互的日期。 单击批量更新购买者接触点日期，根据情况筛选营销活动成员列表，并在»[!UICONTROL Select Date]”选项位于营销活动成员列表上方，添加与事件发生日期相同的日期。
 
 >[!CAUTION]
 >

@@ -4,9 +4,9 @@ description: 正在添加 [!DNL Marketo Measure] 要实施Forms，请执行以�
 title: 正在添加 [!DNL Marketo Measure] 实施Forms
 exl-id: 3d246e6a-ad3b-4683-b2b7-ab3f0f4c5ab2
 feature: Tracking
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '71'
+source-wordcount: '72'
 ht-degree: 0%
 
 ---

@@ -3,9 +3,9 @@ description: "[!DNL Marketo Measure] 报告指南 —  [!DNL Marketo Measure]"
 title: '"[!DNL Marketo Measure] Reporting指南”'
 exl-id: 9b991f9e-c187-4b43-b0a8-8ed3e9a6056b
 feature: Reporting
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '6431'
+source-wordcount: '6437'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 **建立目标**：“第一个问题是‘我们为什么要测量？’ 洛里·维多 [Forrester Research](https://go.forrester.com/) 将其很好地总结为 [Marketo网络研讨会](https://www.marketo.com/webinars/beyond-revenue-performance-real-kpis-of-b2b-marketing/). 据她所说，“我们衡量是证明或验证一个决策或营销的价值，还是为了做得更好（流程改进）。” 我们还认为，良好衡量方法产生的见解也为营销规划过程提供了投入和指导。
 
-在开始之前，必须非常清楚你的目标，你试图回答的问题，或者你试图解决的问题。 你想讲什么故事？ 结果将做出哪些决策？ 这些基本面因素往往没有得到妥善的考虑，导致所有相关方都感到失望。”
+在开始之前，必须非常清楚您的目标、您试图回答的问题或您试图解决的问题。 你想讲什么故事？ 结果将做出哪些决策？ 这些基本面因素往往没有得到妥善的考虑，导致所有相关方都感到失望。”
 
 **报告设计**：“接下来，您需要设计报表并确定它将包含的特定维度、量度和数据集。 一种常见做法是为业务用户提供他们要求的确切内容，只是让他们仍然觉得他们的需求没有得到满足。 这是因为企业用户实际寻找的洞察并不总是包含在他们请求的报表中。 优秀的分析师（或戴分析师帽子的MOPS人员）将提出澄清的问题，建立通用定义（“那么，您真正的意思是铅？”），甚至可以绘制最终报告的视觉草图，以确保一致性。 只有到那时，你才知道自己有一系列明确的要求，因此才会建立报告。”
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->BAT是从BT创建的。 基本上，跟踪是通过BT在个人级别开始的。 在客户上创建Opportunity后，同一客户下所有联系人的BT都将被引用，并有资格创建与Opportunity相关的BAT，因此您将希望根据您尝试回答的问题来使用其中一个：与“人员”量度（ BT报告）相关的问题，或与“Opportunity”量度（ BAT报告）相关的问题
+>BAT是从BT创建的。 基本上，跟踪是通过BT在个人级别开始的。 在客户上创建Opportunity后，同一客户下所有联系人的BT都将被引用，并有资格创建与Opportunity相关的BAT，因此您将需要根据尝试回答的问题来使用其中一个：与“人员”量度（ BT报告）相关的问题，或与“Opportunity”量度（ BAT报告）相关的问题
 
 支持文章： [买方接触点和买方归因接触点之间的差异](/help/configuration-and-setup/getting-started-with-marketo-measure/difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints.md#configuration-and-setup)
 
@@ -445,7 +445,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->您可以使用此报告从买方接触点对象深入分析任何营销维度的总参与度，而不仅仅是示例中所述的内容下载。 可改为按“营销渠道”或“广告促销活动名称”等维度对报告进行分组或筛选，以最好地了解数据库中潜在客户和联系人的总参与度。 只需将报表中的过滤器或分组更改为零点，即会将由接触点对象中的其他字段表示的其他维度更改为0。
+>您可以使用此报告从买方接触点对象深入分析任何营销维度的总参与度，而不仅仅是示例中所述的内容下载。 可改为按“营销渠道”或“广告促销活动名称”等维度对报告进行分组或筛选，以最好地了解数据库中潜在客户和联系人的总参与度。 将报表中的过滤器或分组更改为零以包含由接触点对象中的其他字段表示的其他维度。
 
 **3.2 [!DNL Marketo Measure] 已注册事件的人员（仅限CRM）**
 
@@ -715,7 +715,7 @@ Buyer Attribution Touchpoints (BAT)表示与Opportunity连接的所有联系人�
 
 >[!TIP]
 >
->在Discover中报告时要记住的最重要事项之一是，您使用的是哪种数据类型进行过滤。 日期类型将指定哪个数据集 [!DNL Marketo Measure] 将在各种图块中使用。
+>在Discover中报告时需要记住的最重要事项之一就是您使用哪种数据类型进行过滤。 日期类型将指定哪个数据集 [!DNL Marketo Measure] 将在各种图块中使用。
 
 * **接触点日期**：显示指定时间范围内具有“接触点日期”的相关数据
 * **创建日期**：显示指定时间范围内具有“创建日期”的相关数据

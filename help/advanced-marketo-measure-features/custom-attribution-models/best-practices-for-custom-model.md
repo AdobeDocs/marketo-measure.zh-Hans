@@ -3,9 +3,9 @@ description: 自定义模型的最佳实践 —  [!DNL Marketo Measure]
 title: 自定义模型的最佳实践
 exl-id: 7c19bb6a-30fc-4cbd-a58e-f20751102afe
 feature: Custom Models
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '851'
 ht-degree: 0%
 
 ---
@@ -49,9 +49,9 @@ ht-degree: 0%
 * 请勿使用公式字段定义自定义阶段
    * 布尔字段是最佳实践推荐
 * 不要将自定义阶段合并到自定义模型中，因为该模型与 [!DNL Marketo Measure] 里程碑接触点位置（FT、LC、OC、已结束的赢家/输家）
-   * 如果您这样做，这些位置将始终同时出现，并且可能导致漏斗的部分属性点数夸大。
+   * 如果您这样做，这些位置始终同时出现，并且可能导致漏斗的部分属性点数夸大。
 * 与您的Sales Opp团队合作
-   * 引入与阶段工作最密切的团队，以及他们的意义将确保您使用正确的阶段，并且他们的定义正确
+   * 引入最接近阶段工作的团队及其含义可确保您使用正确的阶段，并确保正确定义阶段
 
 ## 维护的最佳实践 {#best-practice-for-maintenance}
 

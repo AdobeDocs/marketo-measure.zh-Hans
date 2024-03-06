@@ -4,16 +4,16 @@ description: 正在添加 [!DNL Marketo Measure] 到 [!DNL Marketo] 登陆页面
 title: 正在添加 [!DNL Marketo Measure] 到Marketo登录页面
 exl-id: 3771d4d2-8723-452a-b23d-cea3b11ab9ee
 feature: Tracking
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
 
 # 正在添加 [!DNL Marketo Measure] 到Marketo登录页面 {#adding-marketo-measure-to-marketo-landing-pages}
 
-了解如何将跟踪添加到 [!DNL Marketo Engage] 登陆页面，因为它们需要额外的处理。 [!DNL Marketo Measure] 需要在登陆页面和 [!DNL Marketo Engage] 形成自身。 为此，您需要加载 [!DNL Marketo Measure] JavaScript到 [!DNL Marketo Engage] 如以下说明中所述。
+了解如何将跟踪添加到 [!DNL Marketo Engage] 登陆页面，因为它们需要额外的处理。 [!DNL Marketo Measure] JavaScript必须在登陆页面和 [!DNL Marketo Engage] 形成自身。 为此，您需要加载 [!DNL Marketo Measure] JavaScript到 [!DNL Marketo Engage] 如以下说明中所述。
 
 >[!NOTE]
 >
@@ -36,10 +36,10 @@ ht-degree: 0%
 
 ## 其他说明 {#additional-notes}
 
-* 您可能已经设置了其他跟踪代码片段，例如 [!DNL Google Analytics] 代码。 这没有任何问题，请务必用分号分隔它们 `;` 和单一空间。 下面是这样的一个示例：
+* 您可能已经设置了其他跟踪代码片段，例如 [!DNL Google Analytics] 代码。 这没有任何问题，请务必用分号分隔 `;` 和单一空间。 下面是这样的一个示例：
 
 `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>; <script async="true" type="someothercode" src="someotherfile.js" ></script>`
 
 * 您可能使用了多个登陆页面模板，请务必将代码添加到所有包含表单的模板中。
 
-* 有时，在编辑登陆页面的模板时，您需要重新批准登陆页面由使用的页面。 本文介绍 [如何成批审批](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target="_blank"}.
+* 有时，在编辑登陆页面的模板时，必须重新批准登陆页面由使用的页面。 本文介绍 [如何成批审批](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target="_blank"}.

@@ -4,9 +4,9 @@ description: 在线自定义渠道设置 —  [!DNL Marketo Measure]
 title: 在线自定义渠道设置
 exl-id: 170ac564-6cdd-4036-abf0-b9b230bed4f7
 feature: Channels
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 ## 设置自定义渠道规则 {#setting-up-your-custom-channels-rules}
 
-在您决定如何组织和设置数据优先级后，便可以将规则添加到电子表格中。 以下是一些最佳实践：
+在决定如何组织和设置数据优先级后，您便可以将规则添加到电子表格中。 以下是一些最佳实践：
 
 * 从一开始就使规则尽可能简单。 您始终可以在规则的基础上进行构建。
 * 请勿在渠道名称中添加任何特殊字符(例如，$%#&amp;&#42;@)
@@ -96,6 +96,6 @@ ht-degree: 0%
 
 ## 上传您的自定义渠道规则 {#uploading-your-custom-channels-rules}
 
-确保您要在CSV中添加的任何新渠道和子渠道值已添加到Bizible帐户的渠道设置区域中。 请仔细检查CSV中的所有渠道和子渠道名称是否与的渠道设置区域相匹配 [!DNL Marketo Measure] 帐户。 确保检查逗号与空格。
+确保您在CSV中添加的任何新渠道和子渠道值已添加到Bizible帐户的渠道设置区域中。 请仔细检查CSV中的所有渠道和子渠道名称是否与的渠道设置区域相匹配 [!DNL Marketo Measure] 帐户。 确保检查逗号与空格。
 
 如果您在上传期间收到错误消息，请更正问题并重新上传。 如果未收到错误消息，请单击 **保存并处理** 页面底部的。

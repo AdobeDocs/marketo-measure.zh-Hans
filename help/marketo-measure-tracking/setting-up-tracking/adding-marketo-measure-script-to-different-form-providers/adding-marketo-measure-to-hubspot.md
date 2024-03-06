@@ -4,9 +4,9 @@ description: 正在添加 [!DNL Marketo Measure] 到 [!DNL Hubspot] - [!DNL Mark
 title: 正在添加 [!DNL Marketo Measure] 到 [!DNL Hubspot]
 exl-id: 633e7ef7-7959-461e-881f-dcc543595b66
 feature: Tracking
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '175'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 了解如何添加 [!DNL Marketo Measure] JavaScript用于跟踪您的 [!DNL Hubspot] 登陆页面和表单提交。
 
-Hubspot与其他营销自动化系统略有不同，因为它可以托管您的登陆页面/表单以及您的网站。 请务必注意，以下说明适用于拥有 [!DNL Marketo Measure] 跟踪活动 [!DNL Hubspot] — 托管的页面。 如果您使用CMS而不是 [!DNL Hubspot] （例如Wordpress），您需要添加 [!DNL Marketo Measure] 将JavaScript也添加到该CMS中。
+Hubspot与其他营销自动化系统略有不同，因为它可以托管您的登陆页面/表单以及您的网站。 请务必注意，以下说明适用于拥有 [!DNL Marketo Measure] 跟踪活动 [!DNL Hubspot] — 托管的页面。 如果您使用CMS而不是 [!DNL Hubspot] （例如，Wordpress），您需要添加 [!DNL Marketo Measure] 将JavaScript也添加到该CMS中。
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Hubspot与其他营销自动化系统略有不同，因为它可以托管您的�
 
 1. 单击 **[!UICONTROL Content Settings]**.
 
-1. 范围 [!UICONTROL Content Settings]，单击站点标题HTML（参见下图）。
+1. 范围 [!UICONTROL Content Settings]，单击站点标题HTML（请参阅下图）。
 
 1. 在中添加以下脚本 `<header>`：
 

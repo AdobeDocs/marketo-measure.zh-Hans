@@ -4,9 +4,9 @@ description: 自定义分段 —  [!DNL Marketo Measure]
 title: 自定义分段
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
 feature: Segmentation
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -71,9 +71,9 @@ ht-degree: 0%
 
 如果未同时为Lead/Contacts和Opportunity设置规则，您将只看到部分数据。 更具体地说，如果您未设置Opportunities规则，您将只看到Lead/Contact数据，而不显示与其关联的Opportunities。 如果您没有为“销售线索/联系人”设置规则，则同样如此 — 您只会看到没有关联销售线索/联系人的销售机会。
 
-完成后，单击 [!UICONTROL Save] 首先，双击所有内容，然后单击 [!UICONTROL Save and Process]. 请记住，当您保存并处理时，您将无法在7天内编辑设置，如 [!DNL Marketo Measure] 正在重新格式化此期间的数据。
+完成后，单击 [!UICONTROL Save] 首先，双击所有内容，然后单击 [!UICONTROL Save and Process]. 请记住，在保存并处理之后的7天内，您无法编辑设置，因为 [!DNL Marketo Measure] 正在重新格式化此期间的数据。
 
-如果您是Marketo Measure Ultimate客户并将您的默认功能板对象设置为Contact，请不要使用下面两个特定于Lead的字段([在此处了解详情](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"})。
+如果您是Marketo Measure Ultimate客户并将您的默认功能板对象设置为Contact，请不要使用下面两个特定于Lead的字段([了解详情](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"})。
 
 * b2b.personStatus
 * b2b.isConverted

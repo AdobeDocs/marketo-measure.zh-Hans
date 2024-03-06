@@ -4,9 +4,9 @@ description: 归因映射方法 —  [!DNL Marketo Measure]
 title: 归因映射方法
 exl-id: 4d54dd20-9a82-4b87-8908-ced2bd9c0f2f
 feature: Attribution
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: cd5597a681f388a5b5c743dadd38bf3127811bff
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 机会主要联系人角色映射 {#opportunity-primary-contact-role-mapping}
 
-除了简单地查看机会上的联系人角色外， [!DNL Marketo Measure] 可以更加集中精力只查看一个Opportunity上的Primary Contact。 考虑到这种设置， [!DNL Marketo Measure] 将仅抓取与opportunity上的主要联系人关联的营销接触点，并将该信息推送到该特定商机的归因故事中。 请参阅下图。
+除了简单地查看机会上的联系人角色外， [!DNL Marketo Measure] 可以更加集中精力只查看一个Opportunity上的Primary Contact。 考虑到这种设置， [!DNL Marketo Measure] 仅获取与opportunity上的主要联系人关联的营销接触点，并将该信息推送到该特定商机的归因故事中。 请参阅下图。
 
 ![](assets/3.png)
 

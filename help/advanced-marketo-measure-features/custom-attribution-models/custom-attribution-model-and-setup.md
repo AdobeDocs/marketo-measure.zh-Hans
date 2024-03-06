@@ -4,7 +4,7 @@ description: 自定义归因模型和设置 —  [!DNL Marketo Measure]
 title: 自定义归因模型和设置
 exl-id: 7b156db2-9ac6-4d32-ac67-06c0aa15d651
 feature: Attribution, Custom Models
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 0%
@@ -57,7 +57,7 @@ ht-degree: 0%
 
    转到 **[!UICONTROL Attribution Settings]** 在 [!DNL Marketo Measure] 应用程序；自定义阶段将显示在归因表中的此处。 归因表显示所有 [!DNL Marketo Measure] 归因模型和每个模型的归因权重。 前五个模型的归因百分比是固定的，无法更改。
 
-   在标记为“”的最右列&#x200B;**[!UICONTROL Custom]**，”您可以在自定义归因模型中为每个阶段设置百分比权重。 只需在“自定义”列下输入每个阶段的值即可。 则 **[!UICONTROL Save and Reprocess]** 完成后。
+   在标记为“”的最右列&#x200B;**[!UICONTROL Custom]**，”您可以在自定义归因模型中为每个阶段设置百分比权重。 在自定义列下输入每个阶段的值，然后单击 **[!UICONTROL Save and Reprocess]** 完成后。
 
    左侧 _自定义_ 列是 **[!DNL Marketo Measure]机器学习模型**. 机器学习模型根据每个自定义阶段发生的操作，根据赢得交易的相对重要性计算归因权重。 有关机器学习模型的详细信息，请参阅 [机器学习模型常见问题解答](/help/advanced-marketo-measure-features/custom-attribution-models/machine-learning-model-faq.md).
 

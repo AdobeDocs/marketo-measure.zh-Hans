@@ -3,9 +3,9 @@ description: 新增发现功能板指南 —  [!DNL Marketo Measure]  — 产品
 title: 新增发现功能板指南
 feature: Reporting
 exl-id: 088ccd63-dcf8-49c0-abbb-02f10ed8ae6e
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1076'
 ht-degree: 0%
 
 ---
@@ -427,7 +427,7 @@ ht-degree: 0%
         </p>
       </td>
       <td>
-        <p>这些维度特定于平台，不提供Web流量的整体视图。 我们建议用户在Marketo Measure中探索渠道/子渠道/营销活动数据，然后深入研究特定的平台工具以获得关键词/创意级别的洞察，以保持准确性和上下文。
+        <p>这些维度特定于平台，不提供Web流量的整体视图。 建议用户在Marketo Measure中探索渠道/子渠道/营销活动数据，然后深入研究特定的平台工具以获得关键词/创意级别的洞察，以保持准确性和上下文。
         </p>
       </td>
     </tr>

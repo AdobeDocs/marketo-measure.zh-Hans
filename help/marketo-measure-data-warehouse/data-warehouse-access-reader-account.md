@@ -3,9 +3,9 @@ description: Data Warehouse访问 — Reader帐户 — 产品文档
 title: Data Warehouse访问权限 — Reader帐户
 exl-id: 2aa73c41-47ab-4f11-96d8-dafb642308fc
 feature: Data Warehouse
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Snowflake访问链接 {#snowflake-access-link}
 
-要访问SnowflakeData Warehouse，您需要导航到Snowflake帐户的特定URL。 您可以通过登录找到此访问链接 [!DNL Marketo Measure] 并按照以下步骤导航到Data Warehouse信息页面。
+要访问SnowflakeData Warehouse，您必须导航到Snowflake帐户的特定URL。 您可以通过登录找到此访问链接 [!DNL Marketo Measure] 并按照以下步骤导航到Data Warehouse信息页面。
 
 1. 在 [!DNL Marketo Measure]，在页面顶部，单击 **[!UICONTROL My Account]** > **[!UICONTROL Settings]**.
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
    ![](assets/data-warehouse-access-reader-account-2.png)
 
-1. 在此页面上，您可以找到指向SnowflakeData Warehouse和用户名的链接。
+1. 此页包含指向Snowflake数据仓库和用户名的链接。
 
    ![](assets/data-warehouse-access-reader-account-3.png)
 
@@ -32,7 +32,7 @@ ht-degree: 0%
    >
    >这是一个只读帐户，可供贵组织使用，而不仅仅限于个人用户。 您组织内有权访问的任何用户 [!DNL Marketo Measure] 可以使用此帐户登录SnowflakeData Warehouse读取器帐户。
 
-1. 单击SnowflakeURL中提供的链接，此时您将转到Snowflake登录页面，并在其中输入用户名和密码。 _如果您没有密码，请参阅以下步骤重置密码_.
+1. 单击SnowflakeURL中提供的链接，将转到Snowflake登录页面，在该页面中输入用户名和密码。 _如果您没有密码，请参阅以下步骤重置密码_.
 
    ![](assets/data-warehouse-access-reader-account-4.png)
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ## 重置密码 {#reset-your-password}
 
-[!DNL Marketo Measure] 无权访问您的Snowflake登录密码。 如果需要重置密码，请单击 [!UICONTROL Reset Password] Data Warehouse按钮，然后按照说明操作。 临时密码将立即显示在用户界面中。 下次登录Data Warehouse时，系统将提示您创建自己的密码。
+[!DNL Marketo Measure] 无权访问您的Snowflake登录密码。 如果必须重置密码，请单击 [!UICONTROL Reset Password] Data Warehouse按钮，然后按照说明操作。 临时密码会立即显示在用户界面中。 下次登录Data Warehouse时，系统将提示您创建自己的密码。
 
 >[!NOTE]
 >
@@ -66,14 +66,14 @@ ht-degree: 0%
 >每个工具的连接要求各不相同；建议您查阅文档以了解要连接的特定工具。
 
 * **URI** （始终必需）
-   * 这是Snowflake帐户的域名。  它包含在Snowflake登录链接的一部分中。
+   * 这是Snowflake帐户的域名。 它包含在Snowflake登录链接的一部分中。
 * **用户名** （始终必需）
    * 用户名列在的Data Warehouse信息页上 [!DNL Marketo Measure].
 * **密码** （始终必需）
-   * 这是您首次登录Snowflake帐户时设置的密码。  要重置密码，请参阅上述步骤。
+   * 这是您首次登录Snowflake帐户时设置的密码。 要重置密码，请参阅上述步骤。
 * **数据库名称** （并非总是必需的）
    * 数据库是以Snowflake存储数据的工具。 它是存储资源。 数据库名称列在的“Data Warehouse信息”页中 [!DNL Marketo Measure].
 * **仓库名称** （并非总是必需的）
-   * Warehouse就是在Snowflake中执行查询的地方。 它是计算资源。  仓库名称列在的Data Warehouse信息页中 [!DNL Marketo Measure].
+   * Warehouse就是在Snowflake中执行查询的地方。 它是计算资源。 仓库名称列在的Data Warehouse信息页中 [!DNL Marketo Measure].
 
   ![](assets/data-warehouse-access-reader-account-9.png)

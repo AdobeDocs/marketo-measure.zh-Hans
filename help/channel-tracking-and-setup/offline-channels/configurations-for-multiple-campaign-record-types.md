@@ -4,9 +4,9 @@ description: 多个营销活动记录类型的配置 —  [!DNL Marketo Measure]
 title: 多个营销活动记录类型的配置
 exl-id: 10499556-a591-4630-9149-ae676e6494af
 feature: Channels
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '123'
 ht-degree: 0%
 
 ---

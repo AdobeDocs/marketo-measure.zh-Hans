@@ -3,9 +3,9 @@ description: 已归因的收入仪表板 —  [!DNL Marketo Measure]  — 产品
 title: 已归因的收入仪表板
 feature: Reporting
 exl-id: ff4e9de2-cb34-4b40-9e25-e431941b2be0
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->该仪表板当前处于Beta版。 在此过渡阶段，当前功能板和新功能板都将可供访问。 一旦我们完全过渡并确保实现最佳功能，当前的仪表板将被弃用。
+>该功能板为Beta版。 在此过渡阶段，当前功能板和新功能板都将可供访问。 在我们完全过渡并确保实现最佳功能后，当前功能板将被弃用。
 
 **讨论区回答的问题：**
 

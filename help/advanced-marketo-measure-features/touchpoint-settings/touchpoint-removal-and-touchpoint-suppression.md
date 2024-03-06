@@ -4,9 +4,9 @@ description: 接触点移除和接触点抑制 —  [!DNL Marketo Measure]
 title: 接触点移除和接触点抑制
 exl-id: 201af648-6525-4a80-a7e5-3cbeeb1670b6
 feature: Touchpoints
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,8 @@ ht-degree: 0%
 
 ![](assets/5.png)
 
-要结束， [!UICONTROL Save and Process] 你的规矩。 如果您要进行大量更改，请确保在此过程中保存更改。 [!DNL Marketo Measure] 在您单击 **保存并处理** 按钮。
+要结束， [!UICONTROL Save and Process] 你的规矩。 如果您要进行大量更改，请确保在此过程中保存更改。 [!DNL Marketo Measure] 在单击之前，不会实际开始删除您的接触点
+[!UICONTROL **保存并处理**].
 
 | **运算符** | **用例** |
 |---|---|
