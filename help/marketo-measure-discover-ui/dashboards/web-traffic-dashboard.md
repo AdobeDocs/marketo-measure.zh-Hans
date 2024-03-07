@@ -3,9 +3,9 @@ description: 网络流量仪表板 —  [!DNL Marketo Measure]  — 产品
 title: Web流量仪表板
 feature: Reporting
 exl-id: de6eec0c-9d7c-4cb2-8214-9d0fb41b444d
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 1d954811e90165953f9d56a17747a3f12c723023
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -120,3 +120,4 @@ Web流量仪表板可全面查看您网站的访客交互。 深入研究量度�
 * 渠道、子渠道
 * Campaign
 * URL
+* 页面标题

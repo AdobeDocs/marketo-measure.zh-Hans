@@ -2,9 +2,9 @@
 description: ’[!DNL Marketo Measure] 最终实施指南 —  [!DNL Marketo Measure]’
 title: ’[!DNL Marketo Measure] 最终实施指南
 feature: Integration, Tracking, Attribution
-source-git-commit: 4787f765348da71bc149c997470ce678ba498772
+source-git-commit: 1d954811e90165953f9d56a17747a3f12c723023
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -131,12 +131,13 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 
 >[!NOTE]
 >
+>* 建议每个数据流仅包含一个数据集。
 >* 来自给定源的给定实体（例如，帐户）的数据只能进入一个数据集。 每个数据集只能包含在一个数据流中。 违规会在运行时停止数据流。
 >* 在AEP中删除整个目标以删除度量中的数据。 禁用将停止新数据导出并保留旧数据。
 >* 测量配置的外观大致相同，但某些部分（如暂存映射）的外观会有所不同。
 >* 新数据流生成流运行需要几个小时，然后定期进行每小时一次。
 
-在衡量标准中，必须在“货币”部分中设置默认货币
+在衡量标准中，必须在“货币”部分中设置默认货币。
 
 * 如果您使用多货币，则必须在AEP中填充货币兑换率架构，以便我们读取和进行兑换。
 
