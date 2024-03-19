@@ -3,9 +3,9 @@ description: 错误通知 —  [!DNL Marketo Measure]
 title: 错误通知
 feature: Fundamentals
 exl-id: ed07eed6-ddeb-4856-a1ac-ea3d571283f6
-source-git-commit: 2b13a518d1be768a5c312ea4abdf2039aa22cf08
+source-git-commit: 20f886a0c6f448956ad2fda2d21a25f8d9a5a6af
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1692'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # 错误通知 {#error-notifications}
 
 以下是您可以通过应用程序内通知或电子邮件收到的错误列表。 如果收到其中的任何信息，请按照相应的故障诊断步骤操作。 如果这些步骤不能解决问题，请联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support).
+
+要在中查看完整通知消息，请执行以下操作 [!DNL Marketo Measure]，单击 **查看全部** ，位于通知选项卡底部。
+
+![](assets/error-notifications-1.png)
 
 <table>
   <tbody>
@@ -49,7 +53,7 @@ ht-degree: 0%
             </li>
           </ul>
           <p>
-           <img src="assets/error-notifications-1.png">
+           <img src="assets/error-notifications-2.png">
           </p>
       </td>
     </tr>
@@ -87,27 +91,17 @@ Salesforce有关流触发器的文档 <a href="https://admin.salesforce.com/blog
       <td>DUPLICATES_DETECTED</td>
       <td>在Crm导出期间出错： DUPLICATES_DETECTED ：实体类型“Contact”： CRM错误代码： DUPLICATES_DETECTED， CRM错误消息：您正在创建重复记录。 我们建议您改用现有记录。，RecordId： 0123456</td>
       <td>要导入到Salesforce组织的记录已存在。</td>
-      <td>
-        <ul>
-          <li><a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">禁用“重复规则”设置</a> 以允许重复项。
-          </li>
-          <li>从排除Marketo Measure专用用户 <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自定义验证规则</a>.
-          </li>
-        </ul>
-      </td>
+      <td><a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">禁用“重复规则”设置</a> 以允许重复项。
+          <p>
+          从排除Marketo Measure专用用户 <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自定义验证规则</a>.</td>
     </tr>
     <tr>
       <td>DUPLICATE_VALUE</td>
       <td>在Crm导出期间出错： DUPLICATE_VALUE ：实体类型“潜在客户”： CRM错误代码： DUPLICATE_VALUE， CRM错误消息：发现重复值： Email_Unique__c重复记录ID为123、记录ID为456的值</td>
       <td>要导入到Salesforce组织的字段不允许存在重复值。</td>
-      <td>
-        <ul>
-          <li>取消选中 <a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">“唯一复选框”</a> 在Salesforce中。
-          </li>
-          <li>从排除Marketo Measure专用用户 <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自定义验证规则</a>.
-          </li>
-        </ul>
-      </td>
+      <td>取消选中 <a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">“唯一复选框”</a> 在Salesforce中。
+          <p>
+          从排除Marketo Measure专用用户 <a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自定义验证规则</a>.</td>
     </tr>
     <tr>
       <td>ENTITY_IS_LOCKING</td>
