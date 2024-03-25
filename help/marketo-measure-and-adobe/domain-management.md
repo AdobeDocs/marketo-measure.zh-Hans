@@ -3,7 +3,7 @@ description: 域管理 —  [!DNL Marketo Measure]
 title: 域管理
 exl-id: 4db287a0-0267-463c-a359-266b41f15c59
 feature: Integration, Tracking
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: 4c68fa08797c252a89ba097c723fb8afee82451f
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ![](assets/domain-management-1.png)
 
-有关添加域的说明，请参见 [Admin Console文档](https://helpx.adobe.com/enterprise/using/set-up-identity.html#setup-domains). 添加域后，它必须 [链接到目录](https://helpx.adobe.com/enterprise/using/set-up-identity.html#link-domains-to-directories).
+有关添加域的说明，请参见 [Admin Console文档](https://helpx.adobe.com/enterprise/using/add-domains-directories.html). 添加域后，它必须 [链接到目录](https://helpx.adobe.com/enterprise/using/add-domains-directories.html#link-domains-to-directoies).
 
 ## 在中管理域 [!DNL Marketo Measure] {#managing-domains-in-marketo-measure}
 
