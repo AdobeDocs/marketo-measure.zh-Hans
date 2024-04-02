@@ -3,9 +3,9 @@ description: 了解功能板基础知识 —  [!DNL Marketo Measure]  — 产品
 title: 了解功能板基础知识
 feature: Reporting
 exl-id: 597a4f7c-4965-4bcb-bf28-607abc9b7545
-source-git-commit: 4787f765348da71bc149c997470ce678ba498772
+source-git-commit: 403b31acce25ddc9c1dcafbd53008b6e2868b3df
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # 了解功能板基础知识 {#discover-dashboard-basics}
 
 本文将引导您了解重新设计的界面的基本功能，确保您可以轻松地访问和解读数据。 深入了解过滤器窗格的动态，并揭示增强的报告功能的复杂性，例如钻取功能、交叉过滤和工具提示。
-
->[!NOTE]
->
->该仪表板当前处于Beta版。 在此过渡阶段，当前功能板和新功能板都将可供访问。 一旦我们完全过渡并确保实现最佳功能，当前的仪表板将被弃用。
 
 ## 筛选器窗格 {#filter-pane}
 

@@ -3,9 +3,9 @@ description: ROI仪表板 —  [!DNL Marketo Measure]  — 产品
 title: ROI仪表板
 feature: Reporting
 exl-id: 878db6e0-3ac7-4f4c-b993-bd7a1cfa0638
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 403b31acce25ddc9c1dcafbd53008b6e2868b3df
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # ROI仪表板 {#roi-dashboard}
 
 ROI仪表板为营销人员提供了跨渠道、子渠道和营销活动的投资回报的精细视图。 它仔细地划分成本和收入模式，同时重点列出每个商机的成本、交易和机会等指标，以确保全面了解营销归因。
-
->[!NOTE]
->
->该仪表板当前处于Beta版。 在此过渡阶段，当前功能板和新功能板都将可供访问。 一旦我们完全过渡并确保实现最佳功能，当前的仪表板将被弃用。
 
 **讨论区回答的问题**
 

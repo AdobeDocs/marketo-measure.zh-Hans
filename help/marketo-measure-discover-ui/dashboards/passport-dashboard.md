@@ -3,9 +3,9 @@ description: 护照信息板 —  [!DNL Marketo Measure]  — 产品
 title: Passport信息板
 feature: Reporting
 exl-id: 0fbd9714-7d9c-4330-b35f-d011e17c3bfe
-source-git-commit: 88dfdac366d29bed29ed39979cb76cad7aee4025
+source-git-commit: 403b31acce25ddc9c1dcafbd53008b6e2868b3df
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # Passport信息板 {#passport-dashboard}
 
 Passport仪表板为营销人员提供了在指定时间段内各个阶段进行过渡时潜在客户、联系人和机会的动态视图。 通过筛选特定日期，用户还可以获取该日期的记录快照。
-
->[!NOTE]
->
->该仪表板当前处于Beta版。 在此过渡阶段，当前功能板和新功能板都将可供访问。 一旦我们完全过渡并确保实现最佳功能，当前的仪表板将被弃用。
 
 **讨论区回答的问题：**
 
