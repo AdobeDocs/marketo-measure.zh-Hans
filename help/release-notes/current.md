@@ -3,9 +3,9 @@ description: 最新发行说明 —  [!DNL Marketo Measure]
 title: 最新发行说明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 00a362a2e143749e1a132672b847eb06dcab6b9c
+source-git-commit: 4a3b8a1df9d8a675d977b08693b9d7facb64bc02
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -41,3 +41,7 @@ _为什么这很重要_
 _支持您的过渡_
 
 为了帮助您适应这种变化， [我们已创建文档](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md){target="_blank"} 提供了清晰的错误描述和全面的故障排除步骤。
+
+**linkedIn集成所需的操作**
+
+linkedIn最近发布了其Lead Sync API的更新版本。 请在5月20日之前重新验证Marketo Measure实例中的LinkedIn连接，以避免任何中断。
