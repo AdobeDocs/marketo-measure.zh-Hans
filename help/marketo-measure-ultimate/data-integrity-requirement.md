@@ -3,7 +3,7 @@ description: ’[!DNL Marketo Measure] 最终数据完整性要求 —  [!DNL Ma
 title: ’[!DNL Marketo Measure] 终极数据完整性要求
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: db71cbfaf7deb5b724ac4babc38e835c04fadac7
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 17%
@@ -12,7 +12,7 @@ ht-degree: 17%
 
 # [!DNL Marketo Measure] 最终数据完整性要求 {#marketo-measure-ultimate-data-integrity-requirement}
 
-[!DNL Marketo Measure] 验证传入的AEP数据集，以确保数据充分且一致地用于归因。 如果不满足数据完整性要求，则会导致数据集被拒绝 [!DNL Marketo Measure] 系统。 本文档详细说明数据完整性要求，提供数据检查的查询示例，并推荐具有空值的必填字段的解决方案。
+[!DNL Marketo Measure] 验证传入的AEP数据集，以确保数据充分且一致地用于归因。 如果不满足数据完整性要求，则会导致数据集被拒绝 [!DNL Marketo Measure] 系统。 本文详细介绍了数据完整性要求，提供了数据检查的查询示例，并建议了具有空值的必填字段的解决方案。
 
 ## 实体对象 {#entity-object}
 
