@@ -2,9 +2,10 @@
 description: 潜在客户周转率功能板 —  [!DNL Marketo Measure]  — 产品
 title: 潜在客户周转率功能板
 feature: Reporting
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+exl-id: f0937e9c-702f-4539-ab0b-05d9487c562d
+source-git-commit: de7239abaedaf1a59b3760f12736a225d71027a1
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '363'
 ht-degree: 1%
 
 ---
@@ -20,14 +21,16 @@ Velocity功能板提供了有关潜在客户在销售漏斗中流动速度的动
 
 ## 功能板组件 {#dashboard-components}
 
+显示“潜在客户”还是“联系人”取决于在“设置”>“归因设置”>“默认仪表板对象”中设置的首选项。
+
 ### 按阶段列出的销售线索/接触速度 {#lead-contact-velocity-by-stage}
 
 条形图显示了在特定时间范围内每个销售阶段销售线索/联系人所花费的平均持续时间（以天为单位）。
 
 图表回答的问题：
 
-哪个销售阶段通常具有最长销售线索/联系人的持续时间？
-与“MQL”阶段相比，“首次联系”阶段所花费的时间如何？
+* 哪个销售阶段通常具有最长销售线索/联系人的持续时间？
+* 与“MQL”阶段相比，“首次联系”阶段所花费的时间如何？
 
 ![](assets/lead-velocity-dashboard-1.png)
 
