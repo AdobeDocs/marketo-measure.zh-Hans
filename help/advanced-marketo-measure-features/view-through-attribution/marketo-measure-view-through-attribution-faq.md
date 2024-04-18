@@ -4,9 +4,9 @@ description: "[!DNL Marketo Measure] 通过归因常见问题解答进行查看 
 title: '"[!DNL Marketo Measure] 通过归因常见问题解答进行查看”'
 exl-id: d20e88f3-3ff8-4381-a4b8-6862798caa74
 feature: Attribution
-source-git-commit: 4787f765348da71bc149c997470ce678ba498772
+source-git-commit: 48962b999fdd16fe96d18708ec301e64a39bc76e
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '486'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 1%
 ## 通过归因查看什么？ {#what-is-view-through-attribution}
 
 此 [!DNL Marketo Measure] [!UICONTROL View Through Attribution] 功能包括在归因模型中包含广告展示的功能。
+
+>[!IMPORTANT]
+>
+>出于隐私考虑，第三方Cookie即将退出。 Google Chrome宣布在2024年第3季度弃用第三方Cookie，这实际上标志着这种跟踪形式的结束。 因此，Adobe将弃用依赖第三方Cookie的Marketo Measure功能，特别是跨域跟踪和浏览归因，后者使用Google/DoubleClick展示次数Cookie。 任何其他Marketo Measure功能都不会受到影响。 第一方Cookie的使用也不受影响。 按照Google的时间表，预计上述两个功能的弃用日期为2024年6月1日。 在此日期之前收集的相关数据仍可供Adobe客户使用。
 
 ## 为什么是 [!UICONTROL View Through Attribution] 重要事项？ {#why-is-view-through-attribution-important}
 
