@@ -2,9 +2,10 @@
 description: 参与仪表板 —  [!DNL Marketo Measure]  — 产品
 title: 参与仪表板
 feature: Reporting
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+exl-id: dc8bcbe4-d470-4cd3-a2d9-804fdebe7121
+source-git-commit: db71635a77d6e2555c442fb45371fd5a93e3c502
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -12,6 +13,14 @@ ht-degree: 0%
 # 参与仪表板 {#engagement-dashboard}
 
 参与仪表板会仔细跟踪用户参与量度。 它显示了接触点、参与人数和每个人的平均接触点。 将时间序列条形图用于每月、每季度或每年视图，将条形图用于详细的渠道、子渠道和营销活动分析。 此工具对于了解参与模式和微调参与策略至关重要。
+
+我们作为用户接触点(UT)（“原始”收集的数据点）跟踪每次客户互动，这些数据点作为我们仪表板上参与量度的基础。 并非所有UT都演变为买方接触点(BT)或买方归因接触点(BAT)，因为这些UT是将特定客户互动归因于收入相关活动的选定结果。 请务必注意，禁止规则不会影响UT或参与仪表板。
+
+* **用户接触点**：从所有参与创建的接触点。
+* **买方接触点**：为潜在客户和联系人归因选择的接触点。 BT未关联到Opportunities ，因此没有关联的收入。
+* **买方归因接触点**：为Opportunity归因选择的接触点。 最佳可得技术由于与“机会”相关，因此会影响收入。
+
+仅使用BT或BAT来衡量参与度，会低估客户互动的真实程度，因为参与度不仅仅是归因。
 
 仪表板回答的问题：
 
