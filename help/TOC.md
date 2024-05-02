@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: “[!DNL Marketo Measure] 指南”
 user-guide-description: '"[!DNL Marketo Measure] 可让营销人员深入了解哪些营销活动在为公司增加收入方面最有效。”'
-source-git-commit: 403b31acce25ddc9c1dcafbd53008b6e2868b3df
+source-git-commit: 5759615376954806d6f0682378ce4bbc786bc43a
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -156,6 +156,7 @@ ht-degree: 0%
       + [了解功能板基础知识](marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md)
       + [新增发现功能板指南](marketo-measure-discover-ui/dashboards/new-discover-dashboard-guide.md)
       + [功能板数据可见性策略](marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md)
+      + [已归因的机会仪表板](marketo-measure-discover-ui/dashboards/attributed-opportunity-dashboard.md)
       + [已归因的收入仪表板](marketo-measure-discover-ui/dashboards/attributed-revenue-dashboard.md)
       + [参与仪表板](marketo-measure-discover-ui/dashboards/engagement-dashboard.md)
       + [潜在客户周转率功能板](marketo-measure-discover-ui/dashboards/lead-velocity-dashboard.md)
