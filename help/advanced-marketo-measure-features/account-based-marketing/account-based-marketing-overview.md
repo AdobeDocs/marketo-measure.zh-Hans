@@ -4,9 +4,9 @@ description: 了解Account-Based Marketing (ABM)以及AdobeMarketo Measure如何
 title: 基于帐户的营销概述
 exl-id: 2ead69c0-66da-439d-a0ba-25c73c4b308c
 feature: Account-based Marketing
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: e2165fea3e76baeedf9b22247d005578d6c6da5d
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -32,17 +32,22 @@ ht-degree: 0%
 
 ## 商机到客户的映射 {#lead-to-account-mapping}
 
-线索到账户的映射是有效反弹道导弹办法的关键部分。 通过销售线索到客户的映射，潜在客户或潜在客户将分组到与您的品牌接洽的同一个公司帐户中。 这允许您以一致的方式定位并向来自同一公司的个人进行销售。 没有其他附加的 [!DNL Salesforce] 开始从该功能中获益所需的配置。 此 [!DNL Marketo Measure] Lead to Account Mapping五种不同的匹配方法：
+线索到账户的映射是有效反弹道导弹办法的关键部分。 通过销售线索到客户的映射，潜在客户或潜在客户将分组到与您的品牌接洽的同一个公司帐户中。 这允许您以一致的方式定位并向来自同一公司的个人进行销售。 没有其他附加的 [!DNL Salesforce] 开始从该功能中获益所需的配置。 此 [!DNL Marketo Measure] 导致帐户映射不同的匹配方法：
 
 * 将网站引向帐户网站
 * 潜在客户电子邮件域到帐户网站域
 * 从商机公司名称到帐户名称
 * 潜在客户公司到帐户网站域
-* 通过联系人的电子邮件地址将潜在客户电子邮件地址中的域与帐户进行匹配
+* 将网站引向帐户联系人的电子邮件域
+* 潜在客户电子邮件域到帐户联系人的电子邮件域
+* 将潜在客户网站链接到客户潜在客户的电子邮件域
+* 潜在客户电子邮件域到客户潜在客户的电子邮件域
+
+客户的潜在客户/联系人将通过其电子邮件/网站域进行验证，并与潜在客户电子邮件/网站的域或子域匹配。 使用匹配度最高的帐户。
 
 >[!NOTE]
 >
->每个Lead将按照上述方法的优选顺序尝试与帐户匹配。 进行匹配后，将立即在潜在客户上设置AccountId，并且不会使用其他方法进行匹配。 如果Lead已具有有效的AccountId，则跳过Lead。
+>每个Lead将按照上述方法的优选顺序尝试与帐户匹配。 进行匹配后，将立即在潜在客户上设置AccountId，并且不会使用其他方法进行匹配。
 
 ## 预测参与度分数 {#predictive-engagement-score}
 
