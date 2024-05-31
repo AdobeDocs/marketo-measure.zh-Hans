@@ -4,9 +4,9 @@ description: 回音廊舞台场景 —  [!DNL Marketo Measure]
 title: 回音廊舞台场景
 exl-id: 150db070-eef5-4741-845c-775ab4034ead
 feature: Boomerang
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: ea113b02b910fbc894311200aff83286636d4b32
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1763'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Boomerang功能仅对第3层客户启用。 要申请更高的客户层，请联系Adobe客户团队（您的客户经理）。
+>Boomerang功能仅针对第2层和第3层客户启用。 要申请更高的客户层，请联系Adobe客户团队（您的客户经理）。
 
 以下是“回旋”阶段场景的几个示例，用于了解如何做到这一点 [!DNL Marketo Measure] 在每种情况下创建接触点。
 

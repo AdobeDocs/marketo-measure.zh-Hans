@@ -3,9 +3,9 @@ description: 最新发行说明 —  [!DNL Marketo Measure]
 title: 最新发行说明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 88edec8ec5d015fb4152b9e822cb1bfa68ed85c2
+source-git-commit: ea113b02b910fbc894311200aff83286636d4b32
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ Marketo EngageCookie同步现在可供Marketo Measure Ultimate使用。 要使�
 1. 在“AEP架构”页上，编辑B2B人员架构并添加字段组“Marketo Engage人员详细信息”。
 1. 将数据摄取到MMU时，将Cookie ID字段从字段组映射到Marketo Engage中的Cookie字段。
 
-**为第2层和第3层客户启用了回滚阶段**
+**为第2层客户启用了回滚阶段**
 
-自2024年6月7日起，所有2级和3级客户都将可以使用回滚阶段功能。 有关此功能的更多详细信息，请参阅下面的文档。
+以前仅对三级客户可用，但自2024年6月7日起，所有二级客户也可以使用回旋镖暂存功能。 有关此功能的更多详细信息，请参阅下面的文档。
 
 * [自走式暂存器和接触点](/help/advanced-marketo-measure-features/boomerang/boomerang-stages-and-touchpoints.md){target="_blank"}
 * [设置回访单阶段](/help/advanced-marketo-measure-features/boomerang/setting-up-boomerang-stages.md){target="_blank"}

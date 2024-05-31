@@ -4,9 +4,9 @@ description: 设置回音廊阶段 —  [!DNL Marketo Measure]
 title: 设置回访单阶段
 exl-id: 00dd2826-27a3-462e-a70e-4cec90d07f92
 feature: Boomerang
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: ea113b02b910fbc894311200aff83286636d4b32
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Boomerang功能仅对第3层客户启用。 要申请更高的客户层，请联系Adobe客户团队（您的客户经理）。
+>Boomerang功能仅针对第2层和第3层客户启用。 要申请更高的客户层，请联系Adobe客户团队（您的客户经理）。
 
 要启用 [!UICONTROL Boomerang] 暂存帐户，您必须是帐户管理员。 或者，可以通过联系来启用该功能 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}. 启用该功能后，请按照以下说明进行设置。
 

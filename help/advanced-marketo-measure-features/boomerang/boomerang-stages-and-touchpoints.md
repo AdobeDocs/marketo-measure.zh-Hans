@@ -4,9 +4,9 @@ description: 自走式舞台和接触点 —  [!DNL Marketo Measure]
 title: 自走式暂存器和接触点
 exl-id: e58169a3-3637-4878-8a0e-1920d873ff52
 feature: Boomerang, Touchpoints
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: ea113b02b910fbc894311200aff83286636d4b32
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '721'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Boomerang功能仅对第3层客户启用。 要申请更高的客户层，请联系Adobe客户团队（您的客户经理）。
+>Boomerang功能仅针对第2层和第3层客户启用。 要申请更高的客户层，请联系Adobe客户团队（您的客户经理）。
 
 [!DNL Marketo Measure] 已发布回音廊舞台功能！ 创建回旋镖暂存功能是为了更加直观地了解客户的历程， [!DNL Marketo Measure] 销售周期较长的客户。 此功能允许营销人员为Opportunity历程中发生的所有阶段过渡创建接触点，例如当联系MQL时，然后转到SAL，最后转到MQL阶段。 当联系人“重新进入MQL阶段”或“重新进入MQL”时，MQL将被视为回访阶段。 “回旋镖舞台”功能与 [!DNL Marketo Measure] 自定义阶段。
 
