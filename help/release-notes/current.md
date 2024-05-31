@@ -3,9 +3,9 @@ description: 最新发行说明 —  [!DNL Marketo Measure]
 title: 最新发行说明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: cbb2afd48c0e462768be0a7cfe56007ae285c492
+source-git-commit: 69b937f53f8ba3e449f7b13fb92d169dadc14c17
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,32 @@ ht-degree: 0%
 # 发行说明：2024年 {#release-notes-2024}
 
 有关2024版的所有新增功能和更新功能，请参阅下文。
+
+## 第3季度发行 {#q3-release}
+
+<p>
+
+**提醒： Salesforce字段弃用 — 6月14日**
+
+正如去年宣布的那样，我们将逐步停止对Lead/Contact对象的导出工作，以简化我们的集成，并消除导出到Salesforce标准对象的需要。 您可以按照以下步骤从接触点对象获取相同的数据 [此处记录](/help/release-notes/previous-releases/2023.md#deprecations). 我们还将共享有关创建工作流的文档，以将此数据添加到Lead/Contact对象。 弃用将于2024年6月14日生效。
+
+这一变化将带来两大好处：
+
+* **降低了Salesforce API成本**：客户有望将其Salesforce API成本减少约10%。
+* **简化的集成**：我们的导出作业中与这些进程相关的错误数量最高。 删除这些组件将显着简化我们的集成。
+
+**已归因的机会仪表板**
+
+我们很高兴能向大家介绍 [已归因的机会仪表板](/help/marketo-measure-discover-ui/dashboards/attributed-opportunity-dashboard.md)，旨在让您全面了解营销工作对新兴和成熟的管道机会的贡献。 利用此仪表板，您可以深入了解可归属于您的策略的每个未结和已结业务机会的详细信息，并灵活地按业务机会阶段进行筛选。 它提供了有关哪些渠道、子渠道或营销活动在归因机会数量方面排名最高的见解，并显示归因机会总数以及归因的未结和已结机会计数。
+
+**适用于Marketo Measure Ultimate的Marketo EngageCookie同步**
+
+Marketo EngageCookie同步现在可供Marketo Measure Ultimate使用。 要使用此功能，请执行以下操作：
+
+1. 在“AEP架构”页上，编辑B2B人员架构并添加字段组“Marketo Engage人员详细信息”。
+1. 将数据摄取到MMU时，将Cookie ID字段从字段组映射到Marketo Engage中的Cookie字段。
+
+<p>
 
 ## 第2季度发行 {#q2-release}
 
