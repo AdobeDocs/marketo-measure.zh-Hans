@@ -3,7 +3,7 @@ description: 最新发行说明 —  [!DNL Marketo Measure]
 title: 最新发行说明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: ea113b02b910fbc894311200aff83286636d4b32
+source-git-commit: 97a82ae0649ae5b1349d025a7a7cf433bc64bc7e
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Marketo EngageCookie同步现在可供Marketo Measure Ultimate使用。 要使�
 
 **为第2层客户启用了回滚阶段**
 
-以前仅对三级客户可用，但自2024年6月7日起，所有二级客户也可以使用回旋镖暂存功能。 有关此功能的更多详细信息，请参阅下面的文档。
+以前仅向第3级客户提供，从2024年6月13日起，所有2级客户也可以使用回旋镖暂存功能。 有关此功能的更多详细信息，请参阅下面的文档。
 
 * [自走式暂存器和接触点](/help/advanced-marketo-measure-features/boomerang/boomerang-stages-and-touchpoints.md){target="_blank"}
 * [设置回访单阶段](/help/advanced-marketo-measure-features/boomerang/setting-up-boomerang-stages.md){target="_blank"}
