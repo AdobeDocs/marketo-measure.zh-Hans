@@ -4,9 +4,9 @@ description: 常见问题解答（多货币） —  [!DNL Marketo Measure]
 title: 常见问题解答（多货币）
 exl-id: 1d0936fb-4e66-4877-98d2-32c678a7ef3e
 feature: Multi-Currency
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: 9f374537dd3690b5c904e2ac1933ff460dc66282
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 请记住，此功能有两个不同的特征位。 两者均位于 [!UICONTROL General] “设置：多个货币和高级货币”中CRM部分的选项卡。 如果客户使用多种货币，则应启用多种货币；而如果客户使用，则可以启用附加功能位“高级货币” [!DNL Salesforce]的“高级货币管理”功能，用户可以在该功能中设置基于时间的兑换率范围。
 
-不幸的是，如果已经启用“高级”，我们不知道客户何时在“简单”或“高级”之间切换。 因此，客户需要手动将高级货币设置与其CRM设置保持一致。 如果转化率不正确，客户应该可以清楚地看到这一点，这意味着我们不知道要应用的转化率级别。
+Marketo Measure会自动从客户的CRM中提取货币设置。 不再需要在Marketo Measure中手动配置以匹配CRM。 可在“常规”页面中的“CRM”下找到货币设置。
 
 **为什么我的广告帐户会向我发送警告消息？**
 

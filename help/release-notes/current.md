@@ -3,9 +3,9 @@ description: 最新发行说明 —  [!DNL Marketo Measure]
 title: 最新发行说明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 97a82ae0649ae5b1349d025a7a7cf433bc64bc7e
+source-git-commit: 9f374537dd3690b5c904e2ac1933ff460dc66282
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '793'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 **提醒： Salesforce字段弃用 — 6月14日**
 
-正如去年宣布的那样，我们将逐步停止对Lead/Contact对象的导出工作，以简化我们的集成，并消除导出到Salesforce标准对象的需要。 您可以按照以下步骤从接触点对象获取相同的数据 [此处记录](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}. 我们还将共享有关创建工作流的文档，以将此数据添加到Lead/Contact对象。 弃用将于2024年6月14日生效。
+正如去年所宣布的，我们将 [逐步停止将导出作业导出到潜在客户/联系人对象](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"} 以简化集成，并消除导出到Salesforce标准对象的需要。 您可以按照以下步骤从接触点对象获取相同的数据 [此处记录](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}. 我们还将共享有关创建工作流的文档，以将此数据添加到Lead/Contact对象。 弃用将于2024年6月14日生效。
 
 这一变化将带来两大好处：
 
