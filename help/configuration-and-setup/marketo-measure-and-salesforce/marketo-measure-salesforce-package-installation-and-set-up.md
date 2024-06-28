@@ -3,9 +3,9 @@ description: "[!DNL Marketo Measure] Salesforce包的安装和设置 —  [!DNL 
 title: '"[!DNL Marketo Measure] [!DNL Salesforce] 软件包安装和设置”'
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 05ba9e487d492ba4352a7f0577c7221f6ec9567e
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 [!DNL Marketo Measure] 通过连接的发送和接收数据 [!DNL Salesforce] 用户属于 [!DNL Marketo Measure] 应用程序。
 
-要将接触点数据推送到 [!DNL Salesforce] 实例中，连接的用户必须有权访问 [!DNL Marketo Measure] 自定义对象（例如，买方接触点和买方归因接触点）以及标准 [!DNL Salesforce] 诸如潜在客户和联系人之类的对象。
+要将接触点数据推送到 [!DNL Salesforce] 实例中，连接的用户必须有权访问 [!DNL Marketo Measure] 自定义对象(例如Buyer Touchpoint和Buyer Attribution Touchpoint)以及标准 [!DNL Salesforce] 诸如潜在客户和联系人之类的对象。
 
 创建 [!DNL Marketo Measure] 配置文件以确保您在将数据推送到Salesforce时不会遇到验证错误。
 
@@ -91,4 +91,6 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->[Adobe Admin Console设置](/help/configuration-and-setup/getting-started-with-marketo-measure/adobe-admin-console-setup.md){target="_blank"}
+>* [集成权限概述](/help/api-connections/utilizing-marketo-measures-api-connections/integration-permissions-overview.md){target="_blank"}
+>
+>* [Adobe Admin Console设置](/help/configuration-and-setup/getting-started-with-marketo-measure/adobe-admin-console-setup.md){target="_blank"}

@@ -4,9 +4,9 @@ description: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] Interact - Mark
 title: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] Interact
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 feature: Salesforce
-source-git-commit: 9f374537dd3690b5c904e2ac1933ff460dc66282
+source-git-commit: 05ba9e487d492ba4352a7f0577c7221f6ec9567e
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1152'
 ht-degree: 19%
 
 ---
@@ -124,67 +124,7 @@ ht-degree: 19%
    <td>自定义</td> 
    <td>x</td> 
    <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Ad_Campaign_Name_FT__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Ad_Campaign_Name_LC__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Landing_Page_FT__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Landing_Page_LC__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Marketing_Channel_FT__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Marketing_Channel_LC__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Date_FT__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Date_LC__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Source_FT__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Source_LC__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
@@ -233,67 +173,7 @@ ht-degree: 19%
    <td>标准</td> 
    <td>x</td> 
    <td> </td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Ad_Campaign_Name_FT__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Ad_Campaign_Name_LC__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Landing_Page_FT__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Landing_Page_LC__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Marketing_Channel_FT__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Marketing_Channel_LC__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Date_FT__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Date_LC__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Source_FT__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Source_LC__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
@@ -335,67 +215,7 @@ ht-degree: 19%
    <td>IsDeleted</td> 
    <td>标准</td> 
    <td>x</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Ad_Campaign_Name_FT__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Ad_Campaign_Name_LC__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Landing_Page_FT__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Landing_Page_LC__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Marketing_Channel_FT__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Marketing_Channel_LC__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Date_FT__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Date_LC__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Source_FT__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x</td> 
-  </tr> 
-  <tr> 
-   <td>bizible2__Touchpoint_Source_LC__c</td> 
-   <td>自定义</td> 
-   <td>x</td> 
-   <td>x </td> 
+   <td> </td>
   </tr> 
  </tbody> 
 </table>
@@ -685,6 +505,12 @@ ht-degree: 19%
    <td><br></td> 
   </tr>
   <tr> 
+   <td>名称</td> 
+   <td>标准</td> 
+   <td>x</td> 
+   <td>x</td> 
+  </tr>
+  <tr> 
    <td>bizible2__UniqueId__c</td> 
    <td>自定义</td> 
    <td>x</td> 
@@ -814,9 +640,9 @@ ht-degree: 19%
 
 除了在SFDC的标准对象上创建自定义字段外，在 [!DNL Marketo Measure] 软件包已安装，它会创建几个自定义对象。 以下是这些自定义对象的列表，以及一个表示以下字段的表： [!DNL Marketo Measure] 将写入。
 
-**买方接触点**
+**Buyer Touchpoint**
 
-买方接触点是 [!DNL Marketo Measure] 自定义对象，用于封装联系人、潜在客户和案例的营销交互。
+Buyer Touchpoint是 [!DNL Marketo Measure] 自定义对象，用于封装联系人、潜在客户和案例的营销交互。
 
 <table> 
  <tbody> 
@@ -1001,7 +827,7 @@ ht-degree: 19%
    <td>x</td> 
   </tr> 
   <tr> 
-   <td>bizible2__中__c</td> 
+   <td>bizible2__Medium__c</td> 
    <td>自定义</td> 
    <td>x</td> 
    <td>x</td> 
@@ -1120,11 +946,11 @@ ht-degree: 19%
  </tbody> 
 </table>
 
-## 买方归因接触点 {#buyer-attribution-touchpoint}
+## Buyer Attribution Touchpoint {#buyer-attribution-touchpoint}
 
-买方归因接触点属于 [!DNL Marketo Measure] 用于封装营销对机会的影响的自定义对象。
+Buyer Attribution Touchpoint是 [!DNL Marketo Measure] 用于封装营销对机会的影响的自定义对象。
 
-**买方归因接触点**
+**Buyer Attribution Touchpoint**
 
 <table> 
  <tbody> 
@@ -1321,7 +1147,7 @@ ht-degree: 19%
    <td>x</td> 
   </tr> 
   <tr> 
-   <td>bizible2__中__c</td> 
+   <td>bizible2__Medium__c</td> 
    <td>自定义</td> 
    <td>x</td> 
    <td>x</td> 
