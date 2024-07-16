@@ -1,43 +1,54 @@
 ---
 unique-page-id: 18874672
-description: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] Interact - Marketo Measure — 产品文档
-title: 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] Interact
+description: ' [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何交互 — Marketo Measure — 产品文档'
+title: ' [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何交互'
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 feature: Salesforce
-source-git-commit: 05ba9e487d492ba4352a7f0577c7221f6ec9567e
+source-git-commit: 3b14e758e81f237406da4e0fe1682a02b7a841fd
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 19%
+source-wordcount: '1237'
+ht-degree: 18%
 
 ---
 
-# 如何 [!DNL Marketo Measure] 和 [!DNL Salesforce] Interact {#how-marketo-measure-and-salesforce-interact}
+# [!DNL Marketo Measure]和[!DNL Salesforce]如何交互 {#how-marketo-measure-and-salesforce-interact}
 
 >[!NOTE]
 >
->您可能会看到说明“[!DNL Marketo Measure]”，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
+>您可能会在文档中看到指定“[!DNL Marketo Measure]”的说明，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
-下面我们来从高层面了解一下两者之间的关系 [!DNL Marketo Measure] 和Salesforce。
+让我们来深入了解[!DNL Marketo Measure]与Salesforce之间的关系。
 
-## Salesforce和 [!DNL Marketo Measure] {#salesforce-and-marketo-measure}
+## Salesforce和[!DNL Marketo Measure] {#salesforce-and-marketo-measure}
 
-一旦 [!DNL Marketo Measure] 已创建帐户并 [!DNL Salesforce] 已连接， [!DNL Marketo Measure] 开始将营销数据推送到CRM实例，前提是 [!DNL Marketo Measure] 已安装受管软件包，并且 [!DNL Marketo Measure] Salesforce用户具有编辑权限。
+在创建[!DNL Marketo Measure]帐户并连接[!DNL Salesforce]后，只要安装了[!DNL Marketo Measure]托管包并且[!DNL Marketo Measure] Salesforce用户具有编辑权限，[!DNL Marketo Measure]就会开始将营销数据推送到CRM实例中。
 
-如果您未安装 [!DNL Marketo Measure] Salesforce包， [!DNL Marketo Measure] 不会向Salesforce实例写入任何数据。
+如果未安装[!DNL Marketo Measure] Salesforce包，[!DNL Marketo Measure]将不会向Salesforce实例写入任何数据。
 
 ![](assets/1-3.png)
 
-默认情况下， [!DNL Marketo Measure] 每次在作业向CRM发送数据时，将每个API点数导出200条记录。 对于大多数客户而言，这提供了所消耗的API积分之间的最佳平衡。 [!DNL Marketo Measure] 和CRM上的CPU资源要求。 但是，对于具有复杂CRM配置（如工作流和触发器）的客户，较小的批处理大小可能有助于提高CRM性能。 为此， [!DNL Marketo Measure] 允许客户配置CRM导出批次大小。 此设置可在 [!UICONTROL Settings] > [!UICONTROL CRM] > [!UICONTROL General] 中的页面 [!DNL Marketo Measure] Web应用程序和客户可以选择批量为200（默认）、100、50或25。
+默认情况下，[!DNL Marketo Measure]在每次作业将数据发送到您的CRM时，将每个API点数导出200条记录。 对于大多数客户而言，这提供了[!DNL Marketo Measure]使用的API积分与CRM上的CPU资源要求之间的最佳平衡。 但是，对于具有复杂CRM配置（如工作流和触发器）的客户，较小的批处理大小可能有助于提高CRM性能。 为此，[!DNL Marketo Measure]允许客户配置CRM导出批次大小。 此设置在[!DNL Marketo Measure] Web应用程序的[!UICONTROL Settings] > [!UICONTROL CRM] > [!UICONTROL General]页面上可用，客户可以选择批次大小为200（默认值）、100、50或25。
 
 ![](assets/how-bizible-and-salesforce-interact-2.png)
 
 在修改此设置时，请记住，较小的批次大小会消耗您的CRM中的更多API积分。 仅当您在CRM中遇到CPU超时或CPU负载过高时，才建议减小批次大小。
 
+## Salesforce连接的用户权限 {#salesforce-connected-user-permissions}
+
+**针对专用用户的Marketo Measure管理员权限集**：允许SFDC管理员对Marketo Measure对象执行CRUD操作。
+
+**查看和编辑转换的潜在客户权限集**：这允许Marketo Measure在潜在客户转换为联系人后对其进行装饰。
+
+**Salesforce营销用户复选框**：允许用户创建营销活动并使用“营销活动导入向导”。
+* Campaign“创建”需要其他权限。
+
+**Marketo Measure Standard用户**：允许用户从Marketo Measure对象中读取记录。
+
 ## Salesforce标准对象和访问 {#salesforce-standard-objects-and-access}
 
-这将列出 [!DNL Salesforce] 符合以下条件的标准对象 [!DNL Marketo Measure] 与交互，并建立连接后我们添加到这些对象的自定义字段，以及 [!DNL Marketo Measure] 软件包已安装。 开箱即用， [!DNL Marketo Measure] 不会写入任何标准 [!DNL Salesforce] 对象字段。
+这会列出[!DNL Marketo Measure]与之交互的[!DNL Salesforce]标准对象，以及在建立连接并安装[!DNL Marketo Measure]包后我们添加到这些对象的自定义字段。 开箱即用，[!DNL Marketo Measure]不会写入任何标准[!DNL Salesforce]对象字段。
 
-**商机**
+**潜在客户**
 
 <table> 
  <tbody> 
@@ -177,7 +188,7 @@ ht-degree: 19%
  </tbody> 
 </table>
 
-**Case**
+**案例**
 
 <table> 
  <tbody> 
@@ -636,13 +647,13 @@ ht-degree: 19%
 >* 任务
 
 
-## [!DNL Marketo Measure] 中的自定义对象 [!DNL Salesforce] {#marketo-measure-custom-objects-in-salesforce}
+## [!DNL Salesforce]中的[!DNL Marketo Measure]自定义对象 {#marketo-measure-custom-objects-in-salesforce}
 
-除了在SFDC的标准对象上创建自定义字段外，在 [!DNL Marketo Measure] 软件包已安装，它会创建几个自定义对象。 以下是这些自定义对象的列表，以及一个表示以下字段的表： [!DNL Marketo Measure] 将写入。
+除了在SFDC的标准对象上创建自定义字段外，在安装[!DNL Marketo Measure]包之后，它会创建几个自定义对象。 以下是这些自定义对象的列表，以及一个表示[!DNL Marketo Measure]将写入的字段的表。
 
 **Buyer Touchpoint**
 
-Buyer Touchpoint是 [!DNL Marketo Measure] 自定义对象，用于封装联系人、潜在客户和案例的营销交互。
+Buyer Touchpoint是一个[!DNL Marketo Measure]自定义对象，用于封装联系人、潜在客户和案例的营销交互。
 
 <table> 
  <tbody> 
@@ -909,7 +920,7 @@ Buyer Touchpoint是 [!DNL Marketo Measure] 自定义对象，用于封装联系�
 
 **[!DNL Marketo Measure]人员**
 
-此 [!DNL Marketo Measure] 人员是 [!DNL Marketo Measure] 与Lead、Contact和Case对象都相关的自定义对象。
+[!DNL Marketo Measure]人员是[!DNL Marketo Measure]自定义对象，它与潜在客户、联系人和案例对象均相关。
 
 <table> 
  <tbody> 
@@ -948,7 +959,7 @@ Buyer Touchpoint是 [!DNL Marketo Measure] 自定义对象，用于封装联系�
 
 ## Buyer Attribution Touchpoint {#buyer-attribution-touchpoint}
 
-Buyer Attribution Touchpoint是 [!DNL Marketo Measure] 用于封装营销对机会的影响的自定义对象。
+Buyer Attribution Touchpoint是一个[!DNL Marketo Measure]自定义对象，用于封装营销对机会的影响。
 
 **Buyer Attribution Touchpoint**
 
@@ -1304,3 +1315,7 @@ Buyer Attribution Touchpoint是 [!DNL Marketo Measure] 用于封装营销对机�
   </tr> 
  </tbody> 
 </table>
+
+>[!MORELIKETHIS]
+>
+>[集成权限概述](/help/api-connections/utilizing-marketo-measures-api-connections/integration-permissions-overview.md){target="_blank"}
