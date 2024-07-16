@@ -3,9 +3,9 @@ description: “[!DNL Marketo Measure]最终数据完整性要求 —  [!DNL Mar
 title: “[!DNL Marketo Measure]最终数据完整性要求”
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: 3b14e758e81f237406da4e0fe1682a02b7a841fd
+source-git-commit: 54695bd795fe9bdb58d97b6b0762b9e9fe8f17cf
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1611'
 ht-degree: 15%
 
 ---
@@ -886,6 +886,8 @@ ht-degree: 15%
     </tr>
   </tbody>
 </table>
+
+## 货币兑换数据要求 {#currency-conversion-data-requirements}
 
 **默认货币**：在Marketo Measure中，所有收入和成本在报告时都转换为默认货币。 对于目标货币本身，必须有一条记录具有相同的日期范围（例如，USD到USD），并且兑换率为1。
 
