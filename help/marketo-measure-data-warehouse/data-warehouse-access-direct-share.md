@@ -14,25 +14,25 @@ ht-degree: 0%
 
 ## 要求 {#requirements}
 
-对象 [!DNL Marketo Measure] 要设置直接共享到Data Warehouse，您必须满足以下要求。
+要让[!DNL Marketo Measure]设置直接共享到数据仓库，您必须满足以下要求。
 
 * 您有自己的Snowflake实例。
 * 您的Snowflake实例位于Azure East US 2Snowflake区域。
-* 您提供 [!DNL Marketo Measure] 使用您的Snowflake帐户ID。
+* 您向[!DNL Marketo Measure]提供您的Snowflake帐户ID。
 
 ## 限制 {#limitations}
 
-[!DNL Marketo Measure] 由于当前的Snowflake直接共享限制，将只能使用Azure East US 2中的帐户设置Snowflake直接共享。 如果您要求您的数据在其他Snowflake地区可用，我们建议在Azure East US 2的Snowflake帐户中制作数据副本，并使用 [Snowflake数据库复制](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"} 功能，可在您选择的Snowflake地区/帐户中复制您的数据。
+由于当前的Snowflake直接共享限制，[!DNL Marketo Measure]将只能与位于Azure East US 2中的帐户设置Snowflake直接共享。 如果您要求您的数据在其他Snowflake地区可用，我们建议在位于Azure US 2东部的Snowflake帐户中制作数据副本，并使用[Snowflake数据库复制](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"}功能在您选择的Snowflake地区/帐户中复制您的数据。
 
 ## 输入Snowflake帐户ID {#enter-snowflake-account-id}
 
-打开 **设置** Marketo Measure部分，然后导航到 **Data Warehouse** 页面。 在 **直接共享** 部分，输入您的 [Snowflake帐户ID](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html){target="_blank"} 在提供的框中，然后单击 **连接**.
+打开Marketo Measure应用程序中的&#x200B;**设置**&#x200B;部分，然后导航到&#x200B;**Data Warehouse**&#x200B;页面。 在&#x200B;**直接共享**&#x200B;分区中，在提供的框中输入您的[Snowflake帐户ID](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html){target="_blank"}，然后单击&#x200B;**连接**。
 
 ![](assets/data-warehouse-access-direct-share-1.png)
 
 ## 访问共享 {#accessing-the-share}
 
-在为提供的帐户ID创建共享后，您必须完成 [设置步骤](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"} 访问Snowflake实例中的数据。
+在为提供的帐户ID创建共享后，您必须完成Snowflake实例中的[设置步骤](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"}才能访问数据。
 
 >[!NOTE]
 >
@@ -63,4 +63,4 @@ GRANT IMPORTED PRIVILEGES ON DATABASE <database_name> TO ROLE <role_name>
 GRANT IMPORTED PRIVILEGES ON ALL SCHEMAS IN DATABASE <database_name> TO ROLE <role_name>
 ```
 
-有关从SnowflakeUI完成这些步骤的更多详细说明和步骤，请参阅 [直接查看Snowflake文档](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"}.
+有关从SnowflakeUI完成这些步骤的更多详细说明和步骤，请直接引用[Snowflake的文档](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"}。

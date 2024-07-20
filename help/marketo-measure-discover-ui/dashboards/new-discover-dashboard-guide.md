@@ -1,5 +1,5 @@
 ---
-description: 新增发现功能板指南 —  [!DNL Marketo Measure]  — 产品
+description: 新的发现功能板指南 —  [!DNL Marketo Measure]  — 产品
 title: 新增发现功能板指南
 feature: Reporting
 exl-id: 088ccd63-dcf8-49c0-abbb-02f10ed8ae6e
@@ -26,53 +26,53 @@ ht-degree: 0%
     </tr>
     <tr>
       <td>概述</td>
-      <td><ul><li><strong>收入</strong>：归因收入、收入概述、ROI功能板</li>
+      <td><ul><li><strong>收入</strong>：归因收入、收入概述、ROI仪表板</li>
           <li><strong>概述</strong>：<ul>              <li>已归因的收入仪表板：按渠道在一段时间内的已归因收入</li>
             <li>ROI仪表板：随时间变化的成本图表</li></ul></li><li><strong>支出</strong>： ROI仪表板</li>
-          <li><strong>交易</strong>：归因收入、收入概述、ROI功能板</li>
+          <li><strong>交易</strong>：归因收入、收入概述、ROI仪表板</li>
           <li>
-            <strong>每笔交易的成本： </strong>ROI仪表板</li>
+            <strong>每项交易的成本：</strong>ROI仪表板</li>
           <li>
             <strong>渠道/子渠道/营销活动摘要：</strong>ROI仪表板</li>
           <li>
             <strong>ROI和ROI摘要：</strong>ROI仪表板</li>
           <li>
-            <strong>Pipeline收入：</strong>已弃用（请参阅下文）</li>
+            <strong>管道收入：</strong>已弃用（请参阅下文）</li>
           <li>
-            <strong>平均交易规模： </strong>已弃用（请参阅下文）</li></ul>
+            <strong>平均交易大小：</strong>已弃用（请参阅下文）</li></ul>
       </td>
     </tr>
     <tr>
       <td>增长</td>
       <td><ul>
           <li>
-            <strong>随时间变化的收入和收入</strong>：归因收入、收入概述、ROI功能板</li>
+            <strong>随时间变化的收入和收入</strong>：归因的收入、收入概述、ROI仪表板</li>
           <li>
-            <strong>交易</strong>：归因收入、收入概述、ROI功能板</li>
+            <strong>交易</strong>：归因收入、收入概述、ROI仪表板</li>
           <li>
-            <strong>潜在客户</strong>：归因收入、收入概述、ROI功能板</li>
+            <strong>潜在客户</strong>：已归因的收入、收入概述、ROI仪表板</li>
           <li>
-            <strong>机会</strong>：归因收入、收入概述、ROI功能板</li>
+            <strong>机会</strong>：已归因的收入、收入概述、ROI仪表板</li>
           <li>
-            <strong>随时间变化的访问和访问</strong>：Web流量仪表板</li>
+            一段时间内的<strong>访问和访问</strong>： Web流量仪表板</li>
           <li>
-            <strong>一段时间的独特访问和独特访问</strong>：Web流量仪表板</li>
+            一段时间内的<strong>独特访问次数和独特访问次数</strong>： Web流量仪表板</li>
           <li>
-            <strong>随时间变化的网站Forms和网站Forms</strong>：Web流量仪表板</li>
+            <strong>网站Forms和网站Forms随时间变化</strong>： Web流量仪表板</li>
           <li>
-            <strong>随时间变化的交易</strong>
+            一段时间内的<strong>个交易</strong>
             <strong>： </strong>已弃用（请参阅下文）</li>
           <li>
             <strong>管道收入</strong>
             <strong>： </strong>已弃用（请参阅下文）</li>
           <li>
-            <strong>随时间变化的管道收入</strong>
+            一段时间内的<strong>管道收入</strong>
             <strong>： </strong>已弃用（请参阅下文）</li>
           <li>
-            <strong>随时间变化的潜在客户</strong>
+            <strong>潜在客户超时</strong>
             <strong>： </strong>已弃用（请参阅下文）</li>
           <li>
-            <strong>随时间变化的联系人和联系人</strong>
+            <strong>个联系人和联系人随时间变化</strong>
             <strong>： </strong>已弃用（请参阅下文）</li>
           <li>
             <strong>随时间变化的机会</strong>
@@ -96,27 +96,27 @@ ht-degree: 0%
       <td>
         <ul>
           <li>
-            <strong>收入</strong>：归因收入、收入概述、ROI功能板</li>
+            <strong>收入</strong>：归因收入、收入概述、ROI仪表板</li>
           <li>
-            <strong>匹配的潜在客户</strong>： ROI仪表板</li>
+            <strong>个匹配的潜在客户</strong>： ROI仪表板</li>
           <li>
             <strong>接触点计数：</strong>ROI仪表板</li>
           <li>
-            <strong>参与的帐户：</strong>参与仪表板</li>
+            <strong>参与帐户：</strong>参与仪表板</li>
           <li>
             <strong>参与的机会</strong>
             <strong>：</strong>参与仪表板</li>
           <li>
-            <strong>参与的个人</strong>
+            <strong>个人参与</strong>
             <strong>：</strong>参与仪表板</li>
           <li>
-            <strong>每个帐户的平均接触次数： </strong>参与仪表板</li>
+            <strong>每个帐户的平均接触次数：</strong>参与仪表板</li>
           <li>
-            <strong>随时间变化的接触点：</strong>参与仪表板</li>
+            一段时间内的<strong>接触点：</strong>参与仪表板</li>
           <li>
-            <strong>按接触点计数划分的帐户： </strong>参与仪表板</li>
+            按接触点计数<strong>帐户：</strong>参与仪表板</li>
           <li>
-            <strong>Pipeline收入：</strong>已弃用（请参阅下文）</li>
+            <strong>管道收入：</strong>已弃用（请参阅下文）</li>
         </ul>
       </td>
     </tr>
@@ -125,13 +125,13 @@ ht-degree: 0%
       <td>
         <ul>
           <li>
-            <strong>收入</strong>：归因收入、收入概述、ROI功能板</li>
+            <strong>收入</strong>：归因收入、收入概述、ROI仪表板</li>
           <li>
             <strong>支出</strong>： ROI仪表板</li>
           <li>
-            <strong>ROI： </strong>ROI仪表板</li>
+            <strong>ROI：</strong>ROI仪表板</li>
           <li>
-            <strong>按渠道/子渠道/营销活动列出的支出： </strong>ROI仪表板</li>
+            <strong>按渠道/子渠道/营销活动支出： </strong>ROI仪表板</li>
         </ul>
       </td>
     </tr>
@@ -142,7 +142,7 @@ ht-degree: 0%
           <li>
             <strong>独特访问：</strong>Web流量仪表板</li>
           <li>
-            <strong>访问次数：</strong>Web流量仪表板</li>
+            <strong>访问：</strong>Web流量仪表板</li>
           <li>
             <strong>页面查看次数：</strong>Web流量仪表板</li>
           <li>
@@ -154,25 +154,25 @@ ht-degree: 0%
           <li>
             <strong>反向链接摘要：</strong>Web流量仪表板</li>
           <li>
-            <strong>按来源显示的独特访问次数：</strong>Web流量仪表板</li>
+            Source的<strong>独特访问次数：</strong>Web流量仪表板</li>
           <li>
-            <strong>按来源显示的访问次数：</strong>Web流量仪表板</li>
+            Source的<strong>访问次数：</strong>Web流量仪表板</li>
           <li>
-            <strong>按表单URL排列的潜在客户：</strong>Web流量仪表板</li>
+            <strong>潜在客户（按表单URL）：</strong>Web流量仪表板</li>
           <li>
             <strong>每次独特访问的成本</strong>
           </li>
           <li>
-            <strong>每次访问的成本</strong>
+            <strong>每次访问成本</strong>
           </li>
           <li>
             <strong>每次独特访问的收入</strong>
           </li>
           <li>
-            <strong>每次访问的收入</strong>
+            <strong>每次访问带来的收入</strong>
           </li>
           <li>
-            <strong>按登陆页面列出的潜在客户</strong>
+            按登陆页面<strong>潜在客户</strong>
           </li>
         </ul>
       </td>
@@ -182,7 +182,7 @@ ht-degree: 0%
       <td>
         <ul>
           <li>
-            <strong>收入</strong>：归因收入、收入概述、ROI功能板</li>
+            <strong>收入</strong>：归因收入、收入概述、ROI仪表板</li>
           <li>
             <strong>概述</strong>：<ul>
               <li>已归因的收入仪表板：按渠道在一段时间内的已归因收入</li>
@@ -192,21 +192,21 @@ ht-degree: 0%
           <li>
             <strong>支出</strong>： ROI仪表板</li>
           <li>
-            <strong>交易</strong>：归因收入、收入概述、ROI功能板</li>
+            <strong>交易</strong>：归因收入、收入概述、ROI仪表板</li>
           <li>
-            <strong>每笔交易的成本： </strong>ROI仪表板</li>
+            <strong>每项交易的成本：</strong>ROI仪表板</li>
           <li>
             <strong>渠道/子渠道/营销活动摘要：</strong>ROI仪表板</li>
           <li>
-            <strong>Pipeline收入：</strong>已弃用（请参阅下文）</li>
+            <strong>管道收入：</strong>已弃用（请参阅下文）</li>
           <li>
-            <strong>平均交易规模： </strong>已弃用（请参阅下文）</li>
+            <strong>平均交易大小：</strong>已弃用（请参阅下文）</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td>付费媒体</td>
-      <td>用户可以在以下位置为付费媒体渠道应用过滤器： <strong>Web流量仪表板</strong>.</td>
+      <td>用户可以在<strong>Web流量仪表板</strong>中为付费媒体渠道应用过滤器。</td>
     </tr>
     <tr>
       <td>内容营销</td>
@@ -221,38 +221,38 @@ ht-degree: 0%
             <strong>独特访问：</strong>
             <strong></strong>Web流量仪表板</li>
           <li>
-            <strong>按独特访问次数排名的登陆页面排名：</strong>
+            <strong>按独特访问排名靠前的登陆页面：</strong>
             <strong></strong>Web流量仪表板</li>
           <li>
-            <strong>按访问次数排名靠前的登陆页面：</strong>
+            <strong>按访问排名靠前的登陆页面：</strong>
             <strong></strong>Web流量仪表板</li>
           <li>
-            <strong>按商机计数划分的登陆页面：</strong>
+            按潜在客户计数列出的<strong>登陆页面：</strong>
             <strong></strong>Web流量仪表板</li>
           <li>
             <strong>潜在客户：</strong>
             <strong></strong>Web流量仪表板</li>
           <li>
-            <strong>机会</strong>：归因收入、收入概述、ROI功能板</li>
+            <strong>机会</strong>：已归因的收入、收入概述、ROI仪表板</li>
           <li>
             <strong>Web流量摘要：</strong>
             <strong></strong>Web流量仪表板</li>
           <li>
-            <strong>表单URL（按渠道）</strong>
+            <strong>按渠道表单URL</strong>
             <strong>：</strong>
-            <strong></strong>网络流量仪表板(按渠道过滤站点Forms拼贴)</li>
+            <strong></strong>Web流量仪表板(按渠道筛选站点Forms拼贴)</li>
           <li>
-            <strong>按收入划分的登陆页面： </strong>已弃用（请参阅下文）</li>
+            按收入<strong>登陆页面：</strong>已弃用（请参阅下文）</li>
           <li>
-            <strong>Pipeline收入： </strong>已弃用（请参阅下文）</li>
+            <strong>管道收入：</strong>已弃用（请参阅下文）</li>
           <li>
-            <strong>按管道收入划分的登陆页面：</strong>已弃用（请参阅下文）</li>
+            按管道收入<strong>登陆页面：</strong>已弃用（请参阅下文）</li>
           <li>
-            <strong>按机会计数划分的登陆页面：</strong>已弃用（请参阅下文）</li>
+            按机会计数<strong>登陆页面：</strong>已弃用（请参阅下文）</li>
           <li>
-            <strong>潜在客户管道摘要： </strong>正在审查</li>
+            <strong>潜在客户管道摘要：</strong>正在审核中</li>
           <li>
-            <strong>机会管道摘要： </strong>正在审查</li>
+            <strong>机会管道摘要：</strong>正在审查</li>
         </ul>
       </td>
     </tr>
@@ -267,26 +267,26 @@ ht-degree: 0%
       <td>
         <ul>
           <li>
-            <strong>速度（天）：</strong> Velocity功能板</li>
+            <strong>Velocity （天）：</strong> Velocity仪表板</li>
           <li>
-            <strong>按渠道划分的交易速度： </strong>Velocity功能板</li>
+            按渠道<strong>交易周转率：</strong>周转率仪表板</li>
           <li>
-            <strong>按渠道列出的销售线索周转率： </strong>Velocity功能板</li>
+            <strong>按渠道列出的销售线索Velocity：</strong>Velocity仪表板</li>
           <li>
-            <strong>平均交易速度： </strong>Velocity功能板</li>
+            <strong>平均交易速度：</strong>速度仪表板</li>
           <li>
-            <strong>平均潜在客户周转率： </strong>Velocity功能板</li>
+            <strong>平均潜在客户周转率：</strong>周转率仪表板</li>
           <li>
-            <strong>随时间变化的机会周转率： </strong>Velocity功能板</li>
+            <strong>随时间变化的机会周转率：</strong>周转率仪表板</li>
           <li>
-            <strong>随时间变化的提前线速度： </strong>Velocity功能板</li>
+            <strong>随时间变化的潜在客户周转率：</strong>周转率仪表板</li>
           <li>
-            <strong>BT/BAT随时间变化：</strong>参与仪表板</li>
+            随时间变化的<strong>BT/BAT：</strong>参与仪表板</li>
           <li>
-            <strong>打开机会：</strong>
+            <strong>打开的机会：</strong>
             <strong> </strong>已弃用（请参阅下文）</li>
           <li>
-            <strong>平均交易规模：</strong>
+            <strong>平均交易大小：</strong>
             <strong></strong>已弃用（请参阅下文）</li>
           <li>
             <strong>获胜率：</strong>
@@ -296,7 +296,7 @@ ht-degree: 0%
     </tr>
     <tr>
       <td>快照</td>
-      <td>用户可通过在中筛选特定日期来获取记录的快照 <strong>护照信息板。</strong>
+      <td>用户通过在<strong>Passport仪表板中筛选特定日期，可以获得记录的快照。</strong>
       </td>
     </tr>
     <tr>
@@ -304,7 +304,7 @@ ht-degree: 0%
       <td>
         <ul>
           <li>
-            <strong>机会和潜在客户/联系人： </strong>Passport信息板</li>
+            <strong>机会和潜在客户/联系人：</strong>Passport仪表板</li>
         </ul>
       </td>
     </tr>
@@ -319,7 +319,7 @@ ht-degree: 0%
       <td>
         <ul>
           <li>
-            <strong>同类群组漏斗：</strong>同类群组历程功能板</li>
+            <strong>同类群组漏斗：</strong>同类群组历程仪表板</li>
           <li>
             <strong>同类群组影响和收入：</strong>已弃用（请参阅下文）</li>
         </ul>
@@ -360,14 +360,14 @@ ht-degree: 0%
     <tr>
       <td>
         <p>
-          <strong>随时间变化的管道收入</strong>
+          一段时间内的<strong>管道收入</strong>
         </p>
       </td>
     </tr>
     <tr>
       <td>
         <p>
-          <strong>按PipelineRevenue显示的登陆页面</strong>
+          按PipelineRevenue <strong>登陆页面</strong>
         </p>
       </td>
     </tr>
@@ -399,7 +399,7 @@ ht-degree: 0%
     <tr>
       <td>
         <p>
-          <strong>随时间变化的交易</strong>
+          一段时间内的<strong>个交易</strong>
         </p>
       </td>
       <td rowspan="4">KPI图块中已提供这些量度。 我们已从仪表板中排除他们的时间序列视图，以避免冗余并保持清晰度。
@@ -407,7 +407,7 @@ ht-degree: 0%
     </tr>
     <tr>
       <td>
-        <strong>随时间变化的联系人</strong>
+        <strong>个随时间变化的联系人</strong>
       </td>
     </tr>
     <tr>
@@ -417,7 +417,7 @@ ht-degree: 0%
     </tr>
     <tr>
       <td>
-        <strong>随时间变化的潜在客户</strong>
+        <strong>潜在客户超时</strong>
       </td>
     </tr>
     <tr>
@@ -452,28 +452,28 @@ ht-degree: 0%
     <tr>
       <td>
         <p>
-          <strong>每次访问的收入</strong>
+          <strong>每次访问带来的收入</strong>
         </p>
       </td>
     </tr>
     <tr>
       <td>
         <p>
-          <strong>按登陆页面列出的潜在客户</strong>
+          按登陆页面<strong>潜在客户</strong>
         </p>
       </td>
     </tr>
     <tr>
       <td>
         <p>
-          <strong>按收入划分的登陆页面</strong>
+          按收入<strong>登陆页面</strong>
         </p>
       </td>
     </tr>
     <tr>
       <td>
         <p>
-          <strong>按机会计数划分的登陆页面</strong>
+          按机会计数<strong>登陆页面</strong>
         </p>
       </td>
     </tr>
@@ -488,15 +488,15 @@ ht-degree: 0%
 
 ## 我们已逐步弃用的功能 {#features-weve-phased-out}
 
-**筛选器更新**：为了简化您的体验，我们如下所示调整了筛选器选择。
+**筛选器更新**：为简化您的体验，我们调整了筛选器选择，如下所示。
 
-* **日期类型、指标、Dimension、分组依据**：现在，已为每个功能板预定义这些设置，以优化分析投放。 详细细节可通过工具提示和随附文档访问。
-* **促销活动来源**
+* **日期类型、指标、Dimension、分组依据**：现在已为每个仪表板预定义这些设置，以优化分析投放。 详细细节可通过工具提示和随附文档访问。
+* **促销活动Source**
 * **帐户ID和名称**：正在审查。
 
 ## 新增功能和改进功能 {#new-additions-and-improvements}
 
-可以在以下位置找到新增功能： [了解功能板基础知识](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"} 文章。
+可在[探索仪表板基础知识](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}文章中找到新功能。
 
 ## 反馈 {#feedback}
 
@@ -504,6 +504,6 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->* [了解功能板基础知识](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
->* [功能板数据可见性策略](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
+>* [了解仪表板基础知识](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [仪表板数据可见性策略](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
 

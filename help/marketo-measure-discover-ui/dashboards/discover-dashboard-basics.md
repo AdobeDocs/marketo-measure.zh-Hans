@@ -1,5 +1,5 @@
 ---
-description: 了解功能板基础知识 —  [!DNL Marketo Measure]  — 产品
+description: 了解仪表板基础知识 —  [!DNL Marketo Measure]  — 产品
 title: 了解功能板基础知识
 feature: Reporting
 exl-id: 597a4f7c-4965-4bcb-bf28-607abc9b7545

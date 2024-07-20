@@ -2,7 +2,8 @@
 description: 机会周转率仪表板 —  [!DNL Marketo Measure]  — 产品
 title: 机会周转率仪表板
 feature: Reporting
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+exl-id: d02455fd-8fca-435e-8ded-69abbbdcb3a4
+source-git-commit: c5a799c20d15c9e14bbdc69f422cd1b90a121e37
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 1%
@@ -22,7 +23,7 @@ Velocity功能板提供了有关潜在客户在销售漏斗中流动速度的动
 
 ### KPI拼贴 {#kpi-tile}
 
-* **成交速度**：从第一阶段到结束的“成功的已关闭”机会的平均天数。
+* **已结束交易周转率**：“已结束的赢家”机会从第一个阶段到结束的平均天数。
 
 ### 按阶段列出的机会周转率 {#opportunity-velocity-by-stage}
 

@@ -15,15 +15,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您可能会看到说明“[!DNL Marketo Measure]”在文档中，但仍请参见“[!DNL Bizible]”（在您的CRM中）。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
+>您可能会在文档中看到指定“[!DNL Marketo Measure]”的说明，但在您的CRM中仍会看到“[!DNL Bizible]”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
-当您潜入 [!DNL Marketo Measure] 报告位置 [!DNL Salesforce]，您可能会开始在报表中找到“重复”记录。 当您回顾时，您可能会遇到这种感觉 [!DNL Marketo Measure] 现成的报告。
+当您深入研究[!DNL Salesforce]中的[!DNL Marketo Measure]报告时，您可能会开始在报告中找到“重复”记录。 当您查看[!DNL Marketo Measure]现成报告时，您可能会遇到这种感觉。
 
-在使用“采购员接触点”对象或“采购员归因接触点”对象进行报告时，请务必了解，您不再报告销售线索、联系人或业务机会的数量，而是报告与这些标准对象（销售线索、联系人、业务机会）关联的采购员接触点或采购员归因接触点的数量。
+在使用“采购员接触点”对象或Buyer Attribution Touchpoint对象进行报告时，请务必了解一点，您不再报告销售线索、联系人或业务机会的数量，而是报告与这些标准对象（销售线索、联系人、业务机会）关联的“采购员接触点”或“采购员归因接触点”的数量。
 
 让我们以以下报表为例：
 
-这是 **与采购员接触点进行联系** 报告。 同样，这意味着我们查看的是与单个联系人关联的接触点计数。
+这是具有买方接触点的&#x200B;**联系人**&#x200B;报告。 同样，这意味着我们查看的是与单个联系人关联的接触点计数。
 
 ![](assets/1.gif)
 
@@ -35,4 +35,4 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] Tutorials：Stock SFDC报表](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/stock-salesforce-reports){target="_blank"}
+>[[!DNL Marketo Measure] Tutorials： Stock SFDC报告](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/stock-salesforce-reports){target="_blank"}

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->该功能板为Beta版。 在此过渡阶段，当前功能板和新功能板都将可供访问。 在我们完全过渡并确保实现最佳功能后，当前功能板将被弃用。
+>该功能板位于Beta中。 在此过渡阶段，当前功能板和新功能板都将可供访问。 在我们完全过渡并确保实现最佳功能后，当前功能板将被弃用。
 
 **讨论区回答的问题**：
 
@@ -27,8 +27,8 @@ ht-degree: 0%
 
 ### KPI拼贴 {#kpi-tiles}
 
-* **已归因收入**：根据所选归因模型，具有接触点的机会中的总收入贡献。
-* **已归因的交易**：具有接触点的“成功的已结束”机会数。
+* **已归因的收入**：具有接触点的商机中的总收入贡献，基于所选的归因模型。
+* **已归因的交易**：具有接触点的“已结束的胜利”机会数。
 
 ### 按渠道随时间变化的归因收入图表 {#attributed-revenue-by-channel-over-time-chart}
 
@@ -79,6 +79,6 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->* [了解功能板基础知识](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
->* [功能板数据可见性策略](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
+>* [了解仪表板基础知识](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [仪表板数据可见性策略](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
 

@@ -1,5 +1,5 @@
 ---
-description: 潜在客户周转率功能板 —  [!DNL Marketo Measure]  — 产品
+description: 潜在客户Velocity仪表板 —  [!DNL Marketo Measure]  — 产品
 title: 潜在客户周转率功能板
 feature: Reporting
 exl-id: f0937e9c-702f-4539-ab0b-05d9487c562d

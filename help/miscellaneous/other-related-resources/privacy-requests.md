@@ -5,27 +5,27 @@ exl-id: 883e475f-9868-412a-b505-230556f38484
 feature: APIs, Tracking
 source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
 # 隐私请求 {#privacy-requests}
 
-本文档概述如何管理可发送到的单个数据隐私请求 [!DNL Marketo Measure] 通过 [!DNL Privacy Service] UI和 **[!DNL Privacy Service]API**.
+本文档概述了如何管理可通过[!DNL Privacy Service] UI和&#x200B;**[!DNL Privacy Service]API**&#x200B;发送给[!DNL Marketo Measure]的单个数据隐私请求。
 
-您可以提交单个请求，以从中访问和删除消费者数据 [!DNL Marketo Measure] 有两种方式：
+您可以通过两种方式提交单个请求以从[!DNL Marketo Measure]访问和删除使用者数据：
 
-* 通过 [[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html){target="_blank"}.
-* 通过 **[!DNL Privacy Service]API**. 请参阅文档 [此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target="_blank"} and the API reference [here](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}.
+* 通过[[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html){target="_blank"}。
+* 通过&#x200B;**[!DNL Privacy Service]API**。 请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target="_blank"}和API引用[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}。
 
-此 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target="_blank"} 支持两种类型的请求：数据访问和数据删除。
+[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target="_blank"}支持两种类型的请求：数据访问和数据删除。
 
 我们来看看如何创建访问和删除请求。
 
 ## 发送Marketo Measure请求所需的设置 {#required-setup-to-send-requests-for-marketo-measure}
 
-请求访问和删除以下项的数据： [!DNL Marketo Measure]，您必须：
+要请求访问和删除[!DNL Marketo Measure]的数据，您必须：
 
 1. 识别以下内容：
 
@@ -35,9 +35,9 @@ ht-degree: 0%
 
    IMS组织ID是由24个字符组成的字母数字字符串，其后附加有@AdobeOrg。 如果您的营销团队或内部Adobe系统管理员不知道您组织的IMS组织ID，请通过gdprsupport@adobe.com联系Adobe客户关怀团队。 您需要IMS组织ID才能向隐私API提交请求。
 
-1. 在 [!DNL Privacy Service]，您可以将访问和删除请求提交到 [!DNL Marketo Measure]，并检查现有请求的状态。
+1. 在[!DNL Privacy Service]中，您可以向[!DNL Marketo Measure]提交访问和删除请求，并检查现有请求的状态。
 
-## 中的必填字段值 [!DNL Marketo Measure] JSON请求 {#required-field-values-in-marketo-measure-json-requests}
+## [!DNL Marketo Measure] JSON请求中的必填字段值 {#required-field-values-in-marketo-measure-json-requests}
 
 “companyContexts”：
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 &quot;users&quot;：
 
-* &quot;action&quot;： [!UICONTROL access] 或删除
+* &quot;action&quot;： [!UICONTROL access]或删除
 * &quot;userIDs&quot;：
    * &quot;namespace&quot;：电子邮件
    * &quot;type&quot;：标准
@@ -54,11 +54,11 @@ ht-degree: 0%
 
 &quot;include&quot;：
 
-* **marketoMeasure** (适用于该请求的Adobe产品)
+* **marketoMeasure**(适用于该请求的Adobe产品)
 
 “监管”：
 
-* **gdpr**， **ccpa**， **pdpa**， **lgpd_bra**，或 **nzpa_nzl** （即适用于该请求的隐私法规）
+* **gdpr**、**ccpa**、**pdpa**、**lgpd_bra**&#x200B;或&#x200B;**nzpa_nzl**（适用于该请求的隐私法规）
 
 ## 示例1：GDPR删除请求 {#gdpr-delete-request}
 

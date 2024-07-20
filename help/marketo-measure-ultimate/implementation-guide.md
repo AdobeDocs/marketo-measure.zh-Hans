@@ -1,15 +1,16 @@
 ---
-description: ’[!DNL Marketo Measure] 最终实施指南 —  [!DNL Marketo Measure]’
-title: ’[!DNL Marketo Measure] 最终实施指南
+description: “[!DNL Marketo Measure]最终实施指南 —  [!DNL Marketo Measure]”
+title: “[!DNL Marketo Measure]最终实施指南”
 feature: Integration, Tracking, Attribution
-source-git-commit: 1d954811e90165953f9d56a17747a3f12c723023
+exl-id: 0c707875-5d05-49b9-b1ff-c3f7b711ebd1
+source-git-commit: c5a799c20d15c9e14bbdc69f422cd1b90a121e37
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 0%
 
 ---
 
-# [!DNL Marketo Measure] 最终实施指南 {#marketo-measure-ultimate-implementation-guide}
+# [!DNL Marketo Measure]最终实施指南 {#marketo-measure-ultimate-implementation-guide}
 
 本文可作为Marketo Measure Ultimate的实施指南，为您提供清晰的步骤和分析，以确保成功的集成和利用。
 
@@ -30,32 +31,32 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 
 * 配置的AEP版本包括所有源连接器、架构数据建模、数据集、临时查询服务，以及仅适用于Marketo Measure的目标。
 
-了解有关 [Marketo Measure Ultimate](/help/marketo-measure-ultimate/marketo-measure-ultimate-overview.md){target="_blank"}.
+了解有关[Marketo Measure Ultimate](/help/marketo-measure-ultimate/marketo-measure-ultimate-overview.md){target="_blank"}的更多信息。
 
 ## 架构和数据集 {#schemas-and-datasets}
 
 >[!NOTE]
 >
->签出 [架构的构建块](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema){target="_blank"} 有关架构、类和字段组的概述。
+>查看架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema){target="_blank"}的[构建块，了解架构、类和字段组的概述。
 
 **XDM架构=类+架构字段组&#42;**
 
 * 必填字段不可更改。 客户可以根据需要创建和添加自定义字段。
 * 基于层次结构的字段名称示例： accountOrganization.annualRevenue.amount
 
-&#42; _一种架构包括一个类和零个或多个架构字段组。 这意味着您无需使用字段组即可构建数据集架构。_
+&#42; _架构包含一个类以及零个或多个架构字段组。 这意味着您无需使用字段组即可编写数据集架构。_
 
 ![](assets/marketo-measure-ultimate-implementation-guide-1.png)
 
-[数据集概述](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}：所有成功引入AEP的数据将作为数据集保留在数据湖中。 数据集是用于数据集合的存储和管理结构，通常是表，包含架构（列）和字段（行）。
+[数据集概述](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}：所有成功摄取到AEP的数据将作为数据集保留在数据湖中。 数据集是用于数据集合的存储和管理结构，通常是表，包含架构（列）和字段（行）。
 
 ## 创建架构 {#creating-a-schema}
 
 我们建议使用自动生成实用程序来创建十个标准B2B架构。
 
-* 下载和设置实用程序的步骤 [可在此处找到](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}.
+* 下载和设置实用工具[的步骤可在此处](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}找到。
 
-对于拥有 _**CDP权利**_：转到“源”页面创建架构。
+对于具有&#x200B;_**CDP权利**_&#x200B;的用户：通过转到源页面创建架构。
 
 * 从源中，选择添加数据>使用模板
 
@@ -75,18 +76,18 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 
 **创建数据流的步骤：**
 
-1. 选择源。
+1. 选择Source。
 1. 选择现有帐户或创建帐户。
-1. 从可用类型列表中选择数据类型，以从源导入。
+1. 从要从Source导入的可用类型列表中选择数据类型。
 1. 选择现有数据集或创建数据集。
-1. 将源中的字段映射到架构。
+1. 将字段从Source映射到架构。
 
    >[!NOTE]
    >
    >* 如果将一种架构类型映射到另一种相同的架构类型，则会自动完成映射。
    >* 您还可以从系统中的其他流导入映射。
-   >* 您可以将一个“源”字段映射到多个目标字段，但无法执行相反操作。
-   >* 您可以创建计算字段([数据准备映射函数](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html){target="_blank"})。
+   >* 您可以将一个Source字段映射到多个目标字段，但无法执行相反操作。
+   >* 您可以创建计算字段（[数据准备映射函数](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html){target="_blank"}）。
 
    >[!CAUTION]
    >
@@ -101,7 +102,7 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 1. 查看并完成。
 1. 检查测量UI设置中的“帐户状态”页面，了解数据流状态。
 
-**监控：**
+**监视：**
 
 “源”>“数据流”页检查数据流的状态
 
@@ -114,7 +115,7 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 
 ![](assets/marketo-measure-ultimate-implementation-guide-4.png)
 
-选项2： [下载和使用PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html){target="_blank"} （更快、更可靠）。
+选项2： [下载和使用PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html){target="_blank"} （速度更快，可靠性更高）。
 
 ## 激活Marketo Measure的数据集 {#activate-dataset-for-marketo-measure}
 
@@ -151,7 +152,7 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 
 如果未映射阶段，系统将无法正常运行，因为没有位置可供数据访问。
 
-如果您是Marketo Measure Ultimate客户并将您的默认功能板对象设置为Contact，请不要使用下面两个特定于Lead的字段([在此处了解详情](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"})。
+如果您是Marketo Measure Ultimate客户并将您的默认功能板对象设置为Contact，请不要使用以下两个特定于Lead的字段（[在此了解详情](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}）。
 
 * b2b.personStatus
 * b2b.isConverted
@@ -171,6 +172,6 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 
 * 我们不执行特定于数据集的渠道映射规则，因此这将是全局的。
 * 我们最终必须匹配CRM Campaign类型和渠道，但现在，作为解决方法，可以将渠道名称映射到两个字段。
-* **渠道规则：回填的数据将没有阶段过渡数据。**
+* **渠道规则：回填的数据将不具有阶段过渡数据。**
 
 接触点和区段设置保持不变。

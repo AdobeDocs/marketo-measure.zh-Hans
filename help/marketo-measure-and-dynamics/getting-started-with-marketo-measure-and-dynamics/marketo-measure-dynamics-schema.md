@@ -1,33 +1,33 @@
 ---
 unique-page-id: 18874523
-description: "[!DNL Marketo Measure] 动态架构 —  [!DNL Marketo Measure]"
-title: '"[!DNL Marketo Measure] 动态架构”'
+description: '[!DNL Marketo Measure]动态架构 —  [!DNL Marketo Measure]'
+title: “[!DNL Marketo Measure]动态架构”
 exl-id: f8da47b1-d844-4bd2-8125-8689cbb5cc30
 feature: Microsoft Dynamics
 source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
 workflow-type: tm+mt
 source-wordcount: '1070'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
-# [!DNL Marketo Measure] 动态架构 {#marketo-measure-dynamics-schema}
+# [!DNL Marketo Measure]动态架构 {#marketo-measure-dynamics-schema}
 
 >[!NOTE]
 >
->您可能会看到说明“[!DNL Marketo Measure]”，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
+>您可能会在文档中看到指定“[!DNL Marketo Measure]”的说明，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
-以下是开始使用所需的Dynamics架构 [!DNL Marketo Measure]. 列出所有实体和字段以及所需的读取和/或写入权限。
+以下是开始使用[!DNL Marketo Measure]所需的Dynamics架构。 列出所有实体和字段以及所需的读取和/或写入权限。
 
 ## 买方接触点 {#buyer-touchpoints}
 
-买方接触点是 [!DNL Marketo Measure] 自定义实体，用于封装Contacts和Lead的营销交互。
+Buyer Touchpoint是一个[!DNL Marketo Measure]自定义实体，用于封装Contacts和Lead的营销交互。
 
-## 买方接触点关系 {#buyer-touchpoint-relationships}
+## Buyer Touchpoint关系 {#buyer-touchpoint-relationships}
 
-此图表是Dynamics Stock实体与买方接触点之间关系的高级可视化图表。
+此图表是Dynamics Stock实体与Buyer Touchpoint之间关系的高级可视化图表。
 
-## 买方接触点 {#buyer-touchpoint}
+## Buyer Touchpoint {#buyer-touchpoint}
 
 <table> 
  <tbody> 
@@ -304,13 +304,13 @@ ht-degree: 22%
  </tbody> 
 </table>
 
-## 买方归因接触点 {#buyer-attribution-touchpoint}
+## Buyer Attribution Touchpoint {#buyer-attribution-touchpoint}
 
-买方归因接触点属于 [!DNL Marketo Measure] 自定义实体，用于封装营销对机会的影响。
+Buyer Attribution Touchpoint是一个[!DNL Marketo Measure]自定义实体，用于封装营销对机会的影响。
 
-## 买方归因接触点关系 {#buyer-attribution-touchpoint-relationships}
+## Buyer Attribution Touchpoint关系 {#buyer-attribution-touchpoint-relationships}
 
-此图表是Dynamics Stock实体与买方归因接触点之间关系的高级可视化图表。
+此图表是Dynamics Stock实体与Buyer Attribution Touchpoint之间关系的高级可视化图表。
 
 ## 买方归因接触点 {#buyer-attribution-touchpoints}
 
@@ -800,7 +800,7 @@ ht-degree: 22%
  </tbody> 
 </table>
 
-## [!DNL Marketo Measure] 活动 {#marketo-measure-events}
+## [!DNL Marketo Measure]个事件 {#marketo-measure-events}
 
 <table> 
  <tbody> 
@@ -867,7 +867,7 @@ ht-degree: 22%
  </tbody> 
 </table>
 
-## [!DNL Marketo Measure] 历史记录 {#marketo-measure-history}
+## [!DNL Marketo Measure]历史记录 {#marketo-measure-history}
 
 <table> 
  <tbody> 
@@ -912,9 +912,9 @@ ht-degree: 22%
 
 ## Dynamics标准实体 {#dynamics-standard-entities}
 
-此列表提供具有以下功能的Dynamics Standard实体： [!DNL Marketo Measure] 与交互，以及我们添加到这些实体的自定义字段。
+此列表提供了[!DNL Marketo Measure]与之交互的Dynamics Standard实体，以及我们添加到这些实体的自定义字段。
 
-**商机**
+**潜在客户**
 
 <table> 
  <tbody> 

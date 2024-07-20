@@ -17,17 +17,17 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->出于隐私考虑，第三方Cookie即将退出。 Google Chrome宣布在2024年第3季度弃用第三方Cookie，这实际上标志着这种跟踪形式的结束。 因此，Adobe将弃用依赖第三方Cookie的Marketo Measure功能，特别是跨域跟踪和浏览归因，后者使用Google/DoubleClick展示次数Cookie。 任何其他Marketo Measure功能都不会受到影响。 第一方Cookie的使用也不受影响。 按照Google的时间表，预计上述两个功能的弃用日期为2024年6月1日。 在此日期之前收集的相关数据仍可供Adobe客户使用。
+>出于隐私考虑，第三方Cookie即将退出。 Google Chrome在2024年第3季度宣布弃用第三方Cookie，这实际上标志着这种跟踪形式的结束。 因此，Adobe将弃用依赖第三方Cookie的Marketo Measure功能，特别是跨域跟踪和浏览归因，后者使用Google/DoubleClick展示次数Cookie。 任何其他Marketo Measure功能都不会受到影响。 第一方Cookie的使用也不受影响。 按照Google的时间表，预计上述两个功能的弃用日期为2024年6月1日。 在此日期之前收集的相关数据仍可供Adobe客户使用。
 
 >[!NOTE]
 >
->如果您使用 [!DNL Marketo Measure] 和 [!DNL DoubleClick Campaign Manager] 集成，我们需要 [API连接](/help/api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md#how-to-connect-ad-platforms) 因此，我们可以下载促销活动的详细信息和创意内容以解决广告。
+>如果您使用[!DNL Marketo Measure]和[!DNL DoubleClick Campaign Manager]集成，我们需要[API连接](/help/api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md#how-to-connect-ad-platforms)，以便我们可以下载促销活动和创意的详细信息以解决广告。
 
-开始通过从视图到跟踪获得更精细的见解 [!DNL Doubleclick Campaign Manager]，则需要配置我们的跟踪像素。
+要开始通过使用[!DNL Doubleclick Campaign Manager]进行跟踪从视图获得更精细的洞察信息，需要配置我们的跟踪像素。
 
-欲知关于 [!DNL Marketo Measure] 通过归因功能查看，请参阅 [Marketo Measure通过归因常见问题解答进行查看](/help/advanced-marketo-measure-features/view-through-attribution/marketo-measure-view-through-attribution-faq.md).
+有关[!DNL Marketo Measure]通过归因功能查看的详细信息，请参阅[Marketo Measure通过归因常见问题解答](/help/advanced-marketo-measure-features/view-through-attribution/marketo-measure-view-through-attribution-faq.md)。
 
-[!DNL Marketo Measure] 被视为回头支点标记，因为它是通过DCM广告标记进行的第三方调用。 背带标记不适用于图像标记，只能用于iframe或javascript标记。 根据DCM支持部门的说法，这种情况最近没有变化，而且一直如此。 标准标记已于2017年10月2日弃用，但不会影响 [!DNL Marketo Measure] 以跟踪展示。
+[!DNL Marketo Measure]被视为一个随身携带标记，因为它是通过DCM广告标记进行的第三方调用。 背带标记不适用于图像标记，只能用于iframe或javascript标记。 根据DCM支持部门的说法，这种情况最近没有变化，而且一直如此。 标准标记已于2017年10月2日弃用，但不会影响[!DNL Marketo Measure]跟踪展示次数的能力。
 
 如果您在DCM中使用父级和子级层次结构，则需要将我们的标记应用于所有级别的展示跟踪。
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 1. 添加后，请确认分隔符的映射如下所示。 在应用标记后，此操作应该自动完成：
 
-   v = %eadv！ [!DNL Expand] 广告商ID\
+   v = %eadv！ [!DNL Expand]广告商ID\
    a = %eaid！ 展开广告Id\
    c = %ecid！ 展开创作Id\
    s = %esid！ 展开站点ID\

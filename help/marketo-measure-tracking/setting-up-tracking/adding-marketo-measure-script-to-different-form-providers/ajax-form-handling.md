@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # AJAX表单处理 {#ajax-form-handling}
 
-要人工报告客户转化至 [!DNL Marketo Measure]，则可以使用一个简单的API。 如果您拥有跟踪代码，则这两个JavaScript API都可以在您的网站上自动使用。 无需执行任何特殊操作即可访问它们。
+要手动报告客户转化到[!DNL Marketo Measure]，您可以使用一个简单的API。 如果您在网站上拥有跟踪代码，则这两个JavaScript API均可在您的网站上自动使用。 无需执行任何特殊操作即可访问它们。
 
 ## 场景1 — 包含AJAX提交的HTML表单 {#scenario-html-form-with-an-ajax-submit}
 
-使用包含AJAX（或其他机制）的表单将转化日期从客户端提交到我们的服务器时， [!DNL Marketo Measure] 可能不知道客户通过我们监控的任何标准路径进行的转化。 在此场景中，我们可以使用简单的API（如下所示）。
+使用包含AJAX（或其他机制）的表单将转化日期从客户端提交到我们的服务器时，[!DNL Marketo Measure]可能不知道客户通过我们监控的任何标准路径进行的转化。 在此场景中，我们可以使用简单的API（如下所示）。
 
-如果您处理自己的表单提交，则可以明确调用 [!DNL Marketo Measure] 从JavaScript访问。 [!DNL Marketo Measure] 会从表单中收集所有相关信息，并将其异步发布到我们的服务器。
+如果您处理自己的表单提交，则可以从JavaScript显式调用[!DNL Marketo Measure]。 [!DNL Marketo Measure]从表单中收集所有相关信息并将其异步发布到我们的服务器。
 
-**以下是使用JQuery的代码示例（假设表单上的ID为“formId”）：**
+**以下是使用JQuery的代码示例（假定表单上的ID为“formId”）：**
 
 ```jquery
 ///////////////////////////////////////////////////////////////////////  
@@ -45,7 +45,7 @@ Bizible.Push('Form','MyFormID');
 
 ## 方案2 — 以非HTML表单收集的商机信息 {#scenario-lead-information-collected-in-a-non-html-form}
 
-如果转化后的商机中的信息是使用JavaScript或简单文本字段（不带html表单）收集的，则此解决方案非常适用于您。 以下共享的是要在此方案中使用的API：
+如果来自已转化商机的信息是使用JavaScript或简单文本字段（不带HTML表单）收集的，则此解决方案适合您。 以下共享的是要在此方案中使用的API：
 
 ```jquery
 ///////////////////////////////////////////////////////////////////////  
@@ -58,11 +58,11 @@ eMail: 'user@gmail.com' // required
 });  
 ```
 
-在此代码中， [!UICONTROL email] 字段为必填项。 [!DNL Marketo Measure] 以异步方式将此数据发布到我们的服务器。
+在此代码中，[!UICONTROL email]字段为必填项。 [!DNL Marketo Measure]异步将此数据发布到我们的服务器。
 
 ## 场景3 — 在感谢页面中报告用户信息 {#scenario-report-user-information-from-the-thank-you-page}
 
-有时，将潜在客户信息报告到会更方便 [!DNL Marketo Measure] 在提交表单后，从感谢页面访问。 报告此信息的最简单方法是，向包含表单提交信息的页面添加隐藏元素，并且 [!DNL Bizible.js] 将在加载“感谢”页面时阅读此信息。
+有时，在提交表单后，从感谢页面将潜在客户信息报告给[!DNL Marketo Measure]会更方便。 报告此信息的最简单方法是：向包含表单提交信息的页面添加隐藏元素，在“感谢”页面加载后，[!DNL Bizible.js]将读取此信息。
 
 **例如：**
 
@@ -71,4 +71,4 @@ eMail: 'user@gmail.com' // required
 data-email="user@gmail.com">  
 ```
 
-隐藏元素是div、脚本还是任何其他标记类型都无关紧要。 [!DNL Marketo Measure] 查找id=&quot;bizible.reportUser&quot;以读取信息。
+隐藏元素是div、脚本还是任何其他标记类型都无关紧要。 [!DNL Marketo Measure]查找id=&quot;bizible.reportUser&quot;以读取信息。

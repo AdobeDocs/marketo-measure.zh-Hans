@@ -1,5 +1,5 @@
 ---
-description: 网络流量仪表板 —  [!DNL Marketo Measure]  — 产品
+description: Web流量仪表板 —  [!DNL Marketo Measure]  — 产品
 title: Web流量仪表板
 feature: Reporting
 exl-id: de6eec0c-9d7c-4cb2-8214-9d0fb41b444d
@@ -22,7 +22,7 @@ Web流量仪表板可全面查看您网站的访客交互。 深入研究量度�
 
 ## 功能板组件 {#dashboard-components}
 
-**KPI拼贴**
+**KPI磁贴**
 
 <table>
 <thead>

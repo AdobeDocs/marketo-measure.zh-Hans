@@ -1,6 +1,6 @@
 ---
-description: '"[!UICONTROL Discover Data Download] 访问控制 — Marketo Measure — 产品文档”'
-title: '"[!UICONTROL Discover Data Download] 访问控制”'
+description: "[!UICONTROL Discover Data Download]访问控制 — Marketo Measure — 产品文档"
+title: "[!UICONTROL Discover Data Download]访问控制"
 exl-id: fa9f2245-4bb0-4b58-849c-1941c108e1c1
 feature: Discover
 source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
@@ -10,11 +10,11 @@ ht-degree: 0%
 
 ---
 
-# [!UICONTROL Discover Data Download] 访问控制 {#discover-data-download-access-control}
+# [!UICONTROL Discover Data Download]访问控制 {#discover-data-download-access-control}
 
-[!UICONTROL Discover Data Download] 控制启用 [!DNL Marketo Measure] 管理员可根据用户的角色为发现功能板设置数据下载策略。 该控件涵盖了“发现功能板”上的所有数据下载操作。
+[!UICONTROL Discover Data Download]控件使[!DNL Marketo Measure]管理员能够根据用户的角色为Discover仪表板设置数据下载策略。 该控件涵盖了“发现功能板”上的所有数据下载操作。
 
-1. 单击 **[!UICONTROL Data Access]** 下 [!UICONTROL Security].
+1. 单击[!UICONTROL Security]下的&#x200B;**[!UICONTROL Data Access]**。
 
    ![](assets/discover-data-download-access-control-1.png)
 
@@ -37,7 +37,7 @@ ht-degree: 0%
     </tr>
    </table>
 
-1. 单击 **[!UICONTROL Save]** 完成时。
+1. 完成后单击&#x200B;**[!UICONTROL Save]**。
 
    ![](assets/discover-data-download-access-control-3.png)
 

@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874574
-description: "[!DNL Marketo Measure] 标准字段 [!DNL Salesforce] 对象 —  [!DNL Marketo Measure]"
-title: '"[!DNL Marketo Measure] 标准字段 [!DNL Salesforce] 对象”'
+description: 标准 [!DNL Salesforce] 对象 —  [!DNL Marketo Measure]上的[!DNL Marketo Measure]字段
+title: '[!DNL Marketo Measure]个标准字段 [!DNL Salesforce] 对象'
 exl-id: c9d5254f-06bd-4813-bb29-1a4955b37041
 feature: Salesforce
 source-git-commit: 05ba9e487d492ba4352a7f0577c7221f6ec9567e
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Marketo Measure] 标准字段 [!DNL Salesforce] 对象 {#marketo-measure-fields-on-standard-salesforce-objects}
+# 标准[!DNL Salesforce]对象上的[!DNL Marketo Measure]字段 {#marketo-measure-fields-on-standard-salesforce-objects}
 
 >[!NOTE]
 >
->您可能会看到说明“[!DNL Marketo Measure]”，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
+>您可能会在文档中看到指定“[!DNL Marketo Measure]”的说明，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
-了解各种 [!DNL Marketo Measure] 已添加到的字段 [!DNL Salesforce] 标准对象。
+了解添加到[!DNL Salesforce]标准对象的各种[!DNL Marketo Measure]字段。
 
 ## 帐户 {#account}
 
@@ -27,17 +27,17 @@ ht-degree: 0%
 
 仅添加了4个字段、1个按钮和1个验证规则。
 
-UniqueID：该字段供我们在内部使用，以跟踪与同步的不同营销活动 [!DNL Marketo Measure].
+UniqueID：此字段内部用于跟踪与[!DNL Marketo Measure]同步的不同营销活动。
 
 启用买方接触点：此字段用于实际同步离线归因包含和历史数据的营销活动。
 
 接触点开始日期：此字段用于设置将接触点应用于历史营销活动的开始日期。
 
-接触点结束日期：此字段用于设置将接触点应用于历史营销活动的结束日期。 一个常见的示例是包含数字营销活动之前[!DNL Marketo Measure] 然后将结束日期设置为应用脚本的日期。
+接触点结束日期：此字段用于设置将接触点应用于历史营销活动的结束日期。 一个常见示例是包括[!DNL Marketo Measure]之前的数字营销活动，然后将结束日期设置为应用脚本的日期。
 
 批量更新接触点日期（按钮）：此按钮用于管理在同步营销活动时营销活动成员的接触点日期，因为我们将引用营销活动成员资格日期或第一个开箱即用的响应日期。 如果这些日期字段不能准确表示实际接触点日期，我们将使用此按钮设置接触点日期。
 
-更新 [!DNL Marketo Measure] 归因（验证规则）：在包版本6.0之后不再使用此规则。
+更新[!DNL Marketo Measure]归因（验证规则）：在包版本6.0之后已弃用此规则。
 
 ## 营销活动成员 {#campaign-member}
 
@@ -51,9 +51,9 @@ UniqueID：该字段供我们在内部使用，以跟踪与同步的不同营销
 
 接触点状态日期：这是填充诊断字段的日期。
 
-Buyer Touchpoint日期：这与 [!UICONTROL Bulk Update Touchpoint date] 按钮。 使用该日期时，我们会向营销活动成员应用定义的接触点日期。
+Buyer Touchpoint日期：这与Campaign对象中的[!UICONTROL Bulk Update Touchpoint date]按钮相关。 使用该日期时，我们会向营销活动成员应用定义的接触点日期。
 
-OnCampaignMemberDelete：现成 [!DNL Salesforce] 在删除营销活动成员时不会显示，这可能会导致无法生成准确的归因报表。 删除营销活动成员时，将触发以通知 [!DNL Marketo Measure] ，移除与该不存在的营销活动成员相关的接触点。
+OnCampaignMemberDelete：删除营销活动成员时，开箱即用的[!DNL Salesforce]不会显示，这可能会导致无法生成准确的归因报表。 删除营销活动成员时，将触发此事件以通知[!DNL Marketo Measure]删除与该不存在的营销活动成员相关的接触点。
 
 ## 商机 {#lead}
 
@@ -65,7 +65,7 @@ Bizible Account字段用于我们的ABM功能的Lead to Account映射。 我们�
 
 ## 机会 {#opportunity}
 
-[!DNL Marketo Measure] 业务机会金额：此字段用在业务机会中使用自定义金额字段的方案。 我们将该自定义字段值映射到 [!DNL Marketo Measure] 使用工作流的机会金额，然后为Buyer Attribution Touchpoint对象上的收入归因字段读取此字段。
+[!DNL Marketo Measure]业务机会金额：此字段用在业务机会中使用自定义金额字段的方案中。 我们使用工作流将该自定义字段值映射到[!DNL Marketo Measure]机会金额，然后为Buyer Attribution Touchpoint对象上的收入归因字段读取此字段。
 
 ## 活动 {#activity}
 

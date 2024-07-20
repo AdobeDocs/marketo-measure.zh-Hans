@@ -22,15 +22,15 @@ Data Warehouse允许您跟踪所需数量的数据，随时随地报告归因数
 
 >[!NOTE]
 >
->[单击此处](#sample-queries) 以了解本文底部的示例查询。
+>[单击此处](#sample-queries)查看本文底部的示例查询。
 
 ## 实体关系图 {#entity-relationship-diagrams}
 
-此 _Data Warehouse数据模型_ ERD显示Data Warehouse中的数据如何流动以及如何链接在一起。 此图不包括数据仓库中所有可用的表，因为其中某些表表示映射表、其他已存在的表的视图或我们不建议再使用的已弃用表。 请参阅下面的Data Warehouse中对表格和列的详细说明。 其中许多表包含反正规化的字段，但是，此图表是推荐的数据模型，它利用来自维表的数据。
+_Data Warehouse数据模型_ ERD显示数据仓库中的数据如何流动以及如何链接在一起。 此图不包括数据仓库中所有可用的表，因为其中某些表表示映射表、其他已存在的表的视图或我们不建议再使用的已弃用表。 请参阅下面的Data Warehouse中对表格和列的详细说明。 其中许多表包含反正规化的字段，但是，此图表是推荐的数据模型，它利用来自维表的数据。
 
-其他 _广告维度数据模型_ ERD提供了一个视图，其中显示了如何以最佳方式将特定维度的广告表链接回主数据模型中的表。 虽然广告维度在其他表中也进行了反规范化，但这表示连接这些维度的推荐模型。
+其他&#x200B;_广告维度数据模型_ ERD提供了如何最好地将广告特定维度的表链接回主数据模型中的表的视图。 虽然广告维度在其他表中也进行了反规范化，但这表示连接这些维度的推荐模型。
 
-_单击图像的全尺寸版本_
+_单击完整版本的图像_
 
 <table style="table-layout:auto"> 
  <tbody> 
@@ -92,13 +92,13 @@ _单击图像的全尺寸版本_
     <tr>
       <td>ENGAGEMENT_RATING</td>
       <td>varchar</td>
-      <td>从生成的字母等级(A、B、C、D、N/A) [!DNL Marketo Measure] 机器学习模型。 如果ABM被禁用，该值将为null。</td>
+      <td>从[!DNL Marketo Measure]机器学习模型生成的字母等级(A、B、C、D、N/A)。 如果ABM被禁用，该值将为null。</td>
       <td>B</td>
     </tr>
     <tr>
       <td>ENGAGEMENT_SCORE</td>
       <td>数字(38,19)</td>
-      <td>计算数字得分依据 [!DNL Marketo Measure] 机器学习，用于生成预测参与度分数(Engagement_Rating)。 如果ABM被禁用，该值将为null。</td>
+      <td>由[!DNL Marketo Measure]机器学习计算得出的用于生成预测参与度得分(Engagement_Rating)的数字得分。 如果ABM被禁用，该值将为null。</td>
       <td>0.1417350147058800000</td>
     </tr>
     <tr>
@@ -116,7 +116,7 @@ _单击图像的全尺寸版本_
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>具有以下特征的自定义属性 [!DNL Marketo Measure] 已使用JSON格式从源系统导入。</td>
+      <td>[!DNL Marketo Measure]已从源系统导入JSON格式的自定义属性。</td>
       <td>{"Account_Type__c"： "Security"， "Foo"："Bar"}</td>
     </tr>
     <tr>
@@ -138,13 +138,13 @@ _单击图像的全尺寸版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td><b>∗</b> 行业</td>
+      <td><b>∗</b>行业</td>
       <td>varchar</td>
       <td>帐户的主要业务。</td>
       <td>零售、电信</td>
     </tr>
     <tr>
-      <td><b>∗</b> 国家/地区</td>
+      <td><b>∗</b>国家/地区</td>
       <td>varchar</td>
       <td>帐户地址的国家/地区部分。</td>
       <td>美国、加拿大</td>
@@ -176,7 +176,7 @@ _单击图像的全尺寸版本_
     <tr>
       <td>ACCOUNT_ID</td>
       <td>varchar</td>
-      <td>源系统帐户ID。</td>
+      <td>Source系统帐户ID。</td>
       <td>0013100001phrBAAY</td>
     </tr>
     <tr>
@@ -290,7 +290,7 @@ _单击图像的全尺寸版本_
       </td>
     </tr>
     <tr>
-      <td>SOURCE_SYSTEM</td>
+      <td>Source_SYSTEM</td>
       <td>varchar</td>
       <td>标识源系统类型。</td>
       <td>Marketo</td>
@@ -445,7 +445,7 @@ _单击图像的全尺寸版本_
     <tr>
       <td>NEEDS_UPDATE</td>
       <td>布尔值</td>
-      <td>是否需要更新广告 [!DNL Marketo Measure] 标记。
+      <td>是否需要更新广告以进行[!DNL Marketo Measure]标记。
       <p>（诊断字段，由内部处理使用。）
       </td>
       <td>假</td>
@@ -487,7 +487,7 @@ _单击图像的全尺寸版本_
     <tr>
       <td>URL已请求</td>
       <td>varchar</td>
-      <td>URL将修饰的内容 [!DNL Marketo Measure] 参数。
+      <td>将使用[!DNL Marketo Measure]参数修饰哪个URL。
       <p>（诊断字段，用于内部处理。）
       </td>
       <td></td>
@@ -632,7 +632,7 @@ _单击图像的全尺寸版本_
     <tr>
       <td>NEEDS_UPDATE</td>
       <td>布尔值</td>
-      <td>是否需要更新广告商 [!DNL Marketo Measure] 标记。
+      <td>是否需要更新广告商以进行[!DNL Marketo Measure]标记。
       <p>（诊断字段，由内部处理使用。）
       </td>
       <td>假</td>
@@ -858,7 +858,7 @@ _单击图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否需要更新广告商 [!DNL Marketo Measure] 标记。</p>
+        <p>是否需要更新广告商以进行[!DNL Marketo Measure]标记。</p>
         <p>（诊断字段，由内部处理使用。）</p>
       </td>
       <td>
@@ -929,7 +929,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>中</p>
+        <p>Medium</p>
       </td>
       <td>varchar</td>
       <td>从utm_medium中的URL解析。</td>
@@ -1258,7 +1258,7 @@ _单击图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否需要更新营销活动 [!DNL Marketo Measure] 标记。</p>
+        <p>是否需要更新Campaign以进行[!DNL Marketo Measure]标记。</p>
         <p>（诊断字段，由内部处理使用。）</p>
       </td>
       <td>
@@ -1581,9 +1581,9 @@ _单击图像的全尺寸版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td>SOURCE_ID</td>
+      <td>Source_ID</td>
       <td>varchar</td>
-      <td>记录来源的ID。</td>
+      <td>记录源自的Source的ID。</td>
       <td>aw.3284209</td>
     </tr>
   </tbody>
@@ -1787,7 +1787,7 @@ _单击图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否需要更新广告商 [!DNL Marketo Measure] 标记。</p>
+        <p>是否需要更新广告商以进行[!DNL Marketo Measure]标记。</p>
         <p>（诊断字段，由内部处理使用。）</p>
       </td>
       <td>
@@ -1993,7 +1993,7 @@ _单击图像的全尺寸版本_
        <td>ID</td>
       <td>varchar</td>
       <td>
-        <p>买方归因接触点(BAT)的唯一ID。</p>
+        <p>Buyer Attribution Touchpoint (BAT)的唯一ID。</p>
       </td>
       <td>
         <p>BAT2_0060Z00000lFHtOQAW_</p>
@@ -2035,7 +2035,7 @@ _单击图像的全尺寸版本_
     <tr>
       <td>EMAIL</td>
       <td>varchar</td>
-      <td>与最佳可得技术关联的电子邮件地址。</td>
+      <td>与BAT关联的电子邮件地址。</td>
       <td>person@adobe.com</td>
     </tr>
     <tr>
@@ -2098,7 +2098,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>根据中的自定义渠道定义，接触点所属的渠道 [!DNL Marketo Measure] 应用程序。 在CRM中称为“营销渠道 — 路径”。</p>
+        <p>如[!DNL Marketo Measure]应用程序内的自定义渠道定义中所定义，接触点所属的渠道。 在CRM中称为“营销渠道 — 路径”。</p>
       </td>
       <td>
         <p>Social.LinkedIn</p>
@@ -2110,7 +2110,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>第一个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>如[!DNL Marketo Measure]应用程序中区段定义中所定义，接触点所属的第一个类别的区段值。 在CRM中称为“区段”。</p>
       </td>
       <td>
         <p>ABC</p>
@@ -2122,7 +2122,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>根据以下内容中的区段定义，确定接触点属于第二个类别的区段值 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第二个类别的区段值。 在CRM中称为“区段”。</p>
       </td>
       <td>
         <p>是</p>
@@ -2134,7 +2134,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>接触点所属的第三类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第三类别的区段值。 在CRM中称为“区段”。</p>
       </td>
       <td>
         <p>SMB</p>
@@ -2145,7 +2145,7 @@ _单击图像的全尺寸版本_
         <p>类别4</p>
       </td>
       <td>varchar</td>
-      <td>根据以下内容中的区段定义，确定接触点所属的第四个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第四个类别的区段值。 在CRM中称为“区段”。</td>
       <td>
         <p>新业务</p>
       </td>
@@ -2155,7 +2155,7 @@ _单击图像的全尺寸版本_
         <p>类别5</p>
       </td>
       <td>varchar</td>
-      <td>根据以下内容中的区段定义，确定接触点所属的第五个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第五个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2163,7 +2163,7 @@ _单击图像的全尺寸版本_
         <p>类别6</p>
       </td>
       <td>varchar</td>
-      <td>根据以下内容中的区段定义，确定接触点所属的第六个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第六个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2171,7 +2171,7 @@ _单击图像的全尺寸版本_
         <p>类别7</p>
       </td>
       <td>varchar</td>
-      <td>根据以下内容中的区段定义，确定接触点所属的第七个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第七个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2179,7 +2179,7 @@ _单击图像的全尺寸版本_
         <p>类别8</p>
       </td>
       <td>varchar</td>
-      <td>根据以下内容中的区段定义，确定接触点所属的第八个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点属于第8个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2187,7 +2187,7 @@ _单击图像的全尺寸版本_
         <p>类别9</p>
       </td>
       <td>varchar</td>
-      <td>第9个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点属于第9个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2195,7 +2195,7 @@ _单击图像的全尺寸版本_
         <p>类别10</p>
       </td>
       <td>varchar</td>
-      <td>第10个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第十个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2203,7 +2203,7 @@ _单击图像的全尺寸版本_
         <p>类别11</p>
       </td>
       <td>varchar</td>
-      <td>第11个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义中所定义，接触点所属的第十一个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2211,7 +2211,7 @@ _单击图像的全尺寸版本_
         <p>类别12</p>
       </td>
       <td>varchar</td>
-      <td>第12个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第十二个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2219,7 +2219,7 @@ _单击图像的全尺寸版本_
         <p>类别13</p>
       </td>
       <td>varchar</td>
-      <td>根据以下内容中的区段定义，确定接触点所属的第十三个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第十三个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2227,7 +2227,7 @@ _单击图像的全尺寸版本_
         <p>类别14</p>
       </td>
       <td>varchar</td>
-      <td>第14个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点属于第14个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2235,7 +2235,7 @@ _单击图像的全尺寸版本_
         <p>类别15</p>
       </td>
       <td>varchar</td>
-      <td>第15个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第十五个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -2247,7 +2247,7 @@ _单击图像的全尺寸版本_
         <p>从javascript和IP地址中，检测到用户在会话期间所在的浏览器。</p>
       </td>
       <td>
-        <p>铬黄</p>
+        <p>Chrome</p>
       </td>
     </tr>
     <tr>
@@ -2408,11 +2408,11 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>中</p>
+        <p>Medium</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>用于定义产生接触点的媒介。 这可以从utm_medium的URL中解析。 或者，如果 [!DNL Marketo Measure] 能够解析广告，它可能是“cpc”或“display”之类的值。</p>
+        <p>用于定义产生接触点的媒介。 这可以从utm_medium的URL中解析。 或者，如果[!DNL Marketo Measure]能够解析广告，则可能是诸如“cpc”或“display”之类的值。</p>
       </td>
       <td>
         <p>社交</p>
@@ -2424,7 +2424,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>用于定义导致接触点的源。 可以从utm_source中的URL中解析该活动；如果活动是从CRM同步的，则一般设置为“CRM Campaign”；或者 [!DNL Marketo Measure] 能够解析广告，它可能是“Google AdWords”或“Facebook”之类的值。 在CRM中称为“接触点源”。</p>
+        <p>用于定义导致接触点的源。 可以从utm_source的URL中解析该广告，如果它是从CRM同步的，则通常设置为“CRM Campaign”；或者，如果[!DNL Marketo Measure]能够解析广告，则它可能是“Google AdWords”或“Facebook”之类的值。 在CRM中称为“接触点Source”。</p>
       </td>
       <td>
         <p>linkedin</p>
@@ -2448,7 +2448,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>广告平台 [!DNL Marketo Measure] 能够从（通常是我们的集成合作伙伴之一）中解析。</p>
+        <p>广告平台[!DNL Marketo Measure]能够从中进行解析，通常是我们的集成合作伙伴之一。</p>
       </td>
       <td>
         <p>Google</p>
@@ -3087,14 +3087,14 @@ _单击图像的全尺寸版本_
   <tr>
     <td>CONVERSION_LEAD_ID</td>
     <td>varchar</td>
-    <td>转化事件的原始MM潜在客户ID <br>大多数情况下可能为空</td>
+    <td>转化事件<br>的原始MM潜在客户ID在大多数情况下可能为Null</td>
     <td>00Q0Z000013dw4GUAQ</td>
   </tr>
   <tr>
     <td>CONVERSION_CONTACT_ID</td>
     <td>varchar</td>
     <td>转化事件的原始毫米联系人ID
-    <br>大多数情况下可能为空</td>
+    <br>大多数时候可能为null</td>
     <td>00331000032hMxRAAU</td>
   </tr>
   <tr>
@@ -3386,7 +3386,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>“审核”字段，指明是否为联系人生成了买方接触点。 如果未创建接触点，则会给出它不符合条件的原因。</p>
+        <p>“审核”字段，指明是否为联系人生成了Buyer Touchpoint。 如果未创建接触点，则会给出它不符合条件的原因。</p>
       </td>
       <td>
         <p>已创建接触点</p>
@@ -3398,7 +3398,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>“审核”字段，指明是否为Opportunity生成了“买方归因”接触点。 如果未创建接触点，则会给出它不符合条件的原因。</p>
+        <p>“审核”字段，指明是否为Opportunity生成了Buyer Attribution Touchpoint。 如果未创建接触点，则会给出它不符合条件的原因。</p>
       </td>
       <td>
         <p>已创建接触点</p>
@@ -3421,7 +3421,7 @@ _单击图像的全尺寸版本_
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>具有以下特征的自定义属性 [!DNL Marketo Measure] 已使用JSON格式从源系统导入。</td>
+      <td>[!DNL Marketo Measure]已从源系统导入JSON格式的自定义属性。</td>
       <td>{"Campaign_Type__c"："Dinners"，"Foo"："Bar"}</td>
     </tr>
     <tr>
@@ -3447,7 +3447,7 @@ _单击图像的全尺寸版本_
 
 ### 商业渠道 {#biz-channels}
 
-营销渠道，如中创建的 [!DNL Marketo Measure] 应用程序。
+营销渠道，在[!DNL Marketo Measure]应用程序中创建。
 
 <table>
   <tbody>
@@ -3580,11 +3580,11 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>潜在客户来源</p>
+        <p>商机SOURCE</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>创建Lead的来源。</p>
+        <p>创建潜在客户的Source。</p>
       </td>
       <td>
         <p>广告</p>
@@ -3596,7 +3596,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>联系人的当前阶段，识别为自定义阶段，可在 [!DNL Marketo Measure] 应用程序。</p>
+        <p>联系人的当前阶段，识别为可在[!DNL Marketo Measure]应用程序中创建的自定义阶段。</p>
       </td>
       <td>
         <p>已计划演示</p>
@@ -3608,7 +3608,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>联系人之前的所有阶段，均识别为自定义阶段，可在中创建 [!DNL Marketo Measure] 应用程序。</p>
+        <p>联系人的所有先前阶段，识别为可在[!DNL Marketo Measure]应用程序创建的自定义阶段。</p>
       </td>
       <td>
         <p>打开 — 联系人</p>
@@ -3634,7 +3634,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>此 [!DNL Marketo Measure] 用于从集成合作伙伴填充以将离线事件映射到Web会话的Cookie ID。 要求：启用呼叫跟踪：True</p>
+        <p>用于从集成合作伙伴填充以将离线事件映射到Web会话的[!DNL Marketo Measure] Cookie ID。 要求：启用呼叫跟踪：True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -3659,7 +3659,7 @@ _单击图像的全尺寸版本_
       <td>假</td>
     </tr>
     <tr>
-      <td>SOURCE_SYSTEM</td>
+      <td>Source_SYSTEM</td>
       <td>varchar</td>
       <td>指示记录是来自CRM还是Marketo集成。</td>
       <td>Crm</td>
@@ -3673,7 +3673,7 @@ _单击图像的全尺寸版本_
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>具有以下特征的自定义属性 [!DNL Marketo Measure] 已使用JSON格式从源系统导入。</td>
+      <td>[!DNL Marketo Measure]已从源系统导入JSON格式的自定义属性。</td>
       <td>{"Contact_Type__c"："CMO"， "Foo"："Bar"}</td>
     </tr>
     <tr>
@@ -3737,7 +3737,7 @@ _单击图像的全尺寸版本_
       <td>7493833133899044458</td>
     </tr>
     <tr>
-      <td>SOURCE_ISO_CODE</td>
+      <td>Source_ISO_CODE</td>
       <td>varchar</td>
       <td>源系统中的货币ISO代码。</td>
       <td>美元</td>
@@ -3838,7 +3838,7 @@ _单击图像的全尺寸版本_
     <tr>
       <td>源</td>
       <td>varchar</td>
-      <td>报告的成本的来源。</td>
+      <td>报告成本的Source。</td>
       <td>[AdWords显示]</td>
     </tr>
     <tr>
@@ -3874,13 +3874,13 @@ _单击图像的全尺寸版本_
     <tr>
       <td>CHANNEL_UNIQUE_ID</td>
       <td>varchar</td>
-      <td>营销渠道ID，创建者： [!DNL Marketo Measure].</td>
+      <td>由[!DNL Marketo Measure]创建的营销渠道ID。</td>
       <td>Display.Google</td>
     </tr>
     <tr>
       <td>渠道名称</td>
       <td>varchar</td>
-      <td>营销渠道的名称，由客户在 [!DNL Marketo Measure] 应用程序。</td>
+      <td>营销渠道的名称，由客户在[!DNL Marketo Measure]应用程序中创建。</td>
       <td>Display.Google</td>
     </tr>
     <tr>
@@ -4232,9 +4232,9 @@ _单击图像的全尺寸版本_
       <td>美元</td>
     </tr>
     <tr>
-      <td>SOURCE_ID</td>
+      <td>Source_ID</td>
       <td>varchar</td>
-      <td>记录来源的ID。</td>
+      <td>记录源自的Source的ID。</td>
       <td>aw.3284209</td>
     </tr>
     <tr>
@@ -4522,7 +4522,7 @@ _单击图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否需要更新创意内容 [!DNL Marketo Measure] 标记。</p>
+        <p>是否需要更新Creative以进行[!DNL Marketo Measure]标记。</p>
         <p>（诊断字段，由内部处理使用。）</p>
       </td>
       <td>
@@ -4603,7 +4603,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>URL将修饰的内容 [!DNL Marketo Measure] 参数。</p>
+        <p>将使用[!DNL Marketo Measure]参数修饰哪个URL。</p>
         <p>（诊断字段，用于内部处理。）</p>
       </td>
       <td></td>
@@ -4851,7 +4851,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>此 [!DNL Marketo Measure] 用于从集成合作伙伴填充以将离线事件映射到Web会话的Cookie ID。 要求：启用呼叫跟踪：True</p>
+        <p>用于从集成合作伙伴填充以将离线事件映射到Web会话的[!DNL Marketo Measure] Cookie ID。 要求：启用呼叫跟踪：True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -4908,7 +4908,7 @@ _单击图像的全尺寸版本_
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>具有以下特征的自定义属性 [!DNL Marketo Measure] 已使用JSON格式从源系统导入。</td>
+      <td>[!DNL Marketo Measure]已从源系统导入JSON格式的自定义属性。</td>
       <td>{"Contact_Type__c"："CMO"，"Foo"："Bar"}</td>
     </tr>
     <tr>
@@ -5026,7 +5026,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>此 [!DNL Marketo Measure] 用于从集成合作伙伴填充以将离线事件映射到Web会话的Cookie ID。 要求：启用呼叫跟踪：True</p>
+        <p>用于从集成合作伙伴填充以将离线事件映射到Web会话的[!DNL Marketo Measure] Cookie ID。 要求：启用呼叫跟踪：True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -5071,7 +5071,7 @@ _单击图像的全尺寸版本_
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>具有以下特征的自定义属性 [!DNL Marketo Measure] 已使用JSON格式从源系统导入。</td>
+      <td>[!DNL Marketo Measure]已从源系统导入JSON格式的自定义属性。</td>
       <td>{"Contact_Type__c"："CMO"， "Foo"："Bar"}</td>
     </tr>
     <tr>
@@ -5136,7 +5136,7 @@ _单击图像的全尺寸版本_
     <tr>
       <td>MODIFIED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>上次修改记录的日期 [!DNL Marketo Measure].</td>
+      <td>上次修改记录的日期[!DNL Marketo Measure]。</td>
       <td>2018-08-27 18:30:25.000</td>
     </tr>
     <tr>
@@ -5337,7 +5337,7 @@ _单击图像的全尺寸版本_
 
 ### BIZ_CUSTOMER_EVENTS {#biz-customer-events}
 
-已使用Javascript中的自定义事件记录的Web事件。 如果符合以下条件，此表将为空 [!DNL Marketo Measure] 未启用事件。
+已使用Javascript中的自定义事件记录的Web事件。 如果未启用[!DNL Marketo Measure]事件，此表将为空。
 
 <table>
   <tbody>
@@ -5788,11 +5788,11 @@ _单击图像的全尺寸版本_
 
 ### BIZ_FACTS {#biz-facts}
 
-将展示次数、页面查看次数、访问次数、表单提交次数、用户接触点、接触点(BT)、归因接触点(BAT)和成本数据结合使用。 在内部使用以支持 [!DNL Marketo Measure] 报表。
+将展示次数、页面查看次数、访问次数、表单提交次数、用户接触点、接触点(BT)、归因接触点(BAT)和成本数据结合使用。 在内部使用，以支持[!DNL Marketo Measure]报告。
 
 >[!IMPORTANT]
 >
->2024年年中，Marketo Measure将弃用此表。 如果您希望自行创建，请运行 [此SQL查询](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.sql).
+>2024年年中，Marketo Measure将弃用此表。 如果您希望在您这边创建它，请运行[此SQL查询](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.sql)。
 
 <table>
   <tbody>
@@ -6113,7 +6113,7 @@ _单击图像的全尺寸版本_
     <tr>
       <td>类型</td>
       <td>数字(38,0)</td>
-      <td>指示行的事实类型。 1 =买方归因接触点2 =成本3 =买方接触点4 =用户接触点5 =页面查看6 =会话7 =表单提交8 =展示</td>
+      <td>指示行的事实类型。 1 = Buyer Attribution Touchpoint 2 =成本3 = Buyer Touchpoint 4 =用户接触点5 =页面查看6 =会话7 =表单提交8 =展示</td>
       <td>3</td>
     </tr>
     <tr>
@@ -7064,7 +7064,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>广告平台 [!DNL Marketo Measure] 能够从（通常是我们的集成合作伙伴之一）中解析。</p>
+        <p>广告平台[!DNL Marketo Measure]能够从中进行解析，通常是我们的集成合作伙伴之一。</p>
       </td>
       <td>Google</td>
     </tr>
@@ -7329,7 +7329,7 @@ _单击图像的全尺寸版本_
         <p>从javascript和IP地址中，检测到用户在会话期间所在的浏览器。</p>
       </td>
       <td>
-        <p>铬黄</p>
+        <p>Chrome</p>
       </td>
     </tr>
     <tr>
@@ -7663,7 +7663,7 @@ _单击图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否需要更新关键字 [!DNL Marketo Measure] 标记。</p>
+        <p>是否需要为[!DNL Marketo Measure]标记更新关键字。</p>
         <p>（诊断字段，用于内部处理。）</p>
       </td>
       <td>
@@ -7730,7 +7730,7 @@ _单击图像的全尺寸版本_
       <td>URL已请求</td>
       <td>varchar</td>
       <td>
-        <p>登陆页面的URL [!DNL Marketo Measure] 参数。</p>
+        <p>具有[!DNL Marketo Measure]参数的登陆页面的URL。</p>
         <p>（诊断字段，用于内部处理。）</p>
       </td>
       <td></td>
@@ -7798,7 +7798,7 @@ _单击图像的全尺寸版本_
         <p>TRACKING_URL_TEMPLATE_APPLIED</p>
       </td>
       <td>varchar</td>
-      <td>URL跟踪模板 [!DNL Marketo Measure] 已添加到关键字。</td>
+      <td>已将URL跟踪模板[!DNL Marketo Measure]添加到关键字。</td>
       <td>
         <p>http://cdn.adobe.com/redir?lp={lpurl}&amp;_bt={creative}&amp;_bk={keyword}&amp;_bm={matchType}</p>
       </td>
@@ -8131,11 +8131,11 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>潜在客户来源</p>
+        <p>商机SOURCE</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>创建Lead的来源。</p>
+        <p>创建潜在客户的Source。</p>
       </td>
       <td>
         <p>广告</p>
@@ -8209,7 +8209,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>Lead的当前阶段，识别为自定义阶段，可在 [!DNL Marketo Measure] 应用程序。</p>
+        <p>潜在客户的当前阶段，识别为可在[!DNL Marketo Measure]应用程序中创建的自定义阶段。</p>
       </td>
       <td>
         <p>已计划演示</p>
@@ -8221,7 +8221,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>Lead的所有先前阶段，识别为自定义阶段，可在 [!DNL Marketo Measure] 应用程序。</p>
+        <p>潜在客户的所有先前阶段，识别为可在[!DNL Marketo Measure]应用程序中创建的自定义阶段。</p>
       </td>
       <td>
         <p>MQL</p>
@@ -8271,7 +8271,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>此 [!DNL Marketo Measure] 用于从集成合作伙伴填充以将离线事件映射到Web会话的Cookie ID。 要求：启用呼叫跟踪：True</p>
+        <p>用于从集成合作伙伴填充以将离线事件映射到Web会话的[!DNL Marketo Measure] Cookie ID。 要求：启用呼叫跟踪：True</p>
       </td>
       <td>
         <p>08c1063cb0a64349ad0d2d862f5cc700</p>
@@ -8306,7 +8306,7 @@ _单击图像的全尺寸版本_
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>具有以下特征的自定义属性 [!DNL Marketo Measure] 已使用JSON格式从源系统导入。</td>
+      <td>[!DNL Marketo Measure]已从源系统导入JSON格式的自定义属性。</td>
       <td>{"Lead_Type__c"："Sales Created"， "Foo"："Bar"}</td>
     </tr>
     <tr>
@@ -8316,7 +8316,7 @@ _单击图像的全尺寸版本_
       <td>真</td>
     </tr>
     <tr>
-      <td>SOURCE_SYSTEM</td>
+      <td>Source_SYSTEM</td>
       <td>varchar</td>
       <td>指示记录是来自CRM还是Marketo集成。</td>
       <td>Crm</td>
@@ -8410,7 +8410,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>与过渡关联的买方接触点的ID。</p>
+        <p>与过渡关联的Buyer Touchpoint的ID。</p>
       </td>
       <td>
         <p>TP2_Person_00Q3100001Fx6AlEAJ_2018-08-28:14-41-06-1674260.d00ceb09fbd3</p>
@@ -8460,7 +8460,7 @@ _单击图像的全尺寸版本_
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>级的数值排名，如 [!DNL Marketo Measure] 阶段映射设置。</p>
+        <p>阶段的数字排名，在[!DNL Marketo Measure]阶段映射设置中排序。</p>
       </td>
       <td>
         <p>5</p>
@@ -8787,7 +8787,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>Opportunity的当前阶段，如 [!DNL Marketo Measure] 应用程序。</p>
+        <p>Opportunity的当前阶段，如[!DNL Marketo Measure]应用程序中定义。</p>
       </td>
       <td>
         <p>DM演示</p>
@@ -8799,7 +8799,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>Opportunity以前经历的所有阶段的字符串，如 [!DNL Marketo Measure] 应用程序。</p>
+        <p>Opportunity以前经历的所有阶段的字符串，如[!DNL Marketo Measure]应用程序中所定义。</p>
       </td>
       <td>
         <p>经鉴定的发现，已计划演示</p>
@@ -8846,7 +8846,7 @@ _单击图像的全尺寸版本_
     <tr>
       <td>CUSTOM_PROPERTIES</td>
       <td>varchar</td>
-      <td>具有以下特征的自定义属性 [!DNL Marketo Measure] 已使用JSON格式从源系统导入。</td>
+      <td>[!DNL Marketo Measure]已从源系统导入JSON格式的自定义属性。</td>
       <td>{"Opportunity_Location__c"："Seattle"， "Foo"："Bar"}</td>
     </tr>
     <tr>
@@ -8868,7 +8868,7 @@ _单击图像的全尺寸版本_
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
-      <td><b>∗</b> 机会类型</td>
+      <td><b>∗</b>机会类型</td>
       <td>varchar</td>
       <td>机会的类型，如新业务、续订等。</td>
       <td>续订，潜在客户</td>
@@ -8898,7 +8898,7 @@ _单击图像的全尺寸版本_
         <p>过渡的唯一ID。</p>
       </td>
       <td>
-        <p>ST_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_Demo Scheduled-1_BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec56e757</p>
+        <p>ST_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_Demo Scheduled-1_BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec556e757</p>
       </td>
     </tr>
     <tr>
@@ -8953,7 +8953,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>与过渡关联的买方归因接触点ID。</p>
+        <p>与过渡关联的Buyer Attribution Touchpoint的ID。</p>
       </td>
       <td>
         <p>BAT2_0060Z00000nEgjlQAC_0030Z00003IjojKQAR_2018-06-01:19-51-38-1685390.beec556e7757</p>
@@ -9003,7 +9003,7 @@ _单击图像的全尺寸版本_
         <p>数字(38,0)</p>
       </td>
       <td>
-        <p>级的数值排名，如 [!DNL Marketo Measure] 阶段映射设置。</p>
+        <p>阶段的数字排名，在[!DNL Marketo Measure]阶段映射设置中排序。</p>
       </td>
       <td>
         <p>4</p>
@@ -9581,7 +9581,7 @@ _单击图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否需要更新投放位置 [!DNL Marketo Measure] 标记。</p>
+        <p>是否需要为[!DNL Marketo Measure]标记更新投放位置。</p>
         <p>（诊断字段，由内部处理使用。）</p>
       </td>
       <td>假</td>
@@ -9649,7 +9649,7 @@ _单击图像的全尺寸版本_
 
 ### 商业区段 {#biz-segments}
 
-区段值定义见 [!DNL Marketo Measure] 应用程序。
+在[!DNL Marketo Measure]应用程序中定义的区段值。
 
 <table>
   <tbody>
@@ -9873,7 +9873,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>归属于会话的渠道，如中设置的渠道定义所定义。 [!DNL Marketo Measure] 应用程序。</p>
+        <p>归属于会话的渠道，如[!DNL Marketo Measure]应用程序中设置的渠道定义所定义。</p>
       </td>
       <td>
         <p>付费搜索.AdWords</p>
@@ -9969,7 +9969,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>用于定义导致会话的源。 在以下情况下，可以从utm_source的URL中解析该内容，或将其设置为广告提供商 [!DNL Marketo Measure] 能够解析广告。</p>
+        <p>用于定义导致会话的源。 这可以从utm_source的URL中解析出来，或者设置为“广告提供商”（如果[!DNL Marketo Measure]能够解析广告）。</p>
       </td>
       <td>
         <p>Google AdWords</p>
@@ -10049,7 +10049,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>广告平台 [!DNL Marketo Measure] 从解决，通常是我们的集成合作伙伴之一。</p>
+        <p>广告平台[!DNL Marketo Measure]通常是我们的集成合作伙伴之一。</p>
       </td>
       <td>
         <p>Google</p>
@@ -10353,7 +10353,7 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>中</p>
+        <p>Medium</p>
       </td>
       <td>varchar</td>
       <td>
@@ -10728,7 +10728,7 @@ _单击图像的全尺寸版本_
         <p>布尔值</p>
       </td>
       <td>
-        <p>是否需要更新网站 [!DNL Marketo Measure] 标记。</p>
+        <p>是否需要更新网站以进行[!DNL Marketo Measure]标记。</p>
         <p>（诊断字段，用于内部处理。）</p>
       </td>
       <td>假</td>
@@ -11059,7 +11059,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>URL将修饰的内容 [!DNL Marketo Measure] 参数。</p>
+        <p>将使用[!DNL Marketo Measure]参数修饰哪个URL。</p>
         <p>（诊断字段，用于内部处理。）</p>
       </td>
       <td></td>
@@ -11087,7 +11087,7 @@ _单击图像的全尺寸版本_
 
 ### BIZ_STAGE_DEFINITIONS {#biz-stage-definitions}
 
-在中导入或定义的阶段列表 [!DNL Marketo Measure] 应用程序。
+在[!DNL Marketo Measure]应用程序中导入或定义的阶段列表。
 
 <table>
   <tbody>
@@ -11187,7 +11187,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>阶段的状态，如 [!DNL Marketo Measure] 应用程序阶段映射。</p>
+        <p>在[!DNL Marketo Measure]应用程序阶段映射中定义的阶段状态。</p>
       </td>
       <td>
         <p>打开</p>
@@ -11284,7 +11284,7 @@ _单击图像的全尺寸版本_
        <td>ID</td>
       <td>varchar</td>
       <td>
-        <p>买方接触点(BT)的唯一ID。</p>
+        <p>Buyer Touchpoint (BT)的唯一ID。</p>
       </td>
       <td>
         <p>TP2_Person_00Q0Z000013e2PYUAY_2018-08-27:20-04-40-5655690.1ee8567c175a</p>
@@ -11336,7 +11336,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>与BT关联的商机的ID。</p>
+        <p>与BT关联的潜在客户的ID。</p>
       </td>
       <td>
         <p>00Q0Z000013e2PYUAY</p>
@@ -11402,7 +11402,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>根据中的自定义渠道定义，接触点所属的渠道 [!DNL Marketo Measure] 应用程序。 在CRM中称为“营销渠道 — 路径”。</p>
+        <p>如[!DNL Marketo Measure]应用程序内的自定义渠道定义中所定义，接触点所属的渠道。 在CRM中称为“营销渠道 — 路径”。</p>
       </td>
       <td>Social.LinkedIn</td>
     </tr>
@@ -11412,7 +11412,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>第一个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>如[!DNL Marketo Measure]应用程序中区段定义中所定义，接触点所属的第一个类别的区段值。 在CRM中称为“区段”。</p>
       </td>
       <td>ABC</td>
     </tr>
@@ -11422,7 +11422,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>根据以下内容中的区段定义，确定接触点属于第二个类别的区段值 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第二个类别的区段值。 在CRM中称为“区段”。</p>
       </td>
       <td>
         <p>是</p>
@@ -11434,7 +11434,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>接触点所属的第三类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第三类别的区段值。 在CRM中称为“区段”。</p>
       </td>
       <td>
         <p>其他</p>
@@ -11446,7 +11446,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>根据以下内容中的区段定义，确定接触点所属的第四个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第四个类别的区段值。 在CRM中称为“区段”。</p>
       </td>
       <td>
         <p>合作伙伴</p>
@@ -11458,7 +11458,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>根据以下内容中的区段定义，确定接触点所属的第五个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第五个类别的区段值。 在CRM中称为“区段”。</p>
       </td>
       <td></td>
     </tr>
@@ -11468,7 +11468,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>根据以下内容中的区段定义，确定接触点所属的第六个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第六个类别的区段值。 在CRM中称为“区段”。</p>
       </td>
       <td></td>
     </tr>
@@ -11477,7 +11477,7 @@ _单击图像的全尺寸版本_
         <p>类别7</p>
       </td>
       <td>varchar</td>
-      <td>根据以下内容中的区段定义，确定接触点所属的第七个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第七个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -11485,7 +11485,7 @@ _单击图像的全尺寸版本_
         <p>类别8</p>
       </td>
       <td>varchar</td>
-      <td>根据以下内容中的区段定义，确定接触点所属的第八个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点属于第8个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -11493,7 +11493,7 @@ _单击图像的全尺寸版本_
         <p>类别9</p>
       </td>
       <td>varchar</td>
-      <td>第9个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点属于第9个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -11501,7 +11501,7 @@ _单击图像的全尺寸版本_
         <p>类别10</p>
       </td>
       <td>varchar</td>
-      <td>第10个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第十个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -11509,7 +11509,7 @@ _单击图像的全尺寸版本_
         <p>类别11</p>
       </td>
       <td>varchar</td>
-      <td>第11个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义中所定义，接触点所属的第十一个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -11517,7 +11517,7 @@ _单击图像的全尺寸版本_
         <p>类别12</p>
       </td>
       <td>varchar</td>
-      <td>第12个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第十二个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -11525,7 +11525,7 @@ _单击图像的全尺寸版本_
         <p>类别13</p>
       </td>
       <td>varchar</td>
-      <td>根据以下内容中的区段定义，确定接触点所属的第十三个类别的区段值： [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</td>
+      <td>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第十三个类别的区段值。 在CRM中称为“区段”。</td>
       <td></td>
     </tr>
     <tr>
@@ -11534,7 +11534,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>第14个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点属于第14个类别的区段值。 在CRM中称为“区段”。</p>
       </td>
       <td></td>
     </tr>
@@ -11544,7 +11544,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>第15个接触点所属的类别的区段值，如 [!DNL Marketo Measure] 应用程序。 在CRM中称为“区段”。</p>
+        <p>如[!DNL Marketo Measure]应用程序中的区段定义所定义，接触点所属的第十五个类别的区段值。 在CRM中称为“区段”。</p>
       </td>
       <td></td>
     </tr>
@@ -11556,7 +11556,7 @@ _单击图像的全尺寸版本_
       <td>
         <p>从javascript和IP地址中，检测到用户在会话期间所在的浏览器。</p>
       </td>
-      <td>铬黄</td>
+      <td>Chrome</td>
     </tr>
     <tr>
       <td>
@@ -11706,11 +11706,11 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>中</p>
+        <p>Medium</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>用于定义产生接触点的媒介。 这可以从utm_medium的URL中解析。 或者，如果 [!DNL Marketo Measure] 能够解析广告，它可能是“cpc”或“display”之类的值。</p>
+        <p>用于定义产生接触点的媒介。 这可以从utm_medium的URL中解析。 或者，如果[!DNL Marketo Measure]能够解析广告，则可能是诸如“cpc”或“display”之类的值。</p>
       </td>
       <td>
         <p>社交</p>
@@ -11722,7 +11722,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>用于定义导致接触点的源。 可以从utm_source中的URL中解析该活动；如果活动是从CRM同步的，则一般设置为“CRM Campaign”；或者 [!DNL Marketo Measure] 能够解析广告，它可能是“Google AdWords”或“Facebook”之类的值。 在CRM中称为“接触点源”。</p>
+        <p>用于定义导致接触点的源。 可以从utm_source的URL中解析该广告，如果它是从CRM同步的，则通常设置为“CRM Campaign”；或者，如果[!DNL Marketo Measure]能够解析广告，则它可能是“Google AdWords”或“Facebook”之类的值。 在CRM中称为“接触点Source”。</p>
       </td>
       <td>
         <p>LinkedIn</p>
@@ -11746,7 +11746,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>广告平台 [!DNL Marketo Measure] 能够从（通常是我们的集成合作伙伴之一）中解析。</p>
+        <p>广告平台[!DNL Marketo Measure]能够从中进行解析，通常是我们的集成合作伙伴之一。</p>
       </td>
       <td>
         <p>LinkedIn</p>
@@ -12160,7 +12160,7 @@ _单击图像的全尺寸版本_
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为该接触点属于W型触点（请参阅Is_First_Touch、Is_Lead_Creation_Touch和Is_Opp_Creation_Touch）。 预期为0，因为这是BT。</p>
+        <p>分配给此接触点的计算百分比，因为该接触点属于W型触点（请参阅Is_First_Touch、Is_Lead_Creation_Touch和Is_Opp_Creation_Touch）。 应为0，因为这是BT。</p>
       </td>
       <td>
         <p>0</p>
@@ -12174,7 +12174,7 @@ _单击图像的全尺寸版本_
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>由于此接触点是完整路径模型的一部分，因此分配给此接触点的计算百分比（请参阅Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch和Is_Closed_Touch）。 预期为0，因为这是BT。</p>
+        <p>由于此接触点是完整路径模型的一部分，因此分配给此接触点的计算百分比（请参阅Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch和Is_Closed_Touch）。 应为0，因为这是BT。</p>
       </td>
       <td>
         <p>0</p>
@@ -12183,7 +12183,7 @@ _单击图像的全尺寸版本_
     <tr>
       <td>CUSTOM_MODEL_CENTAGE</td>
       <td>数字(22,19)</td>
-      <td>由于此接触点是自定义模型的一部分，因此分配给此接触点的计算百分比（请参阅Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch和Is_Closed_Touch）。 预期为0，因为这是BT。</p>
+      <td>由于此接触点是自定义模型的一部分，因此分配给此接触点的计算百分比（请参阅Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch和Is_Closed_Touch）。 应为0，因为这是BT。</p>
       </td>
       <td>0</td>
     </tr>
@@ -12553,7 +12553,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>根据中的自定义渠道定义，接触点所属的渠道 [!DNL Marketo Measure] 应用程序。 在CRM中称为“营销渠道 — 路径”。</p>
+        <p>如[!DNL Marketo Measure]应用程序内的自定义渠道定义中所定义，接触点所属的渠道。 在CRM中称为“营销渠道 — 路径”。</p>
       </td>
       <td>
         <p>Social.LinkedIn</p>
@@ -12729,11 +12729,11 @@ _单击图像的全尺寸版本_
     </tr>
     <tr>
       <td>
-        <p>中</p>
+        <p>Medium</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>用于定义产生接触点的媒介。 这可以从utm_medium的URL中解析。 或者，如果 [!DNL Marketo Measure] 能够解析广告，它可能是“cpc”或“display”之类的值。</p>
+        <p>用于定义产生接触点的媒介。 这可以从utm_medium的URL中解析。 或者，如果[!DNL Marketo Measure]能够解析广告，则可能是诸如“cpc”或“display”之类的值。</p>
       </td>
       <td>
         <p>已付</p>
@@ -12745,7 +12745,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>用于定义导致接触点的源。 可以从utm_source中的URL中解析该活动；如果活动是从CRM同步的，则一般设置为“CRM Campaign”；或者 [!DNL Marketo Measure] 能够解析广告，它可能是“Google AdWords”或“Facebook”之类的值。 在CRM中称为“接触点源”。</p>
+        <p>用于定义导致接触点的源。 可以从utm_source的URL中解析该广告，如果它是从CRM同步的，则通常设置为“CRM Campaign”；或者，如果[!DNL Marketo Measure]能够解析广告，则它可能是“Google AdWords”或“Facebook”之类的值。 在CRM中称为“接触点Source”。</p>
       </td>
       <td>
         <p>linkedin</p>
@@ -12769,7 +12769,7 @@ _单击图像的全尺寸版本_
       </td>
       <td>varchar</td>
       <td>
-        <p>广告平台 [!DNL Marketo Measure] 能够从（通常是我们的集成合作伙伴之一）中解析。</p>
+        <p>广告平台[!DNL Marketo Measure]能够从中进行解析，通常是我们的集成合作伙伴之一。</p>
       </td>
       <td>
         <p>Google</p>
@@ -12984,7 +12984,7 @@ _单击图像的全尺寸版本_
         <p>搜索广告中的创意内容第二行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
-        <p>了解为什么250多家公司选择 [!DNL Marketo Measure] 用于营销归因。 获取演示！</p>
+        <p>了解为什么250多家公司选择[!DNL Marketo Measure]作为营销归因。 获取演示！</p>
       </td>
     </tr>
     <tr>
@@ -13190,7 +13190,7 @@ _单击图像的全尺寸版本_
 
 ### BIZ_WEB_HOST_MAPPINGS {#biz-web-host-mappings}
 
-将表映射到映射 [!DNL Marketo Measure] 用于AdobeECID和Munckin Id的会话Id。
+映射表以将[!DNL Marketo Measure]会话ID映射到AdobeECID和Munckin ID。
 
 <table>
   <tbody>
@@ -13213,7 +13213,7 @@ _单击图像的全尺寸版本_
         <p>COOKIE_ID</p>
       </td>
       <td>varchar</td>
-      <td>此 [!DNL Marketo Measure] 记录的Cookie ID。</td>
+      <td>[!DNL Marketo Measure]记录的Cookie ID。</td>
       <td>0d643578c0c74753eff91abe668ed328</td>
     </tr>
     <tr>
@@ -13229,7 +13229,7 @@ _单击图像的全尺寸版本_
         <p>SESSION_ID</p>
       </td>
       <td>varchar</td>
-      <td>此 [!DNL Marketo Measure] 会话ID。</td>
+      <td>[!DNL Marketo Measure]会话ID</td>
       <td>2018-08-06:01-35-24-1231230.9bc63c34482f</td>
     </tr>
     <tr>
@@ -13319,7 +13319,7 @@ _单击图像的全尺寸版本_
     <tr>
       <td>MAPPING_TYPE</td>
       <td>varchar</td>
-      <td>映射到的ID类型 [!DNL Marketo Measure] Cookie Id。</td>
+      <td>映射到[!DNL Marketo Measure] Cookie Id的ID类型。</td>
       <td>Adobe_组织ID_Ecid</td>
     </tr>
     <tr>
@@ -13379,7 +13379,7 @@ select trim(split(ch.name,'.')[0])  as channel
 group by 1,2
 ```
 
-**对于完整路径归因模型，每个渠道在过去一个月关闭的归因收入有多少？**
+**对于完整路径归因模型，每个渠道在过去一个月关闭的归因收入是多少？**
 
 ```
 --Note: This query does not perform any currency conversion.  If your data contains multiple currencies, you will need to add in logic to perform the conversion to the desired currency using the biz_conversion_rates table.
@@ -13406,7 +13406,7 @@ select trim(split(ch.name,'.')[0])  as channel
 group by 1
 ```
 
-**一个人的整个旅程是怎样的？  （显示单个电子邮件地址的所有接触点。）**
+**一个人的整个历程是多少？  （显示单个电子邮件地址的所有接触点。）**
 
 ```
 select ut.touchpoint_date

@@ -22,13 +22,13 @@ ht-degree: 0%
 
 ## Marketo Measure JavaScript {#marketo-measure-javascript}
 
-Marketo Measure JavaScript跟踪潜在客户/潜在客户与您的组织之间的所有在线营销交互（也称为接触点）。 它是一个自定义脚本，在结束位置之前添加 `</head>` 标记之前，填充于网站每个页面上的内容。
+Marketo Measure JavaScript跟踪潜在客户/潜在客户与您的组织之间的所有在线营销互动（也称为接触点）。 它是一个自定义脚本，添加到网站每个页面的结束`</head>`标记之前。
 
 `<script type="text/javascript" src="//[cdn.bizible.com/scripts/bizible.js](http://cdn.bizible.com/scripts/bizible.js)" async=""></script>`
 
 >[!NOTE]
 >
->有关如何添加Marketo Measure JS的说明， [单击此处](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md).
+>有关如何添加Marketo Measure JS的说明，[单击此处](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md)。
 
 Marketo Measure的JS捕获来自Web访问（包括匿名Web访问）、常规流量/页面导航、内容下载和表单提交的数据。 此数据将推送到您的CRM中，并且每次营销交互都显示为接触点。
 

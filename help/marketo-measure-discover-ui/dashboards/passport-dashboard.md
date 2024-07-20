@@ -1,5 +1,5 @@
 ---
-description: 护照信息板 —  [!DNL Marketo Measure]  — 产品
+description: Passport Dashboard - [!DNL Marketo Measure]  — 产品
 title: Passport信息板
 feature: Reporting
 exl-id: 0fbd9714-7d9c-4330-b35f-d011e17c3bfe
@@ -18,7 +18,7 @@ Passport仪表板为营销人员提供了在指定时间段内各个阶段进行
 
 * 在选择的某一天，每个非终止阶段有多少潜在客户、联系人或机会？
 * 在指定的时间段内，有多少不同的潜在客户或联系人在每个过渡阶段中前进？
-   * _示例_：如果铅A在2023年1月1日进入阶段1，并在2023年3月31日之前进入阶段5，则2023年第1季度护照分析将按阶段1-5对铅A进行计数。
+   * _示例_：如果潜在客户A在2023年1月1日处于阶段1，并在2023年3月31日进入阶段5，则2023年第1季度Passport分析将计算阶段1到阶段5的潜在客户A。
 * 在给定的时间范围内，每个过渡阶段传递了多少个独特的机会？
 
 ## 功能板组件 {#dashboard-components}
@@ -53,5 +53,5 @@ Passport仪表板为营销人员提供了在指定时间段内各个阶段进行
 
 >[!MORELIKETHIS]
 >
->* [了解功能板基础知识](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
->* [功能板数据可见性策略](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
+>* [了解仪表板基础知识](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [仪表板数据可见性策略](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}

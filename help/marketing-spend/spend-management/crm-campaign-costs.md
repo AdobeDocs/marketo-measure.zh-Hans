@@ -1,6 +1,6 @@
 ---
 unique-page-id: 18874688
-description: CRM Campaign成本 —  [!DNL Marketo Measure]
+description: CRM促销活动成本 —  [!DNL Marketo Measure]
 title: CRM Campaign成本
 exl-id: d967cabe-b9f1-4ea1-a81b-e4484c703ecf
 feature: Spend Management
@@ -13,23 +13,23 @@ ht-degree: 0%
 
 # CRM Campaign成本 {#crm-campaign-costs}
 
-最多 [!DNL Marketo Measure] 客户使用CRM营销活动来跟踪离线营销活动。 使用这些营销活动的营销人员还可以监控CRM中的成本。 此功能允许以下操作，从而更加便于营销人员使用 [!DNL Marketo Measure] 以了解这些成本，并将其应用于中报告的营销支出 [!DNL Marketo Measure]. 迄今为止，客户必须每月手动输入每个促销活动的成本，但必须向提供必要的信息[!DNL Marketo Measure]，用户可以自动执行此过程，以便营销人员可以花费更多时间分析他们的支出和ROI。
+大多数[!DNL Marketo Measure]客户都使用CRM营销活动来跟踪离线营销活动。 使用这些营销活动的营销人员还可以监控CRM中的成本。 此功能允许[!DNL Marketo Measure]读取这些成本并将它们应用于[!DNL Marketo Measure]内报告的营销支出，从而让营销人员更轻松。 迄今为止，客户必须每月手动输入每个促销活动的成本，但向[!DNL Marketo Measure]提供必要信息后，用户可以自动执行此流程，以便营销人员可以花费更多时间分析他们的支出和ROI。
 
 ## 可用性 {#availability}
 
-此功能适用于所有用户 [!DNL Salesforce] 和Dynamics客户。
+此功能适用于所有[!DNL Salesforce]和Dynamics客户。
 
 ## 工作原理 {#how-it-works}
 
-[!DNL Marketo Measure] 首先查找已为接触点“启用”的营销活动，因此已创建匹配的Campaign同步规则，或者“启用购买者接触点”值为“包括所有营销活动成员”或“包括‘已响应’的营销活动成员”。 另外， [!DNL Marketo Measure] 必须导入正确的值并了解如何分配成本，因此我们要求以下字段包含值：
+[!DNL Marketo Measure]首先会查找为接触点“启用”的营销活动，因此已创建匹配的Campaign同步规则，或者“启用购买者接触点”值为“包含所有营销活动成员”或“包含‘已响应’的营销活动成员”。 此外，[!DNL Marketo Measure]必须导入正确的值并了解如何分配成本，因此我们要求以下字段包含值：
 
-**[!DNL Salesforce]**： `ActualCost`， `StartDate`， `EndDate`
+**[!DNL Salesforce]**： `ActualCost`，`StartDate`，`EndDate`
 
-**[!DNL Microsoft Dynamics]**： `totalactualcost`， `actualstart`， `actualend`
+**[!DNL Microsoft Dynamics]**： `totalactualcost`，`actualstart`，`actualend`
 
-如果3个字段中的任何一个缺少值， [!DNL Marketo Measure] 无法导入成本。 您可以通过更新CRM中的Campaign记录来更正此问题。 如果成本设置为$0，则不会导入成本，因为 [!DNL Salesforce] 将空白和$0视为相同。
+如果3个字段中的任何一个缺少值，[!DNL Marketo Measure]将不会导入成本。 您可以通过更新CRM中的Campaign记录来更正此问题。 如果成本设置为$0，则不导入成本，因为[!DNL Salesforce]将空白和$0视为相同。
 
-对象 [!DNL Marketo Measure] 要确定促销活动在月份中的分布情况，可使用促销活动的开始日期和结束日期每天平均分配金额。
+对于[!DNL Marketo Measure]，要确定促销活动在月份中的分布情况，可使用促销活动的开始日期和结束日期每天平均分配金额。
 
 ![](assets/1.jpg)
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ## 无接触点的营销活动 {#campaigns-with-no-touchpoints}
 
-许多营销人员出于跟踪支出的目的，选择报告未生成任何接触点或没有营销活动成员的CRM营销活动上的营销支出。 只要填写了三个字段（开始日期、结束日期、成本）并为接触点启用促销活动， [!DNL Marketo Measure] 即使没有与之相关的接触点，也能拉入成本。
+许多营销人员出于跟踪支出的目的，选择报告未生成任何接触点或没有营销活动成员的CRM营销活动上的营销支出。 只要填充了三个字段（开始日期、结束日期、成本）并为接触点启用了营销活动，[!DNL Marketo Measure]就会提取该成本，即使没有与其关联的接触点也是如此。
 
 这有助于跟踪在多余营销成本上的支出或将其汇总到ROI计算中。
 
@@ -69,34 +69,34 @@ ht-degree: 0%
 
 ## 常见问题 {#faq}
 
-**我已经对我的营销活动进行了更改 — 我何时应会看到营销支出表或报表中的更改？**
+**我对我的营销活动进行了更改 — 何时应该会在营销支出表或报表中看到这些更改？**
 
 3-4小时
 
-**我已填写开始日期、结束日期和成本，但为什么我的成本仍未显示在 [!DNL Marketo Measure]？**
+**我已填写开始日期、结束日期和成本，但为什么我的成本仍没有显示在[!DNL Marketo Measure]中？**
 
-检查您是否将“启用购买者接触点”值设置为“包括所有促销活动成员”，或至少设置为“包括‘已响应’促销活动成员”，或者您是否创建了包含此促销活动的自定义促销活动同步规则。 如果您已确认此消息但仍看不到Campaign，请联系 [Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 这样我们才能检查您的营销活动是否正确导入。
+检查您是否将“启用Buyer Touchpoint”值设置为“包括所有营销活动成员”，或至少设置为“包括‘响应的’营销活动成员”，或者您是否创建了包含此营销活动的自定义营销活动同步规则。 如果您已确认此消息但仍看不到营销活动，请联系[Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}，以便我们检查您的营销活动是否正确导入。
 
-**我必须更改营销活动的分布，以便在特定月份中加重其重量。 我该怎么做？**
+**我必须更改营销活动的分布，以便在特定月份中加重其重量。 我应该怎么做？**
 
 成本的分配完全基于从开始日期到结束日期的均匀分配。 很遗憾，我们无法更改该日期以使您的成本在设定的日期之外具有不同的权重。 由于月中每天都很重要，因此您可以通过调整营销活动的开始和结束日期来控制此日期。
 
-**我已在父营销策划上设置成本 — 子营销策划如何从父营销策划分配成本？**
+**我已设置父营销活动的成本 — 子营销活动如何从父营销活动分配成本？**
 
 实际上，成本提取方式将直接从单个营销活动中获取，而不考虑任何父项或子项关系。 我们建议将成本与促销活动日期一起计入儿童促销活动，然后使用父项作为伞形促销活动，在此情况下，父项促销活动不会为接触点启用。
 
-**如何更改一个月内的成本 [!DNL Marketo Measure]？**
+**如何在[!DNL Marketo Measure]中更改一个月成本？**
 
-由于我们依靠CRM作为唯一的真实来源，因此必须在CRM中进行所有更改。 由导入营销活动后 [!DNL Marketo Measure]中，Campaign值不可编辑 [!DNL Marketo Measure] 或CSV文件中的。
+由于我们依靠CRM作为唯一的真实来源，因此必须在CRM中进行所有更改。 [!DNL Marketo Measure]导入营销活动后，营销活动值在[!DNL Marketo Measure]或CSV文件中将不可编辑。
 
-**在什么情况下，营销活动会显示在营销支出表中，然后不再显示？**
+**在什么情况下，营销活动会出现在营销支出表中，然后不再出现？**
 
-我们仍要求所有三个键字段都有一个值：开始日期、结束日期和成本。 我们的默认行为是，我们只导入值大于$0的营销活动。 理想情况下，我们会导入明确存在$0的Campaigns而不导入保留空白的Campaigns，但Salesforce API会将其同时导入为$0，而不管其值如何。 此外，如果“启用买方接触点”值从“包括所有顾客”或“包括‘已回应’”更改为“排除所有顾客”，我们将从“营销支出”表中删除促销活动和成本。
+我们仍要求所有三个键字段都有一个值：开始日期、结束日期和成本。 我们的默认行为是，我们只导入值大于$0的营销活动。 理想情况下，我们会导入明确存在$0的Campaigns而不导入保留空白的Campaigns，但Salesforce API会将其同时导入为$0，而不管其值如何。 此外，如果启用Buyer Touchpoint的值从“包含全部”或“包含‘已响应’”更改为“排除全部”，我们将从“营销支出”表中删除促销活动和成本。
 
-**如果已从CRM下载了一行，并且我在CSV中输入了具有相同促销活动ID的另一行，则优先购买成本是多少？**
+**如果已经从CRM下载了一行，并且我在CSV中输入了具有相同促销活动ID的另一行，则优先支付多少费用？**
 
-虽然您可以成功上传文件， [!DNL Marketo Measure] 将不会使用该行，因为我们已经有一个促销活动ID，该ID具有自动从集成中提取的相同值。
+尽管您或许能够成功上传文件，但[!DNL Marketo Measure]不会使用这一行，因为我们已有一个促销活动ID与自动从集成中提取的值相同。
 
-**您建议我们如何通过在CRM中设置的Digital Campaigns来节约成本？**
+**建议您如何从我们在CRM中设置的Digital Campaigns中扣除成本？**
 
-因为我们的 [!DNL Marketo Measure] javascript已经在跟踪您网站上的Web活动，我们建议不要同步任何通过Web窗体或其他网站活动跟踪促销活动成员的促销活动，因为它会重复计算接触次数。 因此，如果我们尚未与该平台(即Twitter、Adroll)集成，您可能希望继续使用营销支出中的“CSV上传”选项来跟踪这些在线/数字成本。
+由于我们的[!DNL Marketo Measure] JavaScript已在跟踪您网站上的Web活动，因此我们建议不要同步任何跟踪Web窗体或其他网站活动中促销活动成员的促销活动，因为它将重复计算接触次数。 因此，如果我们尚未与该平台(即Twitter、Adroll)集成，您可能希望继续使用营销支出中的“CSV上传”选项来跟踪这些在线/数字成本。

@@ -23,10 +23,10 @@ ht-degree: 0%
 
 ### KPI拼贴 {#kpi-tiles}
 
-* **总收入**：来自“成功的已结束”业务机会的总收入，包括没有接触点的业务机会。
-* **交易总数**：“成功的已结束”机会数，包括没有接触点的机会。
-* **已归因收入**：来自具有接触点的“成功的已关闭”商机的总收入。
-* **已归因的交易**：具有接触点的“成功的已结束”机会数。
+* **总收入**：“成功的已结束”商机（包括没有接触点的商机）的总收入。
+* **交易总数**：“成功的已结束”商机数，包括没有接触点的商机。
+* **已归因的收入**：具有接触点的“成功的已关闭”商机的总收入。
+* **已归因的交易**：具有接触点的“已结束的胜利”机会数。
 
 ### 收入和归因收入图表 {#revenue-and-attributed-revenue-chart}
 
@@ -60,5 +60,5 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->* [了解功能板基础知识](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
->* [功能板数据可见性策略](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}
+>* [了解仪表板基础知识](/help/marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md){target="_blank"}
+>* [仪表板数据可见性策略](/help/marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md){target="_blank"}

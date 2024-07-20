@@ -1,6 +1,6 @@
 ---
-description: ’[!DNL Salesforce] 包整合 —  [!DNL Marketo Measure]’
-title: ’[!DNL Salesforce] 包合并
+description: “[!DNL Salesforce]包合并 —  [!DNL Marketo Measure]”
+title: “[!DNL Salesforce]包合并”
 exl-id: ae559f5f-91bf-4504-9d5a-af47f95ca01f
 feature: Salesforce
 source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Salesforce] 包合并 {#salesforce-package-consolidation}
+# [!DNL Salesforce]包合并 {#salesforce-package-consolidation}
 
 为了增强用户体验并简化使用，正在将现有包编译为单个综合包。
 
@@ -24,12 +24,12 @@ ht-degree: 0%
 
 可使用两个新字段来增强报表功能：
 
-* form_name：现在BT/BAT对象中提供了此字段，可让用户根据表单名称创建报告。
-* user_touchpoint_id：此字段允许用户创建具有独特用户接触点计数(`bizible2__User_Touchpoint_V2__c` （在Salesforce中）。
+* form_name：此字段现在可在BT/BAT对象中使用，它使用户能够根据表单名称创建报表。
+* user_touchpoint_id：此字段允许用户创建具有独特用户接触点计数（Salesforce中为`bizible2__User_Touchpoint_V2__c`）的报告。
 
 ## 支持和过渡 {#support-and-transition}
 
-此 [支持团队](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} ，回答任何问题并帮助确保顺利过渡到新的整合包。
+[支持团队](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}可以回答任何问题并帮助确保顺利过渡到新的合并包。
 
 ## 必需操作 {#retired-actions}
 
@@ -51,18 +51,18 @@ ht-degree: 0%
 
 ## 常见问题 {#faq}
 
-**合并的包是否会与我现有包中的字段冲突？**
+**合并包是否会与我现有包中的字段冲突？**
 
 在安装统一包之前，您不需要卸载包。 字段中不会出现冲突，因为它们位于不同的命名空间中。
 
 **如何从当前包回填数据？**
 
-您可以提交票证 [支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"} 用于回填和重新处理BT/BAT数据以填写接触点ID和表单ID字段。
+您可以提交支持票证[](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}以回填和重新处理BT/BAT数据以填写接触点ID和表单ID字段。
 
-**V1和V2_EXT软件包中的字段是否可以在整合软件包中使用？**
+**V1和V2_EXT包中的字段在统一包中是否可用？**
 
 是的。 统一包在V1中包含相同的字段，这些字段通过接触点字段进一步按对象和V2_EXT字段进行划分。
 
 **能否在合并包中重新创建使用V2_EXT字段的报告？**
 
-是的。 请按照 [必需操作](#retired-actions) 部分。
+是的。 按照[必需操作](#retired-actions)部分中的步骤操作。

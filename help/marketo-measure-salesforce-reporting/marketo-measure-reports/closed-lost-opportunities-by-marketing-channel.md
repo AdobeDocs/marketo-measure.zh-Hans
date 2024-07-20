@@ -1,6 +1,6 @@
 ---
 unique-page-id: 18874632
-description: 按营销渠道列出的已结束的丢失机会 —  [!DNL Marketo Measure]
+description: 按营销渠道列出的已关闭的丢失机会 —  [!DNL Marketo Measure]
 title: 按营销渠道列出的已关闭的丢失机会
 exl-id: 010169fc-f7e7-4ab2-92fe-87e4250dd536
 feature: Channels, Reporting
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 尽管此报表可能取决于您的机会阶段，但此报表将揭示哪些营销渠道促成了未成功的机会。
 
-1. 单击您的 **[!UICONTROL Reports]** 在Salesforce中选项卡并选择 **[!UICONTROL New Report]**.
+1. 在Salesforce中单击您的&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL New Report]**。
 
    ![](assets/1-3.jpg)
 
-1. 在“Bizible Attribution”中的快速查找类型中，选择 **[!UICONTROL Bizible Attribution Touchpoint with Opportunity]** 报表类型，然后选择 **[!UICONTROL Create]**.
+1. 在“Bizible归因”中的快速查找类型中，选择&#x200B;**[!UICONTROL Bizible Attribution Touchpoint with Opportunity]**&#x200B;报表类型，然后选择&#x200B;**[!UICONTROL Create]**。
 
    ![](assets/2-3.jpg)
 
-1. 从报表顶部开始，显示“[!UICONTROL All Bizible Attribution Touchpoints]”并根据要报告的时间范围调整日期字段。 在我们的示例中，我们一直都在查看。 此外，将报告格式从“表格”更改为“摘要”。
+1. 从报表顶部开始，显示“[!UICONTROL All Bizible Attribution Touchpoints]”，并根据要报告的时间范围调整日期字段。 在我们的示例中，我们一直都在查看。 此外，将报告格式从“表格”更改为“摘要”。
 
    ![](assets/3-3.jpg)
 

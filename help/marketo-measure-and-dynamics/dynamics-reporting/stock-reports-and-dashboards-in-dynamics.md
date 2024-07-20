@@ -1,6 +1,6 @@
 ---
 unique-page-id: 18874612
-description: Dynamics中的Stock报表和功能板 —  [!DNL Marketo Measure]
+description: Dynamics中的Stock报表和仪表板 —  [!DNL Marketo Measure]
 title: Dynamics中的Stock报表和功能板
 exl-id: 31f8516b-d9f9-4a13-8077-ceaa004b4514
 feature: Microsoft Dynamics
@@ -15,9 +15,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->您可能会看到说明“[!DNL Marketo Measure]”，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
+>您可能会在文档中看到指定“[!DNL Marketo Measure]”的说明，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
-此 [!DNL Marketo Measure] 受管解决方案附带几个Stock功能板和报表，旨在满足您在查看时的基本需求 [!DNL Marketo Measure] dynamics中的数据。 以下是完整列表和一些常见用例。
+[!DNL Marketo Measure]托管解决方案附带几个库存功能板和报表，旨在满足您在Dynamics中查看[!DNL Marketo Measure]数据时的基本需求。 以下是完整列表和一些常见用例。
 
 ## 功能板（共9个） {#dashboards-total}
 
@@ -97,12 +97,12 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td>按参与度分数的帐户</td> 
-   <td>从以下位置对所有具有A、B、C、D、N/A等级的帐户进行分组： [!DNL Marketo Measure] 预测参与度分数。</td> 
+   <td>根据[!DNL Marketo Measure]预测参与度得分对所有帐户进行A、B、C、D、N/A级别分组。</td> 
    <td>ABM</td> 
   </tr> 
   <tr> 
    <td>具有潜在客户和联系人的客户</td> 
-   <td>查看按帐户分组的所有潜在客户和联系人，使用 [!DNL Marketo Measure] 商机帐户匹配。</td> 
+   <td>使用[!DNL Marketo Measure]潜在客户与帐户匹配，查看按帐户分组的所有潜在客户和联系人。</td> 
    <td>ABM</td> 
   </tr> 
   <tr> 
@@ -141,7 +141,7 @@ ht-degree: 3%
    <td>全部</td> 
   </tr> 
   <tr> 
-   <td>[!DNL Marketo Measure] 按社交来源归因</td> 
+   <td>[!DNL Marketo Measure] 按社交Source归因</td> 
    <td>按社交渠道查看收入归因并衡量其有效性。</td> 
    <td>全部</td> 
   </tr> 
@@ -161,12 +161,12 @@ ht-degree: 3%
    <td>全部</td> 
   </tr> 
   <tr> 
-   <td>潜在客户依据 [!DNL Marketo Measure] 营销渠道（英尺）</td> 
+   <td>潜在客户按[!DNL Marketo Measure]营销渠道（英尺）</td> 
    <td>测量每个营销渠道首次接触的潜在客户数量。</td> 
    <td>全部</td> 
   </tr> 
   <tr> 
-   <td>潜在客户依据 [!DNL Marketo Measure] 营销渠道(LC)</td> 
+   <td>由[!DNL Marketo Measure]营销渠道(LC)产生的潜在客户</td> 
    <td>测量通过每个营销渠道中的潜在客户创建接触产生了多少潜在客户。</td> 
    <td>全部</td> 
   </tr> 
@@ -191,12 +191,12 @@ ht-degree: 3%
    <td>全部</td> 
   </tr> 
   <tr> 
-   <td>按社交来源列出的潜在客户(FT)</td> 
+   <td>Social Source潜在客户（英国《金融时报》）</td> 
    <td>测量有多少潜在客户首次接触社交渠道。</td> 
    <td>全部</td> 
   </tr> 
   <tr> 
-   <td>按社交源(LC)排列的潜在客户</td> 
+   <td>Social Source (LC)潜在客户</td> 
    <td>测量通过社交渠道中的潜在客户创建接触产生了多少潜在客户。</td> 
    <td>全部</td> 
   </tr> 

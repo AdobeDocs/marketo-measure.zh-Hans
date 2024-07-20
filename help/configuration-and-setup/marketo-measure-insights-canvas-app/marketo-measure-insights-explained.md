@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874676
-description: "[!DNL Marketo Measure] 见解解释 —  [!DNL Marketo Measure]"
-title: '"[!DNL Marketo Measure] 见解解释”'
+description: '[!DNL Marketo Measure]分析已解释 —  [!DNL Marketo Measure]'
+title: "[!DNL Marketo Measure]见解已解释"
 exl-id: d479a15f-4c92-4302-8ce8-6487645012e1
 feature: Reporting
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Marketo Measure] 解释的见解 {#marketo-measure-insights-explained}
+# [!DNL Marketo Measure]分析解释 {#marketo-measure-insights-explained}
 
-了解 [!DNL Marketo Measure] 中的分析视图 [!DNL Salesforce]，包括不同图标表示的内容以及使用该功能的方法。 此功能非常有助于查看潜在客户、联系人或客户的前20场会议。
+了解[!DNL Salesforce]中的[!DNL Marketo Measure]分析视图，包括不同的图标表示什么以及如何使用该功能。 此功能非常有助于查看潜在客户、联系人或客户的前20场会议。
 
-当某人被 [!DNL Marketo Measure] 在JavaScript中填写网站上的表单后，该人员就会成为您系统中的潜在客户，并且其数字营销数据会发送到您的Salesforce (SFDC)组织。 发生这种情况时，您会看到中填充了接触点数据 [!DNL Marketo Measure] Lead/Contact/Opportunity/Account对象上的Lead Insights部分（一个画布应用程序）。
+在[!DNL Marketo Measure] JavaScript跟踪某人并在您的网站上填写表单后，该人员即成为您系统中的潜在客户，其数字营销数据将被发送到您的Salesforce (SFDC)组织。 发生这种情况时，您会看到接触点数据填充到Lead/Contact/Opportunity/Account对象的[!DNL Marketo Measure] Lead Insights部分(Canvas App)中。
 
 首先，您可在洞察内容的中间部分中看到访客在您网站上的会话数。 您可以随意滚动浏览这些会话和导航。
 
@@ -37,8 +37,8 @@ ht-degree: 0%
 
 ![](assets/4.png)
 
-在每个会话的右侧，您可以看到推送 [!DNL Marketo Measure] SFDC中的字段。 在此示例中，您可以看到广告组、广告内容、促销活动、关键词、媒介。 您还可以向下滚动以查看 [!DNL Marketo Measure] 我们提供的数据。
+在每个会话的右侧，您可以看到推送SFDC中[!DNL Marketo Measure]字段的更多粒度营销数据。 在此示例中，您可以看到广告组、广告内容、促销活动、关键字、Medium。 您还可以向下滚动以查看我们提供的[!DNL Marketo Measure]数据的更多信息。
 
-最后，一旦有人拥有大量会话，您便可以在中使用一些过滤器 [!UICONTROL Insights] 以在您的网站上查找其参与的特定部分。 您可以按以下项过滤 [!UICONTROL Touchpoint Position] 例如。
+最后，当某人拥有大量会话时，您可以使用[!UICONTROL Insights]中的某些过滤器来查找他们在您网站上的参与的特定部分。 例如，您可以按[!UICONTROL Touchpoint Position]进行筛选。
 
 您还可以按页面查看次数、AB测试或Forms进行搜索。

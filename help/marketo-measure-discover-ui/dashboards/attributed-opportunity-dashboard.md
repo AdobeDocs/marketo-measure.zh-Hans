@@ -1,5 +1,5 @@
 ---
-description: 已归因机会信息板 —  [!DNL Marketo Measure]  — 产品
+description: 已归因的机会信息板 —  [!DNL Marketo Measure]  — 产品
 title: 已归因的机会仪表板
 feature: Reporting
 exl-id: b98cc45a-9483-42a5-8b75-b235273f867b
@@ -23,8 +23,8 @@ Attributed Opportunity Dashboard可全面了解营销工作如何对新兴和成
 
 ### KPI拼贴 {#kpi-tiles}
 
-* **已归因机会金额**：根据所选归因模型，来自具有在过滤日期期间内创建的接触点的已关闭和未完成机会的总收入贡献。
-* **已归因的机会**：具有接触点的已关闭和未结机会数。
+* **已归因业务机会金额**：根据所选归因模型，在筛选的日期期间内创建的具有接触点的已关闭和未结业务机会的收入贡献总计。
+* **已归因的商机**：具有接触点的已关闭和已打开商机的数量。
 
 ### 按渠道随时间变化的归因机会金额图表 {#attributed-opportunity-amount-by-channel-over-time-chart}
 
@@ -53,7 +53,7 @@ Attributed Opportunity Dashboard可全面了解营销工作如何对新兴和成
 
 表格视图提供了对已归因商机金额分布的清晰和有条理的洞察。 用户可以通过将数据分类为渠道、子渠道和营销活动，快速识别性能模式并确定高效的营销策略。
 
-单击 **+** 图标来显示按子渠道和促销活动划分的明细。
+单击每个渠道旁边的&#x200B;**+**&#x200B;图标以显示按子渠道和促销活动划分的明细。
 
 ![](assets/attributed-opportunity-dashboard-2.png)
 

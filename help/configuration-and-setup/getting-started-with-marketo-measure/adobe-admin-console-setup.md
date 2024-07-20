@@ -12,49 +12,49 @@ ht-degree: 0%
 
 # Adobe Admin Console设置 {#adobe-admin-console-setup}
 
-使用的第一步 [!DNL Marketo Measure] 是创建并登录到您配置的Adobe Admin Console。 如果您尚未收到包含登录说明的电子邮件，请联系贵机构的 [!DNL Marketo Measure] 客户代表。
+使用[!DNL Marketo Measure]的第一步是创建并登录您配置的Adobe Admin Console。 如果您没有收到包含登录说明的电子邮件，请联系您的[!DNL Marketo Measure]客户代表。
 
 ## 设置您的Adobe Admin Console和身份提供程序 {#set-up-your-adobe-admin-console-and-identity-provider}
 
-作为Adobe包中的产品， [!DNL Marketo Measure] 使用Adobe Admin Console for Identity Management的完整功能。 更多资源可以 [在此处找到](https://helpx.adobe.com/cn/enterprise/using/admin-console.html).
+作为Adobe包中的产品，[!DNL Marketo Measure]使用Adobe Admin Console for Identity Management的完整功能。 更多资源可在[此处](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)找到。
 
-建议您查看可用的资源、最佳实践和选项，以便用于 [Identity Management](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
+建议您查看可用于[Identity Management](https://helpx.adobe.com/enterprise/using/set-up-identity.html)的资源、最佳实践和选项。
 
-有关在Adobe Admin Console中设置Identity Management的指导和审查，请联系 [!DNL Marketo Measure] 客户代表。
+有关在Adobe Admin Console中设置Identity Management的指导和审查，请联系您的[!DNL Marketo Measure]客户代表。
 
-为了便于用户使用您的系统验证和授权 [!DNL Marketo Measure] 实例时，需要在Adobe Admin Console中执行以下步骤：
+为了便于对您的[!DNL Marketo Measure]实例进行用户身份验证和授权，需要在Adobe Admin Console中执行以下步骤：
 
-**设置 [!DNL Marketo Measure] 产品卡**
+**设置[!DNL Marketo Measure]产品卡**
 
-在访问Adobe Admin Console时，您会看到 [!DNL Marketo Measure] 产品实例显示在概述部分中。
+访问Adobe Admin Console时，您会看到“概述”部分中存在您的[!DNL Marketo Measure]产品实例。
 
 ![](assets/adobe-admin-console-setup-1.png)
 
-单击 [!DNL Marketo Measure] 产品卡会显示您的所有 [!DNL Marketo Measure] 实例。 默认情况下，每个 [!DNL Marketo Measure] 实例有它自己的配置文件，前缀为“[!DNL Marketo Measure]’。 添加到此配置文件或此实例中的任何其他配置文件的任何管理员或用户都可以登录到 [!DNL Marketo Measure].
+单击[!DNL Marketo Measure]产品卡可显示所有[!DNL Marketo Measure]实例。 默认情况下，每个[!DNL Marketo Measure]实例都有自己的前缀为“[!DNL Marketo Measure]”的配置文件。 添加到此配置文件或此实例中的任何其他配置文件的任何管理员或用户都可以登录到[!DNL Marketo Measure]。
 
 ![](assets/adobe-admin-console-setup-2.png)
 
-无需执行任何操作即可在 [!DNL Marketo Measure] 产品实例。
+无需执行任何操作即可在[!DNL Marketo Measure]产品实例中创建配置文件。
 
-开始添加可以访问的用户 [!DNL Marketo Measure]，请参阅 [正在添加 [!DNL Marketo Measure] 管理员和 [!DNL Marketo Measure] 用户](#adding-marketo-measure-admins-and-marketo-measure-users) 部分。
+要开始添加可以访问[!DNL Marketo Measure]的用户，请参阅下面的[添加 [!DNL Marketo Measure] 管理员和 [!DNL Marketo Measure] 用户](#adding-marketo-measure-admins-and-marketo-measure-users)部分。
 
-## 正在添加 [!DNL Marketo Measure] 管理员和 [!DNL Marketo Measure] 用户 {#adding-marketo-measure-admins-and-marketo-measure-users}
+## 正在添加[!DNL Marketo Measure]管理员和[!DNL Marketo Measure]用户 {#adding-marketo-measure-admins-and-marketo-measure-users}
 
-下一步是授予对 [!DNL Marketo Measure] 添加用户的应用程序。 这可以在的admins and users目录中完成 [!DNL Marketo Measure] 产品卡。
+下一步是通过添加用户来授予对[!DNL Marketo Measure]应用程序的访问权限。 可以在[!DNL Marketo Measure]产品卡的admins and users目录中执行此操作。
 
 | 用户类型 | 描述 |
 |---|---|
-| 管理员 | 这些是的管理员和高级用户 [!DNL Marketo Measure] 具有完全更新和管理能力的应用程序 [!DNL Marketo Measure]特定配置选项 |
-| 用户 | 这些是 [!DNL Marketo Measure] 在中具有只读权限的应用程序 [!DNL Marketo Measure] 应用程序 |
+| 管理员 | 这些是[!DNL Marketo Measure]应用程序的管理员和超级用户，完全能够更新和管理特定于[!DNL Marketo Measure]的配置选项 |
+| 用户 | 这些是[!DNL Marketo Measure]应用程序的标准用户，在[!DNL Marketo Measure]应用程序中拥有只读权限 |
 
-将用户添加到其各自的组时，您会看到他们的 [身份类型已列出](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
+将用户添加到其相应组时，您会看到列出其[标识类型](https://helpx.adobe.com/enterprise/using/set-up-identity.html)。
 
 >[!NOTE]
 >
->成为 [!DNL Marketo Measure] 管理员(在 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"})，必须将用户添加为用户 _和_ 管理员至任意 [!DNL Marketo Measure] 内的产品配置文件 [!DNL Marketo Measure] 产品卡。
+>要成为[!DNL Marketo Measure]管理员(位于[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}中)，必须将用户添加为用户&#x200B;_和_，并将用户添加为[!DNL Marketo Measure]产品信息卡中任何[!DNL Marketo Measure]产品配置文件的管理员。
 
-**登录[!DNL Marketo Measure]**
+**登录到[!DNL Marketo Measure]**
 
-将用户添加到产品配置文件后，他们便能够访问其 [!DNL Marketo Measure] 实例，方法是 **使用Adobe ID登录** 选项位于 [experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}.
+将用户添加到产品配置文件后，通过在[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}中选择&#x200B;**使用Adobe ID登录**&#x200B;选项，他们可以访问其[!DNL Marketo Measure]实例。
 
 ![](assets/adobe-admin-console-setup-3.png)
