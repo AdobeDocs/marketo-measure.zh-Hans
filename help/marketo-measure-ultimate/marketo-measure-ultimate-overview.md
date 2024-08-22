@@ -3,16 +3,16 @@ description: '[!DNL Marketo Measure]最终概述 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]最终概述'
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
-source-git-commit: 4787f765348da71bc149c997470ce678ba498772
+source-git-commit: 36688972c241f5a79c1730237598510cd44f032d
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 0%
+source-wordcount: '683'
+ht-degree: 4%
 
 ---
 
 # [!DNL Marketo Measure]最终概述 {#marketo-measure-ultimate-overview}
 
-[!DNL Marketo Measure]（以前称为Bizible）使营销人员能够洞悉哪些营销工作在为公司增加收入和最大化投资回报方面最有效。 [!DNL Marketo Measure]是一款营销归因解决方案，可自动跟踪和报告渠道效果，让您能够洞悉哪些渠道产生的客户参与度最高，并允许您相应地优化营销支出。
+[!DNL Marketo Measure]（以前为 Bizible）使营销人员能够洞悉哪些营销工作在为公司增加收入以及使投资回报率最大化方面最有效。[!DNL Marketo Measure]是一款营销归因解决方案，可自动跟踪和报告渠道效果，让您能够洞悉哪些渠道产生的客户参与度最高，并允许您相应地优化营销支出。
 
 [!DNL Marketo Measure Ultimate]包含其他功能：
 
@@ -111,4 +111,6 @@ Campaign成员接触点规则和活动接触点规则特定于数据集。
 
 >[!MORELIKETHIS]
 >
->[Marketo Measure Ultimate目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}
+>* [Marketo Measure Ultimate目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}
+>
+>* [视频： Marketo Measure Ultimate概述](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}
