@@ -4,10 +4,10 @@ product: Bizible
 audience: end-user
 user-guide-title: “[!DNL Marketo Measure] 指南”
 user-guide-description: “[!DNL Marketo Measure]使营销人员能够洞悉哪些营销工作在为公司增加收入方面最有效。”
-source-git-commit: 5759615376954806d6f0682378ce4bbc786bc43a
+source-git-commit: 8fa33a363b9e853dd074848032e1810b72fe169c
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 0%
+source-wordcount: '802'
+ht-degree: 1%
 
 ---
 
@@ -57,6 +57,7 @@ ht-degree: 0%
       + [连接 [!DNL Marketo Measure] 到Salesforce](configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)
       + [ [!DNL Marketo Measure] CRM包的最佳实践](configuration-and-setup/marketo-measure-and-salesforce/best-practices-for-marketo-measure-crm-package.md)
       + [[!DNL Marketo Measure] Salesforce对象](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-objects.md)
+      + [CRM导出的错误处理](configuration-and-setup/marketo-measure-and-salesforce/crm-error-handling.md)
       + [ [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何交互](configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
       + [[!DNL Marketo Measure]对象和字段分类](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md)
       + [标准 [!DNL Salesforce] 对象上的[!DNL Marketo Measure]字段](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-fields-on-standard-salesforce-objects.md)
@@ -231,7 +232,7 @@ ht-degree: 0%
       + [从Google Analytics中的登陆页面URL中删除 [!DNL Marketo Measure] 跟踪参数](miscellaneous/other-related-resources/remove-marketo-measure-tracking-parameters-from-the-landing-page-url-in-google-analytics.md)
       + [正在从完整圆转为 [!DNL Marketo Measure] ](miscellaneous/other-related-resources/transitioning-to-marketo-measure-from-full-circle.md)
    + [测试](miscellaneous/test.md)
-+ 发行说明{#release-notes}
++ 发行说明 {#release-notes}
    + [最新发行说明](release-notes/current.md)
    + 以前版本{#previous-releases}
       + [发行说明：2023年](release-notes/previous-releases/2023.md)
