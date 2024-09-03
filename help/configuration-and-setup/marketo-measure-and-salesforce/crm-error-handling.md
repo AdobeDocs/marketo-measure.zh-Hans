@@ -2,9 +2,9 @@
 description: 了解如何处理CRM导出中的错误
 title: CRM导出的错误处理
 feature: Salesforce
-source-git-commit: 24cb14c0f5db13c791966d21b4a1145b655ecc1b
+source-git-commit: ce5170330fb1d9f944762f401d29be4da5c0bd43
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 
 该设置可在&#x200B;**我的帐户** > **设置** > **CRM** > **常规**&#x200B;下找到。
 
+![导出错误时暂停](assets/stop-progress.png)
+
 >[!NOTE]
 >
 >此功能仅在您启用了“导出到CRM”功能时才可见。
@@ -22,6 +24,8 @@ ht-degree: 0%
 启用此功能后，导出作业将停止前进并保留在出现错误的记录上，直到问题得到解决。 这些错误通常是由缺少权限、未正确应用自定义验证规则或工作流/触发器中的问题造成的。 作业将继续按计划运行，并自动重新尝试导出失败的记录，直到成功为止。
 
 如果您选择禁用此功能，将显示一个警告弹出窗口，通知您这可能导致数据不一致。 您有责任解决因这些不一致而可能出现的任何问题。
+
+![数据不一致警告](assets/data-inconsistency.png)
 
 在这两种情况下，无论功能是打开还是关闭，`ExportErrors`表中都会记录遇到的所有记录级错误，`CRMExport_ExportError`作业每天都会自动尝试重新导出这些记录。 这消除了支持请求启动重新导出的需要，因为它将自动发生，无需任何开发人员干预。
 
