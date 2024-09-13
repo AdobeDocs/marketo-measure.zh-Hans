@@ -2,7 +2,7 @@
 description: 了解从 [!DNL Marketo Measure] 分层订阅迁移到 [!DNL Marketo Measure] Ultimate时的迁移过程。
 title: 从层迁移到 [!DNL Marketo Measure] 旗舰版
 feature: Integration, Tracking, Attribution
-source-git-commit: 9c3c3c75a9a505bb078da18e13f210add8699c24
+source-git-commit: d62eb377a6abe8a01de7ad2aba34b85fb74ad461
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 1%
