@@ -4,9 +4,9 @@ description: 使用自定义收入金额字段 —  [!DNL Marketo Measure]
 title: 使用自定义收入金额字段
 exl-id: 517ea4f9-aa83-48d0-8ce7-003f4a907430
 feature: Custom Revenue Amount
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: 3794aaa8460fe3e4d366b833c933d10beda7da96
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 默认情况下，采购员归因接触点将从以下两个字段之一提取机会金额：
 
-* 金额（SFDC默认值）
+* 金额(SFDC默认)
 * [!DNL Marketo Measure]机会金额（自定义）
 
-如果您在您的Opportunities中使用自定义Amount字段，我们将需要配置工作流以计算Buyer Touchpoint收入。 这需要[!DNL Salesforce]的一些更高级的知识，因此可能需要您的SFDC管理员的帮助。
+如果您在您的Opportunities中使用自定义Amount字段，我们将需要配置工作流以计算Buyer Touchpoint收入。 这需要进一步了解[!DNL Salesforce]，因此可能需要SFDC管理员的帮助。
 
 首先，我们需要以下信息：
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 在Salesforce Lightning中创建工作流 {#create-the-workflow-in-salesforce-lightning}
 
-以下步骤适用于Salesforce Lightning用户。 如果您仍使用Salesforce Classic，则这些步骤[将列在下面](#create-the-workflow-in-salesforce-classic)。
+以下步骤适用于Salesforce Lightning用户。 如果您仍使用Salesforce Classic，则下面的步骤[将列出](#create-the-workflow-in-salesforce-classic)。
 
 1. 从“设置”中，在快速查找框中键入“流”，然后选择&#x200B;**[!UICONTROL Flows]**&#x200B;以启动流生成器。 从右侧面板中单击&#x200B;**[!UICONTROL New Flow]**&#x200B;按钮。
 
@@ -62,8 +62,8 @@ ht-degree: 0%
    * 输入标签 — 将自动生成API名称
    * 在“如何查找记录以更新并设置其值”下，选择&#x200B;**[!UICONTROL Use the opportunity record that triggered the flow]**。
    * 在“[!UICONTROL Set Filter Conditions]”部分中，选择&#x200B;**[!UICONTROL Always Update Record]**&#x200B;作为更新记录的条件要求。
-   * 在“[!UICONTROL Set Field Values for the Campaign Record]”的“从”字段中，选择Marketo Measure Opportunity Amount和“从”值。 然后选择您的自定义金额字段。
-   * 单击&#x200B;**[!UICONTROL Done]**。
+   * 在“[!UICONTROL Set Field Values for the Campaign Record]”的from字段中，选择Marketo Measure Opportunity Amount (**bizible2__Bizible_Opportunity_Amount__c**)和from值。 然后选择您的自定义金额字段。
+   * 单击 **[!UICONTROL Done]**。
 
    ![](assets/using-a-custom-revenue-amount-field-7.png)
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 1. 添加工作流操作。 将此选取列表设置为“[!UICONTROL New Field Update]”。
    ![](assets/using-a-custom-revenue-amount-field-14.png)
 
-1. 您将在此处填写字段信息。 在“名称”字段中，我们建议使用此命名：“[!DNL Marketo Measure] Opp数量”。 “唯一名称”将根据“名称”字段自动填充。 在“要更新的字段”选取列表中，选择“[!DNL Marketo Measure]机会金额”。 选择字段后，选中“字段更改后重新评估工作流规则”框。 在“指定新字段值”中，选择“使用公式设置新值”。 在空框中，放置自定义金额字段的API名称。 单击&#x200B;**[!UICONTROL Save]**。
+1. 您将在此处填写字段信息。 在“名称”字段中，我们建议使用此命名：“[!DNL Marketo Measure] Opp数量”。 “唯一名称”将根据“名称”字段自动填充。 在“要更新的字段”选取列表中，选择“[!DNL Marketo Measure]机会金额”。 选择字段后，选中“字段更改后重新评估工作流规则”框。 在“指定新字段值”中，选择“使用公式设置新值”。 在空框中，放置自定义金额字段的API名称。 单击 **[!UICONTROL Save]**。
 
    ![](assets/using-a-custom-revenue-amount-field-15.png)
 
@@ -104,6 +104,6 @@ ht-degree: 0%
 
    完成这些步骤后，需要更新机会以触发工作流以使用[!UICONTROL custom opportunity]字段中的新值。
 
-   这可以通过在SFDC中通过Data Loader运行您的机会来实现。 在[本文](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md)中查找有关使用数据加载器的详细信息。
+   这可以通过在SFDC中通过Data Loader运行您的销售机会来实现。 在[本文](/help/advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md)中查找有关使用数据加载器的详细信息。
 
 如果过程中有任何问题，请随时联系Adobe客户团队（您的客户经理）或[[!DNL Marketo] 支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。
