@@ -4,9 +4,9 @@ description: 接触点字段 —  [!DNL Marketo Measure]
 title: 接触点字段
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
+source-git-commit: e5931d783d8aad9ab0b32b4e30bbbfdfd46230dd
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1958'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->现在在第2层和第3层提供完全分段。
+>在第2级订阅中提供“完全分段”。
 
 >[!NOTE]
 >
@@ -197,7 +197,7 @@ Segment__c和Grade__c的Opportunity对象上有单独的字段，用户希望将
 
 ![](assets/eleven.png)
 
-## 常见问题 {#faq}
+## 常见问题解答 {#faq}
 
 **我们可以创建的接触点字段数量是否存在上限？**
 

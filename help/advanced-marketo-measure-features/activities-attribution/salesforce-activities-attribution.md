@@ -4,18 +4,22 @@ description: Salesforce活动归因 —  [!DNL Marketo Measure]
 title: Salesforce活动归因
 exl-id: 1dc6f15b-2a45-4ed3-9fa3-5267366d1f45
 feature: Attribution, Salesforce
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: e5931d783d8aad9ab0b32b4e30bbbfdfd46230dd
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 0%
+source-wordcount: '615'
+ht-degree: 1%
 
 ---
 
 # Salesforce活动归因 {#salesforce-activities-attribution}
 
-[!DNL Marketo Measure] Salesforce活动集成将特定的任务和事件记录引入归因模型。 开始跟踪未获得应付款的销售电子邮件或销售电话等内容。 要配置活动规则，请转到[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}。 从该位置，转到&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Activities]**&#x200B;选项卡。
+[!DNL Marketo Measure] Salesforce Activities集成将特定的任务和事件记录引入归因模型。 开始跟踪未获得应付款的销售电子邮件或销售电话等内容。 要配置活动规则，请转到[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}。 从该位置，转到&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Activities]**&#x200B;选项卡。
 
 ![](assets/1.png)
+
+>[!AVAILABILITY]
+>
+>此功能仅对第2层客户启用。 要申请更高的客户层，请联系Adobe客户团队（您的客户经理）。
 
 首先，我们将引入一个名为[!DNL Marketo Measure]营销活动的新概念。 对于您定义的每个规则，您要将记录存储到可命名的[!DNL Marketo Measure]营销活动中。 根据需要添加多个营销活动。 想象一下，在付费媒体营销活动旁边测量出站销售活动的有效性！
 
@@ -77,7 +81,7 @@ ht-degree: 0%
 | **操作员** | **用例** |
 |---|---|
 | 等于 | 单个值 — 完全匹配 |
-| 包含 | 单个值 — 包含值 |
+| Contains | 单个值 — 包含值 |
 | 匹配任意 | 多个值 — 完全匹配 |
 | 匹配任意（包含） | 多个值 — &#42;值&#42;、&#42;值、&#42;值&#42; |
 

@@ -4,9 +4,9 @@ description: 正在设置回滚阶段 —  [!DNL Marketo Measure]
 title: 设置回访单阶段
 exl-id: 00dd2826-27a3-462e-a70e-4cec90d07f92
 feature: Boomerang
-source-git-commit: ea113b02b910fbc894311200aff83286636d4b32
+source-git-commit: e5931d783d8aad9ab0b32b4e30bbbfdfd46230dd
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Boomerang功能仅针对第2层和第3层客户启用。 要申请更高的客户层，请联系Adobe客户团队（您的客户经理）。
+>Boomerang功能仅对第2层客户启用。 要申请更高的客户层，请联系Adobe客户团队（您的客户经理）。
 
 要为帐户启用[!UICONTROL Boomerang]阶段，您必须是帐户管理员。 或者，可以通过联系[Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}来启用它。 启用该功能后，请按照以下说明进行设置。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
    ![](assets/2-2.png)
 
-1. 单击&#x200B;**[!UICONTROL Save]**。
+1. 单击 **[!UICONTROL Save]**。
 
    >[!NOTE]
    >
@@ -53,7 +53,7 @@ ht-degree: 0%
 
    ![](assets/6-1.png)
 
-1. 设置要分配给自定义模型中包含的Boomerang阶段的归因百分比。 确保所有阶段的总归因合计为100%。 单击&#x200B;**[!UICONTROL Save and Process]**。
+1. 设置要分配给自定义模型中包含的Boomerang阶段的归因百分比。 确保所有阶段的总归因合计为100%。 单击 **[!UICONTROL Save and Process]**。
 
    ![](assets/7-1.png)
 

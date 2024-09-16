@@ -4,9 +4,9 @@ description: 活动归因常见问题解答 —  [!DNL Marketo Measure]
 title: 活动归因常见问题解答
 exl-id: 6272024f-b6ae-4aa7-ba92-c9f183549614
 feature: Attribution
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: e5931d783d8aad9ab0b32b4e30bbbfdfd46230dd
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 活动归因常见问题解答 {#activities-attribution-faq}
 
 [!DNL Marketo Measure]活动导入您的所有活动记录并为它们生成接触点，从而允许这些活动接收归因点数。 最常见的用例是跟踪Sales团队的活动，因为它们通常会创建发送给潜在客户的电话或电子邮件记录。 可以跟踪的其他独特内容是内容交互，如资源下载或视频查看。
+
+>[!AVAILABILITY]
+>
+>此功能仅对第2层客户启用。 要申请更高的客户层，请联系Adobe客户团队（您的客户经理）。
 
 **这与离线营销活动有何不同？**
 
@@ -25,7 +29,7 @@ Activities对象作为Task和Event对象的伞形或父对象。 活动基本上
 
 **如果我有具有相同周期性任务的潜在客户或联系人，我是否会看到所有这些任务的买方接触点？**
 
-是的。 已同步的活动与创建的接触点之间存在1:1的关系。
+可以。已同步的活动与创建的接触点之间存在1:1的关系。
 
 **我如何知道哪些记录导致创建了接触点？**
 
@@ -42,7 +46,7 @@ Activities对象作为Task和Event对象的伞形或父对象。 活动基本上
 | 潜在客户/联系人 | 所有活动都与潜在客户或联系人相关 |
 | Campaign | Channel.Subchannel [[!DNL Marketo Measure]] |
 | 接触点Source | CRM活动 |
-| 中 | Activity.Type |
+| 媒介 | Activity.Type |
 | 接触点类型 | Activity.Type |
 | 广告营销活动名称 | [!DNL Marketo Measure]营销活动名称 |
 | 广告内容 | 活动主题 |
