@@ -4,9 +4,9 @@ description: 接触点字段 —  [!DNL Marketo Measure]
 title: 接触点字段
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: e5931d783d8aad9ab0b32b4e30bbbfdfd46230dd
+source-git-commit: 3424f8a63da40f8762defae1e6ae22ebe60530d0
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1951'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ ht-degree: 0%
 
 要创建计算字段，请记住，用户可以执行三个不同的操作：提取、映射到和连接。 这些运算符也称为用于定义计算字段的运算符。
 
-提取
+### 提取 {#extracts}
 
-[!UICONTROL extracts]运算符从其他位置提取字段中的值，例如：促销活动字段、潜在客户字段，或者在更高级的用例中，[从登陆页面提取自定义参数](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}。 然后将其放置到接触点字段(请参阅[映射到示例](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}#2)。
+[!UICONTROL extracts]运算符从其他位置（如：促销活动字段、潜在客户字段）提取字段中的值，或者在更高级的用例中，从登陆页面提取自定义参数。 然后将它放置到接触点字段中。
 
 **示例#1**
 
@@ -121,7 +121,7 @@ ht-degree: 0%
 
 ![](assets/five.png)
 
-**映射到**
+### 将映射到 {#maps-to}
 
 [!UICONTROL maps to]运算符创建一个需要转换或存储为其他值的值表。 通常，它采用键值的形式，其中代码表示友好名称，需要映射到该友好名称。
 
@@ -169,7 +169,7 @@ ht-degree: 0%
 
 ![](assets/seven.png)
 
-**连接**
+### 连接 {#concatenates}
 
 [!UICONTROL concatenates]运算符将多个字段中的值合并为单个字段。 这对于创建跨多个字段提取数据的自定义值非常有用，以便
 
