@@ -3,9 +3,9 @@ description: 最新发行说明 —  [!DNL Marketo Measure]
 title: 最新发行说明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: c576d2b125ac1699486e60240729a7f4d8908272
+source-git-commit: 9a5e267b4b268d067fbbe89a00a4da96752a44db
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,22 @@ ht-degree: 0%
 有关2024版的所有新增功能和更新功能，请参阅下文。
 
 ## 第4季度发行 {#q4-release}
+
+### 新会话渠道转移行为
+
+如果新会话在处于不活动状态30分钟后的7天内开始，则上一个会话的渠道现在会结转，仅适用于直接访问（无反向链接或内部反向链接）。 7天未活动后，会话将默认使用“直接”/“其他”。 非直接渠道不会被先前的会话数据覆盖。
+
+此外，使用社交登录(Google、Microsoft或Apple)的会话现在合并到一个连续的会话中，以确保更顺畅的体验。 如果没有此传递切换，则由于外部反向链接差异，社交登录可能会创建单独的会话。
+
+对于新客户，会话渠道转移现在为默认行为。 现有客户可以通过在“设置”→“所有联系归因”下打开“会话渠道结转”切换来启用此功能。 激活后，此设置将无法撤消。
+
+文档： [Marketo Measure Web会话的定义](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
+
+### 关键词ROI仪表板
+
+新的关键字ROI仪表板提供付费搜索促销活动表现的详细见解，从而全面了解关键字级别的成本、归因收入、生成的商机和机会。 此仪表板可帮助您评估Google Adwords、LinkedIn和Bing Ads等中每个关键字的ROI。
+
+文档： [关键字ROI仪表板](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
 
 ### 增强的区段规则
 
