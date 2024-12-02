@@ -7,7 +7,7 @@ feature: Fundamentals
 source-git-commit: 4787f765348da71bc149c997470ce678ba498772
 workflow-type: tm+mt
 source-wordcount: '304'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 * [脱机渠道设置](/help/channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
 * [什么是UTM参数？](/help/channel-tracking-and-setup/online-channels/utm-parameters.md)
 * [UTM最佳实践](/help/channel-tracking-and-setup/online-channels/best-practices-for-setting-up-utm-parameters.md)
-* [将SFDC营销活动与买方接触点同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/campaigns-and-campaign-members.md)
+* [将SFDC促销活动与购买者接触点同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/campaigns-and-campaign-members.md)
 * [上传营销支出](/help/marketing-spend/spend-management/marketing-channel-costs.md#uploading-marketing-costs)
 * [重新连接Ad帐户](/help/api-connections/utilizing-marketo-measures-api-connections/reauthorizing-connected-accounts.md)
 * [正在添加 [!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md)
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 **[[!DNL Marketo Measure] 在SFDC中报告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html)（30-45分钟）**
 
-本课程系列旨在介绍已安装到Salesforce中的[!DNL Marketo Measure]库存报告。 这些报表是您使用[!DNL Marketo Measure]数据进行的大多数报表的基础。
+本课程系列旨在介绍已安装到Salesforce中的[!DNL Marketo Measure]库存报表。 这些报表是您使用[!DNL Marketo Measure]数据进行的大多数报表的基础。
 
 涵盖的主题：
 

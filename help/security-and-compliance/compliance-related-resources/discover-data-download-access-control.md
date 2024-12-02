@@ -1,6 +1,6 @@
 ---
-description: "[!UICONTROL Discover Data Download]访问控制 — Marketo Measure — 产品文档"
-title: "[!UICONTROL Discover Data Download]访问控制"
+description: '[!UICONTROL Discover Data Download]访问控制 — Marketo Measure — 产品文档'
+title: '[!UICONTROL Discover Data Download]访问控制'
 exl-id: fa9f2245-4bb0-4b58-849c-1941c108e1c1
 feature: Discover
 source-git-commit: 8ac315e7c4110d14811e77ef0586bd663ea1f8ab
@@ -32,7 +32,7 @@ ht-degree: 0%
      <td>只有管理员用户可以下载数据，包括PDF和CSV格式。</td>
     </tr>
     <tr>
-     <td><strong>无</strong></td>
+     <td><strong>None</strong></td>
      <td>没有人可以下载数据，包括PDF和CSV格式。</td>
     </tr>
    </table>

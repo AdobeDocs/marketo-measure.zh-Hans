@@ -1,7 +1,7 @@
 ---
 unique-page-id: 37356395
 description: '[!DNL Marketo Engage]人员集成 —  [!DNL Marketo Measure]'
-title: "[!DNL Marketo Engage]人员集成"
+title: '[!DNL Marketo Engage]人员集成'
 exl-id: 51930e84-4ff8-4e35-9d44-ea017c24b051
 feature: Integration
 source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
@@ -71,7 +71,7 @@ Marketo人员集成允许[!DNL Marketo Measure]开始从Marketo下载人员，�
    <td><p>createdat</p></td> 
   </tr> 
   <tr> 
-   <td><p>EMAIL</p></td> 
+   <td><p>电子邮件</p></td> 
    <td><p>电子邮件</p></td> 
   </tr> 
   <tr> 
@@ -103,7 +103,7 @@ Marketo人员集成允许[!DNL Marketo Measure]开始从Marketo下载人员，�
 
 *存在一个已知的行为问题，即Marketo公司实体中的字段不会影响人员的updatedAt值，因此，如果更新了Website或Company等相关字段，[!DNL Marketo Measure]将无法知晓这些值是否已修改，因为updatedAt日期/时间值未更新。 这会影响ABM功能，在这种情况下，我们将没有新数据来解析潜在客户。 目前没有解决方法，但计划将来解决此问题。
 
-## 常见问题 {#faq}
+## 常见问题解答 {#faq}
 
 **为什么我的CRM和[!DNL Marketo Measure Discover]的潜在客户计数不同？**
 

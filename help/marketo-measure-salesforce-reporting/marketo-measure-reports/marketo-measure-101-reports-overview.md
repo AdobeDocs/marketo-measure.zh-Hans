@@ -1,6 +1,6 @@
 ---
-description: "[!DNL Marketo Measure] 101报告概述 —  [!DNL Marketo Measure]"
-title: "[!DNL Marketo Measure] 101报告概述"
+description: '[!DNL Marketo Measure] 101报告概述 —  [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure] 101报告概述'
 exl-id: 83977b81-8055-47fd-8a6b-5ef32d280269
 feature: Reporting
 source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >您可能会在文档中看到指定“[!DNL Marketo Measure]”的说明，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
-所有使用[!DNL Marketo Measure]和[!DNL Salesforce]的[!DNL Marketo Measure]客户都可以访问其SFDC实例中的“买方接触点报告”文件夹。 此文件夹包含许多预建报表，可帮助您开始使用Buyer Touchpoint数据进行报告。
+所有使用[!DNL Marketo Measure]和[!DNL Salesforce]的[!DNL Marketo Measure]客户都可以访问其SFDC实例中的“购买者接触点报告”文件夹。 此文件夹包含许多预建报表，可帮助您开始使用Buyer Touchpoint数据进行报告。
 
 ![](assets/bizible-101-reports-overview-1.png)
 

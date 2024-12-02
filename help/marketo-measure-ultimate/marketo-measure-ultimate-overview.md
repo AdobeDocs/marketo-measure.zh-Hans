@@ -102,7 +102,7 @@ Campaign成员接触点规则和活动接触点规则特定于数据集。
 
 归因接触点不会写入CRM，因为Ultimate没有直接CRM连接。
 
-[!DNL Marketo Measure] ABM ML服务（商机帐户匹配和预测参与度分数）不适用于[!DNL Marketo Measure Ultimate]。 RT-CDP B2B版本中免费包含此类服务。
+[!DNL Marketo Measure] ABM ML服务（商机帐户匹配和预测参与度分数）不适用于[!DNL Marketo Measure Ultimate]。 RT-CDP B2B edition中免费包含此类服务。
 
 ## 限制 {#limitations}
 
@@ -113,4 +113,4 @@ Campaign成员接触点规则和活动接触点规则特定于数据集。
 >
 >* [Marketo Measure Ultimate目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}
 >
->* [视频： Marketo Measure Ultimate概述](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}
+>* [视频： Marketo Measure Ultimate概述](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}

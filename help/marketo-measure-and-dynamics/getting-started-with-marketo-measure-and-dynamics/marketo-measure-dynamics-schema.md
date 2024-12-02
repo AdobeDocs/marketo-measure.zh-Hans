@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874523
 description: '[!DNL Marketo Measure]动态架构 —  [!DNL Marketo Measure]'
-title: “[!DNL Marketo Measure]动态架构”
+title: '[!DNL Marketo Measure]动态架构'
 exl-id: f8da47b1-d844-4bd2-8125-8689cbb5cc30
 feature: Microsoft Dynamics
 source-git-commit: 706f60a3b35e524da816b1d70abd363f0f02a1ba
@@ -800,7 +800,7 @@ Buyer Attribution Touchpoint是一个[!DNL Marketo Measure]自定义实体，用
  </tbody> 
 </table>
 
-## [!DNL Marketo Measure]个事件 {#marketo-measure-events}
+## [!DNL Marketo Measure] 活动 {#marketo-measure-events}
 
 <table> 
  <tbody> 
@@ -1176,7 +1176,7 @@ Buyer Attribution Touchpoint是一个[!DNL Marketo Measure]自定义实体，用
  </tbody> 
 </table>
 
-**营销活动**
+**Campaign**
 
 除了下面的读/写权限外，还需要Campaign“创建”权限。
 

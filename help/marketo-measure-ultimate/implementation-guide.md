@@ -1,12 +1,12 @@
 ---
-description: “[!DNL Marketo Measure]最终实施指南 —  [!DNL Marketo Measure]”
-title: “[!DNL Marketo Measure]最终实施指南”
+description: '[!DNL Marketo Measure]最终实施指南 —  [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure]最终实施指南'
 feature: Integration, Tracking, Attribution
 exl-id: 0c707875-5d05-49b9-b1ff-c3f7b711ebd1
 source-git-commit: c5a799c20d15c9e14bbdc69f422cd1b90a121e37
 workflow-type: tm+mt
 source-wordcount: '1008'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -48,7 +48,7 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 
 ![](assets/marketo-measure-ultimate-implementation-guide-1.png)
 
-[数据集概述](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}：所有成功摄取到AEP的数据将作为数据集保留在数据湖中。 数据集是用于数据集合的存储和管理结构，通常是表，包含架构（列）和字段（行）。
+[数据集概述](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh-Hans){target="_blank"}：所有成功摄取到AEP的数据将作为数据集保留在数据湖中。 数据集是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。
 
 ## 创建架构 {#creating-a-schema}
 

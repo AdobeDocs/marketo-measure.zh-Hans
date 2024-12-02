@@ -1,7 +1,7 @@
 ---
 unique-page-id: 42762729
-description: '[!DNL Marketo Engage]项目集成 —  [!DNL Marketo Measure]'
-title: "[!DNL Marketo Engage]项目集成"
+description: '[!DNL Marketo Engage]程序集成 —  [!DNL Marketo Measure]'
+title: '[!DNL Marketo Engage]项目集成'
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
 feature: Integration
 source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
@@ -22,7 +22,7 @@ ht-degree: 0%
 ## 要求 {#requirements}
 
 * 生产Marketo实例
-* Production Salesforce或Microsoft Dynamics实例
+* 生产Salesforce或Microsoft Dynamics实例
 * 任何付费的[!DNL Marketo Measure]订阅
 * 已启用Marketo人员同步（[!DNL Marketo Measure]设置）
 * 已启用Marketo程序（[!DNL Marketo Measure]设置）
@@ -157,7 +157,7 @@ Wayne Enterprises营销团队创建一个Marketo活动规则，以生成“点�
 >
 >通过Cookie映射行为，您可能会找到一些来自Web访问的LC接触点。 一个商机出现在Marketo中时可能没有任何关联活动，然后[!DNL Marketo Measure]下载了该商机，匹配了关联的Cookie，然后将其跟踪到最近的Web会话，即使不存在创建该商机的表单活动也是如此。
 
-## 常见问题 {#faq}
+## 常见问题解答 {#faq}
 
 **如何将接触点日期设置为进度日期，或项目成员发生状态更改的日期？**
 

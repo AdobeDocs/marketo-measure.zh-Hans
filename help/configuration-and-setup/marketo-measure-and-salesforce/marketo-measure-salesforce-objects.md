@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874582
-description: '[!DNL Marketo Measure] Salesforce对象 —  [!DNL Marketo Measure]'
-title: '[!DNL Marketo Measure] Salesforce对象'
+description: '[!DNL Marketo Measure]个Salesforce对象 —  [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure]个Salesforce对象'
 exl-id: d5d6f334-6531-40fa-b043-75b49d8f43d5
 feature: Salesforce
 source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Marketo Measure] Salesforce对象 {#marketo-measure-salesforce-objects}
+# [!DNL Marketo Measure]个Salesforce对象 {#marketo-measure-salesforce-objects}
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 0%
 * [Buyer Attribution Touchpoint](#attribution)
 * [[!DNL Marketo Measure]人](#person)
 * [[!DNL Marketo Measure] A/B测试](#ab)
-* [[!DNL Marketo Measure]个事件](#events)
+* [[!DNL Marketo Measure] 活动](#events)
 
 由要跟踪的内容捕获的接触点将写入安装[!DNL Bizible Salesforce]包创建的自定义对象。
 
@@ -55,7 +55,7 @@ BAT对象作为相关列表显示在[!UICONTROL Opportunity]、[!UICONTROL Conta
 
 ## [!DNL Marketo Measure]人 {#marketo-measure-person}
 
-[!DNL Marketo Measure]人员对象将潜在客户和联系人对象关联在一起。 开箱即用的Salesforce不提供在同一报告中使用Lead和Contact对象创建报告的选项。 通过关联潜在客户和联系人对象，[!DNL Marketo Measure]人员允许您在同一报表中报告这两个对象。 当Lead已转换为Contact时，这尤其有用。 在[!DNL Marketo Measure]人员记录中，您将看到对应潜在客户和/或联系人记录的查找、与人员关联的接触点的相关列表以及人员ID（始终是潜在客户/联系人的电子邮件地址）。 由于[!DNL Marketo Measure]人员与潜在客户和联系人对象相关，因此将永远不会有与Buyer Attribution Touchpoint关联的[!DNL Marketo Measure]人员记录。 以下是Salesforce中[!DNL Marketo Measure]人员记录的示例：
+[!DNL Marketo Measure]人员对象将潜在客户和联系人对象关联在一起。 开箱即用的Salesforce不提供在同一报表中使用商机和联系人对象创建报表的选项。 通过关联潜在客户和联系人对象，[!DNL Marketo Measure]人员允许您在同一报表中报告这两个对象。 当Lead已转换为Contact时，这尤其有用。 在[!DNL Marketo Measure]人员记录中，您将看到对应潜在客户和/或联系人记录的查找、与人员关联的接触点的相关列表以及人员ID（始终是潜在客户/联系人的电子邮件地址）。 由于[!DNL Marketo Measure]人员与潜在客户和联系人对象相关，因此将永远不会有与Buyer Attribution Touchpoint关联的[!DNL Marketo Measure]人员记录。 以下是Salesforce中[!DNL Marketo Measure]人员记录的示例：
 
 ![](assets/4.png)
 
@@ -67,7 +67,7 @@ BAT对象作为相关列表显示在[!UICONTROL Opportunity]、[!UICONTROL Conta
 
 [!DNL Marketo Measure] A/B测试对象在[!UICONTROL Leads]、[!UICONTROL Contacts]和[!UICONTROL Opportunity]页面上显示为相关列表。 该列表显示了您正在优化或VWO中运行的所有试验和变体，并允许您查看与特定潜在客户和联系人相关的试验/变体。
 
-## [!DNL Marketo Measure]个事件 {#marketo-measure-events}
+## [!DNL Marketo Measure] 活动 {#marketo-measure-events}
 
 [!DNL Marketo Measure]事件对象允许您跟踪网站上发生的特定事件。 要跟踪您的网站上发生的特定事件，除[!DNL Marketo Measure] Javascript之外，还必须将自定义代码添加到您的页面中。 捕获的信息将显示在[!DNL Marketo Measure]对象相关列表中，该列表可在[!UICONTROL Leads]、[!UICONTROL Contacts]和[!UICONTROL Opportunity]页面上找到。 [!DNL Marketo Measure]事件对象&#x200B;*未与归因数据绑定*。 此对象的目的是查看用户是否在您的网站上执行特定操作。
 

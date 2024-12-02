@@ -59,7 +59,7 @@ B2B客户属性集成允许[!DNL Marketo Measure]和Adobe Analytics的共同用�
   <tr> 
    <td>Account.Name</td> 
    <td>与给定Web访客关联的帐户名称。 如果多个帐户与给定用户绑定，[!DNL Marketo Measure]会以分号分隔的列表填充所有匹配的帐户名称。<br/>
-   <strong>注意：</strong> account.name是帐户对象上name属性的Salesforce-API级别名称。 您可以在集成配置的架构验证步骤（步骤4）中为此属性选择更好的显示名称（例如，“公司”）。</td>
+   <strong>注意：</strong> account.name是account对象上name属性的Salesforce-API级别名称。 您可以在集成配置的架构验证步骤（步骤4）中为此属性选择更好的显示名称（例如，“公司”）。</td>
   </tr>
   <tr> 
    <td>已归因收入 — “模型”</td> 

@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874574
-description: 标准 [!DNL Salesforce] 对象 —  [!DNL Marketo Measure]上的[!DNL Marketo Measure]字段
-title: '[!DNL Marketo Measure]个标准字段 [!DNL Salesforce] 对象'
+description: 标准 [!DNL Salesforce] 对象上的[!DNL Marketo Measure]字段 —  [!DNL Marketo Measure]
+title: 标准 [!DNL Salesforce] 对象上的[!DNL Marketo Measure]字段
 exl-id: c9d5254f-06bd-4813-bb29-1a4955b37041
 feature: Salesforce
 source-git-commit: 05ba9e487d492ba4352a7f0577c7221f6ec9567e
@@ -55,7 +55,7 @@ Buyer Touchpoint日期：这与Campaign对象中的[!UICONTROL Bulk Update Touch
 
 OnCampaignMemberDelete：删除营销活动成员时，开箱即用的[!DNL Salesforce]不会显示，这可能会导致无法生成准确的归因报表。 删除营销活动成员时，将触发此事件以通知[!DNL Marketo Measure]删除与该不存在的营销活动成员相关的接触点。
 
-## 商机 {#lead}
+## 潜在客户 {#lead}
 
 Bizible Account字段用于我们的ABM功能的Lead to Account映射。 我们将填充此字段以创建两个对象之间的查找关系。
 

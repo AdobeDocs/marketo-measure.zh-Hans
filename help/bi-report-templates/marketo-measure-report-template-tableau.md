@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # [!DNL Marketo Measure]报告模板 — Tableau {#marketo-measure-report-template-tableau}
 
-## 快速入门 {#getting-started}
+## 开始使用 {#getting-started}
 
 您可以在[此处](https://github.com/adobe/Marketo-Measure-BI-Templates){target="_blank"}访问[!DNL Tableau]报告模板。
 

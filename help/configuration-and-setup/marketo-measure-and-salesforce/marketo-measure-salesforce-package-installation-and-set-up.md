@@ -1,6 +1,6 @@
 ---
-description: '[!DNL Marketo Measure] Salesforce包安装和设置 —  [!DNL Marketo Measure]'
-title: '[!DNL Marketo Measure] [!DNL Salesforce] 软件包安装和设置'
+description: '[!DNL Marketo Measure] Salesforce包的安装和设置 —  [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure] [!DNL Salesforce] 包安装和设置'
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
 source-git-commit: 05ba9e487d492ba4352a7f0577c7221f6ec9567e
@@ -10,9 +10,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Marketo Measure] Salesforce包安装和设置 {#marketo-measure-salesforce-package-installation-and-set-up}
+# [!DNL Marketo Measure] Salesforce包的安装和设置 {#marketo-measure-salesforce-package-installation-and-set-up}
 
-在安装[!DNL Marketo Measure] [!DNL Salesforce]基础包之前，您必须先确定是否先在[!DNL Salesforce]沙盒中安装它，然后再迁移到Salesforce生产实例。
+在安装[!DNL Marketo Measure] [!DNL Salesforce]基础包之前，您必须先确定是否在[!DNL Salesforce]沙盒中安装该基础包，然后再迁移到Salesforce生产实例。
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 要将接触点数据推送到[!DNL Salesforce]实例，连接的用户必须有权访问[!DNL Marketo Measure]自定义对象(例如Buyer Touchpoint和Buyer Attribution Touchpoint)以及商机和联系人等标准[!DNL Salesforce]对象。
 
-创建一个[!DNL Marketo Measure]配置文件，以确保在将数据推送到Salesforce时不会遇到验证错误。
+创建[!DNL Marketo Measure]配置文件以确保在将数据推送到Salesforce时不会遇到验证错误。
 
 步骤1：创建特定[!DNL Marketo Measure]配置文件
 

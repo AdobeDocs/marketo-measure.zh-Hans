@@ -1,6 +1,6 @@
 ---
-description: '[!DNL Marketo Measure]报告模板 — Power BI- [!DNL Marketo Measure]'
-title: '[!DNL Marketo Measure]报告模板 — Power BI'
+description: '[!DNL Marketo Measure]报表模板 — Power BI- [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure]报表模板 — Power BI'
 exl-id: c296b8f9-4033-4723-9a71-63a458640d27
 feature: Reporting
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # [!DNL Marketo Measure]报表模板 — Power BI {#marketo-measure-report-template-power-bi}
 
-## 快速入门 {#getting-started}
+## 开始使用 {#getting-started}
 
 您可以在[此处](https://github.com/adobe/Marketo-Measure-BI-Templates){target="_blank"}访问Power BI报告模板。
 
@@ -68,7 +68,7 @@ QueryFilterStartDate和QueryFilterEndDate参数用于限制导入的数据量。
 * 联系人
 * 转化率
 * 机会
-* 商机
+* 潜在客户
 * 阶段
 * 渠道
 

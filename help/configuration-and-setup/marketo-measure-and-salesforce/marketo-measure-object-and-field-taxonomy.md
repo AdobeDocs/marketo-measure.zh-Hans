@@ -21,7 +21,7 @@ ht-degree: 0%
 
 可以在此处](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)找到每个对象[中活动的[!DNL Marketo Measure]字段的定义。
 
-## 常见问题 {#faq}
+## 常见问题解答 {#faq}
 
 **箭头中的逻辑是什么？**
 

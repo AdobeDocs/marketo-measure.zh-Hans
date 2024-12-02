@@ -2,12 +2,12 @@
 cloud: Experience Cloud
 product: Bizible
 audience: end-user
-user-guide-title: “[!DNL Marketo Measure] 指南”
-user-guide-description: “[!DNL Marketo Measure]使营销人员能够洞悉哪些营销工作在为公司增加收入方面最有效。”
+user-guide-title: '[!DNL Marketo Measure] 指南'
+user-guide-description: '[!DNL Marketo Measure] 使营销人员深入了解哪些营销活动最有效地为其公司创造收入。'
 source-git-commit: dec80278958e51c1f0449173d45fe74425fb047e
 workflow-type: tm+mt
 source-wordcount: '812'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -52,11 +52,11 @@ ht-degree: 1%
       + [跨BT和 [!DNL BATs]的接触点位置和生成说明](configuration-and-setup/getting-started-with-marketo-measure/explanation-of-touchpoint-positions-and-generation-across-bts-and-bats.md)
       + [[!DNL Marketo Measure] CRM无包集成](configuration-and-setup/getting-started-with-marketo-measure/marketo-measure-crm-packageless-integration.md)
    + [!DNL Marketo Measure]和Salesforce {#marketo-measure-and-salesforce}
-      + [[!DNL Marketo Measure] Salesforce包安装和设置](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-package-installation-and-set-up.md)
+      + [[!DNL Marketo Measure] Salesforce包的安装和设置](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-package-installation-and-set-up.md)
       + [[!DNL Salesforce]包合并](configuration-and-setup/marketo-measure-and-salesforce/salesforce-package-consolidation.md)
       + [连接 [!DNL Marketo Measure] 到Salesforce](configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)
       + [ [!DNL Marketo Measure] CRM包的最佳实践](configuration-and-setup/marketo-measure-and-salesforce/best-practices-for-marketo-measure-crm-package.md)
-      + [[!DNL Marketo Measure] Salesforce对象](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-objects.md)
+      + [[!DNL Marketo Measure]个Salesforce对象](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-objects.md)
       + [CRM导出的错误处理](configuration-and-setup/marketo-measure-and-salesforce/crm-error-handling.md)
       + [ [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何交互](configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
       + [[!DNL Marketo Measure]对象和字段分类](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md)
@@ -153,7 +153,7 @@ ht-degree: 1%
       + [发现报表](advanced-marketo-measure-features/multi-currency/discover-reporting.md)
       + [常见问题解答（多货币）](advanced-marketo-measure-features/multi-currency/faq-multi-currency.md)
 + [!DNL Marketo Measure]发现UI {#marketo-measure-discover-ui}
-   + 仪表板{#dashboards}
+   + 仪表板 {#dashboards}
       + [了解功能板基础知识](marketo-measure-discover-ui/dashboards/discover-dashboard-basics.md)
       + [新增发现功能板指南](marketo-measure-discover-ui/dashboards/new-discover-dashboard-guide.md)
       + [功能板数据可见性策略](marketo-measure-discover-ui/dashboards/dashboard-data-visibility-policy.md)
@@ -187,7 +187,7 @@ ht-degree: 1%
       + [Marketo Engage活动集成](marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-activities-integration.md)
       + [Marketo Engage人员集成](marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-people-integration.md)
       + [Marketo Engage程序集成](marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md)
-+ [!DNL Marketo Measure] Salesforce报告{#marketo-measure-salesforce-reporting}
++ [!DNL Marketo Measure] Salesforce报表{#marketo-measure-salesforce-reporting}
    + 新报表类型{#new-report-types}
       + [创建自定义 [!DNL Marketo Measure] 报表类型](marketo-measure-salesforce-reporting/new-report-types/creating-custom-marketo-measure-report-types.md)
       + [无业务机会的联系人的报表类型](marketo-measure-salesforce-reporting/new-report-types/report-type-for-contacts-without-opportunities.md)

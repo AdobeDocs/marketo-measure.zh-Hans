@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874676
-description: '[!DNL Marketo Measure]分析已解释 —  [!DNL Marketo Measure]'
-title: "[!DNL Marketo Measure]见解已解释"
+description: '[!DNL Marketo Measure]见解已解释 —  [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure]分析解释'
 exl-id: d479a15f-4c92-4302-8ce8-6487645012e1
 feature: Reporting
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5

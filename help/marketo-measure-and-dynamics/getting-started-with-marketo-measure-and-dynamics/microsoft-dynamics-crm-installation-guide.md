@@ -1,6 +1,6 @@
 ---
 unique-page-id: 18874763
-description: "[!DNL Microsoft Dynamics] CRM安装指南 — Marketo Measure — 产品文档"
+description: '[!DNL Microsoft Dynamics] CRM安装指南 — Marketo Measure — 产品文档'
 title: '[!DNL Microsoft Dynamics] CRM安装指南'
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
@@ -124,7 +124,7 @@ ht-degree: 0%
 
    ![](assets/microsoft-dynamics-crm-installation-guide-19.png)
 
-1. 选择[!UICONTROL Credentials]或[!UICONTROL OAuth]。
+1. 选择 [!UICONTROL Credentials] 或 [!UICONTROL OAuth]。
 
    ![](assets/microsoft-dynamics-crm-installation-guide-20.png)
 

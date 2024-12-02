@@ -1,7 +1,7 @@
 ---
 unique-page-id: 18874608
 description: '[!DNL Marketo Measure]参数 —  [!DNL Marketo Measure]'
-title: "[!DNL Marketo Measure]参数"
+title: '[!DNL Marketo Measure]参数'
 exl-id: d66b9864-0d7e-455a-ae20-cca555f4d8c8
 feature: APIs, Integration, UTM Parameters
 source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5

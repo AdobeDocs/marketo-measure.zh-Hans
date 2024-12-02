@@ -1,12 +1,12 @@
 ---
-description: “[!DNL Marketo Measure]与Adobe启动项的集成 —  [!DNL Marketo Measure]”
-title: “[!DNL Marketo Measure]与Adobe启动项的集成”
+description: 与Adobe启动项[!DNL Marketo Measure]集成 —  [!DNL Marketo Measure]
+title: '[!DNL Marketo Measure]与Adobe启动项的集成'
 exl-id: 316ee8a8-b2d3-42e9-9ee5-c9b1d91c2769
 feature: Integration
 source-git-commit: 6aaf6fd26f19e9382cc559e54558e1c5d84cfd6d
 workflow-type: tm+mt
 source-wordcount: '242'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,7 @@ Adobe启动项扩展专为已在网站上使用Adobe启动项的现有[!DNL Mark
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-1.png)
 
-1. 单击&#x200B;**[!UICONTROL Extensions]**。
+1. 单击 **[!UICONTROL Extensions]**。
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-2.png)
 
@@ -48,7 +48,7 @@ Adobe启动项扩展专为已在网站上使用Adobe启动项的现有[!DNL Mark
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-5.png)
 
-1. 单击&#x200B;**[!UICONTROL Save]**。
+1. 单击 **[!UICONTROL Save]**。
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-6.png)
 
@@ -72,7 +72,7 @@ Adobe启动项扩展专为已在网站上使用Adobe启动项的现有[!DNL Mark
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-11.png)
 
-1. 单击&#x200B;**[!UICONTROL Save]**。
+1. 单击 **[!UICONTROL Save]**。
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-12.png)
 

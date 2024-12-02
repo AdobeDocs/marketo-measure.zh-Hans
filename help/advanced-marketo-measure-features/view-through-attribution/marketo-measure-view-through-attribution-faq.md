@@ -1,13 +1,13 @@
 ---
 unique-page-id: 18874652
 description: '[!DNL Marketo Measure]通过归因常见问题解答 —  [!DNL Marketo Measure]查看'
-title: "[!DNL Marketo Measure]通过归因常见问题解答进行查看"
+title: 通过归因常见问题解答[!DNL Marketo Measure]查看
 exl-id: d20e88f3-3ff8-4381-a4b8-6862798caa74
 feature: Attribution
 source-git-commit: 48962b999fdd16fe96d18708ec301e64a39bc76e
 workflow-type: tm+mt
 source-wordcount: '486'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 1%
    <td>自定义</td> 
   </tr> 
   <tr> 
-   <td><strong>中间</strong></td> 
+   <td><strong>中</strong></td> 
    <td>0%</td> 
    <td>0%</td> 
    <td>20%</td> 

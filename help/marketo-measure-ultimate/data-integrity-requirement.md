@@ -1,12 +1,12 @@
 ---
-description: “[!DNL Marketo Measure]最终数据完整性要求 —  [!DNL Marketo Measure]”
-title: “[!DNL Marketo Measure]最终数据完整性要求”
+description: '[!DNL Marketo Measure]最终数据完整性要求 —  [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure]最终数据完整性要求'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
 source-git-commit: 54695bd795fe9bdb58d97b6b0762b9e9fe8f17cf
 workflow-type: tm+mt
 source-wordcount: '1611'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 15%
     <th>XDM类型</th>
     <th>数据Source字段</th>
     <th>必需？</th>
-    <th>备注</th>
+    <th>注释</th>
   </tr>
   <tbody>
     <tr>
-      <td colspan="7"><strong>帐户</strong> (Marketo的Salesforce、公司和/或命名帐户的帐户)</td>
+      <td colspan="7"><strong>帐户</strong> (Salesforce的帐户、公司帐户和/或Marketo的指定帐户)</td>
     </tr>
     <tr>
       <td rowspan="6">XDM业务帐户</td>
@@ -89,7 +89,7 @@ ht-degree: 15%
       <td></td>
     </tr>
     <tr>
-      <td colspan="7"><strong>营销活动</strong>(Salesforce营销活动、Marketo项目)</td>
+      <td colspan="7"><strong>营销活动</strong>(Salesforce的营销活动、Marketo的计划)</td>
     </tr>
     <tr>
       <td rowspan="8">XDM商业营销活动</td>
@@ -342,7 +342,7 @@ ht-degree: 15%
     <tr>
       <td></td>
       <td>hasResponsed</td>
-      <td>布尔值</td>
+      <td>布尔</td>
       <td>HasResponsed</td>
       <td>是</td>
       <td></td>
@@ -429,7 +429,7 @@ ht-degree: 15%
     <tr>
       <td></td>
       <td>b2b.isConverted</td>
-      <td>布尔值</td>
+      <td>布尔</td>
       <td>IsConverted</td>
       <td><b><i>是，仅适用于Lead personType</i></b></td>
       <td>仅当b2b.personType为“潜在客户”时才需要</td>
@@ -491,7 +491,7 @@ ht-degree: 15%
       <td>例如 — Marketo</td>
     </tr>
     <tr>
-      <td colspan="7"><strong>Opportunity</strong> (Salesforce的Opportunity、Marketo的Opportunity)</td>
+      <td colspan="7"><strong>Opportunity</strong> (Salesforce的Opportunity， Marketo的Opportunity)</td>
     </tr>
     <tr>
       <td rowspan="13">XDM商业机会</td>
@@ -605,7 +605,7 @@ ht-degree: 15%
       <td></td>
       <td rowspan="5">XDM业务机会详细信息</td>
       <td>isWon</td>
-      <td>布尔值</td>
+      <td>布尔</td>
       <td>IsWon</td>
       <td>是</td>
       <td></td>
@@ -613,7 +613,7 @@ ht-degree: 15%
     <tr>
       <td></td>
       <td>isClosed</td>
-      <td>布尔值</td>
+      <td>布尔</td>
       <td>IsClosed</td>
       <td>是</td>
       <td></td>
@@ -687,7 +687,7 @@ ht-degree: 15%
     <tr>
       <td></td>
       <td>isPrimary</td>
-      <td>布尔值</td>
+      <td>布尔</td>
       <td>IsPrimary</td>
       <td>是</td>
       <td></td>
@@ -838,7 +838,7 @@ ht-degree: 15%
     <tr>
       <td></td>
       <td>isDeleted</td>
-      <td>布尔值</td>
+      <td>布尔</td>
       <td></td>
       <td>是</td>
       <td></td>
@@ -909,7 +909,7 @@ ht-degree: 15%
     <th>XDM类型</th>
     <th>数据Source字段</th>
     <th>必需？</th>
-    <th>备注</th>
+    <th>注释</th>
   </tr>
   <tbody>
     <tr>

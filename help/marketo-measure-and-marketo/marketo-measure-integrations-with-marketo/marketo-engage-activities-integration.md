@@ -1,7 +1,7 @@
 ---
 unique-page-id: 42762749
 description: '[!DNL Marketo Engage]活动集成 —  [!DNL Marketo Measure]'
-title: "[!DNL Marketo Engage]活动集成"
+title: '[!DNL Marketo Engage]活动集成'
 exl-id: 463ad9b2-e1bd-49dd-8bf5-0da7b7132f05
 feature: Integration
 source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
@@ -79,7 +79,7 @@ ht-degree: 0%
    可映射的字段：
 
    * 城市
-   * 国家
+   * 国家/地区
    * 区域
    * 登陆页面
    * 反向链接页面
@@ -125,7 +125,7 @@ ht-degree: 0%
 从列表中删除(25)\
 SFDC活动(26)\
 电子邮件软退回(27)\
-从SFDC删除Lead (29)\
+从SFDC中删除潜在客户(29)\
 合并潜在客户(32)\
 添加到机会(34)\
 从机会中删除(35)\
@@ -136,7 +136,7 @@ SFDC活动(26)\
 打开销售电子邮件(40)\
 单击Sales Email (41)\
 添加到SFDC Campaign (42)\
-从SFDC Campaign删除(43)\
+从SFDC Campaign中移除(43)\
 在SFDC Campaign中更改状态(44)\
 接收销售电子邮件(45)\
 请求营销活动(47)\
@@ -189,7 +189,7 @@ Wayne Enterprises营销团队创建一个Marketo活动规则，以生成“点�
 >
 >通过Cookie映射行为，您可能会找到一些来自Web访问的LC接触点。 一个商机出现在Marketo中时可能没有任何关联活动，然后[!DNL Marketo Measure]下载了该商机，匹配了关联的Cookie，然后将其跟踪到最近的Web会话，即使不存在创建该商机的表单活动也是如此。
 
-## 常见问题 {#faq}
+## 常见问题解答 {#faq}
 
 **如何知道是创建Marketo项目规则还是Marketo活动规则？**
 
