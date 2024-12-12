@@ -4,7 +4,7 @@ description: 买方接触点和买方归因接触点之间的差异 —  [!DNL M
 title: 买方接触点和买方归因接触点之间的差异
 exl-id: 19109271-7b59-44c0-b1ff-e3b0bba9f5ce
 feature: Touchpoints
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: bdc32fdfe24d57fd7770654f1238896c7b59acf6
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -48,7 +48,7 @@ BT和BAT之间的区别：
  </tbody> 
 </table>
 
-## 常见问题 {#faq}
+## 常见问题解答 {#faq}
 
 **Buyer Touchpoint何时成为Buyer Attribution Touchpoint？**
 
@@ -66,10 +66,10 @@ Buyer Touchpoint的接触点位置将只有首次接触(FT)、潜在客户创建
 
 以下是[!DNL Salesforce]中BT的屏幕截图：
 
-![](assets/1.png)
+![](assets/buyer-touchpoints-and-buyer-attribution-touchpoints-1.png){width="600" zoomable="yes"}
 
 **Buyer Attribution Touchpoint在Salesforce中是怎样的？**
 
 以下是[!DNL Salesforce]中BAT的屏幕截图：
 
-![](assets/2.png)
+![](assets/buyer-touchpoints-and-buyer-attribution-touchpoints-2.png){width="600" zoomable="yes"}
