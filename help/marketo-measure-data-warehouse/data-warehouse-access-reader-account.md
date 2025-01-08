@@ -3,9 +3,9 @@ description: Data Warehouse访问 — Reader帐户 — 产品文档
 title: Data Warehouse访问权限 — Reader帐户
 exl-id: 2aa73c41-47ab-4f11-96d8-dafb642308fc
 feature: Data Warehouse
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: e9861f8032475d3e60a3bb3ebf67dfee520bbb75
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---

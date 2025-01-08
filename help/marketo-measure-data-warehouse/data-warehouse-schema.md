@@ -4,7 +4,7 @@ description: Data Warehouse架构 — Marketo Measure — 产品文档
 title: Data Warehouse架构
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: 3ad812a05671f277d3dd3f9bc58e3b2ea3606e71
+source-git-commit: e9861f8032475d3e60a3bb3ebf67dfee520bbb75
 workflow-type: tm+mt
 source-wordcount: '21110'
 ht-degree: 3%
@@ -6664,7 +6664,7 @@ _单击完整版本的图像_
         <p>提交表单的URL，包括任何查询参数。</p>
       </td>
       <td>
-        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z 0RrbXlDVmxJNzIwNkhW</p>
+        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1H z0RrbXlDVmxJNzIwNkhW</p>
       </td>
     </tr>
     <tr>
@@ -6918,7 +6918,7 @@ _单击完整版本的图像_
       <td>
         <p>提供展示的URL，包括任何查询参数。</p>
       </td>
-      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1Z 0RrbXlDVmxJNzIwNkhW</td>
+      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1H z0RrbXlDVmxJNzIwNkhW</td>
     </tr>
     <tr>
       <td>
@@ -13406,7 +13406,7 @@ select trim(split(ch.name,'.')[0])  as channel
 group by 1
 ```
 
-**一个人的整个历程是多少？  （显示单个电子邮件地址的所有接触点。）**
+**一个人的整个历程是多少？ （显示单个电子邮件地址的所有接触点。）**
 
 ```
 select ut.touchpoint_date
