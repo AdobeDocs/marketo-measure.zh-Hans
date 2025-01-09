@@ -4,7 +4,7 @@ description: '[!DNL Marketo Engage]人员集成 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]人员集成'
 exl-id: 51930e84-4ff8-4e35-9d44-ea017c24b051
 feature: Integration
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: de366de2d1df3d4dc9fc33e5fd0dab225b6af081
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Marketo人员集成允许[!DNL Marketo Measure]开始从Marketo下载人员，�
 * 生产Marketo实例
 * 生产[!DNL Salesforce]或[!DNL Microsoft Dynamics]实例
 * 任何付费的[!DNL Marketo Measure]订阅
-* 已启用SOLR (联系[Marketo支持](https://nation.marketo.com/t5/Support/ct-p/Support)以启用此功能)
+* 已启用SOLR (联系[Marketo支持](https://nation.marketo.com/t5/Support/ct-p/Support){target="_blank"}以启用此功能)
 
 ## 工作原理 {#how-it-works}
 

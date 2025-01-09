@@ -4,7 +4,7 @@ description: '[!DNL Marketo Engage]程序集成 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]项目集成'
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
 feature: Integration
-source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
+source-git-commit: de366de2d1df3d4dc9fc33e5fd0dab225b6af081
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 0%
@@ -99,16 +99,12 @@ ht-degree: 0%
 
 **字段映射**
 
-<table> 
- <colgroup> 
-  <col> 
-  <col> 
- </colgroup> 
- <tbody> 
+<table><thead>
   <tr> 
    <th>biz_ad_campaigns</th> 
    <th>Marketo</th> 
-  </tr> 
+  </tr></thead>
+<tbody>
   <tr> 
    <td>ID</td> 
    <td>ID</td> 
@@ -118,24 +114,60 @@ ht-degree: 0%
    <td>（通过API检查程序是否仍然存在）</td> 
   </tr> 
   <tr> 
-   <td><p>名称</p></td> 
+   <td>名称</td> 
    <td>name</td> 
   </tr> 
  </tbody> 
 </table>
 
-| biz_campaign_members | Marketo |
-|---|---|
-| ID | “MarketoProgramMembership”_ProgramId_Lead Id |
-| MODIFIED_DATE | 更新时间 |
-| 创建日期 | membershipDate |
-| 商机ID | Id（列表成员资格） |
-| 潜在客户电子邮件 | 电子邮件（列表成员资格） |
-| 状态 | progressionstatus |
-| HAS_RESPONDED | 到达状态 |
-| 营销活动名称 | 项目名称 |
-| CAMPAIGN_ID | programId |
-| 营销活动类型 | 渠道 |
+<table><thead>
+  <tr>
+    <th>biz_campaign_members</th>
+    <th>Marketo</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>ID</td>
+    <td>“MarketoProgramMembership”_ProgramId_Lead Id</td>
+  </tr>
+  <tr>
+    <td>MODIFIED_DATE</td>
+    <td>更新时间</td>
+  </tr>
+  <tr>
+    <td>创建日期</td>
+    <td>membershipDate</td>
+  </tr>
+  <tr>
+    <td>商机ID</td>
+    <td>Id（列表成员资格）</td>
+  </tr>
+  <tr>
+    <td>潜在客户电子邮件</td>
+    <td>电子邮件（列表成员资格）</td>
+  </tr>
+  <tr>
+    <td>状态</td>
+    <td>progressionstatus</td>
+  </tr>
+  <tr>
+    <td>HAS_RESPONDED</td>
+    <td>到达状态</td>
+  </tr>
+  <tr>
+    <td>营销活动名称</td>
+    <td>项目名称</td>
+  </tr>
+  <tr>
+    <td>CAMPAIGN_ID</td>
+    <td>programId</td>
+  </tr>
+  <tr>
+    <td>营销活动类型</td>
+    <td>渠道</td>
+  </tr>
+</tbody>
+</table>
 
 ## Cookie映射 {#cookie-mapping}
 

@@ -4,7 +4,7 @@ description: '[!DNL Marketo Engage]活动集成 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]活动集成'
 exl-id: 463ad9b2-e1bd-49dd-8bf5-0da7b7132f05
 feature: Integration
-source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
+source-git-commit: de366de2d1df3d4dc9fc33e5fd0dab225b6af081
 workflow-type: tm+mt
 source-wordcount: '1640'
 ht-degree: 0%
@@ -159,9 +159,9 @@ SFDC活动(26)\
 
 ## 渠道映射 {#channel-mapping}
 
-对于具有项目ID的活动类型中的任意规则，Marketo项目渠道由项目确定。 我们使用项目频道来映射到您的自定义脱机频道，因此您需要确保按照此处](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping)的说明正确配置了您的频道[。
+对于具有项目ID的活动类型中的任意规则，Marketo项目渠道由项目确定。 我们使用项目频道来映射到您的自定义脱机频道，因此您需要确保按照此处](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping){target="_blank"}的说明正确配置了您的频道[。
 
-对于没有项目ID的活动类型中的任何规则，您的第一步是创建营销活动名称。 使用此促销活动名称可设置您在此处](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md)布局的自定义在线渠道[。
+对于没有项目ID的活动类型中的任何规则，您的第一步是创建营销活动名称。 使用此促销活动名称可设置您在此处](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md){target="_blank"}布局的自定义在线渠道[。
 
 如果未正确配置Marketo活动的渠道，则您的新接触点可能会归入“其他”渠道下。
 
