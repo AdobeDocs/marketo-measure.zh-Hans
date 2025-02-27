@@ -1,16 +1,16 @@
 ---
-description: '[!DNL Marketo Measure]最终数据完整性要求 —  [!DNL Marketo Measure]'
-title: '[!DNL Marketo Measure]最终数据完整性要求'
+description: '[!DNL Marketo Measure] Ultimate数据完整性要求 —  [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure] Ultimate数据完整性要求'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: 54695bd795fe9bdb58d97b6b0762b9e9fe8f17cf
+source-git-commit: 4f504bd940e2d28603af65b75151d8143cdcbea8
 workflow-type: tm+mt
 source-wordcount: '1611'
 ht-degree: 16%
 
 ---
 
-# [!DNL Marketo Measure]最终数据完整性要求 {#marketo-measure-ultimate-data-integrity-requirement}
+# [!DNL Marketo Measure] Ultimate数据完整性要求 {#marketo-measure-ultimate-data-integrity-requirement}
 
 [!DNL Marketo Measure]验证传入的AEP数据集，以确保数据充分且一致地用于归因。 如果不满足数据完整性要求，则会导致[!DNL Marketo Measure]系统拒绝数据集。 本文详细介绍了数据完整性要求，提供了数据检查的查询示例，并建议了具有空值的必填字段的解决方案。
 
@@ -359,7 +359,7 @@ ht-degree: 16%
       <td colspan="7"><strong>人员</strong>(Salesforce的联系人或潜在客户、Marketo的人员)</td>
     </tr>
     <tr>
-      <td>XDM 轮廓</td>
+      <td>XDM 个人轮廓</td>
       <td rowspan="11">XDM业务人员详细信息</td>
       <td>b2b.personKey.sourceKey</td>
       <td>字符串</td>
@@ -1322,13 +1322,13 @@ select 'addToCampaign campaign instance id', count(*) from marketo_activity wher
 union all
 select 'addToCampaign campaign key', count(*) from marketo_activity where eventType = 'leadOperation.addToCampaign' and leadOperation.addToCampaign.campaignKey.sourceKey is null
 union all
-select 'statusInCampaignProgressionChanged campaign id', count(*) from marketo_activity where eventType = 'leadOperation.campaignProgression.campaignKey.sourceKey' and leadOperation.campaignProgression.campaignKey.sourceId is null
+select 'statusInCampaignProgressionChanged campaign id', count(*) from marketo_activity where eventType = 'leadOperation.statusInCampaignProgressionChanged' and leadOperation.campaignProgression.campaignKey.sourceId is null
 union all
-select 'statusInCampaignProgressionChanged campaign type', count(*) from marketo_activity where eventType = 'leadOperation.campaignProgression.campaignKey.sourceKey' and leadOperation.campaignProgression.campaignKey.sourceType is null
+select 'statusInCampaignProgressionChanged campaign type', count(*) from marketo_activity where eventType = 'leadOperation.statusInCampaignProgressionChanged' and leadOperation.campaignProgression.campaignKey.sourceType is null
 union all
-select 'statusInCampaignProgressionChanged campaign instance id', count(*) from marketo_activity where eventType = 'leadOperation.campaignProgression.campaignKey.sourceKey' and leadOperation.campaignProgression.campaignKey.sourceInstanceId is null
+select 'statusInCampaignProgressionChanged campaign instance id', count(*) from marketo_activity where eventType = 'leadOperation.statusInCampaignProgressionChanged' and leadOperation.campaignProgression.campaignKey.sourceInstanceId is null
 union all
-select 'statusInCampaignProgressionChanged campaign key', count(*) from marketo_activity where eventType = 'leadOperation.campaignProgression.campaignKey.sourceKey' and leadOperation.campaignProgression.campaignKey.sourceKey is null;
+select 'statusInCampaignProgressionChanged campaign key', count(*) from marketo_activity where eventType = 'leadOperation.statusInCampaignProgressionChanged' and leadOperation.campaignProgression.campaignKey.sourceKey is null;
 ```
 
 ```
