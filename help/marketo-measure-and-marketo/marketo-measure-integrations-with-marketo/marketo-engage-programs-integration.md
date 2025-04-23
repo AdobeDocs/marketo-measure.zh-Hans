@@ -4,9 +4,9 @@ description: '[!DNL Marketo Engage]程序集成 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]项目集成'
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
 feature: Integration
-source-git-commit: de366de2d1df3d4dc9fc33e5fd0dab225b6af081
+source-git-commit: c0fca7f9a91763aeb211973630bbe7a5fd3dc880
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1285'
 ht-degree: 0%
 
 ---
@@ -94,6 +94,10 @@ ht-degree: 0%
 ## 计划成本 {#program-costs}
 
 通过Marketo程序的数据导入，成本将自动从期间成本中下载，Marketo中报告的成本将在整个分配的月份中分发。 例如，如果为2021年1月报告$1000，则将$1000拆分为31天。 可以在[!DNL Marketo Measure Discover]中找到成本。
+
+>[!NOTE]
+>
+>Marketo Measure每月仅支持一个期间成本条目。 为确保所有成本都导入，将每月总成本汇总到单个条目中。 不支持同一月份的多项期间成本条目。
 
 ## 工作原理 {#how-it-works}
 
