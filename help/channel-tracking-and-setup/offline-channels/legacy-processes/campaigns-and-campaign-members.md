@@ -112,7 +112,7 @@ ht-degree: 0%
 
 ## 营销活动成本 {#campaign-costs}
 
-请参阅本文](/help/marketing-spend/spend-management/crm-campaign-costs.md){target="_blank"}以了解有关Campaign成本[的所有信息。
+请参阅本文[&#128279;](/help/marketing-spend/spend-management/crm-campaign-costs.md){target="_blank"}以了解有关Campaign成本的所有信息。
 
 ## 活动成员删除 {#campaign-member-removal}
 

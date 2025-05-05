@@ -37,7 +37,7 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 
 >[!NOTE]
 >
->查看架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema){target="_blank"}的[构建块，了解架构、类和字段组的概述。
+>查看架构[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema){target="_blank"}的构建块，了解架构、类和字段组的概述。
 
 **XDM架构=类+架构字段组&#42;**
 
@@ -56,7 +56,7 @@ Ultimate不再提供直接CRM和Marketo Engage连接。
 
 * 下载和设置实用工具[的步骤可在此处](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}找到。
 
-对于具有&#x200B;_**CDP权利**_&#x200B;的用户：通过转到源页面创建架构。
+对于具有&#x200B;_&#x200B;**CDP权利**&#x200B;_&#x200B;的用户：通过转到源页面创建架构。
 
 * 从源中，选择添加数据>使用模板
 

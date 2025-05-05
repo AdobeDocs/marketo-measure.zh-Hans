@@ -72,11 +72,11 @@ ht-degree: 1%
 >
 >开头为（出站&#42; ）
 >
-包含（&#42;出站&#42; ）
+>包含（&#42;出站&#42; ）
 >
-结尾为（ &#42;出站）
+>结尾为（ &#42;出站）
 >
-无通配符基本上表示“等于”，因此请务必根据需要使用它们。
+>无通配符基本上表示“等于”，因此请务必根据需要使用它们。
 
 | **操作员** | **用例** |
 |---|---|
@@ -93,4 +93,4 @@ ht-degree: 1%
 
 >[!MORELIKETHIS]
 >
-[活动归因常见问题解答](/help/advanced-marketo-measure-features/activities-attribution/activities-attribution-faq.md)
+>[活动归因常见问题解答](/help/advanced-marketo-measure-features/activities-attribution/activities-attribution-faq.md)

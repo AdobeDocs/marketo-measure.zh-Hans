@@ -77,7 +77,7 @@ ht-degree: 0%
 
 ## 在Salesforce Classic中创建工作流 {#create-the-workflow-in-salesforce-classic}
 
-以下步骤适用于Salesforce Classic用户。 如果您已切换到Salesforce Lightning，则可以在上面](#create-the-workflow-in-salesforce-lightning)找到这些步骤[。
+以下步骤适用于Salesforce Classic用户。 如果您已切换到Salesforce Lightning，则可以在上面[&#128279;](#create-the-workflow-in-salesforce-lightning)找到这些步骤。
 
 1. 导航到&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Workflow & Approvals]** > **[!UICONTROL Workflow Rules]**。
 

@@ -57,7 +57,7 @@ ht-degree: 1%
 
 **如何从当前包回填数据？**
 
-您可以提交支持票证[](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}以回填和重新处理BT/BAT数据以填写接触点ID和表单ID字段。
+您可以提交支持票证[&#128279;](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}以回填和重新处理BT/BAT数据以填写接触点ID和表单ID字段。
 
 **V1和V2_EXT包中的字段在统一包中是否可用？**
 

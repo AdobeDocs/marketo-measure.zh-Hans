@@ -26,7 +26,7 @@ Adobe启动项扩展专为已在网站上使用Adobe启动项的现有[!DNL Mark
 >* [Adobe启动项概述](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
 >* [Adobe启动扩展概述](https://experienceleague.adobe.com/docs/experience-platform/tags/extension-dev/overview.html){target="_blank"}
 
-1. 按照本文](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html#go-to-the-data-collection-interface){target="_blank"}中的步骤[创建属性。
+1. 按照本文[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html#go-to-the-data-collection-interface){target="_blank"}中的步骤创建属性。
 
 1. 单击您创建的属性。
 

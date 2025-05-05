@@ -34,7 +34,7 @@ ht-degree: 0%
 
 1. 以管理员身份登录到[!DNL Salesforce]。
 
-1. 为所有用户&#x200B;**选择**[!UICONTROL Install]。
+1. 为所有用户&#x200B;**选择**&#x200B;[!UICONTROL Install]。
 
    ![](assets/marketo-measure-salesforce-package-installation-and-set-up-1.png)
 

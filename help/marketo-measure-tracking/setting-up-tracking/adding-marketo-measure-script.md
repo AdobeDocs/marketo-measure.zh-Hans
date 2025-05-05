@@ -58,7 +58,7 @@ ht-degree: 0%
 
 如果您使用任何第三方页面，请与您的[!DNL Marketo Measure]顾问讨论您的用例。 通常，您会希望了解是否可以添加[!DNL Marketo Measure] JavaScript的自定义版本来跟踪这些页面（如果适用）。 如果无法执行此操作，我们将与您的[!DNL Marketo Measure]顾问探讨通过CRM Campaign接触点进行跟踪。
 
-您是否有任何表单不应[!DNL Marketo Measure]跟踪，因为它们对归因不一定有意义（例如，取消订阅表单、客户登录等）？ 如果是，则要将此文章](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md){target="_blank"}中的排除代码[添加到每个表单
+您是否有任何表单不应[!DNL Marketo Measure]跟踪，因为它们对归因不一定有意义（例如，取消订阅表单、客户登录等）？ 如果是，则要将此文章[&#128279;](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md){target="_blank"}中的排除代码添加到每个表单
 
 您是否有任何非安全页面？ 您应该保护它们，因为在安全/非安全页面之间导航会中断跟踪会话。
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 设置 {#set-up}
 
-添加有关Lead、Contact、Case和Opportunity的[!DNL Marketo Measure] A/B测试部分。 [!DNL Marketo Measure] A/B测试集成允许您以最佳方式跟踪[VWO](https://vwo.com/){target="_blank"}和[VWO{target="_blank"}网站实验对收入的影响。](https://www.optimizely.com/)
+添加有关Lead、Contact、Case和Opportunity的[!DNL Marketo Measure] A/B测试部分。 [!DNL Marketo Measure] A/B测试集成允许您以最佳方式跟踪[VWO](https://vwo.com/){target="_blank"}和[VWO网站实验对收入的影响。](https://www.optimizely.com/){target="_blank"}
 
 1. 验证您是否正在使用包[!DNL Marketo Measure] v3.9或更高版本。 您可以通过转到[!UICONTROL Salesforce] >[!UICONTROL Set Up] > [!UICONTROL Installed packages]来执行此操作。
 1. 编辑潜在客户页面布局并将&#x200B;**[!DNL Marketo Measure]A/B测试**&#x200B;相关列表添加到该页面。

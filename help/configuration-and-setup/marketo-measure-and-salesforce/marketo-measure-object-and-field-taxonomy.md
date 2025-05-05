@@ -19,7 +19,7 @@ ht-degree: 0%
 
 对于完整大小的图像，[单击此处](assets/bizible-object-and-field-taxonomy-graph-full.png)。
 
-可以在此处](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)找到每个对象[中活动的[!DNL Marketo Measure]字段的定义。
+可以在此处[&#128279;](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)找到每个对象中活动的[!DNL Marketo Measure]字段的定义。
 
 ## 常见问题解答 {#faq}
 

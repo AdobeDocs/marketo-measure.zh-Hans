@@ -134,7 +134,7 @@ ht-degree: 3%
       + [利用自定义收入额的最佳实践](advanced-marketo-measure-features/custom-revenue-amount/best-practices-for-utilizing-a-custom-revenue-amount.md)
       + [使用自定义收入金额字段](advanced-marketo-measure-features/custom-revenue-amount/using-a-custom-revenue-amount-field.md)
       + [使用数据加载器更新 [!DNL Marketo Measure] 自定义金额字段](advanced-marketo-measure-features/custom-revenue-amount/using-data-loader-to-update-marketo-measure-custom-amount-field.md)
-   + 通过归因{#view-through-attribution}查看
+   + 通过归因查看{#view-through-attribution}
       + [通过归因常见问题解答[!DNL Marketo Measure]查看](advanced-marketo-measure-features/view-through-attribution/marketo-measure-view-through-attribution-faq.md)
       + [通过归因配置Doubleclick Campaign管理器视图](advanced-marketo-measure-features/view-through-attribution/configuring-doubleclick-campaign-manager-view-through-attribution.md)
    + 接触点字段{#touchpoint-fields}

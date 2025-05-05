@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Marketo Measure]通过[!DNL Marketo Measure]应用内连接的[!DNL Salesforce]用户发送和接收数据。
 
-要将接触点数据推送到[!DNL Salesforce]实例，连接的用户必须有权访问[!DNL Marketo Measure]自定义对象(即Buyer Touchpoint和Buyer Attribution Touchpoint)以及商机和联系人等标准[!DNL Salesforce]对象。 在Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)中查看[[!DNL Marketo Measure] 。
+要将接触点数据推送到[!DNL Salesforce]实例，连接的用户必须有权访问[!DNL Marketo Measure]自定义对象(即Buyer Touchpoint和Buyer Attribution Touchpoint)以及商机和联系人等标准[!DNL Salesforce]对象。 在Salesforce[&#128279;](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)中查看[!DNL Marketo Measure] 。
 
 [!DNL Salesforce]管理员用户许可证可作为已连接的用户，因为默认情况下，这些用户通常具有必要的数据权限。 但是，您的团队可能更喜欢使用集成用户或专用的[!DNL Salesforce]用户许可证来跟踪[!DNL Marketo Measure]对您实例的影响。
 

@@ -28,7 +28,7 @@ ht-degree: 0%
 **如果[!DNL Marketo Measure]找到跟踪模板：**
 
 * [!DNL Marketo Measure]会将其参数添加到跟踪模板。
-* 如果在跟踪模板（如Kenshoo或Marin）中找到第三方重定向，则[!DNL Marketo Measure]将不执行任何操作。 相反，您必须在帐户](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}中向第三方工具[添加 [!DNL Marketo Measure] 参数。
+* 如果在跟踪模板（如Kenshoo或Marin）中找到第三方重定向，则[!DNL Marketo Measure]将不执行任何操作。 相反，您必须在帐户[&#128279;](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}中向第三方工具添加 [!DNL Marketo Measure] 参数。
 
 但是，如果未找到跟踪模板，[!DNL Marketo Measure]将：
 
