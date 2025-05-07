@@ -4,9 +4,9 @@ description: ' [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何交互 — Mar
 title: ' [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何交互'
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 feature: Salesforce
-source-git-commit: 9ef6d16a73ef25846b90902eb22a544432c33931
+source-git-commit: ec5172286951f482905f97268f33f063d1860694
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1287'
 ht-degree: 17%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 17%
 
 下面我们来详细了解[!DNL Marketo Measure]与Salesforce之间的关系。
 
-## Salesforce和[!DNL Marketo Measure] {#salesforce-and-marketo-measure}
+## Salesforce和[!DNL Marketo Measure]  {#salesforce-and-marketo-measure}
 
 在创建[!DNL Marketo Measure]帐户并连接[!DNL Salesforce]后，只要安装了[!DNL Marketo Measure]托管包并且[!DNL Marketo Measure] Salesforce用户具有编辑权限，[!DNL Marketo Measure]就会开始将营销数据推送到CRM实例中。
 
@@ -31,7 +31,7 @@ ht-degree: 17%
 
 ![](assets/how-bizible-and-salesforce-interact-2.png)
 
-在修改此设置时，请记住，较小的批次大小会消耗您的CRM中的更多API积分。 仅当您在CRM中遇到CPU超时或CPU负载过高时，才建议减小批次大小。
+在修改此设置时，请记住，较小的批次大小会消耗您的CRM中的更多API积分。 仅当您在CRM中遇到CPU超时或CPU负载较高时，才建议减小批次大小。
 
 ## Salesforce连接用户权限 {#salesforce-connected-user-permissions}
 
@@ -449,7 +449,19 @@ ht-degree: 17%
    <td>类型</td> 
    <td>标准</td> 
    <td>x</td> 
-   <td><br></td> 
+   <td> </td> 
+  </tr>
+  <tr> 
+   <td>开始日期</td> 
+   <td>标准</td> 
+   <td>x</td> 
+   <td> </td> 
+  </tr>
+  <tr> 
+   <td>结束日期</td> 
+   <td>标准</td> 
+   <td>x</td> 
+   <td> </td> 
   </tr>
   <tr> 
    <td>名称</td> 
@@ -576,14 +588,14 @@ ht-degree: 17%
 >* 帐户
 >* Campaign
 >* 营销活动成员
->* 联系人
+>* 联系
 >* 活动
 >* 潜在客户
 >* 机会
 >* 任务
 
 
-## [!DNL Salesforce]中的[!DNL Marketo Measure]自定义对象 {#marketo-measure-custom-objects-in-salesforce}
+## [!DNL Salesforce]中的[!DNL Marketo Measure]自定义对象  {#marketo-measure-custom-objects-in-salesforce}
 
 除了在SFDC的标准对象上创建自定义字段外，在安装[!DNL Marketo Measure]包后，它会创建几个自定义对象。 以下是这些自定义对象的列表，以及一个表示[!DNL Marketo Measure]将写入的字段的表。
 
