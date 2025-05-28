@@ -4,9 +4,9 @@ description: 归因映射方法 —  [!DNL Marketo Measure]
 title: 归因映射方法
 exl-id: 4d54dd20-9a82-4b87-8908-ced2bd9c0f2f
 feature: Attribution
-source-git-commit: cd5597a681f388a5b5c743dadd38bf3127811bff
+source-git-commit: 90d0d6481e5b338d08a56f555ca3addea8bdd304
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 0%
 缺点：如果有严格的营销和销售SLA规定哪些人应该获得点数，则此方法可能会产生问题。 此外，如果人们不使用帐户层次结构来定义较大帐户(例如：IBM)中的特定业务单位，则特定于某个业务单位的营销互动可能会扩展到其他业务单位机会。
 
 ## 机会联系人角色映射 {#opportunity-contact-role-mapping}
+
+>[!NOTE]
+>
+>联系人角色映射方法仅适用于使用Salesforce作为其CRM的用户。 它不适用于Microsoft Dynamics用户，因为该CRM中缺少联系人角色对象。
 
 当大多数客户端使用帐户ID映射时，[!DNL Marketo Measure]可以查找机会中的联系人角色（与机会关联的联系人）以细分归因过程。 这意味着[!DNL Marketo Measure]将仅作为买方归因接触点推送与商机上的联系人角色关联的营销交互。 以下是此过程的演示。
 
