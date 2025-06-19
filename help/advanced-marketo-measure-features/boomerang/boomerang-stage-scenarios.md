@@ -4,9 +4,9 @@ description: Boomerang阶段方案 —  [!DNL Marketo Measure]
 title: 回音廊舞台场景
 exl-id: 150db070-eef5-4741-845c-775ab4034ead
 feature: Boomerang
-source-git-commit: ea113b02b910fbc894311200aff83286636d4b32
+source-git-commit: ce54eb497c55c4ab8da55e9b2803dc59a87c7267
 workflow-type: tm+mt
-source-wordcount: '1763'
+source-wordcount: '1499'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Boomerang功能仅针对第2层和第3层客户启用。 要申请更高的客户层，请联系Adobe客户团队（您的客户经理）。
+>Boomerang功能仅针对第2层和第3层客户启用。 要请求更高的客户层，请联系Adobe客户团队（您的客户经理）。
 
 以下是Boomerang阶段方案的一些示例，用于了解[!DNL Marketo Measure]如何在每种情况下创建接触点。
 
@@ -79,23 +79,7 @@ Lead 3的FT 、 LC和MQL 、 SQL 、 SAL接触点（橙色）都发生在Opportu
 
 当Lead 2和3转化为Contacts时，[!DNL Marketo Measure]将不会创建另一个OC接触点，因为只能有一个机会创建阶段。
 
-**方案2 -[!UICONTROL Three Leads with Opportunity]**
-
-在此方案中，客户已选择跟踪具有回访式接触点的&#x200B;**MQL**、**SQL**&#x200B;和&#x200B;**SAL**&#x200B;阶段。
-
-从FT到SAL-01（最后一个），Lead 1的所有接触点都包含在该商机中。 Lead 2的LC接触点将作为Form接触点包含在Opportunity上的LC和MQL-01接触点之间。
-
-![](assets/5.png)
-
-来自Lead 2的MQL-01 （最后一个）最终成为Opportunity上的MQL-04 （最后一个）接触点。 由于此情形是查看一个Opportunity中多个Lead的历程，因此Lead的接触点的位置和编号可能会在Opportunity上转换为接触点时发生变化。 同样，Lead 2中的SQL-01 (Last)将变为Opp上的SQL-04 (Last)。 Lead 2的SAL-01 (Last)也变为Opportunity的SAL-02 (Last)。
-
-Opportunity上只包括2个SAL接触点。 如果未发生阶段过渡，[!DNL Marketo Measure]将不会尝试强制/创建接触点。
-
-Lead 3的接触点历程在OC接触发生之前开始，但在Lead 1和Lead 2进行FT和LC接触很久之后开始。 在这种情况下， Lead 3的FT和LC在Opportunity上显示为一个Form接触点。 然后，Lead 1将转换为具有Opportunity的Contact ，后者被视为OC接触。
-
-Lead 3的MQL 、 SQL和SAL接触在OC接触之后同时发生。 由于它们发生在OC接触点之后，因此此接触点将显示为Opportunity上的Form/Middle Touch，而不是Boomerang阶段过渡。
-
-**方案2a - Web访问Boomerang接触点**
+**场景2 - Web访问Boomerang接触点**
 
 在此方案中，客户已选择跟踪具有回访式接触点的&#x200B;**MQL**、**SQL**&#x200B;和&#x200B;**SAL**&#x200B;阶段。 这种情况与上述情况几乎相同，只是有一些例外。
 
