@@ -4,9 +4,9 @@ description: Boomerang阶段方案 —  [!DNL Marketo Measure]
 title: 回音廊舞台场景
 exl-id: 150db070-eef5-4741-845c-775ab4034ead
 feature: Boomerang
-source-git-commit: ce54eb497c55c4ab8da55e9b2803dc59a87c7267
+source-git-commit: 855ae5abe6f8782ed1883f85be545c11bf86e7ce
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -71,9 +71,9 @@ Opportunity上的FT和LC接触点来自Lead 1 （蓝色），因为它们出现�
 
 来自Lead 2的MQL-01 （最后一个）将成为Opportunity上的第一个MQL。 Lead 1中的MQL-01将不会显示为Opportunity上的接触点，因为Lead 2的MQL是先出现的。 但是， Lead 1的MQL-02和MQL-03将出现在Opportunity中。
 
-SQL阶段使用自定义阶段进行跟踪，而不是使用自举阶段。 即使Lead 1和Lead 2之间有三次出现SQL阶段，但只有最后出现的SQL将作为接触点包含在Opportunity中。
+SQL阶段使用自定义阶段进行跟踪，而不是使用自举阶段进行跟踪。 即使Lead 1和Lead 2之间有三次出现SQL阶段，但只有最后出现的SQL将作为接触点包含在Opportunity中。
 
-来自Lead 1的SAL-01 （最后一个）接触点将作为Opportunity上的接触点转移。 然后，Lead 1将转换为具有Opportunity的Contact ，后者被视为OC接触。 潜在客户2的SAL-01（上一个）接触点将创建为接触点，因为此阶段过渡在&#x200B;_OC接触_&#x200B;后发生。
+来自Lead 1的SAL-01 （最后一个）接触点将作为Opportunity上的接触点转移。 然后，Lead 1将转换为具有Opportunity的Contact ，后者被视为OC接触。 潜在客户2的SAL-01（上一个）接触点将不会创建为接触点，因为此阶段过渡在&#x200B;_OC接触_&#x200B;后发生。
 
 Lead 3的FT 、 LC和MQL 、 SQL 、 SAL接触点（橙色）都发生在Opportunity上的OC接触点之后。 这些接触点包含在Opportunity中，但被视为“中间接触”。
 
