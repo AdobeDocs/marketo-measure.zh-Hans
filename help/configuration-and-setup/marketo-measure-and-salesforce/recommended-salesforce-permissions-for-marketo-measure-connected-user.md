@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * 查看和编辑转化后的潜在客户权限集
 
-这允许[!DNL Marketo Measure]在潜在客户转换为联系人后对其进行修饰。 如果未启用此权限集，则可能存在显着的数据跟踪缺口。 您可以在[[!DNL Salesforce Trailblazer] 社区](https://help.salesforce.com/s/articleView?language=en_US&amp;id=leads_view_edit_converted.htm&amp;type=5)中找到更多信息。
+这允许[!DNL Marketo Measure]在潜在客户转换为联系人后对其进行修饰。 如果未启用此权限集，则可能存在显着的数据跟踪缺口。 您可以在[[!DNL Salesforce Trailblazer] 社区](https://help.salesforce.com/s/articleView?language=en_US&id=leads_view_edit_converted.htm&type=5)中找到更多信息。
 
 * [!DNL Salesforce]营销用户复选框
 

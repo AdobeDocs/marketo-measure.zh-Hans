@@ -101,7 +101,7 @@ Google URL Builder是用于使用UTM标记构建格式正确的URL的标准工�
 
 由EpikOne生成的&#x200B;**Google电子表格**
 
-此电子表格具有一个公式，可自动生成标记的目标URL。 如果需要标记大量链接，这是一个非常有用的工具。 在[此处](https://spreadsheets.google.com/ccc?key=p7c_HKcmspSUfEYSO0gskKw&amp;hl=en){target="_blank"}访问电子表格。
+此电子表格具有一个公式，可自动生成标记的目标URL。 如果需要标记大量链接，这是一个非常有用的工具。 在[此处](https://spreadsheets.google.com/ccc?key=p7c_HKcmspSUfEYSO0gskKw&hl=en){target="_blank"}访问电子表格。
 
 **Rafflecopter链接标记工具**
 

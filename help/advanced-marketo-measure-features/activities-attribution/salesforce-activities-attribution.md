@@ -64,7 +64,7 @@ ht-degree: 1%
 
 ![](assets/5.png)
 
-您可能希望将这些新的接触点放置到他们适当的[营销渠道](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome？tab=Channels.Online%20Channels){target="_blank"}中。 为此，请使用刚刚创建的新营销活动映射定义渠道。
+您可能希望将这些新的接触点放置到他们适当的[营销渠道](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&id=10#/!/MyAccount/Business/Account.Settings.SettingsHome？tab=Channels.Online%20Channels){target="_blank"}中。 为此，请使用刚刚创建的新营销活动映射定义渠道。
 
 >[!TIP]
 >
@@ -87,7 +87,7 @@ ht-degree: 1%
 
 ![](assets/6.png)
 
-最后但同样重要的是，您可以选择输入新渠道的成本。 [营销支出上传](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&amp;id=10#/!/MyAccount/Business/Account.Settings.SettingsHome？tab=Reporting.Marketing%20Spent){target="_blank"}允许您在渠道级别、子渠道级别或营销活动级别输入支出。 通过新的[!DNL Marketo Measure]营销活动，您可以按月添加这些相关成本，然后查看每个营销活动的ROI！
+最后但同样重要的是，您可以选择输入新渠道的成本。 [营销支出上传](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&id=10#/!/MyAccount/Business/Account.Settings.SettingsHome？tab=Reporting.Marketing%20Spent){target="_blank"}允许您在渠道级别、子渠道级别或营销活动级别输入支出。 通过新的[!DNL Marketo Measure]营销活动，您可以按月添加这些相关成本，然后查看每个营销活动的ROI！
 
 ![](assets/7.png)
 

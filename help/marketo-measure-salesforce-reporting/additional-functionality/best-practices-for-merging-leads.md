@@ -15,7 +15,7 @@ ht-degree: 0%
 
 在[!DNL Salesforce]中合并Lead时，最好始终保持谨慎，以确保不会丢失任何数据。
 
-供您参考，这里提供了[!DNL Salesforce]支持团队中[如何合并潜在客户](https://help.salesforce.com/s/articleView?id=leads_merge.htm&amp;language=en_US&amp;type=5)的细目。
+供您参考，这里提供了[!DNL Salesforce]支持团队中[如何合并潜在客户](https://help.salesforce.com/s/articleView?id=leads_merge.htm&language=en_US&type=5)的细目。
 
 [!DNL Marketo Measure]的进入时间是选择填充在合并记录上的字段。 选择主记录后，验证是否选择了[!DNL Marketo Measure]字段以结转到新记录。
 

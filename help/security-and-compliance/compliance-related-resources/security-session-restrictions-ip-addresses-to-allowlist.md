@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 安全会话限制：要允许列表的IP地址 {#security-session-restrictions-ip-addresses-to-allowlist}
 
-如果已经设置好[会话安全设置](https://help.salesforce.com/articleView?id=admin_sessions.htm&amp;type=0){target="_blank"}，阻止特定IP地址将数据推送/提取到您的[!DNL Salesforce]实例，我们将需要列入允许列表以下IP范围，以允许[!DNL Marketo Measure]将数据推送到[!DNL Salesforce]：
+如果已经设置好[会话安全设置](https://help.salesforce.com/articleView?id=admin_sessions.htm&type=0){target="_blank"}，阻止特定IP地址将数据推送/提取到您的[!DNL Salesforce]实例，我们将需要列入允许列表以下IP范围，以允许[!DNL Marketo Measure]将数据推送到[!DNL Salesforce]：
 
 * 52.162.84.192 - 52.162.84.207
 * 23.100.229.112 - 23.100.229.127

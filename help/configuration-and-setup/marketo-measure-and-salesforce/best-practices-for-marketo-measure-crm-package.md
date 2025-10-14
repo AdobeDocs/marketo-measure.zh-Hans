@@ -50,11 +50,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->当您禁用Marketo Measure将数据导出到Salesforce时，它不会删除任何现有数据。 要删除它，请按照[此Salesforce帮助文章](https://help.salesforce.com/s/articleView?language=en_US&amp;id=sf.c360_a_delete_data_stream_records.htm&amp;type=5){target="_blank"}中的步骤操作。
+>当您禁用Marketo Measure将数据导出到Salesforce时，它不会删除任何现有数据。 要删除它，请按照[此Salesforce帮助文章](https://help.salesforce.com/s/articleView?language=en_US&id=sf.c360_a_delete_data_stream_records.htm&type=5){target="_blank"}中的步骤操作。
 
 >[!MORELIKETHIS]
 >
 >* [更新Buyer Touchpoint包](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-package-installation-and-set-up.md)
 >* [[!DNL Marketo Measure] 权限集](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
->* [共享报告和仪表板文件夹](https://help.salesforce.com/s/articleView?language=en_US&amp;id=analytics_share_folder.htm&amp;type=0)
+>* [共享报告和仪表板文件夹](https://help.salesforce.com/s/articleView?language=en_US&id=analytics_share_folder.htm&type=0)
 >* [将Marketo Measure连接到Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)

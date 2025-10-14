@@ -44,4 +44,4 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->[列表视图内联编辑的常见问题疑难解答](http://help.salesforce.com/articleView?id=000003911&amp;language=en_US&amp;type=1){target="_blank"}
+>[列表视图内联编辑的常见问题疑难解答](http://help.salesforce.com/articleView?id=000003911&language=en_US&type=1){target="_blank"}
