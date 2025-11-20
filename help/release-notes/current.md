@@ -24,13 +24,13 @@ ht-degree: 0%
 
 对于新客户，会话渠道转移现在为默认行为。 现有客户可以通过在设置>每次联系归因下打开会话渠道转移开关来启用此功能。 激活后，此设置将无法撤消。
 
-文档： [Marketo Measure Web会话的定义](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
+文档： [Marketo Measure Web会话的定义](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
 
 ### 关键词ROI仪表板
 
 新的关键字ROI仪表板提供付费搜索促销活动表现的详细见解，从而全面了解关键字级别的成本、归因收入、生成的商机和机会。 此仪表板可帮助您评估Google Adwords、LinkedIn和Bing Ads等中每个关键字的ROI。
 
-文档： [关键字ROI仪表板](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
+文档： [关键字ROI仪表板](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
 
 ### 增强的区段规则
 
