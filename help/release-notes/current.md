@@ -24,13 +24,13 @@ ht-degree: 0%
 
 对于新客户，会话渠道转移现在为默认行为。 现有客户可以通过在设置>每次联系归因下打开会话渠道转移开关来启用此功能。 激活后，此设置将无法撤消。
 
-文档： [Marketo Measure Web会话的定义](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
+文档： [Marketo Measure Web会话的定义](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
 
 ### 关键词ROI仪表板
 
 新的关键字ROI仪表板提供付费搜索促销活动表现的详细见解，从而全面了解关键字级别的成本、归因收入、生成的商机和机会。 此仪表板可帮助您评估Google Adwords、LinkedIn和Bing Ads等中每个关键字的ROI。
 
-文档： [关键字ROI仪表板](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
+文档： [关键字ROI仪表板](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
 
 ### 增强的区段规则
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ### 提醒： Salesforce字段弃用 — 6月14日
 
-如去年所宣布的，我们将逐步停止向Lead/Contact对象[&#128279;](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"}导出作业，以简化集成并消除导出到Salesforce标准对象的需要。 您可以按照此处介绍的步骤[从接触点对象获取相同的数据](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}。 我们还将共享有关创建工作流的文档，以将此数据添加到Lead/Contact对象。 弃用将于2024年6月14日生效。
+如去年所宣布的，我们将逐步停止向Lead/Contact对象[导出作业，以简化我们的集成，并消除导出到Salesforce标准对象的需要。 ](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"}您可以按照此处介绍的步骤[从接触点对象获取相同的数据](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}。 我们还将共享有关创建工作流的文档，以将此数据添加到Lead/Contact对象。 弃用将于2024年6月14日生效。
 
 这一变化将带来两大好处：
 
@@ -78,12 +78,12 @@ ht-degree: 0%
 
 我们很高兴地介绍新的[归因机会信息板](/help/marketo-measure-discover-ui/dashboards/attributed-opportunity-dashboard.md){target="_blank"}，它旨在让您全面了解您的营销工作如何促进新生的和成熟的管道机会。 利用此仪表板，您可以深入了解可归属于您的策略的每个未结和已结业务机会的详细信息，并灵活地按业务机会阶段进行筛选。 它提供了有关哪些渠道、子渠道或营销活动在归因机会数量方面排名最高的见解，并显示归因机会总数以及归因的未结和已结机会计数。
 
-### 适用于Marketo Measure Ultimate的Marketo EngageCookie同步
+### 适用于Marketo Measure Ultimate的Marketo Engage Cookie同步
 
-Marketo EngageCookie同步现在可供Marketo Measure Ultimate使用。 要使用此功能，请执行以下操作：
+Marketo Engage Cookie Sync现在可用于Marketo Measure Ultimate。 要使用此功能，请执行以下操作：
 
-1. 在“AEP架构”页上，编辑B2B人员架构并添加字段组“Marketo Engage人员详细信息”。
-1. 将数据摄取到MMU时，将Cookie ID字段从字段组映射到Marketo Engage中的Cookie字段。
+1. 在“AEP架构”页面上，编辑B2B人员架构并添加字段组“Marketo Engage人员详细信息”。
+1. 将数据摄取到MMU时，将Cookie ID字段从字段组映射到Marketo Engage的Cookie字段。
 
 ### 为第2层客户启用了回滚阶段
 
@@ -125,6 +125,6 @@ _支持您的过渡_
 
 <br>
 
-### linkedIn集成所需的操作
+### LinkedIn集成所需的操作
 
-linkedIn最近发布了其Lead Sync API的更新版本。 请在5月20日之前重新验证Marketo Measure实例中的LinkedIn连接，以避免任何中断。
+LinkedIn最近发布了其Lead Sync API的更新版本。 请在5月20日之前重新验证Marketo Measure实例中的LinkedIn连接，以避免任何中断。
