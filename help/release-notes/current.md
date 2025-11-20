@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ### 提醒： Salesforce字段弃用 — 6月14日
 
-如去年所宣布的，我们将逐步停止向Lead/Contact对象[导出作业，以简化我们的集成，并消除导出到Salesforce标准对象的需要。 ](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"}您可以按照此处介绍的步骤[从接触点对象获取相同的数据](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}。 我们还将共享有关创建工作流的文档，以将此数据添加到Lead/Contact对象。 弃用将于2024年6月14日生效。
+如去年所宣布的，我们将逐步停止向Lead/Contact对象[导出作业，以简化我们的集成，并消除导出到Salesforce标准对象的需要。 &#x200B;](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"}您可以按照此处介绍的步骤[从接触点对象获取相同的数据](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}。 我们还将共享有关创建工作流的文档，以将此数据添加到Lead/Contact对象。 弃用将于2024年6月14日生效。
 
 这一变化将带来两大好处：
 
