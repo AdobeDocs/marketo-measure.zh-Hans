@@ -34,4 +34,4 @@ ht-degree: 0%
    这是按营销渠道汇总的“机会”报表。 此报告侧重于所有Opp，但可以随时根据商机的阶段/类型进行筛选。 此外，您可以随意添加任何要报告的字段。
 
 >[!MORELIKETHIS]
->[[!DNL Marketo Measure] 教程： Stock SFDC报告](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/stock-salesforce-reports){target="_blank"}
+>[[!DNL Marketo Measure] 教程： Stock SFDC报告](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/stock-salesforce-reports){target="_blank"}

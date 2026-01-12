@@ -110,5 +110,5 @@ Campaign成员接触点规则和活动接触点规则特定于数据集。
 * 现有第1/2/3层用户没有迁移路径。 需要新的实施，但我们会帮助从现有实例迁移跟踪的Web活动数据。
 
 >[!MORELIKETHIS]
-> [Marketo Measure Ultimate目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}
+> [Marketo Measure Ultimate目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=zh-Hans){target="_blank"}
 > [视频： Marketo Measure Ultimate概述](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}

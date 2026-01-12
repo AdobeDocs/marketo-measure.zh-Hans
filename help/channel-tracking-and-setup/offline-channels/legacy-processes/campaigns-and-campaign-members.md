@@ -122,5 +122,5 @@ ht-degree: 0%
 >请记住，此触发器不会跟踪过去删除的任何营销活动成员，因此这仅适用于以后的营销活动。 如果您需要移除大量过去促销活动成员的接触点，请联系[Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。
 
 >[!MORELIKETHIS]
->[[!DNL Marketo Measure] 教程： Campaign对象字段](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
->[[!DNL Marketo Measure] 教程：映射脱机渠道](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
+>[[!DNL Marketo Measure] 教程： Campaign对象字段](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
+>[[!DNL Marketo Measure] 教程：映射脱机渠道](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}

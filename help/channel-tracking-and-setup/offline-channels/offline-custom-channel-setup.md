@@ -81,6 +81,6 @@ SFDC促销活动类型将显示在离线渠道的选项卡中，列在[!DNL Sale
 完成后，单击&#x200B;**[!UICONTROL Save]**，[!DNL Marketo Measure]将上载更改并重新处理数据。
 
 >[!MORELIKETHIS]
-> [[!DNL Marketo Measure] 教程：映射脱机渠道](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
-> [[!DNL Marketo Measure] 教程：同步离线营销活动](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/syncing-offline-campaigns){target="_blank"}
+> [[!DNL Marketo Measure] 教程：映射脱机渠道](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
+> [[!DNL Marketo Measure] 教程：同步离线营销活动](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/syncing-offline-campaigns){target="_blank"}
 > [Marketo Engage程序集成](/help/marketo-measure-and-marketo/marketo-engage-programs-integration.md#channel-mapping){target="_blank"}

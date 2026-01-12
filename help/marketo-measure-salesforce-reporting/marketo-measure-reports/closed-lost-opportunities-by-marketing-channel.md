@@ -46,4 +46,4 @@ ht-degree: 0%
    这是由营销渠道汇总的、用于衡量跨渠道已关闭的已错失销售机会的销售渠道报表。 通过此报告，您可以了解哪些渠道可能表现不佳。 欢迎您随时添加任何要报告的过滤器或字段。
 
 >[!MORELIKETHIS]
->[[!DNL Marketo Measure] 教程：其他SFDC报告](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/addtional-salesforce-reports)
+>[[!DNL Marketo Measure] 教程：其他SFDC报告](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/addtional-salesforce-reports)

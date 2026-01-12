@@ -49,7 +49,7 @@ Marketo Measure接受以下值：电子邮件地址、Salesforce潜在客户Id�
    <td><p>Marketo</p></td>
    <td><p>{{lead.Email Address}} </p></td>
    <td><p>https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId={{lead.EmailAddress}}</p></td>
-   <td><p>https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/personalizing-landing-pages/tokens-overview.html</p></td>
+   <td><p>https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/personalizing-landing-pages/tokens-overview.html?lang=zh-Hans</p></td>
   </tr>
   <tr>
    <td><p>帕尔多</p></td>

@@ -157,7 +157,7 @@ Marketo Measure中的![通知面板显示错误列表和查看所有链接](asse
             <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md">Marketo Measure与Adobe Analytics的集成</a>
           </li>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html">创建客户属性来源并上传数据文件</a>
+            <a href="https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html?lang=zh-Hans">创建客户属性来源并上传数据文件</a>
           </li>
         </ul>
       </td>

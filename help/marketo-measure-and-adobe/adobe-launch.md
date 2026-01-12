@@ -21,11 +21,11 @@ Adobe Launch扩展专为已在网站上使用Adobe Launch的现有[!DNL Marketo 
 
 >[!PREREQUISITES]
 >查看以下链接，了解有关Adobe Launch及其扩展的更多信息：
-> [[!DNL Marketo Measure] 扩展](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email/bizible.html#catalog){target="_blank"}
-> [Adobe Launch概述](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
-> [Adobe Launch扩展概述](https://experienceleague.adobe.com/docs/experience-platform/tags/extension-dev/overview.html){target="_blank"}
+> [[!DNL Marketo Measure] 扩展](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email/bizible.html?lang=zh-Hans#catalog){target="_blank"}
+> [Adobe Launch概述](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=zh-Hans){target="_blank"}
+> [Adobe Launch扩展概述](https://experienceleague.adobe.com/docs/experience-platform/tags/extension-dev/overview.html?lang=zh-Hans){target="_blank"}
 
-1. 按照本文[中的步骤](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html#go-to-the-data-collection-interface){target="_blank"}创建属性。
+1. 按照本文[中的步骤](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=zh-Hans#go-to-the-data-collection-interface){target="_blank"}创建属性。
 
 1. 单击您创建的属性。
 

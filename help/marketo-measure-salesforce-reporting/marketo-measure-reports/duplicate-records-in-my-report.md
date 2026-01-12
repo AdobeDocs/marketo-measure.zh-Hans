@@ -33,4 +33,4 @@ ht-degree: 0%
 如果要了解“联系人计数”，则可以使用“计数 — 首次联系”、“计数潜在客户创建联系”或“计数 — U型”字段了解有多少联系人进行了营销互动。
 
 >[!MORELIKETHIS]
->[[!DNL Marketo Measure] 教程： Stock SFDC报告](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/stock-salesforce-reports){target="_blank"}
+>[[!DNL Marketo Measure] 教程： Stock SFDC报告](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/stock-salesforce-reports){target="_blank"}

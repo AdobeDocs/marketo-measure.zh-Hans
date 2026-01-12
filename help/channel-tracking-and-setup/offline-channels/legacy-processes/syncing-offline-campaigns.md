@@ -71,5 +71,5 @@ ht-degree: 0%
 一旦选择了其中一个选项，[!DNL Marketo Measure]将为每个营销活动成员分配一个接触点（如果适用）。 添加到营销活动&#x200B;_的销售线索或联系人必须_&#x200B;具有与其记录关联的电子邮件地址，才能[!DNL Marketo Measure]创建接触点。 如果没有电子邮件地址，[!DNL Marketo Measure]将不会向营销活动成员分配接触点。
 
 >[!MORELIKETHIS]
->[[!DNL Marketo Measure] 教程：映射脱机渠道](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
->[[!DNL Marketo Measure] 教程： Campaign对象字段](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
+>[[!DNL Marketo Measure] 教程：映射脱机渠道](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
+>[[!DNL Marketo Measure] 教程： Campaign对象字段](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
