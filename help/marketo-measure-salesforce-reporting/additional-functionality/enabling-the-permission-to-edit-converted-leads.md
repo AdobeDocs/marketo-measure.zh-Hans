@@ -17,16 +17,16 @@ ht-degree: 0%
 
 1. 转到[!UICONTROL Setup]并展开[!UICONTROL Manage Users]分组以选择配置文件。
 
-   ![ 2](assets/1-2.png)
+   ![&#x200B; 2](assets/1-2.png)
 
 1. 选择我们连接到的用户的配置文件。
 
 1. 搜索查看和编辑已转化商机的权限。
 
-   ![ 1](assets/2-1.png)
+   ![&#x200B; 1](assets/2-1.png)
 
 1. 选中方框，可启用查看和编辑已转化商机的权限。
 
-   ![ 1](assets/3-1.png)
+   ![&#x200B; 1](assets/3-1.png)
 
 你完蛋了！

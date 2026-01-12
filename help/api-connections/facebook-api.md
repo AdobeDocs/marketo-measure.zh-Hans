@@ -44,7 +44,7 @@ ht-degree: 0%
 >[!NOTE]
 >如果启用自动标记，我们将重置所标记的所有广告的转化历史记录和社交证明。 我们强烈建议您在启用自动标记之前[将此数据导出为CSV](https://www.facebook.com/business/help/205067636197240)。
 
-![ 2](assets/2-2.png)
+![&#x200B; 2](assets/2-2.png)
 
 启用集成后，[!DNL Marketo Measure]将开始将广告级别成本下载到[!DNL Marketo Measure Marketing ROI]仪表板。
 

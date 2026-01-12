@@ -19,15 +19,15 @@ ht-degree: 0%
 
 1. 在“Bizible归因”中的快速查找类型中，选择&#x200B;**[!UICONTROL Bizible Attribution Touchpoint with Opportunity]**&#x200B;报表类型，然后选择&#x200B;**[!UICONTROL Create]**。
 
-   ![ 2](assets/1-2.jpg)
+   ![&#x200B; 2](assets/1-2.jpg)
 
 1. 从报表顶部开始，显示&#x200B;**[!UICONTROL All Bizible Attribution Touchpoints]**，并根据要报告的时间范围调整日期字段。 在我们的示例中，我们一直都在查看。 此外，将报告格式从[!UICONTROL Tabular]更改为&#x200B;**[!UICONTROL Summary]**。
 
-   ![ 2](assets/2-2.jpg)
+   ![&#x200B; 2](assets/2-2.jpg)
 
 1. 现在，我们将向报告添加字段。 在左侧的快速查找中，键入“Marketing Channel”并将其添加到报表中的摘要分组。
 
-   ![ 2](assets/3-2.jpg)
+   ![&#x200B; 2](assets/3-2.jpg)
 
 1. 现在，运行报告并分析！
 

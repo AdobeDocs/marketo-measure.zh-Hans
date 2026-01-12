@@ -38,7 +38,7 @@ ht-degree: 1%
 **报告**
 
 * [使用 [!DNL Marketo Measure]](/help/marketo-measure-salesforce-reporting/new-report-types/creating-report-types.md)创建自定义报告类型（如果您必须报告自定义Lead/Contact/Opportunity字段）
-* [ [!DNL Marketo Measure] 字段词汇表](/help/glossary.md)
+* [&#x200B; [!DNL Marketo Measure] 字段词汇表](/help/glossary.md)
 
 **疑难解答**
 

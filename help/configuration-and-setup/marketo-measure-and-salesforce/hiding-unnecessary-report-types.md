@@ -25,7 +25,7 @@ ht-degree: 0%
 
 1. 单击下面标有橙色X的报表，以使您的报表列表看起来与下图相同。
 
-   ![ 4](assets/1-4.png)
+   ![&#x200B; 4](assets/1-4.png)
 
 >[!MORELIKETHIS]
 >[Salesforce — 隐藏未使用的报表类型](https://help.salesforce.com/articleView?id=release-notes.rn_analytics_hide_report_types.htm&type=5&language=en_us)

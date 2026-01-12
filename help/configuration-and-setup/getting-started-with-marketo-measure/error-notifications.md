@@ -31,7 +31,7 @@ Marketo Measure中的![通知面板显示错误列表和查看所有链接](asse
       <td>API已禁用</td>
       <td>Crm导入期间出错： API_DISABLED ：已为此用户禁用API调用</td>
       <td>已为Marketo Measure用户禁用API权限。</td>
-      <td>请参阅以下Salesforce文档，了解如何启用<a href="https://help.salesforce.com/s/articleView?language=en_US&amp;id=sf.branded_apps_commun_api_permset.htm&amp;type=5">API访问</a>。</td>
+      <td>请参阅以下Salesforce文档，了解如何启用<a href="https://help.salesforce.com/s/articleView?language=en_US&id=sf.branded_apps_commun_api_permset.htm&type=5">API访问</a>。</td>
     </tr>
     <tr>
       <td>API_LIMIT_EXCEEDED</td>
@@ -80,7 +80,7 @@ Marketo Measure中的![通知面板显示错误列表和查看所有链接](asse
       缺少对象的权限。</td>
       <td>查看导致插入/更新失败的触发器代码。 有关触发器的更多详细信息，请参阅以下Salesforce文档：
         <ul>
-          <li><a href="https://help.salesforce.com/s/articleView?id=sf.code_manage_triggers.htm&amp;type=5">Apex触发器</a>
+          <li><a href="https://help.salesforce.com/s/articleView?id=sf.code_manage_triggers.htm&type=5">Apex触发器</a>
           </li>
           <li><a href="https://admin.salesforce.com/blog/2023/what-is-a-record-triggered-flow#:~:text=A%20record%2Dtriggered%20flow%20allows,is%20created%20and%2For%20updated">流触发器</a>
           </li>
@@ -93,7 +93,7 @@ Marketo Measure中的![通知面板显示错误列表和查看所有链接](asse
       <td>DUPLICATES_DETECTED</td>
       <td>在Crm导出期间出错： DUPLICATES_DETECTED ：实体类型“Contact”： CRM错误代码： DUPLICATES_DETECTED， CRM错误消息：您正在创建重复记录。 我们建议您改用现有记录。，RecordId： 0123456</td>
       <td>正在导入到Salesforce组织的记录已存在。</td>
-      <td><a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">禁用“重复规则”设置</a>以允许重复项。
+      <td><a href="https://help.salesforce.com/s/articleView?id=000390009&type=1">禁用“重复规则”设置</a>以允许重复项。
           <p>
           从<a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自定义验证规则</a>中排除Marketo Measure专用用户。</td>
     </tr>
@@ -101,7 +101,7 @@ Marketo Measure中的![通知面板显示错误列表和查看所有链接](asse
       <td>DUPLICATE_VALUE</td>
       <td>在Crm导出期间出错： DUPLICATE_VALUE ：实体类型“潜在客户”： CRM错误代码： DUPLICATE_VALUE， CRM错误消息：发现重复值： Email_Unique__c重复记录ID为123、记录ID为456的值</td>
       <td>要导入到Salesforce组织的字段不允许存在重复值。</td>
-      <td>在Salesforce中取消选中<a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">“唯一复选框”</a>。
+      <td>在Salesforce中取消选中<a href="https://help.salesforce.com/s/articleView?id=000390009&type=1">“唯一复选框”</a>。
           <p>
           从<a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自定义验证规则</a>中排除Marketo Measure专用用户。</td>
     </tr>
@@ -121,7 +121,7 @@ Marketo Measure中的![通知面板显示错误列表和查看所有链接](asse
       <td>FIELD_FILTER_VALIDATION_EXCEPTION</td>
       <td>在Crm导出期间出错：FIELD_FILTER_VALIDATION_EXCEPTION ：实体类型“潜在客户”：CRM错误代码：FIELD_FILTER_VALIDATION_EXCEPTION，字段：User__C，CRM ErrorMessage：值不存在或与筛选条件不匹配。 请选择角色为“Account Executive， Inside Sales”的用户；RecordId： 0123456</td>
       <td>修改后的记录不再满足对象上定义的查找过滤器。</td>
-      <td>检查Marketo Measure尝试修改的对象上的筛选器。 请参阅<a href="https://help.salesforce.com/s/articleView?id=000384756&amp;type=1">此Salesforce文章</a>，了解如何检查对象上的筛选器。</td>
+      <td>检查Marketo Measure尝试修改的对象上的筛选器。 请参阅<a href="https://help.salesforce.com/s/articleView?id=000384756&type=1">此Salesforce文章</a>，了解如何检查对象上的筛选器。</td>
     </tr>
     <tr>
       <td>FIELD_INTEGRITY_EXCEPTION</td>
@@ -130,7 +130,7 @@ Marketo Measure中的![通知面板显示错误列表和查看所有链接](asse
       <td>这种情况的最常见情况是未遵循Salesforce组织内设置的州/国家/地区命名标准，因为州/国家字段已标准化，仅接受某些选择列表值。 要解决此问题，您可以：
         <ul>
           <li>更新记录以遵循组织对该字段的接受值。 请联系您的SFDC管理员以获取已接受值的列表。</li>
-          <li><a href="https://help.salesforce.com/s/articleView?id=sf.admin_state_country_picklist_enable.htm&amp;type=5">禁用州/国家/地区选择列表</a>。
+          <li><a href="https://help.salesforce.com/s/articleView?id=sf.admin_state_country_picklist_enable.htm&type=5">禁用州/国家/地区选择列表</a>。
           </li>
         </ul>
       </td>
@@ -139,7 +139,7 @@ Marketo Measure中的![通知面板显示错误列表和查看所有链接](asse
       <td>INACTIVE_OWNER_OR_USER</td>
       <td>在Crm导出期间出错： INACTIVE_OWNER_OR_USER ：实体类型“联系人”： CRM错误代码： INACTIVE_OWNER_OR_USER， CRM错误消息：已将非活动用户[1234]作为联系人的所有者执行的操作，记录ID： 0123456</td>
       <td>Marketo Measure缺少“使用非活动所有者更新记录”权限。</td>
-      <td>向Marketo Measure授予“<a href="https://help.salesforce.com/s/articleView?id=000386699&amp;type=1">更新非活动所有者的记录</a>”权限。</td>
+      <td>向Marketo Measure授予“<a href="https://help.salesforce.com/s/articleView?id=000386699&type=1">更新非活动所有者的记录</a>”权限。</td>
     </tr>
     <tr>
       <td>UNFFECTED_ACCESS_OR_READONLY</td>
@@ -256,7 +256,7 @@ Marketo Measure中的![通知面板显示错误列表和查看所有链接](asse
       <td>要更新的记录不符合Salesforce组织中所设置的验证规则。</td>
       <td>从<a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自定义验证规则</a>中排除Marketo Measure专用用户。
       <p>
-      更新<a href="https://help.salesforce.com/s/articleView?id=sf.fields_about_field_validation.htm&amp;type=5">验证规则</a>。</td>
+      更新<a href="https://help.salesforce.com/s/articleView?id=sf.fields_about_field_validation.htm&type=5">验证规则</a>。</td>
     </tr>
     <tr>
       <td>RESTRICT_PICKLIST_VALUES_ENABLED</td>

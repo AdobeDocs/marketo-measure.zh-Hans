@@ -15,7 +15,7 @@ ht-degree: 0%
 
 下面是一个流程图，它表示[!DNL Marketo Measure]自定义对象与[!DNL Salesforce]标准对象的关系。
 
-![ 2](assets/1-2.png)
+![&#x200B; 2](assets/1-2.png)
 
 对于完整大小的图像，[单击此处](assets/bizible-object-and-field-taxonomy-graph-full.png)。
 

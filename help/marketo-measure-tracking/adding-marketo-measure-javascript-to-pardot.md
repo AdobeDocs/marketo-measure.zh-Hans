@@ -25,11 +25,11 @@ ht-degree: 0%
 
 1. 选择 **[!UICONTROL Layout Template]**。
 
-   ![ 3](assets/1-3.png)
+   ![&#x200B; 3](assets/1-3.png)
 
 1. 确定适当的布局模板，然后单击右侧的&#x200B;**[!UICONTROL Edit]**。
 
-   ![ 1](assets/2-1.png)
+   ![&#x200B; 1](assets/2-1.png)
 
 1. 将[!DNL Marketo Measure]JavaScript代码复制并粘贴到HTML页面上的关闭页眉标记之前。
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 您希望[!DNL Marketo Measure]跟踪的[!DNL Marketo Measure]JavaScript应尽快添加到所有Web资产中。 部署JavaScript后，[!DNL Marketo Measure]将开始收集您的数字数据。 本文概述了部署[!DNL Marketo Measure] JavaScript的方法以及其他注意事项。
 
 >[!NOTE]
->确保除了部署[ JavaScript之外，您还 [!DNL Adobe Admin Console]](/help/marketo-measure-and-adobe/domain-management.md){target="_blank"}声明了[!DNL Marketo Measure]中的所有相应域。
+>确保除了部署[&#x200B; JavaScript之外，您还 [!DNL Adobe Admin Console]](/help/marketo-measure-and-adobe/domain-management.md){target="_blank"}声明了[!DNL Marketo Measure]中的所有相应域。
 
 开始使用[!DNL Marketo Measure]时，可通过两种方式将[!DNL Marketo Measure] JavaScript添加到您的网站：
 

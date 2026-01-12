@@ -20,11 +20,11 @@ ht-degree: 0%
 
 1. 转到&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Report Types]**。
 
-   ![ 1](assets/1-1.jpg)
+   ![&#x200B; 1](assets/1-1.jpg)
 
 1. 选择 **[!UICONTROL New Custom Report Type]**。
 
-   ![ 1](assets/2-1.jpg)
+   ![&#x200B; 1](assets/2-1.jpg)
 
 1. 将主对象设置为“[!UICONTROL Opportunities]”。
 
@@ -32,11 +32,11 @@ ht-degree: 0%
    * 对报表类型名称使用相同的命名。 在描述输入中，“具有或不具有买方归因接触点的商机。”
    * 将报告保存在“[!UICONTROL Other]”中，并将报告设置为“[!UICONTROL Deployed]”。
 
-   ![ 1](assets/3-1.jpg)
+   ![&#x200B; 1](assets/3-1.jpg)
 
 1. 从那里，您将将Opportunities对象链接到Buyer Attribution接触点对象。 确保您选择按钮“A”记录可能具有也可能不具有相关“B”记录。 完成后单击&#x200B;**[!UICONTROL Save]**。
 
-   ![ 1](assets/4-1.jpg)
+   ![&#x200B; 1](assets/4-1.jpg)
 
 >[!MORELIKETHIS]
 >[[!DNL Marketo Measure] 教程：其他SFDC报告](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/addtional-salesforce-reports)

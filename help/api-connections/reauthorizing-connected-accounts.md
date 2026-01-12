@@ -19,7 +19,7 @@ ht-degree: 0%
 
 如果您的CRM平台断开连接，[!DNL Marketo Measure]将无法更新[!DNL Marketo Measure]数据或将任何新的接触点推送到您的组织。 重新建立CRM连接后，[!DNL Marketo Measure]将推送在帐户断开连接时丢失的任何数据。
 
-![ 1](assets/1-1.png)
+![&#x200B; 1](assets/1-1.png)
 
 ## 重新授权断开连接的帐户 {#re-authorizing-disconnected-accounts}
 

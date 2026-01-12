@@ -22,7 +22,7 @@ ht-degree: 0%
 
 _示例报告：[!DNL Marketo Measure]具有购买者接触点的人员。_
 
-![ 1](assets/1-1.png)
+![&#x200B; 1](assets/1-1.png)
 
 对于kelsey@adobe.com的[!DNL Marketo Measure]人员ID，您可以看到存在使用该电子邮件地址的销售线索和联系人。 在此报表中，报告了2次首次接触、2次商机创建接触和2次PostLC交互。 这些重复记录共享接触点日期和接触点信息，这可能会导致以下结论：尽管他们是同一个人，但他们是两个不同的人。
 
