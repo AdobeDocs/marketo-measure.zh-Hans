@@ -1,15 +1,15 @@
 ---
-unique-page-id: 18874700
 description: 启用该权限以编辑已转换的潜在客户 —  [!DNL Marketo Measure]
 title: 启用该权限以编辑已转换的潜在客户
 exl-id: 00f59d98-272e-47e8-bc20-9d805b1826be
 feature: Tracking
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
+
 
 # 启用该权限以编辑已转换的潜在客户 {#enabling-the-permission-to-edit-converted-leads}
 
@@ -17,16 +17,16 @@ ht-degree: 0%
 
 1. 转到[!UICONTROL Setup]并展开[!UICONTROL Manage Users]分组以选择配置文件。
 
-   ![](assets/1-2.png)
+   ![ 2](assets/1-2.png)
 
 1. 选择我们连接到的用户的配置文件。
 
 1. 搜索查看和编辑已转化商机的权限。
 
-   ![](assets/2-1.png)
+   ![ 1](assets/2-1.png)
 
 1. 选中方框，可启用查看和编辑已转化商机的权限。
 
-   ![](assets/3-1.png)
+   ![ 1](assets/3-1.png)
 
 你完蛋了！

@@ -1,14 +1,15 @@
 ---
-description: Data Warehouse访问 — 直接共享 — 产品文档
+description: Data Warehouse访问 — 直接共享
 title: Data Warehouse访问 — 直接共享
 exl-id: 940c3316-5f94-4aa2-a656-aec5eb7b7450
 feature: Data Warehouse
-source-git-commit: bff10626589aba8c3dfe995dabde6eac1fc7809f
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
+
 
 # Data Warehouse访问 — 直接共享 {#data-warehouse-access-direct-share}
 
@@ -28,14 +29,13 @@ ht-degree: 0%
 
 打开Marketo Measure应用程序中的&#x200B;**设置**&#x200B;部分，然后导航到&#x200B;**Data Warehouse**&#x200B;页面。 在&#x200B;**直接共享**&#x200B;分区中，在提供的框中输入您的[Snowflake帐户ID](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html){target="_blank"}，然后单击&#x200B;**连接**。
 
-![](assets/data-warehouse-access-direct-share-1.png)
+![Marketo Measure Data Warehouse设置显示Snowflake直接共享表单](assets/data-warehouse-access-direct-share-1.png)
 
 ## 访问共享 {#accessing-the-share}
 
 在为提供的帐户ID创建共享后，您必须在Snowflake实例中完成[设置步骤](https://docs.snowflake.com/en/user-guide/data-share-consumers.html){target="_blank"}才能访问数据。
 
 >[!NOTE]
->
 >您可以选择所需的任何数据库名称。 您可以将权限分配给所选的任何角色，前提是您的Snowflake实例中存在这些角色。
 
 * 使用帐户管理员角色

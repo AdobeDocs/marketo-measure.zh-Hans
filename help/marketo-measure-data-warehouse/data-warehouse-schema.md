@@ -1,32 +1,30 @@
 ---
-unique-page-id: 35586140
-description: Data Warehouse架构 — Marketo Measure — 产品文档
+description: Data Warehouse架构
 title: Data Warehouse架构
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: e9861f8032475d3e60a3bb3ebf67dfee520bbb75
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '21110'
+source-wordcount: '21106'
 ht-degree: 3%
 
 ---
 
+
 # Data Warehouse架构 {#data-warehouse-schema}
 
-Data Warehouse允许您跟踪所需数量的数据，随时随地报告归因数据，并将其插入其他数据集。
+Data Warehouse允许您根据需要进行跟踪、根据需要报告归因数据，并将其连接到其他数据集。
 
 >[!IMPORTANT]
->
->* 具有_DELETED_DATE值的行将保留7天，然后从Snowflake中删除。
->* snowflake中使用的时区遵循协调世界时(UTC)。
+> 具有_DELETED_DATE值的行将保留7天，然后从Snowflake中删除。
+> Snowflake中使用的时区遵循协调世界时(UTC)。
 
 >[!NOTE]
->
 >[单击此处](#sample-queries)查看本文底部的示例查询。
 
 ## 实体关系图 {#entity-relationship-diagrams}
 
-_Data Warehouse数据模型_ ERD显示数据仓库中的数据如何流动以及如何链接在一起。 此图不包括数据仓库中所有可用的表，因为其中某些表表示映射表、其他已存在的表的视图或我们不建议再使用的已弃用表。 请参阅下面的Data Warehouse中对表格和列的详细说明。 其中许多表包含反正规化的字段，但是，此图表是推荐的数据模型，它利用来自维表的数据。
+_Data Warehouse数据模型_ ERD显示Data Warehouse中的数据如何流动以及如何链接在一起。 此图不包括数据仓库中所有可用的表，因为其中某些表表示映射表、其他已存在的表的视图或我们不建议再使用的已弃用表。 请参阅下面的Data Warehouse中对表格和列的详细说明。 其中许多表包含反正规化的字段，但是，此图表是推荐的数据模型，它利用来自维表的数据。
 
 其他&#x200B;_广告维度数据模型_ ERD提供了如何最好地将广告特定维度的表链接回主数据模型中的表的视图。 虽然广告维度在其他表中也进行了反规范化，但这表示连接这些维度的推荐模型。
 
@@ -40,9 +38,9 @@ _单击完整版本的图像_
   </tr> 
   <tr> 
    <td><a href="assets/data-warehouse-data-model.pdf"><img src="assets/data-warehouse-data-model-thumb.png"></a></td>
-   <td><a href="assets/ads-dimensional-data-model.pdf"><img src="assets/ads-dimensional-data-model-thumb.png"></a></td> 
-  </tr> 
- </tbody> 
+   <td><a href="assets/ads-dimensional-data-model.pdf"><img src="assets/ads-dimensional-data-model-thumb.png"></a></td>
+  </tr>
+ </tbody>
 </table>
 
 ## 视图 {#views}
@@ -122,7 +120,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -134,7 +132,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -206,7 +204,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -218,7 +216,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -322,7 +320,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -334,7 +332,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -509,7 +507,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -521,7 +519,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -664,7 +662,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -676,7 +674,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -1048,7 +1046,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -1060,7 +1058,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -1282,7 +1280,7 @@ _单击完整版本的图像_
         <p>此表的主对象或实体。 在本例中，为“Campaign”。</p>
       </td>
       <td>
-        <p>Campaign</p>
+        <p>活动</p>
       </td>
     </tr>
     <tr>
@@ -1364,7 +1362,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -1376,7 +1374,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -1565,7 +1563,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -1577,7 +1575,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -1891,7 +1889,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -1903,7 +1901,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -1960,7 +1958,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -1972,7 +1970,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -2016,7 +2014,7 @@ _单击完整版本的图像_
       </td>
       <td>varchar</td>
       <td>
-        <p>BAT所属的Opportunity的ID。</p>
+        <p>BAT所归因的Opportunity的ID。</p>
       </td>
       <td>
         <p>0060Z00000lFHtOQAW</p>
@@ -2044,7 +2042,7 @@ _单击完整版本的图像_
       </td>
       <td>varchar</td>
       <td>
-        <p>BAT归属于的帐户的ID。</p>
+        <p>BAT归因的帐户的ID。</p>
       </td>
       <td>
         <p>0013100001otbIAAAY</p>
@@ -2056,7 +2054,7 @@ _单击完整版本的图像_
       </td>
       <td>varchar</td>
       <td>
-        <p>生成BAT的用户接触点的ID。</p>
+        <p>生成BAT的用户接触点ID。</p>
       </td>
       <td>
         <p>person@adobe.com_00v1B00003ZbWzHQAV</p>
@@ -2468,7 +2466,7 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>帐户名称</p>
       </td>
       <td>varchar</td>
       <td>
@@ -2624,11 +2622,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_UNIQUE_ID</p>
+        <p>Creative_UNIQUE_ID</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>从中解析广告的广告帐户中的创意ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的广告帐户中的Creative ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>aw.6601259029.317738075.23105327435.182716179597</p>
@@ -2636,11 +2634,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>Creative名称</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>从中解析广告的广告帐户中的创意内容的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的广告帐户中的Creative的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>B2B营销归因</p>
@@ -2648,11 +2646,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_1</p>
+        <p>Creative_DESCRIPTION_1</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>搜索广告中创意的第一行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从搜索广告中Creative的第一行，从解析广告的来源广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>下载CMO指南</p>
@@ -2660,11 +2658,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_2</p>
+        <p>Creative_DESCRIPTION_2</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>搜索广告中的创意内容第二行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>搜索广告中Creative的第二行，从解析广告的来源广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>了解归因如何通过将营销活动与收入关联来衡量投资回报率</p>
@@ -2672,7 +2670,7 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESTINATION_URL</p>
+        <p>Creative_DESTINATION_URL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -2684,7 +2682,7 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DISPLAY_URL</p>
+        <p>Creative_DISPLAY_URL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -3001,7 +2999,7 @@ _单击完整版本的图像_
       <td></td>
     </tr>
     <tr>
-      <td>CREATIVE_ROW_KEY</td>
+      <td>Creative_ROW_KEY</td>
       <td>数字(38,0)</td>
       <td></td>
       <td></td>
@@ -3015,7 +3013,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -3027,7 +3025,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -3068,7 +3066,7 @@ _单击完整版本的图像_
   <tr>
     <td>CONVERSION_EVENT_ID</td>
     <td>varchar</td>
-    <td>转化事件的原始MM事件ID 
+    <td>转化事件的原始MM事件ID
     <br>映射到用户接触点或阶段过渡</td>
     <td>00U0Z00000pCZmyUAG</td>
   </tr>
@@ -3427,7 +3425,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -3439,7 +3437,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -3496,7 +3494,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -3685,7 +3683,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -3697,7 +3695,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -3787,7 +3785,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -3799,7 +3797,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -3921,7 +3919,7 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>帐户名称</p>
       </td>
       <td>varchar</td>
       <td>
@@ -4061,11 +4059,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_UNIQUE_ID</p>
+        <p>Creative_UNIQUE_ID</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>从广告连接提取的创意ID。</p>
+        <p>从广告连接中提取的Creative的ID。</p>
       </td>
       <td>
         <p>aw.6601259029.285114995.51749608028.266050115160</p>
@@ -4073,11 +4071,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>Creative名称</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>从广告连接提取的创意的名称。</p>
+        <p>从广告连接中提取的Creative的名称。</p>
       </td>
       <td>
         <p>Gartner 2019魔力象限</p>
@@ -4085,13 +4083,13 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_IS_AGGREGATABLE_COST</p>
+        <p>Creative_IS_AGGREGATABLE_COST</p>
       </td>
       <td>
         <p>布尔</p>
       </td>
       <td>
-        <p>指示行是否包含可由Creative汇总的Cost。 （例如，要获取创意成本，需对此列等于true的行求和。）</p>
+        <p>指示该行是否包含可由Creative汇总的成本。 (例如，要获取Creative成本，需对此列等于true的行求和。)</p>
       </td>
       <td>
         <p>假</p>
@@ -4290,7 +4288,7 @@ _单击完整版本的图像_
       <td></td>
     </tr>
     <tr>
-      <td>CREATIVE_ROW_KEY</td>
+      <td>Creative_ROW_KEY</td>
       <td>数字(38,0)</td>
       <td></td>
       <td></td>
@@ -4312,7 +4310,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -4324,7 +4322,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -4346,7 +4344,7 @@ _单击完整版本的图像_
        <td>ID</td>
       <td>varchar</td>
       <td>
-        <p>创意的唯一ID。</p>
+        <p>Creative的唯一ID。</p>
       </td>
       <td>
         <p>ba.3284209.132855866.4556709270.10426699711</p>
@@ -4357,7 +4355,7 @@ _单击完整版本的图像_
         <p>DISPLAY_ID</p>
       </td>
       <td>varchar</td>
-      <td>源系统中的创作ID。</td>
+      <td>源系统中的Creative ID。</td>
       <td>
         <p>10426699711</p>
       </td>
@@ -4368,7 +4366,7 @@ _单击完整版本的图像_
       </td>
       <td>varchar</td>
       <td>
-        <p>从中导入创意的广告帐户的ID。</p>
+        <p>从中导入Creative的广告帐户的ID。</p>
       </td>
       <td>fb.106851586409075</td>
     </tr>
@@ -4390,7 +4388,7 @@ _单击完整版本的图像_
       </td>
       <td>varchar</td>
       <td>
-        <p>创意广告商（尤其是Doubleclick）的ID。</p>
+        <p>Creative的广告商ID，专门用于Doubleclick。</p>
       </td>
       <td>
         <p>300181641</p>
@@ -4402,7 +4400,7 @@ _单击完整版本的图像_
       </td>
       <td>varchar</td>
       <td>
-        <p>创意广告商（尤其是Doubleclick）的名称。</p>
+        <p>Creative的广告商名称，专门用于Doubleclick。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] Marketing Analytics</p>
@@ -4414,7 +4412,7 @@ _单击完整版本的图像_
       </td>
       <td>varchar</td>
       <td>
-        <p>创意的广告组ID。</p>
+        <p>Creative的广告组ID。</p>
       </td>
       <td>fb.106851586409075.6052044288804.6052044290004</td>
     </tr>
@@ -4424,7 +4422,7 @@ _单击完整版本的图像_
       </td>
       <td>varchar</td>
       <td>
-        <p>创意内容的广告组的名称。</p>
+        <p>Creative的广告组的名称。</p>
       </td>
       <td>广告B的广告集</td>
     </tr>
@@ -4434,7 +4432,7 @@ _单击完整版本的图像_
       </td>
       <td>varchar</td>
       <td>
-        <p>创意活动的营销活动ID。</p>
+        <p>Creative促销活动的ID。</p>
       </td>
       <td>
         <p>ba.3284209.132855866</p>
@@ -4446,7 +4444,7 @@ _单击完整版本的图像_
       </td>
       <td>varchar</td>
       <td>
-        <p>创意活动的名称。</p>
+        <p>Creative的促销活动名称。</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -4460,7 +4458,7 @@ _单击完整版本的图像_
         <p>布尔</p>
       </td>
       <td>
-        <p>Creative在源系统中是否仍然处于活动状态。</p>
+        <p>源系统中Creative是否仍处于活动状态。</p>
       </td>
       <td>
         <p>真</p>
@@ -4508,7 +4506,7 @@ _单击完整版本的图像_
       </td>
       <td>varchar</td>
       <td>
-        <p>源系统中创意内容的名称。</p>
+        <p>源系统中Creative的名称。</p>
       </td>
       <td>
         <p>PipelineMarketing.com</p>
@@ -4555,7 +4553,7 @@ _单击完整版本的图像_
       </td>
       <td>varchar</td>
       <td>
-        <p>创意广告提供商的名称。</p>
+        <p>Creative的广告提供商的名称。</p>
       </td>
       <td>
         <p>BingAds</p>
@@ -4613,7 +4611,7 @@ _单击完整版本的图像_
         <p>URL_SHORTED</p>
       </td>
       <td>varchar</td>
-      <td>Creative上显示的简短友好URL。 (仅用于LinkedIn Ads。)</td>
+      <td>Creative上显示的简短友好URL。 （仅用于LinkedIn广告。）</td>
       <td></td>
     </tr>
     <tr>
@@ -4622,7 +4620,7 @@ _单击完整版本的图像_
       </td>
       <td>varchar</td>
       <td>
-        <p>创意的类型，可以是文本或显示</p>
+        <p>Creative的类型，可以是文本或显示</p>
       </td>
       <td>
         <p>文本</p>
@@ -4720,7 +4718,7 @@ _单击完整版本的图像_
       </td>
       <td>varchar</td>
       <td>
-        <p>共享Id。 (仅用于LinkedIn Ads。)</p>
+        <p>共享Id。 （仅用于LinkedIn广告。）</p>
       </td>
       <td>
         <p>urn:li:共享：6376987561897848832</p>
@@ -4739,7 +4737,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -4751,7 +4749,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -4914,7 +4912,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -4926,7 +4924,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -5041,7 +5039,7 @@ _单击完整版本的图像_
         <p>源系统中的活动类型名称。</p>
       </td>
       <td>
-        <p>调用</p>
+        <p>号召</p>
       </td>
     </tr>
     <tr>
@@ -5077,7 +5075,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -5089,7 +5087,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -5178,7 +5176,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -5190,7 +5188,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -5317,7 +5315,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -5329,7 +5327,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -5428,7 +5426,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -5440,7 +5438,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -5638,7 +5636,7 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DISPLAY_ID</p>
+        <p>Creative_DISPLAY_ID</p>
       </td>
       <td>varchar</td>
       <td></td>
@@ -5663,7 +5661,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -5675,7 +5673,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -5768,7 +5766,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -5780,7 +5778,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -5791,8 +5789,7 @@ _单击完整版本的图像_
 将展示次数、页面查看次数、访问次数、表单提交次数、用户接触点、接触点(BT)、归因接触点(BAT)和成本数据结合使用。 在内部使用，以支持[!DNL Marketo Measure]报告。
 
 >[!IMPORTANT]
->
->2024年年中，Marketo Measure将弃用此表。 如果您希望在您这边创建它，请运行[此SQL查询](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.sql)。
+>2024年年中，Marketo Measure将弃用此表。 如果您希望在您这边创建它，请运行[此SQL查询](/help/data-warehouse/assets/BIZ_FACTS.sql)。
 
 <table>
   <tbody>
@@ -5952,7 +5949,7 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_KEY</p>
+        <p>Creative_KEY</p>
       </td>
       <td>
         <p>数字(38,0)</p>
@@ -6472,7 +6469,7 @@ _单击完整版本的图像_
         <p>布尔</p>
       </td>
       <td>
-        <p>指示行是否包含可由Creative汇总的Cost。 （例如，要获取创意成本，需对此列等于true的行求和。）</p>
+        <p>指示该行是否包含可由Creative汇总的成本。 (例如，要获取Creative成本，需对此列等于true的行求和。)</p>
       </td>
       <td>
         <p>假</p>
@@ -6543,7 +6540,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -6555,7 +6552,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -6664,7 +6661,7 @@ _单击完整版本的图像_
         <p>提交表单的URL，包括任何查询参数。</p>
       </td>
       <td>
-        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1H z0RrbXlDVmxJNzIwNkhW</p>
+        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1H z0RrbXlDVmxJNzIwNkhW</p>
       </td>
     </tr>
     <tr>
@@ -6812,7 +6809,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -6824,7 +6821,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -6918,7 +6915,7 @@ _单击完整版本的图像_
       <td>
         <p>提供展示的URL，包括任何查询参数。</p>
       </td>
-      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1H z0RrbXlDVmxJNzIwNkhW</td>
+      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1H z0RrbXlDVmxJNzIwNkhW</td>
     </tr>
     <tr>
       <td>
@@ -7080,7 +7077,7 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>帐户名称</p>
       </td>
       <td>varchar</td>
       <td>
@@ -7230,11 +7227,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_UNIQUE_ID</p>
+        <p>Creative_UNIQUE_ID</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
+        <p>由于展示次数的Doubleclick层次结构中没有Creative，因此预计为空。</p>
       </td>
       <td>
         <p>null</p>
@@ -7242,51 +7239,51 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>Creative名称</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
+        <p>由于展示次数的Doubleclick层次结构中没有Creative，因此预计为空。</p>
       </td>
       <td>null</td>
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_1</p>
+        <p>Creative_DESCRIPTION_1</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
+        <p>由于展示次数的Doubleclick层次结构中没有Creative，因此预计为空。</p>
       </td>
       <td>null</td>
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_2</p>
+        <p>Creative_DESCRIPTION_2</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
+        <p>由于展示次数的Doubleclick层次结构中没有Creative，因此预计为空。</p>
       </td>
       <td>null</td>
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESTINATION_URL</p>
+        <p>Creative_DESTINATION_URL</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
+        <p>由于展示次数的Doubleclick层次结构中没有Creative，因此预计为空。</p>
       </td>
       <td>null</td>
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DISPLAY_URL</p>
+        <p>Creative_DISPLAY_URL</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>预期为空，因为展示次数的Doubleclick层次结构中没有Creative。</p>
+        <p>由于展示次数的Doubleclick层次结构中没有Creative，因此预计为空。</p>
       </td>
       <td>null</td>
     </tr>
@@ -7439,7 +7436,7 @@ _单击完整版本的图像_
       <td></td>
     </tr>
     <tr>
-      <td>CREATIVE_ROW_KEY</td>
+      <td>Creative_ROW_KEY</td>
       <td>数字(38,0)</td>
       <td></td>
       <td></td>
@@ -7453,7 +7450,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -7465,7 +7462,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -7818,7 +7815,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -7830,7 +7827,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -8037,7 +8034,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -8049,7 +8046,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -8330,7 +8327,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -8342,7 +8339,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -8571,7 +8568,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -8583,7 +8580,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -8724,7 +8721,7 @@ _单击完整版本的图像_
       <td>varchar</td>
       <td>
         <p>已转换为此Opportunity的相关商机的ID。</p>
-        <p>请注意，未设置此字段，并且为所有客户的Snowflake返回null。</p>
+        <p>请注意，未设置此字段，并在Snowflake为所有客户返回空值。</p>
       </td>
       <td>
         <p>null</p>
@@ -8737,7 +8734,7 @@ _单击完整版本的图像_
       <td>varchar</td>
       <td>
         <p>已转换为此Opportunity的相关Lead的电子邮件。</p>
-        <p>请注意，未设置此字段，并且为所有客户的Snowflake返回null。</p>
+        <p>请注意，未设置此字段，并在Snowflake为所有客户返回空值。</p>
       </td>
       <td>
         <p>null</p>
@@ -8852,7 +8849,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -8864,7 +8861,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -9112,7 +9109,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -9124,7 +9121,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -9333,7 +9330,7 @@ _单击完整版本的图像_
         <p>页面查看源自的URL，包括任何查询参数。</p>
       </td>
       <td>
-        <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution?utm_source=linkedin&utm_medium=Social&utm_campaign=SU%20-%20CMO%20JT&utm_content=CMOs%20Guide&utm_term=lisu05091601</p>
+        <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU%20-%20CMO%20JT&amp;utm_content=CMOs%20Guide&amp;utm_term=lisu05091601</p>
       </td>
     </tr>
     <tr>
@@ -9393,7 +9390,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -9405,7 +9402,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -9602,7 +9599,7 @@ _单击完整版本的图像_
       <td>
         <p>此表的主对象或实体。 在本例中，为“版面”。</p>
       </td>
-      <td>投放位置</td>
+      <td>投放</td>
     </tr>
     <tr>
       <td>
@@ -9629,19 +9626,19 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Snowflake的记录创建日期</td>
+      <td>Snowflake记录的创建日期</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
-      <td>Snowflake的记录修改日期</td>
+      <td>Snowflake记录的修改日期</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>如果记录已删除，则为记录的Snowflake删除日期</td>
+      <td>Snowflake的记录删除日期（如果已删除）</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -9698,7 +9695,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -9710,7 +9707,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -9777,7 +9774,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -9789,7 +9786,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -9888,7 +9885,7 @@ _单击完整版本的图像_
         <p>网页的名称。</p>
       </td>
       <td>
-        <p>SalesforceGoogle Analytics | [!DNL Marketo Measure]</p>
+        <p>Salesforce Google Analytics | [!DNL Marketo Measure]</p>
       </td>
     </tr>
     <tr>
@@ -9912,7 +9909,7 @@ _单击完整版本的图像_
         <p>会话的第一次页面查看的URL，包括任何查询参数。</p>
       </td>
       <td>
-        <p>http://www.adobe.com/salesforce-google-analytics?_bt=83558988035&_bk=google%20analytics%20salesforce&_bm= p&amp;gclid=CMvd5YTLo84CFUI9gQodd-kLEQ</p>
+        <p>http://www.adobe.com/salesforce-google-analytics?_bt=83558988035&amp;_bk=google%20analytics%20salesforce&amp;_bm= p&amp;gclid=CMvd5YTLo84CFUI9gQodd-kLEQ</p>
       </td>
     </tr>
     <tr>
@@ -10069,7 +10066,7 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>帐户名称</p>
       </td>
       <td>varchar</td>
       <td>
@@ -10196,7 +10193,7 @@ _单击完整版本的图像_
         <p>从中解析广告的广告组的名称。 这仅适用于Google Adwords。</p>
       </td>
       <td>
-        <p>Salesforce -Google Analytics</p>
+        <p>SALESFORCE - GOOGLE ANALYTICS</p>
       </td>
     </tr>
     <tr>
@@ -10221,11 +10218,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_UNIQUE_ID</p>
+        <p>Creative_UNIQUE_ID</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>从中解析广告的创意的ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的Creative的ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>aw.6601259029.321586235.23182235435.83558988035</p>
@@ -10233,11 +10230,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>Creative名称</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>从中解析广告的创意内容的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的Creative的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>集成GA和Salesforce</p>
@@ -10245,11 +10242,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_1</p>
+        <p>Creative_DESCRIPTION_1</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>搜索广告中创意的第一行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从搜索广告中Creative的第一行，从解析广告的来源广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>将Salesforce与Analytics集成到</p>
@@ -10257,11 +10254,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_2</p>
+        <p>Creative_DESCRIPTION_2</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>搜索广告中的创意内容第二行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>搜索广告中Creative的第二行，从解析广告的来源广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>针对收入进行优化。 了解如何操作。</p>
@@ -10269,7 +10266,7 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESTINATION_URL</p>
+        <p>Creative_DESTINATION_URL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -10281,7 +10278,7 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DISPLAY_URL</p>
+        <p>Creative_DISPLAY_URL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -10522,7 +10519,7 @@ _单击完整版本的图像_
       <td></td>
     </tr>
     <tr>
-      <td>CREATIVE_ROW_KEY</td>
+      <td>Creative_ROW_KEY</td>
       <td>数字(38,0)</td>
       <td></td>
       <td></td>
@@ -10536,7 +10533,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -10548,7 +10545,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -10778,7 +10775,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -10790,7 +10787,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -11067,19 +11064,19 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>Snowflake的记录创建日期</td>
+      <td>Snowflake记录的创建日期</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>修改日期(_M)</td>
       <td>timestamp_ntz</td>
-      <td>Snowflake的记录修改日期</td>
+      <td>Snowflake记录的修改日期</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>如果记录已删除，则为记录的Snowflake删除日期</td>
+      <td>Snowflake的记录删除日期（如果已删除）</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -11250,7 +11247,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -11262,7 +11259,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -11336,7 +11333,7 @@ _单击完整版本的图像_
       </td>
       <td>varchar</td>
       <td>
-        <p>与BT关联的潜在客户的ID。</p>
+        <p>与BT关联的商机的ID。</p>
       </td>
       <td>
         <p>00Q0Z000013e2PYUAY</p>
@@ -11360,7 +11357,7 @@ _单击完整版本的图像_
       </td>
       <td>varchar</td>
       <td>
-        <p>生成BT的用户接触点的ID。</p>
+        <p>生成BT的用户接触点ID。</p>
       </td>
       <td>
         <p>person@adobe.com_2018-08-29:18-14-53-8102030.10df92cbb414</p>
@@ -11613,7 +11610,7 @@ _单击完整版本的图像_
         <p>生成接触点的会话的第一个登陆页面。 原始登陆页面将包含URL中的所有查询参数。 在CRM中称为“Landing Page - Raw”。</p>
       </td>
       <td>
-        <p>https://info.adpbe.com/definitive-guide-to-pipeline-marketing?utm_source=linkedin&utm_medium=Social&utm_campaign=SU_COM_Demand_ Skills&amp;utm_content=DGPM&amp;utm_term=lisu03151846&amp;_bl=66452504</p>
+        <p>https://info.adpbe.com/definitive-guide-to-pipeline-marketing?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU_COM_Demand_ Skills&amp;utm_content=DGPM&amp;utm_term=lisu03151846&amp;_bl=66452504</p>
       </td>
     </tr>
     <tr>
@@ -11766,7 +11763,7 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>帐户名称</p>
       </td>
       <td>varchar</td>
       <td>
@@ -11914,11 +11911,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_UNIQUE_ID</p>
+        <p>Creative_UNIQUE_ID</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>从中解析广告的广告帐户中的创意ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的广告帐户中的Creative ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>li.502664737.138949954.66452504</p>
@@ -11926,11 +11923,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>Creative名称</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>从中解析广告的广告帐户中的创意内容的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的广告帐户中的Creative的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>辘辘市03151846</p>
@@ -11938,11 +11935,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_1</p>
+        <p>Creative_DESCRIPTION_1</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>搜索广告中创意的第一行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从搜索广告中Creative的第一行，从解析广告的来源广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>潜在客户生成已完成</p>
@@ -11950,11 +11947,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_2</p>
+        <p>Creative_DESCRIPTION_2</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>搜索广告中的创意内容第二行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>搜索广告中Creative的第二行，从解析广告的来源广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>下载管道营销的最终指南：https://lnkd.in/e9xYj5M</p>
@@ -11962,7 +11959,7 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESTINATION_URL</p>
+        <p>Creative_DESTINATION_URL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -11974,7 +11971,7 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DISPLAY_URL</p>
+        <p>Creative_DISPLAY_URL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -12160,7 +12157,7 @@ _单击完整版本的图像_
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>分配给此接触点的计算百分比，因为该接触点属于W型触点（请参阅Is_First_Touch、Is_Lead_Creation_Touch和Is_Opp_Creation_Touch）。 应为0，因为这是BT。</p>
+        <p>分配给此接触点的计算百分比，因为该接触点属于W型触点（请参阅Is_First_Touch、Is_Lead_Creation_Touch和Is_Opp_Creation_Touch）。 预期为0，因为这是BT。</p>
       </td>
       <td>
         <p>0</p>
@@ -12174,7 +12171,7 @@ _单击完整版本的图像_
         <p>数字(22,19)</p>
       </td>
       <td>
-        <p>由于此接触点是完整路径模型的一部分，因此分配给此接触点的计算百分比（请参阅Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch和Is_Closed_Touch）。 应为0，因为这是BT。</p>
+        <p>由于此接触点是完整路径模型的一部分，因此分配给此接触点的计算百分比（请参阅Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch和Is_Closed_Touch）。 预期为0，因为这是BT。</p>
       </td>
       <td>
         <p>0</p>
@@ -12183,7 +12180,7 @@ _单击完整版本的图像_
     <tr>
       <td>CUSTOM_MODEL_CENTAGE</td>
       <td>数字(22,19)</td>
-      <td>由于此接触点是自定义模型的一部分，因此分配给此接触点的计算百分比（请参阅Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch和Is_Closed_Touch）。 应为0，因为这是BT。</p>
+      <td>由于此接触点是自定义模型的一部分，因此分配给此接触点的计算百分比（请参阅Is_First_Touch、Is_Lead_Creation_Touch、Is_Opp_Creation_Touch和Is_Closed_Touch）。 预期为0，因为这是BT。</p>
       </td>
       <td>0</td>
     </tr>
@@ -12296,7 +12293,7 @@ _单击完整版本的图像_
       <td></td>
     </tr>
     <tr>
-      <td>CREATIVE_ROW_KEY</td>
+      <td>Creative_ROW_KEY</td>
       <td>数字(38,0)</td>
       <td></td>
       <td></td>
@@ -12310,7 +12307,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -12322,7 +12319,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -12385,7 +12382,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -12397,7 +12394,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -12628,7 +12625,7 @@ _单击完整版本的图像_
         <p>生成接触点的会话的第一个登陆页面。 原始登陆页面将包含URL中的所有查询参数。 在CRM中称为“Landing Page - Raw”。</p>
       </td>
       <td>
-        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ marketo+%maeasure%27s+Pipeline+Marketing+Blog%29</p>
+        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ marketo+%maeasure%27s+Pipeline+Marketing+Blog%29</p>
       </td>
     </tr>
     <tr>
@@ -12676,7 +12673,7 @@ _单击完整版本的图像_
         <p>会话中记录的第一张表单产生了接触点。 后续表单提交不会显示在Attribution_Touchpoints表中，而是显示在Form_Submit表中。 原始表单页面URL中可能包含查询参数。 在CRM中称为“表单URL — 原始”。</p>
       </td>
       <td>
-        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&utm_medium=paid&utm_content=sfskill&utm _campaign=Content%20-%20AdWords%20Guide</p>
+        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&amp;utm_medium=paid&amp;utm_content=sfskill&amp;utm _campaign=Content%20-%20AdWords%20Guide</p>
       </td>
     </tr>
     <tr>
@@ -12789,7 +12786,7 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>ACCOUNT_NAME</p>
+        <p>帐户名称</p>
       </td>
       <td>varchar</td>
       <td>
@@ -12941,11 +12938,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_UNIQUE_ID</p>
+        <p>Creative_UNIQUE_ID</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>从中解析广告的广告帐户中的创意ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的广告帐户中的Creative ID。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>aw.6601259029.208548635.16750166675.195329631298</p>
@@ -12953,11 +12950,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_NAME</p>
+        <p>Creative名称</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>从中解析广告的广告帐户中的创意内容的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从中解析广告的广告帐户中的Creative的名称。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>[!DNL Marketo Measure] 官方网站</p>
@@ -12965,11 +12962,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_1</p>
+        <p>Creative_DESCRIPTION_1</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>搜索广告中创意的第一行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>从搜索广告中Creative的第一行，从解析广告的来源广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>收入规划和归因</p>
@@ -12977,11 +12974,11 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESCRIPTION_2</p>
+        <p>Creative_DESCRIPTION_2</p>
       </td>
       <td>varchar</td>
       <td>
-        <p>搜索广告中的创意内容第二行，从广告解析所在的广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
+        <p>搜索广告中Creative的第二行，从解析广告的来源广告帐户中提取。 这适用于Google AdWords和Bing Ads（搜索）。</p>
       </td>
       <td>
         <p>了解为什么250多家公司选择[!DNL Marketo Measure]作为营销归因。 获取演示！</p>
@@ -12989,7 +12986,7 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DESTINATION_URL</p>
+        <p>Creative_DESTINATION_URL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -13001,7 +12998,7 @@ _单击完整版本的图像_
     </tr>
     <tr>
       <td>
-        <p>CREATIVE_DISPLAY_URL</p>
+        <p>Creative_DISPLAY_URL</p>
       </td>
       <td>varchar</td>
       <td>
@@ -13156,7 +13153,7 @@ _单击完整版本的图像_
       <td></td>
     </tr>
     <tr>
-      <td>CREATIVE_ROW_KEY</td>
+      <td>Creative_ROW_KEY</td>
       <td>数字(38,0)</td>
       <td></td>
       <td></td>
@@ -13170,7 +13167,7 @@ _单击完整版本的图像_
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -13182,7 +13179,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -13190,7 +13187,7 @@ _单击完整版本的图像_
 
 ### BIZ_WEB_HOST_MAPPINGS {#biz-web-host-mappings}
 
-映射表以将[!DNL Marketo Measure]会话ID映射到AdobeECID和Munckin ID。
+映射表以将[!DNL Marketo Measure]会话ID映射到Adobe ECID和Munckin ID。
 
 <table>
   <tbody>
@@ -13265,7 +13262,7 @@ _单击完整版本的图像_
       <td>varchar</td>
       <td>页面查看的URL，包括任何查询参数。</td>
       <td>
-        <p>https://learn.atest.com/simplify-retention-starter-kit.html?x=nGfrBF&utm_medium=cpc&utm_source=intensify</p>
+        <p>https://learn.atest.com/simplify-retention-starter-kit.html?x=nGfrBF&amp;utm_medium=cpc&amp;utm_source=intensify</p>
       </td>
     </tr>
     <tr>
@@ -13320,7 +13317,7 @@ _单击完整版本的图像_
       <td>MAPPING_TYPE</td>
       <td>varchar</td>
       <td>映射到[!DNL Marketo Measure] Cookie Id的ID类型。</td>
-      <td>Adobe_组织ID_Ecid</td>
+      <td>Adobe_OrgId_Ecid</td>
     </tr>
     <tr>
       <td>MAPPING_ORD_ID</td>
@@ -13331,13 +13328,13 @@ _单击完整版本的图像_
     <tr>
       <td>MAPPING_COOKIE_ID</td>
       <td>varchar</td>
-      <td>给定组织ID的ECIDAdobe。</td>
+      <td>给定组织ID的Adobe ECID。</td>
       <td>09860926390077352923264316157493772857</td>
     </tr>
     <tr>
       <td>_CREATED_DATE</td>
       <td>timestamp_ntz</td>
-      <td>以Snowflake创建记录的日期。</td>
+      <td>在Snowflake中创建记录的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
     <tr>
@@ -13349,7 +13346,7 @@ _单击完整版本的图像_
     <tr>
       <td>_DELETED_日期</td>
       <td>timestamp_ntz</td>
-      <td>在Snowflake中标记为已删除记录的日期。</td>
+      <td>在Snowflake中将记录标记为已删除的日期。</td>
       <td>2020-01-01 01:01:00.000</td>
     </tr>
   </tbody>
@@ -13361,7 +13358,7 @@ _单击完整版本的图像_
 
 ```
 --Note: This query can quickly be modified to show Buyer Attribution Touchpoint (BAT) counts by switching the biz_touchpoints table to the biz_attribution_touchpoints table.
- 
+
 select trim(split(ch.name,'.')[0])  as channel
       ,trim(split(ch.name,'.')[1])  as subchannel
       ,count(bt.id)                 as buyer_touchpoint_count
@@ -13383,7 +13380,7 @@ group by 1,2
 
 ```
 --Note: This query does not perform any currency conversion.  If your data contains multiple currencies, you will need to add in logic to perform the conversion to the desired currency using the biz_conversion_rates table.
- 
+
 select trim(split(ch.name,'.')[0])  as channel
       ,sum(opp.amount*(bat.full_path_percentage/100))   as attributed_revenue
   from biz_user_touchpoints         ut
@@ -13450,7 +13447,6 @@ order by 1
 **显示单个商机的所有买方归因接触点(BAT)及其归因收入。**
 
 >[!NOTE]
->
 >此查询返回w形状模型的归因收入。 通过更新已归因收入计算中的字段更改模型。
 
 ```

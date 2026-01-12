@@ -1,15 +1,15 @@
 ---
-unique-page-id: 37356027
 description: '[!DNL Marketo Measure] CRM无包集成 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] CRM无包集成'
 exl-id: a4f31d82-63ec-4bb2-bc8b-d3495e61af4f
 feature: Integration
-source-git-commit: 1a274c83814f4d729053bb36548ee544b973dff5
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
 
 ---
+
 
 # [!DNL Marketo Measure] CRM无包集成 {#marketo-measure-crm-packageless-integration}
 
@@ -31,12 +31,11 @@ ht-degree: 0%
 
 在以下指南中，跳过安装[!DNL Salesforce]包或[!DNL Microsoft Dynamics]托管解决方案的步骤，仅按照权限和集成说明进行操作。
 
-[!DNL Salesforce]客户单击[此处](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-package-installation-and-set-up.md)。
+[!DNL Salesforce]客户单击[此处](/help/configuration-and-setup/marketo-measure-and-salesforce/install-set-up.md)。
 
-[!DNL Microsoft Dynamics]客户单击[此处](/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/microsoft-dynamics-crm-installation-guide.md)。
+[!DNL Microsoft Dynamics]客户单击[此处](/help/marketo-measure-and-dynamics/microsoft-dynamics-crm-installation-guide.md)。
 
 完成这些步骤后，集成应该可以正常运行。 如果您遇到任何问题，请联系您的[!DNL Marketo Measure]代表或[Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。
 
 >[!NOTE]
->
 >如果您从[!DNL Marketo Measure] CRM无包集成开始，则以后可以安装Salesforce包或Microsoft Dynamics托管解决方案。

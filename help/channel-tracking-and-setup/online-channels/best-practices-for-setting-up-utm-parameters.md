@@ -1,15 +1,15 @@
 ---
-unique-page-id: 18874732
 description: 设置UTM参数的最佳实践 —  [!DNL Marketo Measure]
 title: 设置UTM参数的最佳实践
 exl-id: 56019f41-b6ba-48c1-9bef-2a5f56d2d5f4
 feature: UTM Parameters
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
 
 ---
+
 
 # 设置UTM参数的最佳实践 {#best-practices-for-setting-up-utm-parameters}
 

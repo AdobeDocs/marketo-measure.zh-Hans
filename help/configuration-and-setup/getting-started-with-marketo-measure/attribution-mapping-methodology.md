@@ -1,15 +1,15 @@
 ---
-unique-page-id: 18874716
 description: 归因映射方法 —  [!DNL Marketo Measure]
 title: 归因映射方法
 exl-id: 4d54dd20-9a82-4b87-8908-ced2bd9c0f2f
 feature: Attribution
-source-git-commit: 90d0d6481e5b338d08a56f555ca3addea8bdd304
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
+
 
 # 归因映射方法 {#attribution-mapping-methodology}
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 [!DNL Marketo Measure]开箱即用地提供帐户ID映射。 这意味着[!DNL Marketo Measure]查看客户及其联系人营销信息以创建与机会关联的归因接触点。 下面简单介绍了该过程。
 
-![](assets/1-1.png)
+![ 1](assets/1-1.png)
 
 请记住，并非您联系人中的&#x200B;**所有**&#x200B;接触点都会作为归因接触点推送到Opportunity中。 Opportunity的时间线（其首次接触日期 — 结束日期）确定接触点是否计为Opportunity的影响因素。 因此，如果联系A上的某个接触点在商机结束之后发生成功/失败，[!DNL Marketo Measure]不会将该接触点推送到商机。 所有其他归因对象映射均会遵循此时间线过程。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 当大多数客户端使用帐户ID映射时，[!DNL Marketo Measure]可以查找机会中的联系人角色（与机会关联的联系人）以细分归因过程。 这意味着[!DNL Marketo Measure]将仅作为买方归因接触点推送与商机上的联系人角色关联的营销交互。 以下是此过程的演示。
 
-![](assets/2-1.png)
+![ 1](assets/2-1.png)
 
 优点：如果您的团队具有明确定义的联系人角色流程，则此类型的归因映射可能非常适合您。 它有助于更好地协调销售和营销，因为每个人都将充分了解归因的划分方式。 当组织面向一家大公司内的多个业务部门以及同时销售不同产品时，此过程也很有用。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 除了简单地查看商机的联系人角色之外，[!DNL Marketo Measure]还可以更专注地查看商机的主要联系人。 考虑到此设置，[!DNL Marketo Measure]只获取与商机上的主要联系人关联的营销接触点，并将该信息推入该特定商机的归因故事中。 请参阅下图。
 
-![](assets/3.png)
+![仅使用主要联系人角色的归因映射关系图](assets/3.png)
 
 优点：如果您的团队只想了解对业务机会中设置为“主要”的联系人的营销影响，则此类映射最适合您的团队。
 

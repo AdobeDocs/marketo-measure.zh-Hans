@@ -3,12 +3,13 @@ description: 错误通知 —  [!DNL Marketo Measure]
 title: 错误通知
 feature: Fundamentals
 exl-id: ed07eed6-ddeb-4856-a1ac-ea3d571283f6
-source-git-commit: 20f886a0c6f448956ad2fda2d21a25f8d9a5a6af
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1704'
 ht-degree: 0%
 
 ---
+
 
 # 错误通知 {#error-notifications}
 
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 若要在[!DNL Marketo Measure]中查看完整的通知消息，请单击“通知”选项卡底部的&#x200B;**查看全部**。
 
-![](assets/error-notifications-1.png)
+Marketo Measure中的![通知面板显示错误列表和查看所有链接](assets/error-notifications-1.png)
 
 <table>
   <tbody>
@@ -30,7 +31,7 @@ ht-degree: 0%
       <td>API已禁用</td>
       <td>Crm导入期间出错： API_DISABLED ：已为此用户禁用API调用</td>
       <td>已为Marketo Measure用户禁用API权限。</td>
-      <td>请参阅以下Salesforce文档，了解如何启用<a href="https://help.salesforce.com/s/articleView?language=en_US&id=sf.branded_apps_commun_api_permset.htm&type=5">的API访问</a>。</td>
+      <td>请参阅以下Salesforce文档，了解如何启用<a href="https://help.salesforce.com/s/articleView?language=en_US&amp;id=sf.branded_apps_commun_api_permset.htm&amp;type=5">API访问</a>。</td>
     </tr>
     <tr>
       <td>API_LIMIT_EXCEEDED</td>
@@ -59,17 +60,17 @@ ht-degree: 0%
     </tr>
     <tr>
       <td>CANNOT_EXECUTE_FLOW_TRIGGER</td>
-      <td>Crm导出期间出错： CANNOT_EXECUTE_FLOW_TRIGGER ：实体类型“Contact”为Salesforce管理员提供这些详细信息。
+      <td>Crm导出期间出错： CANNOT_EXECUTE_FLOW_TRIGGER ：实体类型“Contact”为您的Salesforce管理员提供这些详细信息。
 超出限制
 您或您的组织已超出此功能的最大限制。 错误ID：123456</td>
-      <td>无法保存记录，因为它不符合Salesforce组织中设置的触发器流规则。</td>
-      <td>查看通知消息的完整详细信息，并在Salesforce组织中查看流量触发器。
-可以在此处</a>找到有关流触发器<a href="https://admin.salesforce.com/blog/2023/what-is-a-record-triggered-flow#:~:text=A%20record%2Dtriggered%20flow%20allows,is%20created%20and%2For%20updated">的Salesforce文档。
+      <td>无法保存记录，因为它不符合Salesforce组织中设置的触发流程规则。</td>
+      <td>查看通知消息的完整详细信息，并查看Salesforce组织中的流量触发器。
+可以在此处<a href="https://admin.salesforce.com/blog/2023/what-is-a-record-triggered-flow#:~:text=A%20record%2Dtriggered%20flow%20allows,is%20created%20and%2For%20updated">找到有关流触发器</a>的Salesforce文档。
       </td>
     </tr>
     <tr>
       <td>CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY</td>
-      <td>在Crm导出期间出错：CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY ：实体类型“潜在客户”：CRM错误代码：CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY，CRM错误消息：System.LimitException：超出顶级CPU时间限制，记录ID：0123456
+      <td>在Crm导出期间出错：CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY ：实体类型“潜在客户”：CRM错误代码：CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY，CRM错误消息：System.LimitException：超出Apex CPU时间限制，记录ID：0123456
       <p>
       在Crm导出期间出错： CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY ：实体类型“帐户”： CRM错误代码： CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY， CRM错误消息：无法更新实体类型：帐户，记录ID： 0123456</td>
       <td>触发器阻止更新或插入对象。
@@ -79,7 +80,7 @@ ht-degree: 0%
       缺少对象的权限。</td>
       <td>查看导致插入/更新失败的触发器代码。 有关触发器的更多详细信息，请参阅以下Salesforce文档：
         <ul>
-          <li><a href="https://help.salesforce.com/s/articleView?id=sf.code_manage_triggers.htm&type=5">Apex触发器</a>
+          <li><a href="https://help.salesforce.com/s/articleView?id=sf.code_manage_triggers.htm&amp;type=5">Apex触发器</a>
           </li>
           <li><a href="https://admin.salesforce.com/blog/2023/what-is-a-record-triggered-flow#:~:text=A%20record%2Dtriggered%20flow%20allows,is%20created%20and%2For%20updated">流触发器</a>
           </li>
@@ -91,8 +92,8 @@ ht-degree: 0%
     <tr>
       <td>DUPLICATES_DETECTED</td>
       <td>在Crm导出期间出错： DUPLICATES_DETECTED ：实体类型“Contact”： CRM错误代码： DUPLICATES_DETECTED， CRM错误消息：您正在创建重复记录。 我们建议您改用现有记录。，RecordId： 0123456</td>
-      <td>要导入到Salesforce组织的记录已存在。</td>
-      <td><a href="https://help.salesforce.com/s/articleView?id=000390009&type=1">禁用“重复规则”设置</a>以允许重复项。
+      <td>正在导入到Salesforce组织的记录已存在。</td>
+      <td><a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">禁用“重复规则”设置</a>以允许重复项。
           <p>
           从<a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自定义验证规则</a>中排除Marketo Measure专用用户。</td>
     </tr>
@@ -100,7 +101,7 @@ ht-degree: 0%
       <td>DUPLICATE_VALUE</td>
       <td>在Crm导出期间出错： DUPLICATE_VALUE ：实体类型“潜在客户”： CRM错误代码： DUPLICATE_VALUE， CRM错误消息：发现重复值： Email_Unique__c重复记录ID为123、记录ID为456的值</td>
       <td>要导入到Salesforce组织的字段不允许存在重复值。</td>
-      <td>在Salesforce中取消选中<a href="https://help.salesforce.com/s/articleView?id=000390009&type=1">“唯一复选框”</a>。
+      <td>在Salesforce中取消选中<a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">“唯一复选框”</a>。
           <p>
           从<a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自定义验证规则</a>中排除Marketo Measure专用用户。</td>
     </tr>
@@ -120,16 +121,16 @@ ht-degree: 0%
       <td>FIELD_FILTER_VALIDATION_EXCEPTION</td>
       <td>在Crm导出期间出错：FIELD_FILTER_VALIDATION_EXCEPTION ：实体类型“潜在客户”：CRM错误代码：FIELD_FILTER_VALIDATION_EXCEPTION，字段：User__C，CRM ErrorMessage：值不存在或与筛选条件不匹配。 请选择角色为“Account Executive， Inside Sales”的用户；RecordId： 0123456</td>
       <td>修改后的记录不再满足对象上定义的查找过滤器。</td>
-      <td>检查Marketo Measure尝试修改的对象上的筛选器。 请参阅<a href="https://help.salesforce.com/s/articleView?id=000384756&type=1">此Salesforce文章</a>，了解如何检查对象上的筛选器。</td>
+      <td>检查Marketo Measure尝试修改的对象上的筛选器。 请参阅<a href="https://help.salesforce.com/s/articleView?id=000384756&amp;type=1">此Salesforce文章</a>，了解如何检查对象上的筛选器。</td>
     </tr>
     <tr>
       <td>FIELD_INTEGRITY_EXCEPTION</td>
       <td>在Crm导出期间出错： FIELD_INTEGRITY_EXCEPTION ：实体类型“潜在客户”： CRM错误代码： FIELD_INTEGRITY_EXCEPTION，字段：国家/地区， CRM错误消息：该国家/地区存在问题，即使它看起来可能正确也是如此。 请从有效国家/地区列表中选择国家/地区。：国家/地区，记录ID：0123456</td>
       <td>记录的预期类型不匹配。</td>
-      <td>这种情况的最常见情况不是遵循Salesforce组织中设置的州/国家/地区命名标准，因为“州/国家/地区”字段已经标准化，仅接受某些选择列表值。 要解决此问题，您可以：
+      <td>这种情况的最常见情况是未遵循Salesforce组织内设置的州/国家/地区命名标准，因为州/国家字段已标准化，仅接受某些选择列表值。 要解决此问题，您可以：
         <ul>
-          <li>更新记录以遵循组织对该字段的接受值。 请与SFDC管理员联系以获取接受值的列表。</li>
-          <li><a href="https://help.salesforce.com/s/articleView?id=sf.admin_state_country_picklist_enable.htm&type=5">禁用州/国家/地区选择列表</a>。
+          <li>更新记录以遵循组织对该字段的接受值。 请联系您的SFDC管理员以获取已接受值的列表。</li>
+          <li><a href="https://help.salesforce.com/s/articleView?id=sf.admin_state_country_picklist_enable.htm&amp;type=5">禁用州/国家/地区选择列表</a>。
           </li>
         </ul>
       </td>
@@ -138,17 +139,17 @@ ht-degree: 0%
       <td>INACTIVE_OWNER_OR_USER</td>
       <td>在Crm导出期间出错： INACTIVE_OWNER_OR_USER ：实体类型“联系人”： CRM错误代码： INACTIVE_OWNER_OR_USER， CRM错误消息：已将非活动用户[1234]作为联系人的所有者执行的操作，记录ID： 0123456</td>
       <td>Marketo Measure缺少“使用非活动所有者更新记录”权限。</td>
-      <td>向Marketo Measure授予“<a href="https://help.salesforce.com/s/articleView?id=000386699&type=1">更新非活动所有者的记录</a>”权限。</td>
+      <td>向Marketo Measure授予“<a href="https://help.salesforce.com/s/articleView?id=000386699&amp;type=1">更新非活动所有者的记录</a>”权限。</td>
     </tr>
     <tr>
       <td>UNFFECTED_ACCESS_OR_READONLY</td>
       <td>在Crm导出期间出错： UNSUPPORTED_ACCESS_OR_READONLY ：实体类型“Account”： CRM错误代码： UNSUPPORTED_ACCESS_OR_READONLY， CRM错误消息：对象ID的访问权限不足：[123]，记录ID： 456</td>
       <td>Marketo Measure缺少对象/字段的权限，或者该对象为只读。</td>
-      <td>有关Marketo Measure所需的权限的指导，请参阅以下<a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">Experience League文章</a>。</td>
+      <td>有关Experience League所需权限的指导，请参阅以下<a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">Marketo Measure文章</a>。</td>
     </tr>
     <tr>
       <td>INVALID_ADOBE_ANALYTICS_CONFIGURATION</td>
-      <td>Adobe Analytics导出期间出错： INVALID_ANALYTICS_CONFIGURATION_INVALID_ADOBE：错误：不允许上传。 在上载之前确认数据源架构。 数据源Id：1234</td>
+      <td>Adobe Analytics导出期间出错： INVALID_ADOBE_ANALYTICS_CONFIGURATION ：错误：不允许上传。 在上载之前确认数据源架构。 数据源Id：1234</td>
       <td>Adobe Analytics集成配置不正确。</td>
       <td>请参阅以下帮助文章以确保正确配置：
         <ul>
@@ -156,7 +157,7 @@ ht-degree: 0%
             <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md">Marketo Measure与Adobe Analytics的集成</a>
           </li>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html?lang=zh-Hans">创建客户属性源并上传数据文件</a>
+            <a href="https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html">创建客户属性来源并上传数据文件</a>
           </li>
         </ul>
       </td>
@@ -173,7 +174,7 @@ ht-degree: 0%
       <td>MISSING_BIZIBLE_CUSTOM_FIELDS_PERMISSIONS</td>
       <td>在Crm导出期间出错： MISSING_BIZIBLE_CUSTOM_FIELDS_PERMISSIONS ：实体类型“Campaign”： CRM错误代码： INVALID_FIELD_FOR_INSERT_UPDATE，字段： bizible2__UniqueId__c， CRM错误消息：无法创建/更新字段： bizible2__UniqueId__c。请检查此字段的安全设置，并验证是否为配置文件或权限集的读/写。</td>
       <td>Marketo Measure缺少bizible字段的权限。</td>
-      <td>我们需要对以“bizible2__”为前缀的所有字段具有读写权限。 这些字段的完整列表可在本文</a>中找到<a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">。</td>
+      <td>我们需要对以“bizible2__”为前缀的所有字段具有读写权限。 这些字段的完整列表可在本文<a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">中找到</a>。</td>
     </tr>
     <tr>
       <td>MISSING_CONVERTED_LEAD_PERMISSION</td>
@@ -189,7 +190,7 @@ ht-degree: 0%
       <td>Marketo Measure缺少对必填字段的读取权限。</td>
       <td>有关Marketo Measure所需的权限的指导，请参阅以下帮助文章：
         <ul>
-          <li><a href="/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/marketo-measure-dynamics-schema.md">动态</a>
+          <li><a href="/help/marketo-measure-and-dynamics/marketo-measure-dynamics-schema.md">动态</a>
           </li>
           <li><a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">Salesforce</a>
           </li>
@@ -199,8 +200,8 @@ ht-degree: 0%
     <tr>
       <td>MISSING_ISREPLICATEABLE_PERMISSION</td>
       <td>Crm导入期间出错： MISSING_ISREPLICATEABLE_PERMISSION ：我们缺少Campaign的IsReplicateable权限</td>
-      <td>我们需要在Salesforce对象上获得此权限，我们才能使您的Marketo Measure和Salesforce保持同步。</td>
-      <td>请联系Salesforce支持人员，以获取设置对象的可复制权限方面的帮助。</td>
+      <td>我们需要在Salesforce对象上拥有此权限，才能使您的Marketo Measure和Salesforce保持同步。</td>
+      <td>如需设置对象的可复制权限的相关帮助，请与Salesforce支持部门联系。</td>
     </tr>
     <tr>
       <td>MISSING_OBJECT_READ_PERMISSION</td>
@@ -208,7 +209,7 @@ ht-degree: 0%
       <td>Marketo Measure缺少对所需对象的读取权限。</td>
       <td rowspan="2">有关Marketo Measure所需的权限的指导，请参阅以下帮助文章：
           <ul>
-            <li><a href="/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/marketo-measure-dynamics-schema.md">动态</a>
+            <li><a href="/help/marketo-measure-and-dynamics/marketo-measure-dynamics-schema.md">动态</a>
             </li>
             <li><a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">Salesforce</a>
             </li>
@@ -252,10 +253,10 @@ ht-degree: 0%
     <tr>
       <td>RECORD_NON-COMPLIANT_WITH_VALIDATION_RULES</td>
       <td>在Crm导出期间出错：RECORD_NON-COMPLIANT_WITH_VALIDATION_RULES ：实体类型“销售线索”：CRM错误代码：FIELD_CUSTOM_VALIDATION_EXCEPTION，字段：Lead_Status_Reason__c，CRM错误消息：您必须选择销售线索状态原因，记录编号：0123456</td>
-      <td>要更新的记录不符合Salesforce组织中设置的验证规则。</td>
+      <td>要更新的记录不符合Salesforce组织中所设置的验证规则。</td>
       <td>从<a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自定义验证规则</a>中排除Marketo Measure专用用户。
       <p>
-      更新<a href="https://help.salesforce.com/s/articleView?id=sf.fields_about_field_validation.htm&type=5">验证规则</a>。</td>
+      更新<a href="https://help.salesforce.com/s/articleView?id=sf.fields_about_field_validation.htm&amp;type=5">验证规则</a>。</td>
     </tr>
     <tr>
       <td>RESTRICT_PICKLIST_VALUES_ENABLED</td>
@@ -276,7 +277,7 @@ ht-degree: 0%
     <tr>
       <td>未知异常</td>
       <td>在Crm导出期间出错：UNKNOWN_EXCEPTION ：实体类型“Contact”：CRM错误代码：UNKNOWN_EXCEPTION、CRM错误消息：门户用户不能拥有合作伙伴帐户，记录ID：0123456</td>
-      <td>Salesforce中发生了未处理的异常。</td>
+      <td>Salesforce中发生未处理的异常。</td>
       <td>如果问题仍然存在，请向Salesforce提交案例，并复制错误消息中的数值。</td>
     </tr>
     <tr>
@@ -287,9 +288,9 @@ ht-degree: 0%
         <ul>
           <li><a href="/help/configuration-and-setup/marketo-measure-and-salesforce/best-practices-for-marketo-measure-crm-package.md">最佳实践</a>
           </li>
-          <li><a href="/help/marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/microsoft-dynamics-crm-installation-guide.md">动态</a>
+          <li><a href="/help/marketo-measure-and-dynamics/microsoft-dynamics-crm-installation-guide.md">动态</a>
           </li>
-          <li><a href="/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-package-installation-and-set-up.md">Salesforce</a>
+          <li><a href="/help/configuration-and-setup/marketo-measure-and-salesforce/install-set-up.md">Salesforce</a>
           </li>
         </ul>
       </td>

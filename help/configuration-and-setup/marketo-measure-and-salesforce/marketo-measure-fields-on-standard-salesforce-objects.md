@@ -1,29 +1,28 @@
 ---
-unique-page-id: 18874574
-description: 标准 [!DNL Salesforce] 对象上的[!DNL Marketo Measure]字段 —  [!DNL Marketo Measure]
-title: 标准 [!DNL Salesforce] 对象上的[!DNL Marketo Measure]字段
+description: 标准[!DNL Marketo Measure]对象上的 [!DNL Salesforce] 字段 —  [!DNL Marketo Measure]
+title: 标准[!DNL Marketo Measure]对象上的 [!DNL Salesforce] 字段
 exl-id: c9d5254f-06bd-4813-bb29-1a4955b37041
 feature: Salesforce
-source-git-commit: 05ba9e487d492ba4352a7f0577c7221f6ec9567e
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
 
 ---
 
-# 标准[!DNL Salesforce]对象上的[!DNL Marketo Measure]字段 {#marketo-measure-fields-on-standard-salesforce-objects}
+
+# 标准[!DNL Marketo Measure]对象上的[!DNL Salesforce]字段 {#marketo-measure-fields-on-standard-salesforce-objects}
 
 >[!NOTE]
->
 >您可能会在文档中看到指定“[!DNL Marketo Measure]”的说明，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
-了解添加到[!DNL Salesforce]标准对象的各种[!DNL Marketo Measure]字段。
+了解添加到[!DNL Marketo Measure]标准对象的各种[!DNL Salesforce]字段。
 
 ## 帐户 {#account}
 
 预测参与度得分：此字段与我们的ABM功能一起使用，以提供与帐户的参与度相关的得分，并考虑许多因素，例如页面查看的回访间隔、与帐户关联的联系人数量，是否存在已关闭的打开等。
 
-## Campaign {#campaign}
+## 活动 {#campaign}
 
 仅添加了4个字段、1个按钮和1个验证规则。
 

@@ -3,12 +3,13 @@ description: 脱机渠道的最佳实践 —  [!DNL Marketo Measure]
 title: 离线渠道的最佳实践
 exl-id: 71c50614-8d5b-469f-bc02-3cc489464a4e
 feature: Channels
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 0%
 
 ---
+
 
 # 离线渠道的最佳实践 {#best-practices-for-offline-channels}
 
@@ -47,7 +48,7 @@ ht-degree: 0%
 
 * 确保每个CRM Campaign的“类型”字段均准确
    * “类型”确定在同步后源自营销活动的任何接触点的营销渠道和子渠道
-* 无论是使用基于CRM的Campaign同步方法（启用购买者接触点），还是使用[!DNL Marketo Measure]基于应用程序的同步方法（[!UICONTROL Marketo Measure]帐户设置的“[!UICONTROL Campaigns]”选项卡中的“自定义Campaign同步”），都只应在营销活动成员与Campaign和您的品牌有实际的离线参与时才创建离线接触点：
+* 无论是使用基于CRM的Campaign同步方法（启用购买者接触点），还是使用[!DNL Marketo Measure]基于应用程序的同步方法（[!UICONTROL Campaigns]帐户设置的“[!UICONTROL Marketo Measure]”选项卡中的“自定义Campaign同步”），都只应在营销活动成员与Campaign和您的品牌有实际的离线参与时才创建离线接触点：
    * 对于活动或网络研讨会等离线渠道：“注册”通常通过网站上的表单提交和[!DNL Marketo Measure]在线功能进行跟踪。 因此，状态为“已注册”的营销活动成员不应从营销活动接收离线接触点，以避免重复计数。 离线接触点应仅代表活动或网络研讨会的“出席情况”。
    * 某些离线渠道（如内容联合）更加直截了当，因为每个营销活动成员都具有相同的“已响应”状态，这表示他们确实对营销活动做出了响应，在这种情况下，请在第三方网站上下载内容，因此应该会收到一个离线接触点
 * 在[!DNL Marketo Measure]应用程序中使用自定义Campaign同步方法时，请确保“接触点日期”字段基于来自Campaign或Campaign成员的日期字段，该日期字段最能指示何时实际发生接触点交互
@@ -69,12 +70,11 @@ ht-degree: 0%
 如果您的团队最近遇到以上任何情况，[!DNL Marketo Measure]建议您查看离线渠道映射和离线营销活动，以进行适当的更改并确保它们正确同步。
 
 >[!MORELIKETHIS]
->
->* [脱机渠道设置](/help/channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
->* [自定义Campaign同步 — 应用程序同步](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)
->* [正在同步脱机营销活动 — CRM同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md)
->* [脱机Campaign和Campaign成员 — CRM同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/campaigns-and-campaign-members.md)
->* [Campaign同步日期 — CRM同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/campaign-sync-dates.md)
->* 多个营销活动记录类型的[配置](/help/channel-tracking-and-setup/offline-channels/configurations-for-multiple-campaign-record-types.md)
->* [创建营销活动列表视图](/help/channel-tracking-and-setup/offline-channels/legacy-processes/creating-a-campaign-list-view-for-salesforce-campaigns.md)
->* [正在同步历史数据](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-historical-data.md)
+> [脱机渠道设置](/help/channel-tracking-and-setup/offline-channels/offline-custom-channel-setup.md)
+> [自定义Campaign同步 — 应用程序同步](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)
+> [正在同步离线营销活动 — CRM同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md)
+> [脱机Campaign和Campaign成员 — CRM同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/campaigns-and-campaign-members.md)
+> [Campaign同步日期 — CRM同步](/help/channel-tracking-and-setup/offline-channels/legacy-processes/campaign-sync-dates.md)
+> [多个营销活动记录类型的配置](/help/channel-tracking-and-setup/offline-channels/configurations-record-types.md)
+> [创建营销活动列表视图](/help/channel-tracking-and-setup/offline-channels/legacy-processes/creating-a-campaign-list-view-for-salesforce-campaigns.md)
+> [正在同步历史数据](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-historical-data.md)

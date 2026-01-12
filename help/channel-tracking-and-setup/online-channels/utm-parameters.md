@@ -1,15 +1,15 @@
 ---
-unique-page-id: 18874606
 description: UTM参数 —  [!DNL Marketo Measure]
 title: UTM参数
 exl-id: 2b20f3c4-1f39-4ac5-bad1-cb1d630d60e9
 feature: UTM Parameters
-source-git-commit: 741ab20845de2f3bcde589291d7446a5b4f877d8
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
+
 
 # UTM参数 {#utm-parameters}
 
@@ -38,17 +38,17 @@ UTM参数可以手动添加到URL中，或通过自动标记特定平台（如Ad
 * 它表示最高级别的通道。
 * 社交媒体、电子邮件、免费搜索和付费搜索都是Medium潜在价值的示例。
 * 此参数将数据映射到[!DNL Marketo Measure]“Medium”字段。
-* _[!DNL Marketo Measure]最佳实践：_&#x200B;请勿使用此字段调用子渠道，否则，在实际渠道上生成报告时可能会遇到困难。 使用它可识别您的营销工具或渠道。 例如，如果您希望使用电子邮件来营销您的产品，则媒介为电子邮件。
+* _[!DNL Marketo Measure]最佳实践&#x200B;:_请勿使用此字段调用子渠道，否则，在实际渠道上生成报告时可能会遇到困难。 使用它可识别您的营销工具或渠道。 例如，如果您希望使用电子邮件来营销您的产品，则媒介为电子邮件。
 
 **utm_source**
 
 * Source标识作为流量来源的子渠道。
 * 它回答的问题是：“这个人来自哪里？”
 * 在一个社交媒体示例中，流量的来源是正在使用的社交媒体平台。
-   * 在此示例中，[!DNL Facebook]是Source值。 其他示例包括Twitter和Instagram。 另一方面，如果UTM Medium为[!DNL Paid Search]，则UTM Source可以是AdWords或BingAds。
+   * 在此示例中，[!DNL Facebook]是Source值。 其他例子包括推特和Instagram。 另一方面，如果UTM Medium为[!DNL Paid Search]，则UTM Source可以是AdWords或BingAds。
 
 * 此参数映射到SFDC中的[!DNL Marketo Measure]“接触点Source”字段。
-* _[!DNL Marketo Measure]最佳实践：_&#x200B;此参数跟踪流量的来源，因此不适合用它来指示广告类型，例如，重新定位、赞助等。 它最好用于跟踪更高级别的子信道。 请记住，您回答的是“我的流量来自何处？” 您在查找反向链接。 在此示例中，UTM Source是广告的位置（不是实际的网页，因为这是在标签之外自动跟踪的网页）。 如果您跟踪的是滴答式电子邮件促销活动，则滴答式电子邮件是来源。
+* _[!DNL Marketo Measure]最佳实践&#x200B;:_此参数可跟踪流量的来源，因此不适合使用此参数来指示广告类型，例如，重新定位、赞助等。 它最好用于跟踪更高级别的子信道。 请记住，您回答的是“我的流量来自何处？” 您在查找反向链接。 在此示例中，UTM Source是广告的位置（不是实际的网页，因为这是在标签之外自动跟踪的网页）。 如果您跟踪的是滴答式电子邮件促销活动，则滴答式电子邮件是来源。
 
 **utm_campaign**
 
@@ -67,16 +67,16 @@ UTM参数可以手动添加到URL中，或通过自动标记特定平台（如Ad
 **utm_term**
 
 * 术语类似于UTM内容参数。 术语非常适合用于标识付费营销活动广告中的关键词。 如果使用自动标记功能，则为您完成此操作。 如果您未使用广告平台的自动标记功能，请务必仔细添加所有要跟踪的关键字。
-* 此参数映射到SFDC中的[!DNL Marketo Measure]“关键字文本”字段。
+* 此参数映射到SFDC中的[!DNL Marketo Measure]“关键词文本”字段。
 * _[!DNL Marketo Measure]最佳实践_： UTM术语标记是可选的，但非常适合跟踪关键字。 仔细检查拼写，避免使用特殊字符。 如果需要多个单词，请尝试使用下划线或不使用空格。
 
 每个参数都会收集与指定值相关的信息。 每个标记的值允许您跟踪和排序所有数字营销活动，并回答以下问题：位置、方式和原因？
 
 以下是UTM参数[!DNL Marketo Measure]解析的图表以及它们关联的相应接触点字段：
 
-| **UTM参数** | **对应的[!DNL Marketo Measure]字段** |
+| UTM参数 | 对应的[!DNL Marketo Measure]字段 |
 |---|---|
-| utm_medium | 中 |
+| utm_medium | 媒介 |
 | utm_source | 接触点Source |
 | utm_campaign | 广告营销活动名称 |
 | utm_content | 广告内容 |

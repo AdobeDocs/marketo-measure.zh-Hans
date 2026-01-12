@@ -1,15 +1,15 @@
 ---
-unique-page-id: 18874785
 description: 隐藏不必要的报表类型 —  [!DNL Marketo Measure]
 title: 隐藏不必要的报表类型
 exl-id: 7c181340-c154-49ca-a852-243bce71c7a0
 feature: Salesforce
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
+
 
 # 隐藏不必要的报表类型 {#hiding-unnecessary-report-types}
 
@@ -25,8 +25,7 @@ ht-degree: 0%
 
 1. 单击下面标有橙色X的报表，以使您的报表列表看起来与下图相同。
 
-   ![](assets/1-4.png)
+   ![ 4](assets/1-4.png)
 
 >[!MORELIKETHIS]
->
->[Salesforce — 隐藏未使用的报告类型](https://help.salesforce.com/articleView?id=release-notes.rn_analytics_hide_report_types.htm&type=5&language=en_us)
+>[Salesforce — 隐藏未使用的报表类型](https://help.salesforce.com/articleView?id=release-notes.rn_analytics_hide_report_types.htm&type=5&language=en_us)

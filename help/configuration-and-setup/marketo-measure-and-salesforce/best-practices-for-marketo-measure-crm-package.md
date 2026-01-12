@@ -3,22 +3,22 @@ description: ' [!DNL Marketo Measure] CRM包的最佳实践 —  [!DNL Marketo M
 title: ' [!DNL Marketo Measure] CRM包的最佳实践'
 exl-id: 97ce0ff3-8aa5-4789-9ee0-25d68c001def
 feature: Salesforce
-source-git-commit: 915e9c5a968ffd9de713b4308cadb91768613fc5
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
 
 ---
 
+
 # [!DNL Marketo Measure] CRM包的最佳实践 {#best-practices-for-marketo-measure-crm-package}
 
 >[!NOTE]
->
 >您可能会在文档中看到指定“[!DNL Marketo Measure]”的说明，但仍可在CRM中看到“Bizible”。 该更新了，并且品牌再造将很快反映在您的CRM中。
 
 ## 概述 {#overview}
 
-[!DNL Marketo Measure]同时与[!DNL Salesforce]和[!DNL Microsoft Dynamics]集成，本文档侧重于为[!DNL Salesforce]设计的CRM包的[!DNL Marketo Measure]最佳实践。
+[!DNL Marketo Measure]同时与[!DNL Salesforce]和[!DNL Microsoft Dynamics]集成，本文档侧重于为[!DNL Marketo Measure]设计的CRM包的[!DNL Salesforce]最佳实践。
 
 在实施过程中，以下两个包将安装到您的[!DNL Salesforce]实例中。
 
@@ -49,12 +49,10 @@ ht-degree: 0%
 * 检查您是否在[!DNL Salesforce]中安装了最新版本的买方接触点包
 
 >[!NOTE]
->
 >当您禁用Marketo Measure将数据导出到Salesforce时，它不会删除任何现有数据。 要删除它，请按照[此Salesforce帮助文章](https://help.salesforce.com/s/articleView?language=en_US&id=sf.c360_a_delete_data_stream_records.htm&type=5){target="_blank"}中的步骤操作。
 
 >[!MORELIKETHIS]
->
->* [更新Buyer Touchpoint包](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-package-installation-and-set-up.md)
->* [[!DNL Marketo Measure] 权限集](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
->* [共享报告和仪表板文件夹](https://help.salesforce.com/s/articleView?language=en_US&id=analytics_share_folder.htm&type=0)
->* [将Marketo Measure连接到Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)
+> [更新Buyer Touchpoint包](/help/configuration-and-setup/marketo-measure-and-salesforce/install-set-up.md)
+> [[!DNL Marketo Measure] 权限集](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
+> [共享报告和仪表板文件夹](https://help.salesforce.com/s/articleView?language=en_US&id=analytics_share_folder.htm&type=0)
+> [将Marketo Measure连接到Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)

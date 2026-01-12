@@ -3,12 +3,13 @@ description: 最新发行说明 —  [!DNL Marketo Measure]
 title: 最新发行说明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 9ea72d0e1cf0f754cc8fe844944b93705fb2b12f
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
+
 
 # 发行说明：2024年 {#release-notes-2024}
 
@@ -24,13 +25,13 @@ ht-degree: 0%
 
 对于新客户，会话渠道转移现在为默认行为。 现有客户可以通过在设置>每次联系归因下打开会话渠道转移开关来启用此功能。 激活后，此设置将无法撤消。
 
-文档： [Marketo Measure Web会话的定义](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
+文档： [Marketo Measure Web会话的定义](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
 
 ### 关键词ROI仪表板
 
 新的关键字ROI仪表板提供付费搜索促销活动表现的详细见解，从而全面了解关键字级别的成本、归因收入、生成的商机和机会。 此仪表板可帮助您评估Google Adwords、LinkedIn和Bing Ads等中每个关键字的ROI。
 
-文档： [关键字ROI仪表板](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
+文档： [关键字ROI仪表板](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
 
 ### 增强的区段规则
 
@@ -63,11 +64,9 @@ ht-degree: 0%
 
 ## 第3季度发行 {#q3-release}
 
-<p>
-
 ### 提醒： Salesforce字段弃用 — 6月14日
 
-如去年所宣布的，我们将逐步停止向Lead/Contact对象[导出作业，以简化我们的集成，并消除导出到Salesforce标准对象的需要。 &#x200B;](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"}您可以按照此处介绍的步骤[从接触点对象获取相同的数据](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}。 我们还将共享有关创建工作流的文档，以将此数据添加到Lead/Contact对象。 弃用将于2024年6月14日生效。
+如去年所宣布的，我们将逐步停止向Lead/Contact对象[导出作业，以简化我们的集成，并消除导出到Salesforce标准对象的需要。 ](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"}您可以按照此处介绍的步骤[从接触点对象获取相同的数据](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}。 我们还将共享有关创建工作流的文档，以将此数据添加到Lead/Contact对象。 弃用将于2024年6月14日生效。
 
 这一变化将带来两大好处：
 
@@ -76,7 +75,7 @@ ht-degree: 0%
 
 ### 已归因的机会仪表板
 
-我们很高兴地介绍新的[归因机会信息板](/help/marketo-measure-discover-ui/dashboards/attributed-opportunity-dashboard.md){target="_blank"}，它旨在让您全面了解您的营销工作如何促进新生的和成熟的管道机会。 利用此仪表板，您可以深入了解可归属于您的策略的每个未结和已结业务机会的详细信息，并灵活地按业务机会阶段进行筛选。 它提供了有关哪些渠道、子渠道或营销活动在归因机会数量方面排名最高的见解，并显示归因机会总数以及归因的未结和已结机会计数。
+我们很高兴地介绍新的[归因机会仪表板](/help/marketo-measure-discover-ui/attributed-opportunity-dashboard.md){target="_blank"}，它旨在让您全面了解营销工作如何促进新生的和成熟的管道机会。 利用此仪表板，您可以深入了解可归属于您的策略的每个未结和已结业务机会的详细信息，并灵活地按业务机会阶段进行筛选。 它提供了有关哪些渠道、子渠道或营销活动在归因机会数量方面排名最高的见解，并显示归因机会总数以及归因的未结和已结机会计数。
 
 ### 适用于Marketo Measure Ultimate的Marketo Engage Cookie同步
 
@@ -89,22 +88,18 @@ Marketo Engage Cookie Sync现在可用于Marketo Measure Ultimate。 要使用�
 
 以前仅向第3级客户提供，从2024年6月13日起，所有2级客户也可以使用回旋镖暂存功能。 有关此功能的更多详细信息，请参阅下面的文档。
 
-* [回车族阶段和接触点](/help/advanced-marketo-measure-features/boomerang/boomerang-stages-and-touchpoints.md){target="_blank"}
-* [设置回车族阶段](/help/advanced-marketo-measure-features/boomerang/setting-up-boomerang-stages.md){target="_blank"}
-* [Boomerang阶段方案](/help/advanced-marketo-measure-features/boomerang/boomerang-stage-scenarios.md){target="_blank"}
-
-<p>
+* [回车族阶段和接触点](/help/advanced-features/boomerang/boomerang-stages-and-touchpoints.md){target="_blank"}
+* [设置回车族阶段](/help/advanced-features/boomerang/setting-up-boomerang-stages.md){target="_blank"}
+* [Boomerang阶段方案](/help/advanced-features/boomerang/boomerang-stage-scenarios.md){target="_blank"}
 
 ## 第2季度发行 {#q2-release}
-
-<p>
 
 ### 为响应第三方Cookie逐步淘汰，弃用Marketo Measure功能
 
 为应对日益增长的隐私担忧，第三方Cookie正在逐步淘汰，Google Chrome2024年第三季度截止日期标志着其淘汰。 Marketo Measure将弃用依赖于第三方Cookie的某些功能，特别是跨域跟踪和浏览转化归因，这些功能依赖于Google/DoubleClick展示次数Cookie。 此更改不会影响其他Marketo Measure功能或第一方Cookie的使用。 按照Google的时间表，这些功能预计将在6月1日之前弃用，尽管客户仍然可以访问在此日期之前收集的数据。
 
 * [在Marketo Measure中适应第三方Cookie弃用](https://nation.marketo.com/t5/employee-blogs/adapting-to-third-party-cookie-deprecation-in-marketo-measure/ba-p/345110){target="_blank"}
-* [Marketo Measure Cookie](/help/marketo-measure-tracking/setting-up-tracking/marketo-measure-cookies.md){target="_blank"}
+* [Marketo Measure Cookie](/help/marketo-measure-tracking/marketo-measure-cookies.md){target="_blank"}
 
 ### 分阶段推出我们的增强错误处理
 
@@ -122,8 +117,6 @@ _这很重要的原因_
 _支持您的过渡_
 
 为了帮助您适应此更改，[我们创建了文档](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md){target="_blank"}，其中提供了清晰的错误描述和全面的故障排除步骤。
-
-<br>
 
 ### LinkedIn集成所需的操作
 

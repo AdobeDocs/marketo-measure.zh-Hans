@@ -3,12 +3,13 @@ description: 在线渠道的最佳实践 —  [!DNL Marketo Measure]
 title: 在线渠道的最佳实践
 exl-id: 766cb01c-98b3-492d-bb35-e0a78b76333a
 feature: Channels
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
 
 ---
+
 
 # 在线渠道的最佳实践 {#best-practices-for-online-channels}
 
@@ -35,7 +36,7 @@ ht-degree: 0%
 * [!DNL Marketo Measure]逻辑从电子表格的顶行开始按降序排列接触点映射的优先级，并向下排列
    * [!DNL Marketo Measure]读取每个规则（行），以查找真值和第一个拟合值。 然后，该接触点将映射到该渠道/子渠道
    * 请勿按字母顺序对工作表进行排序，因为这会干扰逻辑规则。
-* 维护括号内的规则，请勿编辑或添加到括号内的规则中(例如，[AdWords付费搜索]或[Facebook付费搜索])
+* 维护括号内的规则，请勿编辑或添加到括号内的规则中（例如，[AdWords付费搜索]或[Facebook付费搜索]）
    * 这些是现成的[!DNL Marketo Measure]规则，具有内置逻辑，与[!DNL Marketo Measure]集成关联。 为这些规则指定该渠道/子渠道部分的最高优先级，以确保[!DNL Marketo Measure]集成能够按设计要求工作。
 * 上传文件后，您无法在七天内更改任何规则
    * [!DNL Marketo Measure]利用此时间处理和更新接触点，因此请确保在上传之前仔细检查您的规则。
@@ -54,8 +55,7 @@ ht-degree: 0%
 如果您的团队最近遇到过上述任何情况，[!DNL Marketo Measure]建议您查看在线渠道规则并进行适当的更改。
 
 >[!MORELIKETHIS]
->
->* [联机渠道设置](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md)
->* [UTM参数](/help/channel-tracking-and-setup/online-channels/utm-parameters.md)
->* [营销渠道和子渠道](/help/channel-tracking-and-setup/online-channels/marketing-channels-and-subchannels.md)
->* [UTM最佳实践](/help/channel-tracking-and-setup/online-channels/best-practices-for-setting-up-utm-parameters.md)
+> [联机渠道设置](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md)
+> [UTM参数](/help/channel-tracking-and-setup/online-channels/utm-parameters.md)
+> [营销渠道和子渠道](/help/channel-tracking-and-setup/online-channels/marketing-channels-and-subchannels.md)
+> [UTM最佳实践](/help/channel-tracking-and-setup/online-channels/best-practices-for-setting-up-utm-parameters.md)

@@ -3,12 +3,13 @@ description: '[!DNL Salesforce]包合并 —  [!DNL Marketo Measure]'
 title: '[!DNL Salesforce]包合并'
 exl-id: ae559f5f-91bf-4504-9d5a-af47f95ca01f
 feature: Salesforce
-source-git-commit: 518a984b0d8d640290bd9b637221fcdc0948e5b9
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '449'
 ht-degree: 1%
 
 ---
+
 
 # [!DNL Salesforce]包合并 {#salesforce-package-consolidation}
 
@@ -29,7 +30,7 @@ ht-degree: 1%
 
 ## 支持和过渡 {#support-and-transition}
 
-[支持团队](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}可以回答任何问题并帮助确保顺利过渡到新的合并包。
+[支持团队](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}可以回答任何问题，并协助确保顺利过渡到新的合并包。
 
 ## 必需操作 {#retired-actions}
 
@@ -41,13 +42,13 @@ ht-degree: 1%
       * V2_EXT查询：
          * bizible2_ext__Ad_Content_FT__c包含外联
 
-![](assets/package-consolidation-1.png)
+![使用V2_EXT广告内容FT字段的示例报告筛选器](assets/package-consolidation-1.png)
 
 * 合并包中的相应查询：
    * bizible2__Touchpoint_Position__c包含FT和
    * bizible2__Ad_Content__c包含外联
 
-![](assets/salesforce-package-consolidation-2.png)
+![使用合并接触点字段的等效报告过滤器](assets/salesforce-package-consolidation-2.png)
 
 ## 常见问题解答 {#faq}
 
@@ -57,7 +58,7 @@ ht-degree: 1%
 
 **如何从当前包回填数据？**
 
-您可以提交支持票证[&#128279;](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}以回填和重新处理BT/BAT数据以填写接触点ID和表单ID字段。
+您可以提交支持票证[以回填和重新处理BT/BAT数据以填写接触点ID和表单ID字段](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。
 
 **V1和V2_EXT包中的字段在统一包中是否可用？**
 

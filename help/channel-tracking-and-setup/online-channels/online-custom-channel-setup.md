@@ -1,15 +1,15 @@
 ---
-unique-page-id: 18874596
 description: 联机自定义渠道设置 —  [!DNL Marketo Measure]
 title: 在线自定义渠道设置
 exl-id: 170ac564-6cdd-4036-abf0-b9b230bed4f7
 feature: Channels
-source-git-commit: 9e672d0c568ee0b889461bb8ba6fc6333edf31ce
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
+
 
 # 在线自定义渠道设置 {#online-custom-channel-setup}
 
@@ -32,15 +32,15 @@ ht-degree: 0%
 
 第一步是从[!DNL Marketo Measure]应用程序下载自定义渠道电子表格。 导航到&#x200B;**我的帐户**&#x200B;选项卡下的&#x200B;**设置**&#x200B;并选择&#x200B;**联机**。 您可以选择&#x200B;**下载原始模板**&#x200B;或&#x200B;**下载当前规则**。
 
-![](assets/1.png)
+![设置页面，显示带有“下载原始模板”和“下载当前规则”选项的联机渠道配置](assets/1.png)
 
 电子表格有七列：
 
-![](assets/2.png)
+![自定义渠道电子表格显示七列：渠道、子渠道、促销活动、Medium、Source、登陆页面和反向链接网站](assets/2.png)
 
 * **渠道：**&#x200B;在此处添加您的各种营销渠道
 * **子渠道：**&#x200B;在此处添加相应的子渠道
-* **营销活动：**&#x200B;在此处添加营销活动名称，无论值来自UTM还是Salesforce Campaigns用于[!DNL Marketo Measure]活动功能
+* **营销活动：**&#x200B;在此处添加营销活动名称，无论值来自UTM还是[!DNL Marketo Measure]活动功能的Salesforce营销活动
 * **Medium：** medium列表示utm_medium参数的值
 * **Source：**&#x200B;源列表示utm_source参数的值
 * **登陆页面：**&#x200B;在此处添加登陆页面
@@ -48,13 +48,13 @@ ht-degree: 0%
 
 第八列将注明哪些规则不能从电子表格中删除，并显示“请勿删除”。 电子表格顶部具有默认渠道规则，[!DNL Marketo Measure]建议即使不使用这些渠道，也不要更改或删除这些规则。 [!DNL Marketo Measure]与这些平台有深度集成，因此默认包含这些平台。
 
-行表示规则和[!DNL Marketo Measure]对数据优先处理的顺序。 第一行的优先级高于第二行，第二行的优先级高于第三行，依此类推。 在确定要将接触点分段到的营销渠道和子渠道时，[!DNL Marketo Measure]会从上到下、从左到右阅读，直到找到满足接触点标准的行。 (如果接触点具有`utm_source=Facebook`，则由于屏幕快照中的规则15，该接触点会存储到Social.Facebook渠道中)。
+行表示规则和[!DNL Marketo Measure]对数据优先处理的顺序。 第一行的优先级高于第二行，第二行的优先级高于第三行，依此类推。 在确定要将接触点分段到的营销渠道和子渠道时，[!DNL Marketo Measure]会从上到下、从左到右阅读，直到找到满足接触点标准的行。 （如果接触点具有`utm_source=Facebook`，则由于屏幕快照中的规则15，该接触点会存储到Social.Facebook渠道中）。
 
-![](assets/3.png)
+![渠道规则电子表格显示从上到下的优先级顺序，Social.Facebook规则示例突出显示](assets/3.png)
 
 [!DNL Marketo Measure]附带12个默认渠道供您使用。 这些渠道与[!DNL Marketo Measure]完全集成的平台相关。 无论是否使用它们，都不要删除它们。 例如，如果您确实使用其中一个平台(Bing Ads)，但希望对渠道或子渠道使用不同的命名约定，则可以更新名称。 下图显示了一个示例。
 
-![](assets/4.png)
+![默认渠道规则显示12个集成平台，带有可自定义的渠道和子渠道名称](assets/4.png)
 
 规则的结构也很重要。 规则可能看起来像重复信息和丢失数据，但此结构是故意的。 要准确排序数据，必须单独将每个单独的源映射到相应的渠道，甚至共享子渠道和渠道的源。 规则越细致，结果就越有洞察力。 基本上，最佳实践是为要跟踪的每项营销工作编写详细规则。
 
@@ -62,13 +62,13 @@ ht-degree: 0%
 
 规则的每个参数或组件都单独映射到渠道。 例如，当[!DNL Marketo Measure]具有[!DNL Facebook]要排序的数据时，它会查找与[!DNL Facebook]相关的规则。 它从上到下扫描。 在下图所示的示例中，[!DNL Marketo Measure]将了解对于第一个[!DNL Facebook]子通道，它只需读取源参数即可将数据放入该规则的存储桶。
 
-![](assets/5.png)
+![Facebook渠道规则示例，显示具有不同参数的多行映射到子渠道](assets/5.png)
 
-下一个规则仅要求输入媒体参数，因此具有该参数的任何数据都会存储到此渠道中。 最后，对于[!DNL Facebook]，来自Facebook URL的任何数据都会被放入最后一个Facebook存储桶中。
+下一个规则仅要求输入媒体参数，因此具有该参数的任何数据都会存储到此渠道中。 最后，对于[!DNL Facebook]，来自Facebook URL的任何数据都会被放入最后一个Facebook分段。
 
 存在默认渠道“其他”以捕获不符合任何规则条件的数据。 请注意，“其他”渠道中的某些存储桶包含星号(&#42;)。 这些星号表示充当总括的通配符。
 
-![](assets/6.png)
+![将通配符星号显示为不匹配数据的全包的其他渠道规则](assets/6.png)
 
 由于[!DNL Marketo Measure]逻辑是从上到下运行的，因此应将用星号(&#42;)指示的通配符规则放在规则表的最末尾。 所有未按照其他规则捕获或排序的数据都将添加到此通配符存储段。
 

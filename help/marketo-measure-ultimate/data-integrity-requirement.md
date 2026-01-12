@@ -3,12 +3,13 @@ description: '[!DNL Marketo Measure] Ultimate数据完整性要求 —  [!DNL Ma
 title: '[!DNL Marketo Measure] Ultimate数据完整性要求'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-source-git-commit: 4f504bd940e2d28603af65b75151d8143cdcbea8
+source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 16%
+source-wordcount: '1610'
+ht-degree: 17%
 
 ---
+
 
 # [!DNL Marketo Measure] Ultimate数据完整性要求 {#marketo-measure-ultimate-data-integrity-requirement}
 
@@ -299,7 +300,7 @@ ht-degree: 16%
       <td></td>
       <td>campaignKey.sourceID</td>
       <td>字符串</td>
-      <td>营销活动ID</td>
+      <td>营销活动 ID</td>
       <td>是</td>
       <td>
         <p>例如 — 55555。</p>
@@ -894,10 +895,9 @@ ht-degree: 16%
 **兑换率**：每个（源货币、目标货币）对可以在不同的日期期间具有多个兑换率。 根据Salesforce DatedConversionRate对象，费率必须涵盖0001-01-01到9999-12-31的整个时间范围。
 
 **日期范围**：
+
 * 在（源货币、目标货币）汇率集中没有重叠的日期范围（例如，2023-01-01到2023-02-01和2023-01-01到2024-01-01）。
 * 日期范围之间没有间隔。 起始日期不包括，结束日期不包括。
-
-<p>
 
 ## ExperienceEvent {#experienceevent}
 
@@ -993,7 +993,7 @@ ht-degree: 16%
       <td></td>
       <td>leadOperation.addToCampaign.campaignKey.sourceId</td>
       <td>字符串</td>
-      <td>营销活动ID</td>
+      <td>营销活动 ID</td>
       <td>仅对于leadOperation.addToCampaign类型为“是”</td>
       <td>
         <p>例如 — 55555。</p>
@@ -1032,7 +1032,7 @@ ht-degree: 16%
       <td></td>
       <td>leadOperation.campaignProgression.campaignKey.sourceId</td>
       <td>字符串</td>
-      <td>营销活动ID</td>
+      <td>营销活动 ID</td>
       <td>仅对于leadOperation.campaignProgression类型为是</td>
       <td>
         <p>例如 — 55555。</p>
@@ -1080,7 +1080,7 @@ ht-degree: 16%
       <td>当营销商机转化为分配给销售用户的符合销售条件的联系人时使用</td>
     </tr>
     <tr>
-      <td>有趣的时刻</td>
+      <td>重要时刻</td>
       <td>leadOperation.interestingMoment</td>
       <td>用于跟踪潜在客户的高价值活动</td>
     </tr>
@@ -1100,7 +1100,7 @@ ht-degree: 16%
       <td>用于在人员打开营销电子邮件时捕获详细信息</td>
     </tr>
     <tr>
-      <td>单击电子邮件</td>
+      <td>点击电子邮件</td>
       <td>directMarketing.emailClicked</td>
       <td>用于在人员单击营销电子邮件中的链接时捕获详细信息</td>
     </tr>
@@ -1133,7 +1133,7 @@ ht-degree: 16%
 
 ### XDM业务帐户 {#xdm-business-account}
 
-```
+```sql
 select 'account source id', count(*) from salesforce_account where accountKey.sourceId is null
 union all
 select 'account source type', count(*) from salesforce_account where accountKey.sourceType is null
@@ -1151,7 +1151,7 @@ select 'last updated date', count(*) from salesforce_account where extSourceSyst
 
 ### XDM商业营销活动 {#xdm-business-campaign}
 
-```
+```sql
 select 'campaign source id', count(*) from salesforce_campaign where campaignKey.sourceId is null
 union all
 select 'campaign source type', count(*) from salesforce_campaign where campaignKey.sourceType is null
@@ -1169,7 +1169,7 @@ select 'last updated date', count(*) from salesforce_campaign where extSourceSys
 
 ### XDM商业营销活动成员 {#xdm-business-campaign-member}
 
-```
+```sql
 select 'campaign member source id', count(*) from salesforce_campaign_member where campaignMemberKey.sourceId is null
 union all
 select 'campaign member source type', count(*) from salesforce_campaign_member where campaignMemberKey.sourceType is null
@@ -1207,7 +1207,7 @@ select 'last updated date', count(*) from salesforce_campaign_member where extSo
 
 ### XDM业务人员 {#xdm-business-person}
 
-```
+```sql
 select 'person source id', count(*) from marketo_person where b2b.personKey.sourceId is null
 union all
 select 'person source type', count(*) from marketo_person where b2b.personKey.sourceType is null
@@ -1229,7 +1229,7 @@ union all
 select 'last updated date', count(*) from marketo_person where extSourceSystemAudit.lastUpdatedDate is null;
 ```
 
-```
+```sql
 select 'person source id', count(*) from salesforce_contact where b2b.personKey.sourceId is null
 union all
 select 'person source type', count(*) from salesforce_contact where b2b.personKey.sourceType is null
@@ -1261,7 +1261,7 @@ select 'last updated date', count(*) from salesforce_contact where extSourceSyst
 
 ### XDM商业机会 {#xdm-business-opportunity}
 
-```
+```sql
 select 'opportunity source id', count(*) from salesforce_opportunity where opportunityKey.sourceId is null
 union all
 select 'opportunity source type', count(*) from salesforce_opportunity where opportunityKey.sourceType is null
@@ -1299,7 +1299,7 @@ select 'last updated date', count(*) from salesforce_opportunity where extSource
 
 ### XDM ExperienceEvent {#xdm-experienceevent}
 
-```
+```sql
 select 'id', count(*) from marketo_activity where _id is null
 union all
 select 'event type', count(*) from marketo_activity where eventType is null
@@ -1331,7 +1331,7 @@ union all
 select 'statusInCampaignProgressionChanged campaign key', count(*) from marketo_activity where eventType = 'leadOperation.statusInCampaignProgressionChanged' and leadOperation.campaignProgression.campaignKey.sourceKey is null;
 ```
 
-```
+```sql
 select 'id', count(*) from salesforce_task where _id is null
 union all
 select 'event type', count(*) from salesforce_task where eventType is null
@@ -1349,7 +1349,7 @@ select 'person source key', count(*) from salesforce_task where personKey.source
 
 ### 转化 {#conversion}
 
-```
+```sql
 select 'conversion rate', count(*) from currency_conversion_rate where conversionRate is null
 union all
 select 'end date', count(*) from currency_conversion_rate where endDate is null
@@ -1377,8 +1377,8 @@ select 'last updated date', count(*) from currency_conversion_rate where extSour
 
 我们建议在字段映射中使用计算字段将该字段默认为非NULL值。 以下是两个示例：
 
-* 如果某些opportunity记录的opportunityName为null ，请在字段映射中创建并使用以下计算字段
+* 如果某些机会记录中的`opportunityName`为空，请在字段映射中创建并使用以下计算字段
    * `iif(name != null && trim(name) != "", name, "Unknown")`
 
-* 如果某些experienceevent记录的leadOperation.campaignProgression.campaignID为空，请在字段映射中创建并使用以下计算字段
+* 如果某些体验事件记录中的`leadOperation.campaignProgression.campaignID`为空，请在字段映射中创建并使用以下计算字段
    * `iif(leadOperation.campaignProgression.campaignID != null && leadOperation.campaignProgression.campaignID != "" , to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", leadOperation.campaignProgression.campaignID, "sourceKey", concat(leadOperation.campaignProgression.campaignID,"@123-abc-321.Marketo")), iif(eventType == "leadOperation.statusInCampaignProgressionChanged", to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", "Unknown", "sourceKey", "Unknown@123-abc-321.Marketo"), null))`
