@@ -1,23 +1,18 @@
 ---
-description: 活动归因常见问题解答 —  [!DNL Marketo Measure]
+description: Marketo Measure用户的活动归因常见问题解答指南
 title: 活动归因常见问题解答
 exl-id: 6272024f-b6ae-4aa7-ba92-c9f183549614
 feature: Attribution
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
 
-
 # 活动归因常见问题解答 {#activities-attribution-faq}
 
 [!DNL Marketo Measure]活动导入您的所有活动记录并为它们生成接触点，从而允许这些活动接收归因点数。 最常见的用例是跟踪Sales团队的活动，因为它们通常会创建发送给潜在客户的电话或电子邮件记录。 可以跟踪的其他独特内容是内容交互，如资源下载或视频查看。
-
->[!AVAILABILITY]
->
->此功能仅对第2层客户启用。 要请求更高的客户层，请联系Adobe客户团队（您的客户经理）。
 
 **这与离线营销活动有何不同？**
 
@@ -41,7 +36,7 @@ Activities对象作为Task和Event对象的伞形或父对象。 活动基本上
 
 **填充了哪些其他接触点字段？**
 
-| 接触点字段 | 值 |
+| **接触点字段** | **值** |
 |---|---|
 | 潜在客户/联系人 | 所有活动都与潜在客户或联系人相关 |
 | 活动 | Channel.Subchannel [[!DNL Marketo Measure]] |

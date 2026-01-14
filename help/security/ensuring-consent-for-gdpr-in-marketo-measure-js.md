@@ -1,15 +1,14 @@
 ---
-description: 在Marketo Measure Js中确保同意GDPR
+description: 显示如何将bizible.js配置为在设置Cookie或发送数据之前等待用户同意GDPR
 title: 在Marketo Measure Js中确保同意GDPR
 exl-id: 9afc5e4d-cf97-4c49-b9ee-ee1cc99c1f90
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
-
 
 # 在Marketo Measure Js中确保同意GDPR {#ensuring-consent-for-gdpr-in-marketo-measure-js}
 
@@ -31,12 +30,11 @@ GDPR的目标是加强欧盟(EU)和欧洲经济区(EEA)内数据主体对其个�
 
 **如果您使用[!DNL Google Tag Manager]安装脚本**，请记住GTM会删除数据属性，因此请改用以下脚本：
 
-```html
-<span id="bizible-settings" data-consent-button-id="ConsentButtonId"></span>
-<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async></script>
-```
+`<span id="bizible-settings" data-consent-button-id="ConsentButtonId"></span>`
+`<script type="text/javascript" src=https://cdn.bizible.com/scripts/bizible.js async=""></script>`
 
 >[!NOTE]
+>
 >在这种情况下，[!DNL bizible.js]会将点击事件附加到ID为“ConsentButtonId”的HTML元素。
 
 单击此HTML元素后，[!DNL bizible.js]会创建一个Cookie以记住已收到该用户的同意，并开始照常收集分析数据。
@@ -55,12 +53,11 @@ GDPR的目标是加强欧盟(EU)和欧洲经济区(EEA)内数据主体对其个�
 
 **如果您使用[!DNL Google Tag Manager]安装脚本**，请记住GTM会删除数据属性，因此请改用以下脚本：
 
-```html
-<span id="bizible-settings" data-requires-user-consent="true"></span>
-<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async></script>
-```
+`<span id="bizible-settings" data-requires-user-consent="true"></span>`
+`<script type="text/javascript" src=https://cdn.bizible.com/scripts/bizible.js async=""></script>`
 
 >[!NOTE]
+>
 >bizible.js将创建一个Cookie，以记住已收到用户的同意，并且仅在调用JS API之后才开始照常收集分析数据。
 
 相反，客户还可以使用此API撤回用户的同意：

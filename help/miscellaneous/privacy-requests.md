@@ -1,12 +1,12 @@
 ---
-description: 隐私请求 —  [!DNL Marketo Measure]
+description: Marketo Measure用户隐私请求指南
 title: 隐私请求
 exl-id: 883e475f-9868-412a-b505-230556f38484
 feature: APIs, Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 25%
+source-wordcount: '259'
+ht-degree: 24%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 25%
 
 您可以通过两种方式提交单个请求以从[!DNL Marketo Measure]访问和删除使用者数据：
 
-* 通过[[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=zh-Hans){target="_blank"}。
-* 通过&#x200B;**[!DNL Privacy Service]API**。 请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hans){target="_blank"}和API引用[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}。
+* 通过[[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html){target="_blank"}。
+* 通过&#x200B;**[!DNL Privacy Service]API**。 请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target="_blank"}和API引用[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}。
 
 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans){target="_blank"}支持两种类型的请求：数据访问和数据删除。
 
@@ -65,7 +65,7 @@ ht-degree: 25%
 
 JSON请求
 
-```text
+```json
 {
   "companyContexts": [
     {
@@ -96,7 +96,7 @@ JSON请求
 
 JSON响应
 
-```text
+```json
 {
   "requestId": "16331241037112570RX-245",
   "totalRecords": 1,
@@ -128,7 +128,7 @@ JSON响应
 
 JSON请求
 
-```text
+```json
 {
   "companyContexts": [
     {
@@ -159,7 +159,7 @@ JSON请求
 
 JSON响应
 
-```text
+```json
 {
   "requestId": "16329573462631890RX-207",
   "totalRecords": 1,

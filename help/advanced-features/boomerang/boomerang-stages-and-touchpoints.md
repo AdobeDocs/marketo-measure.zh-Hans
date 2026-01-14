@@ -1,19 +1,19 @@
 ---
-description: 自走式暂存和接触点 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的Boomerang阶段和接触点指南
 title: 自走式暂存器和接触点
 exl-id: e58169a3-3637-4878-8a0e-1920d873ff52
 feature: Boomerang, Touchpoints
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
 
-
 # 自走式暂存器和接触点 {#boomerang-stages-and-touchpoints}
 
 >[!AVAILABILITY]
+>
 >Boomerang功能仅针对第2层和第3层客户启用。 要请求更高的客户层，请联系Adobe客户团队（您的客户经理）。
 
 [!DNL Marketo Measure]已发布回旋镖暂存功能！ 创建了“回车灯”阶段功能，以便为销售周期较长的[!DNL Marketo Measure]客户提供更多关于客户历程的可见度。 此功能允许营销人员为Opportunity历程中发生的所有阶段过渡创建接触点，例如当联系MQL时，然后转到SAL，最后转到MQL阶段。 当联系人“重新进入MQL阶段”或“重新进入MQL”时，MQL将被视为回访阶段。 “回音室”阶段功能与[!DNL Marketo Measure]自定义阶段一起运行。
@@ -26,13 +26,14 @@ ht-degree: 0%
 * 如果您是自定义模型用户，则可以确定要分配给每个阶段的归因权重和点数百分比(例如， 将归因权重指定给第一个或最后一个MQL发生次数，或在所有发生次数之间平均分配归因权重)
 
 >[!NOTE]
+>
 >[关于如何设置回音符阶段的说明](/help/advanced-features/boomerang/setting-up-boomerang-stages.md)。
 
 ## Boomerang阶段和接触点在CRM中的外观 {#what-boomerang-stages-and-touchpoints-look-like-in-your-crm}
 
 如果没有Boomerang阶段（“之前”），您只会看到与Lead/Contact记录关联的最新MQL或最新的SQL接触点。
 
-![机会记录只显示最新阶段的接触点，而不显示自订项](assets/1.png)
+![](assets/boomerang-boomerang-18.png)
 
 通过回车族阶段和接触点，您可以看到每个阶段过渡中出现的接触点。 这些回默朗接触点的命名约定如下：
 
@@ -40,7 +41,7 @@ ht-degree: 0%
 
 使用以下示例，此[!DNL Marketo Measure]帐户已将MQL和SQL包含在其boomerang阶段中，并已选择每个阶段显示2个boomerang接触点。
 
-![为多个MQL和SQL阶段转换列出了Boomerang接触点](assets/2.png)
+![](assets/boomerang-boomerang-19.png)
 
 **MQL-01**&#x200B;是第一个MQL阶段转换。
 

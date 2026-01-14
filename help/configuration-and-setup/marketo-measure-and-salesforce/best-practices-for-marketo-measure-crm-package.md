@@ -1,11 +1,11 @@
 ---
-description: ' [!DNL Marketo Measure] CRM包的最佳实践 —  [!DNL Marketo Measure]'
+description: 面向Marketo Measure用户的 [!DNL Marketo Measure] CRM包指南的最佳实践
 title: ' [!DNL Marketo Measure] CRM包的最佳实践'
 exl-id: 97ce0ff3-8aa5-4789-9ee0-25d68c001def
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---

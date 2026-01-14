@@ -1,15 +1,15 @@
 ---
-description: 集成的广告平台 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的集成式广告平台指南
 title: 集成式广告平台
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1681'
+source-wordcount: '1649'
 ht-degree: 0%
 
 ---
-
 
 # 集成式广告平台 {#integrated-ad-platforms}
 
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 如下图所示，您将看到用于设置新广告连接的按钮。
 
-![包含设置新Ads连接按钮的连接页面](assets/2.png)
+![](assets/bizible-guide-1.png)
 
 单击[!UICONTROL Set up New Ads Connection]按钮后，将会弹出一个窗口（如下所示），其中包含四个广告[!UICONTROL connect]离子类型。 单击连接，将出现另一个窗口询问凭据。 输入凭据并单击[!UICONTROL authorize]以将帐户连接到[!DNL Marketo Measure]。
 
-![具有可用帐户类型的Marketo Measure ads连接模式](assets/select-account-type.png)
+![](assets/five-five-1.png)
 
 ## Google AdWords {#google-adwords}
 
@@ -56,15 +56,15 @@ ht-degree: 0%
 
 1. 转到[!UICONTROL My Account] > [!UICONTROL Settings] > [!UICONTROL Integrations] > [!UICONTROL Connections]。
 
-   ![包含现有广告帐户的连接列表](assets/4.png)
+   ![](assets/utilizing-connections-8.png)
 
 1. 单击将启用[!DNL Marketo Measure]自动标记的Adwords帐户旁边的铅笔图标。
 
-   ![带有自动标记切换的广告帐户设置面板](assets/5.png)
+   ![](assets/utilizing-connections-9.png)
 
 1. 在右上角，将&#x200B;**[!UICONTROL Autotagging]**&#x200B;开关切换到&#x200B;**[!UICONTROL Yes]**。 在页面底部，单击&#x200B;**[!UICONTROL Learn More]**&#x200B;以展开文本框并单击&#x200B;**[!UICONTROL Save]**。 自动标记设置完成。
 
-   ![Marketo Measure中的自动标记确认模式](assets/6.png)
+   ![](assets/utilizing-connections-10.png)
 
 ## 如何使用[!DNL Marketo Measure]参数在AdWords中设置跟踪模板 {#how-to-set-up-a-tracking-template-in-adwords-with-marketo-measure-parameters}
 
@@ -88,6 +88,7 @@ ht-degree: 0%
    要防止在手动标记URL时出现错误，通常建议自动生成UTM参数。 这不一定需要使用AdWords或[!DNL Marketo Measure]参数自动标记，因为有多个工具可根据您提供的信息自动生成URL的参数，从而简化此过程。
 
    >[!TIP]
+   >
    >如果您收到错误消息指出跟踪模板无效，请尝试清除浏览器缓存并重试 — 这通常可解决此问题。
 
 ## 如何自动为[!DNL Google AdWords]生成UTM标记 {#how-to-automatically-generate-utm-tags-for-google-adwords}
@@ -121,6 +122,7 @@ Bing Ads是一个集成平台，允许您为URL启用自动标记或使用第三
 * 文本广告
 * 移动广告
 * 扩展的文本广告
+
 
 Bing Ads的自动标记功能会添加以下UTM参数：
 

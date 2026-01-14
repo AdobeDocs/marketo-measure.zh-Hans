@@ -1,15 +1,14 @@
 ---
-description: 测试的最佳实践 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的测试指南的最佳实践
 title: 测试最佳实践
 exl-id: ff95a1a9-d324-47f5-b47d-39014dff77e4
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
-
 
 # 测试最佳实践 {#best-practices-for-testing}
 
@@ -20,6 +19,7 @@ ht-degree: 0%
 1. 使用无痕浏览器或清除每个表单提交测试&#x200B;_和_&#x200B;之间的Cookie，每次使用不同的电子邮件地址。
 
    >[!TIP]
+   >
    >最佳实践是使用包含指示该测试的内容以及时间的假电子邮件。 例如： `testing830am@test.com`。
 
 1. 在搜索引擎（例如，`google.com`）上开始搜索，或直接导航到表单。
@@ -31,4 +31,5 @@ ht-degree: 0%
 1. 找到在您的CRM（潜在客户或联系人）中为该表单提交创建的记录，并验证是否正确创建了接触点。
 
 >[!NOTE]
+>
 >您可以使用[!DNL Marketo Measure]库存报告，例如具有[!DNL Marketo Measure]接触点的潜在客户，或者如果您选择使用[!DNL Marketo Measure]详细信息更新您的页面布局，则可以查看潜在客户/联系人页面布局。 这可能需要一些时间来处理数据。

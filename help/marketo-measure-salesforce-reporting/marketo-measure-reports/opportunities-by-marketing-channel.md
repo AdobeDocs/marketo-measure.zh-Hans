@@ -1,15 +1,14 @@
 ---
-description: 按营销渠道列出的机会 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的按营销渠道列出的机会指南
 title: 按营销渠道列出的机会
 exl-id: ce346fc9-5fc6-4004-ad90-e34a30e5b264
 feature: Channels, Reporting
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
-
 
 # 按营销渠道列出的机会 {#opportunities-by-marketing-channel}
 
@@ -19,19 +18,20 @@ ht-degree: 0%
 
 1. 在“Bizible归因”中的快速查找类型中，选择&#x200B;**[!UICONTROL Bizible Attribution Touchpoint with Opportunity]**&#x200B;报表类型，然后选择&#x200B;**[!UICONTROL Create]**。
 
-   ![&#x200B; 2](assets/1-2.jpg)
+   ![](assets/bizible-guide-1.png)
 
 1. 从报表顶部开始，显示&#x200B;**[!UICONTROL All Bizible Attribution Touchpoints]**，并根据要报告的时间范围调整日期字段。 在我们的示例中，我们一直都在查看。 此外，将报告格式从[!UICONTROL Tabular]更改为&#x200B;**[!UICONTROL Summary]**。
 
-   ![&#x200B; 2](assets/2-2.jpg)
+   ![](assets/bizible-guide-2.png)
 
 1. 现在，我们将向报告添加字段。 在左侧的快速查找中，键入“Marketing Channel”并将其添加到报表中的摘要分组。
 
-   ![&#x200B; 2](assets/3-2.jpg)
+   ![](assets/marketo-reports-10.jpg)
 
 1. 现在，运行报告并分析！
 
    这是按营销渠道汇总的“机会”报表。 此报告侧重于所有Opp，但可以随时根据商机的阶段/类型进行筛选。 此外，您可以随意添加任何要报告的字段。
 
 >[!MORELIKETHIS]
->[[!DNL Marketo Measure] 教程： Stock SFDC报告](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/stock-salesforce-reports){target="_blank"}
+>
+>[[!DNL Marketo Measure] 教程： Stock SFDC报告](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/stock-salesforce-reports){target="_blank"}

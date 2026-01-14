@@ -1,15 +1,14 @@
 ---
-description: Dynamics的[!DNL Marketo Measure]收入工作流 —  [!DNL Marketo Measure]
+description: 用于调整Marketo Measure报表的Dynamics收入和关闭日期字段的工作流
 title: Dynamics的[!DNL Marketo Measure]收入工作流
 exl-id: 0e64201a-bc65-4a6d-9192-09c14c810c4a
 feature: Microsoft Dynamics
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
-
 
 # Dynamics的[!DNL Marketo Measure]收入工作流 {#marketo-measure-revenue-workflows-for-dynamics}
 
@@ -20,11 +19,13 @@ ht-degree: 0%
 步骤1：在Dynamics中创建自定义机会金额字段
 
 >[!NOTE]
+>
 >所有Dynamics收入字段都有一个基本字段和一个常规字段。 忽略基本字段。
 
 第2步：创建一个工作流，以更新在步骤1中创建的自定义机会金额字段和[!DNL Marketo Measure]机会金额字段。
 
 >[!NOTE]
+>
 >我们无法指向“使用Dynamics发现”帐户中的[!DNL Marketo Measure]机会金额(bizible2_bizible_opportunity_amount)字段。 Dynamics客户必须创建一个自定义机会金额字段，[!DNL Marketo Measure]才能指向发现。 完成后，客户必须创建一个工作流来更新&#x200B;**两个** [!DNL Marketo Measure]机会金额(bizible2_bizible_opportunity_amount) **和**&#x200B;自定义机会金额字段。 [!DNL Marketo Measure] Opportunity Amount字段随包提供，但必须创建一个自定义字段。
 
 金额工作流说明：
@@ -65,6 +66,8 @@ ht-degree: 0%
 1. 检查导入文件是否失败。
 
 >[!NOTE]
+>
 >本文档中概述的工作流只是更新字段的一种方法，这样[!DNL Marketo Measure]就可以在Discover中显示正确的数据。 如果你有其他方法完成同样的任务，你可以去做。 基本上，我们需要从这些工作流中获取某种可实现以下目标的工作流：
+>
 > * 如果Opp =打开，则分别将自定义关闭日期字段、自定义打开金额字段和[!DNL Marketo Measure]打开金额字段更新为等于“预计关闭日期”和“预计收入”。
 > * 如果Opp = Closed Won，则分别将自定义关闭日期字段、自定义打开金额字段和[!DNL Marketo Measure]打开金额字段更新为等于Actual Close Date和Actual Revenue。

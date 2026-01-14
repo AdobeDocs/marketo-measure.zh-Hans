@@ -10,6 +10,7 @@ ht-degree: 0%
 
 ---
 
+
 # A/B测试设置和报告 {#a-b-testing-set-up-and-reporting}
 
 [!DNL Marketo Measure] A/B测试集成允许您跟踪[优化的](https://www.optimizely.com/){target="_blank"}和VWO网站实验对收入的影响。 本文提供了有关如何将[!DNL Marketo Measure]个A/B测试部分添加到潜在客户、[!UICONTROL Contact]、案例和[!UICONTROL Opportunity]页面布局的说明。 还包括有关运行[!DNL Marketo Measure] A/B报告类型的一般报告实践和建议。
@@ -21,15 +22,15 @@ ht-degree: 0%
 1. 验证您是否正在使用包[!DNL Marketo Measure] v3.9或更高版本。 您可以通过转到[!UICONTROL Salesforce] >[!UICONTROL Set Up] > [!UICONTROL Installed packages]来执行此操作。
 1. 编辑潜在客户页面布局并将&#x200B;**[!DNL Marketo Measure]A/B测试**&#x200B;相关列表添加到该页面。
 
-   ![](../assets/advanced-features-2.png)
+   ![](assets/advanced-features-10.png)
 
 1. 单击[!UICONTROL Wrench]按钮。 从所选字段列表中删除库存“Id”字段。 添加&#x200B;**[!UICONTROL Experiment]**、**[!UICONTROL Variation]**&#x200B;和&#x200B;**[!UICONTROL DateReported]**&#x200B;字段。 将“[!UICONTROL Sort by]”更改为&#x200B;**[!UICONTROL Date Reported]**，然后在下拉列表中选择&#x200B;**[!UICONTROL Descending]**。
 
-   ![](../assets/advanced-features-3.png)
+   ![](assets/advanced-features-2.png)
 
 1. 在[!UICONTROL Buttons]下，取消选中&#x200B;**[!UICONTROL New]**。
 
-   ![](../assets/advanced-features-7.png)
+   ![](assets/advanced-features-3.png)
 
 1. 请联系您的[!DNL Marketo Measure]代表或[Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}以启用该功能。
 
@@ -42,7 +43,7 @@ ht-degree: 0%
 * [!DNL Marketo Measure]个A/BTests和潜在客户
 * [!DNL Marketo Measure]个具有机会的A/B测试
 
-![](../assets/advanced-features-8.png)
+![](assets/advanced-features-7.png)
 
 A/B报告类型用于报告哪些Lead或Contact或Opportunity参加了A/B测试。 这些报告还会向您显示与A/B测试所暴露的Opportunity相关的收入额。
 
@@ -61,8 +62,8 @@ A/B报告类型用于报告哪些Lead或Contact或Opportunity参加了A/B测试�
 
 **[!DNL Marketo Measure]个A/B测试与潜在客户**
 
-![](../assets/advanced-features-9.png)
+![](assets/advanced-features-8.png)
 
 **[!DNL Marketo Measure]个A/B测试（带有机会）**
 
-![](../assets/advanced-features-10.png)
+![](assets/advanced-features-9.png)

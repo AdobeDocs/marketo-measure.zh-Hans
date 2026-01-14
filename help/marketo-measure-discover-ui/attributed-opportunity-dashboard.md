@@ -1,15 +1,15 @@
 ---
-description: 已归因的机会信息板 —  [!DNL Marketo Measure]  — 产品
+description: 涵盖Attributed Opportunity仪表板，该仪表板按渠道子渠道和营销活动显示一段时间内的机会金额和计数
 title: 已归因的机会仪表板
 feature: Reporting
 exl-id: b98cc45a-9483-42a5-8b75-b235273f867b
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
-
 
 # 已归因的机会仪表板 {#attributed-opportunity-dashboard}
 
@@ -39,7 +39,7 @@ Attributed Opportunity Dashboard可全面了解营销工作如何对新兴和成
 * 哪些渠道每季度产生的归因机会数量最多？
 * 上个月按渠道划分的已归因机会金额明细是多少？
 
-![按渠道划分的时间图表](assets/attributed-opportunity-dashboard-1.png)归因机会金额
+![](assets/attributed-dashboard-3.png)
 
 ### 已归因的机会金额表 {#attributed-opportunity-amount-table}
 
@@ -56,7 +56,7 @@ Attributed Opportunity Dashboard可全面了解营销工作如何对新兴和成
 
 单击每个渠道旁边的&#x200B;**+**&#x200B;图标以显示按子渠道和促销活动划分的明细。
 
-![按渠道和营销活动划分的已归因机会金额表格视图](assets/attributed-opportunity-dashboard-2.png)
+![](assets/attributed-dashboard-1.png)
 
 #### 树视图 {#tree-view}
 
@@ -64,7 +64,7 @@ Attributed Opportunity Dashboard可全面了解营销工作如何对新兴和成
 
 单击分支可更深入地了解后续层次结构层。
 
-![已归因机会金额树状结构视图层次结构](assets/attributed-opportunity-dashboard-3.png)
+![](assets/attributed-dashboard-2.png)
 
 ### 筛选器窗格
 

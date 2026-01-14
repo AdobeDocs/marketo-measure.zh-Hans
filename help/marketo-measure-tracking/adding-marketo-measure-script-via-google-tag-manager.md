@@ -1,15 +1,15 @@
 ---
-description: 正在通过 [!DNL Marketo Measure] - [!DNL Google Tag Manager] 添加 [!DNL Marketo Measure]脚本
+description: 正在通过针对Marketo Measure用户的 [!DNL Marketo Measure] 指南添加 [!DNL Google Tag Manager] 脚本
 title: 正在通过 [!DNL Marketo Measure] 添加 [!DNL Google Tag Manager]脚本
 exl-id: 539efb10-35cb-4146-8eea-728c3948a11e
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
-
 
 # 通过[!DNL Marketo Measure]添加[!DNL Google Tag Manager]脚本 {#adding-marketo-measure-script-via-google-tag-manager}
 
@@ -18,6 +18,7 @@ ht-degree: 0%
 如果您决定通过GTM添加脚本，请将[!DNL Marketo Measure]脚本设置为触发顺序中的最高优先级，并确保[!DNL Marketo Measure]标记前面没有同步脚本，以减少GTM延迟产生的任何影响。
 
 >[!NOTE]
+>
 >使用Google[发表的此](https://support.google.com/tagmanager/answer/2772421?hl=en){target="_blank"}支持文章了解更多信息。
 
 ## 如何通过[!DNL Marketo Measure]添加[!DNL Google Tag Manager] JS {#how-to-add-marketo-measure-js-via-google-tag-manager}

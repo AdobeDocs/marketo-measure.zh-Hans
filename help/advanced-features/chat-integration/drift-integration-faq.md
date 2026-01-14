@@ -1,15 +1,14 @@
 ---
-description: 漂移集成常见问题解答 —  [!DNL Marketo Measure]
+description: Marketo Measure用户的漂移集成常见问题解答指南
 title: 漂移集成常见问题解答
 exl-id: ae5706b1-1f6c-4201-8585-0d7c587746e1
 feature: Integration
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
-
 
 # 漂移集成常见问题解答 {#drift-integration-faq}
 
@@ -41,4 +40,4 @@ ht-degree: 0%
 
 如果制定了活动规则来为Drift聊天交互创建接触点，则必须向规则中添加额外的逻辑。 使用任务创建日期字段添加逻辑，以防止创建接触点重复（IE CrmTask.CreatedDate早于启用功能位的日期）。 例如，请参阅下面的屏幕截图。
 
-![为漂移聊天接触点配置的CRM活动规则示例](assets/activity-rule-drift.png)
+![](assets/chat-integration-1.png)

@@ -1,15 +1,14 @@
 ---
-description: 正在将 [!DNL Marketo Measure] 脚本添加到 [!DNL Uberflip] Forms - [!DNL Marketo Measure]
+description: 正在向 [!DNL Marketo Measure] Forms指南中添加适用于Marketo Measure用户的 [!DNL Uberflip] 脚本
 title: 正在将 [!DNL Marketo Measure] 脚本添加到 [!DNL Uberflip] Forms
 exl-id: fb123e15-523d-4931-b4c1-705fe49be3d0
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
-
 
 # 正在将[!DNL Marketo Measure]脚本添加到[!DNL Uberflip] Forms {#adding-marketo-measure-script-to-uberflip-forms}
 
@@ -25,27 +24,28 @@ ht-degree: 0%
 
    将此序言添加到下面的[!DNL Hubs.onLoad]和[!DNL Hubs.onPageChange]AJAX JavaScript事件挂接中。 (注意：在这些事件挂接中，您可能还包含其他代码。 确保也包含前言。)
 
-```javascript
-   Hubs.onLoad = function () {
-    window['Bizible'] = window['Bizible'] || { _queue: [], Push: function (o, p) {this._queue.push({ type: o, data: p }); } };
-   }
-   Hubs.onPageChange = function () {
-   window['Bizible'] = window['Bizible'] || { _queue: [], Push: function (o, p) {this._queue.push({ type: o, data: p }); } };
-   }
-```
+   `Hubs.onLoad = function () {`
+
+   `window['Bizible'] = window['Bizible'] || { _queue: [], Push: function (o, p) {this._queue.push({ type: o, data: p }); } };`
+
+   `}`
+
+   `Hubs.onPageChange = function () {`
+
+   `window['Bizible'] = window['Bizible'] || { _queue: [], Push: function (o, p) {this._queue.push({ type: o, data: p }); } };`
+
+   `}`
 
 1. 创建并定义一个函数，在提交表单CTA时将数据推送到Bizible。 该内容将进入[!UICONTROL Custom Code>JavaScript]部分。 （注意：此函数仅需要Uberflip提供的ctaData参数，但如果用户希望自定义其代码以同时传递此数据，则可以包含其他参数ctaId和ctaName）。
 
-```javascript
-function bizibleFormCode(ctaId, ctaData, ctaName) {
-   var email = ctaData["email"];
-   if (email) {
-      Bizible.Push('User', {
-         eMail: email, // required
-      });
-   }
-}
-```
+   `function bizibleFormCode(ctaId, ctaData, ctaName) {`
+   `var email = ctaData["email"];`
+   `if(email){`
+   `Bizible.Push('User', {`
+   `eMail: email, // required`
+   `}); }`
+
+   `}`
 
 1. 在提交表单CTA时，请确保按照以下规则执行您的[!DNL Marketo Measure]函数。 此操作在[!UICONTROL Custom Code>JS]分区内完成。 (注意：Hubs.onCtaFormSubmitSuccess JavaScript事件挂接中可能有其他代码，请确保同时包含此函数调用)。
 

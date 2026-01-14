@@ -1,15 +1,15 @@
 ---
-description: Web流量仪表板 —  [!DNL Marketo Measure]  — 产品
+description: 描述一段时间内访问访客页面查看表单和渠道性能的Web流量仪表板
 title: Web流量仪表板
 feature: Reporting
 exl-id: de6eec0c-9d7c-4cb2-8214-9d0fb41b444d
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '456'
 ht-degree: 2%
 
 ---
-
 
 # Web流量仪表板 {#web-traffic-dashboard}
 
@@ -25,36 +25,14 @@ Web流量仪表板可全面查看您网站的访客交互。 深入研究量度�
 
 **KPI磁贴**
 
-<table>
-<thead>
-  <tr>
-    <td>访问</td>
-    <td>从外部页面（包括已知和匿名用户）发起的总网站访问（会话）。</td>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>访客</td>
-    <td>独特访客总数。</td>
-  </tr>
-  <tr>
-    <td>Page Views</td>
-    <td>跨网站页面的查看总数。</td>
-  </tr>
-  <tr>
-    <td>表单</td>
-    <td>提交的表单总数，包括LinkedIn Lead Gen Forms。</td>
-  </tr>
-  <tr>
-    <td>来自Forms的唯一电子邮件</td>
-    <td>来自表单提交内容的独特电子邮件总数。</td>
-  </tr>
-  <tr>
-    <td>从Forms创建的潜在客户</td>
-    <td>根据表单提交创建的新潜在客户总数。</td>
-  </tr>
-</tbody>
-</table>
+| KPI | 定义 |
+| --- | --- |
+| 访问 | 从外部页面（包括已知和匿名用户）发起的总网站访问（会话）。 |
+| 访客 | 独特访客总数。 |
+| Page Views | 跨网站页面的查看总数。 |
+| 表单 | 提交的表单总数，包括LinkedIn Lead Gen Forms。 |
+| 来自Forms的唯一电子邮件 | 来自表单提交内容的独特电子邮件总数。 |
+| 从Forms创建的潜在客户 | 根据表单提交创建的新潜在客户总数。 |
 
 ## 随时间变化的Web流量 {#web-traffic-over-time}
 
@@ -68,7 +46,7 @@ Web流量仪表板可全面查看您网站的访客交互。 深入研究量度�
 * 与所显示的时间范围内的独特访客数和表单提交数相比，访问总数中的趋势如何？
 * 网站在哪个时段看到的独特访客数是访问总数和表单提交数之中最多的？
 
-![访问、访客和表单提交的Web流量随时间变化图表](assets/web-traffic-dashboard-1.png)
+![](assets/web-dashboard-1.png)
 
 ## Web流量摘要表 {#web-traffic-summary-table}
 
@@ -85,7 +63,7 @@ Web流量仪表板可全面查看您网站的访客交互。 深入研究量度�
 * 表单中的独特电子邮件
 * 从表单创建潜在客户
 
-![按页面标题和URL列出的Web流量摘要表](assets/web-traffic-dashboard-2.png)
+![](assets/web-dashboard-2.png)
 
 ## 反向链接表 {#referrer-table}
 
@@ -97,7 +75,7 @@ Web流量仪表板可全面查看您网站的访客交互。 深入研究量度�
 * 访问
 * 独特访客
 
-![显示访问次数和独特访客的反向链接表](assets/web-traffic-dashboard-3.png)
+![](assets/web-dashboard-3.png)
 
 ## 按渠道显示的访问次数/访客数 {#visits-visitors-by-channel}
 
@@ -111,7 +89,7 @@ Web流量仪表板可全面查看您网站的访客交互。 深入研究量度�
 * 哪个渠道/子渠道/营销活动吸引的访问次数或独特访客最多？
 * 与特定渠道/子渠道/营销活动中的访问总数相比，独特访客数如何？
 
-![按渠道条形图显示的访问次数和独特访客数](assets/web-traffic-dashboard-4.png)
+![](assets/web-dashboard-4.png)
 
 ## 筛选器窗格 {#filter-pane}
 

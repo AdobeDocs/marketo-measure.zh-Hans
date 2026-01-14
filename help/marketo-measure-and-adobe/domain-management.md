@@ -1,15 +1,15 @@
 ---
-description: 域管理 —  [!DNL Marketo Measure]
+description: Marketo Measure用户的域管理指南
 title: 域管理
 exl-id: 4db287a0-0267-463c-a359-266b41f15c59
 feature: Integration, Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
-
 
 # 域管理 {#domain-management}
 
@@ -19,19 +19,19 @@ ht-degree: 0%
 
 有权访问Adobe Admin Console的IMS用户可以添加和验证他们拥有的域。 域验证涉及为每个域添加DNS记录，然后允许Admin Console验证该记录。
 
-![Adobe Admin Console域列表显示验证状态](assets/domain-management-1.png)
+![](assets/domain-management-4.png)
 
-有关添加域的说明可在[Admin Console文档](https://helpx.adobe.com/cn/enterprise/using/add-domains-directories.html)中找到。 添加域后，该域必须[链接到目录](https://helpx.adobe.com/cn/enterprise/using/add-domains-directories.html#link-domains-to-directoies)。
+有关添加域的说明可在[Admin Console文档](https://helpx.adobe.com/enterprise/using/add-domains-directories.html)中找到。 添加域后，该域必须[链接到目录](https://helpx.adobe.com/enterprise/using/add-domains-directories.html#link-domains-to-directoies)。
 
 ## 管理[!DNL Marketo Measure]中的域 {#managing-domains-in-marketo-measure}
 
 将域添加到Admin Console后，[!DNL Marketo Measure]会定期将此记录同步到数据库中。 此同步每夜进行，也可在用户每次在&#x200B;**[!UICONTROL Domains]** UI中访问[!DNL Marketo Measure]页面时进行。 默认情况下，[!DNL Marketo Measure]导入的任何记录都将被禁用，租户必须手动启用每个域。
 
-![Marketo Measure域页面列出了已启用切换的已验证域](assets/domain-management-2.png)
+![](assets/domain-management-2.png)
 
 在&#x200B;**[!UICONTROL Integration]** > **[!UICONTROL Domains]**&#x200B;页面上，用户会看到已在Admin Console中注册的所有域及其状态。 可以启用或禁用每个域。 如果启用了某个域，[!DNL Marketo Measure]跟踪将收集在该域上看到的任何流量。 如果域被禁用，[!DNL Marketo Measure]将忽略来自该域的任何流量，并且不会创建接触点或其他数据。 [!DNL Marketo Measure]确认域被禁用，并警告任何后果：
 
-在Marketo Measure中禁用域时![确认对话框](assets/domain-management-3.png)
+![](assets/domain-management-3.png)
 
 切换域的影响是即时的，更改不具有追溯性。 将来，[!DNL Marketo Measure]将在设定的时间段后清除禁用域中的数据。
 

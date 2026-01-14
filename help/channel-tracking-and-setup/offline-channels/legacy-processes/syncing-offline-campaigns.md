@@ -1,21 +1,21 @@
 ---
-description: 正在同步离线营销活动 —  [!DNL Marketo Measure]
+description: 为Marketo Measure用户同步离线营销活动指南
 title: 同步离线营销活动
 exl-id: a6f9e217-ff6e-474d-9f14-c6f6238c9e84
 feature: Channels
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
-
 
 # 同步离线营销活动 {#syncing-offline-campaigns}
 
 可能很难准确地跟踪离线营销活动，并且很难了解它们与您的数字营销工作的对比情况。 通过[!DNL Marketo Measure]，您可以在[!DNL Salesforce]中跟踪接触点并将其归因于离线营销活动，即使在事件发生几周后才会创建[!DNL Salesforce]营销活动的情况下也是如此。
 
 >[!NOTE]
+>
 >本文介绍了一个过时的流程。 我们鼓励用户使用[新的、改进的应用程序内进程](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}。
 
 ## 同步之前 {#before-you-sync}
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 您的上传日期将晚于会议日期三周。 若要修复此差异，可以使用[!UICONTROL Bulk Update Touchpoint Date]按钮设置适当的日期。 下图显示了按钮。
 
-![&#x200B; 3](assets/1-3.png)
+![](assets/dynamics-lists-1.png)
 
 在这种情况下，它将回填上传日期3周。 应在设置“[!UICONTROL Enable Buyer Touchpoints]”字段之前执行此步骤。
 
@@ -45,19 +45,20 @@ ht-degree: 0%
 您还可以更新现有营销活动上所有营销活动成员的日期。 执行此操作时，请确保接触点的日期是成员交互的日期。 单击批量更新Buyer Touchpoint日期，根据情况筛选促销活动成员列表，然后在促销活动成员列表上方的&quot;[!UICONTROL Select Date]&quot;选项中，添加与事件发生日期相同的日期。
 
 >[!CAUTION]
+>
 >请确保在&#x200B;_之前更新接触点日期_&#x200B;为所有营销活动成员启用接触点。
 
-![&#x200B; 3](assets/2-3.png)
+![](assets/dynamics-lists-10.png)
 
 ## 如何创建营销活动并同步购买者接触点 {#how-to-create-a-campaign-and-sync-buyer-touchpoints}
 
 要在[!DNL Salesforce]中创建营销活动，请导航到[!UICONTROL Campaigns]选项卡并选择“[!UICONTROL New]”，如下图所示。 根据您的[!DNL Salesforce]设置，您可能需要通过单击加号(+)图标将Campaigns添加到顶部栏。
 
-![&#x200B; 3](assets/3-3.png)
+![](assets/dynamics-lists-2.png)
 
 创建此营销活动时，单击“[!UICONTROL Enable Buyer Touchpoints]”字段，然后从选择列表中选择以下选项之一：
 
-![&#x200B; 3](assets/4-3.png)
+![](assets/dynamics-lists-3.png)
 
 * **包括所有营销活动成员**
    * 此选项允许[!DNL Marketo Measure]将接触点归因于每个营销活动成员。
@@ -71,5 +72,7 @@ ht-degree: 0%
 一旦选择了其中一个选项，[!DNL Marketo Measure]将为每个营销活动成员分配一个接触点（如果适用）。 添加到营销活动&#x200B;_的销售线索或联系人必须_&#x200B;具有与其记录关联的电子邮件地址，才能[!DNL Marketo Measure]创建接触点。 如果没有电子邮件地址，[!DNL Marketo Measure]将不会向营销活动成员分配接触点。
 
 >[!MORELIKETHIS]
->[[!DNL Marketo Measure] 教程：映射脱机渠道](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
->[[!DNL Marketo Measure] 教程： Campaign对象字段](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
+>
+>[[!DNL Marketo Measure] 教程：映射脱机渠道](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
+>
+>[[!DNL Marketo Measure] 教程： Campaign对象字段](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}

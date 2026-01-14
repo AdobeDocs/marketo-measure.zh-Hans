@@ -1,15 +1,14 @@
 ---
-description: 合并潜在客户的最佳实践 —  [!DNL Marketo Measure]
+description: Marketo Measure用户合并潜在客户指南的最佳实践
 title: 合并潜在客户的最佳实践
 exl-id: d9293ed7-a794-4e52-a269-20a7fb36ce50
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
-
 
 # 合并潜在客户的最佳实践 {#best-practices-for-merging-leads}
 
@@ -25,4 +24,4 @@ ht-degree: 0%
 
 如果您有任何问题，请随时联系Adobe客户团队（您的客户经理）或[Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。
 
-![Salesforce合并潜在客户对话框，其中保留了Marketo Measure字段](assets/1.jpg)
+![](assets/additional-functionality-8.jpg)

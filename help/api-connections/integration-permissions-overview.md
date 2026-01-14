@@ -1,11 +1,11 @@
 ---
-description: 集成权限概述 —  [!DNL Marketo Measure]
+description: Marketo Measure用户的集成权限概述指南
 title: 集成权限概述
 feature: APIs, Integration
 exl-id: c45598fe-0c33-459a-9fde-de7f6906bd0c
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1291'
 ht-degree: 2%
 
 ---
@@ -220,7 +220,7 @@ Marketo Measure正在跟踪促销活动、广告组、创意内容、网站链�
   <tr>
     <td>Adobe Analytics</td>
     <td>B2B系统数据</td>
-    <td>通过B2B客户属性集成，Marketo Measure和Adobe Analytics的共同用户可以使用源自Adobe Analytics归因引擎的有价值元数据扩充其Marketo Measure用户配置文件，并通过其与CRM(Microsoft Dynamics和Salesforce)的同步功能扩充这些用户配置文件。 <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md">了解详情</a>。</td>
+    <td>通过B2B客户属性集成，Marketo Measure和Adobe Analytics的共同用户可以使用源自Adobe Analytics归因引擎的有价值元数据扩充其Marketo Measure用户配置文件，并通过其与CRM(Microsoft Dynamics和Salesforce)的同步功能扩充这些用户配置文件。 <a href="/help/marketo-measure-and-adobe/adobe-analytics.md">了解详情</a>。</td>
     <td>客户必须向Marketo Measure提供别名ID和FTP服务器凭据，以便将数据上传到其Analytics实例的位置。
     <p>
     请注意以下信息，因为在该流程的后面部分步骤中您将需要这些信息：
@@ -228,7 +228,7 @@ Marketo Measure正在跟踪促销活动、广告组、创意内容、网站链�
     <li>别名ID，可以是您希望它成为的任何值。 我们建议使用“marketomeasure_id”</li>
     <li>FTP服务器主机名和凭据（用户名和密码）</li>
     <p>
-    <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md#configuring-the-integration">了解详情</a></td>
+    <a href="/help/marketo-measure-and-adobe/adobe-analytics.md#configuring-the-integration">了解详情</a></td>
   </tr>
   <tr>
     <td>Bizible Javascript</td>

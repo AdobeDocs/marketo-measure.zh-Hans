@@ -1,21 +1,21 @@
 ---
-description: 正在为 [!DNL Salesforce Campaigns] - [!DNL Marketo Measure]创建营销活动列表视图
+description: 为Marketo Measure用户的 [!DNL Salesforce] 促销活动指南创建促销活动列表视图
 title: 创建 [!DNL Salesforce] 营销活动的营销活动列表视图
 exl-id: 8c673ea3-ac24-4b3d-b67d-76888179c07a
 feature: Channels
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
-
 
 # 创建[!DNL Salesforce]营销活动的营销活动列表视图 {#creating-a-campaign-list-view-for-salesforce-campaigns}
 
 了解如何为那些要与买方接触点同步的营销活动创建列表视图。
 
 >[!NOTE]
+>
 >本文介绍了一个过时的流程。 我们鼓励用户使用[新的、改进的应用程序内进程](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}。
 
 通过可创建的营销活动列表视图，您可以有一个“转到”位置来查看和管理“类型”和“启用买方接触点”字段，以确保正确设置用于通知离线营销渠道的[!DNL Salesforce]营销活动的每个营销活动。
@@ -42,4 +42,5 @@ ht-degree: 0%
    * 确保对字段具有权限
 
 >[!MORELIKETHIS]
+>
 >[列表视图内联编辑的常见问题疑难解答](http://help.salesforce.com/articleView?id=000003911&language=en_US&type=1){target="_blank"}

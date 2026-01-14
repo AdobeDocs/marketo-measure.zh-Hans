@@ -1,15 +1,14 @@
 ---
-description: 接触点移除和接触点抑制 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的删除接触点和禁止接触点指南
 title: 接触点移除和接触点抑制
 exl-id: 201af648-6525-4a80-a7e5-3cbeeb1670b6
 feature: Touchpoints
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
-
 
 # 接触点移除和接触点抑制 {#touchpoint-removal-and-touchpoint-suppression}
 
@@ -34,38 +33,41 @@ ht-degree: 0%
 
 从与下一组值（将在下一列添加）相关的运算符列表中进行选择。
 
-![&#x200B; 1](assets/1-1.png)
+![](assets/touchpoint-settings-10.png)
 
 >[!TIP]
+>
 >要在字段中添加多个值，请使用“匹配任何”运算符，每个值之间用逗号分隔。
 
 >[!TIP]
+>
 >要将字段中的空值或NULL值考虑在内，只需将[!UICONTROL Value]框留空即可。 这将考虑各种场景，例如针对没有表单URL的接触点进行评估。
 
 >[!NOTE]
+>
 >公式字段不能在规则中使用，也不会显示在选择列表中。 由于公式在后台计算且不会修改记录，因此[!DNL Marketo Measure]无法检测记录是否符合规则。
 
 `2)`在同一组中添加规则以在语句中使用“AND”逻辑。
 或者，在组外添加新的语句，以便在语句中使用“OR”逻辑。
 
-![隐藏规则生成器显示分组的AND/OR逻辑](assets/2.png)
+![](assets/touchpoint-settings-11.png)
 
 `3)`如果您的规则变得复杂，并且您需要重新创建组并对每个语句进行细微更改，请使用[!UICONTROL Clone]选项来简化操作。
 
-![复制禁止显示规则组的克隆选项](assets/3.png)
+![](assets/touchpoint-settings-6.png)
 
 如果你犯了错，别担心。 您也可以删除语句的单个行或整个组。
 
-![删除单个语句和规则组的图标](assets/4.png)
+![](assets/touchpoint-settings-7.png)
 
 `4)`为购买者归因接触点设置规则（如果希望将其应用于两个对象）。 我们的灵活性允许您为一个对象或两个对象设置规则，并且如果它们都适用，可以选择为这两个对象设置规则。
 
-![买方归因接触点隐藏规则配置](assets/5.png)
+![](assets/touchpoint-settings-8.png)
 
 若要完成，[!UICONTROL Save and Process]您的规则。 如果您要进行大量更改，请确保在此过程中保存更改。 在您单击之前，[!DNL Marketo Measure]将不会实际开始删除您的接触点
 [!UICONTROL **保存并处理**]。
 
-| 操作员 | 用例 |
+| **操作员** | **用例** |
 |---|---|
 | 等于 | 单个值 — 完全匹配 |
 | 包含 | 单个值 — 包含值 |

@@ -1,15 +1,14 @@
 ---
-description: 为什么从不删除接触点 —  [!DNL Marketo Measure]
+description: 为什么您绝不应该删除Marketo Measure用户的接触点指南
 title: 为什么绝不应该删除接触点
 exl-id: e74c14ff-0399-4ee9-b732-6686823ff5c7
 feature: Touchpoints
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
-
 
 # 为什么绝不应该删除接触点 {#why-you-should-never-delete-touchpoints}
 
@@ -19,6 +18,6 @@ ht-degree: 0%
 
 删除接触点后，它会在归因数据中创建空洞。 通常，这将显示在Opportunity上的归因接触点中。 在下图中，已经删除了本来会收到Opportunity Creation触摸的接触点。 因此，此机会缺少OC接触点，并且此Opp的归因百分比之和不会达到100%。
 
-![机会删除后缺少机会创建接触点](assets/1.png)
+![](assets/touchpoint-settings-10.png)
 
 如果从SFDC中删除了接触点，请联系[Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}，请求重新导入您的数据。

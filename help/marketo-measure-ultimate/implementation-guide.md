@@ -1,15 +1,14 @@
 ---
-description: '[!DNL Marketo Measure] Ultimate实施指南 —  [!DNL Marketo Measure]'
+description: “[!DNL Marketo Measure] Ultimate实施指南 —  [!DNL Marketo Measure]”
 title: '[!DNL Marketo Measure] Ultimate实施指南'
 feature: Integration, Tracking, Attribution
 exl-id: 0c707875-5d05-49b9-b1ff-c3f7b711ebd1
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1008'
 ht-degree: 2%
 
 ---
-
 
 # [!DNL Marketo Measure] Ultimate实施指南 {#marketo-measure-ultimate-implementation-guide}
 
@@ -37,7 +36,8 @@ Ultimate用户是AEP配置用户。 如果他们已有AEP，则我们将不会�
 ## 架构和数据集 {#schemas-and-datasets}
 
 >[!NOTE]
->查看架构[的](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hans#building-blocks-of-a-schema){target="_blank"}构建块，了解架构、类和字段组的概述。
+>
+>查看架构[的](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema){target="_blank"}构建块，了解架构、类和字段组的概述。
 
 **XDM架构=类+架构字段组&#42;**
 
@@ -46,32 +46,33 @@ Ultimate用户是AEP配置用户。 如果他们已有AEP，则我们将不会�
 
 &#42; _架构包含一个类以及零个或多个架构字段组。 这意味着您无需使用字段组即可编写数据集架构。_
 
-![显示类和字段组关系的架构结构图](assets/marketo-measure-ultimate-implementation-guide-1.png)
+![](assets/marketo-guide-1.png)
 
-[数据集概述](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh-Hans){target="_blank"}：所有成功引入AEP的数据将作为数据集保留在数据湖中。 数据集是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。
+[数据集概述](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview#){target="_blank"}：所有成功引入AEP的数据将作为数据集保留在数据湖中。 数据集是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。
 
 ## 创建架构 {#creating-a-schema}
 
 我们建议使用自动生成实用程序来创建十个标准B2B架构。
 
-* 下载和设置实用工具[的步骤可在此处](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html?lang=zh-Hans#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}找到。
+* 下载和设置实用工具[的步骤可在此处](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}找到。
 
-对于具有&#x200B;_&#x200B;**CDP权利**&#x200B;_&#x200B;的用户：通过转到源页面创建架构。
+对于具有&#x200B;_**CDP权利**_&#x200B;的用户：通过转到源页面创建架构。
 
 * 从源中，选择添加数据>使用模板
 
-具有“添加数据”和“使用模板”选项的![源页面](assets/marketo-measure-ultimate-implementation-guide-2.png)
+![](assets/marketo-guide-2.png)
 
 * 选择一个帐户和所有B2B模板，以创建十个标准B2B架构。
 
-![模板选择显示帐户配置的B2B架构模板](assets/marketo-measure-ultimate-implementation-guide-3.png)
+![](assets/marketo-guide-3.png)
 
 ## 数据流 {#dataflows}
 
 >[!IMPORTANT]
+>
 >添加新数据集时，我们建议创建流量而不是使用现有流量。
 
-[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html?lang=zh-Hans){target="_blank"}
+[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html){target="_blank"}
 
 **创建数据流的步骤：**
 
@@ -82,16 +83,19 @@ Ultimate用户是AEP配置用户。 如果他们已有AEP，则我们将不会�
 1. 将字段从Source映射到架构。
 
    >[!NOTE]
-   > 如果将一种架构类型映射到另一种相同的架构类型，则会自动完成映射。
-   > 您还可以从系统中的其他流导入映射。
-   > 您可以将一个Source字段映射到多个目标字段，但无法执行相反操作。
-   > 您可以创建计算字段（[数据准备映射函数](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=zh-Hans){target="_blank"}）。
+   >
+   >* 如果将一种架构类型映射到另一种相同的架构类型，则会自动完成映射。
+   >* 您还可以从系统中的其他流导入映射。
+   >* 您可以将一个Source字段映射到多个目标字段，但无法执行相反操作。
+   >* 您可以创建计算字段（[数据准备映射函数](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html){target="_blank"}）。
 
    >[!CAUTION]
-   > 您可以编辑数据流，但在更改映射时不会回填数据。
-   > 如果必填字段为NULL，则会拒绝整个流。
+   >
+   >* 您可以编辑数据流，但在更改映射时不会回填数据。
+   >* 如果必填字段为NULL，则会拒绝整个流。
 
    >[!NOTE]
+   >
    >[Marketo Measure Ultimate数据完整性要求](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}
 
 1. 设置数据加载节奏。
@@ -109,15 +113,16 @@ Ultimate用户是AEP配置用户。 如果他们已有AEP，则我们将不会�
 
 选项1：要直接从UI运行查询，请访问数据管理下的查询选项卡。
 
-数据管理中的![查询选项卡显示查询接口](assets/marketo-measure-ultimate-implementation-guide-4.png)
+![](assets/marketo-guide-4.png)
 
-选项2： [下载和使用PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html?lang=zh-Hans){target="_blank"} （速度更快，可靠性更高）。
+选项2： [下载和使用PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html){target="_blank"} （速度更快，可靠性更高）。
 
 ## 激活Marketo Measure的数据集 {#activate-dataset-for-marketo-measure}
 
 在开始之前，请转到测量UI设置中的“Experience Platform >沙盒映射”部分，并映射沙盒。
 
 >[!CAUTION]
+>
 >一旦选择此项，便无法更改。
 
 1. 在AEP中，转到“目标> Marketo Measure页面”以导出数据集。
@@ -126,11 +131,12 @@ Ultimate用户是AEP配置用户。 如果他们已有AEP，则我们将不会�
 1. 检查数据流状态测量UI设置中的“帐户状态”页面。
 
 >[!NOTE]
-> 建议每个数据流仅包含一个数据集。
-> 来自给定源的给定实体（例如，帐户）的数据只能进入一个数据集。 每个数据集只能包含在一个数据流中。 违规会在运行时停止数据流。
-> 在AEP中删除整个目标以删除度量中的数据。 禁用将停止新数据导出并保留旧数据。
-> 测量配置的外观大致相同，但某些部分（如暂存映射）的外观会有所不同。
-> 新数据流生成流运行需要几个小时，然后定期进行每小时一次。
+>
+>* 建议每个数据流仅包含一个数据集。
+>* 来自给定源的给定实体（例如，帐户）的数据只能进入一个数据集。 每个数据集只能包含在一个数据流中。 违规会在运行时停止数据流。
+>* 在AEP中删除整个目标以删除度量中的数据。 禁用将停止新数据导出并保留旧数据。
+>* 测量配置的外观大致相同，但某些部分（如暂存映射）的外观会有所不同。
+>* 新数据流生成流运行需要几个小时，然后定期进行每小时一次。
 
 在衡量标准中，必须在“货币”部分中设置默认货币。
 
@@ -142,7 +148,7 @@ Ultimate用户是AEP配置用户。 如果他们已有AEP，则我们将不会�
 
 * 用户可以映射不同来源的阶段。
 
-![阶段映射界面显示来自多个源的阶段配置](assets/marketo-measure-ultimate-implementation-guide-5.png)
+![](assets/marketo-guide-5.png)
 
 如果未映射阶段，系统将无法正常运行，因为没有位置可供数据访问。
 

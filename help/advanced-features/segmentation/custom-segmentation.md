@@ -1,15 +1,14 @@
 ---
-description: 自定义分段 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的自定义分段指南
 title: 自定义分段
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
 feature: Segmentation
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
-
 
 # 自定义分段 {#custom-segmentation}
 
@@ -26,6 +25,7 @@ ht-degree: 0%
 **如何设置？**
 
 >[!NOTE]
+>
 >更新区段规则将重新处理历史数据。
 
 第1步 — 确定要查看的信息。
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 * 使用此图例可了解此页面上的各种图标
 
-![显示管理员中所用图标的区段图例](assets/1.png)
+![](assets/segmentation-segmentation-2.png)
 
 步骤4 — 添加筛选规则。
 
@@ -50,13 +50,14 @@ ht-degree: 0%
 * 单击加号以添加区段
 * 输入区段名称。 例如，您可以有一个区段用于新业务、合作伙伴、续订或追加销售
 
-![在Marketo Measure中添加区段类别和名称](assets/2.png)
+![](assets/segmentation-segmentation-3.png)
 
 * 单击加号图标以显示规则输入字段。 字段选取列表中的选项直接从您的CRM中提取字段
 
-![用于定义区段过滤器的规则输入字段](assets/3.png)
+![](assets/segmentation-segmentation-4.png)
 
 >[!NOTE]
+>
 >公式字段不能在规则中使用，也不会显示在选择列表中。 由于公式在后台计算且不会修改记录，因此[!DNL Marketo Measure]无法检测记录是否符合规则。
 
 * [!UICONTROL Value]选项不是下拉列表，必须手动输入其值。 请务必查看Salesforce组织中的值

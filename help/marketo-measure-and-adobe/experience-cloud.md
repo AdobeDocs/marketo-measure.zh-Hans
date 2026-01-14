@@ -1,15 +1,14 @@
 ---
-description: Adobe Experience Cloud界面概述 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的Adobe Experience Cloud界面概述指南
 title: Adobe Experience Cloud 界面概述
 exl-id: 15bd7590-8eb0-46e5-9883-3be11ff58c9e
 feature: Integration, Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 19%
+source-wordcount: '285'
+ht-degree: 23%
 
 ---
-
 
 # Adobe Experience Cloud 界面概述 {#experience-cloud-interface-overview}
 
@@ -19,9 +18,10 @@ Adobe Experience Cloud界面与Adobe Experience Cloud应用程序和服务的外
 
 如果您已登录Adobe Experience Cloud产品，请单击菜单图标并选择&#x200B;**[!DNL Marketo Measure]**。
 
-![包含Marketo Measure选择选项的Adobe Experience Cloud菜单](assets/unified-shell-overview-4.png)
+![](assets/unified-overview-6.png)
 
 >[!NOTE]
+>
 >您的下拉菜单可能会因您订阅的Adobe Experience Cloud产品而异。
 
 如果您&#x200B;_不是_&#x200B;已登录到Adobe Experience Cloud产品，请直接在此处登录到[!DNL Marketo Measure]： [https://experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure)。
@@ -34,33 +34,33 @@ Adobe Experience Cloud界面与Adobe Experience Cloud应用程序和服务的外
 
 [管理 [!DNL Marketo Measure] 域](/help/marketo-measure-and-adobe/domain-management.md)，无需[!DNL Marketo Measure]的帮助。
 
-![域管理界面显示域配置选项](assets/unified-shell-overview-5.png)
+![](assets/unified-overview-9.png)
 
 **集成帮助中心**
 
 搜索支持文章、提交票证、提供反馈，所有这些都可在[!DNL Marketo Measure]应用程序中找到。
 
-![具有搜索和支持选项的集成帮助中心](assets/unified-shell-overview-6.png)
+![](assets/unified-overview-5.png)
 
 **应用程序切换器**
 
 那些有权访问多个Adobe产品的用户可以在这些产品之间轻松切换。
 
-![应用程序切换器显示可用的Adobe产品](assets/unified-shell-overview-7.png)
+![](assets/unified-overview-4.png)
 
 **通知和公告**
 
 您还可以在应用程序内直接查看并互动处理与产品相关的通知，以及 Adobe 产品的通用公告。
 
-带有警报指示器的![通知图标](assets/unified-shell-overview-8.png)
+![](assets/unified-overview-10.png)
 
-![显示产品公告和更新的通知面板](assets/unified-shell-overview-9.png)
+![](assets/unified-overview-11.png)
 
 **Adobe 设置**
 
 要更改您的语言或其他Adobe范围的首选项，请单击您的配置文件图标。 您还可以通过单击[!DNL Marketo Measure]我的设置&#x200B;**进行特定于**&#x200B;的更改。
 
-![包含“Adobe设置”和“我的设置”选项的“配置文件”菜单](assets/unified-shell-overview-10.png)
+![](assets/unified-overview-8.png)
 
 ## 常见问题解答 {#faq}
 
@@ -72,6 +72,6 @@ Adobe Experience Cloud界面与Adobe Experience Cloud应用程序和服务的外
 
 如果您可以登录到Adobe Experience Cloud，但看到类似以下内容的页面，则问题可能在[!DNL Marketo Measure]侧：
 
-显示Marketo Measure连接问题的![错误页面](assets/unified-shell-overview-11.png)
+![](assets/unified-overview-7.png)
 
 如果收到上述错误，[联系支持人员](https://nation.marketo.com/t5/support/ct-p/Support)寻求帮助。

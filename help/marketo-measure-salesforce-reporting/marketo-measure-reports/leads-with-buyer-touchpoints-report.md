@@ -1,37 +1,37 @@
 ---
-description: 具有买方接触点的潜在客户报告 —  [!DNL Marketo Measure]
+description: 具有买方接触点的潜在客户针对Marketo Measure用户的报告指南
 title: 具有采购员接触点的潜在客户报表
 exl-id: 0376abb0-5eed-41bb-ab4f-3c204ab437df
 feature: Touchpoints, Reporting
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
 
-
 # 具有采购员接触点的潜在客户报表 {#leads-with-buyer-touchpoints-report}
 
 >[!NOTE]
+>
 >您可能会在文档中看到指定“[!DNL Marketo Measure]”的说明，但在您的CRM中仍会看到“[!DNL Bizible]”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
 在涉及[!DNL Marketo Measure]时，您开箱即用地拥有许多报告功能，但我们建议构建其他一些报告类型。 了解如何创建具有买方接触点的内含性潜在客户报告类型。
 
 1. 导航到[!DNL Salesforce]中的设置选项。 从那里，展开“创建”分组并选择&#x200B;**[!UICONTROL Report Types]**。
 
-   ![Salesforce的“报告类型”页面显示具有买方接触点设置的潜在客户](assets/1.jpg)
+   ![](assets/bizible-guide-1.png)
 
 1. 选择 **[!UICONTROL New Custom Report Type]**。
 
-   ![Salesforce中的“新建自定义报表类型”向导](assets/2.jpg)
+   ![](assets/marketo-reports-17.jpg)
 
 1. 将主要对象设置为“Leads”，并在“Report Type Label”输入“Leads with Buyer Touchpoints - Inclusive”中设置。 将报告存储在“潜在客户”类别中并将部署状态更改为&#x200B;**[!UICONTROL Deployed]**。 然后选择&#x200B;**[!UICONTROL Next]**。
 
-   ![报告类型详细信息，潜在客户作为主要对象](assets/3.jpg)
+   ![](assets/marketo-reports-18.jpg)
 
 1. 对于对象关系，选择&#x200B;**[!DNL Marketo Measure]人员**&#x200B;对象作为辅助对象。 选择A到B的关系，因为“每个‘A’记录必须至少有一个相关的‘B’记录。” 从该位置，您将会关联“Buyer Touchpoint”对象，并在B对象和C对象之间选择相同的关系。
 
-   ![对象关系选择，包括Marketo Measure人员和购买者接触点](assets/4.jpg)
+   ![](assets/bizible-guide-2.png)
 
 1. 保存并开始构建一些报告！

@@ -1,15 +1,14 @@
 ---
-description: API连接的最佳实践 —  [!DNL Marketo Measure]
+description: Marketo Measure用户的API连接最佳实践指南
 title: API连接的最佳实践
 exl-id: b8550e4e-a567-427f-b5d3-50232553a066
 feature: APIs, Integration
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
-
 
 # API连接的最佳实践 {#best-practices-for-api-connections}
 
@@ -40,6 +39,7 @@ ht-degree: 0%
 * 下载所有有效[!DNL Facebook]广告的广告成本信息
 
 >[!NOTE]
+>
 >[!DNL Facebook]没有跟踪模板，该API依赖于自动标记(_bf)参数来收集广告详细信息。
 
 **AdWords**：在帐户级别实施跟踪模板并启用自动标记
@@ -56,7 +56,6 @@ ht-degree: 0%
 与某些其他API连接不同，在设置[!DNL Bing] API连接时，不会丢失广告历史记录。
 
 通过遵循我们的最佳实践建议，[!DNL Marketo Measure] Bing API将能够：
-
 * 使用以下参数`_bt={adid}, utm_medium=cpc, utm_source=bing, utm_term={keyword}`自动标记所有Bing Ads
 * 下载所有活动Bing广告的广告成本信息
 
@@ -70,6 +69,7 @@ ht-degree: 0%
 * 下载所有活动和支持的[!DNL LinkedIn]广告的广告成本信息
 
 >[!NOTE]
+>
 >[!DNL LinkedIn]没有跟踪模板，该API依赖于自动标记(_bl)参数来收集所有可能的广告详细信息。
 
 ## 维护的最佳实践 {#best-practice-for-maintenance}
@@ -87,10 +87,11 @@ ht-degree: 0%
 如果您的团队遇到以上任何情况，请检查[!DNL Marketo Measure]应用程序中的API连接，确保它们不需要重新授权。
 
 >[!MORELIKETHIS]
-> [集成广告平台(API)](/help/api-connections/integrated-ad-platforms.md)
-> [竞价管理工具如何影响 [!DNL Marketo Measure]](/help/api-connections/how-bid-management-tools-affect-marketo-measure.md)
-> [[!DNL Marketo Measure] 解释API参数](/help/api-connections/marketo-measure-parameters.md)
-> [Facebook API概述](/help/api-connections/facebook-api.md)
-> [[!DNL LinkedIn] 集成概述](/help/api-connections/linkedin-integration.md)
-> [AdWords集成概述](/help/api-connections/understanding-marketo-measure-adwords-tagging.md)
-> [重新授权连接的API帐户](/help/api-connections/reauthorizing-connected-accounts.md)
+>
+>* [集成广告平台(API)](/help/api-connections/integrated-ad-platforms.md)
+>* [竞价管理工具如何影响 [!DNL Marketo Measure]](/help/api-connections/how-bid-management-tools-affect-marketo-measure.md)
+>* [[!DNL Marketo Measure] API参数说明](/help/api-connections/marketo-measure-parameters.md)
+>* [Facebook API概述](/help/api-connections/facebook-api.md)
+>* [[!DNL LinkedIn] 集成概述](/help/api-connections/linkedin-integration.md)
+>* [AdWords集成概述](/help/api-connections/understanding-marketo-measure-adwords-tagging.md)
+>* [重新授权连接的API帐户](/help/api-connections/reauthorizing-connected-accounts.md)

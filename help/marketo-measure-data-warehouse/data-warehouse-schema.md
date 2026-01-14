@@ -1,25 +1,26 @@
 ---
-description: Data Warehouse架构
+description: Marketo Measure Data Warehouse架构详细介绍表和列的参考
 title: Data Warehouse架构
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '21106'
+source-wordcount: '21115'
 ht-degree: 3%
 
 ---
-
 
 # Data Warehouse架构 {#data-warehouse-schema}
 
 Data Warehouse允许您根据需要进行跟踪、根据需要报告归因数据，并将其连接到其他数据集。
 
 >[!IMPORTANT]
-> 具有_DELETED_DATE值的行将保留7天，然后从Snowflake中删除。
-> Snowflake中使用的时区遵循协调世界时(UTC)。
+>
+>* 具有_DELETED_DATE值的行将保留7天，然后从Snowflake中删除。
+>* Snowflake中使用的时区遵循协调世界时(UTC)。
 
 >[!NOTE]
+>
 >[单击此处](#sample-queries)查看本文底部的示例查询。
 
 ## 实体关系图 {#entity-relationship-diagrams}
@@ -30,17 +31,17 @@ _Data Warehouse数据模型_ ERD显示Data Warehouse中的数据如何流动以�
 
 _单击完整版本的图像_
 
-<table style="table-layout:auto">
+<table style="table-layout:auto"> 
  <tbody> 
   <tr> 
-   <th>Data Warehouse数据模型</th>
-   <th>广告维度数据模型</th>
+   <th>Data Warehouse数据模型</th> 
+   <th>广告维度数据模型</th> 
   </tr> 
   <tr> 
-   <td><a href="assets/data-warehouse-data-model.pdf"><img src="assets/data-warehouse-data-model-thumb.png"></a></td>
-   <td><a href="assets/ads-dimensional-data-model.pdf"><img src="assets/ads-dimensional-data-model-thumb.png"></a></td>
-  </tr>
- </tbody>
+   <td><a href="assets/data-warehouse-data-model.pdf"><img src="assets/data-thumb-1.png"></a></td>
+   <td><a href="assets/ads-dimensional-data-model.pdf"><img src="assets/ads-thumb-1.png"></a></td> 
+  </tr> 
+ </tbody> 
 </table>
 
 ## 视图 {#views}
@@ -3066,7 +3067,7 @@ _单击完整版本的图像_
   <tr>
     <td>CONVERSION_EVENT_ID</td>
     <td>varchar</td>
-    <td>转化事件的原始MM事件ID
+    <td>转化事件的原始MM事件ID 
     <br>映射到用户接触点或阶段过渡</td>
     <td>00U0Z00000pCZmyUAG</td>
   </tr>
@@ -5789,7 +5790,8 @@ _单击完整版本的图像_
 将展示次数、页面查看次数、访问次数、表单提交次数、用户接触点、接触点(BT)、归因接触点(BAT)和成本数据结合使用。 在内部使用，以支持[!DNL Marketo Measure]报告。
 
 >[!IMPORTANT]
->2024年年中，Marketo Measure将弃用此表。 如果您希望在您这边创建它，请运行[此SQL查询](/help/data-warehouse/assets/BIZ_FACTS.sql)。
+>
+>2024年年中，Marketo Measure将弃用此表。 如果您希望在您这边创建它，请运行[此SQL查询](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.sql)。
 
 <table>
   <tbody>
@@ -6661,7 +6663,7 @@ _单击完整版本的图像_
         <p>提交表单的URL，包括任何查询参数。</p>
       </td>
       <td>
-        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1H z0RrbXlDVmxJNzIwNkhW</p>
+        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1H z0RrbXlDVmxJNzIwNkhW</p>
       </td>
     </tr>
     <tr>
@@ -6915,7 +6917,7 @@ _单击完整版本的图像_
       <td>
         <p>提供展示的URL，包括任何查询参数。</p>
       </td>
-      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1H z0RrbXlDVmxJNzIwNkhW</td>
+      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1H z0RrbXlDVmxJNzIwNkhW</td>
     </tr>
     <tr>
       <td>
@@ -9330,7 +9332,7 @@ _单击完整版本的图像_
         <p>页面查看源自的URL，包括任何查询参数。</p>
       </td>
       <td>
-        <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution?utm_source=linkedin&utm_medium=Social&utm_campaign=SU%20-%20CMO%20JT&utm_content=CMOs%20Guide&utm_term=lisu05091601</p>
+        <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU%20-%20CMO%20JT&amp;utm_content=CMOs%20Guide&amp;utm_term=lisu05091601</p>
       </td>
     </tr>
     <tr>
@@ -9909,7 +9911,7 @@ _单击完整版本的图像_
         <p>会话的第一次页面查看的URL，包括任何查询参数。</p>
       </td>
       <td>
-        <p>http://www.adobe.com/salesforce-google-analytics?_bt=83558988035&_bk=google%20analytics%20salesforce&_bm= p&amp;gclid=CMvd5YTLo84CFUI9gQodd-kLEQ</p>
+        <p>http://www.adobe.com/salesforce-google-analytics?_bt=83558988035&amp;_bk=google%20analytics%20salesforce&amp;_bm= p&amp;gclid=CMvd5YTLo84CFUI9gQodd-kLEQ</p>
       </td>
     </tr>
     <tr>
@@ -11610,7 +11612,7 @@ _单击完整版本的图像_
         <p>生成接触点的会话的第一个登陆页面。 原始登陆页面将包含URL中的所有查询参数。 在CRM中称为“Landing Page - Raw”。</p>
       </td>
       <td>
-        <p>https://info.adpbe.com/definitive-guide-to-pipeline-marketing?utm_source=linkedin&utm_medium=Social&utm_campaign=SU_COM_Demand_ Skills&amp;utm_content=DGPM&amp;utm_term=lisu03151846&amp;_bl=66452504</p>
+        <p>https://info.adpbe.com/definitive-guide-to-pipeline-marketing?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU_COM_Demand_ Skills&amp;utm_content=DGPM&amp;utm_term=lisu03151846&amp;_bl=66452504</p>
       </td>
     </tr>
     <tr>
@@ -12625,7 +12627,7 @@ _单击完整版本的图像_
         <p>生成接触点的会话的第一个登陆页面。 原始登陆页面将包含URL中的所有查询参数。 在CRM中称为“Landing Page - Raw”。</p>
       </td>
       <td>
-        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ marketo+%maeasure%27s+Pipeline+Marketing+Blog%29</p>
+        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ marketo+%maeasure%27s+Pipeline+Marketing+Blog%29</p>
       </td>
     </tr>
     <tr>
@@ -12673,7 +12675,7 @@ _单击完整版本的图像_
         <p>会话中记录的第一张表单产生了接触点。 后续表单提交不会显示在Attribution_Touchpoints表中，而是显示在Form_Submit表中。 原始表单页面URL中可能包含查询参数。 在CRM中称为“表单URL — 原始”。</p>
       </td>
       <td>
-        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&utm_medium=paid&utm_content=sfskill&utm _campaign=Content%20-%20AdWords%20Guide</p>
+        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&amp;utm_medium=paid&amp;utm_content=sfskill&amp;utm _campaign=Content%20-%20AdWords%20Guide</p>
       </td>
     </tr>
     <tr>
@@ -13262,7 +13264,7 @@ _单击完整版本的图像_
       <td>varchar</td>
       <td>页面查看的URL，包括任何查询参数。</td>
       <td>
-        <p>https://learn.atest.com/simplify-retention-starter-kit.html?x=nGfrBF&utm_medium=cpc&utm_source=intensify</p>
+        <p>https://learn.atest.com/simplify-retention-starter-kit.html?x=nGfrBF&amp;utm_medium=cpc&amp;utm_source=intensify</p>
       </td>
     </tr>
     <tr>
@@ -13358,7 +13360,7 @@ _单击完整版本的图像_
 
 ```
 --Note: This query can quickly be modified to show Buyer Attribution Touchpoint (BAT) counts by switching the biz_touchpoints table to the biz_attribution_touchpoints table.
-
+ 
 select trim(split(ch.name,'.')[0])  as channel
       ,trim(split(ch.name,'.')[1])  as subchannel
       ,count(bt.id)                 as buyer_touchpoint_count
@@ -13380,7 +13382,7 @@ group by 1,2
 
 ```
 --Note: This query does not perform any currency conversion.  If your data contains multiple currencies, you will need to add in logic to perform the conversion to the desired currency using the biz_conversion_rates table.
-
+ 
 select trim(split(ch.name,'.')[0])  as channel
       ,sum(opp.amount*(bat.full_path_percentage/100))   as attributed_revenue
   from biz_user_touchpoints         ut
@@ -13403,7 +13405,7 @@ select trim(split(ch.name,'.')[0])  as channel
 group by 1
 ```
 
-**一个人的整个历程是多少？ （显示单个电子邮件地址的所有接触点。）**
+**一个人的整个历程是多少？  （显示单个电子邮件地址的所有接触点。）**
 
 ```
 select ut.touchpoint_date
@@ -13447,6 +13449,7 @@ order by 1
 **显示单个商机的所有买方归因接触点(BAT)及其归因收入。**
 
 >[!NOTE]
+>
 >此查询返回w形状模型的归因收入。 通过更新已归因收入计算中的字段更改模型。
 
 ```

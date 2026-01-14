@@ -1,15 +1,14 @@
 ---
-description: 阶段映射的最佳实践 —  [!DNL Marketo Measure]
+description: Marketo Measure用户阶段映射指南的最佳实践
 title: 阶段映射的最佳实践
 exl-id: 1ed380a1-4a3a-4761-b70f-cdf2e290329d
 feature: Tracking, Custom Models
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
-
 
 # 阶段映射的最佳实践 {#best-practices-for-stage-mapping}
 
@@ -52,4 +51,5 @@ ht-degree: 0%
 * 在[!DNL Marketo Measure]报表中看到不正确的收入数据
 
 >[!MORELIKETHIS]
+>
 >[Funnel阶段与自定义模型阶段之间的差异](/help/advanced-features/custom-attribution-models/custom-attribution-model-and-setup.md#the-difference-between-funnel-stages-and-custom-model-stages)

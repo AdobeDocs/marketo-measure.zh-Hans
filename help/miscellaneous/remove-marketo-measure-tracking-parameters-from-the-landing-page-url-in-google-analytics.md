@@ -1,15 +1,14 @@
 ---
-description: 从Google Analytics中的登陆页面URL中删除 [!DNL Marketo Measure] 跟踪参数
+description: 在适用于Marketo Measure用户的Google Analytics指南中，从登陆页面URL中删除 [!DNL Marketo Measure] 跟踪参数
 title: 从Google Analytics中的登陆页面URL中删除 [!DNL Marketo Measure] 跟踪参数
 exl-id: ec81ba4a-bb10-49fd-b62e-5a1bc9e1a023
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
-
 
 # 从Google Analytics中的登陆页面URL中删除[!DNL Marketo Measure]跟踪参数 {#remove-marketo-measure-tracking-parameters-from-the-landing-page-url-in-google-analytics}
 

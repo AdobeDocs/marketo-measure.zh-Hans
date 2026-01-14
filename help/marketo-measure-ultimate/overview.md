@@ -1,15 +1,14 @@
 ---
-description: '[!DNL Marketo Measure] Ultimate概述 —  [!DNL Marketo Measure]'
+description: '''[!DNL Marketo Measure] Ultimate概述 —  [!DNL Marketo Measure]'''
 title: '[!DNL Marketo Measure] Ultimate概述'
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '683'
 ht-degree: 4%
 
 ---
-
 
 # [!DNL Marketo Measure] Ultimate概述 {#marketo-measure-ultimate-overview}
 
@@ -30,11 +29,11 @@ ht-degree: 4%
 
 **[!DNL Marketo Measure]层1-3**
 
-![显示Marketo Measure层1-3数据流和连接的架构图](assets/marketo-measure-ultimate-overview-1.png)
+![](assets/marketo-overview-1.png)
 
 **[!DNL Marketo Measure Ultimate]**
 
-![显示Marketo Measure Ultimate与AEP集成的架构图](assets/marketo-measure-ultimate-overview-2.png)
+![](assets/marketo-overview-3.png)
 
 ## [!DNL Marketo Measure Ultimate]的新增功能 {#whats-new-in-marketo-measure-ultimate}
 
@@ -42,26 +41,27 @@ ht-degree: 4%
 
 营销人员应通过AEP引入其B2B数据（例如，客户、机会、联系人、潜在客户、营销活动、营销活动成员、活动）。 Ultimate不再提供直接CRM和Marketo Engage连接。 营销人员继续通过直接连接引入广告平台数据，并通过[!DNL Marketo Measure] javascript跟踪Web活动。
 
-![数据流图，显示通过AEP平台的B2B数据导入](assets/marketo-measure-ultimate-overview-3.png)
+![](assets/marketo-overview-2.png)
 
 **默认货币设置**
 
 [!DNL Marketo Measure Ultimate]将默认货币设置为USD，直到用户更改它。 设置新的默认货币可更新数据，而无需重新处理。 只要所选货币以目标ISO代码的形式存在，就无需提交兑换率。
 
-![默认货币设置界面带有USD货币选项](assets/marketo-measure-ultimate-overview-4.png)
+![](assets/marketo-overview-7.png)
 
 **[!DNL Marketo Measure Ultimate]沙盒**
 
 必须先将[!DNL Marketo Measure Ultimate]实例映射到AEP沙盒，然后才能在AEP中创建[!DNL Marketo Measure]目标数据流。
 
 >[!NOTE]
+>
 >必须将[!DNL Marketo Measure Ultimate]生产实例映射到AEP生产沙盒，必须将[!DNL Marketo Measure Ultimate]开发人员实例映射到AEP开发人员沙盒。
 
 一旦保存了沙盒映射选择，您就无法在应用程序中更改它。 要更改它，请联系[Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。
 
 来自给定数据源的给定实体（例如，帐户）的数据只能进入一个数据集。 每个数据集只能包含在一个数据流中。 违规会在运行时停止数据流。
 
-![显示数据集和数据流关系的沙盒映射配置](assets/marketo-measure-ultimate-overview-5.png)
+![](assets/marketo-overview-6.png)
 
 **阶段映射**
 
@@ -92,13 +92,13 @@ ht-degree: 4%
 
 funnel与回旋镖与自定义模型无选择项。 为funnel、自转帐和自定义模型选择所有阶段。 我们支持的阶段数量存在限制：15个自定义阶段加6个内置阶段。
 
-![显示内置和自定义阶段配置的阶段映射接口](assets/marketo-measure-ultimate-overview-6.png)
+![](assets/marketo-overview-4.png)
 
 Campaign成员接触点规则和活动接触点规则特定于数据集。
 
-![按数据集配置的Campaign成员接触点规则](assets/marketo-measure-ultimate-overview-7.png)
+![](assets/marketo-overview-5.png)
 
-![按数据集配置活动接触点规则](assets/marketo-measure-ultimate-overview-8.png)
+![](assets/marketo-overview-8.png)
 
 归因接触点不会写入CRM，因为Ultimate没有直接CRM连接。
 
@@ -110,5 +110,7 @@ Campaign成员接触点规则和活动接触点规则特定于数据集。
 * 现有第1/2/3层用户没有迁移路径。 需要新的实施，但我们会帮助从现有实例迁移跟踪的Web活动数据。
 
 >[!MORELIKETHIS]
-> [Marketo Measure Ultimate目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=zh-Hans){target="_blank"}
-> [视频： Marketo Measure Ultimate概述](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}
+>
+>* [Marketo Measure Ultimate目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}
+>
+>* [视频： Marketo Measure Ultimate概述](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}

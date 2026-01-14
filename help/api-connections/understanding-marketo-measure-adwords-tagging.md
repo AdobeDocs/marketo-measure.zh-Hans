@@ -1,15 +1,14 @@
 ---
-description: 了解 [!DNL Marketo Measure] AdWords标记 —  [!DNL Marketo Measure]
+description: 了解适用于Marketo Measure用户的 [!DNL Marketo Measure] AdWords标记指南
 title: 了解 [!DNL Marketo Measure] AdWords标记
 exl-id: c6658766-d3a8-46ed-b2d2-826eb61ce269
 feature: APIs, Integration, UTM Parameters
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
-
 
 # 了解[!DNL Marketo Measure]个AdWords标记 {#understanding-marketo-measure-adwords-tagging}
 
@@ -61,11 +60,11 @@ ht-degree: 0%
 
 1. 在展开窗口中单击&#x200B;**[!UICONTROL All campaigns]**，然后单击&#x200B;**[!UICONTROL Settings]**。
 
-   ![Google AdWords导航显示所有营销活动菜单和设置选项](assets/1.png)
+   ![](assets/utilizing-connections-13.png)
 
 1. 单击顶部的&#x200B;**[!UICONTROL Account Settings]**，然后单击&#x200B;**[!UICONTROL Tracking Template]**。 输入[!DNL Marketo Measure]跟踪模板。
 
-   用于输入Marketo Measure参数的![帐户设置页面（包含“跟踪模板”字段）](assets/2-1.png)
+   ![](assets/bizible-guide-1.png)
 
 1. 单击 **[!UICONTROL Save]**。
 
@@ -73,11 +72,11 @@ ht-degree: 0%
 
 1. 在展开窗口中单击&#x200B;**[!UICONTROL All campaigns]**，然后单击&#x200B;**[!UICONTROL Campaigns]**。
 
-   ![Google AdWords导航显示所有营销活动菜单和营销活动选项](assets/3.png)
+   ![](assets/utilizing-connections-12.png)
 
 1. 选择所有适用的营销活动或&#x200B;**[!UICONTROL Select All]**，单击&#x200B;**[!UICONTROL Edit]**，然后单击&#x200B;**[!UICONTROL Change Tracking Templates]**。
 
-   ![包含“编辑”菜单的“促销活动选择”页面显示“更改跟踪模板”选项](assets/4-1.png)
+   ![](assets/five-five-1.png)
 
 1. 输入[!DNL Marketo Measure]跟踪模板并单击&#x200B;**[!UICONTROL Apply]**。
 
@@ -85,13 +84,13 @@ ht-degree: 0%
 
 1. 在展开窗口中单击&#x200B;**[!UICONTROL All campaigns]**，然后单击&#x200B;**[!UICONTROL Ad Groups]**。
 
-   ![Google AdWords导航显示所有促销活动菜单和广告组选项](assets/5-1.png)
+   ![](assets/four-four-1.png)
 
 1. 选择所有适用的广告组或全选，单击&#x200B;**[!UICONTROL Edit]**，然后单击&#x200B;**[!UICONTROL Change Tracking Templates]**。
 
 1. 输入[!DNL Marketo Measure]跟踪模板并单击&#x200B;**[!UICONTROL Apply]**。
 
-   ![包含“编辑”菜单的广告组选择页面，其中显示“更改跟踪模板”选项和“应用”按钮](assets/6-1.png)
+   ![](assets/one-one-1.png)
 
 ## 常见问题解答 {#faq}
 
@@ -112,6 +111,7 @@ ht-degree: 0%
 答：我们无法为动态搜索广告检索单个创意详细信息，但如果启用了自动标记，我们仍可以获得创意ID和属性收入。
 
 >[!NOTE]
+>
 >完成更改后，即表示您已经完成。 如果在设置过程中有任何问题，请随时联系[Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。
 
 [单击此处](https://support.google.com/adwords/answer/6076199?hl=en#tracking){target="_blank"}以获取Google有关创建帐户级跟踪模板的说明。

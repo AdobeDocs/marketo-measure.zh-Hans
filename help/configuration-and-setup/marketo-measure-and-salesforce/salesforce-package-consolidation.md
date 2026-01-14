@@ -1,15 +1,14 @@
 ---
-description: '[!DNL Salesforce]包合并 —  [!DNL Marketo Measure]'
+description: “[!DNL Salesforce]包合并 —  [!DNL Marketo Measure]”
 title: '[!DNL Salesforce]包合并'
 exl-id: ae559f5f-91bf-4504-9d5a-af47f95ca01f
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
-
 
 # [!DNL Salesforce]包合并 {#salesforce-package-consolidation}
 
@@ -42,13 +41,13 @@ ht-degree: 1%
       * V2_EXT查询：
          * bizible2_ext__Ad_Content_FT__c包含外联
 
-![使用V2_EXT广告内容FT字段的示例报告筛选器](assets/package-consolidation-1.png)
+![](assets/bizible-full-1.png)
 
 * 合并包中的相应查询：
    * bizible2__Touchpoint_Position__c包含FT和
    * bizible2__Ad_Content__c包含外联
 
-![使用合并接触点字段的等效报告过滤器](assets/salesforce-package-consolidation-2.png)
+![](assets/bizible-taxonomy-1.png)
 
 ## 常见问题解答 {#faq}
 

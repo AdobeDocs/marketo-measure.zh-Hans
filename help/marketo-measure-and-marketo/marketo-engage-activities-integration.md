@@ -3,13 +3,12 @@ description: '[!DNL Marketo Engage]活动集成 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]活动集成'
 exl-id: 463ad9b2-e1bd-49dd-8bf5-0da7b7132f05
 feature: Integration
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1640'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Marketo Engage]活动集成 {#marketo-engage-activities-integration}
 
@@ -28,19 +27,19 @@ ht-degree: 0%
 
 1. 要开始设置Marketo活动，请导航到&#x200B;**我的帐户** > **设置** > **活动**。
 
-   Marketo Measure帐户中的![活动设置页面](assets/one-1.png)
+   ![](assets/one-one-1.png)
 
-   ![具有活动类型选择的活动配置屏幕](assets/two-1.png)
+   ![](assets/two-two-2.png)
 
    首先需要选择计划构建规则的活动类型列表。 不需要固定数量的活动类型，但建议您不要让接触点过载并淡化重要里程碑的重要性。 这样，您就无需超过五种活动类型即可跟踪相关参与。
 
 1. 单击[!UICONTROL Select Activities Types]下的下拉菜单开始选择各种类型。
 
-   ![显示可用Marketo活动类型的下拉菜单](assets/three-1.png)
+   ![](assets/three-three-2.png)
 
 1. 选择所需的所有活动后，您会看到它们已填充到[!UICONTROL Selected Activities List]和[!UICONTROL Define Rules]下。
 
-   ![选定活动列表显示选定的活动类型](assets/four-1.png)
+   ![](assets/four-four-2.png)
 
 1. 对于每个活动类型，您必须定义一个或多个规则来确定哪些记录适用于接触点。 在本例中，我们为“更改得分”活动类型添加了一个规则，以便系统在Marketo人员达到90分或更高Score时创建一个接触点。
 
@@ -48,27 +47,27 @@ ht-degree: 0%
 
    以下是该额外步骤的示例：
 
-   活动规则的![促销活动名称配置字段](assets/five-1.png)
+   ![](assets/five-five-1.png)
 
 1. 在“更改得分”示例中，需要输入“促销活动名称”，因为该信息是从Marketo项目中提取的。 现在创建规则表达式。 在此示例后，选择值为90且运算符为“[!UICONTROL New Value]”的字段“[!UICONTROL is greater than]”。
 
    您可以展开规则，并通过添加“and”或“or”语句来缩小结果范围，从而添加其他过滤器或标准。
 
-   ![包含字段和运算符选择的更改得分活动的规则生成器](assets/six-1.png)
+   ![](assets/six-six-2.png)
 
-   ![显示大于90条件的新值的规则表达式](assets/seven-1.png)
+   ![](assets/seven-seven-1.png)
 
 1. 最后，选择要用作接触点日期的内容。 所有可用的日期或日期/时间字段均在此处显示Marketo。 除非您有自定义日期字段，否则您会看到&quot;[!UICONTROL Activity Date]&quot;。
 
-   显示“活动日期”选项的![接触点日期字段选择器](assets/eight-1.png)
+   ![](assets/eight-eight-2.png)
 
 1. 请确保在此过程中单击&#x200B;**[!UICONTROL Save As Draft]**，以便您不会丢失所做的更改。
 
-   ![活动规则配置中的“另存为草稿”按钮](assets/nine-1.png)
+   ![](assets/nine-nine-1.png)
 
 1. 导航到&#x200B;**[!UICONTROL Attribute Mapping]**&#x200B;选项卡。
 
-   ![活动设置中的“属性映射”选项卡](assets/ten-1.png)
+   ![](assets/ten-ten-2.png)
 
 1. 对于您选择的每种活动类型，您可以选择将其他Marketo属性映射到接触点字段，以便您可以在[!DNL Marketo Measure Discover]或CRM中查看和报告这些值。
 
@@ -89,6 +88,7 @@ ht-degree: 0%
    * 浏览器
 
    >[!NOTE]
+   >
    >此列表中没有广告内容或关键词等广告字段，因为它们是为我们的广告平台集成保留的。
 
 ## 活动类型 {#activity-types}
@@ -111,6 +111,7 @@ ht-degree: 0%
 更改培养节奏(115)
 
 >[!NOTE]
+>
 >在我们需要项目ID的活动类型中，如果检测到某个活动而没有项目，则[!DNL Marketo Measure]不会接受将其作为符合条件的接触点，因为我们的Campaign值不能为空。
 
 **没有程序Id的活动类型**
@@ -157,9 +158,9 @@ SFDC活动(26)\
 
 ## 渠道映射 {#channel-mapping}
 
-对于具有项目ID的活动类型中的任意规则，Marketo项目渠道由项目确定。 我们使用项目频道来映射到您的自定义脱机频道，因此您需要确保按照此处[的说明正确配置了您的频道](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md#channel-mapping){target="_blank"}。
+对于具有项目ID的活动类型中的任意规则，Marketo项目渠道由项目确定。 我们使用项目频道来映射到您的自定义脱机频道，因此您需要确保按照此处[的说明正确配置了您的频道](/help/marketo-measure-and-marketo/marketo-engage-programs-integration.md#channel-mapping)。
 
-对于没有项目ID的活动类型中的任何规则，您的第一步是创建营销活动名称。 使用此促销活动名称可设置您在此处[布局的自定义在线渠道](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md){target="_blank"}。
+对于没有项目ID的活动类型中的任何规则，您的第一步是创建营销活动名称。 使用此促销活动名称可设置您在此处[布局的自定义在线渠道](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md)。
 
 如果未正确配置Marketo活动的渠道，则您的新接触点可能会归入“其他”渠道下。
 
@@ -184,6 +185,7 @@ Wayne Enterprises营销团队创建一个Marketo活动规则，以生成“点�
 通过这个Cookie映射增强功能，英国《金融时报》将回头计入Facebook广告中，而LC将计入电子邮件中。
 
 >[!NOTE]
+>
 >通过Cookie映射行为，您可能会找到一些来自Web访问的LC接触点。 一个商机出现在Marketo中时可能没有任何关联活动，然后[!DNL Marketo Measure]下载了该商机，匹配了关联的Cookie，然后将其跟踪到最近的Web会话，即使不存在创建该商机的表单活动也是如此。
 
 ## 常见问题解答 {#faq}

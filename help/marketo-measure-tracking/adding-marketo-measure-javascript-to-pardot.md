@@ -1,15 +1,14 @@
 ---
-description: 正在将 [!DNL Marketo Measure] JavaScript添加到 [!DNL Pardot] - [!DNL Marketo Measure]
+description: 正在将 [!DNL Marketo Measure] JavaScript添加到Marketo Measure用户的 [!DNL Pardot] 指南
 title: 正在将 [!DNL Marketo Measure] JavaScript添加到 [!DNL Pardot]
 exl-id: e49190ad-aa86-4f8f-a9ed-48de9e937a7e
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
-
 
 # 正在将[!DNL Marketo Measure]个JavaScript添加到[!DNL Pardot] {#adding-marketo-measure-javascript-to-pardot}
 
@@ -25,11 +24,11 @@ ht-degree: 0%
 
 1. 选择 **[!UICONTROL Layout Template]**。
 
-   ![&#x200B; 3](assets/1-3.png)
+   ![](assets/adding-providers-4.png)
 
 1. 确定适当的布局模板，然后单击右侧的&#x200B;**[!UICONTROL Edit]**。
 
-   ![&#x200B; 1](assets/2-1.png)
+   ![](assets/adding-pages-1.png)
 
 1. 将[!DNL Marketo Measure]JavaScript代码复制并粘贴到HTML页面上的关闭页眉标记之前。
 

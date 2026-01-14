@@ -1,21 +1,21 @@
 ---
-description: 正在同步历史数据 —  [!DNL Marketo Measure]
+description: 同步Marketo Measure用户的历史数据指南
 title: 同步历史数据
 exl-id: 5a3c1a71-463a-4d75-98b9-fc225839512a
 feature: Channels
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1507'
 ht-degree: 1%
 
 ---
-
 
 # 同步历史数据 {#syncing-historical-data}
 
 [!DNL Marketo Measure]是一种提供最细粒度、可操作数据的解决方案。 但是，我们理解您可能拥有想要归因的现有数据。 可以为历史数据生成接触点，但在执行此流程之前务必要考虑几个因素。
 
 >[!NOTE]
+>
 >本文介绍了一个过时的流程。 我们鼓励用户使用[新的、改进的应用程序内进程](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}。
 
 ## 要考虑的因素 {#factors-to-consider}
@@ -50,11 +50,12 @@ b.将成员添加到营销活动或标记为已响应的日期用作接触点日
 
 要同步历史在线数据，必须将数据整理到Salesforce Campaigns中，然后您会通过[!DNL Marketo Measure]应用程序中的[!DNL Salesforce] Campaign同步规则将这些数据同步到[!DNL Marketo Measure]。 请务必确保在JavaScript上线日期之后，不会从任何这些营销活动生成接触点。 这是为了避免重复的接触点。 JavaScript上线后，将自动跟踪在线工作，因此我们不希望也通过SFDC营销活动跟踪它们。 要避免出现此问题，请确保为规则添加时间感。 可能类似于“营销活动成员创建日期小于[JavaScript上线日期]”的内容。
 
-历史数据的![Salesforce促销活动同步规则示例](assets/syncing-historical-data-1.png)
+![](assets/dynamics-lists-1.png)
 
 历史在线数据的渠道映射组件可能有点棘手。 我们希望它尽可能地匹配您当前的在线渠道规则（来自在线规则表），以便进行干净的报告。 以下是理想渠道映射的示例。
 
 >[!NOTE]
+>
 >由于我们使用的是SFDC营销活动，因此此渠道映射在[!UICONTROL Offline Channels]应用程序的[!DNL Marketo Measure]部分中完成。
 
 | Salesforce营销活动类型 | 渠道 | 子渠道 |
@@ -89,13 +90,14 @@ b.将成员添加到营销活动或标记为已响应的日期用作接触点日
 
 如果数据存储在其他位置（例如仍保留在Marketing Automation中），则需要将其推送到[!DNL Dynamics]并组织到相应的营销活动中。 然后，您需要考虑接触点日期，因为您希望它反映过去的日期，而不是您将其推送到[!DNL Dynamics]中的日期。 要覆盖此日期，您可以使用自定义“Buyer Touchpoint日期”字段更改日期。 您需要将其添加到营销列表表单。
 
-使用Buyer Touchpoint日期字段![设置Dynamics营销列表](assets/syncing-historical-data-2.png)
+![](assets/dynamics-lists-10.png)
 
 因此，您可以为该营销列表中的所有人批量设置将用于接触点日期的日期。 要获得更准确的历史日期，请为同一营销活动创建多个营销列表，每个列表都具有自己的接触点日期。 如果营销活动具有较短的时间范围，则可能值得每天创建营销列表。 如果营销活动具有较长的时间范围，则每周创建营销列表可能比较合理。
 
 有关同步营销列表的详细信息，请参阅此处： [[!DNL Dynamics] 促销活动和营销列表](/help/channel-tracking-and-setup/offline-channels/legacy-processes/dynamics-campaigns-and-marketing-lists.md)
 
 >[!NOTE]
+>
 >如果由于任何原因，您有一个在JavaScript上线日期之后处于活动状态的营销活动跟踪在线活动，请务必将&quot;[!UICONTROL Touchpoint End Date]&quot;字段设置为JS上线的日期。 这是为了避免同一交互出现重复的接触点。
 
 注意事项：以这种方式添加的在线数据的粒度本质上低于通过JavaScript进行的在线数据[!DNL Marketo Measure]跟踪。 例如，不会填充表单URL、登陆页面、反向链接页面等字段。 因此，建议尽可能将营销活动细分为每个源。 以下是理想映射的示例。

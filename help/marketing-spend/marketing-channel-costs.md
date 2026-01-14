@@ -1,15 +1,15 @@
 ---
-description: 营销渠道成本
+description: 面向Marketo Measure用户的营销渠道成本指南
 title: 营销渠道成本
 exl-id: 36ccaff3-db55-47bd-a24e-4aa1894f13e0
 feature: Channels, Spend Management
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
-
 
 # 营销渠道成本 {#marketing-channel-costs}
 
@@ -77,13 +77,13 @@ ht-degree: 0%
 
 转到&#x200B;**[!UICONTROL My Account]**&#x200B;菜单，单击&#x200B;**[!UICONTROL Settings]**，然后导航到&#x200B;**[!UICONTROL Marketing Spend]**&#x200B;部分下的左侧边栏上的&#x200B;**[!UICONTROL Reporting]**&#x200B;选项。
 
-Marketo Measure中的![营销支出设置页面](assets/1.png)
+![](assets/spend-management-4.png)
 
 **步骤2：下载当前成本CSV**
 
 导航到屏幕右侧并单击&#x200B;**[!UICONTROL Download Current Costs]。**&#x200B;此选项允许您下载CSV格式的电子表格。
 
-在营销支出页面上![下载当前成本选项](assets/2.png)
+![](assets/spend-management-1.png)
 
 **步骤3：打开CSV文件并进行更改**
 
@@ -95,7 +95,7 @@ Marketo Measure中的![营销支出设置页面](assets/1.png)
 
 例如，要将Facebook指示为子渠道，将social指示为渠道，则规则应编写如下：“Social.Facebook”。 同样，要跟踪离线事件，渠道语法应为：“Events.Big Conference”。 示例如下图所示：
 
-![显示渠道和子渠道成本条目的CSV示例](assets/3.png)
+![](assets/spend-management-2.png)
 
 _其他备注_：
 

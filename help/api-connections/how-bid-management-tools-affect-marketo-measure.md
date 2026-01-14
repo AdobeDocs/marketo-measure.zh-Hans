@@ -1,15 +1,14 @@
 ---
-description: 竞价管理工具如何影响 [!DNL Marketo Measure] - [!DNL Marketo Measure]
+description: 竞价管理工具如何影响Marketo Measure用户的 [!DNL Marketo Measure] 指南
 title: 竞价管理工具如何影响 [!DNL Marketo Measure]
 exl-id: 67c00ad9-8b12-4238-8a1f-2d2f5ed04423
 feature: APIs, Integration, UTM Parameters
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
-
 
 # 竞价管理工具如何影响[!DNL Marketo Measure] {#how-bid-management-tools-affect-marketo-measure}
 
@@ -31,6 +30,7 @@ Kenshoo和Marin是绝佳的工具，允许营销人员使用不同的搜索引�
       * `{lpurl}&_bk={keyword}&_bt={creative}&_bm={matchtype}&_bn={network}&_bg={adgroupid}`
    * 如果您的任何广告URL都不包含“？” 在其中，使用此URL：
       * `{lpurl}?_bk={keyword}&_bt={creative}&_bm={matchtype}&_bn={network}&_bg={adgroupid}`
+
 
 ## 对于[!DNL Bing Ads]帐户 {#for-bing-ads-accounts}
 

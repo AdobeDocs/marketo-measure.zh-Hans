@@ -1,19 +1,17 @@
 ---
-description: '[!DNL Marketo Measure]和动态分类 —  [!DNL Marketo Measure]'
+description: 显示Marketo Measure自定义对象如何映射到Microsoft Dynamics标准对象的图
 title: '[!DNL Marketo Measure]和动态分类'
 exl-id: 5d211710-3937-4d86-a570-8115e62b934f
 feature: Microsoft Dynamics
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '25'
+source-wordcount: '47'
 ht-degree: 0%
 
 ---
 
-
 # [!DNL Marketo Measure]和动态分类 {#marketo-measure-and-dynamics-taxonomy}
 
-下面是一个流程图，它表示[!DNL Marketo Measure]自定义对象与Dynamics标准对象的关系。
- 
+下面是一个流程图，它表示[!DNL Marketo Measure]自定义对象与Dynamics标准对象的关系。<p>
 
-![](assets/marketo-measure-and-dynamics-taxonomy-1.png){width="800" zoomable="yes"}
+![显示与Dynamics标准对象相关的Marketo Measure自定义对象的流程图](assets/bizible-taxonomy-1.png)

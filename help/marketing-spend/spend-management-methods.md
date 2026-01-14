@@ -1,15 +1,14 @@
 ---
-description: 支出管理方法 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的支出管理方法指导
 title: 支出管理方法
 exl-id: 36478d8d-986c-4d4f-8854-3287d6c57a9d
 feature: Spend Management
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
-
 
 # 支出管理方法 {#spend-management-methods}
 
@@ -25,7 +24,7 @@ ht-degree: 0%
 
 每个[!DNL Marketo Measure]帐户都可以访问名为[同步CRM促销活动成本](/help/marketing-spend/crm-campaign-costs.md#availability)的功能。 默认情况下，此功能位设置为“否”，但可以随时打开。
 
-![连接设置页面显示CRM Campaign成本同步切换](assets/spend-management-methods-1.png)
+![](assets/spend-management-1.png)
 
 启用此功能后，将自动从符合以下条件的任何CRM营销活动/项目中拉入花费：
 

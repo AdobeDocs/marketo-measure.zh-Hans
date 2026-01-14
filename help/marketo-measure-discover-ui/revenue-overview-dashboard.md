@@ -1,15 +1,15 @@
 ---
-description: 收入概览仪表板 —  [!DNL Marketo Measure]  — 产品
+description: 汇总显示一段时间内的总收入和归因收入和交易计数的收入概览仪表板
 title: 收入概览仪表板
 feature: Reporting
 exl-id: 37e00d79-18f4-46f1-9a1a-e25bbfd55bfd
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
-
 
 # 收入概览仪表板 {#revenue-overview-dashboard}
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 * 我们2022年8月的收入中有多少%可归因于我们的营销计划？
 * 去年第3季度的归因收入与第4季度的对比如何？
 
-![收入概览图表，用于比较一段时间内的总收入和归因收入](assets/revenue-overview-dashboard-1.png)
+![](assets/revenue-dashboard-1.png)
 
 ### 归因覆盖率图表 {#attribution-coverage-chart}
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 * 我们的营销活动占收入的比例是多少？
 
-![归因覆盖率饼图拆分已归因与非归因收入](assets/revenue-overview-dashboard-2.png)
+![](assets/revenue-dashboard-2.png)
 
 ## 筛选器窗格 {#filter-pane}
 
@@ -60,5 +60,6 @@ ht-degree: 0%
 * 日期（基于关闭日期）
 
 >[!MORELIKETHIS]
-> [了解仪表板基础知识](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
-> [仪表板数据可见性策略](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}
+>
+>* [了解仪表板基础知识](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
+>* [仪表板数据可见性策略](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}

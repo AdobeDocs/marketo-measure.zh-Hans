@@ -3,13 +3,12 @@ description: '[!DNL Marketo Engage]程序集成 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]项目集成'
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
 feature: Integration
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1249'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Marketo Engage]项目集成 {#marketo-engage-programs-integration}
 
@@ -33,26 +32,27 @@ ht-degree: 0%
 
 1. 要开始设置Marketo程序中的规则，请导航到&#x200B;**[!UICONTROL My Account]** > **[!UICONTROL Settings]** > **[!UICONTROL Programs]**。 单击&#x200B;**+**&#x200B;图标开始创建您的第一条规则。
 
-   Marketo Measure帐户中的![程序设置页面](assets/one.png)
+   ![](assets/one-one-2.png)
 
-   ![使用“添加”按钮创建新规则对话框](assets/two.png)
+   ![](assets/5a-5a-1.png)
 
 1. 如果有助于跟踪规则，您可以选择为规则设置名称。 您首先要从“计划”和“计划成员资格”字段列表中选择要定义规则的字段。 通过选择要检查的运算符和预期值继续构建规则。
 
-   ![具有字段选择下拉列表和运算符选项的规则生成器](assets/three.png)
+   ![](assets/5b-5b-1.png)
 
 1. 在同一框内添加其他语句以在规则中设置“and”标准，或者单击框外的+图标以设置“or”语句。
 
-   ![规则生成器显示多个条件和/或逻辑选项](assets/four.png)
+   ![](assets/bizible-discover-1.png)
 
 1. 选择应该使用哪个日期或日期/时间字段来映射到接触点日期。 要查看Marketo中可用的值列表，请输入花括号`{`，我们将显示可用的字段。
 
-   ![日期字段映射，带有显示可用字段的自动完成下拉列表](assets/five.png)
+   ![](assets/five-five-2.png)
 
    >[!NOTE]
+   >
    >如果规则要捕获活动日期，或项目群成员达到特定状态的日期，您将需要利用[!DNL Marketo Engage]活动集成并为“更改进展中的状态”活动类型设置规则。
 
-   ![已完成的规则配置显示字段映射和条件](assets/six.png)
+   ![](assets/bizible-discover-2.png)
 
 您完成的规则应如下所示：
 
@@ -62,21 +62,21 @@ ht-degree: 0%
 
 1. 要运行测试，请单击&#x200B;**[!UICONTROL TEST]**&#x200B;按钮，如下所示。
 
-   程序规则界面中的![测试按钮](assets/seven.png)
+   ![](assets/seven-seven-2.png)
 
 1. 此时将显示一个模式窗口，您可以在其中从Marketo输入项目ID。
 
-   ![包含程序ID输入字段的测试模式对话框](assets/eight.png)
+   ![](assets/eight-eight-1.png)
 
    输入ID并单击[!UICONTROL Test]按钮后，我们的规则引擎将检查每个规则并确定程序是否符合任何规则。 在下面的示例中，您可以看到名为[!DNL Marketo Measure]电子书的计划1002具有5个计划成员，并且由于显示的规则而符合条件。
 
    规则在样本大小为5000个成员时运行。 如果您的项目包含5000个以上的成员，我们可能不会检查所有成员的兼容性。 此工具仅用作检查规则是否正确构建的一种方法。
 
-   ![测试结果显示成员计数为](assets/nine.png)的匹配程序
+   ![](assets/nine-nine-2.png)
 
    您可以单击成员计数以查看符合计划条件的Marketo人员ID列表。
 
-   ![测试结果中符合条件的Marketo人员ID列表](assets/ten.png)
+   ![](assets/eight-eight-2.png)
 
 ## 渠道映射 {#channel-mapping}
 
@@ -88,43 +88,39 @@ ht-degree: 0%
 
 1. 首先选择应映射到值的渠道，然后（可选）选择子渠道。 完成后，单击底部的&#x200B;**[!UICONTROL Save]**。
 
-   ![脱机渠道设置显示Marketo项目渠道映射选项](assets/eleven.png)
+   ![](assets/eleven-eleven-1.png)
 
 ## 计划成本 {#program-costs}
 
 通过Marketo程序的数据导入，成本将自动从期间成本中下载，Marketo中报告的成本将在整个分配的月份中分发。 例如，如果为2021年1月报告$1000，则将$1000拆分为31天。 可以在[!DNL Marketo Measure Discover]中找到成本。
 
->[!NOTE]
->
->Marketo Measure每月仅支持一个期间成本条目。 为确保所有成本都导入，将每月总成本汇总到单个条目中。 不支持同一月份的多项期间成本条目。
-
 ## 工作原理 {#how-it-works}
 
 **字段映射**
 
-<table>
- <colgroup>
-  <col>
-  <col>
- </colgroup>
- <tbody>
-  <tr>
-   <th>biz_ad_campaigns</th>
-   <th>Marketo</th>
-  </tr>
-  <tr>
-   <td>ID</td>
-   <td>ID</td>
-  </tr>
-  <tr>
-   <td>IS_DELETED</td>
-   <td>（通过API检查程序是否仍然存在）</td>
-  </tr>
-  <tr>
-   <td><p>名称</p></td>
-   <td>name</td>
-  </tr>
- </tbody>
+<table> 
+ <colgroup> 
+  <col> 
+  <col> 
+ </colgroup> 
+ <tbody> 
+  <tr> 
+   <th>biz_ad_campaigns</th> 
+   <th>Marketo</th> 
+  </tr> 
+  <tr> 
+   <td>ID</td> 
+   <td>ID</td> 
+  </tr> 
+  <tr> 
+   <td>IS_DELETED</td> 
+   <td>（通过API检查程序是否仍然存在）</td> 
+  </tr> 
+  <tr> 
+   <td><p>名称</p></td> 
+   <td>name</td> 
+  </tr> 
+ </tbody> 
 </table>
 
 | biz_campaign_members | Marketo |
@@ -157,6 +153,7 @@ Wayne Enterprises营销团队创建一个Marketo活动规则，以生成“点�
 通过此Cookie映射增强功能，FT将返回并计入[!DNL Facebook]广告的点数，而LC将计入电子邮件的点数。
 
 >[!NOTE]
+>
 >通过Cookie映射行为，您可能会找到一些来自Web访问的LC接触点。 一个商机出现在Marketo中时可能没有任何关联活动，然后[!DNL Marketo Measure]下载了该商机，匹配了关联的Cookie，然后将其跟踪到最近的Web会话，即使不存在创建该商机的表单活动也是如此。
 
 ## 常见问题解答 {#faq}

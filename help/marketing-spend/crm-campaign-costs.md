@@ -1,15 +1,14 @@
 ---
-description: CRM Campaign成本
+description: 面向Marketo Measure用户的CRM Campaign成本指南
 title: CRM Campaign成本
 exl-id: d967cabe-b9f1-4ea1-a81b-e4484c703ecf
 feature: Spend Management
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
-
 
 # CRM Campaign成本 {#crm-campaign-costs}
 
@@ -31,7 +30,7 @@ ht-degree: 0%
 
 对于[!DNL Marketo Measure]，要确定促销活动在月份中的分布情况，可使用促销活动的开始日期和结束日期每天平均分配金额。
 
-按月份![CRM促销活动成本分配示例](assets/1.jpg)
+![](assets/spend-management-3.jpg)
 
 在此示例中，促销活动持续109天，因此如果总成本为18,000美元，则每日支出约为165.14美元。
 

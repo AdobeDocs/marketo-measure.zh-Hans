@@ -3,22 +3,22 @@ description: '[!DNL Marketo Measure] 101报告概述 —  [!DNL Marketo Measure]
 title: '[!DNL Marketo Measure] 101报告概述'
 exl-id: 83977b81-8055-47fd-8a6b-5ef32d280269
 feature: Reporting
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
 
-
 # [!DNL Marketo Measure] 101报告概述 {#marketo-measure-101-reports-overview}
 
 >[!NOTE]
+>
 >您可能会在文档中看到指定“[!DNL Marketo Measure]”的说明，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
 所有使用[!DNL Marketo Measure]和[!DNL Marketo Measure]的[!DNL Salesforce]客户都可以访问其SFDC实例中的“购买者接触点报告”文件夹。 此文件夹包含许多预建报表，可帮助您开始使用Buyer Touchpoint数据进行报告。
 
-Marketo Measure 101![中的Salesforce购买者接触点报告文件夹](assets/bizible-101-reports-overview-1.png)
+![](assets/bizible-guide-1.png)
 
 虽然这些报表中有许多已经确定了特定的报告目标，但仍有六个“_[!DNL Marketo Measure]101..._”由三种关键报表类型表示，它们涵盖了大部分的报告需求。
 
@@ -26,7 +26,7 @@ Marketo Measure 101![中的Salesforce购买者接触点报告文件夹](assets/b
 * 具有买方接触点的[!DNL Marketo Measure]人员
 * 带有机会的买方归因接触点
 
-![Salesforce中的Marketo Measure 101报表列表示例](assets/bizible-101-reports-overview-2.png)
+![](assets/bizible-guide-2.png)
 
 这些报告为您提供了要创建的任何[!DNL Marketo Measure]相关报告所需的基本字段和基础结构。 我们鼓励所有客户（新老客户）在探索营销归因问题时，从这些报表开始。 下面您将找到六个“_[!DNL Marketo Measure]101..._”报告中的每一个报告的说明。
 

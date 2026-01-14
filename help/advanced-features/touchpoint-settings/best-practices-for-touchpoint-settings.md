@@ -1,15 +1,14 @@
 ---
-description: 接触点设置的最佳实践 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的接触点设置指南最佳实践
 title: 接触点设置的最佳实践
 exl-id: 01e314a6-e33d-45cd-aaa3-c212afec07d1
 feature: Touchpoints
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
-
 
 # 接触点设置的最佳实践 {#best-practices-for-touchpoint-settings}
 
@@ -55,7 +54,8 @@ ht-degree: 0%
 * 更改了用于定义禁止显示或删除规则的字段
 
 >[!MORELIKETHIS]
-> [接触点移除和隐藏概述](/help/advanced-features/touchpoint-settings/touchpoint-removal-and-touchpoint-suppression.md)
-> [为什么绝不能删除接触点](/help/advanced-features/touchpoint-settings/why-you-should-never-delete-touchpoints.md)
-> [买方接触点(BT)与买方归因接触点(BAT)](/help/configuration-and-setup/getting-started-with-marketo-measure/touchpoint-differences.md)
+>
+>* [接触点移除和隐藏概述](/help/advanced-features/touchpoint-settings/touchpoint-removal-and-touchpoint-suppression.md)
+>* [为什么绝不应该删除接触点](/help/advanced-features/touchpoint-settings/why-you-should-never-delete-touchpoints.md)
+>* [买方接触点(BT)与买方归因接触点(BAT)](/help/configuration-and-setup/getting-started-with-marketo-measure/difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints.md)
 

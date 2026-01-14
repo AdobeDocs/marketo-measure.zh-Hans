@@ -1,15 +1,15 @@
 ---
-description: Dynamics CRM的OAuth与 [!DNL Azure Active Directory]  - [!DNL Marketo Measure]
+description: '适用于Marketo Measure用户的Dynamics CRM指南的OAuth与 [!DNL Azure Active Directory] '
 title: 'Dynamics CRM的OAuth与 [!DNL Azure Active Directory] '
 exl-id: 0a2f6b29-541d-4965-a460-e6f19b934edb
 feature: Microsoft Dynamics
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '766'
 ht-degree: 0%
 
 ---
-
 
 # Dynamics CRM的OAuth与[!DNL Azure Active Directory] {#oauth-with-azure-active-directory-for-dynamics-crm}
 
@@ -18,6 +18,7 @@ ht-degree: 0%
 此设置适用于使用Dynamics CRM和[!DNL Marketo Measure] (AAD)帐户的新[!DNL Azure Active Directory]客户，或者适用于希望使用OAuth从其旧用户名和密码迁移到[!DNL Azure Active Directory]的客户。
 
 >[!NOTE]
+>
 >对于这两种情况，此处都设置了AAD以便于在[!DNL Marketo Measure]中作为数据提供程序连接Dynamics实例。
 
 ## 设置新应用程序 {#set-up-new-application}
@@ -26,19 +27,19 @@ ht-degree: 0%
 
 1. 单击页面右上角的帐户，然后单击“切换目录”导航，然后选择相应的租户，以选择Azure AD租户。 如果您的帐户下只有一个Azure AD租户，或者您已选择适当的Azure AD租户，请跳过此步骤。
 
-   ![Azure门户租户选择下拉菜单](assets/setup-2.png)
+   ![](assets/bizible-taxonomy-1.png)
 
 1. 在搜索栏中搜索“[!DNL Azure Active Directory]”，然后单击要打开的名称。
 
-   ![显示Azure Active Directory的Azure门户搜索结果](assets/setup-3.png)
+   ![](assets/creating-2e-1.png)
 
 1. 单击左侧菜单中的&#x200B;**[!UICONTROL App Registrations]**。
 
-   带有应用程序注册的![Azure Active Directory导航菜单](assets/setup-4.png)
+   ![](assets/getting-dynamics-1.png)
 
 1. 单击顶部的&#x200B;**[!UICONTROL New Registration]**。
 
-   ![包含“新注册”按钮的“应用程序注册”页面](assets/setup-5.png)
+   ![](assets/getting-dynamics-10.png)
 
 1. 按照提示创建应用程序。 它是Web应用程序还是公共客户端（移动和桌面）应用程序并不重要，但如果您想查看有关Web应用程序或公共客户端应用程序的特定示例，请查看[快速入门](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-overview)。\
    a. Name是应用程序名称，它向最终用户描述您的应用程序。\
@@ -51,33 +52,33 @@ ht-degree: 0%
 
 1. 单击左侧菜单中的&#x200B;**[!UICONTROL Authentication]**。
 
-   ![突出显示身份验证选项的“应用程序”菜单](assets/setup-9.png)
+   ![](assets/getting-dynamics-11.png)
 
 1. 将[!DNL Marketo Measure]重定向URL： `https://apps.bizible.com/OAuth2`和`https://apps.bizible.com/OAuth2?identityOnly=true`添加到重定向URL列表中。
 
-   ![身份验证设置显示Marketo Measure重定向URL](assets/setup-10.png)
+   ![](assets/getting-dynamics-2.png)
 
 1. 导航到API权限选项卡，并确保为应用程序分配了正确的权限。
 
-   ![API权限选项卡显示分配的权限](assets/setup-10a.png)
+   ![](assets/getting-dynamics-3.png)
 
 1. 从此处，在搜索框中输入“[!UICONTROL enterprise]”，然后单击&#x200B;**[!UICONTROL Enterprise Applications]**。
 
-   显示企业应用程序的![Azure门户搜索](assets/setup-11.png)
+   ![](assets/getting-dynamics-4.png)
 
 1. 再次从应用程序列表中查找并打开您的新应用程序。
 
 1. 在“权限”选项卡中，单击&#x200B;**[!UICONTROL Grant Admin Consent for (instance name)]**。
 
-   ![包含“授予管理员同意”按钮的“权限”选项卡](assets/setup-13a.png)
+   ![](assets/getting-dynamics-5.png)
 
 1. 单击 **[!UICONTROL Accept]**。
 
-   ![带有“接受”按钮的管理员同意确认对话框](assets/setup-13b.png)
+   ![](assets/getting-dynamics-6.png)
 
 1. 在“[!UICONTROL Users and Groups]”选项卡中，确保将有效的“用户和组”分配给应用程序。
 
-   ![显示已分配用户的“用户和组”选项卡](assets/setup-14.png)
+   ![](assets/getting-dynamics-7.png)
 
 ## 创建应用程序用户 {#creating-an-application-user}
 
@@ -94,8 +95,10 @@ ht-degree: 0%
 1. 在“应用程序用户”窗体中，输入所需的信息。
 
    >[!NOTE]
-   > 用户名信息不能与[!DNL Azure Active Directory]中存在的用户匹配。
-   > 在应用程序ID字段中，输入之前在Azure AD中注册的应用程序的应用程序ID。
+   >
+   >* 用户名信息不能与[!DNL Azure Active Directory]中存在的用户匹配。
+   >
+   >* 在应用程序ID字段中，输入之前在Azure AD中注册的应用程序的应用程序ID。
 
 1. 如果设置正确，则在选择&#x200B;**[!UICONTROL Save]**&#x200B;后，**[!UICONTROL Application ID URI]**&#x200B;和&#x200B;**[!UICONTROL Azure AD Object Id]**&#x200B;字段将自动填充正确的值。
 
@@ -111,7 +114,7 @@ a.客户端ID是上一节中步骤#7中的ID。 如果您未记下该变量，�
 
 b.客户端密码是在Azure门户中为您的应用程序在“证书和密码”下创建的应用程序密码。
 
-![显示客户端密钥值的“证书和密钥”页](assets/creating-2e.png)
+![](assets/getting-dynamics-8.png)
 
 c.应用程序ID URI是目标Web API（安全资源）的URL。 要查找应用程序ID URL，请在Azure Portal中，单击[!DNL Azure Active Directory]，单击应用程序注册，打开应用程序的“设置”页面，然后单击“属性”。 它也可以是外部资源，如`https://graph.microsoft.com`。 这通常是Dynamics实例的URL。
 
@@ -125,6 +128,6 @@ c.应用程序ID URI是目标Web API（安全资源）的URL。 要查找应用�
 
 1. 单击密钥后，会出现一个弹出窗口，提示您输入客户端ID、客户端密钥和应用程序ID URI，类似于注册流程。
 
-   ![使用OAuth凭据字段重新身份验证对话框](assets/re-authenticating-3.png)
+   ![](assets/getting-dynamics-9.png)
 
 1. 单击&#x200B;**[!UICONTROL Submit]**&#x200B;后，系统将提示您使用[!DNL Azure Active Directory]登录。 身份验证成功后，您的Dynamics帐户将在[!DNL Marketo Measure]内重新获得授权。

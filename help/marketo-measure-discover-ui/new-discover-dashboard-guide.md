@@ -1,17 +1,17 @@
 ---
-description: 新的发现功能板指南 —  [!DNL Marketo Measure]  — 产品
-title: 新增发现功能板指南
+description: 将旧版Discover功能板映射到重新设计的版本，并突出显示导航和量度中的关键更改
+title: 探索功能板指南
 feature: Reporting
 exl-id: 088ccd63-dcf8-49c0-abbb-02f10ed8ae6e
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
 
-
-# 新增发现功能板指南 {#new-discover-dashboard-guide}
+# 探索功能板指南 {#new-discover-dashboard-guide}
 
 我们很高兴地介绍一下我们重新设计的“发现”功能板。 我们的主要目标是为您提供更加精简和直观的体验。 借助更简洁的视觉效果和更简单的导航功能，此改进不仅保留了大多数现有量度，而且还引入了新的见解。 深入了解，发现更清晰的描述和更多的价值。
 
@@ -504,6 +504,7 @@ ht-degree: 0%
 我们一直努力为您提供更好的体验，我们非常感谢您就本次最新更新提供反馈。 您的想法将直接影响未来的优化，确保我们的平台始终与您的需求保持一致。 留意Marketo Measure中的反馈表。
 
 >[!MORELIKETHIS]
->[了解仪表板基础知识](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
->[仪表板数据可见性策略](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}
+>
+>* [了解仪表板基础知识](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
+>* [仪表板数据可见性策略](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}
 

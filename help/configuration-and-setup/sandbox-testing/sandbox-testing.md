@@ -1,19 +1,19 @@
 ---
-description: 测试Marketo Measure与Salesforce沙盒的集成 —  [!DNL Marketo Measure]
+description: 为Marketo Measure用户测试Marketo Measure与Salesforce沙盒指南的集成
 title: 测试Marketo Measure与Salesforce沙盒的集成
 exl-id: df40b000-4572-46df-aef5-8f690ca8ed7a
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '345'
 ht-degree: 1%
 
 ---
 
-
 # 测试Marketo Measure与Salesforce沙盒的集成 {#testing-the-marketo-measure-integration-with-a-salesforce-sandbox}
 
 >[!NOTE]
+>
 >您可能会在文档中看到指定“[!DNL Marketo Measure]”的说明，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
 [!DNL Marketo Measure]核心功能之一是，它能够通过网站上的操作跟踪您的数字营销工作，然后通过潜在客户和联系人将该数据推送到您的生产环境[!DNL Salesforce org]。 但是，通常，在沙盒集成中不会从您的网站创建入站潜在客户，因此对数据的关注将从纯粹离线角度进行。

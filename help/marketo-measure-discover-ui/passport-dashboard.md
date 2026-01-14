@@ -1,15 +1,15 @@
 ---
-description: Passport Dashboard - [!DNL Marketo Measure]  — 产品
+description: 描述Passport仪表板，用于跟踪潜在客户联系人和机会在一段时间内的各个阶段中的移动方式
 title: Passport信息板
 feature: Reporting
 exl-id: 0fbd9714-7d9c-4330-b35f-d011e17c3bfe
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
-
 
 # Passport信息板 {#passport-dashboard}
 
@@ -31,7 +31,7 @@ Passport仪表板为营销人员提供了在指定时间段内各个阶段进行
 * 排除“已关闭的赢家”和“已关闭的输家”等终端阶段。
 * 开始日期和结束日期均包含。
 
-![Passport仪表板按阶段名称显示阶段中的机会](assets/passport-dashboard-1.png)
+![](assets/passport-dashboard-1.png)
 
 ### 按阶段名称列出的阶段中的潜在客户或联系人 {#leads-or-contacts-in-stage-by-stage-name}
 
@@ -41,7 +41,7 @@ Passport仪表板为营销人员提供了在指定时间段内各个阶段进行
 * 排除“已关闭的赢家”和“已关闭的输家”等终端阶段。
 * 开始日期和结束日期均包含。
 
-![Passport仪表板按阶段名称显示阶段中的潜在客户或联系人](assets/passport-dashboard-2.png)
+![](assets/passport-dashboard-2.png)
 
 ## 筛选器窗格 {#filter-pane}
 
@@ -53,5 +53,6 @@ Passport仪表板为营销人员提供了在指定时间段内各个阶段进行
 * 区段
 
 >[!MORELIKETHIS]
-> [了解仪表板基础知识](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
-> [仪表板数据可见性策略](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}
+>
+>* [了解仪表板基础知识](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
+>* [仪表板数据可见性策略](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}

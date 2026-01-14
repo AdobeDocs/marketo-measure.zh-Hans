@@ -1,19 +1,20 @@
 ---
-description: '[!DNL Microsoft Dynamics] CRM安装指南'
+description: 在Microsoft Dynamics CRM中安装和配置Marketo Measure包的分步指南
 title: '[!DNL Microsoft Dynamics] CRM安装指南'
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
 
-
 # [!DNL Microsoft Dynamics] CRM安装指南 {#microsoft-dynamics-crm-installation-guide}
 
 >[!NOTE]
+>
 >您可能会在文档中看到指定“[!DNL Marketo Measure]”的说明，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
 ## 支持的版本 {#supported-versions}
@@ -34,14 +35,15 @@ ht-degree: 0%
 
 **[!UICONTROL Settings]** > **[!UICONTROL Customizations]** > **[!UICONTROL Solutions]** > **[!UICONTROL Import]** （按钮） > **[!UICONTROL Choose File]**。
 
-使用“导入”按钮![Dynamics CRM解决方案导入屏幕](assets/1.png)
+![](assets/getting-dynamics-11.png)
 
 >[!NOTE]
+>
 >以下两个屏幕截图可能与您的屏幕截图略有不同，因为它们在解决方案升级过程中拍摄。
 
-![显示包选择的解决方案导入向导](assets/2.png)
+![](assets/getting-dynamics-9.png)
 
-![解决方案导入确认屏幕](assets/3.png)
+![](assets/getting-dynamics-10.png)
 
 ## 创建[!DNL Marketo Measure]用户 {#creating-a-marketo-measure-user}
 
@@ -58,9 +60,10 @@ ht-degree: 0%
 除了标准实体的读/写权限之外，还需要Campaign“创建”权限。
 
 >[!NOTE]
+>
 >关闭商机的用户还需要完全权限。
 
-![Dynamics安全角色配置屏幕显示权限](assets/4.png)
+![](assets/bizible-taxonomy-1.png)
 
 对于Dynamics标准实体，请参阅[!DNL Marketo Measure] Dynamics架构文档。 从较高层面来看，[!DNL Marketo Measure]读取某些实体以收集适当的数据并写入随托管解决方案一起安装的自定义字段。 不会创建标准记录，也不会更新标准字段。
 
@@ -72,20 +75,20 @@ ht-degree: 0%
 
    * 要配置营销活动，必须在&#x200B;**[!UICONTROL CRM]** > **[!UICONTROL Campaigns]**&#x200B;中打开“营销活动同步”选项。
 
-   在Marketo Measure设置中切换![Campaign同步](assets/5.png)
+   ![](assets/creating-2e-1.png)
 
 1. 页面布局：首先在希望接触点存在的部分中添加一个“[!UICONTROL One Column]”拼贴。 在该新列中，我们需要向您的Account 、 Opportunity 、 Contact和Lead实体中的每个表单添加一个子网格。
 
-   ![表单编辑器显示一个列分区布局](assets/6.png)
+   ![](assets/getting-dynamics-8.png)
 
-   正在将子网格组件![添加到表单布局](assets/7.png)
+   ![](assets/getting-dynamics-7.png)
 
 1. 选择应在子网格中呈现的对象（买方归因接触点或买方接触点），具体取决于对象关系。 （可选）通过单击编辑按钮更改显示的列。 默认布局由托管解决方案设置。
 
-   Buyer Attribution Touchpoint子网格 — 客户、商机和联系人
-Buyer Touchpoint子网格 — 潜在客户和联系人
+   Buyer Attribution Touchpoint子网格 — 客户、商机和联系人\
+   Buyer Touchpoint子网格 — 潜在客户和联系人
 
-   ![显示对象选择选项的“子网格属性”对话框](assets/8.png)
+   ![](assets/getting-dynamics-1.png)
 
 1. 完成表单更新后，发布并保存更改。
 
@@ -107,25 +110,26 @@ Buyer Touchpoint子网格 — 潜在客户和联系人
 
 1. 在您的[!DNL Marketo Measure]帐户中，单击&#x200B;**[!UICONTROL My Account]**&#x200B;下拉菜单并选择&#x200B;**[!UICONTROL Settings]**。
 
-   ![Marketo Measure“我的帐户”下拉菜单的“设置”选项突出显示](assets/microsoft-dynamics-crm-installation-guide-16.png)
+   ![](assets/getting-dynamics-10.png)
 
 1. 在左侧导航栏中的[!UICONTROL Integrations]下，单击&#x200B;**[!UICONTROL Connections]**。
 
-   在左侧导航中使用“连接”选项的![设置页面](assets/microsoft-dynamics-crm-installation-guide-17.png)
+   ![](assets/getting-dynamics-11.png)
 
 1. 单击&#x200B;**[!UICONTROL Set Up New CRM Connection]**&#x200B;按钮。
 
-   ![设置新CRM连接按钮的连接页面](assets/microsoft-dynamics-crm-installation-guide-18.png)
+   ![](assets/getting-dynamics-2.png)
 
 1. 在[!UICONTROL Microsoft Dynamics CRM]旁边，单击&#x200B;**[!UICONTROL Connect]**&#x200B;按钮。
 
-   ![CRM连接选项显示Microsoft Dynamics CRM with Connect按钮](assets/microsoft-dynamics-crm-installation-guide-19.png)
+   ![](assets/getting-dynamics-3.png)
 
 1. 选择 [!UICONTROL Credentials] 或 [!UICONTROL OAuth]。
 
-   ![Microsoft Dynamics CRM身份验证方法选择屏幕](assets/microsoft-dynamics-crm-installation-guide-20.png)
+   ![](assets/microsoft-guide-8.png)
 
    >[!NOTE]
+   >
    >有关OAuth的详细信息，请访问[本文](/help/marketo-measure-and-dynamics/oauth-with-azure-active-directory-for-dynamics-crm.md)。 如果您对流程有任何疑问，请联系您的[!DNL Marketo Measure]客户代表。
 
 1. 在本例中，我们选择了“凭据”。 输入您的凭据，然后单击&#x200B;**[!UICONTROL Next]**。
@@ -140,11 +144,11 @@ Buyer Touchpoint子网格 — 潜在客户和联系人
 
 1. 单击&#x200B;**[!UICONTROL Set up New CRM Connection]**&#x200B;按钮。
 
-   显示“设置新CRM连接”按钮的![连接页面](assets/microsoft-dynamics-crm-installation-guide-21.png)
+   ![](assets/microsoft-guide-9.png)
 
 1. 选择所需的平台。
 
-   ![包含各种广告平台选项的广告帐户平台选择屏幕](assets/microsoft-dynamics-crm-installation-guide-22.png)
+   ![](assets/getting-dynamics-4.png)
 
 **[!DNL Marketo Measure]Javascript**
 
@@ -152,23 +156,28 @@ Buyer Touchpoint子网格 — 潜在客户和联系人
 
 1. 点击 **[!UICONTROL My Account]** 下拉菜单，并选择 **[!UICONTROL Account Configuration]**。
 
-   ![带有帐户配置选项的“我的帐户”下拉列表](assets/microsoft-dynamics-crm-installation-guide-23.png)
+   ![](assets/getting-dynamics-5.png)
 
 1. 输入您的电话号码。 对于网站，输入用于在网站上跟踪[!DNL Marketo Measure]的主根域。 完成后单击&#x200B;**[!UICONTROL Save]**。
 
-   ![包含电话号码和网站字段的“帐户配置”页面](assets/microsoft-dynamics-crm-installation-guide-24.png)
+   ![](assets/getting-dynamics-6.png)
 
    >[!NOTE]
+   >
    >要添加多个根域，请联系您的[!DNL Marketo Measure]客户代表。
 
 1. 然后，必须将[[!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/adding-marketo-measure-script.md)放置在整个网站和登陆页面中。 我们建议在登陆页面的标题中对该脚本进行硬编码，或通过Tag Management系统(如[Google标签管理器](/help/marketo-measure-tracking/adding-marketo-measure-script-via-google-tag-manager.md))进行添加。
 
    >[!NOTE]
+   >
    >默认情况下，[!DNL Marketo Measure]在每次作业将数据发送到您的CRM时，将每个API点数导出200条记录。 对于大多数客户而言，这提供了[!DNL Marketo Measure]使用的API积分与CRM上的CPU资源要求之间的最佳平衡。 但是，对于具有复杂CRM配置（如工作流和触发器）的客户，较小的批处理大小可能有助于提高CRM性能。 为此，[!DNL Marketo Measure]允许客户配置CRM导出批次大小。 此设置在[!DNL Marketo Measure] Web应用程序的“设置”>“CRM”>“常规”页面上可用，客户可以选择批量为200（默认值）、100、50或25。
+   >
    >在修改此设置时，请记住，较小的批次大小会消耗您的CRM中的更多API积分。 仅当您在CRM中遇到CPU超时或CPU负载较高时，才建议减小批次大小。
 
    >[!NOTE]
+   >
    >禁用Marketo Measure将数据导出到Dynamics时，它不会删除任何现有数据。 有关删除现有数据的帮助，请与Dynamics支持部门联系。
 
    >[!MORELIKETHIS]
+   >
    >[错误通知](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md){target="_blank"}

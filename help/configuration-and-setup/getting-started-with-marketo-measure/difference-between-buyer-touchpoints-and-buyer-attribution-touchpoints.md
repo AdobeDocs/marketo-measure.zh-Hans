@@ -1,15 +1,14 @@
 ---
-description: 买方接触点和买方归因接触点之间的差异 —  [!DNL Marketo Measure]
+description: Marketo Measure用户购买者接触点和购买者归因接触点指南之间的差异
 title: 买方接触点和买方归因接触点之间的差异
 exl-id: 19109271-7b59-44c0-b1ff-e3b0bba9f5ce
 feature: Touchpoints
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
-
 
 # 买方接触点和买方归因接触点之间的差异 {#difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints}
 
@@ -21,31 +20,31 @@ ht-degree: 0%
 
 BT和BAT之间的区别：
 
-<table>
- <colgroup>
-  <col>
-  <col>
- </colgroup>
- <tbody>
-  <tr>
-   <td>Buyer Touchpoint (BT)</td>
-   <td>Buyer Attribution Touchpoint (BAT)</td>
-  </tr>
-  <tr>
-   <td>
-    <ul>
-     <li>与Lead、Contact和Case对象相关</li>
-     <li>与Opportunity对象无关</li>
-     <li>收入未与Buyer Touchpoint关联</li>
-    </ul></td>
-   <td>
-    <ul>
-     <li>与Contact、Account和Opportunity对象相关</li>
-     <li>与Lead对象无关</li>
-     <li>由于Buyer Attribution Touchpoint与Opportunity相关联，因此所有BAT都有与其关联的收入</li>
-    </ul></td>
-  </tr>
- </tbody>
+<table> 
+ <colgroup> 
+  <col> 
+  <col> 
+ </colgroup> 
+ <tbody> 
+  <tr> 
+   <td>Buyer Touchpoint (BT)</td> 
+   <td>Buyer Attribution Touchpoint (BAT)</td> 
+  </tr> 
+  <tr> 
+   <td> 
+    <ul> 
+     <li>与Lead、Contact和Case对象相关</li> 
+     <li>与Opportunity对象无关</li> 
+     <li>收入未与Buyer Touchpoint关联</li> 
+    </ul></td> 
+   <td> 
+    <ul> 
+     <li>与Contact、Account和Opportunity对象相关</li> 
+     <li>与Lead对象无关</li> 
+     <li>由于Buyer Attribution Touchpoint与Opportunity相关联，因此所有BAT都有与其关联的收入</li> 
+    </ul></td> 
+  </tr> 
+ </tbody> 
 </table>
 
 ## 常见问题解答 {#faq}
@@ -66,10 +65,10 @@ Buyer Touchpoint的接触点位置将只有首次接触(FT)、潜在客户创建
 
 以下是[!DNL Salesforce]中BT的屏幕截图：
 
-![](assets/buyer-touchpoints-and-buyer-attribution-touchpoints-1.png){width="600" zoomable="yes"}
+![](assets/adobe-setup-1.png)
 
 **Buyer Attribution Touchpoint在Salesforce中是怎样的？**
 
 以下是[!DNL Salesforce]中BAT的屏幕截图：
 
-![](assets/buyer-touchpoints-and-buyer-attribution-touchpoints-2.png){width="600" zoomable="yes"}
+![](assets/adobe-setup-2.png)

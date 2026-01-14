@@ -3,13 +3,12 @@ description: '[!DNL Marketo Measure]见解已解释 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]分析解释'
 exl-id: d479a15f-4c92-4302-8ce8-6487645012e1
 feature: Reporting
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Marketo Measure]分析解释 {#marketo-measure-insights-explained}
 
@@ -19,7 +18,7 @@ ht-degree: 0%
 
 首先，您可在洞察内容的中间部分中看到访客在您网站上的会话数。 您可以随意滚动浏览这些会话和导航。
 
-![分析会话列表，显示跟踪的会话数](assets/1.png)
+![](assets/marketo-app-1.png)
 
 如果您单击分析中上角的“全部”，可以查看所有会话的汇总。 在这里，您可以了解各个会话的日期、驱动这些会话的渠道或来源以及指定更多信息的一组图标。
 
@@ -27,15 +26,15 @@ ht-degree: 0%
 
 看起来像纸张的图标表示页面查看发生在会话中。 每个会话都可能包含此图标。
 
-![包含接触点位置和渠道详细信息的分析汇总视图](assets/2.png)
+![](assets/marketo-app-2.png)
 
 看起来像烧杯的图标表示发生了A/B测试试验。 目前，我们与Optimizy和VWO进行了集成。 通过此集成，我们能够推送用户在其特定会话中看到的试验和变体。
 
-![Insights会话列表突出显示A/B测试烧杯图标](assets/3.png)
+![](assets/marketo-app-3.png)
 
 如果单击任何特定会话（可以通过单击会话的实际日期或分组会话中上部的日期来执行此操作），您将能够查看会话详细信息。 在每个会话中，您可以看到用户查看的所有特定页面，这些页面按日期和时间排序。
 
-![会话详细信息面板，显示会话中的页面查看次数](assets/4.png)
+![](assets/marketo-app-4.png)
 
 在每个会话的右侧，您可以看到推送SFDC中[!DNL Marketo Measure]字段的更多粒度营销数据。 在此示例中，您可以看到广告组、广告内容、促销活动、关键字、Medium。 您还可以向下滚动以查看我们提供的[!DNL Marketo Measure]数据的更多信息。
 

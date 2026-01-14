@@ -3,13 +3,12 @@ description: 了解Account-Based Marketing (ABM)以及Adobe Marketo Measure如�
 title: 基于帐户的营销概述
 exl-id: 2ead69c0-66da-439d-a0ba-25c73c4b308c
 feature: Account-based Marketing
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
-
 
 # 基于帐户的营销概述 {#account-based-marketing-overview}
 
@@ -27,6 +26,7 @@ ht-degree: 0%
 * 另一方面，您的CRM需要至少25个帐户，且不存在任何已关闭的获胜机会（所有获胜方都必须处于“开放”阶段类别或“已关闭的失败”类别中） — 这有助于我们衡量组织中较低级别帐户的成因。
 
 >[!NOTE]
+>
 >上述“坏”帐户必须至少打开12个月，并且不会累积Closed Won opp；这是确定Opp是否出于模型目的而失效的基本准则。
 
 ## 商机到客户的映射 {#lead-to-account-mapping}
@@ -45,6 +45,7 @@ ht-degree: 0%
 客户的潜在客户/联系人将通过其电子邮件/网站域进行验证，并与潜在客户电子邮件/网站的域或子域匹配。 使用匹配度最高的帐户。
 
 >[!NOTE]
+>
 >每个Lead将按照上述方法的优选顺序尝试与帐户匹配。 进行匹配后，将立即在潜在客户上设置AccountId，并且不会使用其他方法进行匹配。
 
 ## 预测参与度分数 {#predictive-engagement-score}
@@ -64,6 +65,7 @@ ht-degree: 0%
 * 被关闭的输赢可能性有多大
 
 >[!NOTE]
+>
 >您可能会注意到某些帐户的预测参与度分数中存在“N/A”或“ — ”（破折号）的分级。
 
 _等级为“N/A”只是表示该帐户上没有足够的数据可供模型生成真实等级 — 使用更多数据，最终给出等级。_
@@ -76,16 +78,16 @@ _等级“ — ”（短划线符号）表示ABM进程尚未处理此帐户，�
 1. 导航到&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Customize]** > **[!UICONTROL Accounts]** > **[!UICONTROL Page Layout]**。 然后，选择要编辑的页面布局。
 1. 转到[!UICONTROL Fields]并将“预测参与度分数”字段移动到您的帐户信息部分。
 
-   ![显示预测参与度分数字段的帐户页面布局](assets/1.png)
+   ![](assets/account-marketing-3.png)
 
 1. 最后，转到[!UICONTROL Related Lists]并将“潜在客户”相关列表移动到您的页面布局中。
 
-   ![正在将潜在客户相关列表添加到帐户页面布局](assets/2.png)
+   ![](assets/account-marketing-4.jpg)
 
 1. 接下来，导航到&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Customize]** > **[!UICONTROL Leads]** > **[!UICONTROL Page Layout]**，并选择要编辑的相应页面布局。
 1. 单击&#x200B;**[!UICONTROL Fields]**&#x200B;并添加您认为适合页面的[!UICONTROL Account]字段。
 
-   ![添加了帐户字段的潜在客户页面布局](assets/3.png)
+   ![](assets/account-marketing-5.png)
 
 一切就绪！
 

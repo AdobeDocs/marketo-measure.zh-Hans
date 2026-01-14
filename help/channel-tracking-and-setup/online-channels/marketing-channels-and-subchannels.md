@@ -1,15 +1,15 @@
 ---
-description: 营销渠道和子渠道 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的营销渠道和子渠道指南
 title: 营销渠道和子渠道
 exl-id: fbe2a994-cf6d-439c-af96-a562216434cc
 feature: Channels
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '455'
 ht-degree: 2%
 
 ---
-
 
 # 营销渠道和子渠道 {#marketing-channels-and-subchannels}
 
@@ -45,11 +45,11 @@ ht-degree: 2%
 
 下图说明了基于具有以下URL的网页的营销渠道、子渠道和内容的示例：
 
-`http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&utm_medium=paidsocial`
+* [http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&amp;utm_medium=paidsocial](http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&utm_medium=paidsocial)*
 
 在这种情况下，用户尝试访问的内容是《B2B营销归因简介指南》。 [!DNL Marketo Measure]将使用此组织中设置的渠道规则分析指向此内容的URL，并使用它们“分段”此潜在客户到营销渠道“付费社交”和子渠道“LinkedIn”。
 
-![从标记的URL链接营销渠道、子渠道和内容的关系图](assets/1.jpg)
+![](assets/online-channels-1.png)
 
 其他示例……
 

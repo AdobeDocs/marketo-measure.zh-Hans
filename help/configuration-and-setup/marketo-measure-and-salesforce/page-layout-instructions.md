@@ -1,19 +1,19 @@
 ---
-description: 页面布局说明 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的页面布局说明指南
 title: 页面布局说明
 exl-id: 627377f0-d0cf-448c-a7b5-7eb5634b9627
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '718'
 ht-degree: 2%
 
 ---
 
-
 # 页面布局说明 {#page-layout-instructions}
 
 >[!NOTE]
+>
 >您可能会在文档中看到指定“[!DNL Marketo Measure]”的说明，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
 为了轻松查看[!DNL Marketo Measure]数据，建议更新[!UICONTROL Account]、[!UICONTROL Contact]、[!UICONTROL Lead]、[!UICONTROL Opportunity]和[!UICONTROL Campaign]对象的页面布局。 下面的每个“对象页面布局”的说明都进行了细分。
@@ -28,25 +28,26 @@ ht-degree: 2%
 
 1. 单击 **[!UICONTROL Page Layouts]**。
 
-   ![Salesforce设置在“营销活动”下显示页面布局选项](assets/1-1.jpg)
+   ![](assets/marketo-salesforce-7.jpg)
 
 1. 单击要更新的页面布局旁边的&#x200B;**[!UICONTROL Edit]**。
 
-   ![促销活动页面布局列表，布局名称旁边有“编辑”按钮](assets/2-1.jpg)
+   ![](assets/marketo-salesforce-1.jpg)
 
 1. 在[!UICONTROL fields]选项中，选择&#x200B;**[!UICONTROL Enable Buyer Touchpoints]**&#x200B;字段，并将其拖动到页面上所需的任何位置。 接下来，添加&#x200B;**[!UICONTROL Touchpoint Start Date]**&#x200B;和&#x200B;**[!UICONTROL Touchpoint End Date]**&#x200B;字段。
 
-   ![页面布局编辑器显示具有接触点开始和结束日期字段的“启用购买者接触点”字段](assets/3-2.png)
+   ![](assets/bizible-full-1.png)
 
 1. 接下来，在页面顶部单击快速查找菜单中的“[!UICONTROL Buttons]”选项。
 
 1. 将&#x200B;**[!UICONTROL Bulk Update Touchpoint Date]**&#x200B;按钮拖动到自定义按钮部分。
 
-   ![自定义按钮部分中具有批量更新接触点日期按钮的页面布局编辑器](assets/4-1.jpg)
+   ![](assets/bizible-taxonomy-1.png)
 
 1. 单击 **[!UICONTROL Save]**。
 
    >[!NOTE]
+   >
    >如果您使用多个Campaign记录类型，则必须更新&#x200B;**[!UICONTROL Enable Buyer Touchpoints]**&#x200B;字段的选取列表值。 有关说明，请参阅[本文](/help/channel-tracking-and-setup/offline-channels/configurations-record-types.md)。
 
 ## 潜在客户 {#leads}
@@ -61,27 +62,19 @@ ht-degree: 2%
 
 1. 创建一个部分并将其命名为“购买者接触点”。
 
-   >[!NOTE]
-   >为每个部分选择“一列”格式。
-
 1. 将&#x200B;**[!UICONTROL Marketo Measure Lead Related List]** VisualForce页面拖动到页面布局分区中。
 
-   ![包含Marketo Measure潜在客户相关列表VisualForce页面的潜在客户页面布局编辑器](assets/5-1.png)
+   ![](assets/connect-salesforce-1.png)
 
 1. 单击[!DNL VisualForce]页面中的扳手，然后将高度更改为100并启用滚动条。
 
 1. 返回菜单，选择[!UICONTROL Canvas Apps]分区，并在您创建的接触点[!DNL VisualForce]分区下创建名为“Marketo Measure Insights”的分区。
 
-   >[!NOTE]
-   >为每个部分选择“一列”格式。
-
 1. 将[!DNL Marketo Measure Insights]画布应用程序拖入新创建的分区。 单击 **Save**。有时，在放入画布应用程序之前必须先保存页面布局，因为Salesforce无法立即识别此布局。 因此，在创建部分后，保存页面布局，然后重新编辑以将画布应用程序拖动到该部分中。 这适用于每个对象。
 
    >[!NOTE]
+   >
    >要使[!DNL Marketo Measure Insights] Canvas应用正常运行，必须正确配置[权限](/help/configuration-and-setup/marketo-measure-insights-canvas-app/marketo-measure-insights-configuration.md)。
-
-   >[!TIP]
-   >大多数客户不使用以(FT)或(LC)结尾的字段，因为它们是[!DNL Marketo Measure]接触点作为对象存在之前的旧版字段。
 
 如果您使用的是[!DNL Marketo Measure] ABM功能，[请单击此处获取其他页面布局说明](/help/advanced-features/account-based-marketing/account-based-marketing-overview.md)。
 
@@ -106,11 +99,11 @@ ht-degree: 2%
 
 1. 排序依据：接触点日期，升序。
 
-   ![具有列和排序顺序设置的“买方接触点相关列表”配置](assets/6.jpg)
+   ![](assets/marketo-salesforce-15.jpg)
 
 1. 展开按钮选项并取消选择&#x200B;**[!UICONTROL New]**。
 
-   ![相关列表属性显示“按钮”部分中已取消选择“新建”按钮](assets/7.png)
+   ![](assets/marketo-salesforce-12.png)
 
 1. 返回菜单中的[!UICONTROL Related List]选项，现在添加&#x200B;**[!UICONTROL Buyer Attribution Touchpoint]**&#x200B;相关列表。
 

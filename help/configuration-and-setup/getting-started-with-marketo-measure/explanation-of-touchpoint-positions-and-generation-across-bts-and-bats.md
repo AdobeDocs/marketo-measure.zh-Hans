@@ -1,11 +1,11 @@
 ---
-description: 跨BT和BAT的接触点位置和生成说明 —  [!DNL Marketo Measure]
+description: 跨BT的接触点位置和生成说明以及Marketo Measure用户的 [!DNL BATs] 指南
 title: 跨BT和 [!DNL BATs]的接触点位置和生成说明
 exl-id: 4903f917-a366-4767-a126-5216d2377399
 feature: Touchpoints
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---

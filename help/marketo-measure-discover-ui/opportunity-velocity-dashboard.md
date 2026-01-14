@@ -1,15 +1,14 @@
 ---
-description: 机会周转率仪表板 —  [!DNL Marketo Measure]  — 产品
+description: 描述Opportunity Velocity仪表板以跟踪每个销售阶段中的时间并比较一段时间内按渠道显示的趋势
 title: 机会周转率仪表板
 feature: Reporting
 exl-id: d02455fd-8fca-435e-8ded-69abbbdcb3a4
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '394'
 ht-degree: 1%
 
 ---
-
 
 # 机会周转率仪表板 {#opportunity-velocity-dashboard}
 
@@ -36,9 +35,10 @@ Velocity功能板提供了有关潜在客户在Sales funnel中移动速度的动
 * 与“潜在客户”和“机会资格”阶段相比，“机会创建”阶段中机会的平均持续时间如何？
 
 >[!NOTE]
+>
 >“机会创建”之前的阶段将使用最近的接触点日期作为“过渡期”日期。
 
-![按销售阶段列出的机会周转率条形图](assets/lead-velocity-dashboard-1.png)
+![](assets/lead-dashboard-1.png)
 
 ### 随时间变化的机会周转率 {#opportunity-velocity-over-time}
 
@@ -52,7 +52,7 @@ Velocity功能板提供了有关潜在客户在Sales funnel中移动速度的动
 * 在所观察的月份中，机会在每个阶段逗留的时间趋势如何？
 * 在哪个月，销售机会在销售阶段中的进度最快？
 
-![机会周转率趋势随时间线图](assets/lead-velocity-dashboard-2.png)
+![](assets/lead-dashboard-2.png)
 
 ### 按渠道列出的机会周转率 {#opportunity-velocity-by-channel}
 
@@ -65,7 +65,7 @@ Velocity功能板提供了有关潜在客户在Sales funnel中移动速度的动
 * 哪个渠道显示了funnel各个阶段的最快进度？
 * “潜在客户”阶段中的机会速度在不同渠道中会有什么不同？
 
-![按渠道列出的机会周转率比较表](assets/lead-velocity-dashboard-3.png)
+![](assets/lead-dashboard-3.png)
 
 ## 筛选器窗格 {#filter-pane}
 

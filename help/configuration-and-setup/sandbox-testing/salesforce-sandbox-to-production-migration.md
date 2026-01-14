@@ -1,15 +1,14 @@
 ---
-description: Salesforce沙盒到生产环境的迁移 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的Salesforce沙盒到生产环境迁移指南
 title: Salesforce沙盒到生产环境的迁移
 exl-id: b2b71c4a-f192-43ce-a27e-cbd0ec3cf008
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
-
 
 # Salesforce沙盒到生产环境的迁移 {#salesforce-sandbox-to-production-migration}
 
@@ -31,7 +30,7 @@ ht-degree: 0%
 * 单击SFDC连接旁边的垃圾桶图标以删除
 * 系统会提示您确认删除操作。 请确保仔细阅读提示并了解删除的后果
 
-  ![Marketo Measure连接页面确认删除Salesforce沙盒](assets/salesforce-sandbox-to-production-migration-1.png)
+  ![](assets/salesforce-migration-1.png)
 
    * 键入确认模型中提示的业务名称，然后单击“我了解后果，删除此连接”
 * 这将触发删除过程，并需要一些时间才能完成

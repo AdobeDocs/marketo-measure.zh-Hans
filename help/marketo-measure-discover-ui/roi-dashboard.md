@@ -1,15 +1,15 @@
 ---
-description: ROI仪表板 —  [!DNL Marketo Measure]  — 产品
+description: 探索ROI仪表板，以比较不同渠道和营销活动在一段时间内的成本收入和ROI
 title: ROI仪表板
 feature: Reporting
 exl-id: 878db6e0-3ac7-4f4c-b993-bd7a1cfa0638
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
-
 
 # ROI仪表板 {#roi-dashboard}
 
@@ -36,7 +36,7 @@ ROI仪表板为营销人员提供了跨渠道、子渠道和营销活动的投�
 * **简单ROI**：已归因的收入除以过滤日期期间的成本。
 * **已实现ROI**：已实现已归因收入除以过滤日期期间的成本。
 
-![成本、归因收入和ROI的ROI仪表板KPI磁贴](assets/roi-dashboard-1.png)
+![](assets/roi-dashboard-9.png)
 
 ### 按渠道列出的成本和收入图表 {#cost-and-revenue-by-channel-graph}
 
@@ -50,7 +50,7 @@ ROI仪表板为营销人员提供了跨渠道、子渠道和营销活动的投�
 * 每个渠道、子渠道和营销活动的ROI值如何？
 * 是否存在任何异常渠道或子渠道相对于其收入具有异常高或异常低的成本？
 
-![按渠道栈叠条形图的成本和收入](assets/roi-dashboard-2.png)
+![](assets/roi-dashboard-8.png)
 
 ### 随时间推移实现的与简单的ROI {#realized-vs-simple-roi-over-time}
 
@@ -63,7 +63,7 @@ ROI仪表板为营销人员提供了跨渠道、子渠道和营销活动的投�
 * 与特定时间段的简单ROI相比，已实现ROI如何？
 * 实现ROI的趋势与同一时期的任何重大营销事件有何关系？
 
-![已实现与简单ROI趋势线图](assets/roi-dashboard-3.png)
+![](assets/roi-dashboard-7.png)
 
 ### 随时间变化的成本图表 {#cost-over-time-graph}
 
@@ -77,7 +77,7 @@ ROI仪表板为营销人员提供了跨渠道、子渠道和营销活动的投�
 * 与下一个季度/月相比，所有渠道的合并成本如何？
 * 特定渠道的成本如何随时间演变？
 
-![带有钻取控制项的时间栈叠条形图成本](assets/roi-dashboard-4.png)
+![](assets/roi-dashboard-6.png)
 
 ### 按渠道成本图表 {#cost-by-channel-graph}
 
@@ -90,7 +90,7 @@ ROI仪表板为营销人员提供了跨渠道、子渠道和营销活动的投�
 * 主渠道中的哪些子渠道或营销活动具有最高分配？
 * 与其他营销渠道相比，哪些营销渠道（渠道、子渠道或营销活动）似乎资金不足？
 
-![按渠道条形图显示的营销支出](assets/roi-dashboard-5.png)
+![](assets/roi-dashboard-5.png)
 
 ### ROI摘要表 {#roi-summary-table}
 
@@ -140,6 +140,7 @@ ROI仪表板为营销人员提供了跨渠道、子渠道和营销活动的投�
 * 活动
 
 >[!MORELIKETHIS]
-> [了解仪表板基础知识](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
-> [仪表板数据可见性策略](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}
+>
+>* [了解仪表板基础知识](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
+>* [仪表板数据可见性策略](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}
 

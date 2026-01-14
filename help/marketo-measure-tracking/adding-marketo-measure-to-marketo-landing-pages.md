@@ -1,21 +1,21 @@
 ---
-description: 正在将 [!DNL Marketo Measure] 添加到 [!DNL Marketo] 登陆页面 —  [!DNL Marketo Measure]
+description: '正在向Marketo Measure用户的Marketo登陆页面指南中添加 [!DNL Marketo Measure] '
 title: 正在将 [!DNL Marketo Measure] 添加到Marketo登录页面
 exl-id: 3771d4d2-8723-452a-b23d-cea3b11ab9ee
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
-
 
 # 将[!DNL Marketo Measure]添加到Marketo登录页面 {#adding-marketo-measure-to-marketo-landing-pages}
 
 了解如何向[!DNL Marketo Engage]登陆页面添加跟踪，因为它们需要额外的处理。 登录页和[!DNL Marketo Measure]表单本身都必须有[!DNL Marketo Engage]JavaScript。 为此，您需要按照以下说明将[!DNL Marketo Measure] JavaScript加载到[!DNL Marketo Engage]中。
 
 >[!NOTE]
+>
 >如果要通过标签管理提供程序（如[!DNL Google Tag Manager]）部署JavaScript，则无需手动将[!DNL Marketo Measure] JS添加到[!DNL Marketo Engage]。
 
 ## 如何将[!DNL Marketo Measure]脚本添加到[!DNL Marketo Engage]登陆页面 {#how-to-add-marketo-measure-script-to-marketo-engage-landing-pages}
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 1. 单击 **[!UICONTROL Save]**。
 
-   将Bizible脚本添加到页头的![Marketo登录页编辑器](assets/adding-bizible-to-marketo-landing-pages-1.png)
+   ![](assets/adding-pages-1.png)
 
 ## 其他说明 {#additional-notes}
 
@@ -41,4 +41,4 @@ ht-degree: 0%
 
 * 您可能使用了多个登陆页面模板，请务必将代码添加到所有包含表单的模板中。
 
-* 有时，在编辑登陆页面的模板时，必须重新批准登陆页面由使用的页面。 本文介绍[如何批量批准](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html?lang=zh-Hans){target="_blank"}。
+* 有时，在编辑登陆页面的模板时，必须重新批准登陆页面由使用的页面。 本文介绍[如何批量批准](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target="_blank"}。

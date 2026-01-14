@@ -1,15 +1,14 @@
 ---
-description: 活动归因的最佳实践 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的活动归因指南最佳实践
 title: 活动归因的最佳实践
 exl-id: 66fb9f47-3912-40a6-b112-3efca789f321
 feature: Attribution
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
-
 
 # 活动归因的最佳实践 {#best-practices-for-activities-attribution}
 
@@ -30,6 +29,7 @@ ht-degree: 0%
    * 如前所述，此功能的主要用例是创建用于跟踪Sales Development团队效率的接触点，特别是“出站电话呼叫”和“出站电子邮件”
 
 >[!NOTE]
+>
 >**不**&#x200B;建议跟踪在创建Opportunity之后发生的销售活动，因为跟踪Sales Executions流程不能提供太多insight。 其目标是跟踪销售影响以及营销影响，主要是在开发新的机会/渠道产品方面
 
 * 不要使用公式字段定义规则
@@ -51,5 +51,6 @@ ht-degree: 0%
 * 销售支持工具的更改或更新
 
 >[!MORELIKETHIS]
-> [活动归因](/help/advanced-features/activities-attribution/salesforce-activities-attribution.md)
-> [销售活动归因常见问题解答](/help/advanced-features/activities-attribution/activities-attribution-faq.md)
+>
+>* [活动归因](/help/advanced-features/activities-attribution/salesforce-activities-attribution.md)
+>* [销售活动归因常见问题解答](/help/advanced-features/activities-attribution/activities-attribution-faq.md)

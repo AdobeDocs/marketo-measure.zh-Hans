@@ -3,13 +3,12 @@ description: 了解基于帐户的归因以及Adobe Marketo Measure如何补充�
 title: 基于帐户的归因
 exl-id: 9c1a03c8-f884-4c08-97ae-b848cc200038
 feature: Attribution
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
-
 
 # 基于帐户的归因 {#account-based-attribution}
 
@@ -21,7 +20,7 @@ ht-degree: 0%
 
 例如，下面的帐户具有两个Opportunity。 对于第一个Opportunity ，它只有一个接触点。 该接触点包括FT、LC和Opportunity Creation (OC)接触点。 第二个Opportunity与第一个Opportunity具有相同的FT和LC，但OC接触点不同。 此外，由于第二个Opportunity在第一个机会关闭日期之后发生，因此它们还有其他一些与第一个Opportunity不相关的接触点。
 
-![具有共享FT和LC接触点的两个机会的客户](assets/1.jpg)
+![](assets/account-marketing-4.jpg)
 
 ## 这有什么帮助？ {#how-does-this-help}
 

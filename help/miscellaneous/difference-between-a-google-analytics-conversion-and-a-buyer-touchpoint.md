@@ -1,15 +1,14 @@
 ---
-description: Google Analytics转化和Buyer Touchpoint之间的区别
+description: Google Analytics转化与Marketo Measure用户的Buyer Touchpoint指导之间的区别
 title: Google Analytics转化和Buyer Touchpoint之间的区别
 exl-id: d09d963c-3207-467c-852a-d1edd49511fa
 feature: Touchpoints
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
-
 
 # Google Analytics转化和Buyer Touchpoint之间的区别 {#difference-between-a-google-analytics-conversion-and-a-buyer-touchpoint}
 
@@ -21,39 +20,39 @@ ht-degree: 1%
 
 但是，无法对目标进行编码以管理特定行为。 而是有Web开发人员可以配置的目标类型。 以下是其中一些示例：
 
-<table>
- <colgroup>
-  <col>
-  <col>
-  <col>
- </colgroup>
- <tbody>
-  <tr>
-   <td><strong>目标类型</strong></td>
-   <td><p><strong>描述</strong></p></td>
-   <td><strong>示例</strong></td>
-  </tr>
-  <tr>
-   <td><p>目标</p></td>
-   <td>加载特定位置</td>
-   <td><em>感谢您注册！</em>网页或应用程序屏幕</td>
-  </tr>
-  <tr>
-   <td>持续时间</td>
-   <td>持续时间特定时间或更长的会话</td>
-   <td>在支持网站上逗留10分钟或更长时间</td>
-  </tr>
-  <tr>
-   <td>每个会话的页面数/Screens</td>
-   <td>用户查看特定数量的页面或屏幕</td>
-   <td>已加载5个页面或屏幕</td>
-  </tr>
-  <tr>
-   <td>活动</td>
-   <td>定义为事件的操作触发</td>
-   <td>社交推荐、视频播放、广告点击</td>
-  </tr>
- </tbody>
+<table> 
+ <colgroup> 
+  <col> 
+  <col> 
+  <col> 
+ </colgroup> 
+ <tbody> 
+  <tr> 
+   <td><strong>目标类型</strong></td> 
+   <td><p><strong>描述</strong></p></td> 
+   <td><strong>示例</strong></td> 
+  </tr> 
+  <tr> 
+   <td><p>目标</p></td> 
+   <td>加载特定位置</td> 
+   <td><em>感谢您注册！</em>网页或应用程序屏幕</td> 
+  </tr> 
+  <tr> 
+   <td>持续时间</td> 
+   <td>持续时间特定时间或更长的会话</td> 
+   <td>在支持网站上逗留10分钟或更长时间</td> 
+  </tr> 
+  <tr> 
+   <td>每个会话的页面数/Screens</td> 
+   <td>用户查看特定数量的页面或屏幕</td> 
+   <td>已加载5个页面或屏幕</td> 
+  </tr> 
+  <tr> 
+   <td>活动</td> 
+   <td>定义为事件的操作触发</td> 
+   <td>社交推荐、视频播放、广告点击</td> 
+  </tr> 
+ </tbody> 
 </table>
 
 大多数营销人员将其转化配置为“目标目标”，这意味着他们通常会在表单之后创建一个感谢页面来将该转化视为正式转化。

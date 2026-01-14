@@ -1,15 +1,14 @@
 ---
-description: 潜在客户Velocity仪表板 —  [!DNL Marketo Measure]  — 产品
+description: 使用“潜在客户周转率”仪表板测量每个funnel阶段中的时间，并比较一段时间内每个渠道的周转率
 title: 潜在客户周转率功能板
 feature: Reporting
 exl-id: f0937e9c-702f-4539-ab0b-05d9487c562d
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '378'
 ht-degree: 1%
 
 ---
-
 
 # 潜在客户周转率功能板 {#lead-velocity-dashboard}
 
@@ -33,7 +32,7 @@ Velocity功能板提供了有关潜在客户在Sales funnel中移动速度的动
 * 哪个销售阶段通常具有最长销售线索/联系人的持续时间？
 * 与“MQL”阶段相比，“首次联系”阶段所花费的时间如何？
 
-![销售阶段的销售线索或联系周转率](assets/lead-velocity-dashboard-1.png)
+![](assets/lead-dashboard-1.png)
 
 ### 随时间变化的潜在客户/联系速度 {#lead-contact-velocity-over-time}
 
@@ -47,7 +46,7 @@ Velocity功能板提供了有关潜在客户在Sales funnel中移动速度的动
 * 在所观察的月份中，潜在客户/联系在每个阶段的逗留时间趋势如何？
 * 潜在客户/联系人在哪一个月经历了销售阶段的最快进展？
 
-![潜在客户周转率趋势随时间线图](assets/lead-velocity-dashboard-2.png)
+![](assets/lead-dashboard-2.png)
 
 ### 按渠道列出的销售线索/联系速度 {#lead-contact-velocity-by-channel}
 
@@ -60,7 +59,7 @@ Velocity功能板提供了有关潜在客户在Sales funnel中移动速度的动
 * 哪个渠道显示了funnel各个阶段中销售线索进展最快的情况？
 * “MQL”阶段中的潜在客户速度在不同渠道中会有什么不同？
 
-![按渠道列出的潜在客户周转率比较图](assets/lead-velocity-dashboard-3.png)
+![](assets/lead-dashboard-3.png)
 
 ## 筛选器窗格 {#filter-pane}
 

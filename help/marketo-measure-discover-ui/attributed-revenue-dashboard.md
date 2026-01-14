@@ -1,21 +1,22 @@
 ---
-description: 已归因的收入仪表板 —  [!DNL Marketo Measure]  — 产品
+description: 描述已归因收入仪表板，该仪表板按渠道子渠道和营销活动在一段时间内划分已归因收入和交易
 title: 已归因的收入仪表板
 feature: Reporting
 exl-id: ff4e9de2-cb34-4b40-9e25-e431941b2be0
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
-
 
 # 已归因的收入仪表板 {#attributed-revenue-dashboard}
 
 已归因的收入仪表板从重点的角度提供与您的营销活动直接相关的收入。 探索您的营销策略如何有助于达成交易。
 
 >[!NOTE]
+>
 >该功能板位于Beta中。 在此过渡阶段，当前功能板和新功能板都将可供访问。 在我们完全过渡并确保实现最佳功能后，当前功能板将被弃用。
 
 **讨论区回答的问题**：
@@ -42,7 +43,7 @@ ht-degree: 0%
 * 哪些渠道每季度产生的收入贡献最大？
 * 上个月按渠道划分的归因收入明细是什么？
 
-![随时间图表](assets/attributed-revenue-dashboard-1.png)按渠道归因的收入
+![](assets/attributed-dashboard-4.png)
 
 ### 已归因的收入表 {#attributed-revenue-table}
 
@@ -58,14 +59,14 @@ ht-degree: 0%
 * 表格视图提供归因收入分布的清晰和有条理的洞察。 用户可以通过将数据分类为渠道、子渠道和营销活动，快速识别性能模式并确定高效的营销策略。
 * 单击每个渠道旁边的“+”图标以显示按子渠道和促销活动划分的明细。
 
-![按渠道、子渠道和营销活动划分的已归因收入表格视图](assets/attributed-revenue-dashboard-2.png)
+![](assets/attributed-dashboard-5.png)
 
 **树视图**
 
 * 树视图支持更具交互性和更细粒度的数据探索，允许营销人员识别其营销工作中的趋势、异常或杰出表现。
 * 单击分支可更深入地了解后续层次结构层。
 
-![层次探索的已归因收入树视图](assets/attributed-revenue-dashboard-3.png)
+![](assets/attributed-dashboard-6.png)
 
 ## 筛选器窗格 {#filter-pane}
 
@@ -78,6 +79,7 @@ ht-degree: 0%
 * 区段
 
 >[!MORELIKETHIS]
-> [了解仪表板基础知识](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
-> [仪表板数据可见性策略](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}
+>
+>* [了解仪表板基础知识](/help/marketo-measure-discover-ui/discover-dashboard-basics.md){target="_blank"}
+>* [仪表板数据可见性策略](/help/marketo-measure-discover-ui/dashboard-data-visibility-policy.md){target="_blank"}
 

@@ -1,15 +1,14 @@
 ---
-description: 电子邮件跟踪参数 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的电子邮件跟踪参数指南
 title: 电子邮件跟踪参数
 exl-id: e2cfd59e-ce4a-4cbb-b64a-828d1db7410f
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '416'
 ht-degree: 2%
 
 ---
-
 
 # 电子邮件跟踪参数 {#email-tracking-parameter}
 
@@ -31,47 +30,13 @@ Marketo Measure接受以下值：电子邮件地址、Salesforce潜在客户Id�
 
 ## 标记示例 {#tag-examples}
 
-<table>
- <colgroup>
-  <col>
-  <col>
-  <col>
-  <col>
- </colgroup>
- <tbody>
-  <tr>
-   <th><p>营销自动化</p></th>
-   <th><p>令牌/标记/宏 </p></th>
-   <th><p>示例</p></th>
-   <th><p>支持材料</p></th>
-  </tr>
-  <tr>
-   <td><p>Marketo</p></td>
-   <td><p>{{lead.Email Address}} </p></td>
-   <td><p>https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId={{lead.EmailAddress}}</p></td>
-   <td><p>https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/personalizing-landing-pages/tokens-overview.html?lang=zh-Hans</p></td>
-  </tr>
-  <tr>
-   <td><p>帕尔多</p></td>
-   <td><p>%%email%% </p><p>或</p><p>%%user_crm_id%%</p></td>
-   <td><p>https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId=%%email%%</p></td>
-   <td><p>https://help.salesforce.com/s/articleView?language=en_US&id=pardot_variable_tags_reference.htm&type=5</p></td>
-  </tr>
-  <tr>
-   <td><p>Hubspot</p></td>
-   <td><p>（通过编辑器插入）</p></td>
-   <td><p>不适用</p></td>
-   <td><p>https://knowledge.hubspot.com/website-pages/personalize-your-content</p></td>
-  </tr>
-  <tr>
-   <td><p>操作</p></td>
-   <td><p>（通过消息编辑器插入）</p></td>
-   <td><p>不适用</p></td>
-   <td><p>https://connect.act-on.com/hc/en-us/articles/360033436074-How-to-Personalize-Email-Content-with-CRM-Data</p></td>
-  </tr>
- </tbody>
-</table>
+| 营销自动化 | 令牌/标记/宏 | 示例 | 支持材料 |
+| --- | --- | --- | --- |
+| Marketo | {{lead.Email Address}} | <https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId={{lead.EmailAddress}}> | [令牌概述](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/personalizing-landing-pages/tokens-overview.html) |
+| 帕尔多 | %%email%%或%%user_crm_id%% | <https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId=%%email%%> | [Pardot变量标记引用](https://help.salesforce.com/s/articleView?language=en_US&id=pardot_variable_tags_reference.htm&type=5) |
+| Hubspot | （通过编辑器插入） | 不适用 | [HubSpot个性化内容](https://knowledge.hubspot.com/website-pages/personalize-your-content) |
+| 操作 | （通过消息编辑器插入） | 不适用 | [实际操作个性化电子邮件内容](https://connect.act-on.com/hc/en-us/articles/360033436074-How-to-Personalize-Email-Content-with-CRM-Data) |
 
 最后，在[!DNL Marketo Measure]中，必须指定跟踪参数，以便[!DNL Marketo Measure]能够找到电子邮件或ID值。 默认值为“mailId”，如上面的示例和下面的屏幕快照所示。 在[!DNL Marketo Measure]的设置中输入值，然后单击&#x200B;**[!UICONTROL Save]**。
 
-![电子邮件跟踪选项](assets/one.png)
+![](assets/one-one-1.png)

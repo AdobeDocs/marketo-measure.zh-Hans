@@ -1,15 +1,14 @@
 ---
-description: 正在创建 [!DNL Marketo Measure] 配置文件 —  [!DNL Marketo Measure]
+description: 为Marketo Measure用户创建 [!DNL Marketo Measure] 配置文件指南
 title: 创建 [!DNL Marketo Measure] 配置文件
 exl-id: dab2e2cb-fbd3-464a-9bd7-e9bf153d9848
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
-
 
 # 创建[!DNL Marketo Measure]配置文件 {#creating-a-marketo-measure-profile}
 
@@ -21,6 +20,7 @@ ht-degree: 0%
    * 启用查看和编辑已转化商机的权限
 
    >[!NOTE]
+   >
    >此配置文件可以是[!DNL System Admin]配置文件的克隆
 
 1. 已创建专用[!DNL Marketo Measure]用户：

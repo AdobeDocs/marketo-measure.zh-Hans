@@ -1,15 +1,15 @@
 ---
-description: UTM参数 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的UTM参数指南
 title: UTM参数
 exl-id: 2b20f3c4-1f39-4ac5-bad1-cb1d630d60e9
 feature: UTM Parameters
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
-
 
 # UTM参数 {#utm-parameters}
 
@@ -74,7 +74,7 @@ UTM参数可以手动添加到URL中，或通过自动标记特定平台（如Ad
 
 以下是UTM参数[!DNL Marketo Measure]解析的图表以及它们关联的相应接触点字段：
 
-| UTM参数 | 对应的[!DNL Marketo Measure]字段 |
+| **UTM参数** | **对应的[!DNL Marketo Measure]字段** |
 |---|---|
 | utm_medium | 媒介 |
 | utm_source | 接触点Source |

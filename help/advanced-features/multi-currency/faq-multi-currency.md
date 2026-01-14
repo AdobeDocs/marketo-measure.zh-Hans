@@ -1,15 +1,14 @@
 ---
-description: 常见问题解答（多货币） —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的常见问题解答（多货币）指南
 title: 常见问题解答（多货币）
 exl-id: 1d0936fb-4e66-4877-98d2-32c678a7ef3e
 feature: Multi-Currency
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
-
 
 # 常见问题解答（多货币） {#faq-multi-currency}
 
@@ -60,4 +59,5 @@ Marketo Measure会自动从客户的CRM中提取货币设置。 不再需要在M
 由于我们现在提供的产品将为客户处理转化，因此我们建议客户删除工作流和自定义字段，并允许我们导入其原始金额值。
 
 >[!MORELIKETHIS]
+>
 >[错误通知](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md){target="_blank"}

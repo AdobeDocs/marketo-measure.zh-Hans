@@ -1,15 +1,14 @@
 ---
-description: 自定义模型的最佳实践 —  [!DNL Marketo Measure]
+description: Marketo Measure用户自定义模型指南的最佳实践
 title: 自定义模型的最佳实践
 exl-id: 7c19bb6a-30fc-4cbd-a58e-f20751102afe
 feature: Custom Models
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
-
 
 # 自定义模型的最佳实践 {#best-practices-for-custom-model}
 
@@ -24,6 +23,7 @@ ht-degree: 0%
 **自定义阶段**&#x200B;允许用户定义与其业务和流程相关的funnel。 自定义阶段应该在整个购买者历程中代表“里程碑”，就像股票归因模型中的[!DNL Marketo Measure]里程碑（首次联系、潜在客户创建联系、机会创建联系和已关闭的成功联系）一样。 必须在帐户中正确定义和映射自定义阶段，以确保[!DNL Marketo Measure]正确跟踪阶段过渡，这一点至关重要。 这是为了确定应该与每个阶段关联的接触点，并相应地归因点数。 自定义阶段映射本质上是标准“阶段映射”的扩展，应遵循相同的实践。
 
 >[!NOTE]
+>
 >有关更多详细信息，请参阅阶段映射最佳实践资源
 
 **自定义归因建模**&#x200B;会在您选择自定义阶段funnel后定义。 然后，用户可以控制应该为每个自定义阶段以及[!DNL Marketo Measure]里程碑阶段分配多少归因点数。 用户可以在他们认为合适的时候为每个阶段分配点数，或者引用[!DNL Marketo Measure]机器学习模型，该模型基于历史数据用作“建议模型”。
@@ -68,6 +68,7 @@ ht-degree: 0%
 * 查看填充与您的组织funnel不再相关的接触点位置
 
 >[!MORELIKETHIS]
-> [自定义归因模型和设置](/help/advanced-features/custom-attribution-models/custom-attribution-model-and-setup.md)
-> [为自定义模型](/help/advanced-features/custom-attribution-models/custom-model-setup-enable-field-history-tracking.md)启用字段历史记录跟踪
-> [机器学习模型](/help/advanced-features/custom-attribution-models/machine-learning-model-faq.md)
+>
+>* [自定义归因模型和设置](/help/advanced-features/custom-attribution-models/custom-attribution-model-and-setup.md)
+>* [为自定义模型启用字段历史记录跟踪](/help/advanced-features/custom-attribution-models/custom-model-setup-enable-field-history-tracking.md)
+>* [机器学习模型](/help/advanced-features/custom-attribution-models/machine-learning-model-faq.md)

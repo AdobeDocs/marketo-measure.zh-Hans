@@ -1,19 +1,19 @@
 ---
-description: Dynamics营销活动和营销列表 —  [!DNL Marketo Measure]
+description: 适用于Marketo Measure用户的Dynamics活动和营销列表指南
 title: Dynamics活动和营销列表
 exl-id: 7b3d4032-5edf-489d-b86b-1e2a5755b258
 feature: Microsoft Dynamics
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '812'
 ht-degree: 0%
 
 ---
 
-
 # Dynamics活动和营销列表 {#dynamics-campaigns-and-marketing-lists}
 
 >[!NOTE]
+>
 >本文介绍了一个过时的流程。 我们鼓励用户使用[新的、改进的应用程序内进程](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}。
 
 ## 营销活动 {#campaigns}
@@ -24,23 +24,23 @@ Dynamics营销活动有助于跟踪离线营销活动，并将其包含在全渠
 
 将潜在客户或联系人直接添加到Campaign时，输入为Campaign响应记录。
 
-![显示潜在客户或联系人关系的Dynamics Campaign响应记录](assets/1.png)
+![](assets/dynamics-lists-1.png)
 
 ## 启用接触点 {#enable-touchpoints}
 
 要在接触点历程中包含这些记录，可通过几个选项来选择要同步的Campaign响应类型。 在Campaign记录上，安装的解决方案中应该有一个自定义字段，标记为“[!UICONTROL Enable Buyer Touchpoints]”。 如果没有看到此内容，则需要通过表单编辑器添加字段。
 
-![包含“启用买方接触点”自定义字段的促销活动记录](assets/2.png)
+![](assets/dynamics-lists-10.png)
 
 您可以选择在营销策划中包含具有营销策划响应的所有记录，或者仅包含响应为“感兴趣”的记录，或者在默认情况下，您根本不能包含营销策划响应。 您可以将此字段留空或明确选择将其排除。
 
 [!DNL Marketo Measure]不支持自定义响应值。
 
-![启用包含促销活动响应包含的下拉选项的“购买者接触点”字段](assets/3.png)
+![](assets/dynamics-lists-2.png)
 
 这些是Campaign响应的库存响应值：
 
-![下拉列表显示Dynamics中的标准Campaign响应值](assets/4.png)
+![](assets/dynamics-lists-3.png)
 
 根据您的选择，这些记录现在有资格使用Lead 、 Contact或Opportunity历程中的接触点。 如果他们符合条件，则历程中将显示“Dynamics Campaign”接触点。
 
@@ -52,7 +52,7 @@ Campaign响应可能不会显示的一个原因是，已记录潜在客户/联�
 
 此字段的一个常见示例适用于以下事件：事件的徽章扫描列表在事件发生后添加到CRM中，以便用户实际上可以将Buyer Touchpoint日期更改回事件发生时。
 
-用于覆盖默认营销活动响应日期的![Buyer Touchpoint日期自定义字段](assets/5.png)
+![](assets/dynamics-lists-4.png)
 
 ## 营销列表 {#marketing-lists}
 
@@ -60,7 +60,7 @@ Campaign响应可能不会显示的一个原因是，已记录潜在客户/联�
 
 [!DNL Marketo Measure]仅支持静态营销列表。 我们不支持动态营销列表，因为我们的处理要求我们检查记录的修改日期，但由于动态列表经常更改，因此[!DNL Marketo Measure]没有要检查的修改日期。 这将需要在一天中持续下载完整数据集。
 
-在Dynamics中显示“静态”与“动态”选项的![营销列表类型选择](assets/6.png)
+![](assets/dynamics-lists-5.png)
 
 上面的屏幕截图是潜在客户的营销列表。 营销列表与营销活动关联，并可与多个营销活动关联。 除非您只为一个营销活动创建一个营销列表，否则[!DNL Marketo Measure]不建议客户使用营销列表来跟踪其营销活动。 同一组商机/联系人不太可能适用于多个促销活动中的接触点。
 
@@ -68,13 +68,13 @@ Campaign响应可能不会显示的一个原因是，已记录潜在客户/联�
 
 要为接触点启用营销列表，Campaign记录上有一个标记为“[!UICONTROL Sync Marketing Lists]”的单独设置，它是一个简单的是/否开关。 如果没有看到此内容，则需要通过表单编辑器添加字段。 在促销活动记录中，您可以查看哪些营销列表与促销活动相关，这样您便知道要启用多少列表。
 
-![营销活动记录显示同步营销列表切换字段](assets/7.png)
+![](assets/legacy-processes-10.png)
 
 ## 接触点日期 {#touchpoint-date-1}
 
 营销列表的接触点日期通常是ListMember的创建日期，因此是将潜在客户或联系人添加到营销列表的日期。 如果填充了来自已安装解决方案中标记为“Buyer Touchpoint日期”的自定义字段，则可以覆盖该字段。 如果没有看到此内容，则需要通过表单编辑器添加字段。
 
-营销列表成员的![Buyer Touchpoint日期字段](assets/8.png)
+![](assets/dynamics-lists-6.png)
 
 ## 渠道映射 {#channel-mapping}
 
@@ -84,9 +84,9 @@ Dynamics营销活动使用“营销活动类型”字段在自定义营销渠道
 
 对于每种营销活动类型，都可以将其映射到渠道和子渠道组合，以便从营销活动派生的每个接触点都具有正确的映射渠道和子渠道。
 
-在Marketo Measure中显示“促销活动类型”值的![脱机渠道设置](assets/9.png)
+![](assets/dynamics-lists-7.png)
 
-![具有渠道和子渠道选项的Campaign类型的渠道映射配置](assets/10.png)
+![](assets/dynamics-lists-8.png)
 
 ## Campaign同步日期 {#campaign-sync-date}
 

@@ -1,11 +1,10 @@
 ---
-description: 机器学习模型常见问题解答 —  [!DNL Marketo Measure]
+description: Marketo Measure用户的机器学习模型常见问题解答指南
 title: 机器学习模型常见问题解答
-exl-id: 2fc142b2-8ac4-4c48-a8f1-398e29ccfe97
 feature: Custom Models
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -29,7 +28,7 @@ ht-degree: 0%
 
 自定义阶段的最终权重计算如下：
 
-**_模型百分比=模型准确度x转化率x接触点唯一性权重_**
+`Model Percentage = Model Accuracy x Conversion Rate x Touchpoint Uniqueness Weight`
 
 最后，所有定制阶段权重均被标准化并转换为%，如下所示。
 

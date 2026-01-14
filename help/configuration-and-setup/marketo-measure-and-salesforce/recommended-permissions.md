@@ -1,15 +1,14 @@
 ---
-description: 为 [!DNL Salesforce] 连接的用户 —  [!DNL Marketo Measure] 推荐的 [!DNL Marketo Measure]权限
+description: 针对Marketo Measure用户的 [!DNL Salesforce] 已连接用户指南的建议 [!DNL Marketo Measure] 权限
 title: 为 [!DNL Salesforce] 连接的用户推荐的 [!DNL Marketo Measure] 权限
 exl-id: b74aa28b-4a7b-42d1-8df0-d1ae0ff1f338
 feature: Salesforce
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
-
 
 # 建议的[!DNL Salesforce]已连接用户的[!DNL Marketo Measure]权限 {#recommended-salesforce-permissions-for-marketo-measure-connected-user}
 

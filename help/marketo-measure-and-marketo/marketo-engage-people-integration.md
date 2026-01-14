@@ -3,13 +3,12 @@ description: '[!DNL Marketo Engage]人员集成 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]人员集成'
 exl-id: 51930e84-4ff8-4e35-9d44-ea017c24b051
 feature: Integration
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '868'
 ht-degree: 1%
 
 ---
-
 
 # [!DNL Marketo Engage]人员集成 {#marketo-engage-people-integration}
 
@@ -20,7 +19,7 @@ Marketo人员集成允许[!DNL Marketo Measure]开始从Marketo下载人员，�
 * 生产Marketo实例
 * 生产[!DNL Salesforce]或[!DNL Microsoft Dynamics]实例
 * 任何付费的[!DNL Marketo Measure]订阅
-* 已启用SOLR (联系[Marketo支持](https://nation.marketo.com/t5/Support/ct-p/Support){target="_blank"}以启用此功能)
+* 已启用SOLR (联系[Marketo支持](https://nation.marketo.com/t5/Support/ct-p/Support)以启用此功能)
 
 ## 工作原理 {#how-it-works}
 
@@ -32,9 +31,9 @@ Marketo人员集成允许[!DNL Marketo Measure]开始从Marketo下载人员，�
 
 为了让我们检测这些重复项，请确保您的[!DNL Marketo-Salesforce]或[!DNL Marketo-Dynamics]同步已填充Marketo人员上的潜在客户和联系人ID。 如果ID正确同步，您应该能够在人员记录中看到CRM ID，如下所示：
 
-![a](assets/5a.png)
+![](assets/5a-5a-1.png)
 
-![b](assets/5b.png)
+![](assets/5b-5b-1.png)
 
 客户可以选择报告[!DNL Marketo Measure] Discover中的整组Marketo人员和CRM人员。 如果您只想报告CRM用户，我们建议您创建一个区段来筛选他们。
 
@@ -42,63 +41,63 @@ Marketo人员集成允许[!DNL Marketo Measure]开始从Marketo下载人员，�
 
 在[!DNL Marketo Measure Discover]中报告潜在客户（人员）时，您将看到Marketo和CRM潜在客户的总数。 要仅报告Marketo人员或CRM潜在客户，您需要为源创建区段类别，然后使用“Source System”字段为Marketo和CRM创建区段规则以定义规则。 创建区段后，您将看到可在您的[!DNL Marketo Measure Discover]功能板中筛选的Source类别。
 
-![Marketo Measure Discover仪表板显示Marketo与CRM潜在客户总数](assets/bizible-discover-1.png)
+![](assets/bizible-discover-1.png)
 
-![发现突出显示Source系统区段的筛选器](assets/bizible-discover-2.png)
+![](assets/bizible-discover-2.png)
 
 ## 字段映射 {#field-mappings}
 
-<table>
- <colgroup>
-  <col>
-  <col>
- </colgroup>
- <tbody>
-  <tr>
-   <th><p><strong>biz_leads</strong></p></th>
-   <th><p><strong>Marketo</strong></p></th>
-  </tr>
-  <tr>
-   <td><p>ID</p></td>
-   <td><p>ID</p></td>
-  </tr>
-  <tr>
-   <td><p>MODIFIED_DATE</p></td>
-   <td><p>更新时间<strong></strong></p></td>
-  </tr>
-  <tr>
-   <td><p>创建日期</p></td>
-   <td><p>createdat</p></td>
-  </tr>
-  <tr>
-   <td><p>电子邮件</p></td>
-   <td><p>电子邮件</p></td>
-  </tr>
-  <tr>
-   <td><p>WEB站点</p></td>
-   <td><p>网站</p></td>
-  </tr>
-  <tr>
-   <td><p>公司</p></td>
-   <td><p>公司</p></td>
-  </tr>
-  <tr>
-   <td><p>IS_CONVERTED</p></td>
-   <td><p>不适用</p></td>
-  </tr>
-  <tr>
-   <td><p>ACCOUNT_ID</p></td>
-   <td><p>帐户Id (L2A)</p></td>
-  </tr>
-  <tr>
-   <td><p>BIZIBLE_STAGE</p></td>
-   <td><p>状态</p></td>
-  </tr>
-  <tr>
-   <td><p>IS_DELETED</p></td>
-   <td><p>true/false</p></td>
-  </tr>
- </tbody>
+<table> 
+ <colgroup> 
+  <col> 
+  <col> 
+ </colgroup> 
+ <tbody> 
+  <tr> 
+   <th><p><strong>biz_leads</strong></p></th> 
+   <th><p><strong>Marketo</strong></p></th> 
+  </tr> 
+  <tr> 
+   <td><p>ID</p></td> 
+   <td><p>ID</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>MODIFIED_DATE</p></td> 
+   <td><p>更新于<strong>*</strong></p></td> 
+  </tr> 
+  <tr> 
+   <td><p>创建日期</p></td> 
+   <td><p>createdat</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>电子邮件</p></td> 
+   <td><p>电子邮件</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>WEB站点</p></td> 
+   <td><p>网站</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>公司</p></td> 
+   <td><p>公司</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>IS_CONVERTED</p></td> 
+   <td><p>不适用</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>ACCOUNT_ID</p></td> 
+   <td><p>帐户Id (L2A)</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>BIZIBLE_STAGE</p></td> 
+   <td><p>状态</p></td> 
+  </tr> 
+  <tr> 
+   <td><p>IS_DELETED</p></td> 
+   <td><p>true/false</p></td> 
+  </tr> 
+ </tbody> 
 </table>
 
 *存在一个已知的行为问题，即Marketo公司实体中的字段不会影响人员的updatedAt值，因此，如果更新了Website或Company等相关字段，[!DNL Marketo Measure]将无法知晓这些值是否已修改，因为updatedAt日期/时间值未更新。 这会影响ABM功能，在这种情况下，我们将没有新数据来解析潜在客户。 目前没有解决方法，但计划将来解决此问题。

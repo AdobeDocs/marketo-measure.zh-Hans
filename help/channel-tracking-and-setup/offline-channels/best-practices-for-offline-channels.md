@@ -1,11 +1,11 @@
 ---
-description: 脱机渠道的最佳实践 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的离线渠道指南最佳实践
 title: 离线渠道的最佳实践
 exl-id: 71c50614-8d5b-469f-bc02-3cc489464a4e
 feature: Channels
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---

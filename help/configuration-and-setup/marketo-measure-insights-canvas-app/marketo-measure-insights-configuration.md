@@ -3,13 +3,12 @@ description: '[!DNL Marketo Measure]分析配置 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]分析配置'
 exl-id: f6fe296b-d22a-43f2-b124-5d4b2f74d67a
 feature: Reporting
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '104'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Marketo Measure]分析配置 {#marketo-measure-insights-configuration}
 
@@ -21,10 +20,10 @@ ht-degree: 0%
 
 1. 在[!UICONTROL OAuth]策略部分下，将允许的用户设置更改为“管理员批准的用户是预授权的”。 出现弹出窗口，单击&#x200B;**[!UICONTROL OK]**，然后单击&#x200B;**[!UICONTROL Save]**。
 
-   ![&#x200B; 1](assets/1-1.png)
+   ![](assets/marketo-app-1.png)
 
 1. 保存页面后，您即可单击&#x200B;**[!UICONTROL Manage Profiles]**&#x200B;按钮。
 
-   ![&#x200B; 1](assets/2-1.png)
+   ![](assets/marketo-app-2.png)
 
 1. 选择应有权访问[!DNL Marketo Measure]分析的所有配置文件，然后单击&#x200B;**[!UICONTROL Save]**。

@@ -3,13 +3,12 @@ description: '[!DNL Marketo Measure]报表模板 — Power BI - [!DNL Marketo Me
 title: '[!DNL Marketo Measure]报表模板 — Power BI'
 exl-id: c296b8f9-4033-4723-9a71-63a458640d27
 feature: Reporting
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '2635'
+source-wordcount: '2526'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Marketo Measure]报表模板 — Power BI {#marketo-measure-report-template-power-bi}
 
@@ -19,15 +18,15 @@ ht-degree: 0%
 
 打开Adobe [!DNL Marketo Measure]报表模板Power BI文件。
 
-Marketo Measure模板的![Power BI连接对话框](assets/marketo-measure-report-template-power-bi-1.png)
+![](assets/marketo-bi-1.png)
 
-您可以在[!DNL Marketo Measure]信息页面上的[!DNL Data Warehouse] UI中找到特定的服务器、仓库和架构信息。 有关如何找到此页面的说明，请参见[此处](/help/data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}。
+您可以在[!DNL Marketo Measure]信息页面上的[!DNL Data Warehouse] UI中找到特定的服务器、仓库和架构信息。 有关如何找到此页面的说明，请参见[此处](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}。
 
 QueryFilterStartDate和QueryFilterEndDate参数用于限制导入的数据量。 这些参数必须采用SQL格式，因为它们用于发送到[!DNL Snowflake]的查询。 例如，如果您希望将数据限制在过去两年，则QueryFilterStartDate应为`dateadd` (year，-2，current_date())。 将这些参数与datetime数据类型进行比较，因此建议使用`dateadd` (day，1，current_date())将QueryFilterEndDate的所有数据返回到当前时间。
 
 ## 数据连接 {#data-connection}
 
-打开文件时输入的参数用于构造从数据仓库导入表的本地查询。 您仍需要设置与[!DNL Snowflake]实例的数据连接。 为此，您需要相同的服务器和仓库名称以及用户名和密码。 有关在何处查找您的用户名以及根据需要重置密码的详细信息，请参阅[此处](/help/data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}。
+打开文件时输入的参数用于构造从数据仓库导入表的本地查询。 您仍需要设置与[!DNL Snowflake]实例的数据连接。 为此，您需要相同的服务器和仓库名称以及用户名和密码。 有关在何处查找您的用户名以及根据需要重置密码的详细信息，请参阅[此处](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}。
 
 ## 数据导入 {#data-import}
 
@@ -37,14 +36,15 @@ QueryFilterStartDate和QueryFilterEndDate参数用于限制导入的数据量。
 
 为了限制导入到模型中的数据，每个表都使用本机查询作为源进行设置。 本机查询需要批准才能执行，您需要为每个查询单击“运行”。 只有在第一次运行查询或参数更改时，才需要执行此步骤。
 
-Power BI中的![本机查询审批对话框](assets/marketo-measure-report-template-power-bi-2.png)
+![](assets/marketo-bi-2.png)
 
 所有查询都会过滤掉已删除的行，并且[!UICONTROL facts]表被设置为过滤到修改日期介于作为参数输入的开始和结束日期之间的行。
 
 >[!NOTE]
+>
 >由于日期过滤器应用于行的修改日期，因此，在报告超出限制日期范围的日期时请务必谨慎。 例如，修改后的日期范围限于过去两年。 这可能包括事件日期为三年前的事件，但最近已对其进行修改。 但是，对三年前的事件的报告会返回不完整的结果，因为并非所有行在两年时间范围内都进行了修改。
 
-![查询编辑器显示日期筛选器参数](assets/marketo-measure-report-template-power-bi-3.png)
+![](assets/marketo-bi-3.png)
 
 以下表格被视为事实表格；修改日期的日期限制已添加到这些查询中。
 
@@ -76,29 +76,32 @@ Power BI中的![本机查询审批对话框](assets/marketo-measure-report-templ
 
 一些转换已应用于Power Query中的数据。 要查看任何表的特定转换，请打开Power Query，导航到表，并记下窗口左侧的已应用步骤。 下面概述了一些特定的转换。
 
-![显示已应用转换步骤的Power Query编辑器](assets/marketo-measure-report-template-power-bi-4.png)
+![](assets/marketo-bi-6.png)
 
 ### 已删除列 {#removed-columns}
 
 为了简化数据模型并删除冗余和不必要的数据，我们减少了从原始[!DNL Snowflake]表中导入Power BI的列数。 删除的列包括不必要的外键、通过与模型中其他表的关系更好地应用的反正规化维度数据、审核列以及用于内部[!DNL Marketo Measure]处理的字段。 您可以根据业务需求添加或删除列。 在任何表格的“Source”步骤之后，导航到“已删除的其他列”步骤，单击齿轮图标，然后更新所提供列表中选定的列。
 
 >[!NOTE]
-> 添加其他外键值时请务必谨慎。 Power BI通常设置为自动检测模型中的关系，添加外键值可能会导致表之间出现不需要的链接和/或禁用现有关系。
-> [!DNL Marketo Measure]数据仓库中的大多数表包含非正规化的维度数据。 我们致力于在Power BI中尽可能规范和清理模型，以提高性能和数据准确性。 在数值表中包含任何其他非规范化字段时，请务必谨慎，这可能会破坏跨表的维度筛选，并可能导致报告不准确。
+>
+>* 添加其他外键值时请务必谨慎。 Power BI通常设置为自动检测模型中的关系，添加外键值可能会导致表之间出现不需要的链接和/或禁用现有关系。
+>
+>* [!DNL Marketo Measure]数据仓库中的大多数表包含非正规化的维度数据。 我们致力于在Power BI中尽可能规范和清理模型，以提高性能和数据准确性。 在数值表中包含任何其他非规范化字段时，请务必谨慎，这可能会破坏跨表的维度筛选，并可能导致报告不准确。
 
-![列选择对话框显示已删除的列配置](assets/marketo-measure-report-template-power-bi-5.png)
+
+![](assets/marketo-bi-7.png)
 
 ### 重命名的列 {#renamed-columns}
 
 已重命名表和列，使它们更便于用户使用并标准化命名约定。 要查看列名更改，请导航到任何表中“删除了其他列”步骤后面的“重命名的列”步骤。
 
-![重命名列步骤，显示列名映射](assets/marketo-measure-report-template-power-bi-6.png)
+![](assets/marketo-bi-5.png)
 
 ### 重命名的区段 {#renamed-segments}
 
 由于区段名称是可自定义的，因此它们在Snowflake Data Warehouse中具有通用列名称。 [!DNL BIZ_SEGMENT_NAMES]是一个映射表，它列出了通用区段名称及其映射的自定义区段名称，这些名称在[!DNL Marketo Measure] UI的区段部分中定义。 “区段名称”表用于重命名“潜在客户接触点”和“归因接触点”表中的区段列。 如果不存在自定义区段，则保留通用区段名称。
 
-Power Query中的![区段名称映射表](assets/marketo-measure-report-template-power-bi-7.png)
+![](assets/marketo-bi-4.png)
 
 ### 区分大小写ID转换 {#case-sensitive-id-conversion}
 
@@ -106,25 +109,25 @@ Power Query中的![区段名称映射表](assets/marketo-measure-report-template
 /10/06/power-bi-and-case-sensitivity/){target="_blank"}。 这些区分大小写的ID值将标记为“联接ID”，并用作关系层中的联接键。 我们在报告层隐藏了联接ID，保持原始ID值可见，以便用于报告，因为不可见的字符可能会干扰剪切
 /paste函数和筛选。
 
-![显示区分大小写的ID转换的接触点表](assets/marketo-measure-report-template-power-bi-8.png)
+![](assets/marketo-bi-8.png)
 
-![具有连接ID列的Campaign表以进行区分大小写的匹配](assets/marketo-measure-report-template-power-bi-9.png)
+![](assets/marketo-bi-11.png)
 
 ### 已添加行 {#rows-added}
 
 为了向模型中的计算添加货币兑换功能，我们在Opportunity和Cost表中添加了一个公司兑换率列。 此列中的值是在行级别添加的，通过连接折换率表的日期和货币ID来计算。 有关货币兑换在此模型中如何工作的更多详细信息，请参阅本文档中的[货币兑换](#currency-conversion)部分。
 
-![具有公司转化率列](assets/marketo-measure-report-template-power-bi-10.png)的Opportunity表
+![](assets/marketo-bi-10.png)
 
 存储在[!DNL Snowflake]中的转化率表包含每个转化的日期范围。 Power BI不允许在计算中使用联接标准（即在一系列日期之间）。 为了联结日期，我们在“转化率”表中添加了步骤以展开各行，以便在转化日期范围内每个日期都有一行。
 
-![具有扩展日期行的转化率表](assets/marketo-measure-report-template-power-bi-11.png)
+![](assets/marketo-bi-9.png)
 
 ## 日期模型 {#data-model}
 
 单击下面的图像获取其全尺寸版本。
 
-[![显示表关系的Power BI数据模型图](assets/marketo-measure-report-template-power-bi-12.png)](/help/bi-report-templates/assets/power-bi-data-model.png){target="_blank"}
+[![](assets/marketo-bi-12.png)](/help/bi-report-templates/assets/power-model-1.png){target="_blank"}
 
 ### 关系和数据流 {#relationships-and-data-flow}
 
@@ -165,19 +168,19 @@ Power Query中的![区段名称映射表](assets/marketo-measure-report-template
 
 如果没有能够识别兑换率，则此模型中的货币兑换度量将使用1.0值替代兑换率。 已创建单独的度量以显示度量的货币值，如果计算包含多个货币值（即，无法将值转换为所选货币），则发出警报。
 
-![货币转换公式显示DAX计算逻辑](assets/marketo-measure-report-template-power-bi-13.png)
+![](assets/marketo-bi-13.png)
 
 ## 数据定义 {#data-definitions}
 
 已将表、自定义列和度量的定义添加到Power BI模型中。
 
-![显示定义说明的表属性](assets/marketo-measure-report-template-power-bi-14.png)
+![](assets/marketo-bi-15.png)
 
-![数据模型中的自定义列定义](assets/marketo-measure-report-template-power-bi-15.png)
+![](assets/marketo-bi-16.png)
 
-![具有DAX公式的度量值定义](assets/marketo-measure-report-template-power-bi-16.png)
+![](assets/marketo-bi-14.png)
 
-要查看直接来自[!DNL Snowflake]的列的定义，请参阅[数据仓库文档](/help/data-warehouse/data-warehouse-schema.md){target="_blank"}
+要查看直接来自[!DNL Snowflake]的列的定义，请参阅[数据仓库文档](/help/marketo-measure-data-warehouse/data-warehouse-schema.md){target="_blank"}
 
 ## 模板和发现之间的差异 {#discrepancies-between-templates-and-discover}
 

@@ -1,15 +1,14 @@
 ---
-description: 安全会话限制 — 要允许列表的IP地址
+description: 列出要Salesforce的列入允许列表 IP范围，以便在实施会话限制时Marketo Measure可以连接
 title: 安全会话限制 — 要允许列表的IP地址
 exl-id: aaf5190f-893c-4872-8d03-93f516e70a59
 feature: Tracking
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%
 
 ---
-
 
 # 安全会话限制：要允许列表的IP地址 {#security-session-restrictions-ip-addresses-to-allowlist}
 
@@ -21,4 +20,4 @@ ht-degree: 0%
 
 要将[!DNL Marketo Measure] IP添加到Salesforce中的受信任IP范围，请单击&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Administration Setup]** > **[!UICONTROL Security Controls]** > **[!UICONTROL Network Access]** > **[!UICONTROL New]**。
 
-用于添加受信任IP范围的![Salesforce网络访问页面](assets/1.png)
+![](assets/compliance-resources-1.png)

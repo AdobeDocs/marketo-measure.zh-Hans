@@ -1,21 +1,21 @@
 ---
-description: 促销活动同步日期 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的Campaign同步日期指南
 title: Campaign同步日期
 exl-id: 66ce9948-9297-47ef-8b16-0ac45c5664fc
 feature: Channels
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
-
 
 # Campaign同步日期 {#campaign-sync-dates}
 
 了解Campaign同步日期功能的功能，并提供此功能的一些用例。
 
 >[!NOTE]
+>
 >本文介绍了一个过时的流程。 我们鼓励用户使用[新的、改进的应用程序内进程](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md){target="_blank"}。
 
 需要&#x200B;**[!DNL Marketo Measure]包： 6.9或更高版本**
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 在特定营销活动上启用购买者接触点后，您可以利用Campaign同步日期为单个营销活动设置接触点日期参数。 因此，如果您要添加的接触点结束日期是2017年3月1日，则[!DNL Marketo Measure]将仅在该日期之前添加到促销活动的促销活动成员上创建接触点。 [!DNL Marketo Measure]不会为2017年3月1日之后添加的活动成员创建接触点。
 
-![Salesforce营销活动显示接触点开始日期和结束日期字段](assets/1.gif)
+![](assets/legacy-processes-3.gif)
 
 同样，如果您要在营销活动中添加接触点开始日期（比如2017年1月1日），则[!DNL Marketo Measure]不会在2017年1月1日之前添加到营销活动的营销活动成员上创建接触点。 如果添加接触点结束日期，则无需添加接触点开始日期，反之亦然。
 

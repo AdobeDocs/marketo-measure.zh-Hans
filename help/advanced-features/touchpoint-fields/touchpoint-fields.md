@@ -1,41 +1,40 @@
 ---
-description: 接触点字段 —  [!DNL Marketo Measure]
+description: 面向Marketo Measure用户的接触点字段指南
 title: 接触点字段
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '1966'
 ht-degree: 0%
 
 ---
-
 
 # 接触点字段 {#touchpoint-fields}
 
 过去，当客户加入[!DNL Marketo Measure]并且没有直接标记集成时，我们的客户成功团队会教导客户如何适当地标记其登陆页面，以便他们使用正确的UTM格式，并且我们可以解决其广告。 其中有些客户不使用UTM，而是使用自己的标记参数，这意味着使用[!DNL Marketo Measure]强制实施的新标记结构编辑其所有广告网络中的所有登陆页面可能非常耗时。 为了适应它们的标记结构，我们现在接受可以使用我们的规则定义映射的自定义参数。 目标是适应客户对其自定义跟踪参数的使用，因此我们不必要求客户更改其URL结构。
 
 >[!AVAILABILITY]
->现在在第2层和第3层提供完全分段。
 >
->在第2级订阅中提供“完全分段”。
+>现在在第2层和第3层提供完全分段。
 
 >[!NOTE]
+>
 >这是一项高级功能，仅由Professional Services设置。
 
 ## 启用功能 {#enabling-the-feature}
 
 从[!DNL Marketo Measure]设置菜单中，导航到接触点字段页面。 从该位置，您可以通过选择&#x200B;**启用计算字段**&#x200B;下的&#x200B;**是**&#x200B;来启用该功能。 启用该功能后，您可以创建接触点字段。
 
-具有“启用计算字段”选项的![接触点字段设置页面](assets/one.png)
+![](assets/touchpoint-fields-1.png)
 
 ## 操作方法 {#how-to}
 
 要创建计算字段，请记住，用户可以执行三个不同的操作：提取、映射到和连接。 这些运算符也称为用于定义计算字段的运算符。
 
-### 提取 {#extracts}
+提取
 
-[!UICONTROL extracts]运算符从其他位置（如：促销活动字段、潜在客户字段）提取字段中的值，或者在更高级的用例中，从登陆页面提取自定义参数。 然后将它放置到接触点字段中。
+[!UICONTROL extracts]运算符从其他位置提取字段中的值，例如：促销活动字段、潜在客户字段，或者在更高级的用例中，从登陆页面[提取自定义参数。 ](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}然后将其放置到接触点字段(请参阅[映射到示例](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}#2)。
 
 **示例#1**
 
@@ -52,7 +51,7 @@ ht-degree: 0%
    * **)**&#x200B;标记提取结束
    * **。&#42;**&#x200B;告诉我们我们正在提取完整的字符串
 
-用于Campaign Source字段提取的![计算字段配置](assets/two.png)
+![](assets/touchpoint-fields-10.png)
 
 **示例#2**
 
@@ -72,7 +71,7 @@ ht-degree: 0%
    * **+**&#x200B;将提取参数的完整值，而不限制字符
    * 请注意，您使用的是正斜杠，而不是反斜杠
 
-![折扣代码字段配置从URL](assets/three.png)中提取促销参数
+![](assets/touchpoint-fields-11.png)
 
 **示例#3**
 
@@ -90,7 +89,7 @@ ht-degree: 0%
    * **\d**&#x200B;告诉我们，我们正在提取“数字”
    * **{6}**&#x200B;是我们正在提取的字符数
 
-![Adobe Campaign Id字段正在提取6位cid参数](assets/four.png)
+![](assets/touchpoint-fields-12.png)
 
 **示例#4**
 
@@ -119,9 +118,9 @@ ht-degree: 0%
    * **\d**&#x200B;告诉我们，我们正在提取“数字”
    * **{6}**&#x200B;是我们正在提取的字符数
 
-![多个计算字段提取国家/地区和营销活动ID参数](assets/five.png)
+![](assets/touchpoint-fields-13.png)
 
-### 将映射到 {#maps-to}
+**映射到**
 
 [!UICONTROL maps to]运算符创建一个需要转换或存储为其他值的值表。 通常，它采用键值的形式，其中代码表示友好名称，需要映射到该友好名称。
 
@@ -129,7 +128,7 @@ ht-degree: 0%
 
 您为跨多个渠道运行的“夏季末期促销活动”和“黑色星期五促销活动”创建了营销活动。 除了其他可能的值之外，您要创建一个名为“促销活动”的计算字段，并将任何包含“夏季促销活动结束”或“黑色星期五促销活动”的接触点映射到“促销活动”等促销活动值。
 
-![计划字段将营销活动映射到促销类别](assets/six.png)
+![](assets/touchpoint-fields-2.png)
 
 **示例#2**
 
@@ -151,6 +150,8 @@ ht-degree: 0%
    * **\d**&#x200B;告诉我们，我们正在提取“数字”
    * **{2}**&#x200B;是我们正在提取的字符数
 
+
+
 * 单击[!UICONTROL Save]。 您必须先保存新字段，然后才能将其用于下一个规则！
 * 接下来，我们要将第一个数字的所有可能值映射到其友好名称
 * 创建计算字段并将其标记为“Region_Name”
@@ -165,9 +166,9 @@ ht-degree: 0%
    * 要提取03，可将值定义为“BZ=\d{2}-\d{2}-\d{2}-\d\**(\d{2})**-\d{2}”
    * 要提取10，您应将该值定义为“BZ=\d{2}-\d{2}-\d{2}-\d{2}-\d\**(\d{2})**”
 
-![区域名称将具有数字代码的表映射到区域名称](assets/seven.png)
+![](assets/touchpoint-fields-3.png)
 
-### 连接 {#concatenates}
+**连接**
 
 [!UICONTROL concatenates]运算符将多个字段中的值合并为单个字段。 这对于创建跨多个字段提取数据的自定义值非常有用，以便
 
@@ -175,7 +176,7 @@ ht-degree: 0%
 
 Segment__c和Grade__c的Opportunity对象上有单独的字段，用户希望将它们合并到接触点对象上的单个字段中以进行报告。 通过连接这些字段，您将看到Enterprise_A或Mid-Market_B之类的值。
 
-![合并区段和级别字段的拼接配置](assets/eight.png)
+![](assets/touchpoint-fields-4.png)
 
 ## 接触点字段和区段 {#touchpoint-fields-and-segments}
 
@@ -183,17 +184,17 @@ Segment__c和Grade__c的Opportunity对象上有单独的字段，用户希望将
 
 此产品版本中提供了使用接触点字段创建区段的功能。 无法使用以前的接触点字段构建区段。
 
-![区段创建界面显示可用的接触点字段](assets/nine.png)
+![](assets/touchpoint-fields-5.png)
 
 为了更轻松地构建区段，现在可以从创建的接触点字段创建动态区段。 例如，如果您创建的接触点字段解析了地理区域，而不是为每个可能的区域创建区段，则可以设置一个区段，我们将会为每个实例创建区段，此时将显示一个新值。 在需要解析属性（如邮政编码）并将其用作区段时，此功能非常有用！
 
 您的设置类似于下面的屏幕截图。 区段名称使用大括号动态拉入接触点字段值以搜索您的字段。
 
-![具有大括号字段引用的动态区段配置](assets/ten.png)
+![](assets/touchpoint-fields-6.png)
 
 规则引用同一接触点字段并搜索“不等于null”的值。
 
-不等于null条件的![区段规则](assets/eleven.png)
+![](assets/touchpoint-fields-7.png)
 
 ## 常见问题解答 {#faq}
 
@@ -206,6 +207,7 @@ Segment__c和Grade__c的Opportunity对象上有单独的字段，用户希望将
 创建规则后，不要忘记保存规则。 如果您没有看到新字段，请检查是否保存了新字段。 您必须先保存新字段，然后才能将其用于下一个规则。
 
 >[!NOTE]
+>
 >由于复杂程度，使用“映射到”运算符的接触点字段无法用于其他接触点字段。
 
 **我应使用哪个表达式从单个登陆页面提取多个参数？**
@@ -220,6 +222,6 @@ Segment__c和Grade__c的Opportunity对象上有单独的字段，用户希望将
 
 有一个联机工具([[!DNL https]：//regex101.com/](https://regex101.com/){target="_blank"})可以运行并测试表达式。 表达式如果有效，则显示绿色；如果无效，则显示红色。 另外，右上方的[!UICONTROL explanation]框很有帮助，可告诉您正在提取的内容。
 
-![Regex验证工具以绿色显示有效表达式](assets/twelve.png)
+![](assets/touchpoint-fields-8.png)
 
-![Regex验证工具以红色显示无效表达式](assets/thirteen.png)
+![](assets/touchpoint-fields-9.png)

@@ -1,15 +1,15 @@
 ---
-description: 重新授权连接的帐户 —  [!DNL Marketo Measure]
+description: 为Marketo Measure用户重新授权“连接帐户”指南
 title: 重新授权连接的帐户
 exl-id: 7abd1d67-5bed-45bb-844f-0ffd23c3d7f8
 feature: APIs, Integration
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+hidefromtoc: true
+source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
-
 
 # 重新授权连接的帐户 {#reauthorizing-connected-accounts}
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 如果您的CRM平台断开连接，[!DNL Marketo Measure]将无法更新[!DNL Marketo Measure]数据或将任何新的接触点推送到您的组织。 重新建立CRM连接后，[!DNL Marketo Measure]将推送在帐户断开连接时丢失的任何数据。
 
-![&#x200B; 1](assets/1-1.png)
+![](assets/utilizing-connections-7.png)
 
 ## 重新授权断开连接的帐户 {#re-authorizing-disconnected-accounts}
 
