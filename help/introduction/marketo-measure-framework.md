@@ -36,7 +36,7 @@ Marketo Measure的JS捕获来自Web访问（包括匿名Web访问）、常规流
 
 Marketo Measure与CRM集成，以存放和管理Marketo Measure JS捕获的所有数据。 目前，Marketo Measure已与两个CRM集成API：
 
-![ 2](assets/overview-resources-14.png)
+![&#x200B; 2](assets/overview-resources-14.png)
 
 通过在CRM中显示Marketo Measure数据，您可以查看与每个接触点相关的粒度信息，并生成报告以了解您的渠道的执行情况。
 
@@ -44,7 +44,7 @@ Marketo Measure与CRM集成，以存放和管理Marketo Measure JS捕获的所�
 
 大多数营销人员依靠一些不同的应用程序来开展营销工作。 除了Salesforce和MS Dynamics之外，Marketo Measure还与13个第三方应用程序（如下所列）集成。
 
-![ 1](assets/overview-resources-15.png)
+![&#x200B; 1](assets/overview-resources-15.png)
 
 如果您使用上述应用程序运行任何营销工作，则可以将这些帐户关联到您的Marketo Measure帐户。 这样即可轻松跟踪数据并将其传输到您的Marketo Measure帐户。
 

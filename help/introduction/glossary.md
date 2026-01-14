@@ -305,7 +305,7 @@ Marketo Measure ABTest — 用户参与您网站上的A/B测试的日期
 
 此字段显示营销渠道以及接触点所属的子渠道。 在下面的示例中，“营销渠道 — 路径”是Social.Linkedin，其中营销渠道是Social，子渠道是LinkedIn。
 
-![ 3](assets/overview-resources-16.png)
+![&#x200B; 3](assets/overview-resources-16.png)
 
 **Medium** | Buyer Touchpoint、Buyer Attribution Touchpoint
 

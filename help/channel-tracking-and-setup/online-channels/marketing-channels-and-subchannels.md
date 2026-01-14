@@ -45,7 +45,7 @@ ht-degree: 2%
 
 下图说明了基于具有以下URL的网页的营销渠道、子渠道和内容的示例：
 
-* [http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&amp;utm_medium=paidsocial](http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&utm_medium=paidsocial)*
+* [http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&utm_medium=paidsocial](http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&utm_medium=paidsocial)*
 
 在这种情况下，用户尝试访问的内容是《B2B营销归因简介指南》。 [!DNL Marketo Measure]将使用此组织中设置的渠道规则分析指向此内容的URL，并使用它们“分段”此潜在客户到营销渠道“付费社交”和子渠道“LinkedIn”。
 

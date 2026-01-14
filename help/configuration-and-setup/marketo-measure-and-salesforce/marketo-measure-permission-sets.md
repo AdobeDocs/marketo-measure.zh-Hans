@@ -34,7 +34,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td><span><strong>[!DNL Marketo Measure] 管理员</strong></span></td> 
-   <td><span>使SFDC管理员能够从[!DNL Marketo Measure]对象创建、读取、写入和删除记录。 [!DNL Marketo Measure]将数据推送到SFDC所用的许可证应启用此权限集。 此外，建议此许可证能够在以下情况下编辑转化的Lead：在[!DNL Marketo Measure]将数据应用于记录之前Lead已转化。 这可确保Salesforce和[!DNL Marketo Measure]之间报表的准确性。 <a href="https://help.salesforce.com/articleView?id=release-notes.rn_sales_leads_view_converted.htm&amp;type=5&amp;release=206&amp;language=en_us">在此阅读更多</a>。</span></td> 
+   <td><span>使SFDC管理员能够从[!DNL Marketo Measure]对象创建、读取、写入和删除记录。 [!DNL Marketo Measure]将数据推送到SFDC所用的许可证应启用此权限集。 此外，建议此许可证能够在以下情况下编辑转化的Lead：在[!DNL Marketo Measure]将数据应用于记录之前Lead已转化。 这可确保Salesforce和[!DNL Marketo Measure]之间报表的准确性。 <a href="https://help.salesforce.com/articleView?id=release-notes.rn_sales_leads_view_converted.htm&type=5&release=206&language=en_us">在此阅读更多</a>。</span></td> 
   </tr> 
   <tr> 
    <td><span><strong>[!DNL Marketo Measure] 营销用户</strong></span></td> 
