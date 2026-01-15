@@ -20,7 +20,7 @@ B2B客户属性集成允许[!DNL Marketo Measure]和Adobe Analytics的共同用�
 
 ## 配置集成 {#configuring-the-integration}
 
-1. 在Experience Cloud控制台中创建新的客户属性数据Source 。 您可在此找到[的详细说明](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html)。
+1. 在Experience Cloud控制台中创建新的客户属性数据Source 。 您可在此找到[的详细说明](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html?lang=zh-Hans)。
 
    注意后续步骤中所需的以下信息：
 
@@ -34,11 +34,11 @@ B2B客户属性集成允许[!DNL Marketo Measure]和Adobe Analytics的共同用�
 
    输入您的Adobe IMS组织ID。 此ID显示在Adobe Experience Cloud Admin Console的右下角。 有关查找此ID的更多帮助，请咨询Adobe客户团队（您的客户经理）。
 
-1. 在[!DNL Marketo Measure]帐户中创建完连接后，必须返回Experience Cloud控制台以[验证架构](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/validate-schema.html?lang=en)。 您无需担心FTP文件上传，[!DNL Marketo Measure]已为您自动完成该部分。 转到您在步骤1中创建的客户属性Source的“查看/编辑”架构屏幕，并告知Adobe [!DNL Marketo Measure]代表您上传的每个属性的数据类型。 如果需要，您还可以为上传的属性创建新的显示友好型名称。
+1. 在[!DNL Marketo Measure]帐户中创建完连接后，必须返回Experience Cloud控制台以[验证架构](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/validate-schema.html?lang=zh-Hans)。 您无需担心FTP文件上传，[!DNL Marketo Measure]已为您自动完成该部分。 转到您在步骤1中创建的客户属性Source的“查看/编辑”架构屏幕，并告知Adobe [!DNL Marketo Measure]代表您上传的每个属性的数据类型。 如果需要，您还可以为上传的属性创建新的显示友好型名称。
 
    如果您选择从CRM帐户对象同步属性，强烈建议您为这些属性选择新的显示名称，因为[!DNL Marketo Measure]只会填充这些属性的API级别名称，这些名称通常对报表不友好。
 
-1. 最后一步是为要在中使用属性的Experience Cloud应用程序配置属性订阅。 您可以为[!DNL Adobe Analytics]或[!DNL Adobe Target]配置订阅。  有关如何执行[的详细信息，请参阅此处](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/subscription.html)。
+1. 最后一步是为要在中使用属性的Experience Cloud应用程序配置属性订阅。 您可以为[!DNL Adobe Analytics]或[!DNL Adobe Target]配置订阅。  有关如何执行[的详细信息，请参阅此处](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/subscription.html?lang=zh-Hans)。
 
 ## 属性描述 {#attribute-descriptions}
 

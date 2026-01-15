@@ -49,9 +49,9 @@ ht-degree: 1%
 下面是几个视频    帮助您快速入门：
 
 * [[!DNL Marketo Measure] 介绍培训](https://share.vidyard.com/watch/Pb4DuWJwtFgw3jUBDGneb4?)（22分钟）
-* [[!DNL Marketo Measure] 在SFDC中报告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) （30-45分钟）
+* [[!DNL Marketo Measure] 在SFDC中报告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hans) （30-45分钟）
 
-**[[!DNL Marketo Measure] 101](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) （~30分钟）**
+**[[!DNL Marketo Measure] 101](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hans) （~30分钟）**
 
 本课程系列旨在概要介绍掌握[!DNL Marketo Measure]所需了解的基本概念。 它介绍了归因的概念、[!DNL Marketo Measure]作为工具的作用，以及[!DNL Marketo Measure]操作的一般框架。
 
@@ -63,7 +63,7 @@ ht-degree: 1%
 * 接触点
 * 归因模型
 
-**[[!DNL Marketo Measure] 在SFDC中报告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html)（30-45分钟）**
+**[[!DNL Marketo Measure] 在SFDC中报告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hans)（30-45分钟）**
 
 本课程系列旨在介绍已安装到Salesforce中的[!DNL Marketo Measure]库存报表。 这些报表是您使用[!DNL Marketo Measure]数据进行的大多数报表的基础。
 
@@ -76,7 +76,7 @@ ht-degree: 1%
 * 按ID列出的机会报表
 * 按渠道列出的机会报表
 
-**[渠道管理](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html)**
+**[渠道管理](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hans)**
 
 本课程涵盖您可以在线和离线跟踪方面自定义[!DNL Marketo Measure]的各种方式。 本课程更为先进，可能与所有用户无关。
 
@@ -88,4 +88,4 @@ ht-degree: 1%
 * 营销活动和营销活动成员字段
 * 离线渠道管理
 
-以下是[所有初学者电子学习视频](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html)。
+以下是[所有初学者电子学习视频](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hans)。
