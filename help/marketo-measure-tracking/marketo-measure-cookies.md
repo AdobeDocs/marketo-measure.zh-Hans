@@ -4,9 +4,9 @@ title: '[!DNL Marketo Measure] Cookie'
 exl-id: de6e35ae-af92-43ba-8416-3e07d3dd470c
 feature: Tracking
 hidefromtoc: true
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '386'
 ht-degree: 10%
 
 ---
@@ -33,4 +33,4 @@ ht-degree: 10%
 
 如果在JavaScript设置期间触发了Web应用程序防火墙(WAF)警告，则用户可以禁用该WAF规则或允许列表Cookie，如下例所示：
 
-![](assets/adding-script-1.png)
+![如果在JavaScript期间触发了Web应用程序防火墙(WAF)警告](assets/adding-script-1.png)

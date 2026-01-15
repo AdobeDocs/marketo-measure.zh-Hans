@@ -3,9 +3,9 @@ description: 面向Marketo Measure用户的LinkedIn集成指南
 title: LinkedIn集成
 exl-id: 705209ef-1ece-496c-ac2f-6a31055bd993
 feature: APIs, Integration
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '2634'
+source-wordcount: '2694'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Forms负责人：通过与LinkedIn的Forms负责人集成，Marketo Measure将in
 
 [!DNL Marketo Measure]不支持赞助消息、文字广告或动态广告。
 
-![](assets/bizible-guide-1.png)
+![Marketo Measure不支持赞助消息、文字广告或动态](assets/bizible-guide-1.png)
 
 >[!TIP]
 >
@@ -106,7 +106,7 @@ Creative B ：共享234\
 Creative C ：共享234\
 Creative D ：共享234
 
-![](assets/five-five-1.png)
+![Creative D ：共享234](../assets/marketo-engage-activities-05.png)
 
 `1)` [!DNL Marketo Measure]将首先查看所有状态为“活动”的营销活动、创意和共享。 [!DNL Marketo Measure]不会标记已暂停、已存档或已取消的广告。 如果广告已暂停，然后设置为[!UICONTROL active]，则一旦它再次处于活动状态，我们将对其进行标记。 如果我们能够找到唯一的共享，即该共享未在多个创意人员或营销活动之间使用(例如，Creative A ：共享123)，则[!DNL Marketo Measure]会将我们的自定义参数`>> ?_bl={creativeId}`添加到共享URL中。
 
@@ -122,7 +122,7 @@ Creative D ：共享234
 >
 >实施此操作意味着我们的客户将丢失Creative B的广告历史记录：Share 234、Creative C ：Share 234和Creative D ：Share 234，因为现在已分别使用Creative E ：Share 345、Share F ：Share 456和Creative G ：Share 567重新创建了该服务器。
 
-![](assets/four-four-1.png)
+![实施此操作意味着我们的客户将丢失广告历史记录](assets/api-connections-01.png)
 
 ## 工作原理：Forms负责人 {#how-it-works-lead-gen-forms}
 
@@ -155,101 +155,101 @@ LinkedIn表单可能包含多个电子邮件地址。 下载表单响应时，�
 
 在[!DNL Marketo Measure]在LinkedIn创意作品上成功标记您的登陆页面后，您就可以在接触点上查看已解析的广告数据。 以下是您应会看到的数据值的映射：
 
-<table> 
- <colgroup> 
-  <col> 
-  <col> 
- </colgroup> 
- <tbody> 
-  <tr> 
-   <th style="width:30%">接触点字段</th> 
-   <th>示例值</th> 
-  </tr> 
-  <tr> 
+<table>
+ <colgroup>
+  <col>
+  <col>
+ </colgroup>
+ <tbody>
+  <tr>
+   <th style="width:30%">接触点字段</th>
+   <th>示例值</th>
+  </tr>
+  <tr>
    <td>广告ID</td>
    <td>84186224</td>
-  </tr> 
-  <tr> 
+  </tr>
+  <tr>
    <td>广告内容</td>
    <td>copy-1-image-2-man 95%的#B2B营销人员认为需求创建策略是成功的。 了解详情： [!DNL https]：//lnkd.in/jgdi50vKrgv</td>
-  </tr> 
-  <tr> 
+  </tr>
+  <tr>
    <td>广告组ID</td>
    <td>（空白）</td>
-  </tr> 
-  <tr> 
+  </tr>
+  <tr>
    <td>广告组名称</td>
    <td>（空白）</td>
-  </tr> 
-  <tr> 
+  </tr>
+  <tr>
    <td>广告营销活动ID</td>
    <td>138949954</td>
-  </tr> 
-  <tr> 
+  </tr>
+  <tr>
    <td>广告营销活动名称</td>
    <td>SU - COM帐户 — 需求技能</td>
-  </tr> 
-  <tr> 
+  </tr>
+  <tr>
    <td>广告目标URL <b>*</b></td>
-   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217</td> 
-  </tr> 
-  <tr> 
-   <td>表单URL</td> 
-   <td>info.bizible.com/demo</td> 
-  </tr> 
-  <tr> 
-   <td>表单URL — 原始</td> 
-   <td>info.bizible.com/demo</td> 
-  </tr> 
-  <tr> 
-   <td>关键字ID</td> 
-   <td>（空白）</td> 
-  </tr> 
-  <tr> 
-   <td>关键字匹配类型</td> 
-   <td>（空白）</td> 
-  </tr> 
-  <tr> 
-   <td>登陆页面</td> 
-   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders</td> 
-  </tr> 
-  <tr> 
-   <td>登陆页面 — 原始</td> 
-   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217</td> 
-  </tr> 
-  <tr> 
-   <td>营销渠道</td> 
-   <td>付费社交</td> 
-  </tr> 
-  <tr> 
-   <td>营销渠道 — 路径</td> 
-   <td>付费Social.LinkedIn</td> 
-  </tr> 
-  <tr> 
-   <td>媒介</td> 
-   <td>“cpc”或“潜在客户表单”</td> 
-  </tr> 
-  <tr> 
-   <td>反向链接页面</td> 
-   <td>www.linkedin.com/</td> 
-  </tr> 
-  <tr> 
-   <td>反向链接页面 — 原始</td> 
-   <td>www.linkedin.com/</td> 
-  </tr> 
-  <tr> 
-   <td>搜索短语</td> 
-   <td>（空白）</td> 
-  </tr> 
-  <tr> 
-   <td>接触点类型</td> 
+   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217</td>
+  </tr>
+  <tr>
+   <td>表单URL</td>
+   <td>info.bizible.com/demo</td>
+  </tr>
+  <tr>
+   <td>表单URL — 原始</td>
+   <td>info.bizible.com/demo</td>
+  </tr>
+  <tr>
+   <td>关键字ID</td>
+   <td>（空白）</td>
+  </tr>
+  <tr>
+   <td>关键字匹配类型</td>
+   <td>（空白）</td>
+  </tr>
+  <tr>
+   <td>登陆页面</td>
+   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders</td>
+  </tr>
+  <tr>
+   <td>登陆页面 — 原始</td>
+   <td>https://www.adobe.com/marketing-attribution-for-demand-generation-leaders?_bl=84186217</td>
+  </tr>
+  <tr>
+   <td>营销渠道</td>
+   <td>付费社交</td>
+  </tr>
+  <tr>
+   <td>营销渠道 — 路径</td>
+   <td>付费Social.LinkedIn</td>
+  </tr>
+  <tr>
+   <td>媒介</td>
+   <td>“cpc”或“潜在客户表单”</td>
+  </tr>
+  <tr>
+   <td>反向链接页面</td>
+   <td>www.linkedin.com/</td>
+  </tr>
+  <tr>
+   <td>反向链接页面 — 原始</td>
+   <td>www.linkedin.com/</td>
+  </tr>
+  <tr>
+   <td>搜索短语</td>
+   <td>（空白）</td>
+  </tr>
+  <tr>
+   <td>接触点类型</td>
    <td>Web窗体</td>
-  </tr> 
-  <tr> 
+  </tr>
+  <tr>
    <td>接触点Source</td>
    <td>LinkedIn</td>
-  </tr> 
- </tbody> 
+  </tr>
+ </tbody>
 </table>
 
 仅为赞助内容填充&#x200B;**&#42;** _“广告目标URL”字段。 没有为Forms潜在客户代填充它。_
@@ -262,7 +262,7 @@ LinkedIn表单可能包含多个电子邮件地址。 下载表单响应时，�
 
 与其他广告集成一样，[!DNL Marketo Measure]已定义营销渠道规则以放置所有[!DNL LinkedIn]营销活动、创意和成本。 要使用规则，客户需要为其“付费[!DNL LinkedIn]”工作插入一个新行。 它可以是新渠道或现有渠道。 在反向链接列中，使用定义“[[!DNL LinkedIn] Paid]”，[!DNL Marketo Measure]已将该定义定义为任何带有[!DNL Marketo Measure]标记的接触点。
 
-![](assets/one-one-1.png)
+![与其他广告集成一样，Marketo Measure已定义营销](../assets/marketo-engage-activities-01.png)
 
 ## [!DNL Marketo Measure]发现 {#marketo-measure-discover}
 
@@ -314,7 +314,7 @@ LinkedIn要求所有创建或修改的广告在发布之前都必须经过正常
 
 两者。 [!DNL Marketo Measure]集成允许我们从广告中的点进图像标记目标URL，但也会自动更新广告描述中缩短的URL。
 
-![](assets/select-type-1.png)
+![两者。 Marketo Measure集成允许我们标记目标](assets/select-type-1.png)
 
 **我已连接我的[!DNL LinkedIn ads]帐户。 为什么[!DNL Marketo Measure]没有标记我的链接？**
 
@@ -324,7 +324,7 @@ LinkedIn要求所有创建或修改的广告在发布之前都必须经过正常
 
 [!DNL LinkedIn]报表中未提供共享ID，因此没有明确明确的方法来检查创意到共享的映射。 如果您怀疑某个创意可能是副本，则可以通过在[!DNL LinkedIn]促销活动管理器中打开该广告来手动进行检查，这会在新选项卡中打开该广告，并且您可以在URL中找到共享ID。
 
-![](assets/six-six-1.png)
+![LinkedIn报表中未提供共享ID，因此](assets/linkedin-integration-02.png)
 
 ## Forms销售主管常见问题解答 {#lead-gen-forms-faq}
 

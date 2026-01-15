@@ -3,7 +3,7 @@ description: Marketo Measure用户的集成权限概述指南
 title: 集成权限概述
 feature: APIs, Integration
 exl-id: c45598fe-0c33-459a-9fde-de7f6906bd0c
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 2%
@@ -30,7 +30,7 @@ ht-degree: 2%
 <tbody>
   <tr>
     <td>Salesforce</td>
-    <td>B2B系统数据  
+    <td>B2B系统数据
 </td>
     <td>Marketo Measure正在跟踪：
     <p>
@@ -61,7 +61,7 @@ ht-degree: 2%
     <p>
     <b>Salesforce标准字段权限</b>
     <br>
-    <a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">Salesforce标准对象和访问权限</a>
+    <a href="/help/configuration-and-setup/how-marketo-measure-and-salesforce-interact.md">Salesforce标准对象和访问权限</a>
     <p>
     <b>Salesforce自定义字段权限</b>
     <br>
@@ -108,7 +108,7 @@ ht-degree: 2%
 <p>
 <b>Dynamics标准字段权限</b>
 <br>
-<a href="/help/marketo-measure-and-dynamics/marketo-measure-dynamics-schema.md">Marketo Measure Dynamics架构</a>
+<a href="/help/marketo-measure-dynamics-schema.md">Marketo Measure Dynamics架构</a>
 <p>
 <b>Dynamics自定义字段权限</b>
 <br>
@@ -211,16 +211,16 @@ Marketo Measure正在跟踪促销活动、广告组、创意内容、网站链�
   <tr>
     <td>Marketo Engage</td>
     <td>B2B系统数据</td>
-    <td>Marketo集成使Marketo Measure能够收集Marketo活动、人员、项目和项目成员资格。 此外，Marketo Measure跟踪Marketo Cookie (Munchkin ID)，以便将Marketo Web活动关联到Marketo Measure潜在客户接触点<a href="/help/marketo-measure-and-marketo/marketo-engage-programs-integration.md#cookie-mapping">，如下所述</a>：
+    <td>Marketo集成使Marketo Measure能够收集Marketo活动、人员、项目和项目成员资格。 此外，Marketo Measure跟踪Marketo Cookie (Munchkin ID)，以便将Marketo Web活动关联到Marketo Measure潜在客户接触点<a href="/help/marketo-engage-programs-integration.md#cookie-mapping">，如下所述</a>：
     <p>
     <i>由于Marketo Measure与Marketo集成，Marketo Measure Cookie ID现在也已映射并与Marketo Munchkin ID同步。 这有助于弥合将匿名首次接触归因于Web会话的差距，而不是将FT和LC接触归因于Marketo活动。</i>
     </td>
-    <td>客户必须创建一个专用的Marketo Engage API用户，并向Marketo Measure提供凭据。 无需其他权限配置。 <a href="/help/marketo-measure-and-marketo/set-up-marketo-connection.md#configuring-the-integration">了解详情</a>。</td>
+    <td>客户必须创建一个专用的Marketo Engage API用户，并向Marketo Measure提供凭据。 无需其他权限配置。 <a href="/help/set-up-marketo-connection.md#configuring-the-integration">了解详情</a>。</td>
   </tr>
   <tr>
     <td>Adobe Analytics</td>
     <td>B2B系统数据</td>
-    <td>通过B2B客户属性集成，Marketo Measure和Adobe Analytics的共同用户可以使用源自Adobe Analytics归因引擎的有价值元数据扩充其Marketo Measure用户配置文件，并通过其与CRM(Microsoft Dynamics和Salesforce)的同步功能扩充这些用户配置文件。 <a href="/help/marketo-measure-and-adobe/adobe-analytics.md">了解详情</a>。</td>
+    <td>通过B2B客户属性集成，Marketo Measure和Adobe Analytics的共同用户可以使用源自Adobe Analytics归因引擎的有价值元数据扩充其Marketo Measure用户配置文件，并通过其与CRM(Microsoft Dynamics和Salesforce)的同步功能扩充这些用户配置文件。 <a href="/help/adobe-analytics.md">了解详情</a>。</td>
     <td>客户必须向Marketo Measure提供别名ID和FTP服务器凭据，以便将数据上传到其Analytics实例的位置。
     <p>
     请注意以下信息，因为在该流程的后面部分步骤中您将需要这些信息：
@@ -228,7 +228,7 @@ Marketo Measure正在跟踪促销活动、广告组、创意内容、网站链�
     <li>别名ID，可以是您希望它成为的任何值。 我们建议使用“marketomeasure_id”</li>
     <li>FTP服务器主机名和凭据（用户名和密码）</li>
     <p>
-    <a href="/help/marketo-measure-and-adobe/adobe-analytics.md#configuring-the-integration">了解详情</a></td>
+    <a href="/help/adobe-analytics.md#configuring-the-integration">了解详情</a></td>
   </tr>
   <tr>
     <td>Bizible Javascript</td>
@@ -240,4 +240,4 @@ Marketo Measure正在跟踪促销活动、广告组、创意内容、网站链�
 </table>
 
 >[!MORELIKETHIS]
->[错误通知](/help/configuration-and-setup/getting-started-with-marketo-measure/error-notifications.md){target="_blank"}
+>[错误通知](/help/configuration-and-setup/error-notifications.md){target="_blank"}

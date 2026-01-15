@@ -3,10 +3,10 @@ description: 了解适用于Marketo Measure用户的 [!DNL Marketo Measure] AdWo
 title: 了解 [!DNL Marketo Measure] AdWords标记
 exl-id: c6658766-d3a8-46ed-b2d2-826eb61ce269
 feature: APIs, Integration, UTM Parameters
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 0%
+source-wordcount: '630'
+ht-degree: 1%
 
 ---
 
@@ -60,11 +60,11 @@ ht-degree: 0%
 
 1. 在展开窗口中单击&#x200B;**[!UICONTROL All campaigns]**，然后单击&#x200B;**[!UICONTROL Settings]**。
 
-   ![](assets/utilizing-connections-13.png)
+   ![1. 单击“所有营销活动”，然后单击“扩展](assets/utilizing-connections-13.png)”中的“设置”
 
 1. 单击顶部的&#x200B;**[!UICONTROL Account Settings]**，然后单击&#x200B;**[!UICONTROL Tracking Template]**。 输入[!DNL Marketo Measure]跟踪模板。
 
-   ![](assets/bizible-guide-1.png)
+   ![1. 单击顶部的“帐户设置”，然后单击“跟踪”](assets/bizible-guide-1.png)
 
 1. 单击 **[!UICONTROL Save]**。
 
@@ -72,11 +72,11 @@ ht-degree: 0%
 
 1. 在展开窗口中单击&#x200B;**[!UICONTROL All campaigns]**，然后单击&#x200B;**[!UICONTROL Campaigns]**。
 
-   ![](assets/utilizing-connections-12.png)
+   ![1. 单击“所有营销活动”，然后单击“正在展开的营销活动”](assets/utilizing-connections-12.png)
 
 1. 选择所有适用的营销活动或&#x200B;**[!UICONTROL Select All]**，单击&#x200B;**[!UICONTROL Edit]**，然后单击&#x200B;**[!UICONTROL Change Tracking Templates]**。
 
-   ![](assets/five-five-1.png)
+   ![1. 选择所有适用的营销活动，或选择“全部”，单击“编辑”，](../assets/marketo-engage-activities-05.png)
 
 1. 输入[!DNL Marketo Measure]跟踪模板并单击&#x200B;**[!UICONTROL Apply]**。
 
@@ -84,13 +84,13 @@ ht-degree: 0%
 
 1. 在展开窗口中单击&#x200B;**[!UICONTROL All campaigns]**，然后单击&#x200B;**[!UICONTROL Ad Groups]**。
 
-   ![](assets/four-four-1.png)
+   ![1. 单击“所有营销活动”，然后单击](assets/api-connections-01.png)中的“广告组”
 
 1. 选择所有适用的广告组或全选，单击&#x200B;**[!UICONTROL Edit]**，然后单击&#x200B;**[!UICONTROL Change Tracking Templates]**。
 
 1. 输入[!DNL Marketo Measure]跟踪模板并单击&#x200B;**[!UICONTROL Apply]**。
 
-   ![](assets/one-one-1.png)
+   ![1. 输入Marketo Measure跟踪模板，然后单击“应用”。](../assets/marketo-engage-activities-01.png)
 
 ## 常见问题解答 {#faq}
 

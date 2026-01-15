@@ -4,9 +4,9 @@ title: '[!DNL Facebook] API'
 exl-id: d6d18545-baae-4103-b0a6-c3de681ec833
 feature: APIs, Integration, UTM Parameters
 hidefromtoc: true
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 连接帐户 {#connecting-the-account}
 
-![](assets/utilizing-connections-2.gif)
+![正在连接帐户{connecting-the-account}](assets/utilizing-connections-2.gif)
 
 ## 启用自动标记 {#enabling-autotagging}
 
@@ -46,87 +46,87 @@ ht-degree: 0%
 >
 >如果启用自动标记，我们将重置所标记的所有广告的转化历史记录和社交证明。 我们强烈建议您在启用自动标记之前[将此数据导出为CSV](https://www.facebook.com/business/help/205067636197240)。
 
-![](assets/bizible-guide-1.png)
+![如果启用自动标记，我们将重置转化历史记录和社交验证](assets/bizible-guide-1.png)
 
 启用集成后，[!DNL Marketo Measure]将开始将广告级别成本下载到[!DNL Marketo Measure Marketing ROI]仪表板。
 
 为使集成正常工作，必须在[!DNL Facebook]帐户上启用自动标记。 这将允许我们的系统在所有广告链接上添加_bf参数。 此进程将在您已添加到[!DNL Facebook]广告的任何其他跟踪参数之上添加新参数。
 
-![](assets/five-five-1.png)
+![为使集成正常工作，必须在](../assets/marketo-engage-activities-05.png)上启用自动标记
 
 ## 字段映射 {#field-mapping}
 
-<table> 
- <colgroup> 
-  <col> 
-  <col> 
- </colgroup> 
- <tbody> 
-  <tr> 
-   <th><p><strong>接触点字段</strong></p></th> 
-   <th><p><strong>值</strong></p></th> 
-  </tr> 
-  <tr> 
-   <td><p>广告营销活动ID</p></td> 
-   <td><p>[[!DNL Facebook]营销活动ID]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>广告营销活动名称 </p></td> 
-   <td><p>[[!DNL Facebook]营销活动名称]，或[utm_campaign]（如果提供）</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>广告组ID</p></td> 
-   <td><p>[[!DNL Facebook]广告集Id]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>广告组名称</p></td> 
-   <td><p>[[!DNL Facebook]广告集名称]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>接触点Source</p></td> 
-   <td><p>"[!DNL Facebook]"或[utm_source]（如果提供）</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>媒介</p></td> 
-   <td><p>"Social"，或者[utm_medium]（如果提供）</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>广告Id或Creative_Unique_Id (Data Warehouse)</p></td> 
-   <td><p>[从utm_content生成的自定义ID]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>广告内容或Creative_Name (Data Warehouse)</p></td> 
-   <td><p>[utm_content]（如果提供）</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>关键字文本或Keyword_Name (Data Warehouse)</p></td> 
-   <td><p>[utm_term]（如果提供）</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Ad_Unique_Id (Data Warehouse)</p></td> 
-   <td><p>[[!DNL Facebook]广告Id]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Ad_Name (Data Warehouse)</p></td> 
-   <td><p>[[!DNL Facebook]广告名称]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Keyword_Unique_Id (Data Warehouse)</p></td> 
-   <td><p>[从utm_term生成的自定义ID]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Ad_Provider (Data Warehouse)</p></td> 
-   <td><p>"[!DNL Facebook]"</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Account_Unique_ID (Data Warehouse)</p></td> 
-   <td><p>[[!DNL Facebook]帐户号]</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>Account_Name (Data Warehouse)</p></td> 
-   <td><p>[[!DNL Facebook]帐户名称]</p></td> 
-  </tr> 
- </tbody> 
+<table>
+ <colgroup>
+  <col>
+  <col>
+ </colgroup>
+ <tbody>
+  <tr>
+   <th><p><strong>接触点字段</strong></p></th>
+   <th><p><strong>值</strong></p></th>
+  </tr>
+  <tr>
+   <td><p>广告营销活动ID</p></td>
+   <td><p>[[!DNL Facebook]营销活动ID]</p></td>
+  </tr>
+  <tr>
+   <td><p>广告营销活动名称 </p></td>
+   <td><p>[[!DNL Facebook]营销活动名称]，或[utm_campaign]（如果提供）</p></td>
+  </tr>
+  <tr>
+   <td><p>广告组ID</p></td>
+   <td><p>[[!DNL Facebook]广告集Id]</p></td>
+  </tr>
+  <tr>
+   <td><p>广告组名称</p></td>
+   <td><p>[[!DNL Facebook]广告集名称]</p></td>
+  </tr>
+  <tr>
+   <td><p>接触点Source</p></td>
+   <td><p>"[!DNL Facebook]"或[utm_source]（如果提供）</p></td>
+  </tr>
+  <tr>
+   <td><p>媒介</p></td>
+   <td><p>"Social"，或者[utm_medium]（如果提供）</p></td>
+  </tr>
+  <tr>
+   <td><p>广告Id或Creative_Unique_Id (Data Warehouse)</p></td>
+   <td><p>[从utm_content生成的自定义ID]</p></td>
+  </tr>
+  <tr>
+   <td><p>广告内容或Creative_Name (Data Warehouse)</p></td>
+   <td><p>[utm_content]（如果提供）</p></td>
+  </tr>
+  <tr>
+   <td><p>关键字文本或Keyword_Name (Data Warehouse)</p></td>
+   <td><p>[utm_term]（如果提供）</p></td>
+  </tr>
+  <tr>
+   <td><p>Ad_Unique_Id (Data Warehouse)</p></td>
+   <td><p>[[!DNL Facebook]广告Id]</p></td>
+  </tr>
+  <tr>
+   <td><p>Ad_Name (Data Warehouse)</p></td>
+   <td><p>[[!DNL Facebook]广告名称]</p></td>
+  </tr>
+  <tr>
+   <td><p>Keyword_Unique_Id (Data Warehouse)</p></td>
+   <td><p>[从utm_term生成的自定义ID]</p></td>
+  </tr>
+  <tr>
+   <td><p>Ad_Provider (Data Warehouse)</p></td>
+   <td><p>"[!DNL Facebook]"</p></td>
+  </tr>
+  <tr>
+   <td><p>Account_Unique_ID (Data Warehouse)</p></td>
+   <td><p>[[!DNL Facebook]帐户号]</p></td>
+  </tr>
+  <tr>
+   <td><p>Account_Name (Data Warehouse)</p></td>
+   <td><p>[[!DNL Facebook]帐户名称]</p></td>
+  </tr>
+ </tbody>
 </table>
 
 ## 常见问题解答 {#faq}

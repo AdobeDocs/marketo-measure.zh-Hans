@@ -4,9 +4,9 @@ title: 正在添加 [!DNL Marketo Measure] 脚本
 exl-id: f8773037-04d7-4308-ba04-440e9b990d92
 feature: Tracking
 hidefromtoc: true
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1298'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->确保除了部署[&#x200B; JavaScript之外，您还 [!DNL Adobe Admin Console]](/help/marketo-measure-and-adobe/domain-management.md){target="_blank"}声明了[!DNL Marketo Measure]中的所有相应域。
+>确保除了部署[ JavaScript之外，您还 [!DNL Adobe Admin Console]](/help/domain-management.md){target="_blank"}声明了[!DNL Marketo Measure]中的所有相应域。
 
 开始使用[!DNL Marketo Measure]时，可通过两种方式将[!DNL Marketo Measure] JavaScript添加到您的网站：
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 如果在JavaScript设置期间触发了[!DNL Web Application Firewall (WAF)]警告，则用户可以禁用该WAF规则或允许列表Cookie，如下例所示：
 
-![](assets/adding-script-1.png)
+![如果在](assets/adding-script-1.png)期间触发了Web应用程序防火墙(WAF)警告
 
 ## Forms将特别关注 {#forms-to-pay-extra-attention-to}
 

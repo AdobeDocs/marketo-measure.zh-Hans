@@ -3,9 +3,9 @@ description: '正在向Marketo Measure用户的Marketo登陆页面指南中添�
 title: 正在将 [!DNL Marketo Measure] 添加到Marketo登录页面
 exl-id: 3771d4d2-8723-452a-b23d-cea3b11ab9ee
 feature: Tracking
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 1. 单击 **[!UICONTROL Save]**。
 
-   ![](assets/adding-pages-1.png)
+   ![1. 单击“保存”。](assets/adding-pages-1.png)
 
 ## 其他说明 {#additional-notes}
 
@@ -41,4 +41,4 @@ ht-degree: 0%
 
 * 您可能使用了多个登陆页面模板，请务必将代码添加到所有包含表单的模板中。
 
-* 有时，在编辑登陆页面的模板时，必须重新批准登陆页面由使用的页面。 本文介绍[如何批量批准](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html?lang=zh-Hans){target="_blank"}。
+* 有时，在编辑登陆页面的模板时，必须重新批准登陆页面由使用的页面。 本文介绍[如何批量批准](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target="_blank"}。

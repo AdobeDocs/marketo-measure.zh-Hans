@@ -4,9 +4,9 @@ title: 集成式广告平台
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
 hidefromtoc: true
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '1649'
+source-wordcount: '1703'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 如下图所示，您将看到用于设置新广告连接的按钮。
 
-![](assets/bizible-guide-1.png)
+![如下图所示，您将看到](assets/bizible-guide-1.png)按钮
 
 单击[!UICONTROL Set up New Ads Connection]按钮后，将会弹出一个窗口（如下所示），其中包含四个广告[!UICONTROL connect]离子类型。 单击连接，将出现另一个窗口询问凭据。 输入凭据并单击[!UICONTROL authorize]以将帐户连接到[!DNL Marketo Measure]。
 
-![](assets/five-five-1.png)
+![单击“设置新广告连接”按钮后， a](../assets/marketo-engage-activities-05.png)
 
 ## Google AdWords {#google-adwords}
 
@@ -56,15 +56,15 @@ ht-degree: 0%
 
 1. 转到[!UICONTROL My Account] > [!UICONTROL Settings] > [!UICONTROL Integrations] > [!UICONTROL Connections]。
 
-   ![](assets/utilizing-connections-8.png)
+   ![1. 转到“我的帐户设置”集成连接。](assets/utilizing-connections-8.png)
 
 1. 单击将启用[!DNL Marketo Measure]自动标记的Adwords帐户旁边的铅笔图标。
 
-   ![](assets/utilizing-connections-9.png)
+   ![1. 单击将](assets/utilizing-connections-9.png)的Adwords帐户旁边的铅笔图标
 
 1. 在右上角，将&#x200B;**[!UICONTROL Autotagging]**&#x200B;开关切换到&#x200B;**[!UICONTROL Yes]**。 在页面底部，单击&#x200B;**[!UICONTROL Learn More]**&#x200B;以展开文本框并单击&#x200B;**[!UICONTROL Save]**。 自动标记设置完成。
 
-   ![](assets/utilizing-connections-10.png)
+   ![1. 在右上角，将自动标记开关切换到](assets/utilizing-connections-10.png)
 
 ## 如何使用[!DNL Marketo Measure]参数在AdWords中设置跟踪模板 {#how-to-set-up-a-tracking-template-in-adwords-with-marketo-measure-parameters}
 

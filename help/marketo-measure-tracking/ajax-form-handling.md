@@ -3,7 +3,7 @@ description: 面向Marketo Measure用户的AJAX表单处理指南
 title: AJAX表单处理
 exl-id: 042e42ff-d8d9-4380-b878-aba4934bc4a0
 feature: Tracking
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -23,21 +23,21 @@ ht-degree: 0%
 **以下是使用JQuery的代码示例（假定表单上的ID为“formId”）：**
 
 ```javascript
-///////////////////////////////////////////////////////////////////////  
-// Preamble for all API usage.  
-window['Bizible'] = window['Bizible'] || { _queue: [], Push: function (o, p) {this._queue.push({ type: o, data: p }); } };  
-  
-// Give Marketo Measure the JQuery Selector for the form and we'll collect the data automatically.  
+///////////////////////////////////////////////////////////////////////
+// Preamble for all API usage.
+window['Bizible'] = window['Bizible'] || { _queue: [], Push: function (o, p) {this._queue.push({ type: o, data: p }); } };
+
+// Give Marketo Measure the JQuery Selector for the form and we'll collect the data automatically.
 Bizible.Push('Form',$('#*formId*'));
 ```
 
 **以下是未使用JQuery的代码示例（假定表单上的ID为“formId”）：**
 
 ```javascript
-///////////////////////////////////////////////////////////////////////  
-// Preamble for all API usage.  
-window['Bizible'] = window['Bizible'] || { _queue: [], Push: function (o, p) {this._queue.push({ type: o, data: p }); } };  
-  
+///////////////////////////////////////////////////////////////////////
+// Preamble for all API usage.
+window['Bizible'] = window['Bizible'] || { _queue: [], Push: function (o, p) {this._queue.push({ type: o, data: p }); } };
+
 // Give Marketo Measure the Form ID and we'll collect the data automatically.
 Bizible.Push('Form','MyFormID');
 ```
@@ -47,14 +47,14 @@ Bizible.Push('Form','MyFormID');
 如果来自已转化商机的信息是使用JavaScript或简单文本字段（不带HTML表单）收集的，则此解决方案适合您。 以下共享的是要在此方案中使用的API：
 
 ```javascript
-///////////////////////////////////////////////////////////////////////  
-// Preamble for all API usage.  
-window['Bizible'] = window['Bizible'] || { _queue: [], Push: function (o, p) {this._queue.push({ type: o, data: p }); } };  
-  
-// If your site is using Ajax, or you are running a secure site, it is best to send us the data directly.  
+///////////////////////////////////////////////////////////////////////
+// Preamble for all API usage.
+window['Bizible'] = window['Bizible'] || { _queue: [], Push: function (o, p) {this._queue.push({ type: o, data: p }); } };
+
+// If your site is using Ajax, or you are running a secure site, it is best to send us the data directly.
 Bizible.Push('User', {
-eMail: 'user@gmail.com' // required  
-});  
+eMail: 'user@gmail.com' // required
+});
 ```
 
 在此代码中，[!UICONTROL email]字段为必填项。 [!DNL Marketo Measure]异步将此数据发布到我们的服务器。
@@ -66,8 +66,8 @@ eMail: 'user@gmail.com' // required
 **例如：**
 
 ```html
-<div id="bizible.reportUser" style="display:none"  
-data-email="user@gmail.com">  
+<div id="bizible.reportUser" style="display:none"
+data-email="user@gmail.com">
 ```
 
 隐藏元素是div、脚本还是任何其他标记类型都无关紧要。 [!DNL Marketo Measure]查找id=&quot;bizible.reportUser&quot;以读取信息。

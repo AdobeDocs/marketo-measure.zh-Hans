@@ -3,9 +3,9 @@ description: 向Marketo Measure用户的Lightbox Forms指南中添加 [!DNL Mark
 title: 正在将 [!DNL Marketo Measure] 脚本添加到Lightbox Forms
 exl-id: fa9ce480-fc4f-4abd-8555-dbb74849747e
 feature: Tracking
-source-git-commit: 0299ef68139df574bd1571a749baf1380a84319b
+source-git-commit: fcd8e276c85669ddf12bd7404fb12d3e99b2642a
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 首先，找到[!UICONTROL lightbox]表单所在的iFrame。
 
-![](assets/adding-providers-8.png)
+![首先，找到灯箱表单所在的iFrame。](assets/adding-providers-8.png)
 
 接下来，将[!DNL Marketo Measure]JavaScript放置在iFrame中。
 
-![](assets/adding-providers-5.png)
+![接下来，将Marketo Measure JavaScript放在iFrame中。](assets/adding-providers-5.png)
 
 最后，在添加JavaScript时，将按照以下说明跟踪验证表单提交：
 
