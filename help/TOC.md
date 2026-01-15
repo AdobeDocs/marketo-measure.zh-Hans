@@ -19,7 +19,7 @@ ht-degree: 6%
    + [归因模型](/help/attribution-models.md)
    + [[!DNL Marketo Measure]框架](/help/marketo-measure-framework.md)
    + [营销归因](/help/marketing-attribution.md)
-   + [ [!DNL Marketo Measure] 字段词汇表](/help/glossary.md)
+   + [&#x200B; [!DNL Marketo Measure] 字段词汇表](/help/glossary.md)
 + [!DNL Marketo Measure]跟踪 {#marketo-measure-tracking}
    + [添加跟踪脚本](/help/marketo-measure-tracking/adding-marketo-measure-script.md)
    + [实施JavaScript的最佳实践](/help/marketo-measure-tracking/best-practices-for-implementing-marketo-measure-javascript.md)
@@ -33,7 +33,7 @@ ht-degree: 6%
    + [AJAX表单处理](/help/marketo-measure-tracking/ajax-form-handling.md)
    + [正在将 [!DNL Marketo Measure] 连接到退件脚本管理器](/help/marketo-measure-tracking/connecting-marketo-measure-to-unbounce-script-manager.md)
    + [IFrame Forms和 [!DNL Marketo Measure]](/help/marketo-measure-tracking/iframe-forms-and-marketo-measure.md)
-   + [正在从特定Forms中排除 [!DNL Marketo Measure] ](/help/marketo-measure-tracking/excluding-marketo-measure-from-specific-forms.md)
+   + [正在从特定Forms中排除 [!DNL Marketo Measure] &#x200B;](/help/marketo-measure-tracking/excluding-marketo-measure-from-specific-forms.md)
    + [Web会话的定义](/help/marketo-measure-tracking/definition-of-marketo-measure-web-sessions.md)
    + [Cookie](/help/marketo-measure-tracking/marketo-measure-cookies.md)
    + [测试最佳实践](/help/marketo-measure-tracking/best-practices-for-testing.md)
@@ -49,10 +49,10 @@ ht-degree: 6%
    + [!DNL Marketo Measure]和Salesforce {#marketo-measure-and-salesforce}
       + [[!DNL Salesforce]包合并](/help/configuration-and-setup/salesforce-package-consolidation.md)
       + [连接 [!DNL Marketo Measure] 到Salesforce](/help/configuration-and-setup/connect-marketo-measure-to-salesforce.md)
-      + [ [!DNL Marketo Measure] CRM包的最佳实践](/help/configuration-and-setup/best-practices-for-marketo-measure-crm-package.md)
+      + [&#x200B; [!DNL Marketo Measure] CRM包的最佳实践](/help/configuration-and-setup/best-practices-for-marketo-measure-crm-package.md)
       + [[!DNL Marketo Measure]个Salesforce对象](/help/configuration-and-setup/marketo-measure-salesforce-objects.md)
       + [CRM导出的错误处理](/help/configuration-and-setup/crm-error-handling.md)
-      + [ [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何交互](/help/configuration-and-setup/how-marketo-measure-and-salesforce-interact.md)
+      + [&#x200B; [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何交互](/help/configuration-and-setup/how-marketo-measure-and-salesforce-interact.md)
       + [[!DNL Marketo Measure]对象和字段分类](/help/configuration-and-setup/marketo-measure-object-and-field-taxonomy.md)
       + [标准[!DNL Marketo Measure]对象上的 [!DNL Salesforce] 字段](/help/configuration-and-setup/marketo-measure-fields-on-standard-salesforce-objects.md)
       + [页面布局说明](/help/configuration-and-setup/page-layout-instructions.md)
@@ -163,9 +163,9 @@ ht-degree: 6%
 + [!DNL Marketo Measure]和Dynamics {#marketo-measure-and-dynamics}
    + [[!DNL Marketo Measure]动态架构](/help/marketo-measure-dynamics-schema.md)
    + [Microsoft Dynamics CRM安装指南](/help/microsoft-dynamics-crm-installation-guide.md)
-   + [ [!DNL Dynamics]的收入工作流](/help/marketo-measure-revenue-workflows-for-dynamics.md)
+   + [&#x200B; [!DNL Dynamics]的收入工作流](/help/marketo-measure-revenue-workflows-for-dynamics.md)
    + [OAuth与Azure Active Directory for [!DNL Dynamics] CRM](/help/oauth-with-azure-active-directory-for-dynamics-crm.md)
-   + [ [!DNL Dynamics]中的Stock报告和仪表板](/help/stock-reports-and-dashboards-in-dynamics.md)
+   + [&#x200B; [!DNL Dynamics]中的Stock报告和仪表板](/help/stock-reports-and-dashboards-in-dynamics.md)
 + [!DNL Marketo Measure]和Marketo {#marketo-measure-and-marketo}
    + [设置 [!DNL Marketo] 连接](/help/set-up-marketo-connection.md)
    + [Marketo Engage活动集成](/help/marketo-engage-activities-integration.md)
