@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ![](assets/domain-management-1.png)
 
-有关添加域的说明可在[Admin Console文档](https://helpx.adobe.com/enterprise/using/add-domains-directories.html)中找到。 添加域后，该域必须[链接到目录](https://helpx.adobe.com/enterprise/using/add-domains-directories.html#link-domains-to-directoies)。
+有关添加域的说明可在[Admin Console文档](https://helpx.adobe.com/cn/enterprise/using/add-domains-directories.html)中找到。 添加域后，该域必须[链接到目录](https://helpx.adobe.com/cn/enterprise/using/add-domains-directories.html#link-domains-to-directoies)。
 
 ## 管理[!DNL Marketo Measure]中的域 {#managing-domains-in-marketo-measure}
 

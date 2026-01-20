@@ -97,7 +97,7 @@ ht-degree: 10%
   </tr>
   <tr>
     <td>_BUID</td>
-    <td>第三方，域=。<a href="https://business.adobe.com/products/marketo/bizible.html">bizible.com</a></td>
+    <td>第三方，域=。<a href="https://business.adobe.com/cn/products/marketo/bizible.html">bizible.com</a></td>
     <td>跨多个域标识用户的通用用户ID。</td>
     <td>1 年</td>
     <td>是</td>

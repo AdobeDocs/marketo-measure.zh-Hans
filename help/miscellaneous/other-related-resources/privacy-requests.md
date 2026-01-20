@@ -16,8 +16,8 @@ ht-degree: 25%
 
 您可以通过两种方式提交单个请求以从[!DNL Marketo Measure]访问和删除使用者数据：
 
-* 通过[[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html){target="_blank"}。
-* 通过&#x200B;**[!DNL Privacy Service]API**。 请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target="_blank"}和API引用[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}。
+* 通过[[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=zh-Hans){target="_blank"}。
+* 通过&#x200B;**[!DNL Privacy Service]API**。 请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hans){target="_blank"}和API引用[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}。
 
 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans){target="_blank"}支持两种类型的请求：数据访问和数据删除。
 
