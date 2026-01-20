@@ -1,5 +1,5 @@
 ---
-source-git-commit: c6090ce0c3ac60cd68b1057c369ce0b3b20aeeee
+source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 100%
@@ -8,6 +8,7 @@ ht-degree: 100%
 # Adobe 行为准则
 
 ## 我们的承诺
+
 
 为了促进一个开放透明且友好的环境，我们作为参与者和维护者保证：无论年龄、体型、身体健全与否、民族、性别认同与表达（方式）、经验水平、国籍、个人形象、种族、宗教或性认同与取向，参与者在我们项目和社区中都免于骚扰。
 
