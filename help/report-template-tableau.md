@@ -96,7 +96,7 @@ ht-degree: 0%
 
 [!UICONTROL CATEGORY]列列出类别编号，而SEGMENT_NAME列具有它映射到的自定义区段名称。
 
-![ CATEGORY列列出类别编号和SEGMENTNAME列](assets/marketo-tableau-13.png)
+![&#x200B; CATEGORY列列出类别编号和SEGMENTNAME列](assets/marketo-tableau-13.png)
 
 可通过两种方式更新名称。 第一个选项是更新自定义SQL。 在此示例中，已根据“区段名称”表中的映射重命名了类别1-6。
 

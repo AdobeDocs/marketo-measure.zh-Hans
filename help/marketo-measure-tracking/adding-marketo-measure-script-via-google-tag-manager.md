@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->使用Google](https://support.google.com/tagmanager/answer/2772421?hl=en){target="_blank"}发表的此[支持文章了解更多信息。
+>使用Google[&#128279;](https://support.google.com/tagmanager/answer/2772421?hl=en){target="_blank"}发表的此支持文章了解更多信息。
 
 ## 如何通过[!DNL Google Tag Manager]添加[!DNL Marketo Measure] JS {#how-to-add-marketo-measure-js-via-google-tag-manager}
 

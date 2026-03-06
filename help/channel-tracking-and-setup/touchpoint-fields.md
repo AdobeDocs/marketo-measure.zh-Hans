@@ -34,7 +34,7 @@ ht-degree: 0%
 
 提取
 
-[!UICONTROL extracts]运算符从其他位置提取字段中的值，例如：促销活动字段、潜在客户字段，或者在更高级的用例中，从登陆页面](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}提取自定义参数。 [然后将其放置到接触点字段(请参阅[映射到示例](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}#2)。
+[!UICONTROL extracts]运算符从其他位置提取字段中的值，例如：促销活动字段、潜在客户字段，或者在更高级的用例中，从登陆页面[&#128279;](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}提取自定义参数。 然后将其放置到接触点字段(请参阅[映射到示例](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}#2)。
 
 **示例#1**
 
@@ -106,7 +106,7 @@ ht-degree: 0%
    * **(**&#x200B;标记提取开始
    * **)**&#x200B;标记提取结束
    * **\w**&#x200B;告诉我们，我们正在提取“word”
-   * ******是我们正在提取的字符数
+   * **&#x200B;**&#x200B;**是我们正在提取的字符数
 
 * 创建计算字段并将其标记为“自定义促销活动Id”
 * 通过从搜索Touchpoint.Session.LandingPage字段开始定义规则
@@ -148,7 +148,7 @@ ht-degree: 0%
 
       * 请注意，由于我们仅提取4，因此只有第一位数字具有右括号
    * **\d**&#x200B;告诉我们，我们正在提取“数字”
-   * ******是我们正在提取的字符数
+   * **&#x200B;**&#x200B;**是我们正在提取的字符数
 
 
 
@@ -161,12 +161,12 @@ ht-degree: 0%
 * 根据上面的映射和URL，使用此登陆页面的接触点的“Region_Value”将为“EMEA”
 * 对其余4组数字重复提取和映射
 
-   * 要提取01，可将值定义为“BZ=\d-**(\d**)**-\d**-\d**-\d**-\d**”
+   * 要提取01，可将值定义为“BZ=\d-**(\d**)**-\d**-\d&#x200B;**-\d**-\d**”
    * 要提取09，您应将该值定义为“BZ=\d **-\d**-**(\d**)**-\d**-\d**”
-   * 要提取03，可将值定义为“BZ=\d **-\d**-\d**-\d**(\d**)**-\d**”
-   * 若要提取10，可将值定义为“BZ=\d **-\d**-\d**-\d**-\d**(\d**)**”
+   * 要提取03，可将值定义为“BZ=\d **-\d**-\d&#x200B;**-\d**(\d&#x200B;**)**-\d**”
+   * 若要提取10，可将值定义为“BZ=\d **-\d**-\d&#x200B;**-\d**-\d&#x200B;**(\d**)**”
 
-![要提取10，可将值定义为“BZ=\d](assets/touchpoint-fields-3.png)-\d](assets/touchpoint-fields-3.png)-\d](assets/touchpoint-fields-3.png)-\d](assets/touchpoint-fields-3.png)-(\d](assets/touchpoint-fields-3.png))”](assets/touchpoint-fields-3.png)
+![要提取10，可将值定义为“BZ=\d](assets/touchpoint-fields-3.png)-\d&rbrack;(assets/touchpoint-fields-3.png)-\d&rbrack;(assets/touchpoint-fields-3.png)-\d&rbrack;(assets/touchpoint-fields-3.png)-(\d&rbrack;(assets/touchpoint-fields-3.png))”&rbrack;(assets/touchpoint-fields-3.png)
 
 **连接**
 

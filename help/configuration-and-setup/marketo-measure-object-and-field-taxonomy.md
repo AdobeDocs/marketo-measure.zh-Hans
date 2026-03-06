@@ -18,7 +18,7 @@ ht-degree: 0%
 
 对于完整大小的图像，[单击此处](assets/bizible-full-1.png)。
 
-可以在此处](/help/glossary.md)找到每个对象[中活动的[!DNL Marketo Measure]字段的定义。
+可以在此处[&#128279;](/help/glossary.md)找到每个对象中活动的[!DNL Marketo Measure]字段的定义。
 
 ## 常见问题解答 {#faq}
 
