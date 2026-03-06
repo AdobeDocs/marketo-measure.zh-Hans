@@ -111,6 +111,6 @@ Campaign成员接触点规则和活动接触点规则特定于数据集。
 
 >[!MORELIKETHIS]
 >
->* [Marketo Measure Ultimate目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}
+>* [Marketo Measure Ultimate目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=zh-Hans){target="_blank"}
 >
 >* [视频： Marketo Measure Ultimate概述](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}

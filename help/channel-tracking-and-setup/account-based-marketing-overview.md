@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 基于帐户的营销概述 {#account-based-marketing-overview}
 
-以下部分简要概述了ABM、[!DNL Marketo Measure] ABM功能的组件以及如何将其添加到[!DNL Salesforce]页面布局。 若要了解有关ABM的更多信息，请查阅Adobe的[ABM博客](https://business.adobe.com/blog/basics/account-based-marketing){target="_blank"}。
+以下部分简要概述了ABM、[!DNL Marketo Measure] ABM功能的组件以及如何将其添加到[!DNL Salesforce]页面布局。 若要了解有关ABM的更多信息，请查阅Adobe的[ABM博客](https://business.adobe.com/cn/blog/basics/account-based-marketing){target="_blank"}。
 
 有关在[!DNL Salesforce]实例中设置ABM的详细说明，请转到[在Salesforce中设置ABM页面布局](/help/channel-tracking-and-setup/account-based-marketing-overview.md){target="_blank"}。
 
