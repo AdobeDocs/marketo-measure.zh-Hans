@@ -4,7 +4,7 @@ title: 了解功能板基础知识
 feature: Reporting
 exl-id: 597a4f7c-4965-4bcb-bf28-607abc9b7545
 hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+source-git-commit: 5a3494763c80ac636306c7ac8d080383d2358a59
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 0%
@@ -21,10 +21,10 @@ ht-degree: 0%
 
 | 名称 | 描述 |
 | --- | --- |
-| 筛选器切换按钮 | 打开或关闭筛选器窗格。|||![&#x200B; ---  --- &#x200B;](assets/discover-basics-9.png) |
-| 搜索栏 | 使用筛选器窗格顶部的搜索来搜索特定筛选器。 每个过滤器都有自己的搜索栏。|||![&#x200B; ---  --- &#x200B;](assets/discover-basics-10.png) |
-| 清除筛选器按钮 | 要清除筛选器，请单击每个筛选器右上角的橡皮擦图标。|||![&#x200B; ---  --- &#x200B;](assets/discover-basics-11.png) |
-| 应用按钮 | 单击以确认并在功能板上实施您的筛选器更改。|||![&#x200B; ---  --- &#x200B;](assets/discover-3a-1.png) |
+| 筛选器切换按钮 | 打开或关闭筛选器窗格。![\| --- \| --- \|](assets/discover-basics-9.png) |
+| 搜索栏 | 使用筛选器窗格顶部的搜索来搜索特定筛选器。 每个过滤器都有自己的搜索栏。![\| --- \| --- \|](assets/discover-basics-10.png) |
+| 清除筛选器按钮 | 要清除筛选器，请单击每个筛选器右上角的橡皮擦图标。![\| --- \| --- \|](assets/discover-basics-11.png) |
+| 应用按钮 | 单击以确认并在功能板上实施您的筛选器更改。![\| --- \| --- \|](assets/discover-3a-1.png) |
 
 ## 可视化上的筛选器 {#filters-on-visual}
 

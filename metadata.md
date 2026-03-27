@@ -1,12 +1,14 @@
 ---
 solution: Marketo Measure
 feature-set: Marketo Measure
+landing-page-name: marketo-measure
+landing-page-breadcrumb-title: Marketo Measure
 type: Documentation
-git-repo: https://github.com/AdobeDocs/marketo-measure.zh-Hans
+git-repo: https://github.com/AdobeDocs/marketo-measure.en
 index: true
-source-git-commit: ce2ce5c5652d4067f50e88b062d7d951b645d93b
+source-git-commit: 5a3494763c80ac636306c7ac8d080383d2358a59
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
@@ -24,4 +26,4 @@ metadata.md文件包含存储库级别的元数据，这些元数据会传送到
 | getting-started-url | 指向helpx快速入门页面的链接 |
 | tutorials-url | 指向视频教程的链接 — helpx教程或KT教程 |
 | mini-toc-levels | 确定右边栏中显示的标题级别数。 默认值为2 |
-| git-repo | 指定主控存储库的位置以供内部使用 |
+| git-repo | 指定主存储库的位置以供内部使用 |
