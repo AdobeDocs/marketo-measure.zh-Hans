@@ -4,9 +4,9 @@ product: Bizible
 audience: end-user
 user-guide-title: '[!DNL Marketo Measure] 指南'
 user-guide-description: '[!DNL Marketo Measure] 使营销人员深入洞察哪些营销活动最有效地为其公司创造收入。'
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+source-git-commit: 5eb42c797a34163504fe24fef19949d2c647793b
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '779'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 5%
       + [营销归因](introduction-to-marketo-measure/overview-resources/marketing-attribution.md)
       + [[!DNL Marketo Measure]归因模型](introduction-to-marketo-measure/overview-resources/marketo-measure-attribution-models.md)
       + [[!DNL Marketo Measure]框架](introduction-to-marketo-measure/overview-resources/marketo-measure-framework.md)
-      + [&#x200B; [!DNL Marketo Measure] 字段词汇表](introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)
+      + [ [!DNL Marketo Measure] 字段词汇表](introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)
 + [!DNL Marketo Measure]跟踪 {#marketo-measure-tracking}
    + 设置跟踪 {#setting-up-tracking}
       + [实施 [!DNL Marketo Measure] JavaScript的最佳实践](marketo-measure-tracking/setting-up-tracking/best-practices-for-implementing-marketo-measure-javascript.md)
@@ -38,9 +38,9 @@ ht-degree: 5%
          + [AJAX表单处理](marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/ajax-form-handling.md)
          + [正在将 [!DNL Marketo Measure] 连接到退件脚本管理器](marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/connecting-marketo-measure-to-unbounce-script-manager.md)
          + [IFrame Forms和 [!DNL Marketo Measure]](marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-to-different-form-providers/iframe-forms-and-marketo-measure.md)
-      + [正在从特定Forms中排除 [!DNL Marketo Measure] &#x200B;](marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md)
+      + [正在从特定Forms中排除 [!DNL Marketo Measure] ](marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md)
       + [[!DNL Marketo Measure] Cookie](marketo-measure-tracking/setting-up-tracking/marketo-measure-cookies.md)
-      + [&#x200B; [!DNL Marketo Measure] Web会话的定义](marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions.md)
+      + [ [!DNL Marketo Measure] Web会话的定义](marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions.md)
       + [测试最佳实践](marketo-measure-tracking/setting-up-tracking/best-practices-for-testing.md)
 + 配置和设置 {#configuration-and-setup}
    + 开始使用[!DNL Marketo Measure] {#getting-started-with-marketo-measure}
@@ -55,17 +55,17 @@ ht-degree: 5%
       + [[!DNL Marketo Measure] Salesforce包的安装和设置](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-package-installation-and-set-up.md)
       + [[!DNL Salesforce]包合并](configuration-and-setup/marketo-measure-and-salesforce/salesforce-package-consolidation.md)
       + [连接 [!DNL Marketo Measure] 到Salesforce](configuration-and-setup/marketo-measure-and-salesforce/connect-marketo-measure-to-salesforce.md)
-      + [&#x200B; [!DNL Marketo Measure] CRM包的最佳实践](configuration-and-setup/marketo-measure-and-salesforce/best-practices-for-marketo-measure-crm-package.md)
+      + [ [!DNL Marketo Measure] CRM包的最佳实践](configuration-and-setup/marketo-measure-and-salesforce/best-practices-for-marketo-measure-crm-package.md)
       + [[!DNL Marketo Measure]个Salesforce对象](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-salesforce-objects.md)
       + [CRM导出的错误处理](configuration-and-setup/marketo-measure-and-salesforce/crm-error-handling.md)
-      + [&#x200B; [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何交互](configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
+      + [ [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何交互](configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
       + [[!DNL Marketo Measure]对象和字段分类](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md)
-      + [标准[!DNL Marketo Measure]对象上的 [!DNL Salesforce] 字段](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-fields-on-standard-salesforce-objects.md)
+      + [标准 [!DNL Salesforce] 对象上的[!DNL Marketo Measure]字段](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-fields-on-standard-salesforce-objects.md)
       + [页面布局说明](configuration-and-setup/marketo-measure-and-salesforce/page-layout-instructions.md)
       + [隐藏不必要的报表类型](configuration-and-setup/marketo-measure-and-salesforce/hiding-unnecessary-report-types.md)
       + [创建 [!DNL Marketo Measure] 配置文件](configuration-and-setup/marketo-measure-and-salesforce/creating-a-marketo-measure-profile.md)
       + [[!DNL Marketo Measure]权限集](configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-permission-sets.md)
-      + [为 [!DNL Salesforce] 连接的用户推荐的 [!DNL Marketo Measure] 权限](configuration-and-setup/marketo-measure-and-salesforce/recommended-salesforce-permissions-for-marketo-measure-connected-user.md)
+      + [为 [!DNL Marketo Measure] 连接的用户推荐的 [!DNL Salesforce] 权限](configuration-and-setup/marketo-measure-and-salesforce/recommended-salesforce-permissions-for-marketo-measure-connected-user.md)
    + 沙盒测试 {#sandbox-testing}
       + [测试 [!DNL Marketo Measure] 与Salesforce沙盒的集成](configuration-and-setup/sandbox-testing/testing-the-marketo-measure-integration-with-a-salesforce-sandbox.md)
       + [Salesforce沙盒到生产环境的迁移](configuration-and-setup/sandbox-testing/salesforce-sandbox-to-production-migration.md)
@@ -176,11 +176,11 @@ ht-degree: 5%
    + 开始使用[!DNL Marketo Measure]和Dynamics {#getting-started-with-marketo-measure-and-dynamics}
       + [[!DNL Marketo Measure]动态架构](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/marketo-measure-dynamics-schema.md)
       + [Microsoft Dynamics CRM安装指南](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/microsoft-dynamics-crm-installation-guide.md)
-      + [[!DNL Marketo Measure]的 [!DNL Dynamics]收入工作流](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/marketo-measure-revenue-workflows-for-dynamics.md)
-      + [OAuth与Azure Active Directory for [!DNL Dynamics] CRM](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/oauth-with-azure-active-directory-for-dynamics-crm.md)
+      + [ [!DNL Dynamics]的[!DNL Marketo Measure]收入工作流](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/marketo-measure-revenue-workflows-for-dynamics.md)
+      + [用于 [!DNL Dynamics] CRM的Azure Active Directory的OAuth](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/oauth-with-azure-active-directory-for-dynamics-crm.md)
       + [[!DNL Marketo Measure]和动态分类](marketo-measure-and-dynamics/getting-started-with-marketo-measure-and-dynamics/marketo-measure-and-dynamics-taxonomy.md)
    + Dynamics报表 {#dynamics-reporting}
-      + [&#x200B; [!DNL Dynamics]中的Stock报告和仪表板](marketo-measure-and-dynamics/dynamics-reporting/stock-reports-and-dashboards-in-dynamics.md)
+      + [ [!DNL Dynamics]中的Stock报告和仪表板](marketo-measure-and-dynamics/dynamics-reporting/stock-reports-and-dashboards-in-dynamics.md)
 + [!DNL Marketo Measure]和Marketo {#marketo-measure-and-marketo}
    + [!DNL Marketo Measure]与Marketo的集成 {#marketo-measure-integrations-with-marketo}
       + [设置 [!DNL Marketo] 连接](marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/set-up-marketo-connection.md)
@@ -232,8 +232,8 @@ ht-degree: 5%
       + [正在授予 [!DNL Salesforce] 对 [!DNL Marketo Measure] 支持的访问权限](miscellaneous/other-related-resources/granting-salesforce-access-to-marketo-measure-support.md)
       + [隐私请求](miscellaneous/other-related-resources/privacy-requests.md)
       + [从Google Analytics中的登陆页面URL中删除 [!DNL Marketo Measure] 跟踪参数](miscellaneous/other-related-resources/remove-marketo-measure-tracking-parameters-from-the-landing-page-url-in-google-analytics.md)
-      + [正在从完整圆转为 [!DNL Marketo Measure] &#x200B;](miscellaneous/other-related-resources/transitioning-to-marketo-measure-from-full-circle.md)
-   + [测试](miscellaneous/test.md)
+      + [正在从完整圆转为 [!DNL Marketo Measure] ](miscellaneous/other-related-resources/transitioning-to-marketo-measure-from-full-circle.md)
+   + {hide-from-toc}[测试](miscellaneous/test.md)
 + 发行说明 {#release-notes}
    + [最新发行说明](release-notes/current.md)
    + 以前的版本 {#previous-releases}
