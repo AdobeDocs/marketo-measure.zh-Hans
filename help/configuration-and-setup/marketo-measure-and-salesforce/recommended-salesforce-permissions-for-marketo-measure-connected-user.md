@@ -5,8 +5,12 @@ title: 为 [!DNL Marketo Measure] 连接的用户推荐的 [!DNL Salesforce] 权
 exl-id: b74aa28b-4a7b-42d1-8df0-d1ae0ff1f338
 feature: Salesforce
 TQID: https://experienceleague.adobe.com/ImKgikcl5a3LJhBs8VnvWFZAxLkEY0r3Ip0XVZoHE-g
-product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
 source-wordcount: 439
@@ -18,7 +22,7 @@ ht-degree: 1%
 
 [!DNL Marketo Measure]通过[!DNL Marketo Measure]应用内连接的[!DNL Salesforce]用户发送和接收数据。
 
-要将接触点数据推送到[!DNL Salesforce]实例，连接的用户必须有权访问[!DNL Marketo Measure]自定义对象（即Buyer Touchpoint和Buyer Attribution Touchpoint）以及商机和联系人等标准[!DNL Salesforce]对象。 查看Salesforce](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)中的[[!DNL Marketo Measure] 。
+要将接触点数据推送到[!DNL Salesforce]实例，连接的用户必须有权访问[!DNL Marketo Measure]自定义对象（即Buyer Touchpoint和Buyer Attribution Touchpoint）以及商机和联系人等标准[!DNL Salesforce]对象。 查看Salesforce[&#128279;](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)中的[!DNL Marketo Measure] 。
 
 [!DNL Salesforce]管理员用户许可证可作为已连接的用户，因为默认情况下，这些用户通常具有必要的数据权限。 但是，您的团队可能更喜欢使用集成用户或专用的[!DNL Salesforce]用户许可证来跟踪[!DNL Marketo Measure]对您实例的影响。
 

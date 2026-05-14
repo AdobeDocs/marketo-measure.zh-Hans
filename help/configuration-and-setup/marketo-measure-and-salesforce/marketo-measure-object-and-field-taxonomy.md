@@ -5,8 +5,10 @@ title: '[!DNL Marketo Measure]对象和字段分类'
 exl-id: 67f1cac8-e2b4-45cc-b1c9-58bf4e1a760d
 feature: Salesforce
 TQID: https://experienceleague.adobe.com/8YG-eHRcmSYy3yICJMViCjkGyPsgLxzoLIMHVMl7s74
-product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-topic_v2: id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
 source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
 source-wordcount: 163
@@ -22,7 +24,7 @@ ht-degree: 0%
 
 对于完整大小的图像，[单击此处](assets/bizible-object-and-field-taxonomy-graph-full.png)。
 
-可以在此处](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)找到每个对象[中活动的[!DNL Marketo Measure]字段的定义。
+可以在此处[&#128279;](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)找到每个对象中活动的[!DNL Marketo Measure]字段的定义。
 
 ## 常见问题解答 {#faq}
 

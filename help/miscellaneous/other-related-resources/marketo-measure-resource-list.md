@@ -5,8 +5,11 @@ title: '[!DNL Marketo Measure]资源列表'
 exl-id: e2542ec2-dd83-405c-bd49-fa6384e6c8de
 feature: Fundamentals
 TQID: https://experienceleague.adobe.com/oY2h-o6vE-X-TcsklCmmKitANBYszLt7SSBWbAmy1lU
-product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
 source-wordcount: 341
@@ -41,7 +44,7 @@ ht-degree: 3%
 **报告**
 
 * [使用 [!DNL Marketo Measure]](/help/marketo-measure-salesforce-reporting/new-report-types/creating-custom-marketo-measure-report-types.md)创建自定义报告类型（如果您必须报告自定义Lead/Contact/Opportunity字段）
-* [ [!DNL Marketo Measure] 字段词汇表](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)
+* [&#x200B; [!DNL Marketo Measure] 字段词汇表](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)
 
 **疑难解答**
 

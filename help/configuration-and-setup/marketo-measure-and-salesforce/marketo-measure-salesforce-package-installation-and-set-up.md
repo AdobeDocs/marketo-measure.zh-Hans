@@ -4,8 +4,10 @@ title: '[!DNL Marketo Measure] [!DNL Salesforce] 包安装和设置'
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
 TQID: https://experienceleague.adobe.com/l293WWmVHXGAthQKznwSssgTihMOdpqi4gh58t1fh-g
-product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-feature_v2: id: c8f57308-7e33-4e41-a385-b55041c78939
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
 source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
 source-wordcount: 504
@@ -37,7 +39,7 @@ ht-degree: 0%
 
 1. 以管理员身份登录到[!DNL Salesforce]。
 
-1. 为所有用户&#x200B;**选择**[!UICONTROL Install]。
+1. 为所有用户&#x200B;**选择**&#x200B;[!UICONTROL Install]。
 
    ![](assets/marketo-measure-salesforce-package-installation-and-set-up-1.png)
 

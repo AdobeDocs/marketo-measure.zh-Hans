@@ -5,7 +5,8 @@ title: 使用自定义收入金额字段
 exl-id: 517ea4f9-aa83-48d0-8ce7-003f4a907430
 feature: Custom Revenue Amount
 TQID: https://experienceleague.adobe.com/EygbB-2KJDZKMRdKS2Mx7JQwdzhmJ77swewudzsGIb0
-product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
 source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
 source-wordcount: 602
@@ -79,7 +80,7 @@ ht-degree: 1%
 
 ## 在Salesforce Classic中创建工作流 {#create-the-workflow-in-salesforce-classic}
 
-以下步骤适用于Salesforce Classic用户。 如果您已切换到Salesforce Lightning，则可以在上面](#create-the-workflow-in-salesforce-lightning)找到这些步骤[。
+以下步骤适用于Salesforce Classic用户。 如果您已切换到Salesforce Lightning，则可以在上面[&#128279;](#create-the-workflow-in-salesforce-lightning)找到这些步骤。
 
 1. 导航到&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Workflow & Approvals]** > **[!UICONTROL Workflow Rules]**。
 

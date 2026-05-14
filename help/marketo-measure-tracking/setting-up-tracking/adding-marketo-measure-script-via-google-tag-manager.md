@@ -5,7 +5,8 @@ title: 正在通过 [!DNL Google Tag Manager]添加 [!DNL Marketo Measure] 脚�
 exl-id: 539efb10-35cb-4146-8eea-728c3948a11e
 feature: Tracking
 TQID: https://experienceleague.adobe.com/g3PTxiShipF9q79oIAWKZIUU-YFMarLEDeKknaPiHck
-product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
 source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
 source-wordcount: 190
@@ -21,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->使用Google](https://support.google.com/tagmanager/answer/2772421?hl=en){target="_blank"}发表的此[支持文章了解更多信息。
+>使用Google[&#128279;](https://support.google.com/tagmanager/answer/2772421?hl=en){target="_blank"}发表的此支持文章了解更多信息。
 
 ## 如何通过[!DNL Google Tag Manager]添加[!DNL Marketo Measure] JS {#how-to-add-marketo-measure-js-via-google-tag-manager}
 
