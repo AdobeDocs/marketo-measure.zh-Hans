@@ -4,9 +4,12 @@ description: 将Marketo Measure连接到Salesforce - [!DNL Marketo Measure]
 title: 将Marketo Measure连接到Salesforce
 exl-id: 9be8d3fa-1045-4e41-bc2e-5b9d4d3513ae
 feature: Salesforce
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/f09jcpWCdMmfgziD5jFyA60axP1HJ87xGKQtlHc4DdQ
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2: id: c8f57308-7e33-4e41-a385-b55041c78939
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: 419
 ht-degree: 0%
 
 ---
@@ -21,7 +24,7 @@ ht-degree: 0%
 
 1. 在屏幕顶部的菜单栏中，导航到&#x200B;**[!UICONTROL My Account]**&#x200B;并单击&#x200B;**[!UICONTROL Settings]**&#x200B;选项。
 
-1. 在左侧的设置选项列中，单击&#x200B;**[!UICONTROL Connections]**&#x200B;部分下的[!UICONTROL Integrations]。
+1. 在左侧的设置选项列中，单击[!UICONTROL Integrations]部分下的&#x200B;**[!UICONTROL Connections]**。
 
    ![](assets/connect-marketo-measure-to-salesforce-1.png)
 
@@ -29,7 +32,7 @@ ht-degree: 0%
 
    ![](assets/connect-marketo-measure-to-salesforce-2.png)
 
-1. 此时会出现一个弹出窗口，要求您选择CRM连接。 单击&#x200B;**[!UICONTROL Connect]**&#x200B;徽标旁边的[!DNL Salesforce]。
+1. 此时会出现一个弹出窗口，要求您选择CRM连接。 单击[!DNL Salesforce]徽标旁边的&#x200B;**[!UICONTROL Connect]**。
 
    ![](assets/connect-marketo-measure-to-salesforce-3.png)
 

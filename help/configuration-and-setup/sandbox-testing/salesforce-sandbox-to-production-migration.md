@@ -4,24 +4,27 @@ description: Salesforce沙盒到生产环境的迁移 —  [!DNL Marketo Measure
 title: Salesforce沙盒到生产环境的迁移
 exl-id: b2b71c4a-f192-43ce-a27e-cbd0ec3cf008
 feature: Salesforce
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/tdO2AE1dXfriuURbldKa0NB6wzc0o6NBH0CdgolkqSc
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: 309
 ht-degree: 0%
 
 ---
 
 # Salesforce沙盒到生产环境的迁移 {#salesforce-sandbox-to-production-migration}
 
-如果您选择在[!DNL Marketo Measure]沙盒环境中测试[!DNL Salesforce]，请在准备就绪后按照以下说明迁移到生产环境。 以下说明假定您已经将[!DNL Marketo Measure]包下载到沙盒组织、执行了必要的测试并准备将[!DNL Marketo Measure]推送到生产环境。
+如果您选择在[!DNL Salesforce]沙盒环境中测试[!DNL Marketo Measure]，请在准备就绪后按照以下说明迁移到生产环境。 以下说明假定您已经将[!DNL Marketo Measure]包下载到沙盒组织、执行了必要的测试并准备将[!DNL Marketo Measure]推送到生产环境。
 
 ## 步骤1：将[!DNL Marketo Measure]包安装到生产[!DNL Salesforce]实例中
 
-* 使用“[!DNL Marketo Measure]”设置将[!UICONTROL All Users]包安装到生产环境中
+* 使用“[!UICONTROL All Users]”设置将[!DNL Marketo Measure]包安装到生产环境中
 
-   * [基本包](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"}
+   * [基础包](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"}
 
-* 有关与[!DNL Marketo Measure]的[!DNL Salesforce]关系的详细信息，请参阅[本文](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
+* 有关与[!DNL Salesforce]的[!DNL Marketo Measure]关系的详细信息，请参阅[本文](/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md)
 * 需要[!DNL Salesforce]位配置。 下面的[步骤4中概述了具体的操作项](#salesforce-configuration)
 
 ## 步骤2：删除[!DNL Marketo Measure]应用程序中的当前沙盒CRM连接 {#delete-the-current-sandbox-crm-connection-in-marketo-measure-app}
@@ -42,7 +45,7 @@ ht-degree: 0%
 * 导航到[!UICONTROL My Account] >[!UICONTROL Settings] > [!UICONTROL Connections]
 * 成功删除沙盒连接后，该连接将从页面中消失，否则连接仍会存在，并且状态为“正在删除”
 * 单击“[!UICONTROL Set up New CRM connection]”
-* 在“[!UICONTROL Select CRM Connection]”模式对话框中，单击[!UICONTROL Connect]平台旁边的“[!DNL Salesforce]”操作，选择“[!UICONTROL Production]”选项
+* 在“[!UICONTROL Select CRM Connection]”模式对话框中，单击[!DNL Salesforce]平台旁边的“[!UICONTROL Connect]”操作，选择“[!UICONTROL Production]”选项
 * 系统会提示您输入凭据，请确保输入生产登录详细信息
 
 ## 步骤4：Salesforce配置 {#salesforce-configuration}

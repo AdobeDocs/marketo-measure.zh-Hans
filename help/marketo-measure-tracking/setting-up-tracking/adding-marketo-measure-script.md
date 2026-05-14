@@ -4,9 +4,12 @@ description: 正在添加 [!DNL Marketo Measure] 脚本 —  [!DNL Marketo Measu
 title: 正在添加 [!DNL Marketo Measure] 脚本
 exl-id: f8773037-04d7-4308-ba04-440e9b990d92
 feature: Tracking
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/N88BiNzKTpyS1gl0OyNXwnRk1QrZ1k6UykMd8VWf7dw
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: 1291
 ht-degree: 0%
 
 ---
@@ -17,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->确保除了部署[&#x200B; JavaScript之外，您还 [!DNL Adobe Admin Console]](/help/marketo-measure-and-adobe/domain-management.md){target="_blank"}声明了[!DNL Marketo Measure]中的所有相应域。
+>确保除了部署[!DNL Marketo Measure] JavaScript之外，您还[声明了 [!DNL Adobe Admin Console]](/help/marketo-measure-and-adobe/domain-management.md){target="_blank"}中的所有相应域。
 
 开始使用[!DNL Marketo Measure]时，可通过两种方式将[!DNL Marketo Measure] JavaScript添加到您的网站：
 
@@ -38,7 +41,7 @@ ht-degree: 0%
 
 ## Tag Management {#tag-management-systems}
 
-如果无法通过硬编码添加[!DNL Marketo Measure]JavaScript，则另一个选项是使用Tag Management System(如[!DNL Marketo Measure] (GTM)或Tealium)添加[!DNL Google Tag Manager]脚本。
+如果无法通过硬编码添加[!DNL Marketo Measure]JavaScript，则另一个选项是使用Tag Management System(如[!DNL Google Tag Manager] (GTM)或Tealium)添加[!DNL Marketo Measure]脚本。
 
 使用标记管理系统部署[!DNL Marketo Measure] JS可能会由于脚本加载时间延迟而导致5-10%的数据丢失。 基本上，如果标签管理工具加载不够快，[!DNL Marketo Measure] JS也无法加载足够快，并且可能会丢失第一个反向链接信息。
 
@@ -58,7 +61,7 @@ ht-degree: 0%
 
 如果您使用任何第三方页面，请与您的[!DNL Marketo Measure]顾问讨论您的用例。 通常，您会希望了解是否可以添加[!DNL Marketo Measure] JavaScript的自定义版本来跟踪这些页面（如果适用）。 如果无法执行此操作，我们将与您的[!DNL Marketo Measure]顾问探讨通过CRM Campaign接触点进行跟踪。
 
-您是否有任何表单不应[!DNL Marketo Measure]跟踪，因为它们对归因不一定有意义（例如，取消订阅表单、客户登录等）？ 如果是，则要将此文章[中的排除代码](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md){target="_blank"}添加到每个表单
+您是否有任何表单不应[!DNL Marketo Measure]跟踪，因为它们对归因不一定有意义（例如，取消订阅表单、客户登录等）？ 如果是，则要将此文章](/help/marketo-measure-tracking/setting-up-tracking/excluding-marketo-measure-from-specific-forms.md){target="_blank"}中的排除代码[添加到每个表单
 
 您是否有任何非安全页面？ 您应该保护它们，因为在安全/非安全页面之间导航会中断跟踪会话。
 
@@ -116,7 +119,7 @@ ht-degree: 0%
 
 **第二个域**
 
-* 问题：[!DNL Marketo Measure] JavaScript是特定于域的，因此必须为任何单独的域或国际域采取额外的步骤。 [!DNL Marketo Measure] JS可以在同一根域上处理子域。
+* 问题：[!DNL Marketo Measure] JavaScript是特定于域的，因此必须为任何单独的域或国际域采取额外的步骤。[!DNL Marketo Measure] JS可以在同一根域上处理子域。
 * 解决方案：如果您拥有多个根域，并且希望由[!DNL Marketo Measure]跟踪，请确保将JS添加到这些域，并告知[!DNL Marketo Measure]顾问应将哪些域手动关联到您的[!DNL Marketo Measure]帐户。
 
 ## 测试[!DNL Marketo Measure]JavaScript {#testing-marketo-measure-javascript}
@@ -129,12 +132,12 @@ ht-degree: 0%
 
 1. 请始终使用无痕浏览器或清除每个表单提交测试之间的缓存，并且每次都使用不同的电子邮件地址。
 
-   答：最佳做法是使用包含表明这是一次测试及时间的内容的假电子邮件。 例如：testing830am@test.com。
+   答： 最佳实践是使用包含表明它是测试及时间的内容的假电子邮件。 例如：testing830am@test.com。
 
 1. 记录要提交表单的页面的URL以及使用的电子邮件。
 
 1. 找到在您的CRM（潜在客户或联系人）中为该表单提交创建的记录，并验证是否正确创建了接触点。
 
-   a.您可以使用[!DNL Marketo Measure]库存报表，例如具有买方接触点的销售线索，或者如果您选择使用[!DNL Marketo Measure]详细信息更新页面布局，则可以查看销售线索/联系人页面布局。
+   答： 您可以使用[!DNL Marketo Measure]库存报表，例如具有买方接触点的销售线索，或者如果您选择使用[!DNL Marketo Measure]详细信息更新您的页面布局，则可以查看销售线索/联系人页面布局。
 
-   b.这可能需要一些时间来处理数据。
+   b. 这可能需要一些时间来处理数据。

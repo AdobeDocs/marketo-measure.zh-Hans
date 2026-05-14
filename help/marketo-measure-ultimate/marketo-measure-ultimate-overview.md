@@ -3,16 +3,19 @@ description: '[!DNL Marketo Measure] Ultimate概述 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] Ultimate概述'
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/r69OlOPP6-xtu34YVk7FfAiwdGgvoPpbs9TcM4N609M
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5520579-b31f-4df7-9281-f0d9f91e2edcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 4%
+source-wordcount: 726
+ht-degree: 6%
 
 ---
 
 # [!DNL Marketo Measure] Ultimate概述 {#marketo-measure-ultimate-overview}
 
-[!DNL Marketo Measure]（以前为 Bizible）使营销人员能够洞察哪些营销工作在为公司增加收入以及使投资回报率最大化方面最有效。[!DNL Marketo Measure]是一款营销归因解决方案，可自动跟踪和报告渠道效果，让您能够洞悉哪些渠道产生的客户参与度最高，并允许您相应地优化营销支出。
+[!DNL Marketo Measure]（以前为 Bizible）使营销人员能够洞察哪些营销工作在为公司增加收入以及使投资回报率最大化方面最有效。 [!DNL Marketo Measure]是一款营销归因解决方案，可自动跟踪和报告渠道效果，让您能够洞悉哪些渠道产生的客户参与度最高，并允许您相应地优化营销支出。
 
 [!DNL Marketo Measure Ultimate]包含其他功能：
 
@@ -25,7 +28,7 @@ ht-degree: 4%
 
 * 通过所包含的数据仓库使归因分析可用于外部应用程序，以将这些分析集成到您的工作流中。 更精细的结果数据和基于BI的报表，包括Snowflake Data Warehouse，后者提供对精细结果数据的访问，以及使用任何BI工具进行分析和报表的功能。
 
-* 与RTCDP（B2B或B2P版本）集成，为RTCDP客户(如RTCDP和[!DNL Marketo Measure])提供集成的B2B归因解决方案，二者均通过集中式Adobe Experience Platform (AEP)数据工作。
+* 与RTCDP（B2B或B2P版本）集成，为RTCDP客户（如RTCDP和[!DNL Marketo Measure]）提供集成的B2B归因解决方案，二者均通过集中式Adobe Experience Platform (AEP)数据工作。
 
 **[!DNL Marketo Measure]层1-3**
 
@@ -111,6 +114,6 @@ Campaign成员接触点规则和活动接触点规则特定于数据集。
 
 >[!MORELIKETHIS]
 >
->* [Marketo Measure Ultimate目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=zh-Hans){target="_blank"}
+>* [Marketo Measure Ultimate目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/marketo-measure-ultimate.html?lang=en){target="_blank"}
 >
 >* [视频： Marketo Measure Ultimate概述](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/marketo-measure-ultimate/overview){target="_blank"}

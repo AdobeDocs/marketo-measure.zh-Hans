@@ -4,9 +4,12 @@ description: 正在同步历史数据 —  [!DNL Marketo Measure]
 title: 同步历史数据
 exl-id: 5a3c1a71-463a-4d75-98b9-fc225839512a
 feature: Channels
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/RODJgjoLhJW0g3ra0H-mn8bOeBicfOuVlLSvU--Gaeo
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: 1507
 ht-degree: 1%
 
 ---
@@ -23,9 +26,9 @@ ht-degree: 1%
 
 **数据是否已组织到营销活动中？**
 
-a.数据需要组织到营销活动中以同步到[!DNL Marketo Measure]，才能生成接触点。 如果当前未将数据组织到营销活动中，则需要评估是否值得花费时间和资源将数据区隔到适当的营销活动中。
+答： 数据需要组织到营销活动中以同步到[!DNL Marketo Measure]，才能生成接触点。 如果当前未将数据组织到营销活动中，则需要评估是否值得花费时间和资源将数据区隔到适当的营销活动中。
 
-b.将成员添加到营销活动或标记为已响应的日期用作接触点日期，因此该日期也需要准确。 [!DNL Marketo Measure]在SFDC和MSD中提供了用于更新日期的解决方法，但这可能非常耗时，具体取决于数量。
+b. 将成员添加到营销活动或标记为已响应的日期将用于接触点日期，因此该日期也需要准确。 [!DNL Marketo Measure]在SFDC和MSD中提供了用于更新日期的解决方法，但这可能非常耗时，具体取决于数量。
 
 **您是否拥有相当数量的数据组织到所有渠道（付费搜索、活动、免费等）的营销活动中？**
 
@@ -57,7 +60,7 @@ b.将成员添加到营销活动或标记为已响应的日期用作接触点日
 
 >[!NOTE]
 >
->由于我们使用的是SFDC营销活动，因此此渠道映射在[!UICONTROL Offline Channels]应用程序的[!DNL Marketo Measure]部分中完成。
+>由于我们使用的是SFDC营销活动，因此此渠道映射在[!DNL Marketo Measure]应用程序的[!UICONTROL Offline Channels]部分中完成。
 
 | Salesforce营销活动类型 | 渠道 | 子渠道 |
 |---|---|---|
@@ -69,21 +72,21 @@ b.将成员添加到营销活动或标记为已响应的日期用作接触点日
 
 使用SFDC Campaign类型的数量支持粒度渠道映射可能不太可能，也不合理，因此，您可能只利用映射到渠道级别并忽略子渠道。 如果渠道级别也不清楚，您可以设置一个代理渠道，如“历史数字”，以便您至少知道这是一次在线接触。
 
-如果您需要批量编辑将为这些历史在线工作推送的接触点日期，请使用[!DNL Marketo Measure]自定义“[!UICONTROL Bulk Update Touchpoint Date]”按钮(该按钮在SFDC中的促销活动对象上作为自定义字段提供)。 如果营销活动具有较短的时间范围，则可能有必要逐日批量编辑接触点日期；如果营销活动具有较长的时间范围，则可能适合每周批量更新。 如果您确实使用批量更新接触点日期功能，请确保更新Campaign同步规则以使用日期字段上的Buyer Touchpoint日期。 请注意，如果此操作仅适用于一两个营销活动，并且不适用于所有营销活动，则可能需要使用Campaign同步规则进行创新。
+如果您需要批量编辑将为这些历史在线工作推送的接触点日期，请使用[!DNL Marketo Measure]自定义“[!UICONTROL Bulk Update Touchpoint Date]”按钮（该按钮在SFDC中的促销活动对象上作为自定义字段提供）。 如果营销活动具有较短的时间范围，则可能有必要逐日批量编辑接触点日期；如果营销活动具有较长的时间范围，则可能适合每周批量更新。 如果您确实使用批量更新接触点日期功能，请确保更新Campaign同步规则以使用日期字段上的Buyer Touchpoint日期。 请注意，如果此操作仅适用于一两个营销活动，并且不适用于所有营销活动，则可能需要使用Campaign同步规则进行创新。
 
 **脱机：**
 
-离线营销工作的历史数据(无法通过JavaScript跟踪的数据)还需要整理到SFDC营销活动中。 SFDC营销活动是[!DNL Marketo Measure]跟踪离线工作的方式，而不管该活动是“历史”还是“当前/后[!DNL Marketo Measure]实施”，因此请遵循在原始离线渠道配置培训中决定的相同渠道映射。
+离线营销工作的历史数据（无法通过JavaScript跟踪的数据）还需要整理到SFDC营销活动中。 SFDC营销活动是[!DNL Marketo Measure]跟踪离线工作的方式，而不管该活动是“历史”还是“当前/后[!DNL Marketo Measure]实施”，因此请遵循在原始离线渠道配置培训中决定的相同渠道映射。
 
 如有必要，请使用“批量更新接触点日期”按钮以批量编辑营销活动成员的接触点日期。 例如，如果您在事件发生后创建SFDC营销活动，则需要为正确的日期批量编辑。 如果您确实使用批量更新接触点日期功能，请确保更新Campaign同步规则以使用日期字段上的Buyer Touchpoint日期。 请注意，如果此操作仅适用于一两个营销活动，并且不适用于所有营销活动，则可能需要使用Campaign同步规则进行创新。
 
 ## 正在同步[!DNL Dynamics]中的历史营销活动 {#syncing-historic-campaigns-in-dynamics}
 
-只要在[!DNL Marketo Measure]内将过去发生的交互整理到营销活动中，[!DNL Dynamics]便能够逆向生成这些交互的接触点。
+只要在[!DNL Dynamics]内将过去发生的交互整理到营销活动中，[!DNL Marketo Measure]便能够逆向生成这些交互的接触点。
 
 这通常涉及CRM中的工作，以便考虑历史日期。 对于在线操作（由JS跟踪）和离线操作（无法由JS跟踪），处理也将不同。
 
-按照下面的说明以可同步到[!DNL Dynamics]的格式组织[!DNL Marketo Measure]中的历史数据。
+按照下面的说明以可同步到[!DNL Marketo Measure]的格式组织[!DNL Dynamics]中的历史数据。
 
 **联机：**
 

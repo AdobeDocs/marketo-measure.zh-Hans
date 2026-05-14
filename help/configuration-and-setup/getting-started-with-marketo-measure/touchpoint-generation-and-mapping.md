@@ -4,9 +4,11 @@ description: 接触点生成和映射 —  [!DNL Marketo Measure]
 title: 接触点生成和映射
 exl-id: bb4988f5-4fbc-43b7-9544-da541b8e1d32
 feature: Touchpoints
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/otuePoQBPvb-UEJCTI1CeyA1BYQ7Jn-jZQm63si-6uA
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: 357
 ht-degree: 0%
 
 ---
@@ -40,9 +42,9 @@ ht-degree: 0%
 
 | **交互类型** | **生成方法** | **映射方法** |
 |---|---|---|
-| 在线，在您的网站上 | [!DNL Marketo Measure] JavaScript | 通过引用UTM值、登陆页面和引荐页面信息，在[!DNL Online Channels]中通过[!DNL Marketo Measure]页面 |
-| 离线；在线，不在您的网站上 | CRM Campaign成员资格同步 | 通过[!UICONTROL Offline Channels]中的[!DNL Marketo Measure]页面，通过引用营销活动类型 |
-| 销售活动 | CRM活动同步 | 通过[!UICONTROL Online Channels]中的[!DNL Marketo Measure]页面，通过引用[!UICONTROL Activities]页面上分配的营销活动名称 |
+| 在线，在您的网站上 | [!DNL Marketo Measure] JavaScript | 通过引用UTM值、登陆页面和引荐页面信息，在[!DNL Marketo Measure]中通过[!DNL Online Channels]页面 |
+| 离线；在线，不在您的网站上 | CRM Campaign成员资格同步 | 通过[!DNL Marketo Measure]中的[!UICONTROL Offline Channels]页面，通过引用营销活动类型 |
+| 销售活动 | CRM活动同步 | 通过[!DNL Marketo Measure]中的[!UICONTROL Online Channels]页面，通过引用[!UICONTROL Activities]页面上分配的营销活动名称 |
 
 >[!MORELIKETHIS]
 >

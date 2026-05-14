@@ -4,16 +4,18 @@ description: 正在将 [!DNL Marketo Measure] 添加到 [!DNL Marketo] 登陆页
 title: 正在将 [!DNL Marketo Measure] 添加到Marketo登录页面
 exl-id: 3771d4d2-8723-452a-b23d-cea3b11ab9ee
 feature: Tracking
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/oMudhh5HLf2i618ZV7RjLNMCsYYgxKoO-hp1g6ia85U
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 0%
+source-wordcount: 225
+ht-degree: 1%
 
 ---
 
 # 将[!DNL Marketo Measure]添加到Marketo登录页面 {#adding-marketo-measure-to-marketo-landing-pages}
 
-了解如何向[!DNL Marketo Engage]登陆页面添加跟踪，因为它们需要额外的处理。 登录页和[!DNL Marketo Measure]表单本身都必须有[!DNL Marketo Engage]JavaScript。 为此，您需要按照以下说明将[!DNL Marketo Measure] JavaScript加载到[!DNL Marketo Engage]中。
+了解如何向[!DNL Marketo Engage]登陆页面添加跟踪，因为它们需要额外的处理。[!DNL Marketo Measure] JavaScript必须在登陆页面和[!DNL Marketo Engage]表单本身上都准备就绪。 为此，您需要按照以下说明将[!DNL Marketo Measure] JavaScript加载到[!DNL Marketo Engage]中。
 
 >[!NOTE]
 >
@@ -24,7 +26,7 @@ ht-degree: 0%
 1. 登录到您的[!DNL Marketo Engage]帐户。
 1. 选择您的登陆页面并单击&#x200B;**[!UICONTROL Edit Draft]**。
 1. 拖入HTML元素。
-1. 在[!DNL Marketo Measure]部分输入[!UICONTROL head]JavaScript：
+1. 在[!UICONTROL head]部分输入[!DNL Marketo Measure]JavaScript：
 
    `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async=""></script>`
 
@@ -42,4 +44,4 @@ ht-degree: 0%
 
 * 您可能使用了多个登陆页面模板，请务必将代码添加到所有包含表单的模板中。
 
-* 有时，在编辑登陆页面的模板时，必须重新批准登陆页面由使用的页面。 本文介绍[如何批量批准](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html?lang=zh-Hans){target="_blank"}。
+* 有时，在编辑登陆页面的模板时，必须重新批准登陆页面由使用的页面。 本文介绍[如何批量批准](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target="_blank"}。

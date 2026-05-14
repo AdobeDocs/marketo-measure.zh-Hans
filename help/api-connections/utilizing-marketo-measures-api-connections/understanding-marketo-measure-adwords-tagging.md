@@ -4,10 +4,13 @@ description: 了解 [!DNL Marketo Measure] AdWords标记 —  [!DNL Marketo Meas
 title: 了解 [!DNL Marketo Measure] AdWords标记
 exl-id: c6658766-d3a8-46ed-b2d2-826eb61ce269
 feature: APIs, Integration, UTM Parameters
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/k-rj5kIrgNp4ZebSopI3pwMVMn4lepWsLlpI8-nkoMk
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2: id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 0%
+source-wordcount: 589
+ht-degree: 1%
 
 ---
 
@@ -28,7 +31,7 @@ ht-degree: 0%
 **如果[!DNL Marketo Measure]找到跟踪模板：**
 
 * [!DNL Marketo Measure]会将其参数添加到跟踪模板。
-* 如果在跟踪模板（如Kenshoo或Marin）中找到第三方重定向，则[!DNL Marketo Measure]将不执行任何操作。 相反，您必须在帐户[中向第三方工具 [!DNL Marketo Measure] 添加](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}参数。
+* 如果在跟踪模板（如Kenshoo或Marin）中找到第三方重定向，则[!DNL Marketo Measure]将不执行任何操作。 相反，您必须在帐户](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}中向第三方工具[添加 [!DNL Marketo Measure] 参数。
 
 但是，如果未找到跟踪模板，[!DNL Marketo Measure]将：
 

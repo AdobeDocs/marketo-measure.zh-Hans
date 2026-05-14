@@ -4,9 +4,12 @@ description: CRM促销活动成本 —  [!DNL Marketo Measure]
 title: CRM Campaign成本
 exl-id: d967cabe-b9f1-4ea1-a81b-e4484c703ecf
 feature: Spend Management
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/RxCP7bZJ9DND0BSpQ2PY5mOsSe-Kr45d24UKXWDmX6M
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: 1193
 ht-degree: 0%
 
 ---
@@ -23,9 +26,9 @@ ht-degree: 0%
 
 [!DNL Marketo Measure]首先会查找为接触点“启用”的营销活动，因此已创建匹配的Campaign同步规则，或者“启用购买者接触点”值为“包含所有营销活动成员”或“包含‘已响应’的营销活动成员”。 此外，[!DNL Marketo Measure]必须导入正确的值并了解如何分配成本，因此我们要求以下字段包含值：
 
-**[!DNL Salesforce]**： `ActualCost`，`StartDate`，`EndDate`
+**[!DNL Salesforce]**: `ActualCost`, `StartDate`, `EndDate`
 
-**[!DNL Microsoft Dynamics]**： `totalactualcost`，`actualstart`，`actualend`
+**[!DNL Microsoft Dynamics]**: `totalactualcost`, `actualstart`, `actualend`
 
 如果3个字段中的任何一个缺少值，[!DNL Marketo Measure]将不会导入成本。 您可以通过更新CRM中的Campaign记录来更正此问题。 如果成本设置为$0，则不导入成本，因为[!DNL Salesforce]将空白和$0视为相同。
 

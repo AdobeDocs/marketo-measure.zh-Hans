@@ -4,16 +4,19 @@ description: '[!DNL Marketo Measure]见解已解释 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]分析解释'
 exl-id: d479a15f-4c92-4302-8ce8-6487645012e1
 feature: Reporting
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/Q-c9KrauVQND9Yla4YLM6Vl5M1MxExRR-cD0-fOGZJQ
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: 452
 ht-degree: 0%
 
 ---
 
 # [!DNL Marketo Measure]分析解释 {#marketo-measure-insights-explained}
 
-了解[!DNL Marketo Measure]中的[!DNL Salesforce]分析视图，包括不同的图标表示什么以及如何使用该功能。 此功能非常有助于查看潜在客户、联系人或客户的前20场会议。
+了解[!DNL Salesforce]中的[!DNL Marketo Measure]分析视图，包括不同的图标表示什么以及如何使用该功能。 此功能非常有助于查看潜在客户、联系人或客户的前20场会议。
 
 在[!DNL Marketo Measure] JavaScript跟踪某人并在您的网站上填写表单后，该人员即成为您系统中的潜在客户，其数字营销数据将被发送到您的Salesforce (SFDC)组织。 发生这种情况时，您会看到接触点数据填充到Lead/Contact/Opportunity/Account对象的[!DNL Marketo Measure] Lead Insights部分(Canvas App)中。
 

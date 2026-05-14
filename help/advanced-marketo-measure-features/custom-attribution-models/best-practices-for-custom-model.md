@@ -3,9 +3,12 @@ description: 自定义模型的最佳实践 —  [!DNL Marketo Measure]
 title: 自定义模型的最佳实践
 exl-id: 7c19bb6a-30fc-4cbd-a58e-f20751102afe
 feature: Custom Models
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/p-O-xH6MR0SrtGh8Wa57g1stQHMNCgftQ-2BVnSi01I
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: 851
 ht-degree: 0%
 
 ---
@@ -44,7 +47,7 @@ ht-degree: 0%
       * 归因百分比越低，意味着阶段对团队进行监控的重要性就越低
 * 您必须根据Lead或Contact阶段定义funnel顶部的阶段，而不是同时定义这两个阶段
    * 这意味着，您必须确保所有人员都通过相对对象上的该阶段
-      * 例如：如果从Lead对象定义MQL阶段，则所有人员必须作为Lead进入您的系统，并在其Lead记录中标记为MQL，以便[!DNL Marketo Measure]能够准确地反映与该Lead向MQL的过渡相关的接触。 如果不是这种情况，并且某些人在成为MQL作为潜在客户之前进度到联系，[!DNL Marketo Measure]将无法准确地在您的接触点数据中说明这一点，我们将必须假设该人员已经拥有MQL。[!DNL Marketo Measure]无法考虑阶段跳转，因此我们将推断阶段已通过，即使它们尚未通过。
+      * 例如：如果从Lead对象定义MQL阶段，则所有人员必须作为Lead进入您的系统，并在其Lead记录中标记为MQL，以便[!DNL Marketo Measure]能够准确地反映与该Lead向MQL的过渡相关的接触。 如果不是这种情况，并且某些人在成为MQL作为潜在客户之前进度到联系，[!DNL Marketo Measure]将无法准确地在您的接触点数据中说明这一点，我们将必须假设该人员已经拥有MQL。 [!DNL Marketo Measure]无法考虑阶段跳转，因此我们将推断阶段已通过，即使它们尚未通过。
 * 确保为您用于定义合并的自定义阶段的所有字段启用字段历史记录跟踪
 * 请勿使用公式字段定义自定义阶段
    * 布尔字段是最佳实践推荐

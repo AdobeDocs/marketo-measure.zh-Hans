@@ -4,10 +4,12 @@ description: 促销活动同步日期 —  [!DNL Marketo Measure]
 title: Campaign同步日期
 exl-id: 66ce9948-9297-47ef-8b16-0ac45c5664fc
 feature: Channels
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/GwenZehxxKmWurJHJ3i3RTyhMocQ8piRR7HVARAbBKI
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 0%
+source-wordcount: 499
+ht-degree: 1%
 
 ---
 
@@ -36,7 +38,7 @@ ht-degree: 0%
 
 **正在回填接触点**
 
-有时，营销团队可能会错过向特定营销工作添加utm参数。 利用Campaign同步日期，您可以(如果使用SFDC促销活动进行在线工作)回填一些缺失的数据。 假设您运行的是5月1日开始的电子邮件营销活动，但您的团队直到5月15日才为该电子邮件营销活动添加utm参数。 如果您通过SFDC促销活动跟踪电子邮件转化，则可将接触点结束日期设置为5月15日，并为该促销活动的“已回复”成员启用接触点。 此操作将告知[!DNL Marketo Measure]为截至5月15日的所有响应创建接触点。
+有时，营销团队可能会错过向特定营销工作添加utm参数。 利用Campaign同步日期，您可以（如果使用SFDC促销活动进行在线工作）回填一些缺失的数据。 假设您运行的是5月1日开始的电子邮件营销活动，但您的团队直到5月15日才为该电子邮件营销活动添加utm参数。 如果您通过SFDC促销活动跟踪电子邮件转化，则可将接触点结束日期设置为5月15日，并为该促销活动的“已回复”成员启用接触点。 此操作将告知[!DNL Marketo Measure]为截至5月15日的所有响应创建接触点。
 
 **可追溯的Campaign会员资格接触点**
 

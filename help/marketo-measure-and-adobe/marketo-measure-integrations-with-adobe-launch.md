@@ -3,10 +3,13 @@ description: 与Adobe Launch的[!DNL Marketo Measure]集成 —  [!DNL Marketo M
 title: 与Adobe Launch的[!DNL Marketo Measure]集成
 exl-id: 316ee8a8-b2d3-42e9-9ee5-c9b1d91c2769
 feature: Integration
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/5bgXPo2wv7eeJqnrDZkYYasapORBU3V1MxgGOgoKrTw
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2: id: c8f57308-7e33-4e41-a385-b55041c78939
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 1%
+source-wordcount: 289
+ht-degree: 3%
 
 ---
 
@@ -22,11 +25,11 @@ Adobe Launch扩展专为已在网站上使用Adobe Launch的现有[!DNL Marketo 
 >
 >查看以下链接，了解有关Adobe Launch及其扩展的更多信息：
 >
->* [[!DNL Marketo Measure] 扩展](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email/bizible.html?lang=zh-Hans#catalog){target="_blank"}
->* [Adobe Launch概述](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=zh-Hans){target="_blank"}
->* [Adobe Launch扩展概述](https://experienceleague.adobe.com/docs/experience-platform/tags/extension-dev/overview.html?lang=zh-Hans){target="_blank"}
+>* [[!DNL Marketo Measure] 扩展](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email/bizible.html#catalog){target="_blank"}
+>* [Adobe Launch概述](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
+>* [Adobe Launch扩展概述](https://experienceleague.adobe.com/docs/experience-platform/tags/extension-dev/overview.html){target="_blank"}
 
-1. 按照本文[中的步骤](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=zh-Hans#go-to-the-data-collection-interface){target="_blank"}创建属性。
+1. 按照本文](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html#go-to-the-data-collection-interface){target="_blank"}中的步骤[创建属性。
 
 1. 单击您创建的属性。
 
@@ -56,11 +59,11 @@ Adobe Launch扩展专为已在网站上使用Adobe Launch的现有[!DNL Marketo 
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-7.png)
 
-1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;下的[!UICONTROL Events]按钮。
+1. 单击[!UICONTROL Events]下的&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-8.png)
 
-1. 在“扩展”下拉列表中，选择&#x200B;**[!UICONTROL Core]**。 然后在“事件类型”下拉列表中，选择&#x200B;**[!UICONTROL Library Loaded (Page Top)]**。 如果不为事件命名，则应用默认名称。 完成后单击&#x200B;**[!UICONTROL Keep Changes]**。
+1. 在“扩展”下拉列表中，选择&#x200B;**[!UICONTROL Core]**。 然后在“事件类型”下拉列表中，选择&#x200B;**[!UICONTROL Library Loaded (Page Top)]**。 如果不为事件命名，则应用默认名称。 完成后，单击 **[!UICONTROL Keep Changes]**。
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-9.png)
 
@@ -68,7 +71,7 @@ Adobe Launch扩展专为已在网站上使用Adobe Launch的现有[!DNL Marketo 
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-10.png)
 
-1. 在“扩展”下拉列表中，选择&#x200B;**[!UICONTROL Bizible Analytics]**。 然后在“操作类型”下拉列表中，选择&#x200B;**[!UICONTROL Initialize]**。 如果没有为您的操作指定名称，则会应用默认名称。 完成后单击&#x200B;**[!UICONTROL Keep Changes]**。
+1. 在“扩展”下拉列表中，选择&#x200B;**[!UICONTROL Bizible Analytics]**。 然后在“操作类型”下拉列表中，选择&#x200B;**[!UICONTROL Initialize]**。 如果没有为您的操作指定名称，则会应用默认名称。 完成后，单击 **[!UICONTROL Keep Changes]**。
 
    ![](assets/marketo-measure-integrations-with-adobe-launch-11.png)
 

@@ -4,9 +4,12 @@ description: 正在将 [!DNL Marketo Measure] 脚本添加到Sitecore页面 — 
 title: 正在将 [!DNL Marketo Measure] 脚本添加到Sitecore页面
 exl-id: 87ce1857-7532-45a7-8c39-255c6118b50a
 feature: Tracking
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/sXO-rCY3NbxX0AztYt-o3f-tpJFlrncLIb7-NvEjZO0
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: 114
 ht-degree: 0%
 
 ---
@@ -17,9 +20,9 @@ ht-degree: 0%
 
 对于具有Sitecore页面的网站：
 
-1. 登录Sitecore并导航到您的网站。 找到与[!UICONTROL Configuration]项目和[!UICONTROL Home]文件夹位于同一级别的[!UICONTROL Metadata]文件夹。
-1. 单击&#x200B;**[!UICONTROL +]**&#x200B;文件夹旁边的[!UICONTROL Configuration]。
-1. 单击&#x200B;**[!UICONTROL +]**&#x200B;文件夹旁边的[!UICONTROL Tools]。
+1. 登录Sitecore并导航到您的网站。 找到与[!UICONTROL Home]项目和[!UICONTROL Metadata]文件夹位于同一级别的[!UICONTROL Configuration]文件夹。
+1. 单击[!UICONTROL Configuration]文件夹旁边的&#x200B;**[!UICONTROL +]**。
+1. 单击[!UICONTROL Tools]文件夹旁边的&#x200B;**[!UICONTROL +]**。
 1. 选择[!UICONTROL Javascript]项。
 1. 在[!UICONTROL Content]选项卡中，单击&#x200B;**[!UICONTROL Lock and Edit]**&#x200B;链接以解锁要编辑的项目。
 1. 查找[!UICONTROL 'JavaScript']部分。 如果尚未展开，请单击&#x200B;**[!UICONTROL +]**。

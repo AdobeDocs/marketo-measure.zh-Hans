@@ -4,9 +4,11 @@ description: 正在将 [!DNL Marketo Measure] 脚本添加到 [!DNL Uberflip] Fo
 title: 正在将 [!DNL Marketo Measure] 脚本添加到 [!DNL Uberflip] Forms
 exl-id: fb123e15-523d-4931-b4c1-705fe49be3d0
 feature: Tracking
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/5G801toR2LSXxPwnXjLE-bw92pwe0gPc7HDFq-Bi5oU
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: 200
 ht-degree: 0%
 
 ---
@@ -48,7 +50,7 @@ ht-degree: 0%
 
    `}`
 
-1. 在提交表单CTA时，请确保按照以下规则执行您的[!DNL Marketo Measure]函数。 此操作在[!UICONTROL Custom Code>JS]分区内完成。 (注意：Hubs.onCtaFormSubmitSuccess JavaScript事件挂接中可能有其他代码，请确保同时包含此函数调用)。
+1. 在提交表单CTA时，请确保按照以下规则执行您的[!DNL Marketo Measure]函数。 此操作在[!UICONTROL Custom Code>JS]分区内完成。 （注意：Hubs.onCtaFormSubmitSuccess JavaScript事件挂接中可能有其他代码，请确保同时包含此函数调用）。
 
    `Hubs.onCtaFormSubmitSuccess = function (ctaId, ctaData, ctaName) {`
    `bizibleFormCode(ctaId, ctaData, ctaName);`\

@@ -4,10 +4,13 @@ description: A/B测试设置和报告 —  [!DNL Marketo Measure]
 title: A/B测试设置和报告
 exl-id: 9a3f0731-5909-4fbf-a35a-9608ff561061
 feature: A/B Testing
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/lMtRvc6owu6vx-FsOjCyd40HGhQefpNIr48cnKP5CmM
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 0%
+source-wordcount: 409
+ht-degree: 2%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 0%
 
 ## 设置 {#set-up}
 
-添加有关Lead、Contact、Case和Opportunity的[!DNL Marketo Measure] A/B测试部分。 通过[!DNL Marketo Measure] A/B测试集成，您可以优化地跟踪[VWO](https://www.optimizely.com/){target="_blank"}和[VWO](https://vwo.com/){target="_blank"}网站实验对收入的影响。
+添加有关Lead、Contact、Case和Opportunity的[!DNL Marketo Measure] A/B测试部分。[!DNL Marketo Measure] A/B测试集成允许您跟踪[最佳化](https://www.optimizely.com/){target="_blank"}和[VWO](https://vwo.com/){target="_blank"}网站实验对收入的影响。
 
 1. 验证您是否正在使用包[!DNL Marketo Measure] v3.9或更高版本。 您可以通过转到[!UICONTROL Salesforce] >[!UICONTROL Set Up] > [!UICONTROL Installed packages]来执行此操作。
 1. 编辑潜在客户页面布局并将&#x200B;**[!DNL Marketo Measure]A/B测试**&#x200B;相关列表添加到该页面。

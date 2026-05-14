@@ -4,9 +4,12 @@ description: Marketo Measure字段词汇表 — Marketo Measure — 产品文档
 title: Marketo Measure字段词汇表
 exl-id: 8e23b102-6d4f-4919-b361-04d1b184e710
 feature: Fundamentals
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/xpadEsIBtdeUuwq8ltJh8iknt4-r3yMZf9ymu1CwXM4
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '3213'
+source-wordcount: 3228
 ht-degree: 0%
 
 ---
@@ -21,11 +24,11 @@ ht-degree: 0%
 
 ## A {#a}
 
-**帐户** | 可在Buyer Attribution Touchpoint上找到
+**帐户** |在Buyer Attribution Touchpoint上找到
 
 此字段使用与BAT关联的帐户名称填充。
 
-**广告营销活动Id** | 可在Buyer Attribution Touchpoint的Buyer Touchpoint上找到
+**广告营销活动Id** |可在Buyer Attribution Touchpoint的Buyer Touchpoint上找到
 
 填充此字段的方式有三种：
 
@@ -33,7 +36,7 @@ ht-degree: 0%
 
 `2)`如果接触点并非来自付费搜索，则将使用登陆页面URL中的utm_campaign值填充该字段。
 
-如`http://info.marketomeasure.com/adwords-for-lead-generation?utm_source=Event&utm_medium=booth&utm_campaign=Marketo%20Virtual%20Event%20sep2014`
+e.g. `http://info.marketomeasure.com/adwords-for-lead-generation?utm_source=Event&utm_medium=booth&utm_campaign=Marketo%20Virtual%20Event%20sep2014`
 
 在此示例中，广告促销活动ID将显示：__GAId__ 2014年9月营销虚拟事件
 
@@ -41,7 +44,7 @@ ht-degree: 0%
 
 如果以上都不包含，此字段将为空。
 
-**广告营销活动名称** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**广告营销活动名称** |Buyer Touchpoint
 
 `1)`如果接触点来自付费搜索(AdWords/Bing Ads)，则此处将显示广告平台中的广告促销活动名称。
 
@@ -53,15 +56,15 @@ ht-degree: 0%
 
 如果以上都不包含，此字段将为空。
 
-**广告促销活动名称(FT)** | Buyer Touchpoint
+**广告促销活动名称(FT)** |Buyer Touchpoint
 
 此字段的填充方式与广告营销活动名称相同。 但是，此字段专门向您显示生成首次接触点的广告营销活动的名称。
 
-**广告促销活动名称(LC)** | Buyer Touchpoint
+**广告促销活动名称(LC)** |Buyer Touchpoint
 
 此字段的填充方式与广告营销活动名称相同。 但是，此字段专门向您显示生成商机创建接触点的广告营销活动的名称。
 
-**广告内容** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**广告内容** |Buyer Touchpoint
 
 `1)`如果接触点来自付费搜索(AdWords/Bing Ads)，则字段将显示广告平台中的完整广告副本。
 
@@ -71,25 +74,25 @@ ht-degree: 0%
 
 如果以上都不包含，则此字段将为空。
 
-**广告目标URL** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**广告目标URL** |Buyer Touchpoint
 
 `1)`如果接触点来自付费搜索，则此字段将显示您在单击搜索引擎中的广告后定向到的URL目标。
 
 如果接触点不是来自付费搜索，则字段将为空白。
 
-**广告组Id** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**广告组Id** |Buyer Touchpoint
 
 `1)`如果接触点来自付费搜索，则此处将显示来自AdWords/Bing Ads的广告组ID。
 
 如果接触点不是来自付费搜索，则字段将为空白。
 
-**广告组名称** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**广告组名称** |Buyer Touchpoint
 
 `1)`如果接触点来自付费搜索，则此处将显示AdWords/Bing Ads中的广告组名称。
 
 如果接触点不是来自付费搜索，则字段将为空白。
 
-**广告Id** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**广告Id** |Buyer Touchpoint
 
 `1)`如果接触点来自付费搜索，则此处将显示来自AdWords/Bing Ads的广告ID。
 
@@ -97,29 +100,29 @@ ht-degree: 0%
 
 如果接触点不是来自付费搜索，则字段将为空白。
 
-**归因%自定义模型** | Buyer Attribution Touchpoint
+**归因%自定义模型** |Buyer Attribution Touchpoint
 
 如果您使用自定义归因模型，则此字段根据在自定义模型中设置的值显示归属于接触点的收入百分比。
 
 如果您未使用自定义模型，则此字段将为空白。
 
-**归因%首次联系** | Buyer Attribution Touchpoint
+**归因%首次联系** |Buyer Attribution Touchpoint
 
 此字段将根据首次接触模型显示归属于接触点的收入百分比。
 
-**归因%已满** | Buyer Attribution Touchpoint
+**归因%已满** |Buyer Attribution Touchpoint
 
 此字段将根据完整路径模型显示归属于接触点的收入百分比。
 
-**归因%潜在客户创建** | Buyer Attribution Touchpoint
+**归因%潜在客户创建** |Buyer Attribution Touchpoint
 
 根据商机创建模型，此字段将显示归属于接触点的收入百分比。
 
-**归因% U型** | Buyer Attribution Touchpoint
+**归因% U型** |Buyer Attribution Touchpoint
 
 此字段将根据U形模型显示归属于接触点的收入百分比。
 
-**归因% W型** | Buyer Attribution Touchpoint
+**归因% W型** |Buyer Attribution Touchpoint
 
 此字段将根据W型模型显示归属于接触点的收入百分比。
 
@@ -127,69 +130,69 @@ ht-degree: 0%
 
 ## B {#b}
 
-**Marketo Measure机会金额** | Salesforce机会
+**Marketo Measure机会金额** |Salesforce机遇
 
 如果您使用自定义Amount字段来报告Opportunity收入，Marketo Measure将无法读取这些自定义Amount字段。 Marketo Measure Opportunity Amount是一个隐藏字段，用于创建工作流，以使Marketo Measure能够读取Opportunity上的自定义Amount字段。
 
-**浏览器** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**浏览器** |Buyer Touchpoint
 
-此字段显示Web会话期间使用的Web浏览器类型(Chrome、Safari、Firefox等)。
+此字段显示Web会话期间使用的Web浏览器类型（Chrome、Safari、Firefox等）。
 
 [单击此处返回页面顶部](#top)
 
 ## C {#c}
 
-**联系人** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**联系人** |Buyer Touchpoint
 
 字段显示接触点所属的联系人。
 
-**计数 — 自定义模型** | Buyer Attribution Touchpoint
+**计数 — 自定义模型** |Buyer Attribution Touchpoint
 
 如果您使用的是自定义归因模型，此字段会以小数形式显示根据自定义模型中设置的值分配给接触点的收入点数的百分比。
 
 如果您未使用自定义模型，则此字段将为空白。
 
-**计数 — 自定义模型** | Buyer Touchpoint
+**计数 — 自定义模型** |Buyer Touchpoint
 
 如果您使用的是自定义归因模型，此字段将以小数形式显示根据自定义模型中设置的值分配给接触点的归因点数的百分比。 由于此字段与Buyer Touchpoint对象相关，因此它并非收入点数的反映，而仅是归因点数的反映。
 
 如果您未使用自定义模型，则此字段将为空白。
 
-**计数 — 首次联系** | Buyer Attribution Touchpoint
+**计数 — 首次联系** |Buyer Attribution Touchpoint
 
 此字段以小数形式显示根据首次接触模型分配给接触点的收入点数的百分比。
 
-**计数 — 首次联系** | Buyer Touchpoint
+**计数 — 首次联系** |Buyer Touchpoint
 
 此字段以小数形式显示根据首次接触模型分配给接触点的归因点数的百分比。 如果接触点是首次接触，则此字段将始终为1.0（表示100%归因点数）。 如果接触点不是首次接触，则此字段将始终为0（表示0 %归因点数）。
 
 由于此字段与Buyer Touchpoint对象相关，因此它并非收入点数的反映，而仅是归因点数的反映。
 
-**计数 — 完整路径** | Buyer Attribution Touchpoint
+**计数 — 完整路径** |Buyer Attribution Touchpoint
 
 此字段以小数形式显示根据完整路径模型分配给接触点的收入百分比。
 
-**计数 — 潜在客户创建触控** | Buyer Attribution Touchpoint
+**计数 — 潜在客户创建触控** |Buyer Attribution Touchpoint
 
 此字段以小数形式显示根据商机创建模型分配给接触点的收入点数的百分比。
 
-**计数 — 潜在客户创建触控** | Buyer Touchpoint
+**计数 — 潜在客户创建触控** |Buyer Touchpoint
 
 此字段以小数形式显示根据潜在客户创建模型分配给接触点的归因点数的百分比。 如果接触点是潜在客户创建接触，则此字段将始终为1.0（表示100%归因点数）。 如果接触点不是“商机创建”接触点，则此字段将始终为0（表示0%的归因点数）。
 
 由于此字段与Buyer Touchpoint对象相关，因此它并非收入点数的反映，而仅是归因点数的反映。
 
-**计数 — U型** | Buyer Attribution Touchpoint
+**计数 — U型** |Buyer Attribution Touchpoint
 
 此字段以小数形式显示根据U形模型给予接触点的收入点数的百分比。
 
-**计数 — U型** | Buyer Touchpoint
+**计数 — U型** |Buyer Touchpoint
 
 此字段以小数形式显示根据U型模型分配给接触点的归因点数的百分比。 在U形模型中，点数在首次联系、商机创建联系以及在首次联系和商机创建联系之间发生的任何中间表单提交之间分配。
 
 由于此字段与Buyer Touchpoint对象相关，因此它并非收入点数的反映，而仅是归因点数的反映。
 
-**计数 — W型** | Buyer Attribution Touchpoint
+**计数 — W型** |Buyer Attribution Touchpoint
 
 此字段以小数形式显示根据W型模型给予接触点的点数百分比。
 
@@ -207,15 +210,15 @@ Marketo Measure ABTest — 用户参与您网站上的A/B测试的日期
 
 ## E {#e}
 
-**事件名称** | Marketo Measure事件
+**事件名称** |Marketo Measure活动
 
 此字段显示触发事件的操作的名称（即页面查看）。
 
-**事件值** | Marketo Measure事件
+**事件值** |Marketo Measure活动
 
 事件的描述（即主页）
 
-**试验名称** | Marketo Measure ABTest
+**试验名称** |Marketo Measure ABTest
 
 此字段显示试验的名称（即试验按钮）
 
@@ -227,11 +230,11 @@ Marketo Measure ABTest — 用户参与您网站上的A/B测试的日期
 
 ## F {#f}
 
-表单URL | Buyer Touchpoint、Buyer Attribution Touchpoint
+表单URL |Buyer Touchpoint
 
 此字段将显示发生表单填写的页面URL的缩短版本（无UTM参数）
 
-表单URL — 原始 | Buyer Touchpoint、Buyer Attribution Touchpoint
+表单URL — 原始 |Buyer Touchpoint
 
 此字段显示表单填写发生的整个页面URL，包括UTM参数
 
@@ -239,15 +242,15 @@ Marketo Measure ABTest — 用户参与您网站上的A/B测试的日期
 
 ## G {#g}
 
-地理城市 | Buyer Touchpoint、Buyer Attribution Touchpoint
+地理城市 |Buyer Touchpoint
 
 此字段显示领导/联系人访问您网站的城市的名称。 这是通过反向IP查找完成的。
 
-地理国家/地区 | Buyer Touchpoint、Buyer Attribution Touchpoint
+地理国家/地区 |Buyer Touchpoint
 
 此字段显示领导/联系人访问您网站的国家/地区。 这是通过反向IP查找完成的。
 
-地理区域 | Buyer Touchpoint、Buyer Attribution Touchpoint
+地理区域 |Buyer Touchpoint
 
 此字段显示领导/联系人访问您网站的区域或州。 这是通过反向IP查找完成的。
 
@@ -255,21 +258,21 @@ Marketo Measure ABTest — 用户参与您网站上的A/B测试的日期
 
 ## K {#k}
 
-**关键字Id** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**关键字Id** |Buyer Touchpoint
 
 如果接触点来自付费搜索，则此字段将显示广告平台(Adwords/BingAds)中的关键词ID。
 
 如果此接触点不是来自付费搜索，则此字段将为空白。
 
-**关键字MatchType** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**关键字MatchType** |Buyer Touchpoint
 
 如果接触点来自付费搜索，则此字段将显示广告平台(Adwords/Bing)中的匹配类型。
 
-**关键字文本** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**关键字文本** |Buyer Touchpoint
 
 `1)`如果接触点来自付费搜索，则此字段将显示广告平台(Adwords/BingAds)中的关键词文本或登陆页面URL中_bk参数的值。
 
-如`http://info.marketomeasure.com/intro-guide-b2b-marketing-attribution?_bt=12345678&_bk=marketing%20attribution&_bm=p&gclid=ABc123def456ghi789jkl`
+e.g. `http://info.marketomeasure.com/intro-guide-b2b-marketing-attribution?_bt=12345678&_bk=marketing%20attribution&_bm=p&gclid=ABc123def456ghi789jkl`
 
 `2)`如果接触点不是来自付费搜索，则此字段将显示登陆页面URL中的utm_term值。
 
@@ -281,15 +284,15 @@ Marketo Measure ABTest — 用户参与您网站上的A/B测试的日期
 
 ## L {#l}
 
-**登陆页面** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**登陆页面** |Buyer Touchpoint
 
 此字段显示在Web会话期间访问的第一个网页的URL的缩短版本（无UTM参数）。
 
-**登陆页面 — 原始** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**登陆页面 — 原始** |Buyer Touchpoint
 
 此字段显示在Web会话期间访问的第一个网页的整个URL（包括UTM参数）。
 
-**潜在客户** | Buyer Touchpoint、Marketo Measure人员
+**潜在客户** |Buyer Touchpoint、Marketo Measure人员
 
 此字段显示接触点所属的商机的名称。
 
@@ -297,17 +300,17 @@ Marketo Measure ABTest — 用户参与您网站上的A/B测试的日期
 
 ## M {#m}
 
-**营销渠道** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**营销渠道** |Buyer Touchpoint
 
 此字段显示接触点所属的营销活动或营销渠道的一般组（即付费搜索、直接、社交等）。 根据Marketo Measure应用程序中渠道的设置方式，对接触点进行分组。 有关营销渠道或如何设置渠道的详细信息，[单击此处](/help/channel-tracking-and-setup/online-channels/online-custom-channel-setup.md)。
 
-**营销渠道 — 路径** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**营销渠道 — 路径** |Buyer Touchpoint
 
 此字段显示营销渠道以及接触点所属的子渠道。 在下面的示例中，“营销渠道 — 路径”是Social.Linkedin，其中营销渠道是Social，子渠道是LinkedIn。
 
 ![](assets/1-3.png)
 
-**Medium** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**Medium** |Buyer Touchpoint
 
 `1)`如果接触点来自付费搜索，则此处将显示来自Adwords/BingAds的媒体（即CPC）。
 
@@ -323,7 +326,7 @@ Marketo Measure ABTest — 用户参与您网站上的A/B测试的日期
 
 O
 
-**机会** | Buyer Attribution Touchpoint
+**机会** |Buyer Attribution Touchpoint
 
 此字段显示BAT所属的销售机会。
 
@@ -331,7 +334,7 @@ O
 
 P
 
-**平台** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**平台** |Buyer Touchpoint
 
 此字段显示Web会话期间使用的计算机或电话类型以及操作系统类型。
 
@@ -339,7 +342,7 @@ P
 
 R
 
-**反向链接页面** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**反向链接页面** |Buyer Touchpoint
 
 此字段显示潜在客户/联系人最近访问过的、将他们定向到您网站的URL（不带UTM参数）。
 
@@ -349,33 +352,33 @@ R
 
 - 如果接触点来自Social，则字段将显示社交网站的URL（即LinkedIn）
 
-**反向链接页面 — 原始** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**反向链接页面 — 原始** |Buyer Touchpoint
 
 此字段显示与反向链接页面相同的信息，只是此字段将显示整个反向链接URL（包括UTM参数）。
 
-**收入 — 自定义模型** | Buyer Attribution Touchpoint
+**收入 — 自定义模型** |Buyer Attribution Touchpoint
 
 如果您使用的是自定义归因模型，此字段显示根据自定义模型中设置的归因百分比归因到接触点的美元收入金额。
 
 如果您不使用自定义模型，则金额将为0。
 
-**收入 — 首次联系** | Buyer Attribution Touchpoint
+**收入 — 首次联系** |Buyer Attribution Touchpoint
 
 此字段显示根据首次接触模型中的归因百分比归因到接触点的美元收入金额。
 
-**收入 — 完整路径** | Buyer Attribution Touchpoint
+**收入 — 完整路径** |Buyer Attribution Touchpoint
 
 此字段显示根据全路径模型中的归因百分比归因到接触点的美元收入金额。
 
-**收入 — 潜在客户创建触控** | Buyer Attribution Touchpoint
+**收入 — 潜在客户创建触控** |Buyer Attribution Touchpoint
 
 此字段显示根据商机创建模型中的归因百分比归因到接触点的美元收入金额。
 
-**收入 — U型** | Buyer Attribution Touchpoint
+**收入 — U型** |Buyer Attribution Touchpoint
 
 此字段显示根据U形模型中归因百分比归因到接触点的美元收入金额。
 
-**收入 — W型** | Buyer Attribution Touchpoint
+**收入 — W型** |Buyer Attribution Touchpoint
 
 此字段显示根据W型模型中的归因百分比归因到接触点的美元收入金额。
 
@@ -383,15 +386,15 @@ R
 
 S
 
-**Salesforce促销活动** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**Salesforce促销活动** |Buyer Touchpoint
 
 此字段显示接触点所属的Salesforce Campaign。
 
-**搜索短语** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**搜索短语** |Buyer Touchpoint
 
 如果接触点来自付费或免费搜索，此字段将显示在搜索引擎中键入的搜索短语。 但是，由于隐私原因，这些信息通常不可用。
 
-**区段** | Buyer Attribution Touchpoint
+**区段** |Buyer Attribution Touchpoint
 
 此字段将显示接触点所属的区段。 这将取决于您在Marketo Measure应用程序中配置分段规则的方式。
 
@@ -399,7 +402,7 @@ S
 
 T
 
-**接触点日期** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**接触点日期** |Buyer Touchpoint
 
 `1)`如果接触点来自在线源，则此字段将显示接触点发生的日期和时间。
 
@@ -407,21 +410,21 @@ T
 
 `3)`如果接触点来自活动，则此字段将显示在活动规则中选定为接触点日期的字段的日期和时间。
 
-**接触点日期（英尺）** | Buyer Touchpoint
+**接触点日期（英尺）** |Buyer Touchpoint
 
 此字段与接触点日期相同，但是此字段专门显示首次接触点发生的日期和时间。
 
-**接触点日期(LC)** | Buyer Touchpoint
+**接触点日期(LC)** |Buyer Touchpoint
 
 此字段与接触点日期相同，但是此字段专门显示商机创建接触点发生的日期和时间。
 
-**接触点位置** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**接触点位置** |Buyer Touchpoint
 
 此字段显示接触点的位置。 接触点的位置反映了客户历程中的主要里程碑接触点（即FT、Form、LC、OC、Closed）。 接触点的位置取决于它在客户历程中发生的时间，单个接触点可以有多个位置。 不同的接触点位置如下所示：
 
 首次联系(FT) — 某人与您的品牌进行的首次营销互动
 
-商机创建(LC) — 第一个已知的营销交互(通常是表单提交或Salesforce Campaign包含)
+商机创建(LC) — 第一个已知的营销交互（通常是表单提交或Salesforce Campaign包含）
 
 表单 — 访客填写在线表单时
 
@@ -429,7 +432,7 @@ T
 
 已关闭 — Opp关闭时（成功或失败）与之最接近的营销交互
 
-**接触点Source** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**接触点Source** |Buyer Touchpoint
 
 `1)`如果接触点来自付费搜索，则此字段将显示广告平台的名称(AdWords/BingAds)
 
@@ -443,15 +446,15 @@ T
 
 如果以上都不包含，则此字段将填充为“Web直接”或“Web”。
 
-**接触点Source (FT)** | Buyer Touchpoint
+**接触点Source (FT)** |Buyer Touchpoint
 
 此字段与接触点Source相同，但是此字段专门显示首次接触点的来源。
 
-**接触点Source (LC)** | Buyer Touchpoint
+**接触点Source (LC)** |Buyer Touchpoint
 
 此字段与接触点Source相同，但此字段专门显示商机创建接触点的来源。
 
-**接触点类型** | 可在Buyer Touchpoint和Buyer Attribution Touchpoint上找到。
+**接触点类型** |可在Buyer Touchpoint和Buyer Attribution Touchpoint上找到。
 
 此字段将显示接触点的交互类型。 它将显示为：JavaScript接触点的Web访问、Web窗体或Web聊天。 对于CRM Campaign接触点，将显示为CRM。 其中将填入“活动”接触点的任务或事件类型。
 
@@ -459,11 +462,11 @@ T
 
 U
 
-**唯一标识符** | Buyer Touchpoint、Buyer Attribution Touchpoint
+**唯一标识符** |Buyer Touchpoint
 
 与每个接触点关联的唯一ID
 
-**用户ID** | Marketo Measure ABTest
+**用户ID** |Marketo Measure ABTest
 
 优化每次使用的唯一标识代码
 
@@ -471,11 +474,11 @@ U
 
 ## V {#v}
 
-**变量** | Marketo Measure ABTest
+**变量** |Marketo Measure ABTest
 
 A/B测试的变体的名称
 
-**变量ID** | Marketo Measure ABTest
+**变量ID** |Marketo Measure ABTest
 
 每个A/B测试变体的唯一标识代码。
 

@@ -4,9 +4,12 @@ description: 页面布局说明 —  [!DNL Marketo Measure]
 title: 页面布局说明
 exl-id: 627377f0-d0cf-448c-a7b5-7eb5634b9627
 feature: Salesforce
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/KNYz3Z-pabPi2n-QEfpp-tUynRaO22WmEdY27r-amu8
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: 764
 ht-degree: 2%
 
 ---
@@ -79,7 +82,7 @@ ht-degree: 2%
    >
    >为每个部分选择“一列”格式。
 
-1. 将[!DNL Marketo Measure Insights]画布应用程序拖入新创建的分区。 单击 **Save**。有时，在放入画布应用程序之前必须先保存页面布局，因为Salesforce无法立即识别此布局。 因此，在创建部分后，保存页面布局，然后重新编辑以将画布应用程序拖动到该部分中。 这适用于每个对象。
+1. 将[!DNL Marketo Measure Insights]画布应用程序拖入新创建的分区。 单击 **Save**。 有时，在放入画布应用程序之前必须先保存页面布局，因为Salesforce无法立即识别此布局。 因此，在创建部分后，保存页面布局，然后重新编辑以将画布应用程序拖动到该部分中。 这适用于每个对象。
 
    >[!NOTE]
    >
@@ -160,7 +163,7 @@ ht-degree: 2%
 
 1. 按[!UICONTROL Touchpoint Date] > [!UICONTROL Ascending]排序。
 
-1. 在&#x200B;**[!UICONTROL New]**&#x200B;部分中取消选择[!UICONTROL Buttons]。
+1. 在[!UICONTROL Buttons]部分中取消选择&#x200B;**[!UICONTROL New]**。
 
 1. 单击 **[!UICONTROL Save]**。
 
@@ -186,7 +189,7 @@ ht-degree: 2%
 
 1. 按接触点日期>升序排序。
 
-1. 在&#x200B;**[!UICONTROL New]**&#x200B;部分中取消选择[!UICONTROL Buttons]。
+1. 在[!UICONTROL Buttons]部分中取消选择&#x200B;**[!UICONTROL New]**。
 
 1. 单击 **[!UICONTROL Save]**。
 

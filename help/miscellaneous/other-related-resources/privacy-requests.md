@@ -3,21 +3,25 @@ description: 隐私请求 —  [!DNL Marketo Measure]
 title: 隐私请求
 exl-id: 883e475f-9868-412a-b505-230556f38484
 feature: APIs, Tracking
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/y6cWoJaRD7Tf1o4-aCY9MJdcLGt4RVF-ATuiFpAxyWI
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2: id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+topic_v2: id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 25%
+source-wordcount: 283
+ht-degree: 26%
 
 ---
 
 # 隐私请求 {#privacy-requests}
 
-本文档概述了如何管理可通过[!DNL Marketo Measure] UI和[!DNL Privacy Service] API **[!DNL Privacy Service]发送给**&#x200B;的单个数据隐私请求。
+本文档概述了如何管理可通过[!DNL Privacy Service] UI和&#x200B;**[!DNL Privacy Service]API**&#x200B;发送给[!DNL Marketo Measure]的单个数据隐私请求。
 
 您可以通过两种方式提交单个请求以从[!DNL Marketo Measure]访问和删除使用者数据：
 
-* 通过[[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=zh-Hans){target="_blank"}。
-* 通过&#x200B;**[!DNL Privacy Service]API**。 请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hans){target="_blank"}和API引用[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}。
+* 通过[[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html){target="_blank"}。
+* 通过&#x200B;**[!DNL Privacy Service]API**。 请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target="_blank"}和API引用[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}。
 
 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans){target="_blank"}支持两种类型的请求：数据访问和数据删除。
 
@@ -29,11 +33,11 @@ ht-degree: 25%
 
 1. 确认以下各项：
 
-   a. IMS组织ID
+   答： IMS 组织 ID
 
-   b.要执行操作的人员的电子邮件地址
+   b. 要执行操作的人员的电子邮件地址
 
-   IMS 组织 ID 是一个由 24 个字符组成的字母数字字符串，其后附加有 @AdobeOrg。如果您的营销团队或内部 Adobe 系统管理员不知道您组织的 IMS 组织 ID，请通过 gdprsupport@adobe.com 与 Adobe 客户关怀团队联系。您需要 IMS 组织 ID 才能将请求提交到 Privacy API。
+   IMS 组织 ID 是一个由 24 个字符组成的字母数字字符串，其后附加有 @AdobeOrg。 如果您的营销团队或内部 Adobe 系统管理员不知道您组织的 IMS 组织 ID，请通过 gdprsupport@adobe.com 与 Adobe 客户关怀团队联系。 您需要 IMS 组织 ID 才能将请求提交到 Privacy API。
 
 1. 在[!DNL Privacy Service]中，您可以向[!DNL Marketo Measure]提交访问和删除请求，并检查现有请求的状态。
 
@@ -54,7 +58,7 @@ ht-degree: 25%
 
 &quot;include&quot;：
 
-* **marketoMeasure**(适用于该请求的Adobe产品)
+* **marketoMeasure**（适用于该请求的Adobe产品）
 
 “监管”：
 

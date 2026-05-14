@@ -3,9 +3,12 @@ description: 使用自定义收入金额的最佳实践 —  [!DNL Marketo Measu
 title: 利用自定义收入额的最佳实践
 exl-id: 553bd75a-512a-4733-a24b-8112eb420afc
 feature: Custom Revenue Amount
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/r0HE7od6BWa4ntQMPyrVqQWwebruGyxM3lhOOu6-RWc
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: 421
 ht-degree: 0%
 
 ---
@@ -16,7 +19,7 @@ ht-degree: 0%
 
 [!DNL Marketo Measure]的核心功能是能够将收入点数分配给购买者历程中的营销接触点。 准确收入归因的关键是[!DNL Marketo Measure]能够引用机会上的正确收入金额，这反过来又通过各种归因模型分布在不同营销接触点上。
 
-除非在实施期间另有指定，否则您的[!DNL Marketo Measure]实例将设置为引用收入归因的标准机会金额(SFDC默认值)。 但是，对于许多[!DNL Marketo Measure]帐户，此字段不能反映机会的准确收入金额。 在这些情况下，[!DNL Marketo Measure]提供为[!DNL Marketo Measure]设置自定义收入金额的功能，以便在归因接触点(BAT)之间引用和分发。
+除非在实施期间另有指定，否则您的[!DNL Marketo Measure]实例将设置为引用收入归因的标准机会金额（SFDC默认值）。 但是，对于许多[!DNL Marketo Measure]帐户，此字段不能反映机会的准确收入金额。 在这些情况下，[!DNL Marketo Measure]提供为[!DNL Marketo Measure]设置自定义收入金额的功能，以便在归因接触点(BAT)之间引用和分发。
 
 ## 最佳实践 {#best-practice}
 
@@ -28,7 +31,7 @@ ht-degree: 0%
    * 建议的ARR或合同总值
 * 不使用公式字段
 * 如果您使用自定义收入金额进行货币转换，则[!UICONTROL Marketo Measure Multiple Currencies]功能是首选方法。
-   * [!DNL Marketo Measure]多货币功能引用在[!DNL Salesforce]中建立的兑换率，以最好地确保货币兑换之间保持一致。 这允许您继续使用标准“金额”(SFDC默认值)或与[!DNL Salesforce]转化率相关的任何其他自定义金额字段。
+   * [!DNL Marketo Measure]多货币功能引用在[!DNL Salesforce]中建立的兑换率，以最好地确保货币兑换之间保持一致。 这允许您继续使用标准“金额”（SFDC默认值）或与[!DNL Salesforce]转化率相关的任何其他自定义金额字段。
 * 如果您更新要[!DNL Marketo Measure]引用的Amount字段，请使用数据加载器更新过去的业务机会，以确保收入数据一致，并通过工作流填充正确的字段
 
 ## 维护的最佳实践 {#best-practice-for-maintenance}

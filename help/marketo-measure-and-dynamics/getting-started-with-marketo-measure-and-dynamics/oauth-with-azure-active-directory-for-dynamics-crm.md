@@ -4,9 +4,12 @@ description: Dynamics CRM的OAuth与 [!DNL Azure Active Directory]  - [!DNL Mark
 title: 'Dynamics CRM的OAuth与 [!DNL Azure Active Directory] '
 exl-id: 0a2f6b29-541d-4965-a460-e6f19b934edb
 feature: Microsoft Dynamics
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/fwFE85VMaQdXhF-w28PofUHxOLR39lb60zLMzEo2GnM
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: 769
 ht-degree: 0%
 
 ---
@@ -15,7 +18,7 @@ ht-degree: 0%
 
 ## 受影响的人员 {#who-s-affected}
 
-此设置适用于使用Dynamics CRM和[!DNL Marketo Measure] (AAD)帐户的新[!DNL Azure Active Directory]客户，或者适用于希望使用OAuth从其旧用户名和密码迁移到[!DNL Azure Active Directory]的客户。
+此设置适用于使用Dynamics CRM和[!DNL Azure Active Directory] (AAD)帐户的新[!DNL Marketo Measure]客户，或者适用于希望使用OAuth从其旧用户名和密码迁移到[!DNL Azure Active Directory]的客户。
 
 >[!NOTE]
 >
@@ -25,7 +28,7 @@ ht-degree: 0%
 
 1. 登录到您的[Azure门户](https://portal.azure.com/#home)。
 
-1. 单击页面右上角的帐户，然后单击“切换目录”导航，然后选择相应的租户，以选择Azure AD租户。 如果您的帐户下只有一个Azure AD租户，或者您已选择适当的Azure AD租户，请跳过此步骤。
+1. 单击页面右上角的您的帐户，然后单击“切换目录”导航，然后选择相应的租户，以选择Azure AD租户。 如果您的帐户下只有一个Azure AD租户，或者如果您已经选择适当的Azure AD租户，请跳过此步骤。
 
    ![](assets/setup-2.png)
 
@@ -42,13 +45,13 @@ ht-degree: 0%
    ![](assets/setup-5.png)
 
 1. 按照提示创建应用程序。 它是Web应用程序还是公共客户端（移动和桌面）应用程序并不重要，但如果您想查看有关Web应用程序或公共客户端应用程序的特定示例，请查看[快速入门](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-overview)。\
-   a. Name是应用程序名称，它向最终用户描述您的应用程序。\
-   b.在“支持的帐户类型”下，选择任何组织目录中的帐户和个人Microsoft帐户。\
-   c.提供重定向URI。 对于Web应用程序，这是用户可以登录的应用程序基本URL。 例如：`http://localhost:12345`。对于公共客户端（移动和桌面），Azure AD使用它返回令牌响应。 输入特定于您的应用程序的值。 例如：`http://MyFirstAADApp`。
+   答： 名称是应用程序名称，向最终用户描述您的应用程序。\
+   b. 在支持的帐户类型下，选择任何组织目录中的帐户和个人Microsoft帐户。\
+   c. 提供重定向URI。 对于Web应用程序，这是用户可以登录的应用程序基本URL。 例如：`http://localhost:12345`。 对于公共客户端（移动和桌面），Azure AD会使用它返回令牌响应。 输入特定于您的应用程序的值。 例如：`http://MyFirstAADApp`。
 
-1. 完成注册后，Azure AD将为应用程序分配唯一的客户端标识符（应用程序ID）。 您需要在下一节中使用此值，因此请从应用程序页面中复制此值。
+1. 完成注册后，Azure AD将为应用程序分配一个唯一的客户端标识符（应用程序ID）。 您需要在下一节中使用此值，因此请从应用程序页面中复制此值。
 
-1. 若要在Azure门户中找到您的应用程序，请单击&#x200B;**[!UICONTROL App Registrations]**，然后单击&#x200B;**[!UICONTROL All Applications]**。 打开新创建的应用程序
+1. 要在Azure门户中找到您的应用程序，请单击&#x200B;**[!UICONTROL App Registrations]**，然后单击&#x200B;**[!UICONTROL All Applications]**。 打开新创建的应用程序
 
 1. 单击左侧菜单中的&#x200B;**[!UICONTROL Authentication]**。
 
@@ -110,13 +113,13 @@ ht-degree: 0%
 
 1. 在系统提示输入OAuth凭据时，填写上节中设置的客户端ID、客户端密钥和应用程序ID URI。
 
-a.客户端ID是上一节中步骤#7中的ID。 如果您未记下该变量，则应用程序ID将显示在应用程序注册的设置中。
+答： 客户端ID是上一节中步骤#7中的ID。 如果您未记下该变量，则应用程序ID将显示在应用程序注册的设置中。
 
-b.客户端密码是在Azure门户中为您的应用程序在“证书和密码”下创建的应用程序密码。
+b. 客户端密钥是在Azure门户中为您的应用程序在“证书和密钥”下创建的应用程序密钥。
 
 ![](assets/creating-2e.png)
 
-c.应用程序ID URI是目标Web API（安全资源）的URL。 要查找应用程序ID URL，请在Azure Portal中，单击[!DNL Azure Active Directory]，单击应用程序注册，打开应用程序的“设置”页面，然后单击“属性”。 它也可以是外部资源，如`https://graph.microsoft.com`。 这通常是Dynamics实例的URL。
+c. 应用程序ID URI是目标Web API（安全资源）的URL。 要查找应用程序ID URL，请在Azure门户中单击[!DNL Azure Active Directory]，再单击“应用程序注册”，打开应用程序的“设置”页面，然后单击“属性”。 它也可以是外部资源，如`https://graph.microsoft.com`。 这通常是Dynamics实例的URL。
 
 1. 单击&#x200B;**[!UICONTROL Submit]**&#x200B;后，系统将提示您使用[!DNL Azure Active Directory]登录。 身份验证成功后，你的Dynamics帐户将作为[!DNL Marketo Measure]中的数据提供程序进行连接。
 

@@ -4,9 +4,12 @@ description: 重新授权连接的帐户 —  [!DNL Marketo Measure]
 title: 重新授权连接的帐户
 exl-id: 7abd1d67-5bed-45bb-844f-0ffd23c3d7f8
 feature: APIs, Integration
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/mp53G9-w1l43mBQM1ijW8tTh7rNQ75cPAimZA-kdLvs
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2: id: c8f57308-7e33-4e41-a385-b55041c78939id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: 188
 ht-degree: 0%
 
 ---
@@ -24,7 +27,7 @@ ht-degree: 0%
 ## 重新授权断开连接的帐户 {#re-authorizing-disconnected-accounts}
 
 1. 转到[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}并登录。
-1. 选择左上角&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡下的[!UICONTROL My Account]。
+1. 选择左上角[!UICONTROL My Account]选项卡下的&#x200B;**[!UICONTROL Settings]**。
 1. 在左侧找到集成部分，然后单击&#x200B;**[!UICONTROL Connections]**。
 1. 选择需要重新连接的帐户旁边的红色键符号。
 1. 此时会出现一个弹出窗口，提示您提供帐户的登录详细信息。

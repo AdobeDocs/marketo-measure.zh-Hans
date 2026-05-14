@@ -3,10 +3,15 @@ description: 错误通知 —  [!DNL Marketo Measure]
 title: 错误通知
 feature: Fundamentals
 exl-id: ed07eed6-ddeb-4856-a1ac-ea3d571283f6
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/SDJqtYTppmKWPpLQrhI9EkK-mYQ3f3Xh2BLoWzqIGx4
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2: id: c8f57308-7e33-4e41-a385-b55041c78939
+subfeature_v2: id: ec526b86-7a6d-4fae-87bd-f61c37b9b506
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 0%
+source-wordcount: 1915
+ht-degree: 1%
 
 ---
 
@@ -30,7 +35,7 @@ ht-degree: 0%
       <td>API已禁用</td>
       <td>Crm导入期间出错： API_DISABLED ：已为此用户禁用API调用</td>
       <td>已为Marketo Measure用户禁用API权限。</td>
-      <td>请参阅以下Salesforce文档，了解如何启用<a href="https://help.salesforce.com/s/articleView?language=en_US&id=sf.branded_apps_commun_api_permset.htm&type=5">API访问</a>。</td>
+      <td>请参阅以下Salesforce文档，了解如何启用<a href="https://help.salesforce.com/s/articleView?language=en_US&amp;id=sf.branded_apps_commun_api_permset.htm&amp;type=5">API访问</a>。</td>
     </tr>
     <tr>
       <td>API_LIMIT_EXCEEDED</td>
@@ -64,7 +69,7 @@ ht-degree: 0%
 您或您的组织已超出此功能的最大限制。 错误ID：123456</td>
       <td>无法保存记录，因为它不符合Salesforce组织中设置的触发流程规则。</td>
       <td>查看通知消息的完整详细信息，并查看Salesforce组织中的流量触发器。
-可以在此处<a href="https://admin.salesforce.com/blog/2023/what-is-a-record-triggered-flow#:~:text=A%20record%2Dtriggered%20flow%20allows,is%20created%20and%2For%20updated">找到有关流触发器</a>的Salesforce文档。
+可以在此处</a>找到有关流触发器<a href="https://admin.salesforce.com/blog/2023/what-is-a-record-triggered-flow#:~:text=A%20record%2Dtriggered%20flow%20allows,is%20created%20and%2For%20updated">的Salesforce文档。
       </td>
     </tr>
     <tr>
@@ -79,7 +84,7 @@ ht-degree: 0%
       缺少对象的权限。</td>
       <td>查看导致插入/更新失败的触发器代码。 有关触发器的更多详细信息，请参阅以下Salesforce文档：
         <ul>
-          <li><a href="https://help.salesforce.com/s/articleView?id=sf.code_manage_triggers.htm&type=5">Apex触发器</a>
+          <li><a href="https://help.salesforce.com/s/articleView?id=sf.code_manage_triggers.htm&amp;type=5">Apex触发器</a>
           </li>
           <li><a href="https://admin.salesforce.com/blog/2023/what-is-a-record-triggered-flow#:~:text=A%20record%2Dtriggered%20flow%20allows,is%20created%20and%2For%20updated">流触发器</a>
           </li>
@@ -92,7 +97,7 @@ ht-degree: 0%
       <td>DUPLICATES_DETECTED</td>
       <td>在Crm导出期间出错： DUPLICATES_DETECTED ：实体类型“Contact”： CRM错误代码： DUPLICATES_DETECTED， CRM错误消息：您正在创建重复记录。 我们建议您改用现有记录。，RecordId： 0123456</td>
       <td>正在导入到Salesforce组织的记录已存在。</td>
-      <td><a href="https://help.salesforce.com/s/articleView?id=000390009&type=1">禁用“重复规则”设置</a>以允许重复项。
+      <td><a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">禁用“重复规则”设置</a>以允许重复项。
           <p>
           从<a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自定义验证规则</a>中排除Marketo Measure专用用户。</td>
     </tr>
@@ -100,7 +105,7 @@ ht-degree: 0%
       <td>DUPLICATE_VALUE</td>
       <td>在Crm导出期间出错： DUPLICATE_VALUE ：实体类型“潜在客户”： CRM错误代码： DUPLICATE_VALUE， CRM错误消息：发现重复值： Email_Unique__c重复记录ID为123、记录ID为456的值</td>
       <td>要导入到Salesforce组织的字段不允许存在重复值。</td>
-      <td>在Salesforce中取消选中<a href="https://help.salesforce.com/s/articleView?id=000390009&type=1">“唯一复选框”</a>。
+      <td>在Salesforce中取消选中<a href="https://help.salesforce.com/s/articleView?id=000390009&amp;type=1">“唯一复选框”</a>。
           <p>
           从<a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自定义验证规则</a>中排除Marketo Measure专用用户。</td>
     </tr>
@@ -120,16 +125,16 @@ ht-degree: 0%
       <td>FIELD_FILTER_VALIDATION_EXCEPTION</td>
       <td>在Crm导出期间出错：FIELD_FILTER_VALIDATION_EXCEPTION ：实体类型“潜在客户”：CRM错误代码：FIELD_FILTER_VALIDATION_EXCEPTION，字段：User__C，CRM ErrorMessage：值不存在或与筛选条件不匹配。 请选择角色为“Account Executive， Inside Sales”的用户；RecordId： 0123456</td>
       <td>修改后的记录不再满足对象上定义的查找过滤器。</td>
-      <td>检查Marketo Measure尝试修改的对象上的筛选器。 请参阅<a href="https://help.salesforce.com/s/articleView?id=000384756&type=1">此Salesforce文章</a>，了解如何检查对象上的筛选器。</td>
+      <td>检查Marketo Measure尝试修改的对象上的筛选器。 请参阅<a href="https://help.salesforce.com/s/articleView?id=000384756&amp;type=1">此Salesforce文章</a>，了解如何检查对象上的筛选器。</td>
     </tr>
     <tr>
       <td>FIELD_INTEGRITY_EXCEPTION</td>
-      <td>在Crm导出期间出错： FIELD_INTEGRITY_EXCEPTION ：实体类型“潜在客户”： CRM错误代码： FIELD_INTEGRITY_EXCEPTION，字段：国家/地区， CRM错误消息：该国家/地区存在问题，即使它看起来可能正确也是如此。 请从有效国家/地区列表中选择国家/地区。：国家/地区，记录ID：0123456</td>
+      <td>在Crm导出期间出错： FIELD_INTEGRITY_EXCEPTION ：实体类型“潜在客户”： CRM错误代码： FIELD_INTEGRITY_EXCEPTION，字段：国家/地区， CRM错误消息：该国家/地区存在问题，即使它看起来可能正确也是如此。 请从有效国家/地区列表中选择一个国家/地区。国家/地区，记录ID：0123456</td>
       <td>记录的预期类型不匹配。</td>
       <td>这种情况的最常见情况是未遵循Salesforce组织内设置的州/国家/地区命名标准，因为州/国家字段已标准化，仅接受某些选择列表值。 要解决此问题，您可以：
         <ul>
           <li>更新记录以遵循组织对该字段的接受值。 请联系您的SFDC管理员以获取已接受值的列表。</li>
-          <li><a href="https://help.salesforce.com/s/articleView?id=sf.admin_state_country_picklist_enable.htm&type=5">禁用州/国家/地区选择列表</a>。
+          <li><a href="https://help.salesforce.com/s/articleView?id=sf.admin_state_country_picklist_enable.htm&amp;type=5">禁用州/国家/地区选择列表</a>。
           </li>
         </ul>
       </td>
@@ -138,7 +143,7 @@ ht-degree: 0%
       <td>INACTIVE_OWNER_OR_USER</td>
       <td>在Crm导出期间出错： INACTIVE_OWNER_OR_USER ：实体类型“联系人”： CRM错误代码： INACTIVE_OWNER_OR_USER， CRM错误消息：已将非活动用户[1234]作为联系人的所有者执行的操作，记录ID： 0123456</td>
       <td>Marketo Measure缺少“使用非活动所有者更新记录”权限。</td>
-      <td>向Marketo Measure授予“<a href="https://help.salesforce.com/s/articleView?id=000386699&type=1">更新非活动所有者的记录</a>”权限。</td>
+      <td>向Marketo Measure授予“<a href="https://help.salesforce.com/s/articleView?id=000386699&amp;type=1">更新非活动所有者的记录</a>”权限。</td>
     </tr>
     <tr>
       <td>UNFFECTED_ACCESS_OR_READONLY</td>
@@ -156,7 +161,7 @@ ht-degree: 0%
             <a href="/help/marketo-measure-and-adobe/marketo-measure-integrations-with-adobe-analytics.md">Marketo Measure与Adobe Analytics的集成</a>
           </li>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html?lang=zh-Hans">创建客户属性来源并上传数据文件</a>
+            <a href="https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html">创建客户属性来源并上传数据文件</a>
           </li>
         </ul>
       </td>
@@ -171,15 +176,15 @@ ht-degree: 0%
     </tr>
     <tr>
       <td>MISSING_BIZIBLE_CUSTOM_FIELDS_PERMISSIONS</td>
-      <td>在Crm导出期间出错： MISSING_BIZIBLE_CUSTOM_FIELDS_PERMISSIONS ：实体类型“Campaign”： CRM错误代码： INVALID_FIELD_FOR_INSERT_UPDATE，字段： bizible2__UniqueId__c， CRM错误消息：无法创建/更新字段： bizible2__UniqueId__c。请检查此字段的安全设置，并验证是否为配置文件或权限集的读/写。</td>
+      <td>在Crm导出期间出错： MISSING_BIZIBLE_CUSTOM_FIELDS_PERMISSIONS ：实体类型“Campaign”： CRM错误代码： INVALID_FIELD_FOR_INSERT_UPDATE，字段： bizible2__UniqueId__c， CRM错误消息：无法创建/更新字段： bizible2__UniqueId__c。 请检查此字段的安全设置，并验证是否为配置文件或权限集的读/写。</td>
       <td>Marketo Measure缺少bizible字段的权限。</td>
-      <td>我们需要对以“bizible2__”为前缀的所有字段具有读写权限。 这些字段的完整列表可在本文<a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">中找到</a>。</td>
+      <td>我们需要对以“bizible2__”为前缀的所有字段具有读写权限。 这些字段的完整列表可在本文</a>中找到<a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">。</td>
     </tr>
     <tr>
       <td>MISSING_CONVERTED_LEAD_PERMISSION</td>
       <td>Crm导出期间出错： MISSING_CONVERTED_LEAD_PERMISSION</td>
       <td>Marketo Measure缺少“查看/编辑已转换的潜在客户”权限</td>
-      <td>有关在CRM<br/>中启用此权限的相关帮助，请参阅以下Experience League文档
+      <td>有关在CRM中启用此权限的相关帮助，请参阅以下Experience League文档<br/>
           <a href="/help/marketo-measure-salesforce-reporting/additional-functionality/enabling-the-permission-to-edit-converted-leads.md">正在启用权限以编辑已转换的潜在客户</a></td>
     </tr>
     <tr>
@@ -255,7 +260,7 @@ ht-degree: 0%
       <td>要更新的记录不符合Salesforce组织中所设置的验证规则。</td>
       <td>从<a href="https://trailhead.salesforce.com/content/learn/modules/validation-rules/bypass-your-validation-rules">自定义验证规则</a>中排除Marketo Measure专用用户。
       <p>
-      更新<a href="https://help.salesforce.com/s/articleView?id=sf.fields_about_field_validation.htm&type=5">验证规则</a>。</td>
+      更新<a href="https://help.salesforce.com/s/articleView?id=sf.fields_about_field_validation.htm&amp;type=5">验证规则</a>。</td>
     </tr>
     <tr>
       <td>RESTRICT_PICKLIST_VALUES_ENABLED</td>

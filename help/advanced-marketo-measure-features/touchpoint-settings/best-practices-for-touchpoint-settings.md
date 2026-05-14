@@ -3,9 +3,12 @@ description: 接触点设置的最佳实践 —  [!DNL Marketo Measure]
 title: 接触点设置的最佳实践
 exl-id: 01e314a6-e33d-45cd-aaa3-c212afec07d1
 feature: Touchpoints
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/57Y-eSngdDje7RcPmmKobrzk2-QWrRyxN2rIVtdrOLQ
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: 651
 ht-degree: 0%
 
 ---
@@ -14,7 +17,7 @@ ht-degree: 0%
 
 ## 概述 {#overview}
 
-[!UICONTROL Touchpoint Settings]应用的[!DNL Marketo Measure]部分允许您设置规则，这些规则将禁止或删除[!DNL Marketo Measure]数据和相关系统中的接触点。 这些规则可帮助您隔离不需要在您的买方接触点数据中表示的特定数据集，或者您不希望在不干扰跟踪和数据收集的情况下接收归因点数的数据集。
+[!DNL Marketo Measure]应用的[!UICONTROL Touchpoint Settings]部分允许您设置规则，这些规则将禁止或删除[!DNL Marketo Measure]数据和相关系统中的接触点。 这些规则可帮助您隔离不需要在您的买方接触点数据中表示的特定数据集，或者您不希望在不干扰跟踪和数据收集的情况下接收归因点数的数据集。
 
 **接触点移除**&#x200B;意味着[!DNL Marketo Measure]将从您的CRM中清除（即移除）符合规则条件的任何接触点。 数据可以在[!DNL Marketo Measure] ROI仪表板（发现）中报告，但不显示在CRM中。 通常用于减轻CRM中数据存储限制的压力
 

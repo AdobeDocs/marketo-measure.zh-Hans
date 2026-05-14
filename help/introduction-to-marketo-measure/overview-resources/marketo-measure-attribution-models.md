@@ -4,9 +4,11 @@ description: Marketo Measure归因模型 — Marketo Measure — 产品文档
 title: Marketo Measure归因模型
 exl-id: d8f76f29-e7c9-4b2d-b599-e80fd93c4687
 feature: Attribution
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/auiVcEzz1L3cujxvhEw6C7gig67ZHZCMKmB87oPxjVo
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: 777
 ht-degree: 0%
 
 ---
@@ -31,8 +33,8 @@ Marketo Measure提供六种类型的归因模型：
 
 ![](assets/1-1.png)
 
-在&#x200B;**单次接触模型**&#x200B;中，归因点数仅归因于一个里程碑接触点，因此名称为“单次接触”。
-在&#x200B;**多点接触模型**&#x200B;中，大多数归因点数分配给两个或更多里程碑接触点。 剩余的点数归于里程碑接触点之间的接触点。
+在&#x200B;**单次接触模型**中，归因点数仅归因于一个里程碑接触点，因此名称为“单次接触”。
+在**多点接触模型**&#x200B;中，大多数归因点数分配给两个或更多里程碑接触点。 剩余的点数归于里程碑接触点之间的接触点。
 
 接下来的几个部分介绍了每个归因模型以及归因点数的分配方式。
 

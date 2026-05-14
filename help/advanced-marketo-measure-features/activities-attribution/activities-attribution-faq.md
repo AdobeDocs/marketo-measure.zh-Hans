@@ -4,9 +4,11 @@ description: 活动归因常见问题解答 —  [!DNL Marketo Measure]
 title: 活动归因常见问题解答
 exl-id: 6272024f-b6ae-4aa7-ba92-c9f183549614
 feature: Attribution
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/o26ZNdZWcbIR7ghclTqOZLtKUx10t4wVHbwSahFluIo
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: 764
 ht-degree: 0%
 
 ---
@@ -29,7 +31,7 @@ Activities对象作为Task和Event对象的伞形或父对象。 活动基本上
 
 **如果我有具有相同周期性任务的潜在客户或联系人，我是否会看到所有这些任务的买方接触点？**
 
-可以。已同步的活动与创建的接触点之间存在1:1关系。
+可以。 已同步的活动与创建的接触点之间存在1:1关系。
 
 **我如何知道哪些记录导致创建了接触点？**
 

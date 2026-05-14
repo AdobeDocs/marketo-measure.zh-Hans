@@ -4,9 +4,13 @@ description: '[!DNL Facebook] API - [!DNL Marketo Measure]'
 title: '[!DNL Facebook] API'
 exl-id: d6d18545-baae-4103-b0a6-c3de681ec833
 feature: APIs, Integration, UTM Parameters
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/yW6j0Ha8-O0-AQo2ledBBpzji3hy7UHxFPa5L-9WNEg
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2: id: c8f57308-7e33-4e41-a385-b55041c78939id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+subfeature_v2: id: fabdc8ff-b627-44fc-b09d-973166bc2b14
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: 485
 ht-degree: 0%
 
 ---
@@ -17,7 +21,7 @@ ht-degree: 0%
 
 与我们的AdWords和[!DNL Bing Ads]集成类似，我们的[!DNL Facebook]集成执行两项基本操作：
 
-* 使用[!DNL Facebook]参数(_bf)自动标记所有[!DNL Marketo Measure]广告
+* 使用[!DNL Marketo Measure]参数(_bf)自动标记所有[!DNL Facebook]广告
 * 下载所有有效Facebook广告的广告成本信息
 
 ## 如何配置[!DNL Facebook]集成 {#how-to-configure-the-facebook-integration}
@@ -34,7 +38,7 @@ ht-degree: 0%
    >连接[!DNL Facebook Ads]帐户的人员必须是[!DNL Facebook Ads]帐户中的管理员。
 
 1. 将[!DNL Marketo Measure]连接到您的Facebook帐户后，单击该帐户旁边的铅笔图标。
-1. 在此视图中，移动“自动标记？” 切换到“是”。 然后，选中[!UICONTROL Learn More]部分中的复选框以同意条款和条件。 确保[!UICONTROL Auto-tagging]切换仍设置为“[!UICONTROL Yes]”。
+1. 在此视图中，将“自动标记？”切换开关移动到“是”。 然后，选中[!UICONTROL Learn More]部分中的复选框以同意条款和条件。 确保[!UICONTROL Auto-tagging]切换仍设置为“[!UICONTROL Yes]”。
 
 ## 连接帐户 {#connecting-the-account}
 
@@ -87,7 +91,7 @@ ht-degree: 0%
    <td><p>"[!DNL Facebook]"或[utm_source]（如果提供）</p></td> 
   </tr> 
   <tr> 
-   <td><p>媒介</p></td> 
+   <td><p>中</p></td> 
    <td><p>"Social"，或者[utm_medium]（如果提供）</p></td> 
   </tr> 
   <tr> 
@@ -131,7 +135,7 @@ ht-degree: 0%
 
 ## 常见问题解答 {#faq}
 
-**问：[!DNL Facebook]支持哪些[!DNL Marketo Measure]广告？**
+**问：[!DNL Marketo Measure]支持哪些[!DNL Facebook]广告？**
 
 答：轮播，单个图像。 当前不是视频、幻灯片或收藏集。
 
