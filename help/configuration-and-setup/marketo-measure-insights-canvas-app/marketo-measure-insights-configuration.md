@@ -4,9 +4,15 @@ description: '[!DNL Marketo Measure]分析配置 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]分析配置'
 exl-id: f6fe296b-d22a-43f2-b124-5d4b2f74d67a
 feature: Reporting
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/5i-eUsazdk6Ahr91VhW31gynWc42FF-TMOs-3PDIZs0
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: 106
 ht-degree: 0%
 
 ---
@@ -15,7 +21,7 @@ ht-degree: 0%
 
 应将[!DNL Marketo Measure]分析画布应用程序添加到潜在客户页面布局，但需要在[!DNL Salesforce]安装程序的“连接的应用程序”部分进行其他设置。 按照这些说明操作，以确保Canvas应用程序具有适当的权限。
 
-1. 导航到[!DNL Salesforce]安装程序，然后单击&#x200B;**[!UICONTROL Connected Apps]**&#x200B;选项卡下的[!UICONTROL Manage Apps]。
+1. 导航到[!DNL Salesforce]安装程序，然后单击[!UICONTROL Manage Apps]选项卡下的&#x200B;**[!UICONTROL Connected Apps]**。
 
 1. 从填充的列表中选择[!DNL Marketo Measure Insights]。
 

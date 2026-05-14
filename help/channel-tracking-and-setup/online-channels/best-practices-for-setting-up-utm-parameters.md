@@ -4,10 +4,13 @@ description: 设置UTM参数的最佳实践 —  [!DNL Marketo Measure]
 title: 设置UTM参数的最佳实践
 exl-id: 56019f41-b6ba-48c1-9bef-2a5f56d2d5f4
 feature: UTM Parameters
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/DtL-NA5HSr40pOEJ0iCge--9Aa-reP1PRyJIw3qfAqM
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 0%
+source-wordcount: 453
+ht-degree: 1%
 
 ---
 
@@ -33,7 +36,7 @@ UTM参数是切分营销数据的好方法。 [!DNL Marketo Measure]使用和捕
 
 **utm_campaign**：此字段映射到广告促销活动名称。 使用utm_campaign表示促销活动的标题，如广告平台中的标题，或内部引用的标题。
 
-此参数也是表示地理位置、广告网络类型（显示v.搜索）等信息的良好参数。
+此参数也是表示地理位置、广告网络类型(display v. 搜索)，等等。
 
 建议使用下划线而不是空格，并避免使用标点。 这减少了浏览器在读取参数时编码错误的可能性。
 

@@ -4,9 +4,14 @@ description: 营销渠道和子渠道 —  [!DNL Marketo Measure]
 title: 营销渠道和子渠道
 exl-id: fbe2a994-cf6d-439c-af96-a562216434cc
 feature: Channels
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/GsWMfMGV23mxLuH6pvKyy-avcg2Tmq3h9sq0pdARiE0
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: 453
 ht-degree: 2%
 
 ---
@@ -39,7 +44,7 @@ ht-degree: 2%
 
 **子渠道**
 
-子渠道是存储传入的潜在客户时遇到的第二个难题。 子渠道仅讲述使用了您的营销渠道的&#x200B;_哪个_&#x200B;迭代的故事。 例如，在付费社交营销渠道中，您可能有&#x200B;**AdWords**、**BingAds**、**Facebook**&#x200B;等等的子渠道。 子渠道通常对应于在URL中找到的utm_source参数值。
+子渠道是存储传入的潜在客户时遇到的第二个难题。 子渠道仅讲述使用了您的营销渠道的&#x200B;_哪个_&#x200B;迭代的故事。 例如，在付费社交营销渠道中，您可能有&#x200B;**AdWords**、**BingAds**、**Facebook**&#x200B;等等的子渠道。子渠道通常对应于在URL中找到的utm_source参数值。
 
 ## 用例示例 {#use-case-example}
 
@@ -64,7 +69,7 @@ ht-degree: 2%
 * PR
 * 反向链接程序
 
-**子渠道(接触点Source)**
+**子渠道（接触点Source）**
 
 * Google AdWords
 * BingAds

@@ -4,10 +4,15 @@ description: 报告有无买方归因接触点的商机 —  [!DNL Marketo Measu
 title: 报告有无买方归因接触点的商机
 exl-id: 3c658177-31e1-46b8-bc6b-e7a372ab187f
 feature: Touchpoints, Attribution, Reporting
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/F4X4FtvzKwcoj2j1f8rTDtg21f3uMqq173jrnZ379VY
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 0%
+source-wordcount: 176
+ht-degree: 2%
 
 ---
 
@@ -35,7 +40,7 @@ ht-degree: 0%
 
    ![](assets/3-1.jpg)
 
-1. 从那里，您将将Opportunities对象链接到Buyer Attribution接触点对象。 确保您选择按钮“A”记录可能具有也可能不具有相关“B”记录。 完成后单击&#x200B;**[!UICONTROL Save]**。
+1. 从那里，您将将Opportunities对象链接到Buyer Attribution接触点对象。 确保您选择按钮“A”记录可能具有也可能不具有相关“B”记录。 完成后，单击 **[!UICONTROL Save]**。
 
    ![](assets/4-1.jpg)
 

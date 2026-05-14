@@ -4,9 +4,14 @@ description: 我的报告中的重复记录 —  [!DNL Marketo Measure]
 title: 我的报告中的重复记录
 exl-id: 4ee42371-5b67-4c69-9b49-3249f33614d0
 feature: Reporting
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/jnfw-d0aoXenk-beBuQYFd2IbVZVK4ypvqaOkvpnYxk
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: 288
 ht-degree: 0%
 
 ---
@@ -17,7 +22,7 @@ ht-degree: 0%
 >
 >您可能会在文档中看到指定“[!DNL Marketo Measure]”的说明，但在您的CRM中仍会看到“[!DNL Bizible]”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
-当您深入研究[!DNL Marketo Measure]中的[!DNL Salesforce]报告时，您可能会开始在报告中找到“重复”记录。 当您查看[!DNL Marketo Measure]现成报告时，您可能会遇到这种感觉。
+当您深入研究[!DNL Salesforce]中的[!DNL Marketo Measure]报告时，您可能会开始在报告中找到“重复”记录。 当您查看[!DNL Marketo Measure]现成报告时，您可能会遇到这种感觉。
 
 在使用“采购员接触点”对象或Buyer Attribution Touchpoint对象进行报告时，请务必了解一点，您不再报告销售线索、联系人或业务机会的数量，而是报告与这些标准对象（销售线索、联系人、业务机会）关联的“采购员接触点”或“采购员归因接触点”的数量。
 

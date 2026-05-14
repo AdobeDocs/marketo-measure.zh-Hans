@@ -4,16 +4,23 @@ description: 营销渠道成本 —  [!DNL Marketo Measure]
 title: 营销渠道成本
 exl-id: 36ccaff3-db55-47bd-a24e-4aa1894f13e0
 feature: Channels, Spend Management
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/Mjpr4y4vxdeefsbULVxjk3Gf6jdy7Q2ST70gg73dfqk
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: 1277
 ht-degree: 0%
 
 ---
 
 # 营销渠道成本 {#marketing-channel-costs}
 
-使用[!DNL Marketo Measure]的最根本优势之一是，能够根据需要尽可能详细地将营销工作与对收入的影响直接联系起来。 投资回报率有可能出现在接触点层面。 若要利用此优势，必须将渠道成本上传到[!DNL Marketo Measure]应用程序。 ROI报告会自动创建并出现在&#x200B;**experience.adobe.com/marketo-measure**&#x200B;的[营销ROI仪表板](https://experience.adobe.com/marketo-measure){target="_blank"}中。
+使用[!DNL Marketo Measure]的最根本优势之一是，能够根据需要尽可能详细地将营销工作与对收入的影响直接联系起来。 投资回报率有可能出现在接触点层面。 若要利用此优势，必须将渠道成本上传到[!DNL Marketo Measure]应用程序。 ROI报告会自动创建并出现在[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}的&#x200B;**营销ROI仪表板**&#x200B;中。
 
 [单击此处直接导航到说明。](/help/marketing-spend/spend-management/marketing-channel-costs.md#uploading-marketing-costs)
 
@@ -67,7 +74,7 @@ ht-degree: 0%
 
 [!DNL Marketo Measure]附带13个默认渠道，可以对其使用或展开。 此外，还可创建多达40个在线和离线渠道以适应您独特的营销结构。 在此基础上，可创建总计200个子渠道以支持这些在线和离线渠道。
 
-[!DNL Marketo Measure]将自动从与API集成的平台(如Bing Ads和Google AdWords)下载营销渠道成本。 需要手动上传未与[!DNL Marketo Measure]集成的平台的成本。 在上传成本数据之前，应设置营销渠道。
+[!DNL Marketo Measure]将自动从与API集成的平台（如Bing Ads和Google AdWords）下载营销渠道成本。 需要手动上传未与[!DNL Marketo Measure]集成的平台的成本。 在上传成本数据之前，应设置营销渠道。
 
 ## 上传营销成本 {#uploading-marketing-costs}
 
@@ -75,13 +82,13 @@ ht-degree: 0%
 
 **步骤1：导航到[!DNL Marketo Measure]应用程序中的“营销支出”页面。**
 
-转到&#x200B;**[!UICONTROL My Account]**&#x200B;菜单，单击&#x200B;**[!UICONTROL Settings]**，然后导航到&#x200B;**[!UICONTROL Marketing Spend]**&#x200B;部分下的左侧边栏上的&#x200B;**[!UICONTROL Reporting]**&#x200B;选项。
+转到&#x200B;**[!UICONTROL My Account]**&#x200B;菜单，单击&#x200B;**[!UICONTROL Settings]**，然后导航到&#x200B;**[!UICONTROL Reporting]**&#x200B;部分下的左侧边栏上的&#x200B;**[!UICONTROL Marketing Spend]**&#x200B;选项。
 
 ![](assets/1.png)
 
 **步骤2：下载当前成本CSV**
 
-导航到屏幕右侧并单击&#x200B;**[!UICONTROL Download Current Costs]。**&#x200B;此选项允许您下载CSV格式的电子表格。
+导航到屏幕右侧，然后单击&#x200B;**[!UICONTROL Download Current Costs].** 利用此选项，您可以下载CSV格式的电子表格。
 
 ![](assets/2.png)
 
@@ -91,7 +98,7 @@ ht-degree: 0%
 
 导入工作表后，进行所需的更改，如向渠道和子渠道添加成本或更新现有信息。
 
-检查工作表中的逻辑规则。 每一行应包含一个通道及其一个子通道，通道末尾以一个(.)点分隔。 始终如一地使用此格式很重要。
+检查工作表中的逻辑规则。 每行应包含一个渠道及其子渠道之一，以(.)分隔 点在末尾。 始终如一地使用此格式很重要。
 
 例如，要将Facebook指示为子渠道，将social指示为渠道，则规则应编写如下：“Social.Facebook”。 同样，要跟踪离线事件，渠道语法应为：“Events.Big Conference”。 示例如下图所示：
 
@@ -111,7 +118,7 @@ _其他备注_：
 
 **步骤5：上传CSV文件**
 
-转到&#x200B;**[!UICONTROL Cost]**&#x200B;应用的[!DNL Marketo Measure]部分，然后单击&#x200B;**[!UICONTROL Upload.CSV]**。 系统将刷新并反映新信息。
+转到[!DNL Marketo Measure]应用的&#x200B;**[!UICONTROL Cost]**&#x200B;部分，然后单击&#x200B;**[!UICONTROL Upload.CSV]**。 系统将刷新并反映新信息。
 
 ## 常见问题解答 {#faq}
 

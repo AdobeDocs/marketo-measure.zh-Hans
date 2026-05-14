@@ -4,10 +4,13 @@ description: 使用自定义收入金额字段 —  [!DNL Marketo Measure]
 title: 使用自定义收入金额字段
 exl-id: 517ea4f9-aa83-48d0-8ce7-003f4a907430
 feature: Custom Revenue Amount
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/EygbB-2KJDZKMRdKS2Mx7JQwdzhmJ77swewudzsGIb0
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 0%
+source-wordcount: 602
+ht-degree: 1%
 
 ---
 
@@ -15,7 +18,7 @@ ht-degree: 0%
 
 默认情况下，采购员归因接触点将从以下两个字段之一提取机会金额：
 
-* 金额(SFDC默认)
+* 金额（SFDC默认）
 * [!DNL Marketo Measure]机会金额（自定义）
 
 如果您在您的Opportunities中使用自定义Amount字段，我们将需要配置工作流以计算Buyer Touchpoint收入。 这需要进一步了解[!DNL Salesforce]，因此可能需要SFDC管理员的帮助。
@@ -67,7 +70,7 @@ ht-degree: 0%
 
    ![](assets/using-a-custom-revenue-amount-field-7.png)
 
-1. 单击&#x200B;**[!UICONTROL Save]**。 此时会出现一个弹出窗口。 在保存流量窗口中键入“流量标签”（将自动生成流量API名称）。 再次单击&#x200B;**[!UICONTROL Save]**。
+1. 单击 **[!UICONTROL Save]**。 此时会出现一个弹出窗口。 在保存流量窗口中键入“流量标签”（将自动生成流量API名称）。 再次单击&#x200B;**[!UICONTROL Save]**。
 
    ![](assets/using-a-custom-revenue-amount-field-8.png)
 
@@ -77,7 +80,7 @@ ht-degree: 0%
 
 ## 在Salesforce Classic中创建工作流 {#create-the-workflow-in-salesforce-classic}
 
-以下步骤适用于Salesforce Classic用户。 如果您已切换到Salesforce Lightning，则可以在上面[找到这些步骤](#create-the-workflow-in-salesforce-lightning)。
+以下步骤适用于Salesforce Classic用户。 如果您已切换到Salesforce Lightning，则可以在上面[&#128279;](#create-the-workflow-in-salesforce-lightning)找到这些步骤。
 
 1. 导航到&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Workflow & Approvals]** > **[!UICONTROL Workflow Rules]**。
 

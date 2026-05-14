@@ -4,9 +4,14 @@ description: ' [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何交互 — Mar
 title: ' [!DNL Marketo Measure] 和 [!DNL Salesforce] 如何交互'
 exl-id: c2f9d7ce-c5b8-4664-8f92-cb54255190cd
 feature: Salesforce
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/71lT9aeqiSrxM12rpi7rDPoVaq-vX5GDOEdiOl8Dnds
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: 1284
 ht-degree: 17%
 
 ---
@@ -27,7 +32,7 @@ ht-degree: 17%
 
 ![](assets/1-3.png)
 
-默认情况下，[!DNL Marketo Measure]在每次作业将数据发送到您的CRM时，将每个API点数导出200条记录。 对于大多数客户而言，这提供了[!DNL Marketo Measure]使用的API积分与CRM上的CPU资源要求之间的最佳平衡。 但是，对于具有复杂CRM配置（如工作流和触发器）的客户，较小的批处理大小可能有助于提高CRM性能。 为此，[!DNL Marketo Measure]允许客户配置CRM导出批次大小。 此设置在[!UICONTROL Settings] Web应用程序的[!UICONTROL CRM] > [!UICONTROL General] > [!DNL Marketo Measure]页面上可用，客户可以选择批次大小为200（默认值）、100、50或25。
+默认情况下，[!DNL Marketo Measure]在每次作业将数据发送到您的CRM时，将每个API点数导出200条记录。 对于大多数客户而言，这提供了[!DNL Marketo Measure]使用的API积分与CRM上的CPU资源要求之间的最佳平衡。 但是，对于具有复杂CRM配置（如工作流和触发器）的客户，较小的批处理大小可能有助于提高CRM性能。 为此，[!DNL Marketo Measure]允许客户配置CRM导出批次大小。 此设置在[!DNL Marketo Measure] Web应用程序的[!UICONTROL Settings] > [!UICONTROL CRM] > [!UICONTROL General]页面上可用，客户可以选择批次大小为200（默认值）、100、50或25。
 
 ![](assets/how-bizible-and-salesforce-interact-2.png)
 
@@ -49,7 +54,7 @@ ht-degree: 17%
 
 ## Salesforce标准对象和访问权限 {#salesforce-standard-objects-and-access}
 
-这会列出[!DNL Salesforce]与之交互的[!DNL Marketo Measure]标准对象，以及在建立连接并安装[!DNL Marketo Measure]包后我们添加到这些对象的自定义字段。 开箱即用，[!DNL Marketo Measure]不会写入任何标准[!DNL Salesforce]对象字段。
+这会列出[!DNL Marketo Measure]与之交互的[!DNL Salesforce]标准对象，以及在建立连接并安装[!DNL Marketo Measure]包后我们添加到这些对象的自定义字段。 开箱即用，[!DNL Marketo Measure]不会写入任何标准[!DNL Salesforce]对象字段。
 
 **潜在客户**
 
@@ -595,7 +600,7 @@ ht-degree: 17%
 >* 任务
 
 
-## [!DNL Marketo Measure]中的[!DNL Salesforce]自定义对象  {#marketo-measure-custom-objects-in-salesforce}
+## [!DNL Salesforce]中的[!DNL Marketo Measure]自定义对象  {#marketo-measure-custom-objects-in-salesforce}
 
 除了在SFDC的标准对象上创建自定义字段外，在安装[!DNL Marketo Measure]包后，它会创建几个自定义对象。 以下是这些自定义对象的列表，以及一个表示[!DNL Marketo Measure]将写入的字段的表。
 
@@ -786,7 +791,7 @@ Buyer Touchpoint是一个[!DNL Marketo Measure]自定义对象，用于封装联
    <td>x</td> 
   </tr> 
   <tr> 
-   <td>bizible2__Medium__c</td> 
+   <td>bizible2____c</td> 
    <td>自定义</td> 
    <td>x</td> 
    <td>x</td> 
@@ -1106,7 +1111,7 @@ Buyer Attribution Touchpoint是一个[!DNL Marketo Measure]自定义对象，用
    <td>x</td> 
   </tr> 
   <tr> 
-   <td>bizible2__Medium__c</td> 
+   <td>bizible2____c</td> 
    <td>自定义</td> 
    <td>x</td> 
    <td>x</td> 

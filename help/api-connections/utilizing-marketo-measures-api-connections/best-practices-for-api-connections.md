@@ -3,9 +3,18 @@ description: API连接的最佳实践 —  [!DNL Marketo Measure]
 title: API连接的最佳实践
 exl-id: b8550e4e-a567-427f-b5d3-50232553a066
 feature: APIs, Integration
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/3f-fqPIPf40brt2-xfiMLLO6McY6hlT7rKkBvXb2laA
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+subfeature_v2:
+  - id: fabdc8ff-b627-44fc-b09d-973166bc2b14
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: 751
 ht-degree: 0%
 
 ---
@@ -35,7 +44,7 @@ ht-degree: 0%
 
 通过遵循我们的最佳实践建议，[!DNL Marketo Measure] [!DNL Facebook] API将能够：
 
-* 使用必要的[!DNL Facebook]参数[!DNL Marketo Measure]自动标记所有`_bf ={creative}`广告
+* 使用必要的[!DNL Marketo Measure]参数`_bf ={creative}`自动标记所有[!DNL Facebook]广告
 * 下载所有有效[!DNL Facebook]广告的广告成本信息
 
 >[!NOTE]
@@ -48,7 +57,7 @@ ht-degree: 0%
 
 通过遵循我们的最佳实践建议，[!DNL Marketo Measure] AdWords API将能够：
 
-* 使用[!DNL Marketo Measure]的`_bk={keyword}, _bt={creative}, _bm={matchtype}, _bn={network}, _bg={adgroupID}`参数自动标记所有AdWords广告
+* 使用`_bk={keyword}, _bt={creative}, _bm={matchtype}, _bn={network}, _bg={adgroupID}`的[!DNL Marketo Measure]参数自动标记所有AdWords广告
 * 下载所有有效AdWords广告的广告成本信息
 
 **Bing**：在帐户级别实施跟踪模板并启用自动标记
@@ -74,7 +83,7 @@ ht-degree: 0%
 
 ## 维护的最佳实践 {#best-practice-for-maintenance}
 
-虽然按照我们的最佳做法将保护您在断开连接时不会丢失数据，但我们仍建议您定期检查您的连接，如果可能，每月检查一次。 这是对[!UICONTROL Connections]应用中[!DNL Marketo Measure]部分的简单可视检查，以确保没有红键图标显示，表示帐户已断开连接。
+虽然按照我们的最佳做法将保护您在断开连接时不会丢失数据，但我们仍建议您定期检查您的连接，如果可能，每月检查一次。 这是对[!DNL Marketo Measure]应用中[!UICONTROL Connections]部分的简单可视检查，以确保没有红键图标显示，表示帐户已断开连接。
 
 当API连接的帐户断开连接时，[!DNL Marketo Measure]无法提取支出数据或标记新广告。 因此，我们始终建议尽可能实施跟踪模板。 该模板可确保即使广告帐户断开连接，[!DNL Marketo Measure]仍能够标记广告并提取精细的广告详细信息。 重新连接后，支出数据将回填，并且您付费渠道报表的中断最小。
 

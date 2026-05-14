@@ -3,9 +3,14 @@ description: '[!DNL Marketo Measure] 101报告概述 —  [!DNL Marketo Measure]
 title: '[!DNL Marketo Measure] 101报告概述'
 exl-id: 83977b81-8055-47fd-8a6b-5ef32d280269
 feature: Reporting
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/13R7Z5YTxgq5QdoT4O90MHzgva5e-cXf50V9jH75-TE
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: 930
 ht-degree: 0%
 
 ---
@@ -16,7 +21,7 @@ ht-degree: 0%
 >
 >您可能会在文档中看到指定“[!DNL Marketo Measure]”的说明，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
-所有使用[!DNL Marketo Measure]和[!DNL Marketo Measure]的[!DNL Salesforce]客户都可以访问其SFDC实例中的“购买者接触点报告”文件夹。 此文件夹包含许多预建报表，可帮助您开始使用Buyer Touchpoint数据进行报告。
+所有使用[!DNL Marketo Measure]和[!DNL Salesforce]的[!DNL Marketo Measure]客户都可以访问其SFDC实例中的“购买者接触点报告”文件夹。 此文件夹包含许多预建报表，可帮助您开始使用Buyer Touchpoint数据进行报告。
 
 ![](assets/bizible-101-reports-overview-1.png)
 
@@ -32,24 +37,24 @@ ht-degree: 0%
 
 _如果找不到买方接触点报告文件夹或该文件夹中的六个“_[!DNL Marketo Measure] 101..._”报告，请联系支持人员以寻求帮助。_
 
-具有买方接触点的&#x200B;**潜在客户** | 以下两种变体，报告潜在客户及其买方接触点。 尽管它们使用相同的基本报表类型，但会按不同的量度（商机ID与营销渠道）进行分组，以提供数据的两个关键视图。 此报表类型专为funnel报表顶部而设计，非常适合用于探索潜在客户与营销工作的结合情况。 在进行任何自定义之前，以下两个报表会显示以下内容：
+具有买方接触点的&#x200B;**潜在客户** |以下两种变体，报告Lead及其购买者接触点。 尽管它们使用相同的基本报表类型，但会按不同的量度（商机ID与营销渠道）进行分组，以提供数据的两个关键视图。 此报表类型专为funnel报表顶部而设计，非常适合用于探索潜在客户与营销工作的结合情况。 在进行任何自定义之前，以下两个报表会显示以下内容：
 
-**[!DNL Marketo Measure]101：潜在客户（按渠道）** | 从较高层面了解营销渠道如何影响潜在客户的创建及其额外参与。
-**[!DNL Marketo Measure]101：按ID排列的潜在客户** | 这会显示Lead案例，并且是一个更加精细的报告，其中显示了每个Lead及其相关的Buyer Touchpoint。
+**[!DNL Marketo Measure]101：潜在客户（按渠道）** |营销渠道如何影响潜在客户创建及其额外参与的高级视图。
+**[!DNL Marketo Measure]101：按ID排列的潜在客户** |它显示了Lead案例，并且是一个更加精细的报告，显示了每个Lead及其相关的Buyer Touchpoints。
 
-**有买方接触点的潜在客户/联系人** | 这些报告通常称为[!DNL Marketo Measure]人员报告。 他们使用[!DNL Marketo Measure]自定义对象&#x200B;_[!DNL Marketo Measure]Person_，而不是上述报告中的Lead对象。
+**有买方接触点的潜在客户/联系人** |这些报告通常称为[!DNL Marketo Measure]人员报告。 他们使用[!DNL Marketo Measure]自定义对象&#x200B;_[!DNL Marketo Measure]Person_，而不是上述报告中的Lead对象。
 
 [!DNL Marketo Measure]人员对象将潜在客户和联系人对象关联在一起。 开箱即用的，[!DNL Salesforce]不提供在同一报告中使用Lead和Contact对象创建报告的选项。 通过使用人员的唯一标识符（即其电子邮件）关联商机和联系人对象，则[!DNL Marketo Measure]人员可以在同一报表中报告与商机和联系人相关的买方接触点。 此报表类型是验证任何[!DNL Marketo Measure]帐户设置的理想选择，因为它是最具包容性的接触点报表级别。
 
 以下两个报表变体使用相同的报表类型，但按不同的量度“人员ID”（电子邮件）和“营销渠道”分组。 这些是funnel的顶部/funnel报表的中间，在寻找潜在客户和联系人如何参与营销工作时，这些报告非常棒。 在进行任何自定义之前，以下两个报表会显示以下内容：
 
-**[!DNL Marketo Measure]101：按渠道列出的潜在客户/联系人** | 从较高层面了解营销渠道如何影响潜在客户或联系人的创建及其附加参与。 当您想要了解整个营销渠道的总参与度以及哪些营销渠道在您的Salesforce实例中促成全新的名称时，此报表非常理想。
-**[!DNL Marketo Measure]101：潜在客户/联系人（按ID**） | 这会显示每个[!DNL Marketo Measure]人的故事，并且是一个更加精细的报告，可显示每个个人及其购买者接触点，无论这些接触点是在他们作为潜在客户还是作为联系人时发生的。
+**[!DNL Marketo Measure]101：按渠道列出的潜在客户/联系人** |营销渠道如何影响潜在客户或联系人的创建及其附加参与的高级视图。 当您想要了解整个营销渠道的总参与度以及哪些营销渠道在您的Salesforce实例中促成全新的名称时，此报表非常理想。
+**[!DNL Marketo Measure]101：潜在客户/联系人（按ID**） |它显示每个[!DNL Marketo Measure]人的故事并且是一个更加精细的报告，显示了每个个人及其购买者接触点，无论接触点发生在他们作为销售线索还是作为联系人时。
 
-**具有买方归因接触点的机会** | 最后两个“_[!DNL Marketo Measure]101..._”报表位于funnel报表底部，这些报表显示与业务机会相关的Buyer Attribution Touchpoint数据。 这些报告的主要区别在于，它们由&#x200B;_买方归因接触点_&#x200B;生成，这些接触点与Opportunity和Opportunity级别的数据（如收入）相关。 每当您希望报告机会或归因的收入时，都应使用此报告类型。 以下两个报表使用相同的报表类型，但是，它们按不同的量度“机会ID”与“营销渠道”分组。 在进行任何自定义之前，以下两个报表会显示以下内容：
+**具有买方归因接触点的机会** |最后两个“_[!DNL Marketo Measure]101..._”报告是funnel报告的底部，这些报告显示与机会相关的Buyer Attribution Touchpoint数据。 这些报告的主要区别在于，它们由&#x200B;_买方归因接触点_&#x200B;生成，这些接触点与Opportunity和Opportunity级别的数据（如收入）相关。 每当您希望报告机会或归因的收入时，都应使用此报告类型。 以下两个报表使用相同的报表类型，但是，它们按不同的量度“机会ID”与“营销渠道”分组。 在进行任何自定义之前，以下两个报表会显示以下内容：
 
-**[!DNL Marketo Measure]101：渠道商机** | 从较高层面了解您的营销渠道如何影响并提升您的业务机会的归因收入。
-**[!DNL Marketo Measure]101：按ID列出的机会** | 此精细的报告版本显示了您的机会的完整历程。 在此报表中，您可以看到与一个Opportunity关联的每个Buyer Attribution Touchpoint ，以及通过各种归因模型得出的归因收入。
+**[!DNL Marketo Measure]101：渠道商机** |从较高层面了解营销渠道如何影响并提升您的业务机会的归因收入。
+**[!DNL Marketo Measure]101：按ID列出的机会** |此精细的报表版本显示了您机会的完整历程。 在此报表中，您可以看到与一个Opportunity关联的每个Buyer Attribution Touchpoint ，以及通过各种归因模型得出的归因收入。
 
 将“_[!DNL Marketo Measure]101..._”报告视为模板以满足您的报告需求被视为最佳实践。 从以上某个报表开始，可节省您的时间并确保您使用的是与[!DNL Marketo Measure]数据相关的正确字段。 始终确保您在自定义“_[!DNL Marketo Measure]101..._”模板时执行“另存为”操作，以保留报表的原始变体。
 

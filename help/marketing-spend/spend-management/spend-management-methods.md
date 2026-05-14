@@ -3,9 +3,16 @@ description: 支出管理方法 —  [!DNL Marketo Measure]
 title: 支出管理方法
 exl-id: 36478d8d-986c-4d4f-8854-3287d6c57a9d
 feature: Spend Management
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/HdGBr6tPbjbLrO71Zr1MWN6i19TuDIaqvEhgWcNNxAY
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: 421
 ht-degree: 0%
 
 ---
@@ -18,7 +25,7 @@ ht-degree: 0%
 
 **1个API连接的帐户**
 
-您通过API连接到[!DNL Marketo Measure]的任何广告帐户其支出会自动提取到[!DNL Marketo Measure]中以生成ROI报表。 要检查您已连接并因此拉入支出的帐户，请转到您的[!DNL Marketo Measure]应用程序并选择[!UICONTROL Connections]部分下的[!UICONTROL Integrations]选项卡。 有关设置API连接的更多详细信息，请查看[集成的广告平台](/help/api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md#how-to-connect-ad-platforms)。
+您通过API连接到[!DNL Marketo Measure]的任何广告帐户其支出会自动提取到[!DNL Marketo Measure]中以生成ROI报表。 要检查您已连接并因此拉入支出的帐户，请转到您的[!DNL Marketo Measure]应用程序并选择[!UICONTROL Integrations]部分下的[!UICONTROL Connections]选项卡。 有关设置API连接的更多详细信息，请查看[集成的广告平台](/help/api-connections/utilizing-marketo-measures-api-connections/integrated-ad-platforms.md#how-to-connect-ad-platforms)。
 
 **2 CRM Campaign成本同步**
 
@@ -28,13 +35,13 @@ ht-degree: 0%
 
 启用此功能后，将自动从符合以下条件的任何CRM营销活动/项目中拉入花费：
 
-i. [!DNL Marketo Measure]首先查看促销活动/项目是否通过已创建的匹配[促销活动同步规则](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)或已创建的匹配[项目同步规则](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md)创建接触点，或者[启用购买者接触点值](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md#how-to-create-a-campaign-and-sync-buyer-touchpoints)是“包括所有促销活动成员”或“包括‘已回复’促销活动成员”。
+i. [!DNL Marketo Measure]首先查看营销活动/项目是否通过已创建的匹配[营销活动同步规则](/help/channel-tracking-and-setup/offline-channels/custom-campaign-sync.md)或已创建的匹配[项目同步规则](/help/marketo-measure-and-marketo/marketo-measure-integrations-with-marketo/marketo-engage-programs-integration.md)创建接触点，或者[启用购买者接触点值](/help/channel-tracking-and-setup/offline-channels/legacy-processes/syncing-offline-campaigns.md#how-to-create-a-campaign-and-sync-buyer-touchpoints)是“包括所有营销活动成员”或“包括‘已响应’营销活动成员”。
 
-二、 必须在营销活动/项目群中填充开始日期
+ii. 必须在营销活动/项目群中填充开始日期
 
-三、 必须在营销活动/项目群中填充结束日期
+iii. 必须在营销活动/项目群中填充结束日期
 
-四、 必须指定实际成本(对于SFDC中的营销活动)或期间成本(对于Marketo中的项目)。
+四、 必须指定实际成本（对于SFDC中的营销活动）或期间成本（对于Marketo中的项目）。
 
 **3手动成本上传**
 

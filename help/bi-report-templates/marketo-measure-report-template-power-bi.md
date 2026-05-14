@@ -3,9 +3,14 @@ description: '[!DNL Marketo Measure]报表模板 — Power BI - [!DNL Marketo Me
 title: '[!DNL Marketo Measure]报表模板 — Power BI'
 exl-id: c296b8f9-4033-4723-9a71-63a458640d27
 feature: Reporting
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/xoNrfpeiDzwSGh1Ii3Anl1O78vaRrvmHlzYTrPG7k5I
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: 2551
 ht-degree: 0%
 
 ---
@@ -20,7 +25,7 @@ ht-degree: 0%
 
 ![](assets/marketo-measure-report-template-power-bi-1.png)
 
-您可以在[!DNL Marketo Measure]信息页面上的[!DNL Data Warehouse] UI中找到特定的服务器、仓库和架构信息。 有关如何找到此页面的说明，请参见[此处](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}。
+您可以在[!DNL Data Warehouse]信息页面上的[!DNL Marketo Measure] UI中找到特定的服务器、仓库和架构信息。 有关如何找到此页面的说明，请参见[此处](/help/marketo-measure-data-warehouse/data-warehouse-access-reader-account.md){target="_blank"}。
 
 QueryFilterStartDate和QueryFilterEndDate参数用于限制导入的数据量。 这些参数必须采用SQL格式，因为它们用于发送到[!DNL Snowflake]的查询。 例如，如果您希望将数据限制在过去两年，则QueryFilterStartDate应为`dateadd` (year，-2，current_date())。 将这些参数与datetime数据类型进行比较，因此建议使用`dateadd` (day，1，current_date())将QueryFilterEndDate的所有数据返回到当前时间。
 
@@ -106,7 +111,7 @@ QueryFilterStartDate和QueryFilterEndDate参数用于限制导入的数据量。
 ### 区分大小写ID转换 {#case-sensitive-id-conversion}
 
 [!DNL Marketo Measure]数据有几个表，其中主键(ID)值区分大小写，即接触点和Campaign。 驱动Power BI建模层的数据引擎不区分大小写，因此会导致id值“重复”。 为了保持这些键值的大小写敏感性，我们实施了转换步骤，将不可见字符附加到小写字符，在数据引擎层评估时保留ID的唯一性。 有关该问题的更多详细信息以及我们使用的方法的详细步骤可以在[此处] (https://blog.crossjoin.co.uk/2019)找到
-/10/06/power-bi-and-case-sensitivity/){target="_blank"}。 这些区分大小写的ID值将标记为“联接ID”，并用作关系层中的联接键。 我们在报告层隐藏了联接ID，保持原始ID值可见，以便用于报告，因为不可见的字符可能会干扰剪切
+/10/06/power-bi-and-case-sensitive/){target="_blank"}。 这些区分大小写的ID值将标记为“联接ID”，并用作关系层中的联接键。 我们在报告层隐藏了联接ID，保持原始ID值可见，以便用于报告，因为不可见的字符可能会干扰剪切
 /paste函数和筛选。
 
 ![](assets/marketo-measure-report-template-power-bi-8.png)

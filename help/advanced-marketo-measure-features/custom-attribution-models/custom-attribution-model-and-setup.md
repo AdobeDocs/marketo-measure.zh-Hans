@@ -4,9 +4,14 @@ description: 自定义归因模型和设置 —  [!DNL Marketo Measure]
 title: 自定义归因模型和设置
 exl-id: 7b156db2-9ac6-4d32-ac67-06c0aa15d651
 feature: Attribution, Custom Models
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/Bqvp26IvjPnXom9rfkB2cWtrnrM3Jsz6SQKqDYKp-cc
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: 826
 ht-degree: 0%
 
 ---
@@ -55,7 +60,7 @@ ht-degree: 0%
 
 1. 确定自定义模型的归因百分比。
 
-   转到&#x200B;**[!UICONTROL Attribution Settings]**&#x200B;应用程序中的[!DNL Marketo Measure]；自定义阶段将显示在归因表中。 归因表显示所有[!DNL Marketo Measure]归因模型以及每个模型的归因权重。 前五个模型的归因百分比是固定的，无法更改。
+   转到[!DNL Marketo Measure]应用程序中的&#x200B;**[!UICONTROL Attribution Settings]**；自定义阶段将显示在归因表中。 归因表显示所有[!DNL Marketo Measure]归因模型以及每个模型的归因权重。 前五个模型的归因百分比是固定的，无法更改。
 
    在标记为“**[!UICONTROL Custom]**”的最右列中，您可以为自定义归因模型中的每个阶段设置百分比权重。 在自定义列下输入每个阶段的值，完成后，单击&#x200B;**[!UICONTROL Save and Reprocess]**。
 

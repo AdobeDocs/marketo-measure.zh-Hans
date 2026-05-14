@@ -3,16 +3,19 @@ description: Adobe Experience Cloud界面概述 —  [!DNL Marketo Measure]
 title: Adobe Experience Cloud 界面概述
 exl-id: 15bd7590-8eb0-46e5-9883-3be11ff58c9e
 feature: Integration, Tracking
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/sWShCKtPiGe5MWS09Le1F9a-gbds18qA9Cae0asctfg
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 23%
+source-wordcount: 304
+ht-degree: 24%
 
 ---
 
 # Adobe Experience Cloud 界面概述 {#experience-cloud-interface-overview}
 
-Adobe Experience Cloud界面与Adobe Experience Cloud应用程序和服务的外观保持一致。 但它不仅仅是全新的设计，更是一款单页应用程序，可在单一实例中提供完整的用户体验。
+Adobe Experience Cloud界面与Adobe Experience Cloud应用程序和服务的外观保持一致。 但它不仅仅是全新的设计， 更是一款单页应用程序，可在单一实例中提供完整的用户体验。
 
 ## 用户流程 {#user-flow}
 
@@ -58,7 +61,7 @@ Adobe Experience Cloud界面与Adobe Experience Cloud应用程序和服务的外
 
 **Adobe 设置**
 
-要更改您的语言或其他Adobe范围的首选项，请单击您的配置文件图标。 您还可以通过单击[!DNL Marketo Measure]我的设置&#x200B;**进行特定于**&#x200B;的更改。
+要更改您的语言或其他Adobe范围的首选项，请单击您的配置文件图标。 您还可以通过单击&#x200B;**我的设置**&#x200B;进行特定于[!DNL Marketo Measure]的更改。
 
 ![](assets/unified-shell-overview-10.png)
 

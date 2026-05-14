@@ -4,9 +4,15 @@ description: 接触点字段 —  [!DNL Marketo Measure]
 title: 接触点字段
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/f45LL11QRQWjzRDTMdsiSUKbB357lPibq8nFNVt75bk
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: 1956
 ht-degree: 0%
 
 ---
@@ -44,13 +50,13 @@ ht-degree: 0%
 目标：使用自定义字段的值并将其放置到接触点对象上以便更轻松地报告。
 
 * 创建计算字段并标记为“Campaign Source”
-* 从搜索Contact.Campaign_Source__c字段开始定义规则
+* 从搜索Contact.Campaign___c字段开始定义规则
 * 使用运算符“extracts”，因为我们需要从参数中提取值
 * 若要从字段中提取完整的字符串，我们将使用表达式“(.&#42;)”
 
    * **(**&#x200B;标记提取开始
    * **)**&#x200B;标记提取结束
-   * **。&#42;**&#x200B;告诉我们我们正在提取完整的字符串
+   * **.&#42;** 说明我们正在提取完整的字符串
 
 ![](assets/two.png)
 
@@ -83,7 +89,7 @@ ht-degree: 0%
 * 创建计算字段并将其标记为“Adobe Campaign Id”
 * 通过从搜索Touchpoint.Session.LandingPage字段开始定义规则
 * 使用运算符“extracts”，因为我们需要从参数中提取值
-* 要提取“123456”值，我们将该值定义为“cid=(\d{6})”
+* 若要提取“123456”值，我们会将该值定义为“cid=(\d{6})”
 
    * **(**&#x200B;标记提取开始
    * **)**&#x200B;标记提取结束
@@ -95,14 +101,14 @@ ht-degree: 0%
 **示例#4**
 
 由于登陆页面变得更加复杂，并且您有多个跟踪参数，因此您可能需要构建多个接触点字段并多次提取值，例如：
-`https://www.adobe.com/blog/marketing-revenue-reporting-overview?trackID=123456&country=US&campaign_ID=7890`。
+`https://www.adobe.com/blog/marketing-revenue-reporting-overview?trackID=123456&country=US&campaign_ID=7890`.
 
 **目标：**&#x200B;使用参数中的相应值为“目标国家/地区”和“自定义促销活动ID”创建多个计算字段。
 
 * 创建计算字段并将其标记为“目标国家/地区”
 * 通过从搜索Touchpoint.Session.LandingPage字段开始定义规则
 * 使用运算符“extracts”，因为我们需要从参数中提取值
-* 要提取“US”值，我们将该值定义为“country=(\w{2})”
+* 若要提取“美国”值，我们将该值定义为“country=(\w{2})”
 
    * **(**&#x200B;标记提取开始
    * **)**&#x200B;标记提取结束
@@ -140,7 +146,7 @@ ht-degree: 0%
 * 创建计算字段并将其标记为“区域”
 * 通过从搜索Touchpoint.Session.LandingPage字段开始定义规则
 * 使用运算符“[!UICONTROL extracts]”，因为我们需要从参数中提取值
-* 若要提取“04”值，我们将该值定义为“BZ=(\d{2})-\d{2}-\d{2}-\d{2}-\d{2}-\d{2}”
+* 为了提取“04”值，我们将将该值定义为“BZ=(\d{2})-\d{2}-\d{2}-\d{2}-\d{2}”
 
    * **(**&#x200B;标记提取开始
 
@@ -153,7 +159,7 @@ ht-degree: 0%
 
 
 
-* 单击[!UICONTROL Save]。 您必须先保存新字段，然后才能将其用于下一个规则！
+* 单击 [!UICONTROL Save]。 您必须先保存新字段，然后才能将其用于下一个规则！
 * 接下来，我们要将第一个数字的所有可能值映射到其友好名称
 * 创建计算字段并将其标记为“Region_Name”
 * 从搜索提取字段开始，定义规则。 在这种情况下，[!DNL Touchpoint.Region]
@@ -162,10 +168,10 @@ ht-degree: 0%
 * 根据上面的映射和URL，使用此登陆页面的接触点的“Region_Value”将为“EMEA”
 * 对其余4组数字重复提取和映射
 
-   * 要提取01，可将值定义为“BZ=\d{2}-**(\d{2})**-\d{2}-\d{2}-\d{2}-\d{2}”
-   * 要提取09，可将值定义为“BZ=\d{2}-\d{2}-**(\d{2})**-\d{2}-\d{2}”
-   * 要提取03，可将值定义为“BZ=\d{2}-\d{2}-\d{2}-\d\**(\d{2})**-\d{2}”
-   * 要提取10，您应将该值定义为“BZ=\d{2}-\d{2}-\d{2}-\d{2}-\d\**(\d{2})**”
+   * 要提取01，可将值定义为“BZ=\d-**(\d{2})**-\d{2}-\d{2}-\d{2}-\d{2}”
+   * 要提取09，您应将该值定义为“BZ=\d{2}-\d{2}-**(\d{2})**-\d{2}-\d{2}”
+   * 要提取03，可将值定义为“BZ=\d{2}-\d{2}-\d{2}-\d **(\d{2})**-\d{2}”
+   * 若要提取10，可将值定义为“BZ=\d{2}-\d{2}-\d{2}-\d{2}-\d **(\d{2})**”
 
 ![](assets/seven.png)
 

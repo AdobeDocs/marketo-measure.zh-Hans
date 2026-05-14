@@ -4,9 +4,12 @@ description: 正在将 [!DNL Marketo Measure] 连接到退件脚本管理器 —
 title: 正在将 [!DNL Marketo Measure] 连接到退件脚本管理器
 exl-id: c3212bc3-1d8f-4da5-bb2d-11ffd2fb4e98
 feature: Tracking
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/Bo0BFhBLbNfX89BScumswE7WvVzztOak1P38xcXdk1M
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: 109
 ht-degree: 3%
 
 ---
@@ -24,4 +27,4 @@ ht-degree: 3%
 
 1. 单击 **[!UICONTROL Save]**。
 
-[!DNL Marketo Measure]集成适用于回弹登陆页面，前提是这些页面托管在您的域(例如，landing.mysite.com)上，而不是使用unbounce.com域的域。
+[!DNL Marketo Measure]集成适用于回弹登陆页面，前提是这些页面托管在您的域（例如，landing.mysite.com）上，而不是使用unbounce.com域的域。

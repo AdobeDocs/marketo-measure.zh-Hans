@@ -3,10 +3,13 @@ description: JavaScript收集的数据 —  [!DNL Marketo Measure]
 title: JavaScript收集的数据
 feature: Tracking
 exl-id: 83814168-9d3e-45ac-b514-df58f0b2e90b
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/QSbkXXjEjxmddR-dTrgjZiV0dXvO-iZKjHfSBJP2Jt0
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 11%
+source-wordcount: 231
+ht-degree: 12%
 
 ---
 
@@ -36,7 +39,7 @@ Marketo Measure会为所有类型的请求收集以下常用数据：
 <tbody>
   <tr>
     <td>请求标头</td>
-    <td>IP地址</td>
+    <td>IP 地址</td>
     <td>字符串</td>
     <td>通过GeoIP查找推断用户的位置。 此数据是临时的，不会永久存储。</td>
   </tr>
@@ -119,7 +122,7 @@ Marketo Measure会为所有类型的请求收集以下常用数据：
     <td>/u</td>
     <td>mapType</td>
     <td>枚举</td>
-    <td>检测到哪种用户id映射bizible.js(Marketo Munchkin id和Adobe ECID)</td>
+    <td>检测到哪种用户id映射bizible.js（Marketo Munchkin id和Adobe ECID）</td>
   </tr>
   <tr>
     <td></td>

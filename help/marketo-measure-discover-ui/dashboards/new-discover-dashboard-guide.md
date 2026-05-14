@@ -3,9 +3,15 @@ description: 新的发现功能板指南 —  [!DNL Marketo Measure]  — 产品
 title: 新增发现功能板指南
 feature: Reporting
 exl-id: 088ccd63-dcf8-49c0-abbb-02f10ed8ae6e
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/p9wH91818KiCuzb-Nk0QtGA9J6mmpzn2erlxrnQiTk8
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: 1055
 ht-degree: 0%
 
 ---
@@ -239,8 +245,8 @@ ht-degree: 0%
             <strong></strong>Web流量仪表板</li>
           <li>
             <strong>按渠道表单URL</strong>
-            <strong>：</strong>
-            <strong></strong>Web流量仪表板(按渠道筛选站点Forms拼贴)</li>
+            <strong>:</strong>
+            <strong></strong>Web流量仪表板（按渠道筛选站点Forms拼贴）</li>
           <li>
             按收入<strong>登陆页面：</strong>已弃用（请参阅下文）</li>
           <li>

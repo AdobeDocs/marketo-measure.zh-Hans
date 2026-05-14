@@ -3,10 +3,21 @@ description: 错误通知 —  [!DNL Marketo Measure]
 title: 错误通知
 feature: Fundamentals
 exl-id: ed07eed6-ddeb-4856-a1ac-ea3d571283f6
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/SDJqtYTppmKWPpLQrhI9EkK-mYQ3f3Xh2BLoWzqIGx4
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+subfeature_v2:
+  - id: ec526b86-7a6d-4fae-87bd-f61c37b9b506
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 0%
+source-wordcount: 1915
+ht-degree: 1%
 
 ---
 
@@ -64,7 +75,7 @@ ht-degree: 0%
 您或您的组织已超出此功能的最大限制。 错误ID：123456</td>
       <td>无法保存记录，因为它不符合Salesforce组织中设置的触发流程规则。</td>
       <td>查看通知消息的完整详细信息，并查看Salesforce组织中的流量触发器。
-可以在此处<a href="https://admin.salesforce.com/blog/2023/what-is-a-record-triggered-flow#:~:text=A%20record%2Dtriggered%20flow%20allows,is%20created%20and%2For%20updated">找到有关流触发器</a>的Salesforce文档。
+可以在此处</a>找到有关流触发器<a href="https://admin.salesforce.com/blog/2023/what-is-a-record-triggered-flow#:~:text=A%20record%2Dtriggered%20flow%20allows,is%20created%20and%2For%20updated">的Salesforce文档。
       </td>
     </tr>
     <tr>
@@ -124,7 +135,7 @@ ht-degree: 0%
     </tr>
     <tr>
       <td>FIELD_INTEGRITY_EXCEPTION</td>
-      <td>在Crm导出期间出错： FIELD_INTEGRITY_EXCEPTION ：实体类型“潜在客户”： CRM错误代码： FIELD_INTEGRITY_EXCEPTION，字段：国家/地区， CRM错误消息：该国家/地区存在问题，即使它看起来可能正确也是如此。 请从有效国家/地区列表中选择国家/地区。：国家/地区，记录ID：0123456</td>
+      <td>在Crm导出期间出错： FIELD_INTEGRITY_EXCEPTION ：实体类型“潜在客户”： CRM错误代码： FIELD_INTEGRITY_EXCEPTION，字段：国家/地区， CRM错误消息：该国家/地区存在问题，即使它看起来可能正确也是如此。 请从有效国家/地区列表中选择一个国家/地区。国家/地区，记录ID：0123456</td>
       <td>记录的预期类型不匹配。</td>
       <td>这种情况的最常见情况是未遵循Salesforce组织内设置的州/国家/地区命名标准，因为州/国家字段已标准化，仅接受某些选择列表值。 要解决此问题，您可以：
         <ul>
@@ -171,15 +182,15 @@ ht-degree: 0%
     </tr>
     <tr>
       <td>MISSING_BIZIBLE_CUSTOM_FIELDS_PERMISSIONS</td>
-      <td>在Crm导出期间出错： MISSING_BIZIBLE_CUSTOM_FIELDS_PERMISSIONS ：实体类型“Campaign”： CRM错误代码： INVALID_FIELD_FOR_INSERT_UPDATE，字段： bizible2__UniqueId__c， CRM错误消息：无法创建/更新字段： bizible2__UniqueId__c。请检查此字段的安全设置，并验证是否为配置文件或权限集的读/写。</td>
+      <td>在Crm导出期间出错： MISSING_BIZIBLE_CUSTOM_FIELDS_PERMISSIONS ：实体类型“Campaign”： CRM错误代码： INVALID_FIELD_FOR_INSERT_UPDATE，字段： bizible2__UniqueId__c， CRM错误消息：无法创建/更新字段： bizible2__UniqueId__c。 请检查此字段的安全设置，并验证是否为配置文件或权限集的读/写。</td>
       <td>Marketo Measure缺少bizible字段的权限。</td>
-      <td>我们需要对以“bizible2__”为前缀的所有字段具有读写权限。 这些字段的完整列表可在本文<a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">中找到</a>。</td>
+      <td>我们需要对以“bizible2__”为前缀的所有字段具有读写权限。 这些字段的完整列表可在本文</a>中找到<a href="/help/configuration-and-setup/marketo-measure-and-salesforce/how-marketo-measure-and-salesforce-interact.md">。</td>
     </tr>
     <tr>
       <td>MISSING_CONVERTED_LEAD_PERMISSION</td>
       <td>Crm导出期间出错： MISSING_CONVERTED_LEAD_PERMISSION</td>
       <td>Marketo Measure缺少“查看/编辑已转换的潜在客户”权限</td>
-      <td>有关在CRM<br/>中启用此权限的相关帮助，请参阅以下Experience League文档
+      <td>有关在CRM中启用此权限的相关帮助，请参阅以下Experience League文档<br/>
           <a href="/help/marketo-measure-salesforce-reporting/additional-functionality/enabling-the-permission-to-edit-converted-leads.md">正在启用权限以编辑已转换的潜在客户</a></td>
     </tr>
     <tr>

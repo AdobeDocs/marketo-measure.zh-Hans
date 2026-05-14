@@ -3,9 +3,12 @@ description: Data Warehouse访问 — 直接共享 — 产品文档
 title: Data Warehouse访问 — 直接共享
 exl-id: 940c3316-5f94-4aa2-a656-aec5eb7b7450
 feature: Data Warehouse
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/TT2LYCV4Zv1jdx-ZgzlnThNGVdUAJDwLlely6WgNfXY
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: 308
 ht-degree: 0%
 
 ---
@@ -17,12 +20,12 @@ ht-degree: 0%
 要让[!DNL Marketo Measure]设置直接共享到数据仓库，您必须满足以下要求。
 
 * 您有自己的Snowflake实例。
-* 您的Snowflake实例位于Azure East US 2 Snowflake区域。
+* 您的Snowflake实例位于Azure美国东部2 Snowflake地区。
 * 您向[!DNL Marketo Measure]提供您的Snowflake帐户ID。
 
 ## 限制 {#limitations}
 
-[!DNL Marketo Measure]将只能使用位于Azure East US 2中的帐户设置Snowflake直接共享(这是Marketo Measure中的限制，不能使用Snowflake)。 如果您要求您的数据在其他Snowflake地区可用，我们建议在位于Azure East US 2的Snowflake帐户中制作数据副本，并使用[Snowflake数据库复制](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"}功能在您选择的Snowflake地区/帐户中复制您的数据。
+[!DNL Marketo Measure]将只能使用位于Snowflake US2东部的帐户设置Azure直接共享（这在Marketo Measure中是一种限制，在Snowflake中则不是）。 如果您要求您的数据在其他Snowflake地区可用，我们建议在Azure美国东部2的Snowflake帐户中制作数据副本，并使用[Snowflake数据库复制](https://docs.snowflake.com/en/user-guide/database-replication-intro.html){target="_blank"}功能在您选择的Snowflake地区/帐户中复制您的数据。
 
 ## 输入Snowflake帐户ID {#enter-snowflake-account-id}
 

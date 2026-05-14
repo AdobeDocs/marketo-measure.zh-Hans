@@ -3,10 +3,13 @@ description: Adobe Admin Console设置 — Marketo Measure — 产品文档
 title: Adobe Admin Console设置
 feature: Installation
 exl-id: f9edacae-79e0-408c-ac37-bbe67c185f2d
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/0-n7qfW9O8qQHD1vMyJGdBF8XNo-Hpa2oFMrWUmUNWc
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 1%
+source-wordcount: 396
+ht-degree: 5%
 
 ---
 
@@ -51,10 +54,10 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->要成为[!DNL Marketo Measure]管理员(位于[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}中)，必须将用户添加为用户&#x200B;_和_，并将用户添加为[!DNL Marketo Measure]产品信息卡中任何[!DNL Marketo Measure]产品配置文件的管理员。
+>要成为[!DNL Marketo Measure]管理员（位于[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}中），必须将用户添加为用户&#x200B;_和_，并将用户添加为[!DNL Marketo Measure]产品信息卡中任何[!DNL Marketo Measure]产品配置文件的管理员。
 
 **登录到[!DNL Marketo Measure]**
 
-将用户添加到产品配置文件后，通过在[!DNL Marketo Measure]experience.adobe.com/marketo-measure **上选择**&#x200B;使用Adobe ID登录[选项，他们可以访问其](https://experience.adobe.com/marketo-measure){target="_blank"}实例。
+将用户添加到产品配置文件后，通过在[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}上选择&#x200B;**使用Adobe ID登录**&#x200B;选项，他们可以访问其[!DNL Marketo Measure]实例。
 
 ![](assets/adobe-admin-console-setup-3.png)

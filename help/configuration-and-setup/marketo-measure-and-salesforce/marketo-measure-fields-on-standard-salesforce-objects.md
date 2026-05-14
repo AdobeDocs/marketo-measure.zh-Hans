@@ -1,23 +1,29 @@
 ---
 unique-page-id: 18874574
-description: 标准[!DNL Marketo Measure]对象上的 [!DNL Salesforce] 字段 —  [!DNL Marketo Measure]
-title: 标准[!DNL Marketo Measure]对象上的 [!DNL Salesforce] 字段
+description: 标准 [!DNL Salesforce] 对象上的[!DNL Marketo Measure]字段 —  [!DNL Marketo Measure]
+title: 标准 [!DNL Salesforce] 对象上的[!DNL Marketo Measure]字段
 exl-id: c9d5254f-06bd-4813-bb29-1a4955b37041
 feature: Salesforce
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/1Md2-2kZ3M-UwHXdED4uKV2PswFenKecJqQZ6ud30Rg
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: 667
 ht-degree: 0%
 
 ---
 
-# 标准[!DNL Marketo Measure]对象上的[!DNL Salesforce]字段 {#marketo-measure-fields-on-standard-salesforce-objects}
+# 标准[!DNL Salesforce]对象上的[!DNL Marketo Measure]字段 {#marketo-measure-fields-on-standard-salesforce-objects}
 
 >[!NOTE]
 >
 >您可能会在文档中看到指定“[!DNL Marketo Measure]”的说明，但仍可在CRM中看到“Bizible”。 我们正在努力更新品牌，并且品牌重塑很快将会反映在您的CRM中。
 
-了解添加到[!DNL Marketo Measure]标准对象的各种[!DNL Salesforce]字段。
+了解添加到[!DNL Salesforce]标准对象的各种[!DNL Marketo Measure]字段。
 
 ## 帐户 {#account}
 

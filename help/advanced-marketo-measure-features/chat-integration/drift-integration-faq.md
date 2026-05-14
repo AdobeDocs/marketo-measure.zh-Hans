@@ -4,10 +4,15 @@ description: 漂移集成常见问题解答 —  [!DNL Marketo Measure]
 title: 漂移集成常见问题解答
 exl-id: ae5706b1-1f6c-4201-8585-0d7c587746e1
 feature: Integration
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/RDhpeivSYllzKoOFPjVBH2u-tPPsMUtVT5bS5hME0J8
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 0%
+source-wordcount: 357
+ht-degree: 1%
 
 ---
 
@@ -21,7 +26,7 @@ ht-degree: 0%
 
 `<script type="text/javascript" src="https://cdn.bizible.com/scripts/bizible.js" async="" id="bizible-settings" data-chatEnabled="false"></script>`
 
-对于使用[!DNL Google Tag Manager]加载[!DNL Marketo Measure]脚本的用户，如果您希望排除您的漂移聊天符合接触点条件，请直接在您的`<span>`脚本之后添加以下[!DNL Marketo Measure]：
+对于使用[!DNL Google Tag Manager]加载[!DNL Marketo Measure]脚本的用户，如果您希望排除您的漂移聊天符合接触点条件，请直接在您的[!DNL Marketo Measure]脚本之后添加以下`<span>`：
 
 `<span id="bizible-settings" data-chatEnabled="false"></span>`
 

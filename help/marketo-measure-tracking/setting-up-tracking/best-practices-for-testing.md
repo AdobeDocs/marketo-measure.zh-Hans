@@ -4,10 +4,13 @@ description: 测试的最佳实践 —  [!DNL Marketo Measure]
 title: 测试最佳实践
 exl-id: ff95a1a9-d324-47f5-b47d-39014dff77e4
 feature: Tracking
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/RH2rV7k3KuYd1I8s5e96wCWJ1z7Q8CYVoxu7YWV7Kq8
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 0%
+source-wordcount: 182
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   >最佳实践是使用包含指示该测试的内容以及时间的假电子邮件。 例如： `testing830am@test.com`。
+   >最佳实践是使用包含指示该测试的内容以及时间的假电子邮件。 例如：`testing830am@test.com`。
 
 1. 在搜索引擎（例如，`google.com`）上开始搜索，或直接导航到表单。
 

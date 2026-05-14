@@ -4,10 +4,16 @@ description: '[!DNL Marketo Measure] Cookie - [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] Cookie'
 exl-id: de6e35ae-af92-43ba-8416-3e07d3dd470c
 feature: Tracking
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/QOjNe0Eu2irVrpZVkbf5SVe-3COP1nhRqPg6oDlFhGY
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 10%
+source-wordcount: 409
+ht-degree: 9%
 
 ---
 
@@ -97,7 +103,7 @@ ht-degree: 10%
   </tr>
   <tr>
     <td>_BUID</td>
-    <td>第三方，域=。<a href="https://business.adobe.com/cn/products/marketo/bizible.html">bizible.com</a></td>
+    <td>第三方，域=.<a href="https://business.adobe.com/cn/products/marketo/bizible.html">bizible.com</a></td>
     <td>跨多个域标识用户的通用用户ID。</td>
     <td>1 年</td>
     <td>是</td>
@@ -106,7 +112,7 @@ ht-degree: 10%
   </tr>
   <tr>
     <td>_BUID</td>
-    <td>第三方，域=。<a href="https://bizibly.com/">bizible.com</a></td>
+    <td>第三方，域=.<a href="https://bizibly.com/">bizible.com</a></td>
     <td>租户域上的Marketo Measure Cookie ID与其Doubleclick展示Cookie ID之间的映射。</td>
     <td>1 年</td>
     <td>是</td>

@@ -2,13 +2,17 @@
 description: Marketo Measure用户的机器学习模型常见问题解答指南
 title: 机器学习模型常见问题解答
 feature: Custom Models
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+TQID: https://experienceleague.adobe.com/GJLwWk-6Gqb8u6lWIwXNx5L2H3OATGd-vCn1xWQqmuo
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: 683
 ht-degree: 0%
 
 ---
-
 
 # 机器学习模型常见问题解答 {#machine-learning-model-faq}
 

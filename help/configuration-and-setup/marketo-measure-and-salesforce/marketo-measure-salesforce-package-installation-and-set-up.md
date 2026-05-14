@@ -3,9 +3,14 @@ description: '[!DNL Marketo Measure] Salesforce包的安装和设置 —  [!DNL 
 title: '[!DNL Marketo Measure] [!DNL Salesforce] 包安装和设置'
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/l293WWmVHXGAthQKznwSssgTihMOdpqi4gh58t1fh-g
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: 504
 ht-degree: 0%
 
 ---
@@ -34,7 +39,7 @@ ht-degree: 0%
 
 1. 以管理员身份登录到[!DNL Salesforce]。
 
-1. 为所有用户&#x200B;**[!UICONTROL Install]选择**。
+1. 为所有用户&#x200B;**选择**&#x200B;[!UICONTROL Install]。
 
    ![](assets/marketo-measure-salesforce-package-installation-and-set-up-1.png)
 
@@ -42,7 +47,7 @@ ht-degree: 0%
 
    ![](assets/marketo-measure-salesforce-package-installation-and-set-up-2.png)
 
-完成安装后，您可以根据需要使用[[!DNL Salesforce] 字段更新](/help/configuration-and-setup/marketo-measure-and-salesforce/page-layout-instructions.md){target="_blank"}页面布局[!DNL Marketo Measure]。
+完成安装后，您可以根据需要使用[!DNL Marketo Measure]字段更新[[!DNL Salesforce] 页面布局](/help/configuration-and-setup/marketo-measure-and-salesforce/page-layout-instructions.md){target="_blank"}。
 
 >[!NOTE]
 >
@@ -50,9 +55,9 @@ ht-degree: 0%
 
 ## 创建[!DNL Marketo Measure]配置文件和用户 {#creating-a-marketo-measure-profile-and-user}
 
-[!DNL Marketo Measure]通过[!DNL Salesforce]应用内连接的[!DNL Marketo Measure]用户发送和接收数据。
+[!DNL Marketo Measure]通过[!DNL Marketo Measure]应用内连接的[!DNL Salesforce]用户发送和接收数据。
 
-要将接触点数据推送到[!DNL Salesforce]实例，连接的用户必须有权访问[!DNL Marketo Measure]自定义对象(例如Buyer Touchpoint和Buyer Attribution Touchpoint)以及商机和联系人等标准[!DNL Salesforce]对象。
+要将接触点数据推送到[!DNL Salesforce]实例，连接的用户必须有权访问[!DNL Marketo Measure]自定义对象（例如Buyer Touchpoint和Buyer Attribution Touchpoint）以及商机和联系人等标准[!DNL Salesforce]对象。
 
 创建[!DNL Marketo Measure]配置文件以确保在将数据推送到Salesforce时不会遇到验证错误。
 
@@ -83,9 +88,9 @@ ht-degree: 0%
 
 1. 转到apps.bizible.com并使用新的用户生产[!DNL Salesforce]凭据登录。
 
-1. 在&#x200B;**[!UICONTROL Settings]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL My Account]**。
+1. 在&#x200B;**[!UICONTROL My Account]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Settings]**。
 
-1. 在&#x200B;**[!UICONTROL Connections]**&#x200B;分组中选择&#x200B;**[!UICONTROL Integrations]**。
+1. 在&#x200B;**[!UICONTROL Integrations]**&#x200B;分组中选择&#x200B;**[!UICONTROL Connections]**。
 
 1. 单击当前连接的[!DNL Salesforce]连接右侧的键图标，然后选择&#x200B;**使用生产重新授权**。 使用新用户凭据再次登录（如果出现提示）。
 

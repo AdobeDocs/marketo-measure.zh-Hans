@@ -4,9 +4,14 @@ description: 常见问题解答（多货币） —  [!DNL Marketo Measure]
 title: 常见问题解答（多货币）
 exl-id: 1d0936fb-4e66-4877-98d2-32c678a7ef3e
 feature: Multi-Currency
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/VHUWJBPHzIn6aE0H6QmBqKWGKAYQF-HBN-O-gwa-nCs
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: 833
 ht-degree: 0%
 
 ---
@@ -37,7 +42,7 @@ Marketo Measure会自动从客户的CRM中提取货币设置。 不再需要在M
 
 **货币显示格式不正确。 如何更改此设置？**
 
-我们理解，有些国家有不同的格式设置金额（例如，1,234.00、1.234、1 234）。 但如果我们不仅要确定用户的货币，还要确定他们的原籍国，那就会引入另一个层面的复杂性，因为不同的国家和货币可以有不同的处理方式。 我们选择的一致格式为1,234.00。无法更改此设置。
+我们理解，有些国家有不同的格式设置金额（例如，1,234.00、1.234、1 234）。 但如果我们不仅要确定用户的货币，还要确定他们的原籍国，那就会引入另一个层面的复杂性，因为不同的国家和货币可以有不同的处理方式。 我们选择的一致格式为1,234.00。 无法更改此设置。
 
 **为什么不能显示所选货币的货币符号？**
 

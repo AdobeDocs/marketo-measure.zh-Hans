@@ -4,16 +4,25 @@ description: '[!DNL Marketo Engage]程序集成 —  [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]项目集成'
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
 feature: Integration
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/tsJhoMace2jJnRi7-jM-mojkNMSdZlzYKtvk3OVR2A8
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 0%
+source-wordcount: 1288
+ht-degree: 1%
 
 ---
 
 # [!DNL Marketo Engage]项目集成 {#marketo-engage-programs-integration}
 
-通过与[!DNL Marketo Measure]程序的[!DNL Marketo Engage]集成，我们的客户可以开始从Marketo程序成员资格创建归因跟踪接触点。 此功能允许营销人员从[!DNL Marketo Measure] javascript看不到且应在归因历程中衡量的电子邮件或参与计划开始跟踪计划成员资格。
+通过与[!DNL Marketo Engage]程序的[!DNL Marketo Measure]集成，我们的客户可以开始从Marketo程序成员资格创建归因跟踪接触点。 此功能允许营销人员从[!DNL Marketo Measure] javascript看不到且应在归因历程中衡量的电子邮件或参与计划开始跟踪计划成员资格。
 
 ## 可用性 {#availability}
 
@@ -181,7 +190,7 @@ Mark点击[!DNL Facebook]广告并登陆wayneenterprises.com，在那里他被[!
 
 Wayne Enterprises营销团队向特定的目标潜在客户发送电子邮件爆炸邮件，其中一个是`mark@email.com`。
 
-`mark@email.com`会收到电子邮件，点击并登陆wayneenterprises.com。 对`mark@email.com's`的第二次访问具有相同的Cookie Id，但是没有表单填写，因此对于`wayneenterprise.com`，他们仍然是匿名访客。[!DNL Marketo Measure]
+`mark@email.com`会收到电子邮件，点击并登陆wayneenterprises.com。 对`wayneenterprise.com`的第二次访问具有相同的Cookie Id，但是没有表单填写，因此对于[!DNL Marketo Measure]，他们仍然是匿名访客。`mark@email.com's`
 
 Wayne Enterprises营销团队创建一个Marketo活动规则，以生成“点击电子邮件”活动类型的接触点。
 

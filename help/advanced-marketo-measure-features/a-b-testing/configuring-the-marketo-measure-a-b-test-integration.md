@@ -4,16 +4,21 @@ description: 配置 [!DNL Marketo Measure] A/B测试集成 —  [!DNL Marketo Me
 title: 配置 [!DNL Marketo Measure] A/B测试集成
 exl-id: 25fc25eb-9a72-4824-9a98-cc286e5c1e4a
 feature: A/B Testing, Integration
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/BmZ2KnbTIkhPX1kGTNHMMMfmw7zs3Z1-YLwLIVOhVuk
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 0%
+source-wordcount: 122
+ht-degree: 5%
 
 ---
 
 # 配置[!DNL Marketo Measure] A/B测试集成 {#configuring-the-marketo-measure-a-b-test-integration}
 
-添加有关Lead、Contact、Case和Opportunity的[!DNL Marketo Measure] A/B测试部分。 通过[!DNL Marketo Measure] A/B测试集成，您可以优化地跟踪[VWO](https://www.optimizely.com/){target="_blank"}和[VWO](https://vwo.com/){target="_blank"}网站实验对收入的影响。
+添加有关Lead、Contact、Case和Opportunity的[!DNL Marketo Measure] A/B测试部分。[!DNL Marketo Measure] A/B测试集成允许您跟踪[最佳化](https://www.optimizely.com/){target="_blank"}和[VWO](https://vwo.com/){target="_blank"}网站实验对收入的影响。
 
 1. 验证您是否正在使用包[[!DNL Marketo Measure] v3.9或更高版本](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"}。
 1. 将“[!DNL Marketo Measure] ABTests”相关列表添加到页面布局，然后单击&#x200B;**设置** （扳手）按钮。

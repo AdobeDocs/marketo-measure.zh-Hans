@@ -3,9 +3,14 @@ description: 分段的最佳实践 —  [!DNL Marketo Measure]
 title: 分段的最佳实践
 exl-id: 68281210-383b-4688-86e9-27fbdc1fabbb
 feature: Segmentation
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/YR-eQXPLgo1FbUk4VXa9cuaAwjiSSVBbSB3ZjAeScaY
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: 449
 ht-degree: 0%
 
 ---
@@ -39,7 +44,7 @@ ht-degree: 0%
 
 ## 维护的最佳实践 {#best-practice-for-maintenance}
 
-每年至少两次查看您的区段以确保您的区段处于最新状态。 作为最佳实践，我们建议在您的[!UICONTROL Segments]帐户设置的“[!DNL Marketo Measure]”选项卡中查看您的规则，并在[!DNL Salesforce]中获取报表以检查正在运行的区段。 这些步骤将帮助您和您的团队对细分以及随后的[!DNL Marketo Measure]报表充满信心。
+每年至少两次查看您的区段以确保您的区段处于最新状态。 作为最佳实践，我们建议在您的[!DNL Marketo Measure]帐户设置的“[!UICONTROL Segments]”选项卡中查看您的规则，并在[!DNL Salesforce]中获取报表以检查正在运行的区段。 这些步骤将帮助您和您的团队对细分以及随后的[!DNL Marketo Measure]报表充满信心。
 
 可能触发审阅您的分段的其他原因包括……
 

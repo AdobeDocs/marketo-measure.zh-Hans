@@ -4,9 +4,16 @@ description: 脱机自定义渠道设置 —  [!DNL Marketo Measure]
 title: 脱机自定义渠道设置
 exl-id: c5697714-1a79-40bd-8b7c-e10768f4ef67
 feature: Channels
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/L-mkNzo9yTir-EzNiX-a9ylKKZoKAs0nIXdu39YnLT4
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: 887
 ht-degree: 0%
 
 ---
@@ -71,7 +78,7 @@ SFDC促销活动类型将显示在离线渠道的选项卡中，列在[!DNL Sale
 
 ## 在应用程序中输入离线渠道规则 {#entering-your-offline-channel-rules-to-the-app}
 
-使用自定义规则编辑并更新电子表格后，下一步是在[!DNL Marketo Measure]应用程序中重新创建此渠道映射，实际上您将无法上载离线渠道的电子表格。 而是要在选择列表框中输入信息，如下图所示。 通过单击&#x200B;**[!UICONTROL Offline Channels]**&#x200B;部分下的&#x200B;**[!UICONTROL Channels]**&#x200B;可找到此项。
+使用自定义规则编辑并更新电子表格后，下一步是在[!DNL Marketo Measure]应用程序中重新创建此渠道映射，实际上您将无法上载离线渠道的电子表格。 而是要在选择列表框中输入信息，如下图所示。 通过单击&#x200B;**[!UICONTROL Channels]**&#x200B;部分下的&#x200B;**[!UICONTROL Offline Channels]**&#x200B;可找到此项。
 
 ![](assets/7-2.png)
 

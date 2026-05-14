@@ -3,9 +3,14 @@ description: ' [!DNL Marketo Measure] CRM包的最佳实践 —  [!DNL Marketo M
 title: ' [!DNL Marketo Measure] CRM包的最佳实践'
 exl-id: 97ce0ff3-8aa5-4789-9ee0-25d68c001def
 feature: Salesforce
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/E8LQ0-uUC-xqhG9D7CSuprsjkABJ54azWFSEdiuFABk
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: 415
 ht-degree: 0%
 
 ---
@@ -18,7 +23,7 @@ ht-degree: 0%
 
 ## 概述 {#overview}
 
-[!DNL Marketo Measure]同时与[!DNL Salesforce]和[!DNL Microsoft Dynamics]集成，本文档侧重于为[!DNL Marketo Measure]设计的CRM包的[!DNL Salesforce]最佳实践。
+[!DNL Marketo Measure]同时与[!DNL Salesforce]和[!DNL Microsoft Dynamics]集成，本文档侧重于为[!DNL Salesforce]设计的CRM包的[!DNL Marketo Measure]最佳实践。
 
 在实施过程中，以下两个包将安装到您的[!DNL Salesforce]实例中。
 

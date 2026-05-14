@@ -4,10 +4,17 @@ description: '[!DNL Microsoft Dynamics] CRM安装指南 — Marketo Measure — 
 title: '[!DNL Microsoft Dynamics] CRM安装指南'
 exl-id: bc422c98-60bb-49ea-9bd1-c4149ae628b1
 feature: Installation, Microsoft Dynamics
-source-git-commit: 666812e8bf095170d611cd694b5d0ac5151d8fdd
+TQID: https://experienceleague.adobe.com/KMhrHYDuF9z18bdpdrjfj2O3NbIcMsvQyJBqTpLf1Xo
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 0%
+source-wordcount: 927
+ht-degree: 1%
 
 ---
 
@@ -138,7 +145,7 @@ ht-degree: 0%
 
 **Ad帐户连接**
 
-若要将您的广告帐户与[!DNL Marketo Measure]连接，请首先访问[!UICONTROL Connections]应用程序中的[!DNL Marketo Measure]选项卡。
+若要将您的广告帐户与[!DNL Marketo Measure]连接，请首先访问[!DNL Marketo Measure]应用程序中的[!UICONTROL Connections]选项卡。
 
 1. 按照上述&#x200B;_CRM as a Data Provider_&#x200B;部分中的步骤1和2操作。
 
@@ -158,7 +165,7 @@ ht-degree: 0%
 
    ![](assets/microsoft-dynamics-crm-installation-guide-23.png)
 
-1. 输入您的电话号码。 对于网站，输入用于在网站上跟踪[!DNL Marketo Measure]的主根域。 完成后单击&#x200B;**[!UICONTROL Save]**。
+1. 输入您的电话号码。 对于网站，输入用于在网站上跟踪[!DNL Marketo Measure]的主根域。 完成后，单击 **[!UICONTROL Save]**。
 
    ![](assets/microsoft-dynamics-crm-installation-guide-24.png)
 
@@ -166,7 +173,7 @@ ht-degree: 0%
    >
    >要添加多个根域，请联系您的[!DNL Marketo Measure]客户代表。
 
-1. 然后，必须将[[!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md)放置在整个网站和登陆页面中。 我们建议在登陆页面的标题中对该脚本进行硬编码，或通过Tag Management系统(如[Google标签管理器](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-via-google-tag-manager.md))进行添加。
+1. 然后，必须将[[!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script.md)放置在整个网站和登陆页面中。 我们建议在登陆页面的标题中对该脚本进行硬编码，或通过Tag Management系统（如[Google标签管理器](/help/marketo-measure-tracking/setting-up-tracking/adding-marketo-measure-script-via-google-tag-manager.md)）进行添加。
 
    >[!NOTE]
    >
