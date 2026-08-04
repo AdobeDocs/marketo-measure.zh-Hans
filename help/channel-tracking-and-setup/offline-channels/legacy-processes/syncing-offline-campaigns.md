@@ -5,8 +5,7 @@ title: 同步离线营销活动
 exl-id: a6f9e217-ff6e-474d-9f14-c6f6238c9e84
 feature: Channels
 TQID: https://experienceleague.adobe.com/ltakDiD8y340M4KAMrInxoUjM1jGCIMmLs1stypPXzo
-product_v2:
-  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+product_v2: id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
 source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
 workflow-type: tm+mt
 source-wordcount: 727
@@ -65,18 +64,18 @@ ht-degree: 0%
 ![](assets/4-3.png)
 
 * **包括所有营销活动成员**
-   * 此选项允许[!DNL Marketo Measure]将接触点归因于每个营销活动成员。
+  * 此选项允许[!DNL Marketo Measure]将接触点归因于每个营销活动成员。
 
 * **包括“已响应”营销活动成员。**
-   * 此选项会将接触点应用于具有“已响应”状态的营销活动成员。
+  * 此选项会将接触点应用于具有“已响应”状态的营销活动成员。
 
 * **排除所有营销活动成员。**
-   * 此选项不会将接触点归因于营销活动中的任何成员，并充当刻意从[!DNL Marketo Measure]中排除营销活动的标志。 如果您曾经在意外情况下将促销活动与购买者接触点同步，则可以将状态更改为“排除所有促销活动成员”，并且接触点将被删除。
+  * 此选项不会将接触点归因于营销活动中的任何成员，并充当刻意从[!DNL Marketo Measure]中排除营销活动的标志。 如果您曾经在意外情况下将促销活动与购买者接触点同步，则可以将状态更改为“排除所有促销活动成员”，并且接触点将被删除。
 
 一旦选择了其中一个选项，[!DNL Marketo Measure]将为每个营销活动成员分配一个接触点（如果适用）。 添加到营销活动&#x200B;_的销售线索或联系人必须_&#x200B;具有与其记录关联的电子邮件地址，才能[!DNL Marketo Measure]创建接触点。 如果没有电子邮件地址，[!DNL Marketo Measure]将不会向营销活动成员分配接触点。
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] 教程：映射脱机渠道](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
+>[[!DNL Marketo Measure] 教程：映射脱机渠道](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
 >
->[[!DNL Marketo Measure] 教程： Campaign对象字段](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
+>[[!DNL Marketo Measure] 教程： Campaign对象字段](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/campaign-object-fields){target="_blank"}
