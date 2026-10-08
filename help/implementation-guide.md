@@ -45,7 +45,7 @@ Ultimate用户是AEP配置用户。 如果他们已有AEP，则我们将不会�
 
 >[!NOTE]
 >
->查看架构[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema){target="_blank"}的构建块，了解架构、类和字段组的概述。
+>查看架构[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hans#building-blocks-of-a-schema){target="_blank"}的构建块，了解架构、类和字段组的概述。
 
 **XDM架构=类+架构字段组&#42;**
 
@@ -56,13 +56,13 @@ Ultimate用户是AEP配置用户。 如果他们已有AEP，则我们将不会�
 
 ![&amp;42；架构包含一个类和零个或多个架构字段](assets/marketo-guide-1.png)
 
-[数据集概述](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview#){target="_blank"}：所有成功引入AEP的数据将作为数据集保留在数据湖中。 数据集是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。
+[数据集概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/overview#){target="_blank"}：所有成功引入AEP的数据将作为数据集保留在数据湖中。 数据集是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。
 
 ## 创建架构 {#creating-a-schema}
 
 我们建议使用自动生成实用程序来创建十个标准B2B架构。
 
-* 下载和设置实用工具[的步骤可在此处](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}找到。
+* 下载和设置实用工具[的步骤可在此处](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html?lang=zh-Hans#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}找到。
 
 对于具有&#x200B;_&#x200B;**CDP权利**&#x200B;_&#x200B;的用户：通过转到源页面创建架构。
 
@@ -80,7 +80,7 @@ Ultimate用户是AEP配置用户。 如果他们已有AEP，则我们将不会�
 >
 >添加新数据集时，我们建议创建流量而不是使用现有流量。
 
-[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html){target="_blank"}
+[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html?lang=zh-Hans){target="_blank"}
 
 **创建数据流的步骤：**
 
@@ -95,7 +95,7 @@ Ultimate用户是AEP配置用户。 如果他们已有AEP，则我们将不会�
    >* 如果将一种架构类型映射到另一种相同的架构类型，则会自动完成映射。
    >* 您还可以从系统中的其他流导入映射。
    >* 您可以将一个Source字段映射到多个目标字段，但无法执行相反操作。
-   >* 您可以创建计算字段（[数据准备映射函数](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html){target="_blank"}）。
+   >* 您可以创建计算字段（[数据准备映射函数](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=zh-Hans){target="_blank"}）。
 
    >[!CAUTION]
    >
@@ -123,7 +123,7 @@ Ultimate用户是AEP配置用户。 如果他们已有AEP，则我们将不会�
 
 ![选项1：要直接从UI运行查询，请访问查询](assets/marketo-guide-4.png)
 
-选项2： [下载和使用PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html){target="_blank"} （速度更快，可靠性更高）。
+选项2： [下载和使用PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html?lang=zh-Hans){target="_blank"} （速度更快，可靠性更高）。
 
 ## 激活Marketo Measure的数据集 {#activate-dataset-for-marketo-measure}
 

@@ -36,7 +36,7 @@ Marketo Measure接受以下值：电子邮件地址、Salesforce潜在客户Id�
 
 | 营销自动化 | 令牌/标记/宏 | 示例 | 支持材料 |
 | --- | --- | --- | --- |
-| Marketo | `{{lead.Email Address}}` | <https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId=`{{`lead.EmailAddress`}}`> | [令牌概述](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/personalizing-landing-pages/tokens-overview.html) |
+| Marketo | `{{lead.Email Address}}` | <https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId=`{{`lead.EmailAddress`}}`> | [令牌概述](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/personalizing-landing-pages/tokens-overview.html?lang=zh-Hans) |
 | 帕尔多 | %%email%%或%%user_crm_id%% | <https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId=%%email%%> | [Pardot变量标记引用](https://help.salesforce.com/s/articleView?language=en_US&id=pardot_variable_tags_reference.htm&type=5) |
 | Hubspot | （通过编辑器插入） | 不适用 | [HubSpot个性化内容](https://knowledge.hubspot.com/website-pages/personalize-your-content) |
 | 操作 | （通过消息编辑器插入） | 不适用 | [实际操作个性化电子邮件内容](https://connect.act-on.com/hc/en-us/articles/360033436074-How-to-Personalize-Email-Content-with-CRM-Data) |
