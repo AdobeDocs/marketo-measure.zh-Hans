@@ -3,16 +3,20 @@ description: Marketo Measure用户概述指南
 title: 概述
 exl-id: 2076521c-b579-457c-ab1c-263b1da4dd89
 feature: Multi-Currency
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 4df48d8c-59df-55ca-8ab7-225a5c35169b
+    internal-label: Multi-Currency
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 1%
-
 ---
-
 # 概述 {#overview}
 
-现在，[!DNL Marketo Measure]应用程序仅支持单一货币（假定为美元），但我们知道并知道世界各地的客户需要报告其自己的公司和用户货币。 此功能使用户在查看[!DNL Marketo Measure]中报告的支出或销售收入时，可在其CRM中使用的相同货币之间进行切换。
+现在，[!DNL Marketo Measure]应用程序仅支持单一货币（假定为USD），但我们知道并知道世界各地的客户需要报告其自己的公司和用户货币。 此功能使用户在查看[!DNL Marketo Measure]中报告的支出或销售收入时，可在其CRM中使用的相同货币之间进行切换。
 
 ## 可用性 {#availability}
 
@@ -31,7 +35,7 @@ ht-degree: 1%
 | **术语** | 描述 |
 |---|---|
 | **高级货币** | 客户启用了高级货币管理和多种货币，这意味着他们可以在不同的时间期拥有不同的折换率。 |
-| **公司货币** | 这些是组织在CRM中列出并声明的各种货币，所有货币都具有兑换率。[!DNL Marketo Measure] 将导入这些值，并在我们的产品中向用户提供这些货币。 |
+| **公司货币** | 这些是组织在CRM中列出并声明的各种货币，所有货币都具有兑换率。 [!DNL Marketo Measure]将导入这些值，并使这些货币在我们的产品中可供用户使用。 |
 | **货币区域设置** | 用于组织的单一货币，在公司信息页面上设置。 |
 | **本地货币（或用户货币）** | 在用户配置文件中为单个用户设置的货币，以便他们能够查看任何金额的本地货币。 组织必须先声明和设置货币，用户才能选择其本地货币。 |
 | **单一货币** | 用于在CRM中未使用多种货币，但其组织以其他货币运行的客户，因此他们具有“货币区域设置”。 这仍然是组织的单一货币，但没有任何转化。 |

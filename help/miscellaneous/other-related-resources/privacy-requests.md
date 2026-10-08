@@ -1,30 +1,33 @@
 ---
-description: 隐私请求 —  [!DNL Marketo Measure]
+description: 隐私请求 — [!DNL Marketo Measure]
 title: 隐私请求
 exl-id: 883e475f-9868-412a-b505-230556f38484
 feature: APIs, Tracking
-TQID: https://experienceleague.adobe.com/y6cWoJaRD7Tf1o4-aCY9MJdcLGt4RVF-ATuiFpAxyWI
+TQID: 'https://experienceleague.adobe.com/y6cWoJaRD7Tf1o4-aCY9MJdcLGt4RVF-ATuiFpAxyWI'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Privacy
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 283
+source-wordcount: '283'
 ht-degree: 26%
-
 ---
-
 # 隐私请求 {#privacy-requests}
 
 本文档概述了如何管理可通过[!DNL Privacy Service] UI和&#x200B;**[!DNL Privacy Service]API**&#x200B;发送给[!DNL Marketo Measure]的单个数据隐私请求。
 
 您可以通过两种方式提交单个请求以从[!DNL Marketo Measure]访问和删除使用者数据：
 
-* 通过[[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=zh-Hans){target="_blank"}。
-* 通过&#x200B;**[!DNL Privacy Service]API**。 请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hans){target="_blank"}和API引用[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}。
+* 通过[[!DNL Privacy Service] UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html){target="_blank"}。
+* 通过&#x200B;**[!DNL Privacy Service]API**。 请参阅文档[此处](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html){target="_blank"}和API引用[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service/){target="_blank"}。
 
 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans){target="_blank"}支持两种类型的请求：数据访问和数据删除。
 
@@ -55,9 +58,9 @@ ht-degree: 26%
 
 * &quot;action&quot;： [!UICONTROL access]或删除
 * &quot;userIDs&quot;：
-   * &quot;namespace&quot;：电子邮件
-   * &quot;type&quot;：标准
-   * &quot;value&quot;： `<Data Subject's Email Address>`
+  * &quot;namespace&quot;：电子邮件
+  * &quot;type&quot;：标准
+  * &quot;value&quot;： `<Data Subject's Email Address>`
 
 &quot;include&quot;：
 

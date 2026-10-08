@@ -3,13 +3,20 @@ description: 适用于Marketo Measure用户的Dynamics活动和营销列表指�
 title: Dynamics活动和营销列表
 exl-id: 7b3d4032-5edf-489d-b86b-1e2a5755b258
 feature: Microsoft Dynamics
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: b04b7ec7-75ad-438f-8f44-189de44e10da
+    internal-label: Microsoft Dynamics integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
-
 ---
-
 # Dynamics活动和营销列表 {#dynamics-campaigns-and-marketing-lists}
 
 >[!NOTE]
@@ -80,7 +87,7 @@ Campaign响应可能不会显示的一个原因是，已记录潜在客户/联�
 
 Dynamics营销活动使用“营销活动类型”字段在自定义营销渠道中进行分段。 可以在Dynamics的“自定义”菜单中更改这些设置。
 
-促销活动类型菜单中的值被提取到[!DNL Marketo Measure]应用程序中。**[!UICONTROL My Account]** > **[!UICONTROL Settings]** > **[!UICONTROL Offline Channels]**.
+促销活动类型菜单中的值被提取到[!DNL Marketo Measure]应用程序中。**[!UICONTROL My Account]** > **[!UICONTROL Settings]** > **[!UICONTROL Offline Channels]**。
 
 对于每种营销活动类型，都可以将其映射到渠道和子渠道组合，以便从营销活动派生的每个接触点都具有正确的映射渠道和子渠道。
 

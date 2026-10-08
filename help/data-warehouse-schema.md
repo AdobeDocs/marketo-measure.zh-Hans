@@ -3,13 +3,17 @@ description: Marketo Measure Data Warehouse架构详细介绍表和列的参考
 title: Data Warehouse架构
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 09cd1bee-ffcc-509c-9a9a-ca8384eac8e8
+    internal-label: Data Warehouse
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '21802'
 ht-degree: 8%
-
 ---
-
 # Data Warehouse架构 {#data-warehouse-schema}
 
 Data Warehouse允许您根据需要进行跟踪、根据需要报告归因数据，并将其连接到其他数据集。
@@ -905,7 +909,7 @@ _单击完整版本的图像_
         <p>源系统中用于广告帐户的货币代码。</p>
       </td>
       <td>
-        <p>美元</p>
+        <p>USD</p>
       </td>
     </tr>
     <tr>
@@ -3739,7 +3743,7 @@ _单击完整版本的图像_
       <td>Source_ISO_CODE</td>
       <td>varchar</td>
       <td>源系统中的货币ISO代码。</td>
-      <td>美元</td>
+      <td>USD</td>
     </tr>
     <tr>
       <td>START_DATE</td>
@@ -4003,7 +4007,7 @@ _单击完整版本的图像_
         <p>从广告连接提取的广告组的名称。</p>
       </td>
       <td>
-        <p>归因管理软件 | 短语</p>
+        <p>归因管理软件 |短语</p>
       </td>
     </tr>
     <tr>
@@ -4090,7 +4094,7 @@ _单击完整版本的图像_
         <p>布尔</p>
       </td>
       <td>
-        <p>指示该行是否包含可由Creative汇总的成本。 (例如，要获取Creative成本，需对此列等于true的行求和。)</p>
+        <p>指示该行是否包含可由Creative汇总的成本。 （例如，要获取Creative成本，需对此列等于true的行求和。）</p>
       </td>
       <td>
         <p>假</p>
@@ -4228,7 +4232,7 @@ _单击完整版本的图像_
       <td>ISO_CURRENCY_CODE</td>
       <td>varchar</td>
       <td>从源系统导入的货币的ISO代码。</td>
-      <td>美元</td>
+      <td>USD</td>
     </tr>
     <tr>
       <td>Source_ID</td>
@@ -5116,7 +5120,7 @@ _单击完整版本的图像_
       <td>ISO_CODE</td>
       <td>varchar</td>
       <td>货币的ISO代码。</td>
-      <td>美元</td>
+      <td>USD</td>
     </tr>
     <tr>
       <td>IS_CORPORATE</td>
@@ -6471,7 +6475,7 @@ _单击完整版本的图像_
         <p>布尔</p>
       </td>
       <td>
-        <p>指示该行是否包含可由Creative汇总的成本。 (例如，要获取Creative成本，需对此列等于true的行求和。)</p>
+        <p>指示该行是否包含可由Creative汇总的成本。 （例如，要获取Creative成本，需对此列等于true的行求和。）</p>
       </td>
       <td>
         <p>假</p>
@@ -6663,7 +6667,7 @@ _单击完整版本的图像_
         <p>提交表单的URL，包括任何查询参数。</p>
       </td>
       <td>
-        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1H z0RrbXlDVmxJNzIwNkhW</p>
+        <p>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1H z0RrbXlDVmxJNzIwNkhW</p>
       </td>
     </tr>
     <tr>
@@ -6697,7 +6701,7 @@ _单击完整版本的图像_
         <p>提交表单时记录的设备和浏览器。</p>
       </td>
       <td>
-        <p>Mozilla/5.0(Macintosh；英特尔Mac OS X 10_13_6) AppleWebKit/605.1.15（KHTML，如Gecko）版本/11.1.2 Safari/605.1.15</p>
+        <p>Mozilla/5.0（Macintosh；英特尔Mac OS X 10_13_6） AppleWebKit/605.1.15（KHTML，如Gecko）版本/11.1.2 Safari/605.1.15</p>
       </td>
     </tr>
     <tr>
@@ -6917,7 +6921,7 @@ _单击完整版本的图像_
       <td>
         <p>提供展示的URL，包括任何查询参数。</p>
       </td>
-      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1H z0RrbXlDVmxJNzIwNkhW</td>
+      <td>https://info.adobe.com/webinar-marketo-measure-impact?utm_source=partner&amp;mkt_tok=eyJpIjoiTnpBeE1EVml PV0UyWlRObSIsInQiOi3MEFIek04ZVJiWm9renc1Z29RXC9kXC92YkxycFRYclE0MVhOaH Nwdml3YTZBZDdPdXh4Q0RmcnBJWXhwZTF1H z0RrbXlDVmxJNzIwNkhW</td>
     </tr>
     <tr>
       <td>
@@ -6946,7 +6950,7 @@ _单击完整版本的图像_
         <p>提交表单时记录的设备和浏览器。</p>
       </td>
       <td>
-        <p>Mozilla/5.0(Macintosh；英特尔Mac OS X 10_13_6) AppleWebKit/605.1.15（KHTML，如Gecko）版本/11.1.2 Safari/605.1.15</p>
+        <p>Mozilla/5.0（Macintosh；英特尔Mac OS X 10_13_6） AppleWebKit/605.1.15（KHTML，如Gecko）版本/11.1.2 Safari/605.1.15</p>
       </td>
     </tr>
     <tr>
@@ -8834,7 +8838,7 @@ _单击完整版本的图像_
       <td>CURRENCY_ISO_CODE</td>
       <td>varchar</td>
       <td>从源系统导入的货币的ISO代码。</td>
-      <td>美元</td>
+      <td>USD</td>
     </tr>
     <tr>
       <td>CURRENCY_ID</td>
@@ -9332,7 +9336,7 @@ _单击完整版本的图像_
         <p>页面查看源自的URL，包括任何查询参数。</p>
       </td>
       <td>
-        <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution?utm_source=linkedin&utm_medium=Social&utm_campaign=SU%20-%20CMO%20JT&utm_content=CMOs%20Guide&utm_term=lisu05091601</p>
+        <p>http://info.adobe.com/cmos-guide-to-b2b-marketing-attribution?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU%20-%20CMO%20JT&amp;utm_content=CMOs%20Guide&amp;utm_term=lisu05091601</p>
       </td>
     </tr>
     <tr>
@@ -9911,7 +9915,7 @@ _单击完整版本的图像_
         <p>会话的第一次页面查看的URL，包括任何查询参数。</p>
       </td>
       <td>
-        <p>http://www.adobe.com/salesforce-google-analytics?_bt=83558988035&_bk=google%20analytics%20salesforce&_bm= p&amp;gclid=CMvd5YTLo84CFUI9gQodd-kLEQ</p>
+        <p>http://www.adobe.com/salesforce-google-analytics?_bt=83558988035&amp;_bk=google%20analytics%20salesforce&amp;_bm= p&amp;gclid=CMvd5YTLo84CFUI9gQodd-kLEQ</p>
       </td>
     </tr>
     <tr>
@@ -11612,7 +11616,7 @@ _单击完整版本的图像_
         <p>生成接触点的会话的第一个登陆页面。 原始登陆页面将包含URL中的所有查询参数。 在CRM中称为“Landing Page - Raw”。</p>
       </td>
       <td>
-        <p>https://info.adpbe.com/definitive-guide-to-pipeline-marketing?utm_source=linkedin&utm_medium=Social&utm_campaign=SU_COM_Demand_ Skills&amp;utm_content=DGPM&amp;utm_term=lisu03151846&amp;_bl=66452504</p>
+        <p>https://info.adpbe.com/definitive-guide-to-pipeline-marketing?utm_source=linkedin&amp;utm_medium=Social&amp;utm_campaign=SU_COM_Demand_ Skills&amp;utm_content=DGPM&amp;utm_term=lisu03151846&amp;_bl=66452504</p>
       </td>
     </tr>
     <tr>
@@ -12627,7 +12631,7 @@ _单击完整版本的图像_
         <p>生成接触点的会话的第一个登陆页面。 原始登陆页面将包含URL中的所有查询参数。 在CRM中称为“Landing Page - Raw”。</p>
       </td>
       <td>
-        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ marketo+%maeasure%27s+Pipeline+Marketing+Blog%29</p>
+        <p>https://www.adobe.com/blog/budget-and-planning-maturity-model-b2b-marketing?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ marketo+%maeasure%27s+Pipeline+Marketing+Blog%29</p>
       </td>
     </tr>
     <tr>
@@ -12675,7 +12679,7 @@ _单击完整版本的图像_
         <p>会话中记录的第一张表单产生了接触点。 后续表单提交不会显示在Attribution_Touchpoints表中，而是显示在Form_Submit表中。 原始表单页面URL中可能包含查询参数。 在CRM中称为“表单URL — 原始”。</p>
       </td>
       <td>
-        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&utm_medium=paid&utm_content=sfskill&utm _campaign=Content%20-%20AdWords%20Guide</p>
+        <p>http://info.adobe.com/adwords-for-lead-generation?utm_source=linkedin&amp;utm_medium=paid&amp;utm_content=sfskill&amp;utm _campaign=Content%20-%20AdWords%20Guide</p>
       </td>
     </tr>
     <tr>
@@ -13264,7 +13268,7 @@ _单击完整版本的图像_
       <td>varchar</td>
       <td>页面查看的URL，包括任何查询参数。</td>
       <td>
-        <p>https://learn.atest.com/simplify-retention-starter-kit.html?x=nGfrBF&utm_medium=cpc&utm_source=intensify</p>
+        <p>https://learn.atest.com/simplify-retention-starter-kit.html?x=nGfrBF&amp;utm_medium=cpc&amp;utm_source=intensify</p>
       </td>
     </tr>
     <tr>

@@ -1,24 +1,31 @@
 ---
-description: 最新发行说明 —  [!DNL Marketo Measure]
+description: 当前的发行说明 - [!DNL Marketo Measure]
 title: 最新发行说明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-TQID: https://experienceleague.adobe.com/WCmnCEZ-aUK4OODKYLymgD8-Ohb6k-AIcJMVrBHMm2Y
+TQID: 'https://experienceleague.adobe.com/WCmnCEZ-aUK4OODKYLymgD8-Ohb6k-AIcJMVrBHMm2Y'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: ffecc0ee-70f2-5687-bca0-deee982ffbfa
+    internal-label: Release Notes
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Privacy
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1464
+source-wordcount: '1464'
 ht-degree: 0%
-
 ---
-
 # 发行说明：2024年 {#release-notes-2024}
 
 有关2024版的所有新增功能和更新功能，请参阅下文。
@@ -33,13 +40,13 @@ ht-degree: 0%
 
 对于新客户，会话渠道转移现在为默认行为。 现有客户可以通过在设置>每次联系归因下打开会话渠道转移开关来启用此功能。 激活后，此设置将无法撤消。
 
-文档： [Marketo Measure Web会话的定义](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
+文档： [Marketo Measure Web会话的定义](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-tracking/setting-up-tracking/definition-of-marketo-measure-web-sessions){target="_blank"}
 
 ### 关键词ROI仪表板
 
 新的关键字ROI仪表板提供付费搜索促销活动表现的详细见解，从而全面了解关键字级别的成本、归因收入、生成的商机和机会。 此仪表板可帮助您评估Google Adwords、LinkedIn和Bing Ads等中每个关键字的ROI。
 
-文档： [关键字ROI仪表板](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
+文档： [关键字ROI仪表板](https://experienceleague.adobe.com/en/docs/marketo-measure/using/marketo-measure-discover-ui/dashboards/keyword-roi-dashboard){target="_blank"}
 
 ### 增强的区段规则
 
@@ -76,7 +83,7 @@ ht-degree: 0%
 
 ### 提醒： Salesforce字段弃用 — 6月14日
 
-如去年所宣布的，我们将逐步停止向Lead/Contact对象[&#128279;](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"}导出作业，以简化我们的集成，并消除导出到Salesforce标准对象的需要。 您可以按照此处介绍的步骤[从接触点对象获取相同的数据](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}。 我们还将共享有关创建工作流的文档，以将此数据添加到Lead/Contact对象。 弃用将于2024年6月14日生效。
+如去年所宣布的，我们将逐步停止向Lead/Contact对象](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"}导出作业，以简化我们的集成，并消除导出到Salesforce标准对象的需要。 [您可以按照此处介绍的步骤[从接触点对象获取相同的数据](/help/release-notes/previous-releases/2023.md#deprecations){target="_blank"}。 我们还将共享有关创建工作流的文档，以将此数据添加到Lead/Contact对象。 弃用将于2024年6月14日生效。
 
 这一变化将带来两大好处：
 

@@ -1,15 +1,19 @@
 ---
-description: '[!DNL Marketo Measure]维护 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure]维护 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]维护'
 exl-id: 4e1d53bb-0af8-4774-9f69-6a95516b3d11
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 1%
-
 ---
-
 
 # [!DNL Marketo Measure]维护 {#marketo-measure-maintenance}
 
@@ -42,7 +46,7 @@ Marketo Measure会跟踪我们的Javascript处于活动状态的所有页面和�
 
 **评估接触点隐藏设置（1x/季度）**
 
-如果您在归因故事中看到许多您不希望考虑的接触点（例如[!DNL Login]或[!DNL Unsubscribe forms]、职业生涯页面或内部应用程序中的接触点），您可能需要评估现有的接触点隐藏设置。 每季度一次，找出任何一组产生不必要噪音的接触点，并适当更新您的抑制逻辑。[以下是一篇关于操作方法的有用文章](/help/channel-tracking-and-setup/touchpoint-removal-and-touchpoint-suppression.md)。
+如果您在归因故事中看到许多您不希望考虑的接触点（例如[!DNL Login]或[!DNL Unsubscribe forms]、职业生涯页面或内部应用程序中的接触点），您可能需要评估现有的接触点隐藏设置。 每季度一次，找出任何一组产生不必要噪音的接触点，并适当更新您的抑制逻辑。 [以下是一篇有用的文章](/help/channel-tracking-and-setup/touchpoint-removal-and-touchpoint-suppression.md)介绍操作方法。
 
 **审核自定义阶段映射的准确性（1x/季度）（如果适用）**
 

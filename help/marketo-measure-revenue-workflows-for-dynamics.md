@@ -3,13 +3,20 @@ description: 用于调整Marketo Measure报表的Dynamics收入和关闭日期�
 title: Dynamics的[!DNL Marketo Measure]收入工作流
 exl-id: 0e64201a-bc65-4a6d-9192-09c14c810c4a
 feature: Microsoft Dynamics
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: b04b7ec7-75ad-438f-8f44-189de44e10da
+    internal-label: Microsoft Dynamics integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 0%
-
 ---
-
 # Dynamics的[!DNL Marketo Measure]收入工作流 {#marketo-measure-revenue-workflows-for-dynamics}
 
 ## 第一部分：预计收入与实际收入 {#part-estimated-revenue-vs-actual-revenue}
@@ -42,7 +49,7 @@ ht-degree: 0%
 
 ## 第2部分：预计关闭日期与实际关闭日期 {#part-estimated-close-date-vs-actual-close-date}
 
-管道收入数据在功能板中现成不可用，因为默认情况下，Dynamics有两个库存关闭日期字段：预计关闭日期和实际关闭日期。[!DNL Marketo Measure] 只能指向功能板中的一个关闭日期字段，并且该字段指向实际关闭日期。
+管道收入数据在功能板中现成不可用，因为默认情况下，Dynamics有两个库存关闭日期字段：预计关闭日期和实际关闭日期。 [!DNL Marketo Measure]在仪表板中只能指向一个关闭日期字段，它指向实际关闭日期。
 
 如果“实际关闭日期”字段中未显示任何数据，则控制面板中不会显示任何有关未完成业务机会的数据。 也就是说，需要基于机会阶段的工作流来支持这两个日期字段。
 

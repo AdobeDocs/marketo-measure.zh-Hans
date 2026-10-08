@@ -3,13 +3,17 @@ description: 面向Marketo Measure用户的CRM Campaign成本指南
 title: CRM Campaign成本
 exl-id: d967cabe-b9f1-4ea1-a81b-e4484c703ecf
 feature: Spend Management
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: e3b4b95f-0bb9-5cb3-a479-9dcb943dca3f
+    internal-label: Spend Management
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '1209'
-ht-degree: 0%
-
+source-wordcount: '1220'
+ht-degree: 1%
 ---
-
 # CRM Campaign成本 {#crm-campaign-costs}
 
 大多数[!DNL Marketo Measure]客户都使用CRM营销活动来跟踪离线营销活动。 使用这些营销活动的营销人员还可以监控CRM中的成本。 此功能允许[!DNL Marketo Measure]读取这些成本并将它们应用于[!DNL Marketo Measure]内报告的营销支出，从而让营销人员更轻松。 迄今为止，客户必须每月手动输入每个促销活动的成本，但向[!DNL Marketo Measure]提供必要信息后，用户可以自动执行此流程，以便营销人员可以花费更多时间分析他们的支出和ROI。

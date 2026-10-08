@@ -1,21 +1,29 @@
 ---
-description: '[!DNL Marketo Measure] Ultimate数据完整性要求 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure] Ultimate数据完整性要求 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] Ultimate数据完整性要求'
 feature: Integration, Tracking, Attribution
 exl-id: 8ad001d0-e9fe-46f5-b808-d6203a55a229
-TQID: https://experienceleague.adobe.com/bsfx5FTcHyxii6iTHPyHBemX9Wfwo9-iIvHO6uTX95E
+TQID: 'https://experienceleague.adobe.com/bsfx5FTcHyxii6iTHPyHBemX9Wfwo9-iIvHO6uTX95E'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Implementation
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1703
+source-wordcount: '1703'
 ht-degree: 22%
-
 ---
-
 # [!DNL Marketo Measure] Ultimate数据完整性要求 {#marketo-measure-ultimate-data-integrity-requirement}
 
 [!DNL Marketo Measure]验证传入的AEP数据集，以确保数据充分且一致地用于归因。 如果不满足数据完整性要求，则会导致[!DNL Marketo Measure]系统拒绝数据集。 本文详细介绍了数据完整性要求，提供了数据检查的查询示例，并建议了具有空值的必填字段的解决方案。
@@ -888,14 +896,14 @@ ht-degree: 22%
       <td>字符串</td>
       <td></td>
       <td>是</td>
-      <td>Marketo Measure中设置的默认货币代码，例如USD</td>
+      <td>Marketo Measure中设置的默认货币代码，如USD</td>
     </tr>
   </tbody>
 </table>
 
 ## 货币兑换数据要求 {#currency-conversion-data-requirements}
 
-**默认货币**：在Marketo Measure中，所有收入和成本在报告时都转换为默认货币。 对于目标货币本身，必须有一条记录具有相同的日期范围（例如，USD到USD），并且兑换率为1。
+**默认货币**：在Marketo Measure中，所有收入和成本在报告时都转换为默认货币。 目标货币本身必须具有一条与相同日期覆盖的记录（例如，从USD到USD），并且转换率为1。
 
 **兑换率**：每个（源货币、目标货币）对可以在不同的日期期间具有多个兑换率。 根据Salesforce DatedConversionRate对象，费率必须涵盖0001-01-01到9999-12-31的整个时间范围。
 
@@ -1384,7 +1392,7 @@ select 'last updated date', count(*) from currency_conversion_rate where extSour
 我们建议在字段映射中使用计算字段将该字段默认为非NULL值。 以下是两个示例：
 
 * 如果某些opportunity记录的opportunityName为null ，请在字段映射中创建并使用以下计算字段
-   * `iif(name != null && trim(name) != "", name, "Unknown")`
+  * `iif(name != null && trim(name) != "", name, "Unknown")`
 
 * 如果某些experienceevent记录的leadOperation.campaignProgression.campaignID为空，请在字段映射中创建并使用以下计算字段
-   * `iif(leadOperation.campaignProgression.campaignID != null && leadOperation.campaignProgression.campaignID != "" , to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", leadOperation.campaignProgression.campaignID, "sourceKey", concat(leadOperation.campaignProgression.campaignID,"@123-abc-321.Marketo")), iif(eventType == "leadOperation.statusInCampaignProgressionChanged", to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", "Unknown", "sourceKey", "Unknown@123-abc-321.Marketo"), null))`
+  * `iif(leadOperation.campaignProgression.campaignID != null && leadOperation.campaignProgression.campaignID != "" , to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", leadOperation.campaignProgression.campaignID, "sourceKey", concat(leadOperation.campaignProgression.campaignID,"@123-abc-321.Marketo")), iif(eventType == "leadOperation.statusInCampaignProgressionChanged", to_object("sourceType", "Marketo", "sourceInstanceID", "123-abc-321", "sourceID", "Unknown", "sourceKey", "Unknown@123-abc-321.Marketo"), null))`

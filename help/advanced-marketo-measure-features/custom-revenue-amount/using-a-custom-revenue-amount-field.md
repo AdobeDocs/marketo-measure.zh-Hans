@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874793
-description: 使用自定义收入金额字段 —  [!DNL Marketo Measure]
+description: 使用自定义收入金额字段 — [!DNL Marketo Measure]
 title: 使用自定义收入金额字段
 exl-id: 517ea4f9-aa83-48d0-8ce7-003f4a907430
 feature: Custom Revenue Amount
-TQID: https://experienceleague.adobe.com/EygbB-2KJDZKMRdKS2Mx7JQwdzhmJ77swewudzsGIb0
+TQID: 'https://experienceleague.adobe.com/EygbB-2KJDZKMRdKS2Mx7JQwdzhmJ77swewudzsGIb0'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 47de9b4f-9dd4-52b4-bccb-c7af30dd2f2c
+    internal-label: Custom Revenue Amount
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 602
+source-wordcount: '602'
 ht-degree: 1%
-
 ---
-
 # 使用自定义收入金额字段 {#using-a-custom-revenue-amount-field}
 
 默认情况下，采购员归因接触点将从以下两个字段之一提取机会金额：
@@ -80,7 +82,7 @@ ht-degree: 1%
 
 ## 在Salesforce Classic中创建工作流 {#create-the-workflow-in-salesforce-classic}
 
-以下步骤适用于Salesforce Classic用户。 如果您已切换到Salesforce Lightning，则可以在上面[&#128279;](#create-the-workflow-in-salesforce-lightning)找到这些步骤。
+以下步骤适用于Salesforce Classic用户。 如果您已切换到Salesforce Lightning，则可以在上面](#create-the-workflow-in-salesforce-lightning)找到这些步骤[。
 
 1. 导航到&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Workflow & Approvals]** > **[!UICONTROL Workflow Rules]**。
 

@@ -3,13 +3,17 @@ description: Google Analytics转化与Marketo Measure用户的Buyer Touchpoint�
 title: Google Analytics转化和Buyer Touchpoint之间的区别
 exl-id: d09d963c-3207-467c-852a-d1edd49511fa
 feature: Touchpoints
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 1%
-
 ---
-
 # Google Analytics转化和Buyer Touchpoint之间的区别 {#difference-between-a-google-analytics-conversion-and-a-buyer-touchpoint}
 
 了解[!DNL Google Analytics (GA)]目标是什么，以及它与Buyer Touchpoint有何区别。
@@ -63,7 +67,7 @@ ht-degree: 1%
 
 **买方接触点有何不同？**
 
-[!DNL Marketo Measure] JavaScript跟踪特定站点所有形式的会话数据和表单提交。 无需从[!DNL Marketo Measure]角度对目标进行编码。 此过程是自动的。 对于表单提交，每次匿名用户填写特定表单上的信息字段并单击表单提交按钮时，[!DNL Marketo Measure]都会报告表单已完成。[!DNL Marketo Measure] 您不需要感谢页面来记录表单提交。
+[!DNL Marketo Measure] JavaScript跟踪特定站点所有形式的会话数据和表单提交。 无需从[!DNL Marketo Measure]角度对目标进行编码。 此过程是自动的。 对于表单提交，每次匿名用户填写特定表单上的信息字段并单击表单提交按钮时，[!DNL Marketo Measure]都会报告表单已完成。 [!DNL Marketo Measure]不需要感谢页面来记录表单提交。
 
 [!DNL Marketo Measure]在以下情况下创建表单接触点：
 
@@ -74,8 +78,8 @@ ht-degree: 1%
 在以下情况下，[!DNL Marketo Measure]将忽略目标Google Analytics转换：
 
 * 机器人在网站上提交表单（这些机器人通常不会将其转化为客户的CRM）。
-* 用户在首次提交表单后提交更多表单。[!DNL Marketo Measure] 将仅推送该会话的第一次转化。
-* 用户多次单击表单提交。[!DNL Marketo Measure] 将只考虑第一次提交表单。
+* 用户在首次提交表单后提交更多表单。 [!DNL Marketo Measure]将仅推送该会话的第一次转化。
+* 用户多次单击表单提交。 [!DNL Marketo Measure]将只考虑第一次提交表单。
 * 用户多次重新加载感谢页面。
 * 用户正在使用任何广告阻止工具。
 

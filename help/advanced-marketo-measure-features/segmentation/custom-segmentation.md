@@ -1,21 +1,24 @@
 ---
 unique-page-id: 18874604
-description: 自定义分段 —  [!DNL Marketo Measure]
+description: 自定义分段 — [!DNL Marketo Measure]
 title: 自定义分段
 exl-id: c20a2add-250e-45ff-97a6-1b1c03351b6a
 feature: Segmentation
-TQID: https://experienceleague.adobe.com/COqmO8TXqg0Du1FmW4MDfi6Wz33uO8S2pGywUoc40KM
+TQID: 'https://experienceleague.adobe.com/COqmO8TXqg0Du1FmW4MDfi6Wz33uO8S2pGywUoc40KM'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d3432b7d-03be-560e-8abb-8681f1afaeb4
+    internal-label: Segmentation
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 740
+source-wordcount: '740'
 ht-degree: 0%
-
 ---
-
 # 自定义分段 {#custom-segmentation}
 
 区段提供筛选[!DNL Marketo Measure] ROI仪表板中数据的功能，以便进一步深入分析特定数据集。 例如，区段可以按地理区域或评分系统定义。
@@ -72,9 +75,9 @@ ht-degree: 0%
 * 单击垃圾桶图标可删除整个类别或类别中的单个规则。 或者，单击铅笔图标以编辑类别或规则
 * 请注意，您有一个&quot;[!UICONTROL Save]&quot;按钮和一个&quot;Save and Process&quot;按钮。 使用“保存”按钮可保存您所做的工作以及随时间发生的更改。 仅在确保以下各项后使用“保存并处理”按钮：
 
-   * 您的映射是准确的
-   * 您已添加要在一个类别中跟踪的所有区段
-   * “保存并处理”按钮触发[!DNL Marketo Measure]同步您的所有接触点并应用您添加的新信息。 此过程需要7天，在此期间，无法更改规则
+  * 您的映射是准确的
+  * 您已添加要在一个类别中跟踪的所有区段
+  * “保存并处理”按钮触发[!DNL Marketo Measure]同步您的所有接触点并应用您添加的新信息。 此过程需要7天，在此期间，无法更改规则
 
 **_其他注释:_**
 

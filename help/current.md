@@ -3,13 +3,17 @@ description: 面向Marketo Measure用户的最新发行说明指南
 title: 最新发行说明
 exl-id: e93ff03e-ea21-41f4-abb8-32313ee74c0c
 feature: Release Notes
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: ffecc0ee-70f2-5687-bca0-deee982ffbfa
+    internal-label: Release Notes
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1248'
 ht-degree: 0%
-
 ---
-
 # 发行说明：2024年 {#release-notes-2024}
 
 有关2024版的所有新增功能和更新功能，请参阅下文。
@@ -49,7 +53,7 @@ ht-degree: 0%
 
 **提醒： Salesforce字段弃用 — 6月14日**
 
-如去年所宣布的，我们将逐步停止向Lead/Contact对象[&#128279;](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"}导出作业，以简化我们的集成，并消除导出到Salesforce标准对象的需要。 您可以按照此处介绍的步骤[从接触点对象获取相同的数据](/help/2023.md){target="_blank"}。 我们还将共享有关创建工作流的文档，以将此数据添加到Lead/Contact对象。 弃用将于2024年6月14日生效。
+如去年所宣布的，我们将逐步停止向Lead/Contact对象](https://nation.marketo.com/t5/employee-blogs/marketo-measure-salesforce-lead-and-contact-field-deprecation-06/ba-p/350179){target="_blank"}导出作业，以简化我们的集成，并消除导出到Salesforce标准对象的需要。 [您可以按照此处介绍的步骤[从接触点对象获取相同的数据](/help/2023.md){target="_blank"}。 我们还将共享有关创建工作流的文档，以将此数据添加到Lead/Contact对象。 弃用将于2024年6月14日生效。
 
 这一变化将带来两大好处：
 

@@ -1,21 +1,27 @@
 ---
 unique-page-id: 18874789
-description: '[!DNL Marketo Measure]权限集 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure]权限集 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]权限集'
 exl-id: 84b7aa24-3934-4584-af05-02e804d00a98
 feature: Salesforce
-TQID: https://experienceleague.adobe.com/Taoe3f0JfNQ6R-zdMVPJsbdswgNuii-XAyzEsb4MdCk
+TQID: 'https://experienceleague.adobe.com/Taoe3f0JfNQ6R-zdMVPJsbdswgNuii-XAyzEsb4MdCk'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 256
+source-wordcount: '256'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Measure]权限集 {#marketo-measure-permission-sets}
 
 了解如何在Salesforce中访问和分配[!DNL Marketo Measure]权限集。
@@ -40,7 +46,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td><span><strong>[!DNL Marketo Measure] 管理员</strong></span></td> 
-   <td><span>使SFDC管理员能够从[!DNL Marketo Measure]对象创建、读取、写入和删除记录。 [!DNL Marketo Measure]将数据推送到SFDC所用的许可证应启用此权限集。 此外，建议此许可证能够在以下情况下编辑转化的Lead：在[!DNL Marketo Measure]将数据应用于记录之前Lead已转化。 这可确保Salesforce和[!DNL Marketo Measure]之间报表的准确性。 <a href="https://help.salesforce.com/articleView?id=release-notes.rn_sales_leads_view_converted.htm&type=5&release=206&language=en_us">在此阅读更多</a>。</span></td> 
+   <td><span>使SFDC管理员能够从[!DNL Marketo Measure]对象创建、读取、写入和删除记录。 [!DNL Marketo Measure]将数据推送到SFDC所用的许可证应启用此权限集。 此外，建议此许可证能够在以下情况下编辑转化的Lead：在[!DNL Marketo Measure]将数据应用于记录之前Lead已转化。 这可确保Salesforce和[!DNL Marketo Measure]之间报表的准确性。 <a href="https://help.salesforce.com/articleView?id=release-notes.rn_sales_leads_view_converted.htm&amp;type=5&amp;release=206&amp;language=en_us">在此阅读更多</a>。</span></td> 
   </tr> 
   <tr> 
    <td><span><strong>[!DNL Marketo Measure] 营销用户</strong></span></td> 

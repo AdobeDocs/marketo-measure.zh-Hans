@@ -4,23 +4,26 @@ description: 营销归因 — Marketo Measure — 产品文档
 title: 营销归因
 exl-id: 6d838612-d158-4db0-bb9e-b615066fd97b
 feature: Attribution
-TQID: https://experienceleague.adobe.com/KmQcMmJ5n6h1cHZcG-GtJPhMT9gt3BzNqGr4gRoytzQ
+TQID: 'https://experienceleague.adobe.com/KmQcMmJ5n6h1cHZcG-GtJPhMT9gt3BzNqGr4gRoytzQ'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Customer engagement
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 465
-ht-degree: 0%
-
+source-wordcount: '465'
+ht-degree: 4%
 ---
-
 # 营销归因 {#marketing-attribution}
 
 ## 欢迎使用Marketo Measure {#welcome-to-marketo-measure}
 
-Marketo Measure为营销人员提供了insight，他们的营销活动在增加公司收入方面最有效。 Marketo Measure是一种营销归因解决方案，可自动跟踪和报告渠道效果，让您可见哪些渠道可带来最大的客户参与度，并允许您相应地优化营销支出。
+Marketo Measure 使营销人员能够洞察哪些营销活动在为公司增加收入方面最有效。 Marketo Measure是一种营销归因解决方案，可自动跟踪和报告渠道效果，让您可见哪些渠道可带来最大的客户参与度，并允许您相应地优化营销支出。
 
 ## 营销归因 {#marketing-attribution-1}
 

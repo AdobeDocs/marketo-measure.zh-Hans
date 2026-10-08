@@ -3,13 +3,17 @@ description: 面向Marketo Measure用户的常见问题解答（多货币）指�
 title: 常见问题解答（多货币）
 exl-id: 1d0936fb-4e66-4877-98d2-32c678a7ef3e
 feature: Multi-Currency
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 4df48d8c-59df-55ca-8ab7-225a5c35169b
+    internal-label: Multi-Currency
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 0%
-
 ---
-
 # 常见问题解答（多货币） {#faq-multi-currency}
 
 **如何知道要启用哪个功能位？**
@@ -52,7 +56,7 @@ Marketo Measure会自动从客户的CRM中提取货币设置。 不再需要在M
 
 很遗憾，由于[!DNL Salesforce]的长期限制，这对[!DNL Salesforce]高级货币管理的用户的工作方式有一些细微差别。 对于“我们在此情况下应做什么”，简单的答案是，我们使用基本（即非高级）“管理货币”选项卡中定义的统一汇率来换算收入金额。 换言之，我们完全忽视了过期的汇率，尽管客户定义了过期的汇率。
 
-对于感兴趣的读者来说，这是为什么它如此奏效。 我们的接触点使用公式字段计算收入（派生自关联的机会金额）。[!DNL Salesforce] 这些公式计算本身支持货币转换，但仅支持其货币支持的基本用途。 我们不可能定义一个参考过时汇率的公式栏位。[!DNL Salesforce] 只是不支持该功能，因此我们在收入计算中无法引用过期的费率，尽管这些过期的费率存在于[!DNL Salesforce]中（这听起来很不可思议，但它是这样运行的）。
+对于感兴趣的读者来说，这是为什么它如此奏效。 我们的接触点使用公式字段计算收入（派生自关联的机会金额）。 [!DNL Salesforce]本身支持这些公式计算的货币转换，但仅支持其基本货币支持。 我们不可能定义一个参考过时汇率的公式栏位。 [!DNL Salesforce]只是不支持该功能，因此我们在收入计算中无法引用过期的费率，尽管这些过期的费率存在于[!DNL Salesforce]中（这听起来很不可思议，但它是这样运行的）。
 
 **如果我的客户使用工作流填充已转换的字段，以后应如何使用此字段？**
 

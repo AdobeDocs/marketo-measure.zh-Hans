@@ -1,21 +1,25 @@
 ---
-description: 使用自定义收入金额的最佳实践 —  [!DNL Marketo Measure]
+description: 使用自定义收入额的最佳实践 — [!DNL Marketo Measure]
 title: 利用自定义收入额的最佳实践
 exl-id: 553bd75a-512a-4733-a24b-8112eb420afc
 feature: Custom Revenue Amount
-TQID: https://experienceleague.adobe.com/r0HE7od6BWa4ntQMPyrVqQWwebruGyxM3lhOOu6-RWc
+TQID: 'https://experienceleague.adobe.com/r0HE7od6BWa4ntQMPyrVqQWwebruGyxM3lhOOu6-RWc'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 47de9b4f-9dd4-52b4-bccb-c7af30dd2f2c
+    internal-label: Custom Revenue Amount
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Implementation
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 421
+source-wordcount: '421'
 ht-degree: 0%
-
 ---
-
 # 利用自定义收入额的最佳实践 {#best-practices-for-utilizing-a-custom-revenue-amount}
 
 ## 概述 {#overview}
@@ -31,10 +35,10 @@ ht-degree: 0%
 切记事项：
 
 * 选择适用于所有业务机会的准确且已使用的收入字段
-   * 建议的ARR或合同总值
+  * 建议的ARR或合同总值
 * 不使用公式字段
 * 如果您使用自定义收入金额进行货币转换，则[!UICONTROL Marketo Measure Multiple Currencies]功能是首选方法。
-   * [!DNL Marketo Measure]多货币功能引用在[!DNL Salesforce]中建立的兑换率，以最好地确保货币兑换之间保持一致。 这允许您继续使用标准“金额”（SFDC默认值）或与[!DNL Salesforce]转化率相关的任何其他自定义金额字段。
+  * [!DNL Marketo Measure]多货币功能引用在[!DNL Salesforce]中建立的兑换率，以最好地确保货币兑换之间保持一致。 这允许您继续使用标准“金额”（SFDC默认值）或与[!DNL Salesforce]转化率相关的任何其他自定义金额字段。
 * 如果您更新要[!DNL Marketo Measure]引用的Amount字段，请使用数据加载器更新过去的业务机会，以确保收入数据一致，并通过工作流填充正确的字段
 
 ## 维护的最佳实践 {#best-practice-for-maintenance}

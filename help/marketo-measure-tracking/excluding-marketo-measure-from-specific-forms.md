@@ -1,16 +1,20 @@
 ---
-description: '正在从Marketo Measure用户的特定Forms指南中排除 [!DNL Marketo Measure] '
-title: '正在从特定Forms中排除 [!DNL Marketo Measure] '
+description: 从Marketo Measure用户的特定Forms指南中排除[!DNL Marketo Measure]
+title: 从特定Forms中排除[!DNL Marketo Measure]
 exl-id: ce39a3b2-2ac6-4385-b6d1-3c36b51c03fa
 feature: Tracking
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '100'
 ht-degree: 0%
-
 ---
-
 # 从特定Forms中排除[!DNL Marketo Measure] {#excluding-marketo-measure-from-specific-forms}
 
 默认情况下，[!DNL Marketo Measure]会附加到您网站上的所有表单。 但是，并非所有表单提交都必然会被跟踪或包含在归因模型中。 这是因为并非所有表单填写都被认为是“好的”。 退订页面/表单即属于此情况。 此外，通常不会跟踪登录表单，因为这会稀释归因模型。

@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874646
-description: 买方接触点和买方归因接触点之间的差异 —  [!DNL Marketo Measure]
+description: 买方接触点和买方归因接触点之间的差异 — [!DNL Marketo Measure]
 title: 买方接触点和买方归因接触点之间的差异
 exl-id: 19109271-7b59-44c0-b1ff-e3b0bba9f5ce
 feature: Touchpoints
-TQID: https://experienceleague.adobe.com/vj5iw2eqF-ZBl2P8tloZdHWK67tRJn-J0RVh-hKnOZQ
+TQID: 'https://experienceleague.adobe.com/vj5iw2eqF-ZBl2P8tloZdHWK67tRJn-J0RVh-hKnOZQ'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 392
+source-wordcount: '392'
 ht-degree: 0%
-
 ---
-
 # 买方接触点和买方归因接触点之间的差异 {#difference-between-buyer-touchpoints-and-buyer-attribution-touchpoints}
 
 了解什么定义了Buyer Touchpoint (BT)和Buyer Attribution Touchpoint (BAT)，以及二者之间的区别并回答常见问题。

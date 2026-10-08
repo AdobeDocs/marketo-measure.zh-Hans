@@ -3,13 +3,17 @@ description: 面向Marketo Measure用户的电子邮件跟踪参数指南
 title: 电子邮件跟踪参数
 exl-id: e2cfd59e-ce4a-4cbb-b64a-828d1db7410f
 feature: Tracking
-source-git-commit: 5a3494763c80ac636306c7ac8d080383d2358a59
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 2%
-
 ---
-
 # 电子邮件跟踪参数 {#email-tracking-parameter}
 
 [!DNL Marketo Measure]电子邮件跟踪参数允许营销人员将电子邮件点击视为表单提交，以便生成这些操作的接触点。 在不使用电子邮件跟踪参数的情况下，电子邮件中的点进次数仅被视为“Web访问”，直到用户通过表单提交或Web聊天实际参与网站活动为止。
@@ -32,7 +36,7 @@ Marketo Measure接受以下值：电子邮件地址、Salesforce潜在客户Id�
 
 | 营销自动化 | 令牌/标记/宏 | 示例 | 支持材料 |
 | --- | --- | --- | --- |
-| Marketo | `{{lead.Email Address}}` | <https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId=`{{`lead.EmailAddress`}}`> | [令牌概述](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/personalizing-landing-pages/tokens-overview.html?lang=zh-Hans) |
+| Marketo | `{{lead.Email Address}}` | <https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId=`{{`lead.EmailAddress`}}`> | [令牌概述](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/personalizing-landing-pages/tokens-overview.html) |
 | 帕尔多 | %%email%%或%%user_crm_id%% | <https://engage.marketo.com/rs/460-TDH-945/images/BZ-B2B-Marketing-Attribution-101-ebook.pdf?mailId=%%email%%> | [Pardot变量标记引用](https://help.salesforce.com/s/articleView?language=en_US&id=pardot_variable_tags_reference.htm&type=5) |
 | Hubspot | （通过编辑器插入） | 不适用 | [HubSpot个性化内容](https://knowledge.hubspot.com/website-pages/personalize-your-content) |
 | 操作 | （通过消息编辑器插入） | 不适用 | [实际操作个性化电子邮件内容](https://connect.act-on.com/hc/en-us/articles/360033436074-How-to-Personalize-Email-Content-with-CRM-Data) |

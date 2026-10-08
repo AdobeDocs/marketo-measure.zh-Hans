@@ -3,13 +3,17 @@ description: Marketo Measure用户无机会联系人的报表类型指南
 title: 无业务机会的联系人的报表类型
 exl-id: 255048be-16ff-4964-85fd-cc07888a05af
 feature: Reporting
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 2%
-
+ht-degree: 3%
 ---
-
 # 无业务机会的联系人的报表类型 {#report-type-for-contacts-without-opportunities}
 
 >[!NOTE]
@@ -18,7 +22,7 @@ ht-degree: 2%
 
 要报告未与Opportunity关联的Contacts with Buyer Touchpoints ，您需要创建自定义报告类型。
 
-1. 转到&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Report Types]**。
+1. 转到 **[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Report Types]**。
 
    ![1. 转到设置创建报表类型。](assets/new-types-1.png)
 

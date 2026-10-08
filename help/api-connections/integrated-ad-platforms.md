@@ -3,17 +3,23 @@ description: 面向Marketo Measure用户的集成式广告平台指南
 title: 集成式广告平台
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1823'
 ht-degree: 0%
-
 ---
-
 # 集成式广告平台 {#integrated-ad-platforms}
 
-[!DNL Marketo Measure]具有与Google AdWords、Microsoft BingAds、[!DNL Facebook]个广告和DoubleClick促销活动管理器的API连接。 通过这些API连接，[!DNL Marketo Measure]能够轻松地提取数据，并将其与外部买方应用程序一起推送到您的CRM。 无需手动上传成本或数据。 您的帐户只需连接到[!DNL Marketo Measure]应用程序并获得授权即可。[!DNL Marketo Measure] 然后，将自动从平台下载营销成本并将其加载到[!DNL Marketo Measure]应用程序中。 如果选择为AdWords、BingAds或[!DNL Facebook]广告启用自动标记，[!DNL Marketo Measure]将自动将其参数附加到广告的URL。
+[!DNL Marketo Measure]具有与Google AdWords、Microsoft BingAds、[!DNL Facebook]个广告和DoubleClick促销活动管理器的API连接。 通过这些API连接，[!DNL Marketo Measure]能够轻松地提取数据，并将其与外部买方应用程序一起推送到您的CRM。 无需手动上传成本或数据。 您的帐户只需连接到[!DNL Marketo Measure]应用程序并获得授权即可。 然后，[!DNL Marketo Measure]将自动从平台下载您的营销成本，并将其加载到[!DNL Marketo Measure]应用程序中。 如果选择为AdWords、BingAds或[!DNL Facebook]广告启用自动标记，[!DNL Marketo Measure]将自动将其参数附加到广告的URL。
 
 ## 如何连接Ad平台 {#how-to-connect-ad-platforms}
 
@@ -41,12 +47,12 @@ ht-degree: 0%
 
 [!DNL Marketo Measure]在您的[!DNL AdWords]帐户中搜索跟踪模板：
 
-* *选项A*：找到跟踪模板。[!DNL Marketo Measure] 将其参数添加到模板。
+* *选项A*：找到跟踪模板。 [!DNL Marketo Measure]将其参数添加到模板。
 * *选项B*：找到第三方重定向。 如果在跟踪模板中找到第三方重定向，则[!DNL Marketo Measure]无法执行任何操作。 您需要手动将[!DNL Marketo Measure]标记添加到第三方系统。 第三方重定向的一个示例是竞价管理工具，如Kenshoo或Marin。 详细了解[竞价管理工具如何影响 [!DNL Marketo Measure]](/help/api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}。
 
-* *选项C*：未找到跟踪模板。[!DNL Marketo Measure] 将扫描[!DNL Marketo Measure]参数的所有Ad目标URL。 根据扫描，如果：
-   * 找到参数：设置完成！
-   * 未找到参数： [!DNL Marketo Measure]会将其参数附加到广告目标URL的末尾。[!DNL Marketo Measure] 会在新广告创建后的两个小时内追加新广告。 请记住，不会将参数添加到模板中。
+* *选项C*：未找到跟踪模板。 [!DNL Marketo Measure]将扫描[!DNL Marketo Measure]参数的所有Ad目标URL。 根据扫描，如果：
+  * 找到参数：设置完成！
+  * 未找到参数： [!DNL Marketo Measure]会将其参数附加到广告目标URL的末尾。 [!DNL Marketo Measure]在创建新广告后的两小时内追加这些广告。 请记住，不会将参数添加到模板中。
 
 详细了解[[!DNL AdWords] 自动标记功能](/help/api-connections/understanding-marketo-measure-adwords-tagging.md){target="_blank"}。
 
@@ -119,7 +125,7 @@ Rafflecopter创建的电子表格是[!DNL EpikOne's]电子表格的修改版本�
 
 ## Bing Ads {#bing-ads}
 
-Bing Ads是一个集成平台，允许您为URL启用自动标记或使用第三方工具（如[!DNL Marketo Measure]）标记广告。[!DNL Bing Ads] 也依赖于UTM参数。
+Bing Ads是一个集成平台，允许您为URL启用自动标记或使用第三方工具（如[!DNL Marketo Measure]）标记广告。 [!DNL Bing Ads]也依赖于UTM参数。
 
 我们的集成支持以下广告类型：
 
@@ -152,7 +158,7 @@ Bing Ads的自动标记还会添加以下自定义参数：
 
 ## Facebook广告 {#facebook-ads}
 
-与[!DNL Facebook]的[!DNL Marketo Measure]集成允许它自动下载广告信息并使用其参数标记URL。[!DNL Marketo Measure] 将通过我们的自动标记拉入促销活动和广告集信息。 广告集将填充我们的广告组名称字段。 有关在[!DNL Facebook]平台上设置URL标记的详细信息，请访问[!DNL Facebook] [业务](https://www.facebook.com/business/help/1016122818401732/?ref=u2u){target="_blank"}页面。
+与[!DNL Facebook]的[!DNL Marketo Measure]集成允许它自动下载广告信息并使用其参数标记URL。 [!DNL Marketo Measure]将通过我们的自动标记提取营销活动和广告集信息。 广告集将填充我们的广告组名称字段。 有关在[!DNL Facebook]平台上设置URL标记的详细信息，请访问[!DNL Facebook] [业务](https://www.facebook.com/business/help/1016122818401732/?ref=u2u){target="_blank"}页面。
 
 在使用[!DNL Facebook Ads]启用自动标记之前，必须将先前的性能历史记录导出为CSV。 此时，当[!DNL Marketo Measure]使用其_bf参数标记[!DNL Facebook Ads]时，[!DNL Facebook]会将广告读取为全新并擦除性能历史记录。 因此，如果导出以前的绩效记录对您和您的组织有价值，那么导出该记录就很重要。
 
@@ -162,11 +168,11 @@ Bing Ads的自动标记还会添加以下自定义参数：
 
 ## LinkedIn赞助内容 {#linkedin-sponsored-content}
 
-LinkedIn集成允许[!DNL Marketo Measure]在[!DNL LinkedIn]赞助的内容上标记目标URL，这最终允许[!DNL Marketo Measure]跟踪用户完成其整个接触点历程，并将活动映射回特定的[!DNL LinkedIn]促销活动和Creative。 这可以为客户提供有关其[!DNL LinkedIn]活动ROI的分析。[!DNL Marketo Measure] 将搜索具有唯一[!DNL LinkedIn]共享的创意，并在其末尾添加`?_bl={creativeId}`参数。
+LinkedIn集成允许[!DNL Marketo Measure]在[!DNL LinkedIn]赞助的内容上标记目标URL，这最终允许[!DNL Marketo Measure]跟踪用户完成其整个接触点历程，并将活动映射回特定的[!DNL LinkedIn]促销活动和Creative。 这可以为客户提供有关其[!DNL LinkedIn]活动ROI的分析。 [!DNL Marketo Measure]将搜索具有唯一[!DNL LinkedIn]共享的创意，并在其末尾添加`?_bl={creativeId}`参数。
 
 由于[!DNL LinkedIn]共享可以在多个营销活动和创意中使用，因此我们要求客户不要复制/克隆/复制现有创意以保持其唯一性。 如果发现共享并且检测到共享仅用于一个Creative，则[!DNL Marketo Measure]可以按原样标记共享，而无需重新创建任何创意内容或共享，并且所有广告历史记录（展示次数、点击次数、共享）都将保留。
 
-一旦发现共享在多个创意人员之间共享，[!DNL Marketo Measure]就必须运行暂停、复制和重新标记的过程，才能创建唯一的集。[!DNL Marketo Measure] 将暂停并存档实时创意内容，这意味着包含展示次数、点击次数和社交共享的创意内容也会存档。
+一旦发现共享在多个创意人员之间共享，[!DNL Marketo Measure]就必须运行暂停、复制和重新标记的过程，才能创建唯一的集。 [!DNL Marketo Measure]将暂停并存档实时创意内容，这意味着包含展示次数、点击次数和社交共享的创意内容也会存档。
 
 ## 非集成平台 {#non-integrated-platforms}
 

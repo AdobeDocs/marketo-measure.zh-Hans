@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874771
-description: 使用数据加载器更新 [!DNL Marketo Measure] 自定义金额字段 —  [!DNL Marketo Measure]
+description: 使用数据加载器更新[!DNL Marketo Measure]自定义金额字段 — [!DNL Marketo Measure]
 title: 使用数据加载器更新Marketo Measure自定义金额字段
 exl-id: 55e91ac4-a835-48e0-a6ce-1d85b32aeac0
 feature: Custom Revenue Amount
-TQID: https://experienceleague.adobe.com/5guAGWeWMxJPm-vj8DYyHz2onjh3ERfzKtLcXNr0MM0
+TQID: 'https://experienceleague.adobe.com/5guAGWeWMxJPm-vj8DYyHz2onjh3ERfzKtLcXNr0MM0'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 47de9b4f-9dd4-52b4-bccb-c7af30dd2f2c
+    internal-label: Custom Revenue Amount
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 191
+source-wordcount: '192'
 ht-degree: 0%
-
 ---
-
 # 使用数据加载器更新[!DNL Marketo Measure]自定义金额字段 {#using-data-loader-to-update-marketo-measure-custom-amount-field}
 
 [!DNL Marketo Measure]建议使用数据加载器作为在[!DNL Marketo Measure]中使用自定义收入字段（我们使用开箱即用的金额字段）时更新机会值的方便选项。 与使用[!DNL Marketo Measure]更新脚本相比，首选使用数据加载器，因为此脚本要求用户在[!DNL Marketo Measure]脚本运行时禁用所有Salesforce验证规则。

@@ -1,21 +1,26 @@
 ---
 unique-page-id: 18874628
-description: 按营销渠道列出的机会 —  [!DNL Marketo Measure]
+description: 按营销渠道列出的机会 — [!DNL Marketo Measure]
 title: 按营销渠道列出的机会
 exl-id: ce346fc9-5fc6-4004-ad90-e34a30e5b264
 feature: Channels, Reporting
-TQID: https://experienceleague.adobe.com/UUVK-y5KT4g8YGIwDq1cWi4IU5-s8Ajr41n4pLwsLOU
+TQID: 'https://experienceleague.adobe.com/UUVK-y5KT4g8YGIwDq1cWi4IU5-s8Ajr41n4pLwsLOU'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 198
+source-wordcount: '198'
 ht-degree: 0%
-
 ---
-
 # 按营销渠道列出的机会 {#opportunities-by-marketing-channel}
 
 此报表会显示营销渠道产生的机会数量；它包含您的所有机会。 但是，您可以筛选此报表以分析特定类型的机会。
@@ -40,4 +45,4 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] 教程： Stock SFDC报告](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/stock-salesforce-reports){target="_blank"}
+>[[!DNL Marketo Measure] 教程： Stock SFDC报告](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/stock-salesforce-reports){target="_blank"}

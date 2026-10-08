@@ -1,16 +1,25 @@
 ---
-description: Salesforce包的安装和设置 —  [!DNL Marketo Measure]
+description: Salesforce包的安装和设置 — [!DNL Marketo Measure]
 title: '[!DNL Salesforce]包安装和设置'
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 67d582ca-1a88-5ba5-976a-bc6de9597819
+    internal-label: Installation
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
-
 ---
-
 # Salesforce包安装{#marketo-measure-salesforce-package-installation}
 
 在安装[!DNL Marketo Measure] [!DNL Salesforce]基础包之前，您必须先确定是否在[!DNL Salesforce]沙盒中安装该基础包，然后再迁移到Salesforce生产实例。
@@ -35,7 +44,7 @@ ht-degree: 0%
 
 1. 以管理员身份登录到[!DNL Salesforce]。
 
-1. 为所有用户&#x200B;**选择**&#x200B;[!UICONTROL Install]。
+1. 为所有用户&#x200B;**选择**[!UICONTROL Install]。
 
    ![1. 为所有用户选择“安装”。](assets/bizible-full-1.png)
 
@@ -53,7 +62,7 @@ ht-degree: 0%
 
 [!DNL Marketo Measure]通过[!DNL Marketo Measure]应用内连接的[!DNL Salesforce]用户发送和接收数据。
 
-要将接触点数据推送到[!DNL Salesforce]实例，连接的用户必须有权访问[!DNL Marketo Measure]自定义对象(例如Buyer Touchpoint和Buyer Attribution Touchpoint)以及商机和联系人等标准[!DNL Salesforce]对象。
+要将接触点数据推送到[!DNL Salesforce]实例，连接的用户必须有权访问[!DNL Marketo Measure]自定义对象（例如Buyer Touchpoint和Buyer Attribution Touchpoint）以及商机和联系人等标准[!DNL Salesforce]对象。
 
 创建[!DNL Marketo Measure]配置文件以确保在将数据推送到Salesforce时不会遇到验证错误。
 
@@ -62,9 +71,9 @@ ht-degree: 0%
 1. 分配以下权限：
 
 * [!DNL Marketo Measure]管理员权限集
-   * 托管权限集使SFDC管理员能够从[!DNL Marketo Measure]对象创建、读取、写入和删除记录。
+  * 托管权限集使SFDC管理员能够从[!DNL Marketo Measure]对象创建、读取、写入和删除记录。
 * “查看和编辑已转化商机权限集”
-   * 这允许[!DNL Marketo Measure]在潜在客户转换为联系人后对其进行修饰。 如果未启用此权限集，则可能存在显着的数据跟踪缺口。
+  * 这允许[!DNL Marketo Measure]在潜在客户转换为联系人后对其进行修饰。 如果未启用此权限集，则可能存在显着的数据跟踪缺口。
 
 >[!NOTE]
 >
@@ -76,7 +85,7 @@ ht-degree: 0%
 
 1. 启用“营销用户”作为用户级别权限。
 
-* 通过[!UICONTROL Marketing User]复选框，用户可创建营销活动并使用营销活动导入向导。 如果未选择此选项，则用户只能查看营销活动和高级营销活动设置，编辑单个潜在客户或联系人的营销活动历史记录，以及运行营销活动报表。[!DNL Marketo Measure] 必须能够读取和写入campaign对象。
+* 通过[!UICONTROL Marketing User]复选框，用户可创建营销活动并使用营销活动导入向导。 如果未选择此选项，则用户只能查看营销活动和高级营销活动设置，编辑单个潜在客户或联系人的营销活动历史记录，以及运行营销活动报表。 [!DNL Marketo Measure]必须能够读取和写入营销活动对象。
 
 步骤3：从所有触发器、工作流和流程中排除此配置文件
 

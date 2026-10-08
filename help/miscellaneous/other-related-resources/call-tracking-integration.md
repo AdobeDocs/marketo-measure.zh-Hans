@@ -1,21 +1,26 @@
 ---
 unique-page-id: 18874592
-description: 呼叫追踪整合 —  [!DNL Marketo Measure]
+description: 呼叫追踪整合 — [!DNL Marketo Measure]
 title: 调用跟踪集成
 exl-id: bc35a789-e056-4456-9038-306ed34c2a8e
 feature: Tracking, Integration
-TQID: https://experienceleague.adobe.com/6-mDiLKLFk2x3Y2FzWxNjlm6BmLKNRDAObs3CYPvEgE
+TQID: 'https://experienceleague.adobe.com/6-mDiLKLFk2x3Y2FzWxNjlm6BmLKNRDAObs3CYPvEgE'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 691
+source-wordcount: '693'
 ht-degree: 0%
-
 ---
-
 # 调用跟踪集成 {#call-tracking-integration}
 
 我们与[!DNL CallTrackingMetrics]的集成旨在将Web会话与电话通话合并。 将电话视为提交给[!DNL Marketo Measure]的表单。 它将Web会话的点数计入在内，否则该会话仅被视为Web访问，因为没有实际提交表单。
@@ -76,7 +81,7 @@ CallTrackingMetrics必须完成一些开发工作才能使其正常工作。 通
 
 首先，检查任务以确保填充[!DNL BizibleId]。 如果没有值，则无法为其创建接触点。 需要使用CallTrackingMetrics将此问题升级。
 
-如果存在值，请注意，我们只认为所有Web会话为30分钟。 如果在12:17pm（网站上的会话开始）点击Google广告，但直到1:05pm才出现电话呼叫，则不会合并Web会话和电话呼叫。 相反，[!DNL Marketo Measure]会创建一个单独的[!DNL Salesforce Task]接触点来跟踪电话呼叫，但不会有任何Web会话数据。
+如果存在值，请注意，我们只认为所有Web会话为30分钟。 如果某个Google广告是在中午12:17（网站上的会话开始）单击的，但直到下午1:05才出现电话呼叫，则不会合并Web会话和电话呼叫。 相反，[!DNL Marketo Measure]会创建一个单独的[!DNL Salesforce Task]接触点来跟踪电话呼叫，但不会有任何Web会话数据。
 
 ![](assets/6.png)
 

@@ -3,13 +3,19 @@ description: Marketo Measure用户的集成权限概述指南
 title: 集成权限概述
 feature: APIs, Integration
 exl-id: c45598fe-0c33-459a-9fde-de7f6906bd0c
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '1411'
+source-wordcount: '1476'
 ht-degree: 2%
-
 ---
-
 
 # 集成权限概述 {#integration-permissions-overview}
 
@@ -65,7 +71,7 @@ ht-degree: 2%
     <p>
     <b>Salesforce自定义字段权限</b>
     <br>
-    我们提供一些功能设置，用于保存客户可以使用的自定义Salesforce字段。 如果定义了这些功能设置，则我们需要对功能设置中保存的每个salesforce字段的“读取”访问权限(例如，如果CustomLeadSourceField设置值等于“LeadSource__c”，则我们需要对此字段的“读取”访问权限)。
+    我们提供一些功能设置，用于保存客户可以使用的自定义Salesforce字段。 如果定义了这些功能设置，则我们需要对功能设置中保存的每个salesforce字段的“读取”访问权限（例如，如果CustomLeadSourceField设置值等于“LeadSource__c”，则我们需要对此字段的“读取”访问权限）。
     </td>
   </tr>
   <tr>
@@ -158,7 +164,7 @@ Marketo Measure正在跟踪帐户、促销活动、广告组、广告、过滤�
     <p>
     <b>范围</b>
     <br>
-    <a href="https://www.linkedin.com/campaignmanager/accounts">在门户中设置用户角色（需要登录到LinkedIn帐户）</a> - <a href="https://www.linkedin.com/help/lms/answer/a425731/user-roles-and-functions-in-campaign-manager">用户角色概述</a>：用户角色，查看和管理用户权限，分配帐户管理员或营销活动经理等角色
+    <a href="https://www.linkedin.com/campaignmanager/accounts">在门户中设置用户角色（需要登录到LinkedIn帐户）</a> - <a href="https://www.linkedin.com/help/lms/answer/a425731/user-roles-and-functions-in-campaign-manager">用户角色概述</a>：用户角色，查看和管理用户权限，分配帐户经理或营销活动经理等角色
     <p>
     <a href="https://www.linkedin.com/help/linkedin/answer/a570172/add-or-remove-admins-on-your-showcase-page?lang=en">设置页面管理员角色 — <a href="https://www.linkedin.com/help/linkedin/answer/a541981/linkedin-page-admin-roles-overview">页面管理员角色定义</a>：页面管理员角色，在所需管理页面上
     <p>
@@ -202,7 +208,7 @@ Marketo Measure正在跟踪促销活动、广告组、创意内容、网站链�
     <td>Bing</td>
     <td>广告平台数据</td>
     <td>Marketo Measure正在跟踪帐户、营销活动、广告组、创意和关键字。</td>
-    <td><li>用户必须通过其Microsoft帐户授予“离线访问权限”(这可以授予Marketo Measure对最终用户的UserInfo的访问权限，即使未登录也是如此)。 有关如何操作，请参阅<a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">Microsoft的页面</a>。</li>
+    <td><li>用户必须通过其Microsoft帐户授予“离线访问权限”（这可以授予Marketo Measure对最终用户的UserInfo的访问权限，即使未登录也是如此）。 有关如何操作，请参阅<a href="https://learn.microsoft.com/en-us/deployoffice/overview-extended-offline-access">Microsoft的页面</a>。</li>
 <p>
     <b>范围</b>
     <br>
@@ -220,7 +226,7 @@ Marketo Measure正在跟踪促销活动、广告组、创意内容、网站链�
   <tr>
     <td>Adobe Analytics</td>
     <td>B2B系统数据</td>
-    <td>通过B2B客户属性集成，Marketo Measure和Adobe Analytics的共同用户可以使用源自Adobe Analytics归因引擎的有价值元数据扩充其Marketo Measure用户配置文件，并通过其与CRM(Microsoft Dynamics和Salesforce)的同步功能扩充这些用户配置文件。 <a href="/help/adobe-analytics.md">了解详情</a>。</td>
+    <td>通过B2B客户属性集成，Marketo Measure和Adobe Analytics的共同用户可以使用源自Adobe Analytics归因引擎的有价值元数据扩充其Marketo Measure用户配置文件，并通过其与CRM（Microsoft Dynamics和Salesforce）的同步功能扩充这些用户配置文件。 <a href="/help/adobe-analytics.md">了解详情</a>。</td>
     <td>客户必须向Marketo Measure提供别名ID和FTP服务器凭据，以便将数据上传到其Analytics实例的位置。
     <p>
     请注意以下信息，因为在该流程的后面部分步骤中您将需要这些信息：

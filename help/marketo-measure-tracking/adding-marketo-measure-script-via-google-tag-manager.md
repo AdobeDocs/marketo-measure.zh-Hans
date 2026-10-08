@@ -1,16 +1,20 @@
 ---
-description: 正在通过针对Marketo Measure用户的 [!DNL Google Tag Manager] 指南添加 [!DNL Marketo Measure] 脚本
-title: 正在通过 [!DNL Google Tag Manager]添加 [!DNL Marketo Measure] 脚本
+description: 通过针对Marketo Measure用户的[!DNL Google Tag Manager]指南添加[!DNL Marketo Measure]脚本
+title: 通过[!DNL Google Tag Manager]添加[!DNL Marketo Measure]脚本
 exl-id: 539efb10-35cb-4146-8eea-728c3948a11e
 feature: Tracking
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '197'
 ht-degree: 0%
-
 ---
-
 # 通过[!DNL Google Tag Manager]添加[!DNL Marketo Measure]脚本 {#adding-marketo-measure-script-via-google-tag-manager}
 
 安装[!DNL Marketo Measure] JavaScript时，建议您[将脚本](/help/marketo-measure-tracking/adding-marketo-measure-script.md){target="_blank"}直接硬编码到站点中。 如果无法这样做，您还可以使用[!DNL Google Tag Manager] (GTM)来加载[!DNL Marketo Measure] JS。 请注意，通过GTM加载的[!DNL Marketo Measure] JS容易出现延迟。 滞后会导致脚本加载时间延迟，这可能会导致所有表单提交丢失约3-5%。
@@ -19,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->使用Google[&#128279;](https://support.google.com/tagmanager/answer/2772421?hl=en){target="_blank"}发表的此支持文章了解更多信息。
+>使用Google](https://support.google.com/tagmanager/answer/2772421?hl=en){target="_blank"}发表的此[支持文章了解更多信息。
 
 ## 如何通过[!DNL Google Tag Manager]添加[!DNL Marketo Measure] JS {#how-to-add-marketo-measure-js-via-google-tag-manager}
 

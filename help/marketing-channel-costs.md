@@ -3,14 +3,20 @@ description: 面向Marketo Measure用户的营销渠道成本指南
 title: 营销渠道成本
 exl-id: 36ccaff3-db55-47bd-a24e-4aa1894f13e0
 feature: Channels, Spend Management
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+  - id: e3b4b95f-0bb9-5cb3-a479-9dcb943dca3f
+    internal-label: Spend Management
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 0%
-
 ---
-
 # 营销渠道成本 {#marketing-channel-costs}
 
 使用[!DNL Marketo Measure]的最根本优势之一是，能够根据需要尽可能详细地将营销工作与对收入的影响直接联系起来。 投资回报率有可能出现在接触点层面。 若要利用此优势，必须将渠道成本上传到[!DNL Marketo Measure]应用程序。 ROI报告会自动创建并出现在[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}的&#x200B;**营销ROI仪表板**&#x200B;中。
@@ -67,7 +73,7 @@ ht-degree: 0%
 
 [!DNL Marketo Measure]附带13个默认渠道，可以对其使用或展开。 此外，还可创建多达40个在线和离线渠道以适应您独特的营销结构。 在此基础上，可创建总计200个子渠道以支持这些在线和离线渠道。
 
-[!DNL Marketo Measure]将自动从与API集成的平台(如Bing Ads和Google AdWords)下载营销渠道成本。 需要手动上传未与[!DNL Marketo Measure]集成的平台的成本。 在上传成本数据之前，应设置营销渠道。
+[!DNL Marketo Measure]将自动从与API集成的平台（如Bing Ads和Google AdWords）下载营销渠道成本。 需要手动上传未与[!DNL Marketo Measure]集成的平台的成本。 在上传成本数据之前，应设置营销渠道。
 
 ## 上传营销成本 {#uploading-marketing-costs}
 
@@ -87,7 +93,7 @@ ht-degree: 0%
 
 **步骤3：打开CSV文件并进行更改**
 
-您可以导入文件，并使用Google Sheets、Apple Numbers、Microsoft Excel或您选择的软件将其打开。[!DNL Marketo Measure] 建议使用Google工作表。
+您可以导入文件，并使用Google Sheets、Apple Numbers、Microsoft Excel或您选择的软件将其打开。 [!DNL Marketo Measure]建议使用Google工作表。
 
 导入工作表后，进行所需的更改，如向渠道和子渠道添加成本或更新现有信息。
 

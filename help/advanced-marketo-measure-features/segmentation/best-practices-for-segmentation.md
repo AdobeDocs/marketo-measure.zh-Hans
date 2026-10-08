@@ -1,20 +1,23 @@
 ---
-description: 分段的最佳实践 —  [!DNL Marketo Measure]
+description: 分段的最佳实践 — [!DNL Marketo Measure]
 title: 分段的最佳实践
 exl-id: 68281210-383b-4688-86e9-27fbdc1fabbb
 feature: Segmentation
-TQID: https://experienceleague.adobe.com/YR-eQXPLgo1FbUk4VXa9cuaAwjiSSVBbSB3ZjAeScaY
+TQID: 'https://experienceleague.adobe.com/YR-eQXPLgo1FbUk4VXa9cuaAwjiSSVBbSB3ZjAeScaY'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d3432b7d-03be-560e-8abb-8681f1afaeb4
+    internal-label: Segmentation
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 449
+source-wordcount: '449'
 ht-degree: 0%
-
 ---
-
 # 分段的最佳实践 {#best-practices-for-segmentation}
 
 ## 概述 {#overview}
@@ -35,11 +38,11 @@ ht-degree: 0%
 * 将区段名称与组织的命名法保持一致，即，类别=筛选器名称，区段=筛选器值
 * 请勿在规则中使用公式字段
 * 如有可能，请同时针对Lead/Contact和Opportunity构建分段，以便您可以在整个funnel中使用它
-   * 如果您是Marketo Measure Ultimate客户，并且已将您的默认功能板对象设置为联系人，请不要使用以下两个特定于潜在客户的字段（[在此了解详情](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}）。
-      * b2b.personStatus
-      * b2b.isConverted
-   * 并非每个区段类别都会在整个funnel中保持一致
-      * 例如，“Opportunity Type”的Segment类别不会与Lead相关，但与“Region”相关的Segment可能是可以在funnel中定义的类别
+  * 如果您是Marketo Measure Ultimate客户，并且已将您的默认功能板对象设置为联系人，请不要使用以下两个特定于潜在客户的字段（[在此了解详情](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}）。
+    * b2b.personStatus
+    * b2b.isConverted
+  * 并非每个区段类别都会在整个funnel中保持一致
+    * 例如，“Opportunity Type”的Segment类别不会与Lead相关，但与“Region”相关的Segment可能是可以在funnel中定义的类别
 * 考虑您当前希望对数据进行切片的方式，无论数据是在CRM还是BI工具中，都可以考虑将其构建为[!DNL Marketo Measure]中的区段，以便您可以在Discover中具有相同的报表
 
 ## 维护的最佳实践 {#best-practice-for-maintenance}

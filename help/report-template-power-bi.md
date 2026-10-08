@@ -1,15 +1,19 @@
 ---
-description: '[!DNL Marketo Measure]报表模板 — Power BI - [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure]报告模板 — Power BI - [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]报表模板 — Power BI'
 exl-id: c296b8f9-4033-4723-9a71-63a458640d27
 feature: Reporting
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '2721'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Measure]报表模板 — Power BI {#marketo-measure-report-template-power-bi}
 
 ## 快速入门 {#getting-started}
@@ -99,14 +103,14 @@ QueryFilterStartDate和QueryFilterEndDate参数用于限制导入的数据量。
 
 ### 重命名的区段 {#renamed-segments}
 
-由于区段名称是可自定义的，因此它们在Snowflake Data Warehouse中具有通用列名称。[!DNL BIZ_SEGMENT_NAMES] 是一个映射表，其中列出了通用区段名称及其映射的自定义区段名称，这些名称在[!DNL Marketo Measure] UI的区段部分中定义。 “区段名称”表用于重命名“潜在客户接触点”和“归因接触点”表中的区段列。 如果不存在自定义区段，则保留通用区段名称。
+由于区段名称是可自定义的，因此它们在Snowflake Data Warehouse中具有通用列名称。 [!DNL BIZ_SEGMENT_NAMES]是一个映射表，它列出了通用区段名称及其映射的自定义区段名称，这些名称在[!DNL Marketo Measure] UI的区段部分中定义。 “区段名称”表用于重命名“潜在客户接触点”和“归因接触点”表中的区段列。 如果不存在自定义区段，则保留通用区段名称。
 
 ![由于区段名称是可自定义的，因此它们在](assets/marketo-bi-4.png)中具有通用列名称
 
 ### 区分大小写ID转换 {#case-sensitive-id-conversion}
 
 [!DNL Marketo Measure]数据有几个表，其中主键(ID)值区分大小写，即接触点和Campaign。 驱动Power BI建模层的数据引擎不区分大小写，因此会导致id值“重复”。 为了保持这些键值的大小写敏感性，我们实施了转换步骤，将不可见字符附加到小写字符，在数据引擎层评估时保留ID的唯一性。 有关该问题的更多详细信息以及我们使用的方法的详细步骤可以在[此处] (https://blog.crossjoin.co.uk/2019)找到
-/10/06/power-bi-and-case-sensitivity/){target="_blank"}。 这些区分大小写的ID值将标记为“联接ID”，并用作关系层中的联接键。 我们在报告层隐藏了联接ID，保持原始ID值可见，以便用于报告，因为不可见的字符可能会干扰剪切
+/10/06/power-bi-and-case-sensitive/){target="_blank"}。 这些区分大小写的ID值将标记为“联接ID”，并用作关系层中的联接键。 我们在报告层隐藏了联接ID，保持原始ID值可见，以便用于报告，因为不可见的字符可能会干扰剪切
 /paste函数和筛选。
 
 ![/粘贴函数和筛选。](assets/marketo-bi-8.png)

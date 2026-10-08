@@ -1,23 +1,28 @@
 ---
 unique-page-id: 18874608
-description: '[!DNL Marketo Measure]参数 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure]参数 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]参数'
 exl-id: d66b9864-0d7e-455a-ae20-cca555f4d8c8
 feature: APIs, Integration, UTM Parameters
-TQID: https://experienceleague.adobe.com/IurdaUgr2R1vxfOP4bcXp8TSUj4ymkA-R9kZ9put4Ug
+TQID: 'https://experienceleague.adobe.com/IurdaUgr2R1vxfOP4bcXp8TSUj4ymkA-R9kZ9put4Ug'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: 3968a9c0-3e19-5a76-a1f0-f5a9a986c53a
+    internal-label: UTM Parameters
 subfeature_v2:
   - id: fabdc8ff-b627-44fc-b09d-973166bc2b14
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Facebook API
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 243
+source-wordcount: '243'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Measure]参数 {#marketo-measure-parameters}
 
 ## [!DNL Marketo Measure]参数说明 {#marketo-measure-parameters-explained}
@@ -35,28 +40,28 @@ ht-degree: 0%
 ## AdWords参数 {#adwords-parameters}
 
 * `_bk={keyword}`
-   * 表示人员在搜索引擎中使用的关键词。
-   * 它类似于UTM术语参数。
+  * 表示人员在搜索引擎中使用的关键词。
+  * 它类似于UTM术语参数。
 
 * `_bt={creative}`
-   * 表示创作ID或名称。
-   * 它类似于UTM内容参数。
+  * 表示创作ID或名称。
+  * 它类似于UTM内容参数。
 
 * `_bm={matchtype}`
-   * 表示关键字的匹配程度。
-   * 关键词匹配类型有助于控制哪些搜索会触发您的广告。 例如，您可以使用广泛匹配将您的广告显示给广泛的受众，或者使用完全匹配来关注特定的客户组。
-   * 三种匹配类型是：广泛、模糊和精确。
+  * 表示关键字的匹配程度。
+  * 关键词匹配类型有助于控制哪些搜索会触发您的广告。 例如，您可以使用广泛匹配将您的广告显示给广泛的受众，或者使用完全匹配来关注特定的客户组。
+  * 三种匹配类型是：广泛、模糊和精确。
 
 >[!TIP]
 >
 >有关匹配类型的详细信息，[以下是一篇相关的AdWords文章](https://support.google.com/adwords/answer/2497836?hl=en){target="_blank"}。
 
 * `_bn={network}`
-   * 表示广告网络类型 — [显示或搜索](https://support.google.com/adwords/answer/1752334?hl=en){target="_blank"}。
-   * 这与UTM Source参数类似。
+  * 表示广告网络类型 — [显示或搜索](https://support.google.com/adwords/answer/1752334?hl=en){target="_blank"}。
+  * 这与UTM Source参数类似。
 
 * `_bg={adgroupID}`
-   * 表示广告所属的广告组的ID
+  * 表示广告所属的广告组的ID
 
 >[!NOTE]
 >
@@ -72,4 +77,4 @@ ht-degree: 0%
 ## Facebook参数 {#facebook-parameters}
 
 * `_bf ={creative}`
-   * 这表示创作ID或名称
+  * 这表示创作ID或名称

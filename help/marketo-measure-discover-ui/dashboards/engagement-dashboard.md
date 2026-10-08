@@ -1,21 +1,25 @@
 ---
-description: 参与仪表板 —  [!DNL Marketo Measure]  — 产品
+description: 参与仪表板 — [!DNL Marketo Measure] — 产品
 title: 互动仪表板
 feature: Reporting
 exl-id: dc8bcbe4-d470-4cd3-a2d9-804fdebe7121
-TQID: https://experienceleague.adobe.com/m5XdQV-IiIUddL3-YPcne1yf-ORR4ZdbxHzAf5wSADM
+TQID: 'https://experienceleague.adobe.com/m5XdQV-IiIUddL3-YPcne1yf-ORR4ZdbxHzAf5wSADM'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Insights
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 507
+source-wordcount: '507'
 ht-degree: 0%
-
 ---
-
 # 互动仪表板 {#engagement-dashboard}
 
 参与仪表板会仔细跟踪用户参与量度。 它显示了接触点、参与人数和每个人的平均接触点。 将时间序列条形图用于每月、每季度或每年视图，将条形图用于详细的渠道、子渠道和营销活动分析。 此工具对于了解参与模式和微调参与策略至关重要。
@@ -43,7 +47,7 @@ ht-degree: 0%
 ### KPI拼贴 {#kpi-tiles}
 
 * 接触点：生成的原始接触点总数。
-   * 买方接触点和买方归因接触点是通过为信用选择特定接触点创建的归因结果。 并非所有接触点都被选为BT和BAT。
+  * 买方接触点和买方归因接触点是通过为信用选择特定接触点创建的归因结果。 并非所有接触点都被选为BT和BAT。
 * 接触的人：具有任何接触点的人总数。
 * 每个人的接触点：每个被接触者的平均接触点数。
 

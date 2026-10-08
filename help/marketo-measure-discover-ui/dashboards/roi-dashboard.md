@@ -1,20 +1,23 @@
 ---
-description: ROI仪表板 —  [!DNL Marketo Measure]  — 产品
+description: ROI仪表板 — [!DNL Marketo Measure] — 产品
 title: ROI仪表板
 feature: Reporting
 exl-id: 878db6e0-3ac7-4f4c-b993-bd7a1cfa0638
-TQID: https://experienceleague.adobe.com/fPjoTK2sNSt8lOg4qePjqJIL8vOPhWy-GK5gQLqeSc4
+TQID: 'https://experienceleague.adobe.com/fPjoTK2sNSt8lOg4qePjqJIL8vOPhWy-GK5gQLqeSc4'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 736
+source-wordcount: '736'
 ht-degree: 0%
-
 ---
-
 # ROI仪表板 {#roi-dashboard}
 
 ROI仪表板为营销人员提供了跨渠道、子渠道和营销活动的投资回报的精细视图。 它仔细地划分成本和收入模式，同时重点列出每个商机的成本、交易和机会等指标，以确保全面了解营销归因。
@@ -134,11 +137,11 @@ ROI仪表板为营销人员提供了跨渠道、子渠道和营销活动的投�
 此仪表板配备了以下设置和过滤器：
 
 * 日期
-   * 基于：
-      * 创建日期：新闻销售线索、新机会
-      * 成本发生日期：成本
-      * 结束日期：归因收入（简单ROI）、交易
-      * 接触点日期：已实现归因收入（已实现ROI）中的接触点
+  * 基于：
+    * 创建日期：新闻销售线索、新机会
+    * 成本发生日期：成本
+    * 结束日期：归因收入（简单ROI）、交易
+    * 接触点日期：已实现归因收入（已实现ROI）中的接触点
 * 归因模型
 * 渠道、子渠道
 * 活动

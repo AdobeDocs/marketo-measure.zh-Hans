@@ -1,21 +1,25 @@
 ---
-description: 新的发现功能板指南 —  [!DNL Marketo Measure]  — 产品
+description: 新发现功能板指南 — [!DNL Marketo Measure] — 产品
 title: 新增发现功能板指南
 feature: Reporting
 exl-id: 088ccd63-dcf8-49c0-abbb-02f10ed8ae6e
-TQID: https://experienceleague.adobe.com/p9wH91818KiCuzb-Nk0QtGA9J6mmpzn2erlxrnQiTk8
+TQID: 'https://experienceleague.adobe.com/p9wH91818KiCuzb-Nk0QtGA9J6mmpzn2erlxrnQiTk8'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Insights
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1055
+source-wordcount: '1057'
 ht-degree: 0%
-
 ---
-
 # 新增发现功能板指南 {#new-discover-dashboard-guide}
 
 我们很高兴地介绍一下我们重新设计的“发现”功能板。 我们的主要目标是为您提供更加精简和直观的体验。 借助更简洁的视觉效果和更简单的导航功能，此改进不仅保留了大多数现有量度，而且还引入了新的见解。 深入了解，发现更清晰的描述和更多的价值。

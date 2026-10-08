@@ -4,20 +4,23 @@ description: Marketo Measure框架 — Marketo Measure — 产品文档
 title: Marketo Measure框架
 exl-id: fa6de27c-cdd2-4fd9-ac35-7286fe2752d8
 feature: Fundamentals
-TQID: https://experienceleague.adobe.com/jXanQ2O2lHunlg-PtFF9ot3WACHxu8ZA1sc9klyaXwo
+TQID: 'https://experienceleague.adobe.com/jXanQ2O2lHunlg-PtFF9ot3WACHxu8ZA1sc9klyaXwo'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+  - id: 8210190a-677a-5286-8428-d07007b1edde
+    internal-label: Fundamentals
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 393
+source-wordcount: '393'
 ht-degree: 0%
-
 ---
-
 # Marketo Measure框架 {#marketo-measure-framework}
 
 详细了解构成Marketo Measure框架的四个主要组件。 Marketo Measure依靠这些应用程序跟踪、整理和存放数据，并提供报表功能。 组成Marketo Measure框架的四个组件包括：

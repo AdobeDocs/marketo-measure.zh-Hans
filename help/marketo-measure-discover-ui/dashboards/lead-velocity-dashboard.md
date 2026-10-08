@@ -1,21 +1,25 @@
 ---
-description: 潜在客户Velocity仪表板 —  [!DNL Marketo Measure]  — 产品
+description: 潜在客户Velocity信息板 — [!DNL Marketo Measure] — 产品
 title: 潜在客户周转率功能板
 feature: Reporting
 exl-id: f0937e9c-702f-4539-ab0b-05d9487c562d
-TQID: https://experienceleague.adobe.com/uuQ2MDoDrYfOEPFs5hNpW6upYZQ3Vs2-4sciJOWV74s
+TQID: 'https://experienceleague.adobe.com/uuQ2MDoDrYfOEPFs5hNpW6upYZQ3Vs2-4sciJOWV74s'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Insights
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 364
+source-wordcount: '364'
 ht-degree: 1%
-
 ---
-
 # 潜在客户周转率功能板 {#lead-velocity-dashboard}
 
 Velocity功能板提供了有关潜在客户在Sales funnel中移动速度的动态视图，从而为营销人员和销售团队提供了有关各个渠道中的转化时间的重要洞察。 此工具在回答有关商机转化持续时间以及销售阶段进展效率的关键问题方面有着无价的帮助，使您能够优化参与策略以加快增长和转化。
@@ -72,7 +76,7 @@ Velocity功能板提供了有关潜在客户在Sales funnel中移动速度的动
 此仪表板配备了以下设置和过滤器：
 
 * 日期
-   * 基于：转换日期
+  * 基于：转换日期
 * 阶段
 * 渠道
 * 子渠道

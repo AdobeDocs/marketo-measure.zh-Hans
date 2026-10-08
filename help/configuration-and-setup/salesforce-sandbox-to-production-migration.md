@@ -3,13 +3,20 @@ description: 面向Marketo Measure用户的Salesforce沙盒到生产环境迁移
 title: Salesforce沙盒到生产环境的迁移
 exl-id: b2b71c4a-f192-43ce-a27e-cbd0ec3cf008
 feature: Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
-
 ---
-
 # Salesforce沙盒到生产环境的迁移 {#salesforce-sandbox-to-production-migration}
 
 如果您选择在[!DNL Salesforce]沙盒环境中测试[!DNL Marketo Measure]，请在准备就绪后按照以下说明迁移到生产环境。 以下说明假定您已经将[!DNL Marketo Measure]包下载到沙盒组织、执行了必要的测试并准备将[!DNL Marketo Measure]推送到生产环境。
@@ -18,7 +25,7 @@ ht-degree: 0%
 
 * 使用“[!UICONTROL All Users]”设置将[!DNL Marketo Measure]包安装到生产环境中
 
-   * [基础包](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"}
+  * [基础包](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3000000B3KLuEAN){target="_blank"}
 
 * 有关与[!DNL Salesforce]的[!DNL Marketo Measure]关系的详细信息，请参阅[本文](/help/configuration-and-setup/how-marketo-measure-and-salesforce-interact.md)
 * 需要[!DNL Salesforce]位配置。 下面的[步骤4中概述了具体的操作项](#salesforce-configuration)
@@ -32,7 +39,7 @@ ht-degree: 0%
 
   ![系统会提示您确认删除操作。 确保读取超过](assets/salesforce-migration-1.png)
 
-   * 键入确认模型中提示的业务名称，然后单击“我了解后果，删除此连接”
+  * 键入确认模型中提示的业务名称，然后单击“我了解后果，删除此连接”
 * 这将触发删除过程，并需要一些时间才能完成
 
 ## 步骤3：连接[!DNL Marketo Measure]应用程序中的生产CRM实例 {#connect-the-production-crm-instance-in-marketo-measure-app}

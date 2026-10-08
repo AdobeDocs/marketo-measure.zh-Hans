@@ -3,18 +3,21 @@ description: '[!UICONTROL Discover Data Download]访问控制 — Marketo Measur
 title: '[!UICONTROL Discover Data Download]访问控制'
 exl-id: fa9f2245-4bb0-4b58-849c-1941c108e1c1
 feature: Discover
-TQID: https://experienceleague.adobe.com/2YVVNhKoF6y3xqmblpxJ2VmXByEuCPS4KR-Ij-PZT14
+TQID: 'https://experienceleague.adobe.com/2YVVNhKoF6y3xqmblpxJ2VmXByEuCPS4KR-Ij-PZT14'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 12b64954-e901-54a3-a305-e8e9aa516eb3
+    internal-label: Discover
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Security
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 110
+source-wordcount: '110'
 ht-degree: 3%
-
 ---
-
 # [!UICONTROL Discover Data Download]访问控制 {#discover-data-download-access-control}
 
 [!UICONTROL Discover Data Download]控件使[!DNL Marketo Measure]管理员能够根据用户的角色为Discover仪表板设置数据下载策略。 该控件涵盖了“发现功能板”上的所有数据下载操作。

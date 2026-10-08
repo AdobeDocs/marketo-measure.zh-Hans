@@ -3,17 +3,21 @@ description: 为Marketo Measure用户设置UTM参数指南的最佳实践
 title: 设置UTM参数的最佳实践
 exl-id: 56019f41-b6ba-48c1-9bef-2a5f56d2d5f4
 feature: UTM Parameters
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 3968a9c0-3e19-5a76-a1f0-f5a9a986c53a
+    internal-label: UTM Parameters
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 1%
-
 ---
-
 # 设置UTM参数的最佳实践 {#best-practices-for-setting-up-utm-parameters}
 
-UTM参数是切分营销数据的好方法。[!DNL Marketo Measure] 使用并捕获所有UTM参数以填充Salesforce和[!DNL Marketo Measure]应用程序中的字段。 有了这些信息，您能够详细了解您的潜在客户、机会和已结/成功的交易的来源。
+UTM参数是切分营销数据的好方法。 [!DNL Marketo Measure]使用和捕获所有UTM参数以填充Salesforce和[!DNL Marketo Measure]应用程序中的字段。 有了这些信息，您能够详细了解您的潜在客户、机会和已结/成功的交易的来源。
 
 您可以使用[Google URL生成器](https://support.google.com/analytics/answer/1033867?hl=en){target="_blank"}来设置UTM参数，并将它们添加到营销工作中的链接中。 如果您希望以更简单的方式跟踪所有UTM链接，请使用此[Google电子表格](https://docs.google.com/spreadsheets/d/1QCIr1WUJQHE68cA4VTks2XE7nxuryaUymCEy_23-Oew/edit#gid=0){target="_blank"}。
 
@@ -29,7 +33,7 @@ UTM参数是切分营销数据的好方法。[!DNL Marketo Measure] 使用并捕
 
 例如，Facebook、Twitter、Linkedin、Drip_email、Email_blast、新闻稿。
 
-保持简单。 请勿使用此参数表示广告类型，如重新定位或赞助。 请勿添加utm_source = homepage、webdirect、website。[!DNL Marketo Measure] 会自动为您填写此信息。
+保持简单。 请勿使用此参数表示广告类型，如重新定位或赞助。 请勿添加utm_source = homepage、webdirect、website。 [!DNL Marketo Measure]自动为您填写此信息。
 
 **utm_campaign**：此字段映射到广告促销活动名称。 使用utm_campaign表示促销活动的标题，如广告平台中的标题，或内部引用的标题。
 

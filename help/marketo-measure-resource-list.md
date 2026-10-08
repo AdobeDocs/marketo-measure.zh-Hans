@@ -1,15 +1,19 @@
 ---
-description: '[!DNL Marketo Measure]资源列表 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure]资源列表 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]资源列表'
 exl-id: e2542ec2-dd83-405c-bd49-fa6384e6c8de
 feature: Fundamentals
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 8210190a-677a-5286-8428-d07007b1edde
+    internal-label: Fundamentals
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 3%
-
 ---
-
 # [!DNL Marketo Measure]资源列表 {#marketo-measure-resource-list}
 
 下面是各种相关文章/视频的链接，可帮助您启动并运行[!DNL Marketo Measure]！
@@ -32,12 +36,12 @@ ht-degree: 3%
 * [上传营销支出](/help/marketing-channel-costs.md)
 * [重新连接Ad帐户](/help/api-connections/reauthorizing-connected-accounts.md)
 * [正在添加 [!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/adding-marketo-measure-script.md)
-   * [排除Forms](/help/marketo-measure-tracking/excluding-marketo-measure-from-specific-forms.md)
+  * [排除Forms](/help/marketo-measure-tracking/excluding-marketo-measure-from-specific-forms.md)
 
 **报告**
 
 * [使用 [!DNL Marketo Measure]](/help/marketo-measure-salesforce-reporting/creating-report-types.md)创建自定义报告类型（如果您必须报告自定义Lead/Contact/Opportunity字段）
-* [&#x200B; [!DNL Marketo Measure] 字段词汇表](/help/glossary.md)
+* [ [!DNL Marketo Measure] 字段词汇表](/help/glossary.md)
 
 **疑难解答**
 
@@ -46,12 +50,12 @@ ht-degree: 3%
 
 ## 视频 {#videos}
 
-下面是几个视频    帮助您快速入门：
+以下几个视频可帮助您快速入门：
 
 * [[!DNL Marketo Measure] 介绍培训](https://share.vidyard.com/watch/Pb4DuWJwtFgw3jUBDGneb4？)（22分钟）
-* [[!DNL Marketo Measure] 在SFDC中报告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hans) （30-45分钟）
+* [[!DNL Marketo Measure] 在SFDC中报告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) （30-45分钟）
 
-**[[!DNL Marketo Measure] 101](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hans) （~30分钟）**
+**[[!DNL Marketo Measure] 101](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html) （~30分钟）**
 
 本课程系列旨在概要介绍掌握[!DNL Marketo Measure]所需了解的基本概念。 它介绍了归因的概念、[!DNL Marketo Measure]作为工具的作用，以及[!DNL Marketo Measure]操作的一般框架。
 
@@ -63,7 +67,7 @@ ht-degree: 3%
 * 接触点
 * 归因模型
 
-**[[!DNL Marketo Measure] 在SFDC中报告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hans)（30-45分钟）**
+**[[!DNL Marketo Measure] 在SFDC中报告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html)（30-45分钟）**
 
 本课程系列旨在介绍已安装到Salesforce中的[!DNL Marketo Measure]库存报表。 这些报表是您使用[!DNL Marketo Measure]数据进行的大多数报表的基础。
 
@@ -76,7 +80,7 @@ ht-degree: 3%
 * 按ID列出的机会报表
 * 按渠道列出的机会报表
 
-**[渠道管理](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hans)**
+**[渠道管理](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html)**
 
 本课程涵盖您可以在线和离线跟踪方面自定义[!DNL Marketo Measure]的各种方式。 本课程更为先进，可能与所有用户无关。
 
@@ -88,4 +92,4 @@ ht-degree: 3%
 * 营销活动和营销活动成员字段
 * 离线渠道管理
 
-以下是[所有初学者电子学习视频](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hans)。
+以下是[所有初学者电子学习视频](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html)。

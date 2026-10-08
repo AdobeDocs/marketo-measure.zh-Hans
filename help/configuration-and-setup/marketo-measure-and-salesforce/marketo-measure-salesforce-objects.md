@@ -1,22 +1,29 @@
 ---
 unique-page-id: 18874582
-description: '[!DNL Marketo Measure]个Salesforce对象 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure]个Salesforce对象 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]个Salesforce对象'
 exl-id: d5d6f334-6531-40fa-b043-75b49d8f43d5
 feature: Salesforce
-TQID: https://experienceleague.adobe.com/JCaHo-8eaHFN-8-nE0mXfgxpxaWP2-cmp-9DwdyW0xk
+TQID: 'https://experienceleague.adobe.com/JCaHo-8eaHFN-8-nE0mXfgxpxaWP2-cmp-9DwdyW0xk'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Taxonomy
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 927
+source-wordcount: '927'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Measure]个Salesforce对象 {#marketo-measure-salesforce-objects}
 
 >[!NOTE]
@@ -53,7 +60,7 @@ BT相关列表会显示属于潜在客户或联系人的所有接触点。 列�
 
 只有在创建Opportunity后，才会创建买方归因接触点(BAT)，该Opportunity与具有Buyer Touchpoint (BT)数据的联系人相关。 如果没有机会，将不会创建BAT。 创建Opportunity后，BAT对象将使用Opportunity上的[!DNL Salesforce] *Amount*&#x200B;字段来了解有多少收入归因于接触点。
 
-如果您使用[自定义金额字段](/help/advanced-marketo-measure-features/custom-revenue-amount/using-a-custom-revenue-amount-field.md)来显示商机对象上的收入，则必须创建&#x200B;**工作流**。 [!DNL Marketo Measure]无法读取在自定义金额字段中显示的信息，因此无法填充接触点上的收入归因数据。 此工作流将使用&#x200B;**[!DNL Marketo Measure]机会金额**&#x200B;字段（2&rbrace;自定义字段之一）将收入值从自定义金额字段映射到机会金额字段。[!DNL Marketo Measure]
+如果您使用[自定义金额字段](/help/advanced-marketo-measure-features/custom-revenue-amount/using-a-custom-revenue-amount-field.md)来显示商机对象上的收入，则必须创建&#x200B;**工作流**。 [!DNL Marketo Measure]无法读取在自定义金额字段中显示的信息，因此无法填充接触点上的收入归因数据。 此工作流将使用&#x200B;**[!DNL Marketo Measure]机会金额**&#x200B;字段（2}自定义字段之一）将收入值从自定义金额字段映射到机会金额字段。[!DNL Marketo Measure]
 
 ![](assets/3-1.png)
 
@@ -79,7 +86,7 @@ BAT对象作为相关列表显示在[!UICONTROL Opportunity]、[!UICONTROL Conta
 
 ## [!DNL Marketo Measure]字段 {#marketo-measure-fields}
 
-由[!DNL Marketo Measure] JavaScript捕获的数据将被推送到[!DNL Marketo Measure]对象内的自定义[!DNL Marketo Measure]字段中。 某些字段仅存在于某些对象中。 您可以查看[[!DNL Marketo Measure]字段][&#128279;](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)的[词汇表以及相关 [!DNL Marketo Measure] 对象](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md)的可视化图表。
+由[!DNL Marketo Measure] JavaScript捕获的数据将被推送到[!DNL Marketo Measure]对象内的自定义[!DNL Marketo Measure]字段中。 某些字段仅存在于某些对象中。 您可以查看[[!DNL Marketo Measure]字段的[术语表]](/help/introduction-to-marketo-measure/overview-resources/glossary-of-marketo-measure-fields.md)以及相关的 [!DNL Marketo Measure] 对象](/help/configuration-and-setup/marketo-measure-and-salesforce/marketo-measure-object-and-field-taxonomy.md)的可视化图表。
 
 ## [!DNL Marketo Measure]报告和仪表板 {#marketo-measure-reports-and-dashboards}
 

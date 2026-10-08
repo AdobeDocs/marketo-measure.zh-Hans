@@ -3,14 +3,18 @@ description: 面向Marketo Measure用户的UTM参数指南
 title: UTM参数
 exl-id: 2b20f3c4-1f39-4ac5-bad1-cb1d630d60e9
 feature: UTM Parameters
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 3968a9c0-3e19-5a76-a1f0-f5a9a986c53a
+    internal-label: UTM Parameters
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
-
 ---
-
 # UTM参数 {#utm-parameters}
 
 标记URL是一种简单而有效的捕获有关您的数字营销工作数据的方法。 是将参数添加到URL末尾以收集和记录数据的过程。 最常用的参数是Google支持的Urchin跟踪模块(UTM)。 提供了五个主要UTM参数：Medium、Source、Campaign、Content和Term。 下一节将更详细地讨论这些术语。
@@ -45,7 +49,7 @@ UTM参数可以手动添加到URL中，或通过自动标记特定平台（如Ad
 * Source标识作为流量来源的子渠道。
 * 它回答的问题是：“这个人来自哪里？”
 * 在一个社交媒体示例中，流量的来源是正在使用的社交媒体平台。
-   * 在此示例中，[!DNL Facebook]是Source值。 其他例子包括推特和Instagram。 另一方面，如果UTM Medium为[!DNL Paid Search]，则UTM Source可以是AdWords或BingAds。
+  * 在此示例中，[!DNL Facebook]是Source值。 其他例子包括推特和Instagram。 另一方面，如果UTM Medium为[!DNL Paid Search]，则UTM Source可以是AdWords或BingAds。
 
 * 此参数映射到SFDC中的[!DNL Marketo Measure]“接触点Source”字段。
 * _[!DNL Marketo Measure]最佳实践&#x200B;:_此参数可跟踪流量的来源，因此不适合使用此参数来指示广告类型，例如，重新定位、赞助等。 它最好用于跟踪更高级别的子信道。 请记住，您回答的是“我的流量来自何处？” 您在查找反向链接。 在此示例中，UTM Source是广告的位置（不是实际的网页，因为这是在标签之外自动跟踪的网页）。 如果您跟踪的是滴答式电子邮件促销活动，则滴答式电子邮件是来源。

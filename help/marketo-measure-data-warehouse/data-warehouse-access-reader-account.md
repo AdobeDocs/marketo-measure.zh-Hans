@@ -3,19 +3,23 @@ description: Data Warehouse访问权限 — Reader帐户 — 产品文档
 title: Data Warehouse访问权限 — Reader帐户
 exl-id: 2aa73c41-47ab-4f11-96d8-dafb642308fc
 feature: Data Warehouse
-TQID: https://experienceleague.adobe.com/3ZD-17UlkoJpMExA-ZdV-coGFa0DSeZMW0gjFZodlMM
+TQID: 'https://experienceleague.adobe.com/3ZD-17UlkoJpMExA-ZdV-coGFa0DSeZMW0gjFZodlMM'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 09cd1bee-ffcc-509c-9a9a-ca8384eac8e8
+    internal-label: Data Warehouse
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Security
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 482
+source-wordcount: '482'
 ht-degree: 0%
-
 ---
-
 # Data Warehouse访问权限 — Reader帐户 {#data-warehouse-access-reader-account}
 
 ## Snowflake访问链接 {#snowflake-access-link}
@@ -72,14 +76,14 @@ ht-degree: 0%
 >每个工具的连接要求各不相同；建议您查阅文档以了解要连接的特定工具。
 
 * **URI** （始终必需）
-   * 这是Snowflake帐户的域名。 它包含在Snowflake登录链接的一部分中。
+  * 这是Snowflake帐户的域名。 它包含在Snowflake登录链接的一部分中。
 * **用户名** （始终必需）
-   * 用户名在[!DNL Marketo Measure]的Data Warehouse信息页面上列出。
+  * 用户名在[!DNL Marketo Measure]的Data Warehouse信息页面上列出。
 * **密码** （始终必需）
-   * 这是您首次登录Snowflake帐户时设置的密码。 要重置密码，请参阅上述步骤。
+  * 这是您首次登录Snowflake帐户时设置的密码。 要重置密码，请参阅上述步骤。
 * **数据库名称** （并非总是必需的）
-   * 数据库就是将数据存储在Snowflake中的地方。 它是存储资源。 数据库名称列在[!DNL Marketo Measure]的Data Warehouse信息页中。
+  * 数据库就是将数据存储在Snowflake中的地方。 它是存储资源。 数据库名称列在[!DNL Marketo Measure]的Data Warehouse信息页中。
 * **仓库名称** （并非总是必需的）
-   * Warehouse就是在Snowflake中执行查询的地方。 它是计算资源。 仓库名称在[!DNL Marketo Measure]的Data Warehouse信息页面上列出。
+  * Warehouse就是在Snowflake中执行查询的地方。 它是计算资源。 仓库名称在[!DNL Marketo Measure]的Data Warehouse信息页面上列出。
 
   ![](assets/data-warehouse-access-reader-account-9.png)

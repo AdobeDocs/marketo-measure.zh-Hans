@@ -1,15 +1,22 @@
 ---
-description: 面向Marketo Measure用户的 [!DNL Marketo Measure] CRM包指南的最佳实践
-title: ' [!DNL Marketo Measure] CRM包的最佳实践'
+description: 面向Marketo Measure用户的[!DNL Marketo Measure] CRM包指南的最佳实践
+title: '[!DNL Marketo Measure] CRM包的最佳实践'
 exl-id: 97ce0ff3-8aa5-4789-9ee0-25d68c001def
 feature: Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '425'
 ht-degree: 0%
-
 ---
-
 
 # [!DNL Marketo Measure] CRM包的最佳实践 {#best-practices-for-marketo-measure-crm-package}
 
@@ -32,9 +39,9 @@ ht-degree: 0%
 在实施和管理[!DNL Marketo Measure] [!DNL Salesforce]包时，请牢记以下最佳实践。
 
 * 确认每个必要的团队成员都可以访问[!DNL Marketo Measure]报表文件夹。 应该有1-3个[!DNL Marketo Measure]文件夹（下面对此进行了说明）。 要打开访问权限，安装包的用户必须与相应的用户或角色共享报表文件夹。
-   * **Buyer Touchpoint报告** — 可供所有人使用
-   * **[!DNL Marketo Measure]基于帐户的营销报表** — 报表将仅填充到第2层及更高层的客户
-   * **Buyer Touchpoint功能板** — 可供所有人使用，不过此包是可选的。
+  * **Buyer Touchpoint报告** — 可供所有人使用
+  * **[!DNL Marketo Measure]基于帐户的营销报表** — 报表将仅填充到第2层及更高层的客户
+  * **Buyer Touchpoint功能板** — 可供所有人使用，不过此包是可选的。
 
 ## 维护的最佳实践 {#best-practice-for-maintenance}
 
@@ -54,5 +61,5 @@ ht-degree: 0%
 >[!MORELIKETHIS]
 > [更新Buyer Touchpoint包](/help/configuration-and-setup/install-set-up.md)
 > [[!DNL Marketo Measure] 权限集](/help/configuration-and-setup/marketo-measure-permission-sets.md)
-> [共享报告和仪表板文件夹](https://help.salesforce.com/s/articleView?language=en_US&id=analytics_share_folder.htm&type=0)
+> [共享报表和功能板文件夹](https://help.salesforce.com/s/articleView?language=en_US&id=analytics_share_folder.htm&type=0)
 > [将Marketo Measure连接到Salesforce](/help/configuration-and-setup/connect-marketo-measure-to-salesforce.md)

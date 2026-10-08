@@ -1,25 +1,30 @@
 ---
 unique-page-id: 42762729
-description: '[!DNL Marketo Engage]程序集成 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Engage]项目集成 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]项目集成'
 exl-id: c26087e3-d821-4fe7-bacd-eeaa1530a4b0
 feature: Integration
-TQID: https://experienceleague.adobe.com/tsJhoMace2jJnRi7-jM-mojkNMSdZlzYKtvk3OVR2A8
+TQID: 'https://experienceleague.adobe.com/tsJhoMace2jJnRi7-jM-mojkNMSdZlzYKtvk3OVR2A8'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
   - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Implementation
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1288
+source-wordcount: '1288'
 ht-degree: 1%
-
 ---
-
 # [!DNL Marketo Engage]项目集成 {#marketo-engage-programs-integration}
 
 通过与[!DNL Marketo Engage]程序的[!DNL Marketo Measure]集成，我们的客户可以开始从Marketo程序成员资格创建归因跟踪接触点。 此功能允许营销人员从[!DNL Marketo Measure] javascript看不到且应在归因历程中衡量的电子邮件或参与计划开始跟踪计划成员资格。

@@ -3,13 +3,17 @@ description: 面向Marketo Measure用户的Campaign同步日期指南
 title: Campaign同步日期
 exl-id: 66ce9948-9297-47ef-8b16-0ac45c5664fc
 feature: Channels
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 1%
-
 ---
-
 # Campaign同步日期 {#campaign-sync-dates}
 
 了解Campaign同步日期功能的功能，并提供此功能的一些用例。
@@ -25,7 +29,7 @@ ht-degree: 1%
 * 接触点开始日期
 * 接触点结束日期
 
-在特定营销活动上启用购买者接触点后，您可以利用Campaign同步日期为单个营销活动设置接触点日期参数。 因此，如果您要添加的接触点结束日期是2017年3月1日，则[!DNL Marketo Measure]将仅在该日期之前添加到促销活动的促销活动成员上创建接触点。[!DNL Marketo Measure] 不会为2017年3月1日之后添加的活动成员创建接触点。
+在特定营销活动上启用购买者接触点后，您可以利用Campaign同步日期为单个营销活动设置接触点日期参数。 因此，如果您要添加的接触点结束日期是2017年3月1日，则[!DNL Marketo Measure]将仅在该日期之前添加到促销活动的促销活动成员上创建接触点。 [!DNL Marketo Measure]不会为2017年3月1日之后添加的活动成员创建接触点。
 
 ![在特定促销活动上启用购买者接触点后，促销活动同步日期](assets/legacy-processes-3.gif)
 
@@ -35,7 +39,7 @@ ht-degree: 1%
 
 **正在回填接触点**
 
-有时，营销团队可能会错过向特定营销工作添加utm参数。 利用Campaign同步日期，您可以(如果使用SFDC促销活动进行在线工作)回填一些缺失的数据。 假设您运行的是5月1日开始的电子邮件营销活动，但您的团队直到5月15日才为该电子邮件营销活动添加utm参数。 如果您通过SFDC促销活动跟踪电子邮件转化，则可将接触点结束日期设置为5月15日，并为该促销活动的“已回复”成员启用接触点。 此操作将告知[!DNL Marketo Measure]为截至5月15日的所有响应创建接触点。
+有时，营销团队可能会错过向特定营销工作添加utm参数。 利用Campaign同步日期，您可以（如果使用SFDC促销活动进行在线工作）回填一些缺失的数据。 假设您运行的是5月1日开始的电子邮件营销活动，但您的团队直到5月15日才为该电子邮件营销活动添加utm参数。 如果您通过SFDC促销活动跟踪电子邮件转化，则可将接触点结束日期设置为5月15日，并为该促销活动的“已回复”成员启用接触点。 此操作将告知[!DNL Marketo Measure]为截至5月15日的所有响应创建接触点。
 
 **可追溯的Campaign会员资格接触点**
 

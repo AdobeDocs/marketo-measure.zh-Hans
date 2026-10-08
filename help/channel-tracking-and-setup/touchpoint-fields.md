@@ -3,13 +3,17 @@ description: 面向Marketo Measure用户的接触点字段指南
 title: 接触点字段
 exl-id: d6c2bd60-5341-4a52-939a-942afc093306
 feature: Touchpoints
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '2153'
+source-wordcount: '2167'
 ht-degree: 0%
-
 ---
-
 # 接触点字段 {#touchpoint-fields}
 
 过去，当客户加入[!DNL Marketo Measure]并且没有直接标记集成时，我们的客户成功团队会教导客户如何适当地标记其登陆页面，以便他们使用正确的UTM格式，并且我们可以解决其广告。 其中有些客户不使用UTM，而是使用自己的标记参数，这意味着使用[!DNL Marketo Measure]强制实施的新标记结构编辑其所有广告网络中的所有登陆页面可能非常耗时。 为了适应它们的标记结构，我们现在接受可以使用我们的规则定义映射的自定义参数。 目标是适应客户对其自定义跟踪参数的使用，因此我们不必要求客户更改其URL结构。
@@ -34,7 +38,7 @@ ht-degree: 0%
 
 提取
 
-[!UICONTROL extracts]运算符从其他位置提取字段中的值，例如：促销活动字段、潜在客户字段，或者在更高级的用例中，从登陆页面[&#128279;](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}提取自定义参数。 然后将其放置到接触点字段(请参阅[映射到示例](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}#2)。
+[!UICONTROL extracts]运算符从其他位置提取字段中的值，例如：促销活动字段、潜在客户字段，或者在更高级的用例中，从登陆页面](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}提取自定义参数。 [然后将其放置到接触点字段（请参阅[映射到示例](https://docs.google.com/document/d/1NRViyCsXvPKbCTfGW32Yi2vWBjMDRF7bzkzKj9s2DDA/edit?ts=5e20b482#heading=h.xxwtissvw4){target="_blank"}#2）。
 
 **示例#1**
 
@@ -43,13 +47,13 @@ ht-degree: 0%
 目标：使用自定义字段的值并将其放置到接触点对象上以便更轻松地报告。
 
 * 创建计算字段并标记为“Campaign Source”
-* 从搜索Contact.Campaign_Source__c字段开始定义规则
+* 从搜索Contact.Campaign___c字段开始定义规则
 * 使用运算符“extracts”，因为我们需要从参数中提取值
 * 若要从字段中提取完整的字符串，我们将使用表达式“(.&#42;)”
 
-   * **(**&#x200B;标记提取开始
-   * **)**&#x200B;标记提取结束
-   * **.&#42;** 说明我们正在提取完整的字符串
+  * **(**&#x200B;标记提取开始
+  * **)**&#x200B;标记提取结束
+  * **.&#42;** 说明我们正在提取完整的字符串
 
 ![.&amp;42；告诉我们我们正在提取完整的字符串](assets/touchpoint-fields-10.png)
 
@@ -65,11 +69,11 @@ ht-degree: 0%
 * 使用运算符“extracts”，因为我们需要从参数中提取值
 * 要提取促销的值，我们将该值定义为“promo=(\w+)”
 
-   * **(**&#x200B;标记提取开始
-   * **)**&#x200B;标记提取结束
-   * **\w**&#x200B;告诉我们，我们正在提取包含0-9的“word”
-   * **+**&#x200B;将提取参数的完整值，而不限制字符
-   * 请注意，您使用的是正斜杠，而不是反斜杠
+  * **(**&#x200B;标记提取开始
+  * **)**&#x200B;标记提取结束
+  * **\w**&#x200B;告诉我们，我们正在提取包含0-9的“word”
+  * **+**&#x200B;将提取参数的完整值，而不限制字符
+  * 请注意，您使用的是正斜杠，而不是反斜杠
 
 ![请注意，您使用的是正斜杠，而不是](assets/touchpoint-fields-11.png)
 
@@ -84,17 +88,17 @@ ht-degree: 0%
 * 使用运算符“extracts”，因为我们需要从参数中提取值
 * 若要提取“123456”值，我们会将该值定义为“cid=(\d{6})”
 
-   * **(**&#x200B;标记提取开始
-   * **)**&#x200B;标记提取结束
-   * **\d**&#x200B;告诉我们，我们正在提取“数字”
-   * **{6}**&#x200B;是我们正在提取的字符数
+  * **(**&#x200B;标记提取开始
+  * **)**&#x200B;标记提取结束
+  * **\d**&#x200B;告诉我们，我们正在提取“数字”
+  * **{6}**&#x200B;是我们正在提取的字符数
 
 ![{6}是我们正在提取的字符数](assets/touchpoint-fields-12.png)
 
 **示例#4**
 
 由于登陆页面变得更加复杂，并且您有多个跟踪参数，因此您可能需要构建多个接触点字段并多次提取值，例如：
-`https://www.adobe.com/blog/marketing-revenue-reporting-overview?trackID=123456&country=US&campaign_ID=7890`。
+`https://www.adobe.com/blog/marketing-revenue-reporting-overview?trackID=123456&country=US&campaign_ID=7890`.
 
 **目标：**&#x200B;使用参数中的相应值为“目标国家/地区”和“自定义促销活动ID”创建多个计算字段。
 
@@ -103,20 +107,20 @@ ht-degree: 0%
 * 使用运算符“extracts”，因为我们需要从参数中提取值
 * 若要提取“美国”值，我们将该值定义为“country=(\w{2})”
 
-   * **(**&#x200B;标记提取开始
-   * **)**&#x200B;标记提取结束
-   * **\w**&#x200B;告诉我们，我们正在提取“word”
-   * **&#x200B;**&#x200B;**是我们正在提取的字符数
+  * **(**&#x200B;标记提取开始
+  * **)**&#x200B;标记提取结束
+  * **\w**&#x200B;告诉我们，我们正在提取“word”
+  * **{2}**&#x200B;是我们正在提取的字符数
 
 * 创建计算字段并将其标记为“自定义促销活动Id”
 * 通过从搜索Touchpoint.Session.LandingPage字段开始定义规则
 * 使用运算符“extracts”，因为我们需要从参数中提取值
 * 要提取“123456”值，我们将该值定义为“campaign_ID=(\d{6})”
 
-   * **(**&#x200B;标记提取开始
-   * **)**&#x200B;标记提取结束
-   * **\d**&#x200B;告诉我们，我们正在提取“数字”
-   * **{6}**&#x200B;是我们正在提取的字符数
+  * **(**&#x200B;标记提取开始
+  * **)**&#x200B;标记提取结束
+  * **\d**&#x200B;告诉我们，我们正在提取“数字”
+  * **{6}**&#x200B;是我们正在提取的字符数
 
 ![{6}是我们正在提取的字符数](assets/touchpoint-fields-13.png)
 
@@ -141,14 +145,14 @@ ht-degree: 0%
 * 使用运算符“[!UICONTROL extracts]”，因为我们需要从参数中提取值
 * 为了提取“04”值，我们将将该值定义为“BZ=(\d{2})-\d{2}-\d{2}-\d{2}-\d{2}”
 
-   * **(**&#x200B;标记提取开始
+  * **(**&#x200B;标记提取开始
 
-      * 请注意，由于我们仅提取4，因此只有第一位数字具有左圆括号
-   * **)**&#x200B;标记提取结束
+    * 请注意，由于我们仅提取4，因此只有第一位数字具有左圆括号
+  * **)**&#x200B;标记提取结束
 
-      * 请注意，由于我们仅提取4，因此只有第一位数字具有右括号
-   * **\d**&#x200B;告诉我们，我们正在提取“数字”
-   * **&#x200B;**&#x200B;**是我们正在提取的字符数
+    * 请注意，由于我们仅提取4，因此只有第一位数字具有右括号
+  * **\d**&#x200B;告诉我们，我们正在提取“数字”
+  * **{2}**&#x200B;是我们正在提取的字符数
 
 
 
@@ -161,12 +165,12 @@ ht-degree: 0%
 * 根据上面的映射和URL，使用此登陆页面的接触点的“Region_Value”将为“EMEA”
 * 对其余4组数字重复提取和映射
 
-   * 要提取01，可将值定义为“BZ=\d-**(\d**)**-\d**-\d&#x200B;**-\d**-\d**”
-   * 要提取09，您应将该值定义为“BZ=\d **-\d**-**(\d**)**-\d**-\d**”
-   * 要提取03，可将值定义为“BZ=\d **-\d**-\d&#x200B;**-\d**(\d&#x200B;**)**-\d**”
-   * 若要提取10，可将值定义为“BZ=\d **-\d**-\d&#x200B;**-\d**-\d&#x200B;**(\d**)**”
+  * 要提取01，可将值定义为“BZ=\d-**(\d{2})**-\d{2}-\d{2}-\d{2}-\d{2}”
+  * 要提取09，您应将该值定义为“BZ=\d{2}-\d{2}-**(\d{2})**-\d{2}-\d{2}”
+  * 要提取03，可将值定义为“BZ=\d{2}-\d{2}-\d{2}-\d **(\d{2})**-\d{2}”
+  * 若要提取10，可将值定义为“BZ=\d{2}-\d{2}-\d{2}-\d{2}-\d **(\d{2})**”
 
-![要提取10，可将值定义为“BZ=\d](assets/touchpoint-fields-3.png)-\d&rbrack;(assets/touchpoint-fields-3.png)-\d&rbrack;(assets/touchpoint-fields-3.png)-\d&rbrack;(assets/touchpoint-fields-3.png)-(\d&rbrack;(assets/touchpoint-fields-3.png))”&rbrack;(assets/touchpoint-fields-3.png)
+![要提取10，可将值定义为“BZ=\d{2}-\d{2}-\d{2}-\d{2}-(\d{2})”](assets/touchpoint-fields-3.png)
 
 **连接**
 

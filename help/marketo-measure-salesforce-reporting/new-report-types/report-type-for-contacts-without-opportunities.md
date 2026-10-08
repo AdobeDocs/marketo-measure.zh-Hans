@@ -1,21 +1,24 @@
 ---
 unique-page-id: 18874616
-description: 没有机会的联系人的报告类型 —  [!DNL Marketo Measure]
+description: 没有机会的联系人的报告类型 — [!DNL Marketo Measure]
 title: 无业务机会的联系人的报表类型
 exl-id: 255048be-16ff-4964-85fd-cc07888a05af
 feature: Reporting
-TQID: https://experienceleague.adobe.com/j7dgYcy3QY2XRGdYptv-S3N6IWfsSRa6iQrpD0FF1Tg
+TQID: 'https://experienceleague.adobe.com/j7dgYcy3QY2XRGdYptv-S3N6IWfsSRa6iQrpD0FF1Tg'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 151
-ht-degree: 0%
-
+source-wordcount: '151'
+ht-degree: 1%
 ---
-
 # 无业务机会的联系人的报表类型 {#report-type-for-contacts-without-opportunities}
 
 >[!NOTE]
@@ -24,7 +27,7 @@ ht-degree: 0%
 
 要报告未与Opportunity关联的Contacts with Buyer Touchpoints ，您需要创建自定义报告类型。
 
-1. 转到&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Report Types]**。
+1. 转到 **[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Report Types]**。
 
    ![](assets/1.jpg)
 

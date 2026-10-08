@@ -1,21 +1,24 @@
 ---
 unique-page-id: 18874736
-description: 从Google Analytics中的登陆页面URL中删除 [!DNL Marketo Measure] 跟踪参数 —  [!DNL Marketo Measure]
-title: 从Google Analytics中的登陆页面URL中删除 [!DNL Marketo Measure] 跟踪参数
+description: 从Google Analytics中的登陆页面URL中删除[!DNL Marketo Measure]跟踪参数 — [!DNL Marketo Measure]
+title: 从Google Analytics中的登陆页面URL中删除[!DNL Marketo Measure]跟踪参数
 exl-id: ec81ba4a-bb10-49fd-b62e-5a1bc9e1a023
 feature: Tracking
-TQID: https://experienceleague.adobe.com/vKhwWUT0VQ1Kr-3-dWVWt08S4848Q0Bn4HYrGgHawb8
+TQID: 'https://experienceleague.adobe.com/vKhwWUT0VQ1Kr-3-dWVWt08S4848Q0Bn4HYrGgHawb8'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Privacy
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 109
+source-wordcount: '111'
 ht-degree: 0%
-
 ---
-
 # 从Google Analytics中的登陆页面URL中删除[!DNL Marketo Measure]跟踪参数 {#remove-marketo-measure-tracking-parameters-from-the-landing-page-url-in-google-analytics}
 
 有时在查看[!DNL Google Analytics]中的登陆页面时，您需要从URL中删除跟踪参数。 否则，它们将拆分为单独的行。

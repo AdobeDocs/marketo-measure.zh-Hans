@@ -3,14 +3,18 @@ description: 面向Marketo Measure用户的营销渠道和子渠道指南
 title: 营销渠道和子渠道
 exl-id: fbe2a994-cf6d-439c-af96-a562216434cc
 feature: Channels
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 2%
-
 ---
-
 # 营销渠道和子渠道 {#marketing-channels-and-subchannels}
 
 ## 用途 {#purpose}
@@ -19,7 +23,7 @@ ht-degree: 2%
 
 ## 概述 {#overview}
 
-营销渠道用于帮助对您的营销活动进行分类（或“分段”），以便于报告，包括在[!DNL Marketo Measure]投资回报率短划线中以及在CRM中。[!DNL Marketo Measure] 随附了12个现成的渠道（您可以根据组织的惯例自定义/重命名这些渠道），以及进一步创建自定义渠道以实现更精细筛选的能力。
+营销渠道用于帮助对您的营销活动进行分类（或“分段”），以方便报告，包括在[!DNL Marketo Measure] ROI短划线中以及在CRM中。 [!DNL Marketo Measure]附带12个现成的渠道（您可以根据组织的惯例自定义/重命名这些渠道），以及进一步创建自定义渠道以实现更精细筛选的能力。
 
 每当您收到您网站上某个内容页面（无论该内容是网页、白皮书下载、页面URL等）的访客时，该Lead将根据URL中找到的几个UTM参数“分段”到渠道/子渠道中：
 
@@ -45,9 +49,9 @@ ht-degree: 2%
 
 下图说明了基于具有以下URL的网页的营销渠道、子渠道和内容的示例：
 
-* [http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&utm_medium=paidsocial](http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&utm_medium=paidsocial)*
+* [http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&amp;utm_medium=paidsocial](http://info.bizible.com/intro-guide-b2b-marketing-attribution?utm_source=linkedin&utm_medium=paidsocial)*
 
-在这种情况下，用户尝试访问的内容是《B2B营销归因简介指南》。[!DNL Marketo Measure] 将使用此组织中设置的渠道规则分析指向此内容的URL，并使用它们“分段”此潜在客户到营销渠道“付费社交”和子渠道“LinkedIn”。
+在这种情况下，用户尝试访问的内容是《B2B营销归因简介指南》。 [!DNL Marketo Measure]将使用此组织中设置的渠道规则分析指向此内容的URL，并使用它们“分段”此潜在客户到营销渠道“付费社交”和子渠道“LinkedIn”。
 
 ![在这种情况下，用户尝试访问的内容是](assets/online-channels-1.png)
 
@@ -64,7 +68,7 @@ ht-degree: 2%
 * PR
 * 反向链接程序
 
-**子渠道(接触点Source)**
+**子渠道（接触点Source）**
 
 * Google AdWords
 * BingAds

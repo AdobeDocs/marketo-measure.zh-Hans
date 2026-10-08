@@ -4,18 +4,21 @@ description: 了解基于帐户的归因以及Adobe Marketo Measure如何补充�
 title: 基于帐户的归因
 exl-id: 9c1a03c8-f884-4c08-97ae-b848cc200038
 feature: Attribution
-TQID: https://experienceleague.adobe.com/LvU1AG-V5PYc89QBqSFoFk56QM-xHbvnrJM-MDnZHHA
+TQID: 'https://experienceleague.adobe.com/LvU1AG-V5PYc89QBqSFoFk56QM-xHbvnrJM-MDnZHHA'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Measurement
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 297
+source-wordcount: '297'
 ht-degree: 0%
-
 ---
-
 # 基于帐户的归因 {#account-based-attribution}
 
 随着Account-Based Marketing (ABM)的兴起，了解[!DNL Marketo Measure]如何补充您的ABM策略非常重要。 [!DNL Marketo Measure]将显示您帐户下每个潜在客户和联系人的每个接触点。

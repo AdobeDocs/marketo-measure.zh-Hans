@@ -3,13 +3,17 @@ description: 使用“潜在客户周转率”仪表板测量每个funnel阶段�
 title: 潜在客户周转率功能板
 feature: Reporting
 exl-id: f0937e9c-702f-4539-ab0b-05d9487c562d
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 1%
-
 ---
-
 # 潜在客户周转率功能板 {#lead-velocity-dashboard}
 
 Velocity功能板提供了有关潜在客户在Sales funnel中移动速度的动态视图，从而为营销人员和销售团队提供了有关各个渠道中的转化时间的重要洞察。 此工具在回答有关商机转化持续时间以及销售阶段进展效率的关键问题方面有着无价的帮助，使您能够优化参与策略以加快增长和转化。
@@ -66,7 +70,7 @@ Velocity功能板提供了有关潜在客户在Sales funnel中移动速度的动
 此仪表板配备了以下设置和过滤器：
 
 * 日期
-   * 基于：转换日期
+  * 基于：转换日期
 * 阶段
 * 渠道
 * 子渠道

@@ -1,21 +1,24 @@
 ---
 unique-page-id: 27656441
-description: 漂移集成常见问题解答 —  [!DNL Marketo Measure]
+description: 漂移集成常见问题解答 — [!DNL Marketo Measure]
 title: 漂移集成常见问题解答
 exl-id: ae5706b1-1f6c-4201-8585-0d7c587746e1
 feature: Integration
-TQID: https://experienceleague.adobe.com/RDhpeivSYllzKoOFPjVBH2u-tPPsMUtVT5bS5hME0J8
+TQID: 'https://experienceleague.adobe.com/RDhpeivSYllzKoOFPjVBH2u-tPPsMUtVT5bS5hME0J8'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Implementation
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 357
+source-wordcount: '357'
 ht-degree: 1%
-
 ---
-
 # 漂移集成常见问题解答 {#drift-integration-faq}
 
 作为[!DNL Marketo Measure]与漂移集成的一部分，以下是一些最常见的问题。 如果遇到以下未列出的任何问题，请联系Adobe客户团队（您的客户经理）或[Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。

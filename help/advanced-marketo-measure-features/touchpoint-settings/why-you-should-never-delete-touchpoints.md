@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874560
-description: 为什么从不删除接触点 —  [!DNL Marketo Measure]
+description: 为什么从不删除接触点 — [!DNL Marketo Measure]
 title: 为什么绝不应该删除接触点
 exl-id: e74c14ff-0399-4ee9-b732-6686823ff5c7
 feature: Touchpoints
-TQID: https://experienceleague.adobe.com/HeJr54wYsCH2Ic4dZ-Ds24c5-kC-Joq0uIZhXL5zE-o
+TQID: 'https://experienceleague.adobe.com/HeJr54wYsCH2Ic4dZ-Ds24c5-kC-Joq0uIZhXL5zE-o'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 228
+source-wordcount: '228'
 ht-degree: 3%
-
 ---
-
 # 为什么绝不应该删除接触点 {#why-you-should-never-delete-touchpoints}
 
 如果您发现Opportunity上的某个接触点未正确分配归因点数，请联系您的客户经理以确定后续步骤。 在这些情况下，我们建议使用购买者的接触点抑制功能从SFDC和ROI仪表板中删除接触点。 您的客户经理可帮助创建这些规则。 请勿自己手动删除这些接触点。

@@ -1,15 +1,22 @@
 ---
-description: '[!DNL Marketo Measure]对象和字段分类 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure]对象和字段分类 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]对象和字段分类'
 exl-id: 67f1cac8-e2b4-45cc-b1c9-58bf4e1a760d
 feature: Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Measure]对象和字段分类 {#marketo-measure-object-and-field-taxonomy}
 
 下面是一个流程图，它表示[!DNL Marketo Measure]自定义对象与[!DNL Salesforce]标准对象的关系。
@@ -18,7 +25,7 @@ ht-degree: 0%
 
 对于完整大小的图像，[单击此处](assets/bizible-full-1.png)。
 
-可以在此处[&#128279;](/help/glossary.md)找到每个对象中活动的[!DNL Marketo Measure]字段的定义。
+可以在此处](/help/glossary.md)找到每个对象[中活动的[!DNL Marketo Measure]字段的定义。
 
 ## 常见问题解答 {#faq}
 

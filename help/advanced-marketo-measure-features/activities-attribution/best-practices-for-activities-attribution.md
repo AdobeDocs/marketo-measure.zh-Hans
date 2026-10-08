@@ -1,18 +1,20 @@
 ---
-description: 活动归因的最佳实践 —  [!DNL Marketo Measure]
+description: 活动归因的最佳实践 — [!DNL Marketo Measure]
 title: 活动归因的最佳实践
 exl-id: 66fb9f47-3912-40a6-b112-3efca789f321
 feature: Attribution
-TQID: https://experienceleague.adobe.com/hCGaaarnFmGXgMvu9N2l5JZIXJQ0oAsY214s1MFlS84
+TQID: 'https://experienceleague.adobe.com/hCGaaarnFmGXgMvu9N2l5JZIXJQ0oAsY214s1MFlS84'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 515
+source-wordcount: '515'
 ht-degree: 0%
-
 ---
-
 # 活动归因的最佳实践 {#best-practices-for-activities-attribution}
 
 ## 概述 {#overview}
@@ -28,8 +30,8 @@ ht-degree: 0%
 无论您是首次定义活动规则，还是只查看之前已设置的活动规则，请牢记以下最佳实践。
 
 * 开始简单
-   * 识别要合并到[!DNL Marketo Measure]数据中的几个关键活动类型，然后在您了解这些接触点的归因方式后添加更多类型
-   * 如前所述，此功能的主要用例是创建用于跟踪Sales Development团队效率的接触点，特别是“出站电话呼叫”和“出站电子邮件”
+  * 识别要合并到[!DNL Marketo Measure]数据中的几个关键活动类型，然后在您了解这些接触点的归因方式后添加更多类型
+  * 如前所述，此功能的主要用例是创建用于跟踪Sales Development团队效率的接触点，特别是“出站电话呼叫”和“出站电子邮件”
 
 >[!NOTE]
 >
@@ -37,11 +39,11 @@ ht-degree: 0%
 
 * 不要使用公式字段定义规则
 * 创建具体而精确的规则
-   * 创建活动接触点的阈值应该与表单填写或营销活动成员资格相同（或类似）：回复出站电子邮件或已完成的电话对话
+  * 创建活动接触点的阈值应该与表单填写或营销活动成员资格相同（或类似）：回复出站电子邮件或已完成的电话对话
 * 保存和处理之前，始终在[!DNL Salesforce]中验证新规则
-   * 在“Tasks &amp; Events”报告类型中复制活动规则，可让您清楚地了解该规则中有多少接触点
+  * 在“Tasks &amp; Events”报告类型中复制活动规则，可让您清楚地了解该规则中有多少接触点
 * 与您的Sales Opp团队合作
-   * 引入与您的活动记录或销售支持工具最接近的团队，将确保您使用正确的字段来定义规则
+  * 引入与您的活动记录或销售支持工具最接近的团队，将确保您使用正确的字段来定义规则
 
 ## 维护的最佳实践 {#best-practice-for-maintenance}
 

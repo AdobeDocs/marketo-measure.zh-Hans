@@ -3,14 +3,18 @@ description: 介绍Discover功能板界面、筛选器、钻取操作、交叉�
 title: 了解功能板基础知识
 feature: Reporting
 exl-id: 597a4f7c-4965-4bcb-bf28-607abc9b7545
-hidefromtoc: true
-source-git-commit: 5a3494763c80ac636306c7ac8d080383d2358a59
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 0%
-
+source-wordcount: '576'
+ht-degree: 3%
 ---
-
 # 了解功能板基础知识 {#discover-dashboard-basics}
 
 本文将引导您了解重新设计的界面的基本功能，确保您可以轻松地访问和解读数据。 深入了解过滤器窗格的动态，并揭示增强的报告功能的复杂性，例如钻取功能、交叉过滤和工具提示。
@@ -21,10 +25,10 @@ ht-degree: 0%
 
 | 名称 | 描述 |
 | --- | --- |
-| 筛选器切换按钮 | 打开或关闭筛选器窗格。![\| --- \| --- \|](assets/discover-basics-9.png) |
-| 搜索栏 | 使用筛选器窗格顶部的搜索来搜索特定筛选器。 每个过滤器都有自己的搜索栏。![\| --- \| --- \|](assets/discover-basics-10.png) |
-| 清除筛选器按钮 | 要清除筛选器，请单击每个筛选器右上角的橡皮擦图标。![\| --- \| --- \|](assets/discover-basics-11.png) |
-| 应用按钮 | 单击以确认并在功能板上实施您的筛选器更改。![\| --- \| --- \|](assets/discover-3a-1.png) |
+| 筛选器切换按钮 | 打开或关闭筛选器窗格。 ![\| --- \| --- \|](assets/discover-basics-9.png) |
+| 搜索栏 | 使用筛选器窗格顶部的搜索来搜索特定筛选器。 每个过滤器都有自己的搜索栏。 ![\| --- \| --- \|](assets/discover-basics-10.png) |
+| 清除筛选器按钮 | 要清除筛选器，请单击每个筛选器右上角的橡皮擦图标。 ![\| --- \| --- \|](assets/discover-basics-11.png) |
+| 应用按钮 | 单击以确认并在功能板上实施您的筛选器更改。 ![\| --- \| --- \|](assets/discover-3a-1.png) |
 
 ## 可视化上的筛选器 {#filters-on-visual}
 
@@ -65,7 +69,7 @@ ht-degree: 0%
 ### 导出数据 {#export-data}
 
 要从视觉对象导出基础数据，请将鼠标悬停在其右上角上。 单击“更多选项”按钮，选择“导出数据”，选择首选格式，然后单击“导出”。
-![若要从视觉对象导出基础数据，请将鼠标悬停在其右上角](assets/discover-basics-6.gif)上
+![若要从视觉对象导出基础数据，请将鼠标悬停在其右上角上](assets/discover-basics-6.gif)
 
 ### 焦点模式 {#focus-mode}
 

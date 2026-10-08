@@ -3,14 +3,18 @@ description: 面向Marketo Measure用户的离线自定义渠道设置指南
 title: 脱机自定义渠道设置
 exl-id: c5697714-1a79-40bd-8b7c-e10768f4ef67
 feature: Channels
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 0%
-
 ---
-
 # 脱机自定义渠道设置 {#offline-custom-channel-setup}
 
 ## 快速入门 {#getting-started}
@@ -45,7 +49,7 @@ SFDC促销活动类型将显示在离线渠道的选项卡中，列在[!DNL Sale
 
 例如，假设您每年参加两次[!DNL Salesforce]会议。 但是，每个会议都非常不同，并且都有独特的目标受众。 你想知道，这两者中哪一个能带来更多价值。 在您的[!DNL Salesforce]环境中，您可以为1月事件指定营销活动类型“会议”，将您的频道命名为“[!DNL Salesforce]”，并将子频道命名为“1月会议”。
 
-现在，您也想为6月份的会议做同样的事情。 您认为，由于这也是一个会议，因此可以为它指定相同的营销活动类型，在本例中为“会议”。 渠道相同，[!DNL Salesforce]，并且此第二次会议的子渠道为“6月会议”。 从组织角度看，这是有道理的。 但是，由于两个营销活动具有相同的营销活动类型，因此读取和应用这些规则会导致[!DNL Marketo Measure]逻辑非常混乱。[!DNL Marketo Measure] 脚本无法将数据从一个类型映射到两个不同的子渠道。 这意味着您需要为每个子渠道创建新的营销活动类型，但子渠道可以具有相同的渠道。
+现在，您也想为6月份的会议做同样的事情。 您认为，由于这也是一个会议，因此可以为它指定相同的营销活动类型，在本例中为“会议”。 渠道相同，[!DNL Salesforce]，并且此第二次会议的子渠道为“6月会议”。 从组织角度看，这是有道理的。 但是，由于两个营销活动具有相同的营销活动类型，因此读取和应用这些规则会导致[!DNL Marketo Measure]逻辑非常混乱。 [!DNL Marketo Measure]脚本无法将数据从一个类型映射到两个不同的子渠道。 这意味着您需要为每个子渠道创建新的营销活动类型，但子渠道可以具有相同的渠道。
 
 以下是[!DNL Marketo Measure]无法读取的逻辑示例：
 
@@ -83,8 +87,8 @@ SFDC促销活动类型将显示在离线渠道的选项卡中，列在[!DNL Sale
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Marketo Measure] 教程：映射脱机渠道](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
+>* [[!DNL Marketo Measure] 教程：映射脱机渠道](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/mapping-offline-channels){target="_blank"}
 >
->* [[!DNL Marketo Measure] 教程：同步离线营销活动](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/syncing-offline-campaigns){target="_blank"}
+>* [[!DNL Marketo Measure] 教程：同步离线营销活动](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-salesforce/syncing-offline-campaigns){target="_blank"}
 >
 >* [Marketo Engage程序集成](/help/marketo-engage-programs-integration.md){target="_blank"}

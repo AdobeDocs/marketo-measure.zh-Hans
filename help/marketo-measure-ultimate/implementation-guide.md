@@ -1,23 +1,33 @@
 ---
-description: '[!DNL Marketo Measure] Ultimate实施指南 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure] Ultimate实施指南 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] Ultimate实施指南'
 feature: Integration, Tracking, Attribution
 exl-id: 0c707875-5d05-49b9-b1ff-c3f7b711ebd1
-TQID: https://experienceleague.adobe.com/Dj1Dbz4wPQt99NlAEtcn7v3AQoQPdIV5HDExXmlbcZ0
+TQID: 'https://experienceleague.adobe.com/Dj1Dbz4wPQt99NlAEtcn7v3AQoQPdIV5HDExXmlbcZ0'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
 topic_v2:
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
+    internal-label: Data modeling
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Data management
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1074
+source-wordcount: '1074'
 ht-degree: 3%
-
 ---
-
 # [!DNL Marketo Measure] Ultimate实施指南 {#marketo-measure-ultimate-implementation-guide}
 
 本文可作为Marketo Measure Ultimate的实施指南，为您提供清晰的步骤和分析，以确保成功的集成和利用。
@@ -45,7 +55,7 @@ Ultimate用户是AEP配置用户。 如果他们已有AEP，则我们将不会�
 
 >[!NOTE]
 >
->查看架构[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hans#building-blocks-of-a-schema){target="_blank"}的构建块，了解架构、类和字段组的概述。
+>查看架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#building-blocks-of-a-schema){target="_blank"}的[构建块，了解架构、类和字段组的概述。
 
 **XDM架构=类+架构字段组&#42;**
 
@@ -62,9 +72,9 @@ Ultimate用户是AEP配置用户。 如果他们已有AEP，则我们将不会�
 
 我们建议使用自动生成实用程序来创建十个标准B2B架构。
 
-* 下载和设置实用工具[的步骤可在此处](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html?lang=zh-Hans#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}找到。
+* 下载和设置实用工具[的步骤可在此处](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo-namespaces.html#set-up-b2b-namespaces-and-schema-auto-generation-utility){target="_blank"}找到。
 
-对于具有&#x200B;_&#x200B;**CDP权利**&#x200B;_&#x200B;的用户：通过转到源页面创建架构。
+对于具有&#x200B;_**CDP权利**_&#x200B;的用户：通过转到源页面创建架构。
 
 * 从源中，选择添加数据>使用模板
 
@@ -80,7 +90,7 @@ Ultimate用户是AEP配置用户。 如果他们已有AEP，则我们将不会�
 >
 >添加新数据集时，我们建议创建流量而不是使用现有流量。
 
-[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html?lang=zh-Hans){target="_blank"}
+[数据流概述](https://experienceleague.adobe.com/docs/experience-platform/dataflows/home.html){target="_blank"}
 
 **创建数据流的步骤：**
 
@@ -95,7 +105,7 @@ Ultimate用户是AEP配置用户。 如果他们已有AEP，则我们将不会�
    >* 如果将一种架构类型映射到另一种相同的架构类型，则会自动完成映射。
    >* 您还可以从系统中的其他流导入映射。
    >* 您可以将一个Source字段映射到多个目标字段，但无法执行相反操作。
-   >* 您可以创建计算字段（[数据准备映射函数](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=zh-Hans){target="_blank"}）。
+   >* 您可以创建计算字段（[数据准备映射函数](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html){target="_blank"}）。
 
    >[!CAUTION]
    >
@@ -123,7 +133,7 @@ Ultimate用户是AEP配置用户。 如果他们已有AEP，则我们将不会�
 
 ![](assets/marketo-measure-ultimate-implementation-guide-4.png)
 
-选项2： [下载和使用PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html?lang=zh-Hans){target="_blank"} （速度更快，可靠性更高）。
+选项2： [下载和使用PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html){target="_blank"} （速度更快，可靠性更高）。
 
 ## 激活Marketo Measure的数据集 {#activate-dataset-for-marketo-measure}
 

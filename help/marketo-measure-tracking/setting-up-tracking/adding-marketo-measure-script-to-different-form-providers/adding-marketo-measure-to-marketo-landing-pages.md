@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874755
-description: 正在将 [!DNL Marketo Measure] 添加到 [!DNL Marketo] 登陆页面 —  [!DNL Marketo Measure]
-title: 正在将 [!DNL Marketo Measure] 添加到Marketo登录页面
+description: 正在将[!DNL Marketo Measure]添加到[!DNL Marketo]登陆页面 — [!DNL Marketo Measure]
+title: 将[!DNL Marketo Measure]添加到Marketo登录页面
 exl-id: 3771d4d2-8723-452a-b23d-cea3b11ab9ee
 feature: Tracking
-TQID: https://experienceleague.adobe.com/oMudhh5HLf2i618ZV7RjLNMCsYYgxKoO-hp1g6ia85U
+TQID: 'https://experienceleague.adobe.com/oMudhh5HLf2i618ZV7RjLNMCsYYgxKoO-hp1g6ia85U'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 225
+source-wordcount: '228'
 ht-degree: 1%
-
 ---
-
 # 将[!DNL Marketo Measure]添加到Marketo登录页面 {#adding-marketo-measure-to-marketo-landing-pages}
 
 了解如何向[!DNL Marketo Engage]登陆页面添加跟踪，因为它们需要额外的处理。[!DNL Marketo Measure] JavaScript必须在登陆页面和[!DNL Marketo Engage]表单本身上都准备就绪。 为此，您需要按照以下说明将[!DNL Marketo Measure] JavaScript加载到[!DNL Marketo Engage]中。
@@ -45,4 +47,4 @@ ht-degree: 1%
 
 * 您可能使用了多个登陆页面模板，请务必将代码添加到所有包含表单的模板中。
 
-* 有时，在编辑登陆页面的模板时，必须重新批准登陆页面由使用的页面。 本文介绍[如何批量批准](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html?lang=zh-Hans){target="_blank"}。
+* 有时，在编辑登陆页面的模板时，必须重新批准登陆页面由使用的页面。 本文介绍[如何批量批准](https://experienceleague.adobe.com/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-actions/approve-multiple-landing-pages-at-once.html){target="_blank"}。

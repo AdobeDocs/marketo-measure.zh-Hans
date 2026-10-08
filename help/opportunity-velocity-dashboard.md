@@ -3,13 +3,17 @@ description: 描述Opportunity Velocity仪表板以跟踪每个销售阶段中�
 title: 机会周转率仪表板
 feature: Reporting
 exl-id: d02455fd-8fca-435e-8ded-69abbbdcb3a4
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
-
 ---
-
 # 机会周转率仪表板 {#opportunity-velocity-dashboard}
 
 Velocity功能板提供了有关潜在客户在Sales funnel中移动速度的动态视图，从而为营销人员和销售团队提供了有关各个渠道中的转化时间的重要洞察。 此工具在回答有关销售阶段的机会生命周期和进展效率的关键问题方面非常有用，使您能够优化参与策略以加快增长和转化。
@@ -72,7 +76,7 @@ Velocity功能板提供了有关潜在客户在Sales funnel中移动速度的动
 此仪表板配备了以下设置和过滤器：
 
 * 日期
-   * 基于：转换日期
+  * 基于：转换日期
 * 阶段
 * 渠道
 * 子渠道

@@ -3,14 +3,18 @@ description: 描述一段时间内访问访客页面查看表单和渠道性能�
 title: Web流量仪表板
 feature: Reporting
 exl-id: de6eec0c-9d7c-4cb2-8214-9d0fb41b444d
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 2%
-
 ---
-
 # Web流量仪表板 {#web-traffic-dashboard}
 
 Web流量仪表板可全面查看您网站的访客交互。 深入研究量度，例如每个URL的独特访客计数、总体访问、页面查看次数，以及来自特定表单URL或登陆页面的表单提交次数。 监控每月流量趋势并识别高性能付费媒体，使您可优化策略以最大限度地创造收入。

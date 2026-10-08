@@ -3,13 +3,17 @@ description: 面向Marketo Measure用户的AJAX表单处理指南
 title: AJAX表单处理
 exl-id: 042e42ff-d8d9-4380-b878-aba4934bc4a0
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
-
 ---
-
 # AJAX表单处理 {#ajax-form-handling}
 
 要手动报告客户转化到[!DNL Marketo Measure]，您可以使用一个简单的API。 如果您在网站上拥有跟踪代码，则这两个JavaScript API均可在您的网站上自动使用。 无需执行任何特殊操作即可访问它们。
@@ -18,7 +22,7 @@ ht-degree: 0%
 
 使用包含AJAX（或其他机制）的表单将转化日期从客户端提交到我们的服务器时，[!DNL Marketo Measure]可能不知道客户通过我们监控的任何标准路径进行的转化。 在此场景中，我们可以使用简单的API（如下所示）。
 
-如果您处理自己的表单提交，则可以从JavaScript显式调用[!DNL Marketo Measure]。[!DNL Marketo Measure] 会从表单中收集所有相关信息，并将其异步发布到我们的服务器。
+如果您处理自己的表单提交，则可以从JavaScript显式调用[!DNL Marketo Measure]。 [!DNL Marketo Measure]从表单中收集所有相关信息并将其异步发布到我们的服务器。
 
 **以下是使用JQuery的代码示例（假定表单上的ID为“formId”）：**
 
@@ -57,7 +61,7 @@ eMail: 'user@gmail.com' // required
 });
 ```
 
-在此代码中，[!UICONTROL email]字段为必填项。[!DNL Marketo Measure] 以异步方式将此数据发布到我们的服务器。
+在此代码中，[!UICONTROL email]字段为必填项。 [!DNL Marketo Measure]异步将此数据发布到我们的服务器。
 
 ## 场景3 — 在感谢页面中报告用户信息 {#scenario-report-user-information-from-the-thank-you-page}
 
@@ -70,4 +74,4 @@ eMail: 'user@gmail.com' // required
 data-email="user@gmail.com">
 ```
 
-隐藏元素是div、脚本还是任何其他标记类型都无关紧要。[!DNL Marketo Measure] 查找id=&quot;bizible.reportUser&quot;以读取信息。
+隐藏元素是div、脚本还是任何其他标记类型都无关紧要。 [!DNL Marketo Measure]查找id=&quot;bizible.reportUser&quot;以读取信息。

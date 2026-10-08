@@ -3,13 +3,21 @@ description: 针对Marketo Measure用户的有或无购买者归因接触点指�
 title: 报告有无买方归因接触点的商机
 exl-id: 3c658177-31e1-46b8-bc6b-e7a372ab187f
 feature: Touchpoints, Attribution, Reporting
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '217'
-ht-degree: 3%
-
+ht-degree: 4%
 ---
-
 # 报告有无买方归因接触点的商机 {#reporting-on-opportunities-with-or-without-buyer-attribution-touchpoints}
 
 >[!NOTE]
@@ -18,7 +26,7 @@ ht-degree: 3%
 
 创建一个新的报表类型，以包含所有具有或不具有采购员归因接触点的业务机会。
 
-1. 转到&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Report Types]**。
+1. 转到 **[!UICONTROL Setup]** > **[!UICONTROL Create]** > **[!UICONTROL Report Types]**。
 
    ![1. 转到设置创建报表类型。](assets/bizible-guide-1.png)
 
@@ -40,4 +48,4 @@ ht-degree: 3%
 
 >[!MORELIKETHIS]
 >
->[[!DNL Marketo Measure] 教程：其他SFDC报告](https://experienceleague.adobe.com/zh-hans/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/addtional-salesforce-reports)
+>[[!DNL Marketo Measure] 教程：其他SFDC报告](https://experienceleague.adobe.com/en/docs/marketo-measure-learn/tutorials/onboarding/marketo-measure-102/addtional-salesforce-reports)

@@ -1,22 +1,26 @@
 ---
 unique-page-id: 18874718
-description: 正在为 [!DNL Salesforce Campaigns] - [!DNL Marketo Measure]创建营销活动列表视图
-title: 创建 [!DNL Salesforce] 营销活动的营销活动列表视图
+description: 正在创建[!DNL Salesforce Campaigns] - [!DNL Marketo Measure]的营销活动列表视图
+title: 创建[!DNL Salesforce]营销活动的营销活动列表视图
 exl-id: 8c673ea3-ac24-4b3d-b67d-76888179c07a
 feature: Channels
-TQID: https://experienceleague.adobe.com/MYh66JaJKdgBI7XVxfffWlX9QDg4SqLWDhpsdv1kSG4
+TQID: 'https://experienceleague.adobe.com/MYh66JaJKdgBI7XVxfffWlX9QDg4SqLWDhpsdv1kSG4'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Troubleshooting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 438
-ht-degree: 0%
-
+source-wordcount: '448'
+ht-degree: 2%
 ---
-
 # 创建[!DNL Salesforce]营销活动的营销活动列表视图 {#creating-a-campaign-list-view-for-salesforce-campaigns}
 
 了解如何为那些要与买方接触点同步的营销活动创建列表视图。
@@ -33,7 +37,7 @@ ht-degree: 0%
 
    * **Type** [EQUALS] &#39;我们已映射到您的离线渠道的所有营销活动类型&#39;。 请参阅您的实施计划或[!DNL Marketo Measure]中的“脱机渠道”选项卡（[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"} ->我的帐户 — >设置 — >脱机渠道）。 您可以通过放大镜图标选择所需的类型（映射到离线营销渠道的类型）。
 
-      * 为每个过滤器选择3种最大类型。 过滤器字段中可包含的字符数存在限制。 从每个过滤器3个类型开始，并根据需要添加更多“类型”过滤器行。
+     * 为每个过滤器选择3种最大类型。 过滤器字段中可包含的字符数存在限制。 从每个过滤器3个类型开始，并根据需要添加更多“类型”过滤器行。
 
    * **创建日期** [大于或等于]您的[!DNL Marketo Measure]开始日期。 您可以在[!DNL Marketo Measure]应用程序的ROI仪表板中找到开始日期。 只需在短划线的日期范围内选择“自创建日期起”，它将显示您的开始日期。
    * **&#42;记录类型&#42;** — 若要在列表视图中进行编辑，需要为记录类型添加筛选器。 您可能需要编辑的每个营销活动记录都需要使用相同的记录类型。

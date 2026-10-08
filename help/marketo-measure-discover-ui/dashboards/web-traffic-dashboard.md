@@ -1,22 +1,25 @@
 ---
-description: Web流量仪表板 —  [!DNL Marketo Measure]  — 产品
+description: Web流量仪表板 — [!DNL Marketo Measure] — 产品
 title: Web流量仪表板
 feature: Reporting
 exl-id: de6eec0c-9d7c-4cb2-8214-9d0fb41b444d
-TQID: https://experienceleague.adobe.com/-EWWl-FHRDswkwvgJqVoYVA-rvWca7h5iwfcpTvO1LA
+TQID: 'https://experienceleague.adobe.com/-EWWl-FHRDswkwvgJqVoYVA-rvWca7h5iwfcpTvO1LA'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 445
+source-wordcount: '445'
 ht-degree: 2%
-
 ---
-
 # Web流量仪表板 {#web-traffic-dashboard}
 
 Web流量仪表板可全面查看您网站的访客交互。 深入研究量度，例如每个URL的独特访客计数、总体访问、页面查看次数，以及来自特定表单URL或登陆页面的表单提交次数。 监控每月流量趋势并识别高性能付费媒体，使您可优化策略以最大限度地创造收入。

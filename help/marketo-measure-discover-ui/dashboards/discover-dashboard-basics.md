@@ -1,21 +1,25 @@
 ---
-description: 了解仪表板基础知识 —  [!DNL Marketo Measure]  — 产品
+description: 了解仪表板基础知识 — [!DNL Marketo Measure] — 产品
 title: 了解功能板基础知识
 feature: Reporting
 exl-id: 597a4f7c-4965-4bcb-bf28-607abc9b7545
-TQID: https://experienceleague.adobe.com/8BzKWeGZnFCIl-FMrY727kJgu4cw7oOOZMdqWEBRv9o
+TQID: 'https://experienceleague.adobe.com/8BzKWeGZnFCIl-FMrY727kJgu4cw7oOOZMdqWEBRv9o'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Insights
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 400
+source-wordcount: '400'
 ht-degree: 0%
-
 ---
-
 # 了解功能板基础知识 {#discover-dashboard-basics}
 
 本文将引导您了解重新设计的界面的基本功能，确保您可以轻松地访问和解读数据。 深入了解过滤器窗格的动态，并揭示增强的报告功能的复杂性，例如钻取功能、交叉过滤和工具提示。
