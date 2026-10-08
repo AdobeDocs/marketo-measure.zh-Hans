@@ -2,13 +2,14 @@
 description: 面向Marketo Measure用户的单点登录指南
 title: 单点登录
 exl-id: a328e9cb-8352-4693-8a44-533e08f1a29c
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1393'
 ht-degree: 0%
-
 ---
-
 # 单点登录 {#single-sign-on}
 
 SSO（单点登录）的SAML（安全断言标记语言）允许用户在登录到[!DNL Marketo Measure]应用程序时通过公司的身份提供程序进行身份验证。 SSO允许用户进行一次身份验证，而无需单独验证应用程序。 企业客户必须使用SAML，因为并非所有用户在其组织内都有[!DNL Salesforce]或[!DNL Google]帐户。 为了扩展，[!DNL Marketo Measure]开发了一个可以支持公司身份提供商的SAML解决方案。

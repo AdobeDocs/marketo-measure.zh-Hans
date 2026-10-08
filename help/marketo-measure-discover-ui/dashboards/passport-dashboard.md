@@ -1,20 +1,23 @@
 ---
-description: Passport Dashboard - [!DNL Marketo Measure]  — 产品
+description: Passport Dashboard - [!DNL Marketo Measure] — 产品
 title: Passport信息板
 feature: Reporting
 exl-id: 0fbd9714-7d9c-4330-b35f-d011e17c3bfe
-TQID: https://experienceleague.adobe.com/SlIfN-Y5sttJQUeLgA-JA-H-lbRJMS8BrgBYdnhmgZk
+TQID: 'https://experienceleague.adobe.com/SlIfN-Y5sttJQUeLgA-JA-H-lbRJMS8BrgBYdnhmgZk'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 304
+source-wordcount: '304'
 ht-degree: 0%
-
 ---
-
 # Passport信息板 {#passport-dashboard}
 
 Passport仪表板为营销人员提供了在指定时间段内各个阶段进行过渡时潜在客户、联系人和机会的动态视图。 通过筛选特定日期，用户还可以获取该日期的记录快照。
@@ -23,7 +26,7 @@ Passport仪表板为营销人员提供了在指定时间段内各个阶段进行
 
 * 在选择的某一天，每个非终止阶段有多少潜在客户、联系人或机会？
 * 在指定的时间段内，有多少不同的潜在客户或联系人在每个过渡阶段中前进？
-   * _示例_：如果潜在客户A在2023年1月1日处于阶段1，并在2023年3月31日进入阶段5，则2023年第1季度Passport分析将计算阶段1到阶段5的潜在客户A。
+  * _示例_：如果潜在客户A在2023年1月1日处于阶段1，并在2023年3月31日进入阶段5，则2023年第1季度Passport分析将计算阶段1到阶段5的潜在客户A。
 * 在给定的时间范围内，每个过渡阶段传递了多少个独特的机会？
 
 ## 功能板组件 {#dashboard-components}
@@ -31,7 +34,7 @@ Passport仪表板为营销人员提供了在指定时间段内各个阶段进行
 ### 按阶段名称暂存的机会 {#opportunities-in-stage-by-stage-name}
 
 * 每个阶段都显示在给定时间范围内已通过接触点的机会数。
-   * 如果一个机会在该跨度内跨越多个阶段，则它将被计入该机会的每个阶段。
+  * 如果一个机会在该跨度内跨越多个阶段，则它将被计入该机会的每个阶段。
 * 排除“已关闭的赢家”和“已关闭的输家”等终端阶段。
 * 开始日期和结束日期均包含。
 
@@ -40,8 +43,8 @@ Passport仪表板为营销人员提供了在指定时间段内各个阶段进行
 ### 按阶段名称列出的阶段中的潜在客户或联系人 {#leads-or-contacts-in-stage-by-stage-name}
 
 * 每个阶段显示具有在给定时间范围内通过它们的接触点的Lead或Contact的数量。
-   * 显示“潜在客户”还是“联系人”取决于在“设置”>“归因设置”>“默认仪表板对象”中设置的首选项。
-   * 如果潜在客户或联系人在该跨度内跨多个阶段进行，则会将其计入每个阶段。
+  * 显示“潜在客户”还是“联系人”取决于在“设置”>“归因设置”>“默认仪表板对象”中设置的首选项。
+  * 如果潜在客户或联系人在该跨度内跨多个阶段进行，则会将其计入每个阶段。
 * 排除“已关闭的赢家”和“已关闭的输家”等终端阶段。
 * 开始日期和结束日期均包含。
 

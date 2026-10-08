@@ -3,16 +3,22 @@ description: 面向Marketo Measure用户的Adobe Experience Cloud界面概述指
 title: Adobe Experience Cloud 界面概述
 exl-id: 15bd7590-8eb0-46e5-9883-3be11ff58c9e
 feature: Integration, Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 18%
-
 ---
-
 # Adobe Experience Cloud 界面概述 {#experience-cloud-interface-overview}
 
-Adobe Experience Cloud界面与Adobe Experience Cloud应用程序和服务的外观保持一致。 但它不仅仅是全新的设计， 更是一款单页应用程序，可在单一实例中提供完整的用户体验。
+Adobe Experience Cloud界面与Adobe Experience Cloud应用程序和服务的外观保持一致。 但它不仅仅是全新的设计， 更是一款单页应用程序，可在单一实例中提供用户体验。
 
 ## 用户流程 {#user-flow}
 
@@ -22,9 +28,9 @@ Adobe Experience Cloud界面与Adobe Experience Cloud应用程序和服务的外
 
 >[!NOTE]
 >
->您的下拉菜单可能会因您订阅的Adobe Experience Cloud产品而异。
+>您的下拉菜单可能因您订阅的Adobe Experience Cloud产品而异。
 
-如果您&#x200B;_不是_&#x200B;已登录到Adobe Experience Cloud产品，请直接在此处登录到[!DNL Marketo Measure]： [https://experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure)。
+如果您&#x200B;_不_&#x200B;已登录Adobe Experience Cloud产品，请直接在此处登录[!DNL Marketo Measure]：[https://experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure)。
 
 ## 新增功能 {#new-features}
 
@@ -50,7 +56,7 @@ Adobe Experience Cloud界面与Adobe Experience Cloud应用程序和服务的外
 
 **通知和公告**
 
-您还可以在应用程序内直接查看并互动处理与产品相关的通知，以及 Adobe 产品的通用公告。
+您还可以在应用程序内直接查看并与产品相关的通知以及 Adobe 产品的通用公告进行交互。
 
 ![直接查看特定于产品的通知和Adobe产品的一般公告并与之交互](assets/unified-overview-10.png)
 
@@ -68,10 +74,10 @@ Adobe Experience Cloud界面与Adobe Experience Cloud应用程序和服务的外
 
 书签将被重定向。 例如，如果您要导航到https://apps.marketo-measure.com/Discover/391 ，则完成身份验证后您将被重定向到https://experience.adobe.com/marketo-measure/Discover/391 。
 
-**我无法通过Experience Cloud界面登录到[!DNL Marketo Measure]。 可能存在什么问题？**
+**我无法通过Experience Cloud界面登录[!DNL Marketo Measure]。 可能存在什么问题？**
 
-如果您可以登录到Adobe Experience Cloud，但看到类似以下内容的页面，则问题可能在[!DNL Marketo Measure]侧：
+如果您可以登录到Adobe Experience Cloud，但看到类似于以下内容的页面，则问题可能在[!DNL Marketo Measure]端：
 
-![如果您可以登录到Adobe Experience Cloud，但看到](assets/unified-overview-7.png)
+![如果您可以登录到Adobe Experience Cloud，但看见](assets/unified-overview-7.png)
 
 如果收到上述错误，[联系支持人员](https://nation.marketo.com/t5/support/ct-p/Support)寻求帮助。

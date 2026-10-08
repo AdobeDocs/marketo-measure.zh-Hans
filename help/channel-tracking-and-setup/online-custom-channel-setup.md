@@ -3,14 +3,18 @@ description: 面向Marketo Measure用户的在线自定义渠道设置指南
 title: 在线自定义渠道设置
 exl-id: 170ac564-6cdd-4036-abf0-b9b230bed4f7
 feature: Channels
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1287'
 ht-degree: 0%
-
 ---
-
 # 在线自定义渠道设置 {#online-custom-channel-setup}
 
 要获得准确的报告，必须设置营销渠道以反映组织的UTM策略。 本指南将引导您了解配置自定义渠道规则的最佳方法。
@@ -26,7 +30,7 @@ ht-degree: 0%
 * 每个数据集合或存储段都需要有自己的规则（电子表格中的行）来指定数据的组织方式。 尽可能具体一些。
 * [!DNL Marketo Measure]逻辑从电子表格的顶行开始按降序排列数据优先级，并向下排列。 它会逐行读取每个存储段或单元格，以查找第一个匹配项。 然后，将根据这些存储桶中的值对数据排序。 有关详情，请参阅下文。
 * 请勿按字母顺序对工作表进行排序，因为这会干扰逻辑规则。
-* 上传文件后，您无法在七天内更改任何规则。[!DNL Marketo Measure] 利用此时间处理和更新接触点。
+* 上传文件后，您无法在七天内更改任何规则。 [!DNL Marketo Measure]利用此时间处理和更新接触点。
 
 ## [!DNL Marketo Measure]逻辑和优先级 {#marketo-measure-logic-and-priorities}
 
@@ -46,7 +50,7 @@ ht-degree: 0%
 * **登陆页面：**&#x200B;在此处添加登陆页面
 * **反向链接网站：**&#x200B;引用您页面流量或内置[!DNL Marketo Measure]逻辑的网站URL（用方括号表示）
 
-第八列将注明哪些规则不能从电子表格中删除，并显示“请勿删除”。 电子表格顶部具有默认渠道规则，[!DNL Marketo Measure]建议即使不使用这些渠道，也不要更改或删除这些规则。[!DNL Marketo Measure] 具有与这些平台的深度集成，因此默认情况下包含这些平台。
+第八列将注明哪些规则不能从电子表格中删除，并显示“请勿删除”。 电子表格顶部具有默认渠道规则，[!DNL Marketo Measure]建议即使不使用这些渠道，也不要更改或删除这些规则。 [!DNL Marketo Measure]与这些平台有深度集成，因此默认包含这些平台。
 
 行表示规则和[!DNL Marketo Measure]对数据优先处理的顺序。 第一行的优先级高于第二行，第二行的优先级高于第三行，依此类推。 在确定要将接触点分段到的营销渠道和子渠道时，[!DNL Marketo Measure]会从上到下、从左到右阅读，直到找到满足接触点标准的行。 （如果接触点具有`utm_source=Facebook`，则由于屏幕快照中的规则15，该接触点会存储到Social.Facebook渠道中）。
 

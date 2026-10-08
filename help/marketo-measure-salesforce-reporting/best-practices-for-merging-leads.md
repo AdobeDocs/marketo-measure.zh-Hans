@@ -3,13 +3,17 @@ description: Marketo Measure用户合并潜在客户指南的最佳实践
 title: 合并潜在客户的最佳实践
 exl-id: d9293ed7-a794-4e52-a269-20a7fb36ce50
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 3%
-
 ---
-
 # 合并潜在客户的最佳实践 {#best-practices-for-merging-leads}
 
 在[!DNL Salesforce]中合并Lead时，最好始终保持谨慎，以确保不会丢失任何数据。

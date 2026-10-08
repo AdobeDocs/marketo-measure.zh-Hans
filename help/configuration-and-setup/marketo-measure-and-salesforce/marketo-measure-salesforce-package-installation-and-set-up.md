@@ -1,20 +1,25 @@
 ---
-description: '[!DNL Marketo Measure] Salesforce包的安装和设置 —  [!DNL Marketo Measure]'
-title: '[!DNL Marketo Measure] [!DNL Salesforce] 包安装和设置'
+description: '[!DNL Marketo Measure] Salesforce包的安装和设置 — [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure] [!DNL Salesforce]包的安装和设置'
 exl-id: ed58bc1e-cfb0-48db-aa53-96204e12de2e
 feature: Installation, Salesforce
-TQID: https://experienceleague.adobe.com/l293WWmVHXGAthQKznwSssgTihMOdpqi4gh58t1fh-g
+TQID: 'https://experienceleague.adobe.com/l293WWmVHXGAthQKznwSssgTihMOdpqi4gh58t1fh-g'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Integrations
+  - id: 67d582ca-1a88-5ba5-976a-bc6de9597819
+    internal-label: Installation
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 504
+source-wordcount: '504'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Measure] Salesforce包的安装和设置 {#marketo-measure-salesforce-package-installation-and-set-up}
 
 在安装[!DNL Marketo Measure] [!DNL Salesforce]基础包之前，您必须先确定是否在[!DNL Salesforce]沙盒中安装该基础包，然后再迁移到Salesforce生产实例。
@@ -66,9 +71,9 @@ ht-degree: 0%
 1. 分配以下权限：
 
 * [!DNL Marketo Measure]管理员权限集
-   * 托管权限集使SFDC管理员能够从[!DNL Marketo Measure]对象创建、读取、写入和删除记录。
+  * 托管权限集使SFDC管理员能够从[!DNL Marketo Measure]对象创建、读取、写入和删除记录。
 * “查看和编辑已转化商机权限集”
-   * 这允许[!DNL Marketo Measure]在潜在客户转换为联系人后对其进行修饰。 如果未启用此权限集，则可能存在显着的数据跟踪缺口。
+  * 这允许[!DNL Marketo Measure]在潜在客户转换为联系人后对其进行修饰。 如果未启用此权限集，则可能存在显着的数据跟踪缺口。
 
 >[!NOTE]
 >

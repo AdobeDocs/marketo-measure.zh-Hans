@@ -1,23 +1,28 @@
 ---
 unique-page-id: 18874602
-description: 营销渠道成本 —  [!DNL Marketo Measure]
+description: 营销渠道成本 — [!DNL Marketo Measure]
 title: 营销渠道成本
 exl-id: 36ccaff3-db55-47bd-a24e-4aa1894f13e0
 feature: Channels, Spend Management
-TQID: https://experienceleague.adobe.com/Mjpr4y4vxdeefsbULVxjk3Gf6jdy7Q2ST70gg73dfqk
+TQID: 'https://experienceleague.adobe.com/Mjpr4y4vxdeefsbULVxjk3Gf6jdy7Q2ST70gg73dfqk'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+  - id: e3b4b95f-0bb9-5cb3-a479-9dcb943dca3f
+    internal-label: Spend Management
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1277
+source-wordcount: '1277'
 ht-degree: 0%
-
 ---
-
 # 营销渠道成本 {#marketing-channel-costs}
 
 使用[!DNL Marketo Measure]的最根本优势之一是，能够根据需要尽可能详细地将营销工作与对收入的影响直接联系起来。 投资回报率有可能出现在接触点层面。 若要利用此优势，必须将渠道成本上传到[!DNL Marketo Measure]应用程序。 ROI报告会自动创建并出现在[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}的&#x200B;**营销ROI仪表板**&#x200B;中。

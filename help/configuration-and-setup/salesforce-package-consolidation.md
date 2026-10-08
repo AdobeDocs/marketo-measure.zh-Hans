@@ -1,15 +1,22 @@
 ---
-description: “[!DNL Salesforce]包合并 —  [!DNL Marketo Measure]”
+description: “[!DNL Salesforce]包合并 — [!DNL Marketo Measure]”
 title: '[!DNL Salesforce]包合并'
 exl-id: ae559f5f-91bf-4504-9d5a-af47f95ca01f
 feature: Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 4%
-
 ---
-
 # [!DNL Salesforce]包合并 {#salesforce-package-consolidation}
 
 为了增强用户体验并简化使用，正在将现有包编译为单个综合包。
@@ -25,7 +32,7 @@ ht-degree: 4%
 可使用两个新字段来增强报表功能：
 
 * form_name：此字段现在可在BT/BAT对象中使用，它使用户能够根据表单名称创建报表。
-* user_touchpoint_id：此字段允许用户创建具有独特用户接触点计数(Salesforce中为`bizible2__User_Touchpoint_V2__c`)的报告。
+* user_touchpoint_id：此字段允许用户创建具有独特用户接触点计数（Salesforce中为`bizible2__User_Touchpoint_V2__c`）的报告。
 
 ## 支持和过渡 {#support-and-transition}
 
@@ -36,16 +43,16 @@ ht-degree: 4%
 * 如果已安装V2软件包，则必须将其更新为新的统一版本。
 * 如果您具有来自任何报告包的报告或功能板，则可以轻松地重新创建它们，而无需进行任何修改，因为合并包中已存在所有字段。
 * 如果您的报表使用V2_EXT包中的字段，则可通过以下步骤在统一包中重新创建它们：
-   * V2_EXT字段中的所有数据在接触点字段中均可用，因此您可以通过在接触点位置添加过滤器来修改报表，以从相应的V2接触点字段中提取数据。
-   * 使用包含“外联”文本的广告内容FT获取所有潜在客户的示例报告。
-      * V2_EXT查询：
-         * bizible2_ext__Ad_Content_FT__c包含外联
+  * V2_EXT字段中的所有数据在接触点字段中均可用，因此您可以通过在接触点位置添加过滤器来修改报表，以从相应的V2接触点字段中提取数据。
+  * 使用包含“外联”文本的广告内容FT获取所有潜在客户的示例报告。
+    * V2_EXT查询：
+      * bizible2_ext__Ad_Content_FT__c包含外联
 
 ![bizible2extAdContentFTc包含外联](assets/bizible-full-1.png)
 
 * 合并包中的相应查询：
-   * bizible2__Touchpoint_Position__c包含FT和
-   * bizible2__Ad_Content__c包含外联
+  * bizible2__Touchpoint_Position__c包含FT和
+  * bizible2__Ad_Content__c包含外联
 
 ![bizible2AdContentc包含外联](assets/bizible-taxonomy-1.png)
 

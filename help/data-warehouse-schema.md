@@ -3,13 +3,17 @@ description: Marketo Measure Data Warehouse架构详细介绍表和列的参考
 title: Data Warehouse架构
 exl-id: f1895eb1-a32d-4c43-93fb-0aa838527946
 feature: Data Warehouse
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 09cd1bee-ffcc-509c-9a9a-ca8384eac8e8
+    internal-label: Data Warehouse
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '21802'
 ht-degree: 8%
-
 ---
-
 # Data Warehouse架构 {#data-warehouse-schema}
 
 Data Warehouse允许您根据需要进行跟踪、根据需要报告归因数据，并将其连接到其他数据集。
@@ -905,7 +909,7 @@ _单击完整版本的图像_
         <p>源系统中用于广告帐户的货币代码。</p>
       </td>
       <td>
-        <p>美元</p>
+        <p>USD</p>
       </td>
     </tr>
     <tr>
@@ -3739,7 +3743,7 @@ _单击完整版本的图像_
       <td>Source_ISO_CODE</td>
       <td>varchar</td>
       <td>源系统中的货币ISO代码。</td>
-      <td>美元</td>
+      <td>USD</td>
     </tr>
     <tr>
       <td>START_DATE</td>
@@ -4003,7 +4007,7 @@ _单击完整版本的图像_
         <p>从广告连接提取的广告组的名称。</p>
       </td>
       <td>
-        <p>归因管理软件 | 短语</p>
+        <p>归因管理软件 |短语</p>
       </td>
     </tr>
     <tr>
@@ -4090,7 +4094,7 @@ _单击完整版本的图像_
         <p>布尔</p>
       </td>
       <td>
-        <p>指示该行是否包含可由Creative汇总的成本。 (例如，要获取Creative成本，需对此列等于true的行求和。)</p>
+        <p>指示该行是否包含可由Creative汇总的成本。 （例如，要获取Creative成本，需对此列等于true的行求和。）</p>
       </td>
       <td>
         <p>假</p>
@@ -4228,7 +4232,7 @@ _单击完整版本的图像_
       <td>ISO_CURRENCY_CODE</td>
       <td>varchar</td>
       <td>从源系统导入的货币的ISO代码。</td>
-      <td>美元</td>
+      <td>USD</td>
     </tr>
     <tr>
       <td>Source_ID</td>
@@ -5116,7 +5120,7 @@ _单击完整版本的图像_
       <td>ISO_CODE</td>
       <td>varchar</td>
       <td>货币的ISO代码。</td>
-      <td>美元</td>
+      <td>USD</td>
     </tr>
     <tr>
       <td>IS_CORPORATE</td>
@@ -6471,7 +6475,7 @@ _单击完整版本的图像_
         <p>布尔</p>
       </td>
       <td>
-        <p>指示该行是否包含可由Creative汇总的成本。 (例如，要获取Creative成本，需对此列等于true的行求和。)</p>
+        <p>指示该行是否包含可由Creative汇总的成本。 （例如，要获取Creative成本，需对此列等于true的行求和。）</p>
       </td>
       <td>
         <p>假</p>
@@ -6697,7 +6701,7 @@ _单击完整版本的图像_
         <p>提交表单时记录的设备和浏览器。</p>
       </td>
       <td>
-        <p>Mozilla/5.0(Macintosh；英特尔Mac OS X 10_13_6) AppleWebKit/605.1.15（KHTML，如Gecko）版本/11.1.2 Safari/605.1.15</p>
+        <p>Mozilla/5.0（Macintosh；英特尔Mac OS X 10_13_6） AppleWebKit/605.1.15（KHTML，如Gecko）版本/11.1.2 Safari/605.1.15</p>
       </td>
     </tr>
     <tr>
@@ -6946,7 +6950,7 @@ _单击完整版本的图像_
         <p>提交表单时记录的设备和浏览器。</p>
       </td>
       <td>
-        <p>Mozilla/5.0(Macintosh；英特尔Mac OS X 10_13_6) AppleWebKit/605.1.15（KHTML，如Gecko）版本/11.1.2 Safari/605.1.15</p>
+        <p>Mozilla/5.0（Macintosh；英特尔Mac OS X 10_13_6） AppleWebKit/605.1.15（KHTML，如Gecko）版本/11.1.2 Safari/605.1.15</p>
       </td>
     </tr>
     <tr>
@@ -8834,7 +8838,7 @@ _单击完整版本的图像_
       <td>CURRENCY_ISO_CODE</td>
       <td>varchar</td>
       <td>从源系统导入的货币的ISO代码。</td>
-      <td>美元</td>
+      <td>USD</td>
     </tr>
     <tr>
       <td>CURRENCY_ID</td>

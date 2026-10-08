@@ -3,13 +3,17 @@ description: 面向Marketo Measure用户的错误通知指南
 title: 错误通知
 feature: Fundamentals
 exl-id: ed07eed6-ddeb-4856-a1ac-ea3d571283f6
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 8210190a-677a-5286-8428-d07007b1edde
+    internal-label: Fundamentals
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1944'
 ht-degree: 1%
-
 ---
-
 # 错误通知 {#error-notifications}
 
 以下是您可以通过应用程序内通知或电子邮件收到的错误列表。 如果收到其中的任何信息，请按照相应的故障诊断步骤操作。 如果这些步骤不能解决问题，请联系[Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support)。
@@ -179,7 +183,7 @@ ht-degree: 1%
       <td>MISSING_CONVERTED_LEAD_PERMISSION</td>
       <td>Crm导出期间出错： MISSING_CONVERTED_LEAD_PERMISSION</td>
       <td>Marketo Measure缺少“查看/编辑已转换的潜在客户”权限</td>
-      <td>有关在CRM<br/>中启用此权限的相关帮助，请参阅以下Experience League文档
+      <td>有关在CRM中启用此权限的相关帮助，请参阅以下Experience League文档<br/>
           <a href="/help/marketo-measure-salesforce-reporting/enabling-the-permission-to-edit-converted-leads.md">正在启用权限以编辑已转换的潜在客户</a></td>
     </tr>
     <tr>

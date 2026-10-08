@@ -1,23 +1,27 @@
 ---
-description: 在线渠道的最佳实践 —  [!DNL Marketo Measure]
+description: 在线渠道的最佳实践 — [!DNL Marketo Measure]
 title: 在线渠道的最佳实践
 exl-id: 766cb01c-98b3-492d-bb35-e0a78b76333a
 feature: Channels
-TQID: https://experienceleague.adobe.com/USJRMuxX8gBPFwCYWb5ujG-158EWyVpwwy47studXK0
+TQID: 'https://experienceleague.adobe.com/USJRMuxX8gBPFwCYWb5ujG-158EWyVpwwy47studXK0'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Insights
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 613
+source-wordcount: '613'
 ht-degree: 0%
-
 ---
-
 # 在线渠道的最佳实践 {#best-practices-for-online-channels}
 
 ## 概述 {#overview}
@@ -37,16 +41,16 @@ ht-degree: 0%
 切记事项：
 
 * 所有数字渠道和子渠道应至少用一个规则表示
-   * 如果该渠道不能将用户引导至您的网站，则它不是在线渠道
+  * 如果该渠道不能将用户引导至您的网站，则它不是在线渠道
 * 一个渠道/子渠道可以有多个规则
-   * 多个规则可以视为“投射更宽的网络”，以确保每个接触点都正确映射。 通常，参数可能会错误地添加或完全丢失，因此，最好使用多个规则来捕获通道/子通道，以确保映射准确性。
+  * 多个规则可以视为“投射更宽的网络”，以确保每个接触点都正确映射。 通常，参数可能会错误地添加或完全丢失，因此，最好使用多个规则来捕获通道/子通道，以确保映射准确性。
 * [!DNL Marketo Measure]逻辑从电子表格的顶行开始按降序排列接触点映射的优先级，并向下排列
-   * [!DNL Marketo Measure]读取每个规则（行），以查找真值和第一个拟合值。 然后，该接触点将映射到该渠道/子渠道
-   * 请勿按字母顺序对工作表进行排序，因为这会干扰逻辑规则。
+  * [!DNL Marketo Measure]读取每个规则（行），以查找真值和第一个拟合值。 然后，该接触点将映射到该渠道/子渠道
+  * 请勿按字母顺序对工作表进行排序，因为这会干扰逻辑规则。
 * 维护括号内的规则，请勿编辑或添加到括号内的规则中（例如，[AdWords付费搜索]或[Facebook付费搜索]）
-   * 这些是现成的[!DNL Marketo Measure]规则，具有内置逻辑，与[!DNL Marketo Measure]集成关联。 为这些规则指定该渠道/子渠道部分的最高优先级，以确保[!DNL Marketo Measure]集成能够按设计要求工作。
+  * 这些是现成的[!DNL Marketo Measure]规则，具有内置逻辑，与[!DNL Marketo Measure]集成关联。 为这些规则指定该渠道/子渠道部分的最高优先级，以确保[!DNL Marketo Measure]集成能够按设计要求工作。
 * 上传文件后，您无法在七天内更改任何规则
-   * [!DNL Marketo Measure]利用此时间处理和更新接触点，因此请确保在上传之前仔细检查您的规则。
+  * [!DNL Marketo Measure]利用此时间处理和更新接触点，因此请确保在上传之前仔细检查您的规则。
 
 ## 维护的最佳实践 {#best-practice-for-maintenace}
 

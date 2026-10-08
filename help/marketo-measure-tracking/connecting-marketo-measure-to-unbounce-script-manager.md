@@ -1,15 +1,19 @@
 ---
-description: 正在为Marketo Measure用户将 [!DNL Marketo Measure] 连接到退件脚本管理器指南
-title: 正在将 [!DNL Marketo Measure] 连接到退件脚本管理器
+description: 正在将[!DNL Marketo Measure]连接到Marketo Measure用户的退件脚本管理器指南
+title: 正在将[!DNL Marketo Measure]连接到退件脚本管理器
 exl-id: c3212bc3-1d8f-4da5-bb2d-11ffd2fb4e98
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '116'
 ht-degree: 3%
-
 ---
-
 
 # 正在将[!DNL Marketo Measure]连接到退件脚本管理器 {#connecting-marketo-measure-to-unbounce-script-manager}
 
@@ -24,4 +28,4 @@ ht-degree: 3%
 
 1. 单击 **[!UICONTROL Save]**。
 
-[!DNL Marketo Measure]集成适用于回弹登陆页面，前提是这些页面托管在您的域(例如，landing.mysite.com)上，而不是使用unbounce.com域的域。
+[!DNL Marketo Measure]集成适用于回弹登陆页面，前提是这些页面托管在您的域（例如，landing.mysite.com）上，而不是使用unbounce.com域的域。

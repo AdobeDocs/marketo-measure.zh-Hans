@@ -3,13 +3,17 @@ description: 面向Marketo Measure用户的支出管理方法指导
 title: 支出管理方法
 exl-id: 36478d8d-986c-4d4f-8854-3287d6c57a9d
 feature: Spend Management
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: e3b4b95f-0bb9-5cb3-a479-9dcb943dca3f
+    internal-label: Spend Management
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
-
 ---
-
 # 支出管理方法 {#spend-management-methods}
 
 支出数据对于[!DNL Marketo Measure]的ROI报表的成功至关重要。 要对所有渠道和子渠道进行准确而全面的ROI报告，您必须确保将适当的支出数据提取到[!DNL Marketo Measure]中。
@@ -28,13 +32,13 @@ ht-degree: 0%
 
 启用此功能后，将自动从符合以下条件的任何CRM营销活动/项目中拉入花费：
 
-i. [!DNL Marketo Measure] 首先查看促销活动/项目是否通过已创建的匹配[促销活动同步规则](/help/channel-tracking-and-setup/custom-campaign-sync.md)、已创建的匹配[项目同步规则](/help/marketo-engage-programs-integration.md)创建接触点，或者[启用购买者接触点值](/help/channel-tracking-and-setup/syncing-offline-campaigns.md)是“包括所有促销活动成员”或“包括‘已响应’促销活动成员”。
+i. [!DNL Marketo Measure]首先查看营销活动/项目是否通过已创建的匹配[营销活动同步规则](/help/channel-tracking-and-setup/custom-campaign-sync.md)或已创建的匹配[项目同步规则](/help/marketo-engage-programs-integration.md)创建接触点，或者[启用购买者接触点值](/help/channel-tracking-and-setup/syncing-offline-campaigns.md)是“包括所有营销活动成员”或“包括‘已响应’营销活动成员”。
 
 ii. 必须在营销活动/项目群中填充开始日期
 
 iii. 必须在营销活动/项目群中填充结束日期
 
-四、 必须指定实际成本(对于SFDC中的营销活动)或期间成本(对于Marketo中的项目)。
+四、 必须指定实际成本（对于SFDC中的营销活动）或期间成本（对于Marketo中的项目）。
 
 **3手动成本上传**
 

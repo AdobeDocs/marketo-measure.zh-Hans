@@ -1,15 +1,19 @@
 ---
-description: Marketo Measure用户的重复记录和 [!DNL Marketo Measure] 指南
-title: 重复记录和 [!DNL Marketo Measure]
+description: Marketo Measure用户的重复记录和[!DNL Marketo Measure]指南
+title: 重复记录和[!DNL Marketo Measure]
 exl-id: e340100c-120a-4771-946d-336a1458da4e
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '294'
 ht-degree: 0%
-
 ---
-
 # 重复记录和[!DNL Marketo Measure] {#duplicate-records-and-marketo-measure}
 
 >[!NOTE]
@@ -28,5 +32,5 @@ _示例报告：[!DNL Marketo Measure]具有购买者接触点的人员。_
 
 **推荐**
 
-* 为了最大化报表的回报，我们建议在CRM中使用重复数据删除工具，以确保仅创建新的唯一记录。 您可以使用营销自动化工具或CRM中安装的单独软件来完成此操作。[!DNL Marketo Measure] 不会自动删除重复记录，也不会通过我们的软件提供此服务。
+* 为了最大化报表的回报，我们建议在CRM中使用重复数据删除工具，以确保仅创建新的唯一记录。 您可以使用营销自动化工具或CRM中安装的单独软件来完成此操作。 [!DNL Marketo Measure]不会自动删除重复记录，也不会通过我们的软件提供此服务。
 * 另一种选择是在标识重复项时手动合并记录。 这个过程可能既费时又繁琐，但准确报告的输出值得投入时间。

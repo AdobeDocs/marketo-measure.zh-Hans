@@ -1,15 +1,19 @@
 ---
-description: 适用于Marketo Measure用户的IFrame Forms和 [!DNL Marketo Measure] 指南
-title: IFrame Forms和 [!DNL Marketo Measure]
+description: 适用于Marketo Measure用户的IFrame Forms和[!DNL Marketo Measure]指南
+title: IFrame Forms和[!DNL Marketo Measure]
 exl-id: fe8d7403-27be-4702-a1b6-d574e1243c0a
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '208'
 ht-degree: 3%
-
 ---
-
 # IFrame Forms和[!DNL Marketo Measure] {#iframe-forms-and-marketo-measure}
 
 通过[!DNL Marketo Measure]，核心功能之一是通过网站上的会话和表单提交跟踪您的数字营销工作。 通常，在网站上放置Marketo JavaScript时，我们会自动附加到网站上的所有表单。 但是，如果表单包含在IFrame中，则此功能存在限制。

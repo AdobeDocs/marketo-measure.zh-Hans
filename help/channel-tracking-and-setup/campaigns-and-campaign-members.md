@@ -3,14 +3,18 @@ description: 面向Marketo Measure用户的营销活动和营销活动成员指�
 title: 营销活动和营销活动成员
 exl-id: e4e2b154-39ac-4295-a541-7fa6112672e3
 feature: Channels
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 0%
-
 ---
-
 # 营销活动和营销活动成员 {#campaigns-and-campaign-members}
 
 [!DNL Salesforce]营销活动旨在跟踪与营销计划或活动关联的潜在客户和联系人列表。 例如，这通常是网络研讨会、注册或两次访问。 营销人员可以选择是否应在接触点历程中计入营销活动。
@@ -80,7 +84,7 @@ ht-degree: 0%
 
 * Buyer Touchpoint日期
 * 首次响应日期
-   * 一旦状态更改为“已响应”，就会自动设置第一个响应日期，并且该日期是无法更改的标准[!DNL Salesforce]字段
+  * 一旦状态更改为“已响应”，就会自动设置第一个响应日期，并且该日期是无法更改的标准[!DNL Salesforce]字段
 
 * 营销活动成员创建日期
 
@@ -118,7 +122,7 @@ ht-degree: 0%
 
 [!DNL Marketo Measure]与Salesforce中所有已删除的记录（无论这些记录是已删除的潜在客户、客户还是商机）保持同步的方法是查看API中的这些记录，并跟踪条目是否标记为“IsDeleted”。 不幸的是，对于营销活动成员，Salesforce引入了一种从营销活动中删除这些营销活动成员的不同方式，实际上，这些成员仅标记为“已删除”，而不是“已删除”，因此问题在于接触点仍然存在于Salesforce中，并且与已删除的营销活动成员相关。
 
-为了解决此问题，[!DNL Marketo Measure]创建了一个[!DNL Marketo Measure]历史记录对象和一个触发器，用于在移除营销活动成员时进行跟踪，然后删除相应的接触点。**您需要[!DNL Marketo Measure] Marketing Analytics包V6.15或更高版本**&#x200B;才能使用此功能。
+为了解决此问题，[!DNL Marketo Measure]创建了一个[!DNL Marketo Measure]历史记录对象和一个触发器，用于在移除营销活动成员时进行跟踪，然后删除相应的接触点。 **您需要[!DNL Marketo Measure] Marketing Analytics V6.15或更高版本**&#x200B;才能使用此功能。
 
 >[!CAUTION]
 >

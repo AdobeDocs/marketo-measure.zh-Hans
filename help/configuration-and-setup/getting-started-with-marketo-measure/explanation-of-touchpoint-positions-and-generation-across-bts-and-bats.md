@@ -1,20 +1,23 @@
 ---
-description: 跨BT和BAT的接触点位置和生成说明 —  [!DNL Marketo Measure]
-title: 跨BT和 [!DNL BATs]的接触点位置和生成说明
+description: 跨BT和BAT的接触点位置和生成说明 — [!DNL Marketo Measure]
+title: 跨BT和[!DNL BATs]的接触点位置和生成说明
 exl-id: 4903f917-a366-4767-a126-5216d2377399
 feature: Touchpoints
-TQID: https://experienceleague.adobe.com/MrUpDP1i5V-j2RzGmndOxMf8V4qw86pVlkVR29JGCgU
+TQID: 'https://experienceleague.adobe.com/MrUpDP1i5V-j2RzGmndOxMf8V4qw86pVlkVR29JGCgU'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 789
+source-wordcount: '789'
 ht-degree: 0%
-
 ---
-
 # 跨BT和[!DNL BATs]的接触点位置和生成说明 {#explanation-of-touchpoint-positions-and-generation-across-bts-and-bats}
 
 **生成接触点位置和流过购买者历程**
@@ -116,10 +119,10 @@ ht-degree: 0%
 **机会** Buyer Attribution Touchpoint数据将如下所示……
 
 * 首次联系(FT) — 付费社交.Facebook - 8/26/2019
-   * （来自&#x200B;**人员B**，因为他们具有帐户/Opp的真&#x200B;_首次联系_）
+  * （来自&#x200B;**人员B**，因为他们具有帐户/Opp的真&#x200B;_首次联系_）
 * 潜在客户创建(LC) - Organic Search.Google - 11/20/2019
-   * （来自&#x200B;**人员A**，因为他们具有真正的&#x200B;_潜在客户创建_&#x200B;帐户/Opp）
+  * （来自&#x200B;**人员A**，因为他们具有真正的&#x200B;_潜在客户创建_&#x200B;帐户/Opp）
 * 机会创造(OC) — 网络研讨会 — 2020年3月4日
-   * （**人员A**&#x200B;的Post LC接触点将成为&#x200B;_OC接触点_，因为它是我们与2020年3月7日创建的Opportunity的最近交互）
+  * （**人员A**&#x200B;的Post LC接触点将成为&#x200B;_OC接触点_，因为它是我们与2020年3月7日创建的Opportunity的最近交互）
 * 非公开 — 电子邮件 — 2020年5月1日
-   * （**人员B**&#x200B;的Post LC接触点将为&#x200B;_已关闭的成功接触点_，因为它是我们与2020年5月6日关闭的Opportunity的最近交互）
+  * （**人员B**&#x200B;的Post LC接触点将为&#x200B;_已关闭的成功接触点_，因为它是我们与2020年5月6日关闭的Opportunity的最近交互）

@@ -1,21 +1,24 @@
 ---
 unique-page-id: 18874775
-description: 机器学习模型常见问题解答 —  [!DNL Marketo Measure]
+description: 机器学习模型常见问题解答 — [!DNL Marketo Measure]
 title: 机器学习模型常见问题解答
 exl-id: 2fc142b2-8ac4-4c48-a8f1-398e29ccfe97
 feature: Custom Models
-TQID: https://experienceleague.adobe.com/tzb0vmVP84uJI33z7Sg3VWQTbTBel5q3IUK7NJdQYoc
+TQID: 'https://experienceleague.adobe.com/tzb0vmVP84uJI33z7Sg3VWQTbTBel5q3IUK7NJdQYoc'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 31aa6cfe-a7a6-5501-b9ac-2688fe65013b
+    internal-label: Custom Models
 topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Machine learning
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 689
+source-wordcount: '689'
 ht-degree: 0%
-
 ---
-
 # 机器学习模型常见问题解答 {#machine-learning-model-faq}
 
 [!DNL Marketo Measure]机器学习模型使用您的接触点数据来计算应该为每个阶段分配多少归因权重。 这取决于每个阶段在推动交易完成方面的重要性。

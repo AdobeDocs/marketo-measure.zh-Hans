@@ -3,13 +3,17 @@ description: '[!DNL Marketo Measure]报告模板 — Tableau - [!DNL Marketo Mea
 title: '[!DNL Marketo Measure]报告模板 — Tableau'
 exl-id: 18963be9-5c6e-4454-8244-b50460e2bed5
 feature: Reporting
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Measure]报告模板 — Tableau {#marketo-measure-report-template-tableau}
 
 ## 快速入门 {#getting-started}
@@ -92,7 +96,7 @@ ht-degree: 0%
 
 ### 区段名称 {#segment-names}
 
-由于区段名称是可自定义的，因此它们在Snowflake Data Warehouse中具有通用列名称。[!DNL BIZ_SEGMENT_NAMES] 是一个映射表，它列出了通用区段名称及其映射到的自定义区段名称，如[!DNL Marketo Measure] UI中的区段部分中所定义。 如果您使用自定义区段名称并希望更新[!DNL Tableau]模型以合并这些名称，请使用此表并手动重命名Tableau模型内的列。 区段列位于“潜在客户”和“归因接触点”表中，只需重命名一次。
+由于区段名称是可自定义的，因此它们在Snowflake Data Warehouse中具有通用列名称。 [!DNL BIZ_SEGMENT_NAMES]是一个映射表，它列出了通用区段名称及其映射到的自定义区段名称，如[!DNL Marketo Measure] UI中的区段部分中所定义。 如果您使用自定义区段名称并希望更新[!DNL Tableau]模型以合并这些名称，请使用此表并手动重命名Tableau模型内的列。 区段列位于“潜在客户”和“归因接触点”表中，只需重命名一次。
 
 [!UICONTROL CATEGORY]列列出类别编号，而SEGMENT_NAME列具有它映射到的自定义区段名称。
 

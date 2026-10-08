@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874600
-description: 正在同步离线营销活动 —  [!DNL Marketo Measure]
+description: 正在同步离线营销活动 — [!DNL Marketo Measure]
 title: 同步离线营销活动
 exl-id: a6f9e217-ff6e-474d-9f14-c6f6238c9e84
 feature: Channels
-TQID: https://experienceleague.adobe.com/ltakDiD8y340M4KAMrInxoUjM1jGCIMmLs1stypPXzo
+TQID: 'https://experienceleague.adobe.com/ltakDiD8y340M4KAMrInxoUjM1jGCIMmLs1stypPXzo'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 727
+source-wordcount: '727'
 ht-degree: 0%
-
 ---
-
 # 同步离线营销活动 {#syncing-offline-campaigns}
 
 可能很难准确地跟踪离线营销活动，并且很难了解它们与您的数字营销工作的对比情况。 通过[!DNL Marketo Measure]，您可以在[!DNL Salesforce]中跟踪接触点并将其归因于离线营销活动，即使在事件发生几周后才会创建[!DNL Salesforce]营销活动的情况下也是如此。

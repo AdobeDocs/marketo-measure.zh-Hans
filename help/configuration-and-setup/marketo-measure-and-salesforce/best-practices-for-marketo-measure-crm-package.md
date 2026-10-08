@@ -1,20 +1,26 @@
 ---
-description: ' [!DNL Marketo Measure] CRM包的最佳实践 —  [!DNL Marketo Measure]'
-title: ' [!DNL Marketo Measure] CRM包的最佳实践'
+description: '[!DNL Marketo Measure] CRM包的最佳实践 — [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure] CRM包的最佳实践'
 exl-id: 97ce0ff3-8aa5-4789-9ee0-25d68c001def
 feature: Salesforce
-TQID: https://experienceleague.adobe.com/E8LQ0-uUC-xqhG9D7CSuprsjkABJ54azWFSEdiuFABk
+TQID: 'https://experienceleague.adobe.com/E8LQ0-uUC-xqhG9D7CSuprsjkABJ54azWFSEdiuFABk'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Implementation
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 415
+source-wordcount: '423'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Measure] CRM包的最佳实践 {#best-practices-for-marketo-measure-crm-package}
 
 >[!NOTE]
@@ -37,9 +43,9 @@ ht-degree: 0%
 在实施和管理[!DNL Marketo Measure] [!DNL Salesforce]包时，请牢记以下最佳实践。
 
 * 确认每个必要的团队成员都可以访问[!DNL Marketo Measure]报表文件夹。 应该有1-3个[!DNL Marketo Measure]文件夹（下面对此进行了说明）。 要打开访问权限，安装包的用户必须与相应的用户或角色共享报表文件夹。
-   * **Buyer Touchpoint报告** — 可供所有人使用
-   * **[!DNL Marketo Measure]基于帐户的营销报表** — 报表将仅填充到第2层及更高层的客户
-   * **Buyer Touchpoint功能板** — 可供所有人使用，不过此包是可选的。
+  * **Buyer Touchpoint报告** — 可供所有人使用
+  * **[!DNL Marketo Measure]基于帐户的营销报表** — 报表将仅填充到第2层及更高层的客户
+  * **Buyer Touchpoint功能板** — 可供所有人使用，不过此包是可选的。
 
 ## 维护的最佳实践 {#best-practice-for-maintenance}
 

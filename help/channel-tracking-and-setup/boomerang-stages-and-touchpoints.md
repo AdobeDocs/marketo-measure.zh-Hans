@@ -3,13 +3,19 @@ description: 面向Marketo Measure用户的Boomerang阶段和接触点指南
 title: 自走式暂存器和接触点
 exl-id: e58169a3-3637-4878-8a0e-1920d873ff52
 feature: Boomerang, Touchpoints
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 1096bc28-f8ba-5a87-abf9-ad1b68c31f97
+    internal-label: Boomerang
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 0%
-
 ---
-
 # 自走式暂存器和接触点 {#boomerang-stages-and-touchpoints}
 
 >[!AVAILABILITY]
@@ -59,7 +65,7 @@ MQL-02 **（最后一个）**
 
 **任何使用“等于[接触点位置]”的报表**
 
-* 回滚阶段会向您的数据引入新的接触点位置。[!DNL Marketo Measure] 正在更改接触点位置的格式以包括舞台的出现次数，如“MQL-01”或“MQL-05（最后一个）”。 在此示例中，Boomerang阶段会影响任何使用“接触点位置等于MQL”的报表。 要调整这些报表，过滤器应改用“包含”运算符。
+* 回滚阶段会向您的数据引入新的接触点位置。 [!DNL Marketo Measure]正在更改接触点位置的格式以包括阶段的出现次数，如“MQL-01”或“MQL-05（最后一个）”。 在此示例中，Boomerang阶段会影响任何使用“接触点位置等于MQL”的报表。 要调整这些报表，过滤器应改用“包含”运算符。
 
 ## 常见问题解答 {#faq}
 

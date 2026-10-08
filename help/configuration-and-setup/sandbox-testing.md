@@ -3,13 +3,20 @@ description: 为Marketo Measure用户测试Marketo Measure与Salesforce沙盒指
 title: 测试Marketo Measure与Salesforce沙盒的集成
 exl-id: df40b000-4572-46df-aef5-8f690ca8ed7a
 feature: Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 1%
-
 ---
-
 # 测试Marketo Measure与Salesforce沙盒的集成 {#testing-the-marketo-measure-integration-with-a-salesforce-sandbox}
 
 >[!NOTE]
@@ -18,7 +25,7 @@ ht-degree: 1%
 
 [!DNL Marketo Measure]核心功能之一是，它能够通过网站上的操作跟踪您的数字营销工作，然后通过潜在客户和联系人将该数据推送到您的生产环境[!DNL Salesforce org]。 但是，通常，在沙盒集成中不会从您的网站创建入站潜在客户，因此对数据的关注将从纯粹离线角度进行。
 
-以下是测试两个阶段中引用的两个源。[步骤1-4](https://help.salesforce.com/s/articleView?id=lead_import_wizard.htm&language=en_US&type=5)和[步骤5-6](/help/channel-tracking-and-setup/syncing-offline-campaigns.md)。 建议审查这些文件，因为它们在某些方面提供了更多细节。
+以下是测试两个阶段中引用的两个源。 [步骤1-4](https://help.salesforce.com/s/articleView?id=lead_import_wizard.htm&language=en_US&type=5)和[步骤5-6](/help/channel-tracking-and-setup/syncing-offline-campaigns.md)。 建议审查这些文件，因为它们在某些方面提供了更多细节。
 
 1. 您需要在CSV中创建一些潜在客户，以便将其上传到Campaign。 这样做的方法是通过生产Salesforce中的报告导出一些潜在客户。 否则，您可以在Excel文件中手动创建潜在客户，然后将其保存为CSV以供导入。 你只需要大约20条记录。 该文件必须具有以下列：
 

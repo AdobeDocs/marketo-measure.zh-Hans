@@ -3,13 +3,17 @@ description: Marketo Measure用户的活动归因常见问题解答指南
 title: 活动归因常见问题解答
 exl-id: 6272024f-b6ae-4aa7-ba92-c9f183549614
 feature: Attribution
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '747'
 ht-degree: 0%
-
 ---
-
 # 活动归因常见问题解答 {#activities-attribution-faq}
 
 [!DNL Marketo Measure]活动导入您的所有活动记录并为它们生成接触点，从而允许这些活动接收归因点数。 最常见的用例是跟踪Sales团队的活动，因为它们通常会创建发送给潜在客户的电话或电子邮件记录。 可以跟踪的其他独特内容是内容交互，如资源下载或视频查看。
@@ -24,7 +28,7 @@ Activities对象作为Task和Event对象的伞形或父对象。 活动基本上
 
 **如果我有具有相同周期性任务的潜在客户或联系人，我是否会看到所有这些任务的买方接触点？**
 
-可以。 已同步的活动与创建的接触点之间存在1:1关系。
+可以。 已同步的活动与创建的接触点之间存在1:1的关系。
 
 **我如何知道哪些记录导致创建了接触点？**
 
@@ -68,6 +72,6 @@ Activities对象作为Task和Event对象的伞形或父对象。 活动基本上
 
 **这些活动通过哪个渠道进行？**
 
-创建活动规则及其对应的[!DNL Marketo Measure]营销活动名称后，请使用在线渠道定义将这些营销活动放在正确的营销渠道下。[!DNL Marketo Measure] 不仅可以使用媒体和来源定义渠道，还可以使用营销活动定义渠道。
+创建活动规则及其对应的[!DNL Marketo Measure]营销活动名称后，请使用在线渠道定义将这些营销活动放在正确的营销渠道下。 [!DNL Marketo Measure]不仅可以使用媒体和来源定义渠道，还可以使用营销活动定义渠道。
 
 在上述示例中，要将“出站调用{Assigned To}”营销活动分配给BDR渠道，请在BDR渠道的在线渠道CSV中插入一行，其营销活动定义为“出站调用&#42;”，星号表示通配符值，因此所有以“出站调用”开头的营销活动都将位于BDR渠道下，而不必为每个营销活动名称创建单独的行。

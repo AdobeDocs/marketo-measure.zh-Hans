@@ -1,21 +1,24 @@
 ---
 unique-page-id: 18874777
-description: 自定义模型设置 — 启用字段历史记录跟踪 —  [!DNL Marketo Measure]
+description: 自定义模型设置 — 启用字段历史记录跟踪 — [!DNL Marketo Measure]
 title: 自定义模型设置 — 启用字段历史记录跟踪
 exl-id: 70328e67-051b-4864-891b-b251e49859c2
 feature: Custom Models
-TQID: https://experienceleague.adobe.com/VUMTg9lOnCtRb3TUt7SIkUeOsghibBX0LDtqQVeXdcg
+TQID: 'https://experienceleague.adobe.com/VUMTg9lOnCtRb3TUt7SIkUeOsghibBX0LDtqQVeXdcg'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 31aa6cfe-a7a6-5501-b9ac-2688fe65013b
+    internal-label: Custom Models
 topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Machine learning
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 308
+source-wordcount: '308'
 ht-degree: 0%
-
 ---
-
 # 自定义模型设置：启用字段历史记录跟踪 {#custom-model-setup-enable-field-history-tracking}
 
 ## 启用字段历史记录跟踪的原因和时间 {#why-and-when-to-enable-field-history-tracking}

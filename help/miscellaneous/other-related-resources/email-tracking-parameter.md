@@ -1,19 +1,21 @@
 ---
 unique-page-id: 37356030
-description: 电子邮件跟踪参数 —  [!DNL Marketo Measure]
+description: 电子邮件跟踪参数 — [!DNL Marketo Measure]
 title: 电子邮件跟踪参数
 exl-id: e2cfd59e-ce4a-4cbb-b64a-828d1db7410f
 feature: Tracking
-TQID: https://experienceleague.adobe.com/IC3sOBtb9A4EUwhhtD4s7JBTx2gT07y9DtKtM5F1qRQ
+TQID: 'https://experienceleague.adobe.com/IC3sOBtb9A4EUwhhtD4s7JBTx2gT07y9DtKtM5F1qRQ'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 462
+source-wordcount: '462'
 ht-degree: 2%
-
 ---
-
 # 电子邮件跟踪参数 {#email-tracking-parameter}
 
 [!DNL Marketo Measure]电子邮件跟踪参数允许营销人员将电子邮件点击视为表单提交，以便生成这些操作的接触点。 在不使用电子邮件跟踪参数的情况下，电子邮件中的点进次数仅被视为“Web访问”，直到用户通过表单提交或Web聊天实际参与网站活动为止。

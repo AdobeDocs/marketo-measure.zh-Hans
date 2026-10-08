@@ -3,13 +3,17 @@ description: 介绍如何设置和使用读者帐户来访问Marketo Measure Dat
 title: Data Warehouse访问权限 — Reader帐户
 exl-id: 2aa73c41-47ab-4f11-96d8-dafb642308fc
 feature: Data Warehouse
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 09cd1bee-ffcc-509c-9a9a-ca8384eac8e8
+    internal-label: Data Warehouse
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 1%
-
 ---
-
 # Data Warehouse访问权限 — Reader帐户 {#data-warehouse-access-reader-account}
 
 ## Snowflake访问链接 {#snowflake-access-link}
@@ -32,7 +36,7 @@ ht-degree: 1%
    >
    >这是一个只读帐户，可供贵组织使用，而不仅仅限于个人用户。 贵公司内任何有权访问[!DNL Marketo Measure]的用户都可以使用此帐户登录Snowflake Data Warehouse读取器帐户。
 
-1. 单击Snowflake URL中提供的链接，这会将您转到Snowflake登录页面，您可以在其中输入用户名和密码。_如果您没有密码，请参阅以下步骤重置密码_。
+1. 单击Snowflake URL中提供的链接，这会将您转到Snowflake登录页面，您可以在其中输入用户名和密码。 _如果没有密码，请参阅以下步骤重置密码_。
 
    ![1. 单击Snowflake URL中提供的链接，这会将您转到](assets/data-account-5.png)
 
@@ -66,14 +70,14 @@ ht-degree: 1%
 >每个工具的连接要求各不相同；建议您查阅文档以了解要连接的特定工具。
 
 * **URI** （始终必需）
-   * 这是Snowflake帐户的域名。 它包含在Snowflake登录链接的一部分中。
+  * 这是Snowflake帐户的域名。 它包含在Snowflake登录链接的一部分中。
 * **用户名** （始终必需）
-   * 用户名在[!DNL Marketo Measure]的Data Warehouse信息页面上列出。
+  * 用户名在[!DNL Marketo Measure]的Data Warehouse信息页面上列出。
 * **密码** （始终必需）
-   * 这是您首次登录Snowflake帐户时设置的密码。 要重置密码，请参阅上述步骤。
+  * 这是您首次登录Snowflake帐户时设置的密码。 要重置密码，请参阅上述步骤。
 * **数据库名称** （并非总是必需的）
-   * 数据库就是将数据存储在Snowflake中的地方。 它是存储资源。 数据库名称列在[!DNL Marketo Measure]的Data Warehouse信息页中。
+  * 数据库就是将数据存储在Snowflake中的地方。 它是存储资源。 数据库名称列在[!DNL Marketo Measure]的Data Warehouse信息页中。
 * **仓库名称** （并非总是必需的）
-   * Warehouse就是在Snowflake中执行查询的地方。 它是计算资源。 仓库名称在[!DNL Marketo Measure]的Data Warehouse信息页面上列出。
+  * Warehouse就是在Snowflake中执行查询的地方。 它是计算资源。 仓库名称在[!DNL Marketo Measure]的Data Warehouse信息页面上列出。
 
   ![仓库是在Snowflake中执行查询的仓库。 它是已计算的](assets/data-account-2.png)

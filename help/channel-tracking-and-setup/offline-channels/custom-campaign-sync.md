@@ -1,21 +1,24 @@
 ---
 unique-page-id: 18874588
-description: 自定义营销活动同步 —  [!DNL Marketo Measure]
+description: 自定义营销活动同步 — [!DNL Marketo Measure]
 title: 自定义Campaign同步
 exl-id: 66f0e4e3-c1b6-443e-8ffa-06b67862b855
 feature: Channels
-TQID: https://experienceleague.adobe.com/Sjq6LW7276xADXbs8qEZc-J2spPrhDwPIGLP7-MsePk
+TQID: 'https://experienceleague.adobe.com/Sjq6LW7276xADXbs8qEZc-J2spPrhDwPIGLP7-MsePk'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 60acc924-ea94-5885-b419-e793b9682efd
+    internal-label: Channels
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Security
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 650
+source-wordcount: '650'
 ht-degree: 0%
-
 ---
-
 # 自定义Campaign同步 {#custom-campaign-sync}
 
 现在，通过已安装的[!DNL Marketo Measure]包，您可以指定要作为合格接触点包含哪些营销活动。 与以前一样，这方面存在多个障碍。 在CRM中安装[!DNL Marketo Measure]包后，您的安全团队批准该包可能需要一些时间。 此外，在Campaign对象中使用单个选取列表时缺乏灵活性。 使用此新功能，无需安装软件包，即可开始使用Campaign和Campaign成员记录。 可以构建规则以明确定义可以构建的记录以明确定义哪些记录符合条件。

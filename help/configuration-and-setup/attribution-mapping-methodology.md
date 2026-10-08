@@ -3,13 +3,17 @@ description: 面向Marketo Measure用户的归因映射方法指南
 title: 归因映射方法
 exl-id: 4d54dd20-9a82-4b87-8908-ced2bd9c0f2f
 feature: Attribution
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 0%
-
 ---
-
 # 归因映射方法 {#attribution-mapping-methodology}
 
 归因映射方法是在您的CRM中查找特定对象（联系人、商机、客户）以便在关联的商机中创建归因接触点的过程。 换言之，这是[!DNL Marketo Measure]种方法，用于根据您当前CRM的流程了解要包含在归因模型中的接触点。
@@ -24,7 +28,7 @@ ht-degree: 0%
 
 优点：这种归因方法对大多数公司都非常有效。 营销团队不需要依赖销售团队将所有联系人与特定机会（这通常是问题）相关联。 此外，即使销售团队与联系人角色建立关联，也可能会错过许多其他联系人与营销材料的交互。 最后，这种方法有助于主动营销策略，即努力影响账户的总体，而不是影响特定用户。
 
-缺点：如果有严格的营销和销售SLA规定哪些人应该获得点数，则此方法可能会产生问题。 此外，如果人们不使用帐户层次结构来定义较大帐户(例如：IBM)中的特定业务单位，则特定于某个业务单位的营销互动可能会扩展到其他业务单位机会。
+缺点：如果有严格的营销和销售SLA规定哪些人应该获得点数，则此方法可能会产生问题。 此外，如果人们不使用帐户层次结构来定义较大帐户（例如：IBM）中的特定业务单位，则特定于某个业务单位的营销互动可能会扩展到其他业务单位机会。
 
 ## 机会联系人角色映射 {#opportunity-contact-role-mapping}
 

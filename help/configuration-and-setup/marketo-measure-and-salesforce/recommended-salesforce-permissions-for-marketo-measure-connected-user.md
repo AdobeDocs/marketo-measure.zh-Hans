@@ -1,23 +1,31 @@
 ---
 unique-page-id: 18874696
-description: 为 [!DNL Marketo Measure] 连接的用户 —  [!DNL Marketo Measure]推荐的 [!DNL Salesforce] 权限
-title: 为 [!DNL Marketo Measure] 连接的用户推荐的 [!DNL Salesforce] 权限
+description: 建议的[!DNL Marketo Measure]已连接用户的[!DNL Salesforce]权限 — [!DNL Marketo Measure]
+title: 建议的[!DNL Marketo Measure]已连接用户的[!DNL Salesforce]权限
 exl-id: b74aa28b-4a7b-42d1-8df0-d1ae0ff1f338
 feature: Salesforce
-TQID: https://experienceleague.adobe.com/ImKgikcl5a3LJhBs8VnvWFZAxLkEY0r3Ip0XVZoHE-g
+TQID: 'https://experienceleague.adobe.com/ImKgikcl5a3LJhBs8VnvWFZAxLkEY0r3Ip0XVZoHE-g'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Security
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 439
+source-wordcount: '443'
 ht-degree: 1%
-
 ---
-
 # 建议的[!DNL Marketo Measure]已连接用户的[!DNL Salesforce]权限 {#recommended-salesforce-permissions-for-marketo-measure-connected-user}
 
 [!DNL Marketo Measure]通过[!DNL Marketo Measure]应用内连接的[!DNL Salesforce]用户发送和接收数据。

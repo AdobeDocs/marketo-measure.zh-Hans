@@ -1,15 +1,23 @@
 ---
-description: 了解从 [!DNL Marketo Measure] 分层订阅迁移到 [!DNL Marketo Measure] Ultimate时的迁移过程。
-title: 从层迁移到 [!DNL Marketo Measure] Ultimate
+description: 了解从[!DNL Marketo Measure]分层订阅迁移到[!DNL Marketo Measure] Ultimate时的迁移过程。
+title: 从层迁移到[!DNL Marketo Measure] Ultimate
 feature: Integration, Tracking, Attribution
 exl-id: 828c9bba-3835-484a-bd80-84b5a6b67e22
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '286'
 ht-degree: 1%
-
 ---
-
 # 从1-2层迁移到[!DNL Marketo Measure]Ultimate {#migration-from-tier-to-marketo-measure-ultimate}
 
 本文概述了用户从第1层或第2层订阅迁移到[!DNL Marketo Measure] Ultimate的迁移过程。
@@ -42,16 +50,16 @@ ht-degree: 1%
 
 * Account-Based Marketing功能（包括商机到客户的匹配和预测参与度分数）在Ultimate中不可用。
 
-   * 但是，您可以通过AEP导入商机帐户匹配结果，并在该平台中使用这些结果。
+  * 但是，您可以通过AEP导入商机帐户匹配结果，并在该平台中使用这些结果。
 
 * 在Ultimate中，CRM历史阶段过渡是推断而不是直接读取的，因为没有直接CRM连接。
 
-   * 我们读取机会记录和时间戳并查看当前阶段，然后推断历史阶段。
+  * 我们读取机会记录和时间戳并查看当前阶段，然后推断历史阶段。
 
 ## 报告 {#reporting}
 
 * Ultimate不会将数据推送回CRM。
 
-   * 如果需要将数据推送回CRM，则需要自定义ETL管道才能将数据从Marketo Measure Snowflake提取到CRM。 您必须在CRM中设置自定义数据模型。
+  * 如果需要将数据推送回CRM，则需要自定义ETL管道才能将数据从Marketo Measure Snowflake提取到CRM。 您必须在CRM中设置自定义数据模型。
 
 * 添加了Attribution AI功能板之后，所有Discover功能板与分层解决方案中的功能板保持不变。

@@ -1,15 +1,19 @@
 ---
-description: '正在向Marketo Measure用户的Marketo登陆页面指南中添加 [!DNL Marketo Measure] '
-title: 正在将 [!DNL Marketo Measure] 添加到Marketo登录页面
+description: 向Marketo Measure用户的Marketo登陆页面指南中添加[!DNL Marketo Measure]
+title: 将[!DNL Marketo Measure]添加到Marketo登录页面
 exl-id: 3771d4d2-8723-452a-b23d-cea3b11ab9ee
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '237'
 ht-degree: 1%
-
 ---
-
 # 将[!DNL Marketo Measure]添加到Marketo登录页面 {#adding-marketo-measure-to-marketo-landing-pages}
 
 了解如何向[!DNL Marketo Engage]登陆页面添加跟踪，因为它们需要额外的处理。[!DNL Marketo Measure] JavaScript必须在登陆页面和[!DNL Marketo Engage]表单本身上都准备就绪。 为此，您需要按照以下说明将[!DNL Marketo Measure] JavaScript加载到[!DNL Marketo Engage]中。

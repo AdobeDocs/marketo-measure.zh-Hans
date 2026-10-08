@@ -1,20 +1,25 @@
 ---
-description: 阶段映射的最佳实践 —  [!DNL Marketo Measure]
+description: 阶段映射的最佳实践 — [!DNL Marketo Measure]
 title: 阶段映射的最佳实践
 exl-id: 1ed380a1-4a3a-4761-b70f-cdf2e290329d
 feature: Tracking, Custom Models
-TQID: https://experienceleague.adobe.com/qhyIo6WXhidNmLJhkattZDP-SG6tPxrVtzl7I8fwGPg
+TQID: 'https://experienceleague.adobe.com/qhyIo6WXhidNmLJhkattZDP-SG6tPxrVtzl7I8fwGPg'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: 31aa6cfe-a7a6-5501-b9ac-2688fe65013b
+    internal-label: Custom Models
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 479
+source-wordcount: '479'
 ht-degree: 0%
-
 ---
-
 # 阶段映射的最佳实践 {#best-practices-for-stage-mapping}
 
 ## 概述 {#overview}
@@ -30,17 +35,17 @@ ht-degree: 0%
 无论您是首次评估暂存映射，还是只审查funnel订单，务必要记住以下最佳实践。
 
 * 秩序就是一切！
-   * 考虑到CRM中[!DNL Marketo Measure]同时处于活动和非活动阶段，请确认任何可用于潜在客户/联系人或商机的阶段都分组在一起并相应地排序
+  * 考虑到CRM中[!DNL Marketo Measure]同时处于活动和非活动阶段，请确认任何可用于潜在客户/联系人或商机的阶段都分组在一起并相应地排序
 * 定义自定义阶段时，请确保为用于定义阶段的任何字段启用字段历史记录跟踪
 * 不要使用公式字段定义自定义阶段
-   * 布尔字段是最佳实践推荐
+  * 布尔字段是最佳实践推荐
 * 请注意，“潜在客户”或“联系人”阶段部分分为“丢失”、“打开”和“已转换”；验证阶段是否位于其相应的阶段部分
-   * 在不正确的阶段分区中设置阶段可能会导致[!DNL Marketo Measure]数据高度不正确
-   * 如果您是Marketo Measure Ultimate客户，并且已将您的默认功能板对象设置为联系人，请不要使用以下两个特定于潜在客户的字段（[了解更多](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}）。
-      * b2b.personStatus
-      * b2b.isConverted
+  * 在不正确的阶段分区中设置阶段可能会导致[!DNL Marketo Measure]数据高度不正确
+  * 如果您是Marketo Measure Ultimate客户，并且已将您的默认功能板对象设置为联系人，请不要使用以下两个特定于潜在客户的字段（[了解更多](/help/marketo-measure-ultimate/data-integrity-requirement.md){target="_blank"}）。
+    * b2b.personStatus
+    * b2b.isConverted
 * 请注意， Opportunity阶段部分分为Lost 、 Open和Won ；验证阶段是否位于其相应的阶段部分
-   * 在不正确的阶段区段中放置阶段可能会导致[!DNL Marketo Measure]收入或管道收入数据高度不正确
+  * 在不正确的阶段区段中放置阶段可能会导致[!DNL Marketo Measure]收入或管道收入数据高度不正确
 * 避免使用重复的阶段名称（我们的系统将检测到它们并自动删除一个）。
 * 要设置检查NULL值的规则，请将值文本框留空。
 

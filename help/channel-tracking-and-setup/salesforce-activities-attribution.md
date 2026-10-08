@@ -3,13 +3,22 @@ description: 面向Marketo Measure用户的Salesforce活动归因指南
 title: Salesforce活动归因
 exl-id: 1dc6f15b-2a45-4ed3-9fa3-5267366d1f45
 feature: Attribution, Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 0%
-
 ---
-
 # Salesforce活动归因 {#salesforce-activities-attribution}
 
 [!DNL Marketo Measure] Salesforce Activities集成将特定的任务和事件记录引入归因模型。 开始跟踪未获得应付款的销售电子邮件或销售电话等内容。 要配置活动规则，请转到[experience.adobe.com/marketo-measure](https://experience.adobe.com/marketo-measure){target="_blank"}。 从该位置，转到&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Activities]**&#x200B;选项卡。
@@ -23,11 +32,11 @@ ht-degree: 0%
 熟悉此层次结构：
 
 * 渠道
-   * 子渠道
-      * 活动
-      * 活动
-   * 子渠道
-      * 活动
+  * 子渠道
+    * 活动
+    * 活动
+  * 子渠道
+    * 活动
 
 >[!TIP]
 >
@@ -45,7 +54,7 @@ ht-degree: 0%
 >
 >公式字段不能在规则中使用，也不会显示在选择列表中。 由于公式在后台计算且不会修改记录，因此[!DNL Marketo Measure]无法检测记录是否符合规则。
 >
->确保为ID字段使用正确的值，例如CrmEvent.CreatedById。[!DNL Salesforce IDs] 长18个字符(0054H000007WmrfQAC)。
+>确保为ID字段使用正确的值，例如CrmEvent.CreatedById。 [!DNL Salesforce IDs]的长度为18个字符( 0054H000007WmrfQAC)。
 
 最后，选择一个日期或日期/时间字段以用作Buyer Touchpoint日期。 标准字段和自定义字段均可选择。
 
@@ -80,7 +89,7 @@ ht-degree: 0%
 | 匹配任意 | 多个值 — 完全匹配 |
 | 匹配任意（包含） | 多个值 — &#42;值&#42;、&#42;值、&#42;值&#42; |
 
-![| 匹配任意（包含） | 多个值 — &amp;42；值&amp;42；，&amp;42；值，&amp;42；值&amp;42； |](assets/activities-attribution-8.png)
+![|匹配任何（包含） |多个值 — &amp;42；值&amp;42；，&amp;42；值，&amp;42；值&amp;42； |](assets/activities-attribution-8.png)
 
 最后但同样重要的是，您可以选择输入新渠道的成本。 [营销支出上传](https://experience.adobe.com/#/marketo-measure/MyAccount/Business?busView=false&id=10#/！/MyAccount/Business/Account.Settings.SettingsHome？tab=Reporting.Marketing%20Spent){target="_blank"}允许您在渠道级别、子渠道级别或营销活动级别输入支出。 通过新的[!DNL Marketo Measure]营销活动，您可以按月添加这些相关成本，然后查看每个营销活动的ROI！
 

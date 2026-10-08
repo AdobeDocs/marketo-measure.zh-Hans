@@ -3,18 +3,22 @@ description: 对Marketo Measure用户使用自定义收入额字段指南
 title: 使用自定义收入金额字段
 exl-id: 517ea4f9-aa83-48d0-8ce7-003f4a907430
 feature: Custom Revenue Amount
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 47de9b4f-9dd4-52b4-bccb-c7af30dd2f2c
+    internal-label: Custom Revenue Amount
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 3%
-
 ---
-
 # 使用自定义收入金额字段 {#using-a-custom-revenue-amount-field}
 
 默认情况下，采购员归因接触点将从以下两个字段之一提取机会金额：
 
-* 金额(SFDC默认)
+* 金额（SFDC默认）
 * [!DNL Marketo Measure]机会金额（自定义）
 
 如果您在您的Opportunities中使用自定义Amount字段，我们将需要配置工作流以计算Buyer Touchpoint收入。 这需要进一步了解[!DNL Salesforce]，因此可能需要SFDC管理员的帮助。

@@ -3,13 +3,19 @@ description: 面向Marketo Measure用户的报表营销支出指南
 title: 报告营销支出
 exl-id: 46b0f81c-acd1-47a5-bf75-6a943edb9009
 feature: Reporting, Spend Management
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+  - id: e3b4b95f-0bb9-5cb3-a479-9dcb943dca3f
+    internal-label: Spend Management
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
-
 ---
-
 # 报告营销支出 {#report-marketing-spend}
 
 ## 营销支出表 {#marketing-spend-table}
@@ -30,7 +36,7 @@ ht-degree: 0%
 
 ## 迁移到已转化的营销支出 {#migrate-to-converted-marketing-spend}
 
-由于营销支出历来只使用单一（美元）货币，因此需要执行少量工作才能将所有报告支出更改为新货币。 即使您的帐户未启用多种货币，但是如果您使用美元以外的单一公司货币，则应当进行此迁移。
+由于营销支出历来仅使用单一(USD)货币，因此需要执行少量工作才能将报告的所有支出更改为新货币。 即使您的帐户未启用多种货币，但是如果您使用USD以外的单一公司货币，则应当进行此迁移。
 
 1. 将当前支出文件下载到CSV
 1. 货币列显示“[!UICONTROL USD]”为假定货币。 您可以手动替换所有出现的“[!UICONTROL USD]”，或使用“查找+替换”将所有“[!UICONTROL USD]”实例更改为您自己的公司货币，如“[!UICONTROL EUR]”或“[!UICONTROL GBP]”。

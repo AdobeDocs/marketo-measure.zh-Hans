@@ -3,19 +3,25 @@ description: 为Marketo Measure用户重新授权“连接帐户”指南
 title: 重新授权连接的帐户
 exl-id: 7abd1d67-5bed-45bb-844f-0ffd23c3d7f8
 feature: APIs, Integration
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%
-
 ---
-
 # 重新授权连接的帐户 {#reauthorizing-connected-accounts}
 
 当帐户与您的[!DNL Marketo Measure]帐户断开连接时，平台的状态将更改为“需要授权”并显示一个红色钥匙图标。
 
-如果您的广告平台断开连接，[!DNL Marketo Measure]将无法下载成本数据，或者，如果您启用了自动标记，请将[!DNL Marketo Measure] UTM参数附加到任何新创建的广告。[!DNL Marketo Measure] 在帐户断开连接时，无法将UTM参数逆向附加到从广告平台创建的任何接触点。
+如果您的广告平台断开连接，[!DNL Marketo Measure]将无法下载成本数据，或者，如果您启用了自动标记，请将[!DNL Marketo Measure] UTM参数附加到任何新创建的广告。 在帐户断开连接时，[!DNL Marketo Measure]将无法以追溯方式将UTM参数附加到从广告平台创建的任何接触点。
 
 如果您的CRM平台断开连接，[!DNL Marketo Measure]将无法更新[!DNL Marketo Measure]数据或将任何新的接触点推送到您的组织。 重新建立CRM连接后，[!DNL Marketo Measure]将推送在帐户断开连接时丢失的任何数据。
 

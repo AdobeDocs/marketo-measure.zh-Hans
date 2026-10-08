@@ -3,13 +3,17 @@ description: 面向Marketo Measure用户的删除接触点和禁止接触点指�
 title: 接触点移除和接触点抑制
 exl-id: 201af648-6525-4a80-a7e5-3cbeeb1670b6
 feature: Touchpoints
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 0%
-
 ---
-
 # 接触点移除和接触点抑制 {#touchpoint-removal-and-touchpoint-suppression}
 
 了解如何从CRM中删除或禁止符合特定条件的接触点。 如果您有[!DNL Salesforce]数据存储限制，这有助于释放数据空间。
@@ -64,7 +68,7 @@ ht-degree: 0%
 
 ![4)根据需要为买方归因接触点设置规则](assets/touchpoint-settings-8.png)
 
-若要完成，[!UICONTROL Save and Process]您的规则。 如果您要进行大量更改，请确保在此过程中保存更改。[!DNL Marketo Measure] 在单击之前，不会实际开始删除您的接触点
+若要完成，[!UICONTROL Save and Process]您的规则。 如果您要进行大量更改，请确保在此过程中保存更改。 在您单击之前，[!DNL Marketo Measure]将不会实际开始删除您的接触点
 [!UICONTROL **保存并处理**]。
 
 | **操作员** | **用例** |

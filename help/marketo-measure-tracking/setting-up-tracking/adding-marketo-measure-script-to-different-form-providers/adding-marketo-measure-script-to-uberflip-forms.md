@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874749
-description: 正在将 [!DNL Marketo Measure] 脚本添加到 [!DNL Uberflip] Forms - [!DNL Marketo Measure]
-title: 正在将 [!DNL Marketo Measure] 脚本添加到 [!DNL Uberflip] Forms
+description: 正在将[!DNL Marketo Measure]脚本添加到[!DNL Uberflip] Forms - [!DNL Marketo Measure]
+title: 正在将[!DNL Marketo Measure]脚本添加到[!DNL Uberflip] Forms
 exl-id: fb123e15-523d-4931-b4c1-705fe49be3d0
 feature: Tracking
-TQID: https://experienceleague.adobe.com/5G801toR2LSXxPwnXjLE-bw92pwe0gPc7HDFq-Bi5oU
+TQID: 'https://experienceleague.adobe.com/5G801toR2LSXxPwnXjLE-bw92pwe0gPc7HDFq-Bi5oU'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 200
+source-wordcount: '204'
 ht-degree: 0%
-
 ---
-
 # 正在将[!DNL Marketo Measure]脚本添加到[!DNL Uberflip] Forms {#adding-marketo-measure-script-to-uberflip-forms}
 
 如果您当前使用[!DNL Uberflip]管理您的内容，请务必采取这些必要步骤以确保[!DNL Marketo Measure]正在跟踪这些表单提交。 您位于[!DNL Uberflip]的成功经理也应该能够帮助您完成此任务。

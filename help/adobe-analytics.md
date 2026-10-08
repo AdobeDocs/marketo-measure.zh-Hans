@@ -1,15 +1,19 @@
 ---
-description: '[!DNL Marketo Measure]与Adobe Analytics的集成 —  [!DNL Marketo Measure]'
-title: '[!DNL Marketo Measure]与 [!DNL Adobe Analytics]的集成'
+description: '[!DNL Marketo Measure]与Adobe Analytics的集成 — [!DNL Marketo Measure]'
+title: '[!DNL Marketo Measure]与[!DNL Adobe Analytics]的集成'
 exl-id: 3a125a15-eb74-454a-afb3-75746a1dfac6
 feature: Integration
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '957'
 ht-degree: 0%
-
 ---
-
 
 # [!DNL Marketo Measure]与Adobe Analytics的集成 {#marketo-measure-integrations-with-adobe-analytics}
 
@@ -20,7 +24,7 @@ B2B客户属性集成允许[!DNL Marketo Measure]和Adobe Analytics的共同用�
 
 ## 配置集成 {#configuring-the-integration}
 
-1. 在Experience Cloud控制台中创建新的客户属性数据Source 。 您可在此找到[的详细说明](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html?lang=zh-Hans)。
+1. 在Experience Cloud Console中创建新的客户属性数据Source 。 您可在此找到[的详细说明](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/t-crs-usecase.html?lang=zh-Hans)。
 
    注意后续步骤中所需的以下信息：
 
@@ -58,12 +62,12 @@ B2B客户属性集成允许[!DNL Marketo Measure]和Adobe Analytics的共同用�
   </tr>
   <tr>
    <td>Account.Name</td>
-   <td>与给定Web访客关联的帐户名称。 如果多个帐户与给定用户关联，[!DNL Marketo Measure]会以分号分隔的列表填充所有匹配的帐户名称。<br/>
+   <td>与给定Web访客关联的帐户名称。 如果多个帐户与给定用户绑定，[!DNL Marketo Measure]会以分号分隔的列表填充所有匹配的帐户名称。<br/>
    <strong>注意：</strong> account.name是account对象上name属性的Salesforce-API级别名称。 您可以在集成配置的架构验证步骤（步骤4）中为此属性选择更好的显示名称（例如，“公司”）。</td>
   </tr>
   <tr>
    <td>已归因收入 — “模型”</td>
-   <td>根据[!DNL Marketo Measure]归因引擎计算的CRM中此客户与已结束成功的机会的关联而归因的收入。<br/>
+   <td>此客户因与CRM中成功的商机的关联而获得的收入，由[!DNL Marketo Measure]归因引擎计算。<br/>
    您的[!DNL Marketo Measure]订阅允许的每个归因模型都有一个属性（例如，“归因收入 — 完整路径”）。</td>
   </tr>
   <tr>

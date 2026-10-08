@@ -1,15 +1,21 @@
 ---
-description: '正在从Marketo Measure用户的完整循环指南转换为 [!DNL Marketo Measure] '
-title: '正在从完整圆转为 [!DNL Marketo Measure] '
+description: 从Marketo Measure用户的完整循环指南过渡到[!DNL Marketo Measure]
+title: 正在从全圆过渡到[!DNL Marketo Measure]
 exl-id: fd471771-33e2-413a-b155-02ba6e32e10c
 feature: Attribution, Fundamentals
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+  - id: 8210190a-677a-5286-8428-d07007b1edde
+    internal-label: Fundamentals
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '639'
 ht-degree: 0%
-
 ---
-
 # 正在从全圆过渡到[!DNL Marketo Measure] {#transitioning-to-marketo-measure-from-full-circle}
 
 正在从Full Circle移动到[!DNL Marketo Measure]？ 你并不孤单。 以下是要牢记的最大注意事项，以及从其他作出转换的客户那里学到的经验教训。
@@ -30,7 +36,7 @@ ht-degree: 0%
 
 ## 可见性与归因 {#visibility-vs-attribution}
 
-通过大多数Full Circle设置，您可以看到人员与您的营销或销售工作的每次交互。 页面查看次数、重复的页面访问次数、三元营销活动中的成员资格 — 全部为全圆曲面。 如果您查看某个页面300次，则Full Circle会创建300个重复的营销活动，并为您提供每个营销活动的成员资格。[!DNL Marketo Measure] 没有，这是我们有意的设计决定。
+通过大多数Full Circle设置，您可以看到人员与您的营销或销售工作的每次交互。 页面查看次数、重复的页面访问次数、三元营销活动中的成员资格 — 全部为全圆曲面。 如果您查看某个页面300次，则Full Circle会创建300个重复的营销活动，并为您提供每个营销活动的成员资格。 [!DNL Marketo Measure]没有，这是我们有意的设计决定。
 
 [!DNL Marketo Measure]旨在为您提供一个归因故事，该故事展示有意义的交互并适当地在最具影响力的接触点之间分配权重。 例如，[!DNL Marketo Measure]框架不会将页面查看（没有表单填充）显示为常规接触点。 独立页面查看可能不会影响购买历程，但是如果在指定的CRM里程碑之前（例如创建潜在客户或机会）是最近的一次交互，则我们会创建一个接触点。 我们不想让你看到一切。 我们想要从归因的角度向您展示重要的内容。
 

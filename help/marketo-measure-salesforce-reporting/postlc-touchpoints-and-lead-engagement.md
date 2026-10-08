@@ -3,13 +3,17 @@ description: 了解如何为潜在客户和联系人创建、更新和限制Post
 title: PostLC接触点和潜在客户参与
 exl-id: 3ee5c571-195e-46c7-b150-fedcbc3614cb
 feature: Touchpoints
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
-
 ---
-
 # PostLC接触点和潜在客户参与 {#postlc-touchpoints-and-lead-engagement}
 
 [!DNL Marketo Measure]潜在客户创建后(PostLC)接触点可供使用多点接触归因模型（W-Shape及更高版本）的客户使用。 当潜在客户或联系人返回您的网站并继续填写表单时，这些表单提交会注册为PostLC接触点。 这些接触点允许您查看是什么内容在促使潜在客户在首次转化后很长时间继续参与您的网站。 PostLC接触点与Opportunity中的所有中间接触点共享归因点数；将10%的归因点数分配给中间接触点，并在所有接触之间平均分配。

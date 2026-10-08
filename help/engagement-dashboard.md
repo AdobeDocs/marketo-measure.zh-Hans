@@ -3,13 +3,17 @@ description: 发现Engagement仪表板，用于跟踪一段时间内由渠道接
 title: 互动仪表板
 feature: Reporting
 exl-id: dc8bcbe4-d470-4cd3-a2d9-804fdebe7121
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%
-
 ---
-
 
 # 互动仪表板 {#engagement-dashboard}
 
@@ -37,7 +41,7 @@ ht-degree: 0%
 ### KPI拼贴 {#kpi-tiles}
 
 * 接触点：生成的原始接触点总数。
-   * 买方接触点和买方归因接触点是通过为信用选择特定接触点创建的归因结果。 并非所有接触点都被选为BT和BAT。
+  * 买方接触点和买方归因接触点是通过为信用选择特定接触点创建的归因结果。 并非所有接触点都被选为BT和BAT。
 * 接触的人：具有任何接触点的人总数。
 * 每个人的接触点：每个被接触者的平均接触点数。
 

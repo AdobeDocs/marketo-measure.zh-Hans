@@ -1,15 +1,19 @@
 ---
-description: '[!DNL Marketo Measure]资源列表 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure]资源列表 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure]资源列表'
 exl-id: e2542ec2-dd83-405c-bd49-fa6384e6c8de
 feature: Fundamentals
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 8210190a-677a-5286-8428-d07007b1edde
+    internal-label: Fundamentals
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 3%
-
 ---
-
 # [!DNL Marketo Measure]资源列表 {#marketo-measure-resource-list}
 
 下面是各种相关文章/视频的链接，可帮助您启动并运行[!DNL Marketo Measure]！
@@ -32,7 +36,7 @@ ht-degree: 3%
 * [上传营销支出](/help/marketing-channel-costs.md)
 * [重新连接Ad帐户](/help/api-connections/reauthorizing-connected-accounts.md)
 * [正在添加 [!DNL Marketo Measure] JavaScript](/help/marketo-measure-tracking/adding-marketo-measure-script.md)
-   * [排除Forms](/help/marketo-measure-tracking/excluding-marketo-measure-from-specific-forms.md)
+  * [排除Forms](/help/marketo-measure-tracking/excluding-marketo-measure-from-specific-forms.md)
 
 **报告**
 
@@ -46,7 +50,7 @@ ht-degree: 3%
 
 ## 视频 {#videos}
 
-下面是几个视频    帮助您快速入门：
+以下几个视频可帮助您快速入门：
 
 * [[!DNL Marketo Measure] 介绍培训](https://share.vidyard.com/watch/Pb4DuWJwtFgw3jUBDGneb4？)（22分钟）
 * [[!DNL Marketo Measure] 在SFDC中报告](https://experienceleague.adobe.com/docs/marketo-learn/tutorials/overview.html?lang=zh-Hans) （30-45分钟）

@@ -1,15 +1,19 @@
 ---
-description: 正在将 [!DNL Marketo Measure] JavaScript添加到Marketo Measure用户的 [!DNL Pardot] 指南
-title: 正在将 [!DNL Marketo Measure] JavaScript添加到 [!DNL Pardot]
+description: 正在将[!DNL Marketo Measure]个JavaScript添加到Marketo Measure用户的[!DNL Pardot]指南
+title: 正在将[!DNL Marketo Measure]个JavaScript添加到[!DNL Pardot]
 exl-id: e49190ad-aa86-4f8f-a9ed-48de9e937a7e
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '241'
 ht-degree: 2%
-
 ---
-
 # 正在将[!DNL Marketo Measure]个JavaScript添加到[!DNL Pardot] {#adding-marketo-measure-javascript-to-pardot}
 
 [!DNL Pardot]表单需要在表单模板中进行其他处理，而不仅仅是为[!DNL Marketo Measure]在站点上放置脚本以识别表单提交。 此过程很简单；它只需要将[!DNL Marketo Measure]跟踪脚本放入[!DNL Pardot]表单模板中。

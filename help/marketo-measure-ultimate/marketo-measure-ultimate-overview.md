@@ -1,24 +1,35 @@
 ---
-description: '[!DNL Marketo Measure] Ultimate概述 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Measure] Ultimate概述 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Measure] Ultimate概述'
 exl-id: fada9479-0671-4698-8043-c67d7977577b
 feature: Integration, Tracking, Attribution
-TQID: https://experienceleague.adobe.com/r69OlOPP6-xtu34YVk7FfAiwdGgvoPpbs9TcM4N609M
+TQID: 'https://experienceleague.adobe.com/r69OlOPP6-xtu34YVk7FfAiwdGgvoPpbs9TcM4N609M'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Insights
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 726
+source-wordcount: '726'
 ht-degree: 6%
-
 ---
-
 # [!DNL Marketo Measure] Ultimate概述 {#marketo-measure-ultimate-overview}
 
 [!DNL Marketo Measure]（以前为 Bizible）使营销人员能够洞察哪些营销工作在为公司增加收入以及使投资回报率最大化方面最有效。 [!DNL Marketo Measure]是一款营销归因解决方案，可自动跟踪和报告渠道效果，让您能够洞悉哪些渠道产生的客户参与度最高，并允许您相应地优化营销支出。
@@ -26,9 +37,9 @@ ht-degree: 6%
 [!DNL Marketo Measure Ultimate]包含其他功能：
 
 * 从几乎任何数据源和多个相同类型的数据源进行摄取，以引入所有数据来进行归因。
-   * 可与几乎任何CRM一起使用，而不仅仅是Salesforce和Dynamics。
-   * 将多个CRM实例和/或MAP实例连接到一个[!DNL Marketo Measure]实例。
-   * 引入第三方网络研讨会注册和参与数据。
+  * 可与几乎任何CRM一起使用，而不仅仅是Salesforce和Dynamics。
+  * 将多个CRM实例和/或MAP实例连接到一个[!DNL Marketo Measure]实例。
+  * 引入第三方网络研讨会注册和参与数据。
 
 * 通过字段映射和转换功能，以极大的灵活性转换您的数据，确保正确的数据形状。
 
@@ -54,7 +65,7 @@ ht-degree: 6%
 
 **默认货币设置**
 
-[!DNL Marketo Measure Ultimate]将默认货币设置为USD，直到用户更改它。 设置新的默认货币可更新数据，而无需重新处理。 只要所选货币以目标ISO代码的形式存在，就无需提交兑换率。
+[!DNL Marketo Measure Ultimate]将默认货币设置为USD，直到用户更改它为止。 设置新的默认货币可更新数据，而无需重新处理。 只要所选货币以目标ISO代码的形式存在，就无需提交兑换率。
 
 ![](assets/marketo-measure-ultimate-overview-4.png)
 

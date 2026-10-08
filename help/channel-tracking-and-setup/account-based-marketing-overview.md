@@ -3,13 +3,17 @@ description: 了解Account-Based Marketing (ABM)以及Adobe Marketo Measure如�
 title: 基于帐户的营销概述
 exl-id: 2ead69c0-66da-439d-a0ba-25c73c4b308c
 feature: Account-based Marketing
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 96ef477f-0ffb-5375-8fca-6d27be6b7c00
+    internal-label: Account-based Marketing
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '861'
 ht-degree: 0%
-
 ---
-
 # 基于帐户的营销概述 {#account-based-marketing-overview}
 
 以下部分简要概述了ABM、[!DNL Marketo Measure] ABM功能的组件以及如何将其添加到[!DNL Salesforce]页面布局。 若要了解有关ABM的更多信息，请查阅Adobe的[ABM博客](https://business.adobe.com/cn/blog/basics/account-based-marketing){target="_blank"}。
@@ -18,7 +22,7 @@ ht-degree: 0%
 
 ## 什么是ABM {#what-is-abm}
 
-基于客户的营销ABM是一种营销策略，您可以将目标定位到整个公司和客户，而不仅仅是个人。[!DNL Marketo Measure] 通过销售线索到客户的映射功能和Predictive Engagement Score ，帮助营销和销售团队执行成功的ABM策略。
+基于客户的营销ABM是一种营销策略，您可以将目标定位到整个公司和客户，而不仅仅是个人。 [!DNL Marketo Measure]通过其销售线索到客户的映射功能和预测参与度分数，帮助营销和销售团队执行成功的ABM策略。
 
 要使我们的基于帐户的营销模型开始填充到您的CRM中，[!DNL Marketo Measure]需要满足以下条件：
 
@@ -69,7 +73,7 @@ ht-degree: 0%
 >您可能会注意到某些帐户的预测参与度分数中存在“N/A”或“ — ”（破折号）的分级。
 
 _等级为“N/A”只是表示该帐户上没有足够的数据可供模型生成真实等级 — 使用更多数据，最终给出等级。_
-_等级“ — ”（短划线符号）表示ABM进程尚未处理此帐户，因为时间有限，偶尔会错过进程，依此类推。 如果您认为某个帐户应该具有基于其他类似帐户或时间范围的等级，请联系并告知[!DNL Marketo Measure]。_
+_等级“ — ”（短划线符号）表示ABM进程尚未处理此帐户，因为时间有限，偶尔会错过进程等等。 如果您认为某个帐户应该具有基于其他类似帐户或时间范围的等级，请联系并告知[!DNL Marketo Measure]。_
 
 ## 在[!DNL Salesforce]中设置ABM页面布局 {#setting-up-abm-page-layout-in-salesforce}
 

@@ -3,13 +3,19 @@ description: 面向Marketo Measure用户的LinkedIn集成指南
 title: LinkedIn集成
 exl-id: 705209ef-1ece-496c-ac2f-6a31055bd993
 feature: APIs, Integration
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '2769'
 ht-degree: 0%
-
 ---
-
 # LinkedIn集成 {#linkedin-integration}
 
 ## 概述 {#overview}
@@ -61,7 +67,7 @@ Forms负责人：通过与LinkedIn的Forms负责人集成，Marketo Measure将in
 
 赞助内容允许您向关注您公司的成员以外的其他成员的[!DNL LinkedIn]信息源交付内容。 赞助内容可以面向特定受众，并帮助广告商无论何时何地在[!DNL LinkedIn]平台上跨桌面、移动设备和平板电脑进行参与，都可以联系[!DNL LinkedIn]成员。 支持由Lead Gen Forms提供的赞助内容。
 
-[!DNL Marketo Measure]支持的赞助内容广告格式类型为单幅图像广告和视频广告(通过Lead Gen Forms)。 由于架构的复杂性，我们不支持轮播广告。
+[!DNL Marketo Measure]支持的赞助内容广告格式类型为单幅图像广告和视频广告（通过Lead Gen Forms）。 由于架构的复杂性，我们不支持轮播广告。
 
 [!DNL Marketo Measure]不支持赞助消息、文字广告或动态广告。
 
@@ -87,7 +93,7 @@ Forms负责人：通过与LinkedIn的Forms负责人集成，Marketo Measure将in
 
 通过此[!DNL Marketo Measure/LinkedIn]集成，我们要求客户不要复制/克隆/复制现有创意内容。 如果发现共享并且检测到共享仅用于一个Creative，则[!DNL Marketo Measure]可以按原样标记共享，而无需重新创建任何创意内容或共享，并且所有广告历史记录（展示次数、点击次数、共享）都将保留。
 
-一旦发现共享在多个创意人员之间共享，[!DNL Marketo Measure]就必须运行暂停、复制和重新标记的过程，才能创建唯一的集。[!DNL Marketo Measure] 将暂停并存档实时创意内容，因此将擦除广告历史记录（包括展示次数、点击次数和社交分享），以便正确自动标记所有内容。
+一旦发现共享在多个创意人员之间共享，[!DNL Marketo Measure]就必须运行暂停、复制和重新标记的过程，才能创建唯一的集。 [!DNL Marketo Measure]将暂停并存档实时创意，因此将擦除广告历史记录（包括展示次数、点击次数和社交分享），以正确自动标记所有内容。
 
 接下来，[!DNL Marketo Measure]建议您不要复制任何[!DNL LinkedIn]共享，并尽可能保持所有创意和共享的唯一性，这样我们就可以添加我们的跟踪而无需擦除广告历史记录。
 
@@ -108,9 +114,9 @@ Creative D ：共享234
 
 ![Creative D ：共享234](../assets/marketo-engage-activities-05.png)
 
-`1)` [!DNL Marketo Measure]将首先查看所有状态为“活动”的营销活动、创意和共享。[!DNL Marketo Measure] 不会标记已暂停、已存档或已取消的广告。 如果广告已暂停，然后设置为[!UICONTROL active]，则一旦它再次处于活动状态，我们将对其进行标记。 如果我们能够找到唯一的共享，即该共享未在多个创意人员或营销活动之间使用(例如，Creative A ：共享123)，则[!DNL Marketo Measure]会将我们的自定义参数`>> ?_bl={creativeId}`添加到共享URL中。
+`1)` [!DNL Marketo Measure]将首先查看所有状态为“活动”的营销活动、创意和共享。 [!DNL Marketo Measure]不会标记已暂停、已存档或已取消的广告。 如果广告已暂停，然后设置为[!UICONTROL active]，则一旦它再次处于活动状态，我们将对其进行标记。 如果我们能够找到唯一的共享，即该共享未在多个创意人员或营销活动之间使用（例如，Creative A ：共享123），则[!DNL Marketo Measure]会将我们的自定义参数`>> ?_bl={creativeId}`添加到共享URL中。
 
-`2)`现在，如果共享已共享并失去其唯一性(例如，Creative B ：共享234和Creative C ：共享234和Creative D ：共享234)，[!DNL Marketo Measure]将暂停并存档所有类似的创意(即Creative B、Creative C和Creative D)。
+`2)`现在，如果共享已共享并失去其唯一性（例如，Creative B ：共享234和Creative C ：共享234和Creative D ：共享234），[!DNL Marketo Measure]将暂停并存档所有类似的创意（即Creative B、Creative C和Creative D）。
 
 `3)` [!DNL Marketo Measure]将创建3个新创意，即Creative E、Creative F和Creative G，用于复制已存档的Creative B内容。
 
@@ -134,7 +140,7 @@ Creative D ：共享234
 
 LinkedIn表单可能包含多个电子邮件地址。 下载表单响应时，我们将查找具有以下优先级的电子邮件地址：工作电子邮件、电子邮件地址（主表单字段）或具有有效电子邮件值的自定义字段。
 
-无论Campaign或Creative的状态如何，所有表单响应都将导致接触点。[!DNL Marketo Measure] 有90天的回溯限制，因此[!DNL Marketo Measure]无法访问超过90天的表单响应，但启用[!DNL Marketo Measure]和[!DNL LinkedIn]集成的时间越长，通过[!DNL Marketo Measure]看到的潜在客户群表单接触点就越多。
+无论Campaign或Creative的状态如何，所有表单响应都将导致接触点。 [!DNL Marketo Measure]具有90天的回溯限制，因此[!DNL Marketo Measure]无法访问超过90天的表单响应，但启用[!DNL Marketo Measure]和[!DNL LinkedIn]集成的时间越长，通过[!DNL Marketo Measure]看到的潜在客户群表单接触点就越多。
 
 >[!NOTE]
 >
@@ -284,7 +290,7 @@ LinkedIn表单可能包含多个电子邮件地址。 下载表单响应时，�
 
 **[!DNL Marketo Measure]实际标记了哪些状态？**
 
-[!DNL LinkedIn]营销活动和Creative有四种不同的状态：“活动”、“已暂停”、“已存档”和“已取消”。 我们仅标记处于活动状态的营销活动和创意内容。 标记其他状态会再次将它们设置为“活动”。[!DNL Marketo Measure] 不会标记“已暂停”、“已存档”或“已取消”营销活动或创意，但如果状态更改为“活动”，则将恢复标记。
+[!DNL LinkedIn]营销活动和Creative有四种不同的状态：“活动”、“已暂停”、“已存档”和“已取消”。 我们仅标记处于活动状态的营销活动和创意内容。 标记其他状态会再次将它们设置为“活动”。 [!DNL Marketo Measure]将不会标记“已暂停”、“已存档”或“已取消”营销活动或创意，但如果状态更改为“活动”，则将恢复标记。
 
 **[!DNL Marketo Measure]用于标记的值是多少？**
 
@@ -304,11 +310,11 @@ LinkedIn表单可能包含多个电子邮件地址。 下载表单响应时，�
 
 **糟糕，我的团队中有人意外克隆了一个共享。 我可以暂停它吗？**
 
-没关系。[!DNL Marketo Measure] 将以编程方式检查是否存在不再唯一的共享，这意味着该共享已复制到其他Creative中。 检测到该副本后，[!DNL Marketo Measure]将按照常规流程标记和创建新广告。
+没关系。 [!DNL Marketo Measure]将以编程方式检查不再唯一的共享，这意味着该共享已复制到其他Creative。 检测到该副本后，[!DNL Marketo Measure]将按照常规流程标记和创建新广告。
 
 **我的广告先前正在等待审阅。 为什么在[!DNL Marketo Measure]标记后它再次处于待审状态？**
 
-LinkedIn要求所有创建或修改的广告在发布之前都必须经过正常的安全流程。[!DNL Marketo Measure] 尝试尽快截获广告，因为它每6小时扫描一次新广告，但额外执行[!DNL LinkedIn's]步，可能会延迟几个小时。
+LinkedIn要求所有创建或修改的广告在发布之前都必须经过正常的安全流程。 [!DNL Marketo Measure]尝试尽快拦截广告，因为它每6小时扫描一次新广告，但通过[!DNL LinkedIn's]额外步骤，它可能会延迟几个小时的发布。
 
 **我的广告中有2个URL。 哪一个被标记？**
 

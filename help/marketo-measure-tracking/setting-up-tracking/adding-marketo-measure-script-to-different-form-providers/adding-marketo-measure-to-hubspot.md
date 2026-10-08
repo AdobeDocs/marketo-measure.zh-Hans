@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874759
-description: 正在将 [!DNL Marketo Measure] 添加到 [!DNL Hubspot] - [!DNL Marketo Measure]
-title: 正在将 [!DNL Marketo Measure] 添加到 [!DNL Hubspot]
+description: 正在将[!DNL Marketo Measure]添加到[!DNL Hubspot] - [!DNL Marketo Measure]
+title: 正在将[!DNL Marketo Measure]添加到[!DNL Hubspot]
 exl-id: 633e7ef7-7959-461e-881f-dcc543595b66
 feature: Tracking
-TQID: https://experienceleague.adobe.com/3To9-9GZMHJf6vVOUPTedkJBpqU1TZNxKeVBHIm0PKY
+TQID: 'https://experienceleague.adobe.com/3To9-9GZMHJf6vVOUPTedkJBpqU1TZNxKeVBHIm0PKY'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 173
+source-wordcount: '175'
 ht-degree: 1%
-
 ---
-
 # 正在将[!DNL Marketo Measure]添加到[!DNL Hubspot] {#adding-marketo-measure-to-hubspot}
 
 了解如何添加[!DNL Marketo Measure] JavaScript以跟踪[!DNL Hubspot]登陆页面和表单提交。

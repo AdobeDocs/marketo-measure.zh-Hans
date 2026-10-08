@@ -1,20 +1,22 @@
 ---
-description: 与Adobe Launch的[!DNL Marketo Measure]集成 —  [!DNL Marketo Measure]
+description: '[!DNL Marketo Measure]与Adobe Launch的集成 — [!DNL Marketo Measure]'
 title: 与Adobe Launch的[!DNL Marketo Measure]集成
 exl-id: 316ee8a8-b2d3-42e9-9ee5-c9b1d91c2769
 feature: Integration
-TQID: https://experienceleague.adobe.com/5bgXPo2wv7eeJqnrDZkYYasapORBU3V1MxgGOgoKrTw
+TQID: 'https://experienceleague.adobe.com/5bgXPo2wv7eeJqnrDZkYYasapORBU3V1MxgGOgoKrTw'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Integrations
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 289
+source-wordcount: '289'
 ht-degree: 3%
-
 ---
-
 # 与Adobe Launch的[!DNL Marketo Measure]集成 {#marketo-measure-integrations-with-adobe-launch}
 
 Adobe Launch扩展专为已在网站上使用Adobe Launch的现有[!DNL Marketo Measure]用户而设计。 扩展用作标签管理解决方案，可用于根据特定事件和条件在页面上配置和动态加载脚本。

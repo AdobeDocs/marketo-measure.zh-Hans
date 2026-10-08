@@ -3,19 +3,23 @@ description: 自定义模型设置 — 为Marketo Measure用户启用字段历�
 title: 自定义模型设置 — 启用字段历史记录跟踪
 exl-id: 70328e67-051b-4864-891b-b251e49859c2
 feature: Custom Models
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 31aa6cfe-a7a6-5501-b9ac-2688fe65013b
+    internal-label: Custom Models
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
-
 ---
-
 # 自定义模型设置：启用字段历史记录跟踪 {#custom-model-setup-enable-field-history-tracking}
 
 ## 启用字段历史记录跟踪的原因和时间 {#why-and-when-to-enable-field-history-tracking}
 
-如果您决定在自定义归因模型中包括自定义字段作为阶段，则必须为此字段启用字段历史记录跟踪&#x200B;**&#x200B;**。 启用字段历史记录跟踪将允许[!DNL Salesforce]通过在“历史记录跟踪”表中创建记录来跟踪任何时候编辑自定义字段的情况。[!DNL Marketo Measure] 可以下载该表并使用此信息衡量“过渡”发生的时间和日期。 如果没有字段历史记录跟踪，[!DNL Marketo Measure]将无法跟踪与此字段相关的更改。
+如果您决定在自定义归因模型中包括自定义字段作为阶段，则必须为此字段启用字段历史记录跟踪&#x200B;**&#x200B;**。 启用字段历史记录跟踪将允许[!DNL Salesforce]通过在“历史记录跟踪”表中创建记录来跟踪任何时候编辑自定义字段的情况。 [!DNL Marketo Measure]可以下载该表并使用此信息来测量发生“过渡”的时间和日期。 如果没有字段历史记录跟踪，[!DNL Marketo Measure]将无法跟踪与此字段相关的更改。
 
 如果自定义模型中只使用了[!UICONTROL Lead Status]或机会阶段，则无需打开字段历史记录跟踪，因为字段历史记录将作为阶段过渡自动进行跟踪。
 

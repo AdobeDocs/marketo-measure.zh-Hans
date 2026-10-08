@@ -1,15 +1,19 @@
 ---
-description: '[!DNL Marketo Engage]人员集成 —  [!DNL Marketo Measure]'
+description: '[!DNL Marketo Engage]人员集成 — [!DNL Marketo Measure]'
 title: '[!DNL Marketo Engage]人员集成'
 exl-id: 51930e84-4ff8-4e35-9d44-ea017c24b051
 feature: Integration
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '922'
-ht-degree: 1%
-
+ht-degree: 2%
 ---
-
 # [!DNL Marketo Engage]人员集成 {#marketo-engage-people-integration}
 
 Marketo人员集成允许[!DNL Marketo Measure]开始从Marketo下载人员，开始将其跟踪的会话与个人绑定，并将接触点映射到其参与。 以前，[!DNL Marketo Measure]只能将接触点映射到CRM中的人员，因此这有助于营销人员更快地衡量其营销工作，而不是等待阶段或触发器将其同步到CRM。
@@ -19,7 +23,7 @@ Marketo人员集成允许[!DNL Marketo Measure]开始从Marketo下载人员，�
 * 生产Marketo实例
 * 生产[!DNL Salesforce]或[!DNL Microsoft Dynamics]实例
 * 任何付费的[!DNL Marketo Measure]订阅
-* 已启用SOLR (联系[Marketo支持](https://nation.marketo.com/t5/Support/ct-p/Support)以启用此功能)
+* 已启用SOLR （联系[Marketo支持](https://nation.marketo.com/t5/Support/ct-p/Support)以启用此功能）
 
 ## 工作原理 {#how-it-works}
 

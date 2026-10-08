@@ -1,15 +1,19 @@
 ---
-description: 面向Marketo Measure用户的 [!DNL Marketo Measure] Web会话指导的定义
-title: ' [!DNL Marketo Measure] Web会话的定义'
+description: 面向Marketo Measure用户的[!DNL Marketo Measure] Web会话指南的定义
+title: '[!DNL Marketo Measure] Web会话的定义'
 exl-id: ddf4f19d-2024-413a-b0ae-4efd468c24de
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '584'
 ht-degree: 0%
-
 ---
-
 # [!DNL Marketo Measure] Web会话的定义 {#definition-of-marketo-measure-web-sessions}
 
 了解[!DNL Marketo Measure]如何定义Web会话。

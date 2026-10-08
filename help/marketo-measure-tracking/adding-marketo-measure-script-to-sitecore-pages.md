@@ -1,15 +1,19 @@
 ---
-description: 正在向Marketo Measure用户的Sitecore Pages指南中添加 [!DNL Marketo Measure] 脚本
-title: 正在将 [!DNL Marketo Measure] 脚本添加到Sitecore页面
+description: 正在将[!DNL Marketo Measure]脚本添加到Marketo Measure用户的Sitecore Pages指南
+title: 正在将[!DNL Marketo Measure]脚本添加到Sitecore页面
 exl-id: 87ce1857-7532-45a7-8c39-255c6118b50a
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '121'
 ht-degree: 0%
-
 ---
-
 # 正在将[!DNL Marketo Measure]脚本添加到Sitecore页面 {#adding-marketo-measure-script-to-sitecore-pages}
 
 除了标准脚本实施之外，内容管理系统可能还需要其他步骤，以便[!DNL Marketo Measure]识别表单提交。 以下流程概述了如何将[!DNL Marketo Measure] JavaScript添加到您的[!DNL Sitecore]页面。

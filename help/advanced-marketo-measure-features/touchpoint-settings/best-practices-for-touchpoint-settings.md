@@ -1,21 +1,25 @@
 ---
-description: 接触点设置的最佳实践 —  [!DNL Marketo Measure]
+description: 接触点设置的最佳实践 — [!DNL Marketo Measure]
 title: 接触点设置的最佳实践
 exl-id: 01e314a6-e33d-45cd-aaa3-c212afec07d1
 feature: Touchpoints
-TQID: https://experienceleague.adobe.com/57Y-eSngdDje7RcPmmKobrzk2-QWrRyxN2rIVtdrOLQ
+TQID: 'https://experienceleague.adobe.com/57Y-eSngdDje7RcPmmKobrzk2-QWrRyxN2rIVtdrOLQ'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Machine learning
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 651
+source-wordcount: '651'
 ht-degree: 0%
-
 ---
-
 # 接触点设置的最佳实践 {#best-practices-for-touchpoint-settings}
 
 ## 概述 {#overview}
@@ -29,13 +33,13 @@ ht-degree: 0%
 在您的[!DNL Marketo Measure]应用程序中，[!UICONTROL Touchpoint Settings]部分将划分为四个关键部分。 每个部分隐藏或删除不同的数据集。 使用下面的键确保您的规则禁止或移除所需的接触点。
 
 * 从CRM中删除购买者接触点
-   * 当您想要创建一个规则以从您的&#x200B;**CRM**&#x200B;中删除&#x200B;**Buyer Touchpoint数据**（与个人而非机会关联的接触点）时，请使用此部分
+  * 当您想要创建一个规则以从您的&#x200B;**CRM**&#x200B;中删除&#x200B;**Buyer Touchpoint数据**（与个人而非机会关联的接触点）时，请使用此部分
 * 从CRM禁止购买者接触点
-   * 当您想要创建一个规则以从您的&#x200B;**CRM**&#x200B;和&#x200B;**Discover**&#x200B;中删除&#x200B;**Buyer Touchpoint数据**（与个人而非机会关联的接触点）时，请使用此部分
+  * 当您想要创建一个规则以从您的&#x200B;**CRM**&#x200B;和&#x200B;**Discover**&#x200B;中删除&#x200B;**Buyer Touchpoint数据**（与个人而非机会关联的接触点）时，请使用此部分
 * 从CRM中删除买方归因接触点
-   * 当您想要创建一个规则以从您的&#x200B;**CRM**&#x200B;中删除&#x200B;**Buyer Attribution Touchpoint**&#x200B;数据（与商机和收入关联的接触点）时，请使用此部分
+  * 当您想要创建一个规则以从您的&#x200B;**CRM**&#x200B;中删除&#x200B;**Buyer Attribution Touchpoint**&#x200B;数据（与商机和收入关联的接触点）时，请使用此部分
 * 从CRM禁止购买者归因接触点
-   * 当您想要创建一个规则以从您的&#x200B;**CRM**&#x200B;和&#x200B;**Discover**&#x200B;中删除&#x200B;**Buyer Attribution Touchpoint**&#x200B;数据（与商机和收入关联的接触点）时，请使用此部分
+  * 当您想要创建一个规则以从您的&#x200B;**CRM**&#x200B;和&#x200B;**Discover**&#x200B;中删除&#x200B;**Buyer Attribution Touchpoint**&#x200B;数据（与商机和收入关联的接触点）时，请使用此部分
 
 ## 最佳实践 {#best-practice}
 
@@ -56,7 +60,7 @@ ht-degree: 0%
 * 您的营销团队中的人员调整
 * 对网站结构进行重大更新
 * 识别不再有用的接触点数据
-   * 无论您何时遇到您认为不应接收归因点数的接触点数据，都可以使用[!DNL touchpoint suppression]规则来确保数据尽可能干净和准确。
+  * 无论您何时遇到您认为不应接收归因点数的接触点数据，都可以使用[!DNL touchpoint suppression]规则来确保数据尽可能干净和准确。
 * 更改了用于定义禁止显示或删除规则的字段
 
 >[!MORELIKETHIS]

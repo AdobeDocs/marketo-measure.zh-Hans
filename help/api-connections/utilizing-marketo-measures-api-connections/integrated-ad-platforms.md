@@ -1,24 +1,28 @@
 ---
 unique-page-id: 18874594
-description: 集成的广告平台 —  [!DNL Marketo Measure]
+description: 集成的广告平台 — [!DNL Marketo Measure]
 title: 集成式广告平台
 exl-id: df30ee8a-8b07-4f14-94e8-cc482fca8b18
 feature: APIs, Integration
-TQID: https://experienceleague.adobe.com/R4zYLoHltPjhCEYZ800GO9AZ7noyOmXYXu0VAlVzY-0
+TQID: 'https://experienceleague.adobe.com/R4zYLoHltPjhCEYZ800GO9AZ7noyOmXYXu0VAlVzY-0'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
 feature_v2:
   - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
   - id: fb43f4c1-87d9-4081-8df1-6fe7e6e5cdc8
+    internal-label: APIs
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Insights
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 1763
+source-wordcount: '1763'
 ht-degree: 0%
-
 ---
-
 # 集成式广告平台 {#integrated-ad-platforms}
 
 [!DNL Marketo Measure]具有与Google AdWords、Microsoft BingAds、[!DNL Facebook]个广告和DoubleClick促销活动管理器的API连接。 通过这些API连接，[!DNL Marketo Measure]能够轻松地提取数据，并将其与外部买方应用程序一起推送到您的CRM。 无需手动上传成本或数据。 您的帐户只需连接到[!DNL Marketo Measure]应用程序并获得授权即可。 然后，[!DNL Marketo Measure]将自动从平台下载您的营销成本，并将其加载到[!DNL Marketo Measure]应用程序中。 如果选择为AdWords、BingAds或[!DNL Facebook]广告启用自动标记，[!DNL Marketo Measure]将自动将其参数附加到广告的URL。
@@ -53,8 +57,8 @@ ht-degree: 0%
 * *选项B*：找到第三方重定向。 如果在跟踪模板中找到第三方重定向，则[!DNL Marketo Measure]无法执行任何操作。 您需要手动将[!DNL Marketo Measure]标记添加到第三方系统。 第三方重定向的一个示例是竞价管理工具，如Kenshoo或Marin。 详细了解[竞价管理工具如何影响 [!DNL Marketo Measure]](/help/api-connections/utilizing-marketo-measures-api-connections/how-bid-management-tools-affect-marketo-measure.md){target="_blank"}。
 
 * *选项C*：未找到跟踪模板。 [!DNL Marketo Measure]将扫描[!DNL Marketo Measure]参数的所有Ad目标URL。 根据扫描，如果：
-   * 找到参数：设置完成！
-   * 未找到参数： [!DNL Marketo Measure]会将其参数附加到广告目标URL的末尾。 [!DNL Marketo Measure]在创建新广告后的两小时内追加这些广告。 请记住，不会将参数添加到模板中。
+  * 找到参数：设置完成！
+  * 未找到参数： [!DNL Marketo Measure]会将其参数附加到广告目标URL的末尾。 [!DNL Marketo Measure]在创建新广告后的两小时内追加这些广告。 请记住，不会将参数添加到模板中。
 
 详细了解[[!DNL AdWords] 自动标记功能](/help/api-connections/utilizing-marketo-measures-api-connections/understanding-marketo-measure-adwords-tagging.md){target="_blank"}。
 

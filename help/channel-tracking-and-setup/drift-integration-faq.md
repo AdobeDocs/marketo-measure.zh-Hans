@@ -3,13 +3,17 @@ description: Marketo Measure用户的漂移集成常见问题解答指南
 title: 漂移集成常见问题解答
 exl-id: ae5706b1-1f6c-4201-8585-0d7c587746e1
 feature: Integration
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 7da342c5-06ee-5869-b3e8-b73d5bf75a9d
+    internal-label: Integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 1%
-
 ---
-
 # 漂移集成常见问题解答 {#drift-integration-faq}
 
 作为[!DNL Marketo Measure]与漂移集成的一部分，以下是一些最常见的问题。 如果遇到以下未列出的任何问题，请联系Adobe客户团队（您的客户经理）或[Marketo支持](https://nation.marketo.com/t5/support/ct-p/Support){target="_blank"}。

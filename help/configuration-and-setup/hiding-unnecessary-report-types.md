@@ -3,13 +3,20 @@ description: 为Marketo Measure用户隐藏不必要的报表类型指南
 title: 隐藏不必要的报表类型
 exl-id: 7c181340-c154-49ca-a852-243bce71c7a0
 feature: Salesforce
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: c8f57308-7e33-4e41-a385-b55041c78939
+    internal-label: Integrations
+subfeature_v2:
+  - id: e601da04-8de6-4fc3-8718-784749c3c41b
+    internal-label: Salesforce integration
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%
-
 ---
-
 # 隐藏不必要的报表类型 {#hiding-unnecessary-report-types}
 
 完成安装并开始使用报表后，并非包随附的[!DNL Marketo Measure]每个报表都将由您的组织使用。 因此，隐藏您未使用的报告类型会很有帮助，这样可以消除任何混淆并允许更简洁的外观。 您可以隐藏任何需要的报表，但下图中所标识的报表通常处于隐藏状态。

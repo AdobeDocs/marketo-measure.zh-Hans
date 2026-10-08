@@ -3,13 +3,17 @@ description: 面向Marketo Measure用户的接触点设置指南最佳实践
 title: 接触点设置的最佳实践
 exl-id: 01e314a6-e33d-45cd-aaa3-c212afec07d1
 feature: Touchpoints
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: 32d2f1bc-61d0-598c-a8bf-f6fbc8920276
+    internal-label: Touchpoints
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 0%
-
 ---
-
 # 接触点设置的最佳实践 {#best-practices-for-touchpoint-settings}
 
 ## 概述 {#overview}
@@ -23,13 +27,13 @@ ht-degree: 0%
 在您的[!DNL Marketo Measure]应用程序中，[!UICONTROL Touchpoint Settings]部分将划分为四个关键部分。 每个部分隐藏或删除不同的数据集。 使用下面的键确保您的规则禁止或移除所需的接触点。
 
 * 从CRM中删除购买者接触点
-   * 当您想要创建一个规则以从您的&#x200B;**CRM**&#x200B;中删除&#x200B;**Buyer Touchpoint数据**（与个人而非机会关联的接触点）时，请使用此部分
+  * 当您想要创建一个规则以从您的&#x200B;**CRM**&#x200B;中删除&#x200B;**Buyer Touchpoint数据**（与个人而非机会关联的接触点）时，请使用此部分
 * 从CRM禁止购买者接触点
-   * 当您想要创建一个规则以从您的&#x200B;**CRM**&#x200B;和&#x200B;**Discover**&#x200B;中删除&#x200B;**Buyer Touchpoint数据**（与个人而非机会关联的接触点）时，请使用此部分
+  * 当您想要创建一个规则以从您的&#x200B;**CRM**&#x200B;和&#x200B;**Discover**&#x200B;中删除&#x200B;**Buyer Touchpoint数据**（与个人而非机会关联的接触点）时，请使用此部分
 * 从CRM中删除买方归因接触点
-   * 当您想要创建一个规则以从您的&#x200B;**CRM**&#x200B;中删除&#x200B;**Buyer Attribution Touchpoint**&#x200B;数据（与商机和收入关联的接触点）时，请使用此部分
+  * 当您想要创建一个规则以从您的&#x200B;**CRM**&#x200B;中删除&#x200B;**Buyer Attribution Touchpoint**&#x200B;数据（与商机和收入关联的接触点）时，请使用此部分
 * 从CRM禁止购买者归因接触点
-   * 当您想要创建一个规则以从您的&#x200B;**CRM**&#x200B;和&#x200B;**Discover**&#x200B;中删除&#x200B;**Buyer Attribution Touchpoint**&#x200B;数据（与商机和收入关联的接触点）时，请使用此部分
+  * 当您想要创建一个规则以从您的&#x200B;**CRM**&#x200B;和&#x200B;**Discover**&#x200B;中删除&#x200B;**Buyer Attribution Touchpoint**&#x200B;数据（与商机和收入关联的接触点）时，请使用此部分
 
 ## 最佳实践 {#best-practice}
 
@@ -50,7 +54,7 @@ ht-degree: 0%
 * 您的营销团队中的人员调整
 * 对网站结构进行重大更新
 * 识别不再有用的接触点数据
-   * 无论您何时遇到您认为不应接收归因点数的接触点数据，都可以使用[!DNL touchpoint suppression]规则来确保数据尽可能干净和准确。
+  * 无论您何时遇到您认为不应接收归因点数的接触点数据，都可以使用[!DNL touchpoint suppression]规则来确保数据尽可能干净和准确。
 * 更改了用于定义禁止显示或删除规则的字段
 
 >[!MORELIKETHIS]

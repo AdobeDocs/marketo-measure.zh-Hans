@@ -3,14 +3,18 @@ description: 详细介绍在发现功能板中应用的数据可见性规则，�
 title: 功能板数据可见性策略
 feature: Reporting
 exl-id: 5f6f7173-617e-459d-992f-8a8b6c2db7cb
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d24e0b99-7796-5c7d-831d-d71a1d725f01
+    internal-label: Reporting
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 6%
-
 ---
-
 # 功能板数据可见性策略 {#dashboard-data-visibility-policy}
 
 为了在仪表板中提供更好的体验，我们为报告对象建立了数据可见性策略。 请务必注意，当您熟悉我们的新发现功能板时，您可能会注意到这些功能板数量比旧功能板少。 这是因为我们的数据表示方法发生了变化，新的功能板现在提供了具体的可见性准则。 旧的Discover功能板显示所有可用数据，与此不同，新版本仅显示符合可见性策略的数据。 本文旨在明确不同数据对象的可见性政策是什么，并确保报表透明度和准确的数据解释。
@@ -29,7 +33,7 @@ ht-degree: 6%
 | 营销活动成员 | 最近5年（基于营销活动成员创建日期） |
 | CRM任务 | 最近5年（基于任务创建日期） |
 | CRM事件 | 最近5年（基于事件开始日期） |
-| 活动(Marketo和AEP) | 最近5年（基于事件日期） |
+| 活动（Marketo和AEP） | 最近5年（基于事件日期） |
 | Sessions | 最近5年（基于事件日期） |
 | Page Views | 最近5年（基于事件日期） |
 | 表单提交 | 最近5年（基于事件日期） |

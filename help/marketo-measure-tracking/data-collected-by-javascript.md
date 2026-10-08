@@ -3,14 +3,18 @@ description: JavaScript针对Marketo Measure用户的指南收集的数据
 title: JavaScript收集的数据
 feature: Tracking
 exl-id: 83814168-9d3e-45ac-b514-df58f0b2e90b
-hidefromtoc: true
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+hidefromtoc: 'yes'
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 13%
-
 ---
-
 # JavaScript收集的数据 {#data-collected-by-javascript}
 
 了解Marketo Measure JavaScript在部署时收集的数据。
@@ -42,7 +46,7 @@ Marketo Measure会为所有类型的请求收集以下常用数据：
 |  |  | `_biz_h` | 字符串 | 经过哈希处理的客户端屏幕分辨率。 |
 |  |  | `_biz_c` | 字符串 | 可选参数。 如果此参数存在，则表示租户将`bizible.js`配置为在跟踪前等待用户同意，并且`bizible.js`已收到要跟踪的用户同意。 |
 | 表单提交 | `/frm` | `eMail` | 字符串 | 纯文本电子邮件地址。 |
-| 用户ID映射 | `/u` | `mapType` | 枚举 | 检测到`bizible.js`的用户标识映射(Marketo Munchkin ID和Adobe ECID) |
+| 用户ID映射 | `/u` | `mapType` | 枚举 | 检测到`bizible.js`的用户标识映射（Marketo Munchkin ID和Adobe ECID） |
 |  |  | `mapValue` | 字符串 | 上述集成的实际第三方Cookie ID值。 |
 
 >[!NOTE]

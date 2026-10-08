@@ -3,13 +3,17 @@ description: 显示如何将bizible.js配置为在设置Cookie或发送数据之
 title: 在Marketo Measure Js中确保同意GDPR
 exl-id: 9afc5e4d-cf97-4c49-b9ee-ee1cc99c1f90
 feature: Tracking
-source-git-commit: 7a4661c8d42214d32e5360dc45d6d880b08ef37c
+product_v2:
+  - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
+    internal-label: Marketo Measure
+feature_v2:
+  - id: dcbeff6e-0253-5a4b-9ac2-1b67cc4a6286
+    internal-label: Tracking
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
-
 ---
-
 # 在Marketo Measure Js中确保同意GDPR {#ensuring-consent-for-gdpr-in-marketo-measure-js}
 
 《通用数据保护条例》(GDPR)是一项欧盟法律，已于2018年5月25日生效。
@@ -47,7 +51,7 @@ GDPR的目标是加强欧盟(EU)和欧洲经济区(EEA)内数据主体对其个�
 
 这告知[!DNL bizible.js]在获得同意之前不要跟踪，这可以使用以下JS API完成：
 
-*窗口[&#39;Bizible&#39;] = window[&#39;Bizible&#39;] || { _queue： []，推送：函数(o， p) {此。_queue.push({ type： o， data： p })； } }；*
+*窗口[&#39;Bizible&#39;] = window[&#39;Bizible&#39;] || { _queue： []，推送：函数(o， p) {this._queue.push({ type： o， data： p })； } }；*
 
 *Bizible。 Push(&#39;Consent&#39;， true)；*
 

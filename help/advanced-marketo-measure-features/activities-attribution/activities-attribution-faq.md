@@ -1,19 +1,21 @@
 ---
 unique-page-id: 18874704
-description: 活动归因常见问题解答 —  [!DNL Marketo Measure]
+description: 活动归因常见问题解答 — [!DNL Marketo Measure]
 title: 活动归因常见问题解答
 exl-id: 6272024f-b6ae-4aa7-ba92-c9f183549614
 feature: Attribution
-TQID: https://experienceleague.adobe.com/o26ZNdZWcbIR7ghclTqOZLtKUx10t4wVHbwSahFluIo
+TQID: 'https://experienceleague.adobe.com/o26ZNdZWcbIR7ghclTqOZLtKUx10t4wVHbwSahFluIo'
 product_v2:
   - id: e6fc4016-a972-4f36-8c30-a6a5f82ad0c8
-source-git-commit: 9ceb54139bfa9b6ce7c2c5fbb4e25e649f5708a3
+    internal-label: Marketo Measure
+feature_v2:
+  - id: d7322935-5b46-52a3-b6ea-21e6aec748b5
+    internal-label: Attribution
+source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
 workflow-type: tm+mt
-source-wordcount: 764
+source-wordcount: '765'
 ht-degree: 0%
-
 ---
-
 # 活动归因常见问题解答 {#activities-attribution-faq}
 
 [!DNL Marketo Measure]活动导入您的所有活动记录并为它们生成接触点，从而允许这些活动接收归因点数。 最常见的用例是跟踪Sales团队的活动，因为它们通常会创建发送给潜在客户的电话或电子邮件记录。 可以跟踪的其他独特内容是内容交互，如资源下载或视频查看。
@@ -32,7 +34,7 @@ Activities对象作为Task和Event对象的伞形或父对象。 活动基本上
 
 **如果我有具有相同周期性任务的潜在客户或联系人，我是否会看到所有这些任务的买方接触点？**
 
-可以。 已同步的活动与创建的接触点之间存在1:1关系。
+可以。 已同步的活动与创建的接触点之间存在1:1的关系。
 
 **我如何知道哪些记录导致创建了接触点？**
 
