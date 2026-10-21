@@ -26,11 +26,11 @@ UTM参数可以手动添加到URL中，或通过自动标记特定平台（如Ad
 
 要了解UTM参数的工作方式，请查看不带UTM的典型URL：
 
-`http://www.adobe.com`
+`http://www.adobe.com/cn`
 
 现在，让我们查看包含UTM的URL：
 
-`http://www.adobe.com?utm_medium=socialmedia&utm_source =facebook&utm_campaign=seasonal-sale&utm_content=photo-400x700px`
+`http://www.adobe.com/cn?utm_medium=socialmedia&utm_source =facebook&utm_campaign=seasonal-sale&utm_content=photo-400x700px`
 
 第二个链接包含更多文本。 UTM参数始终位于顶级域（本例中为.com）之后，并以问号开头。 之后，参数的顺序无关紧要，但建议遵循一致的命名约定。 必须在每个参数之间放置与号，以分隔每个UTM。 现在，我们可以更详细地了解每个参数代表的含义。
 
