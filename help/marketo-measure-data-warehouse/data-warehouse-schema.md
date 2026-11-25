@@ -18,9 +18,9 @@ topic_v2:
     internal-label: Security
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 940fee4abd0e09b6bf513b5e7526d3c242bd31c7
+source-git-commit: 85b421a896fb78f5469a41c8d11131802d08910c
 workflow-type: tm+mt
-source-wordcount: '21775'
+source-wordcount: '21772'
 ht-degree: 8%
 ---
 # Data Warehouse架构 {#data-warehouse-schema}
@@ -5804,7 +5804,7 @@ _单击完整版本的图像_
 
 >[!IMPORTANT]
 >
->2024年年中，Marketo Measure将弃用此表。 如果您希望在您这边创建它，请运行[此SQL查询](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.sql)。
+>Marketo Measure已于2024年弃用此表。 如果您希望在您这边创建它，请运行[此SQL查询](/help/marketo-measure-data-warehouse/assets/BIZ_FACTS.txt)。
 
 <table>
   <tbody>
